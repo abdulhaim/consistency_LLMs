@@ -26,10 +26,10 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string('openai_key', glob.glob(os.path.abspath('../*openai*'))[0], 'path to openai key')
 # flags.DEFINE_string('tmp_dir', glob.glob(os.path.abspath('../../*tmp*'))[0], 'path to tmp directory to download vLLM models')
 
-flags.DEFINE_string('agent1_model', 'gpt-3.5-turbo', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
-flags.DEFINE_string('agent2_model', 'gpt-3.5-turbo', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
+flags.DEFINE_string('agent1_model', 'gpt-4o-mini', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
+flags.DEFINE_string('agent2_model', 'gpt-4o-mini', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
 flags.DEFINE_integer('iterations', 1, 'integer number of iterations (default 1)')
-flags.DEFINE_boolean('verbose', True, 'actually print out json? (will still show tqdm bar if False)')
+flags.DEFINE_boolean('verbose', False, 'actually print out json? (will still show tqdm bar if False)')
 flags.DEFINE_boolean('write', False, 'write to file? name format is generated as output_gym_<exo/exn/s>_<once/turns>_<sof1>_<sof2>_<iterations>_<taxonomy>.json')
 # flags.DEFINE_string('persuasion_taxonomy', 'none', 'what kind of persuasion taxonomy to use, if any? (none/default, full, reduced, no_examples)')
 flags.DEFINE_integer('convo_length_limit', 10, 'upper limit of conversation length (10/default)')

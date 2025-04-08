@@ -27,7 +27,11 @@ def eval_prompt_consistency(conv_dict):
     pturn = conv_dict["pturn"]
     for line in conv_dict["conversation"]:
         if pturn == 1:
-            prompt = "For the following line spoken by P1, answer YES if the line contradicts the given backstory of P1, and answer NO if the line does not contradict the provided backstory of P1. P1's backstory is:\n" + conv_dict["P1"] + "\n P1 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts the given backstory of P1, and answer NO if the line does not contradict the provided backstory of P1, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["prompt_consistency"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                  .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
+                                                                  .replace("%SPEAKER_LINE%", line)
+            if config['verbose']:
+                print(prompt)
             output = completion_create(config['eval_model'], config, prompt)
             conv_dict['eval_prompt_consistency'].append(output)
             if "YES" not in output: # no contradiction
@@ -35,7 +39,11 @@ def eval_prompt_consistency(conv_dict):
             p1_utterances += 1
             pturn = 2
         else:
-            prompt = "For the following line spoken by P2, answer YES if the line contradicts the given backstory of P2, and answer NO if the line does not contradict the provided backstory of P2. P2's backstory is:\n" + conv_dict["P2"] + "\n P2 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts the given backstory of P2, and answer NO if the line does not contradict the provided backstory of P2, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["prompt_consistency"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                  .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
+                                                                  .replace("%SPEAKER_LINE%", line)
+            if config['verbose']:
+                print(prompt)
             output = completion_create(config['eval_model'], config, prompt)
             conv_dict['eval_prompt_consistency'].append(output)
             if "YES" not in output: # no contradiction
@@ -57,19 +65,26 @@ def eval_all_line_consistency(conv_dict):
     pturn = conv_dict["pturn"]
     for i, line in enumerate(conv_dict["conversation"]):
         if pturn == 1:
-            # old prompt (checks backstory as well)
-            #prompt = "For the following line spoken by P1, answer YES if the line contradicts any line stated by P1 or P1's provided background, and answer NO if the line does not contradict any line in the provided conversation history of P1 and P1's provided background. P1 has the following backstory:\n" + conv_dict["P1"] + "\nP1 had the following conversation with P2:\n" + "".join(conv_dict["conversation"]) + "\n P1 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts any line stated by P1 throughout the course of the conversation or P1's provided background, and answer NO if the line does not contradict any line in the provided conversation history of P1 and P1's provided background, followed by 1 sentence of reasoning.\n\n"
-            prompt = "For the following line spoken by P1, answer YES if the line contradicts any line stated by P1, and answer NO if the line does not contradict any line in the provided conversation history of P1. \nP1 had the following conversation with P2:\n" + "".join(conv_dict["conversation"]) + "\n P1 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts any line stated by P1 throughout the course of the conversation, and answer NO if the line does not contradict any line in the provided conversation history of P1, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["all_line_consistency"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                                                    .replace("%CONVERSATION%", "".join(conv_dict["conversation"])) \
+                                                                    .replace("%SPEAKER_LINE%", line)
             output = completion_create(config['eval_model'], config, prompt)
+            if config['verbose']:
+                print(prompt)
             conv_dict['eval_all_line_consistency'].append(output)
             if "YES" not in output: # no contradiction
                 conv_dict['P1_all_line_consistency_score'] += 1
             p1_utterances += 1
             pturn = 2
         else:
-            #prompt = "For the following line spoken by P2, answer YES if the line contradicts any line stated by P2 or P2's provided background, and answer NO if the line does not contradict any line in the provided conversation history of P2 and P2's provided background. P2 has the following backstory:\n" + conv_dict["P2"] + "\nP2 had the following conversation with P1:\n" + "".join(conv_dict["conversation"]) + "\n P2 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts any line stated by P2 throughout the course of the conversation or P2's provided background, and answer NO if the line does not contradict any line in the provided conversation history of P2 and P2's provided background, followed by 1 sentence of reasoning.\n\n"
-            prompt = "For the following line spoken by P2, answer YES if the line contradicts any line stated by P2, and answer NO if the line does not contradict any line in the provided conversation history of P2. \nP2 had the following conversation with P1:\n" + "".join(conv_dict["conversation"]) + "\n P2 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts any line stated by P2 throughout the course of the conversation, and answer NO if the line does not contradict any line in the provided conversation history of P2, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["all_line_consistency"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                    .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%CONVERSATION%", "".join(conv_dict["conversation"])) \
+                                                                    .replace("%SPEAKER_LINE%", line)
             output = completion_create(config['eval_model'], config, prompt)
+            if config["verbose"]:
+                print(prompt)
             conv_dict['eval_all_line_consistency'].append(output)
             if "YES" not in output: # no contradiction
                 conv_dict['P2_all_line_consistency_score'] += 1
@@ -84,11 +99,20 @@ def eval_all_line_consistency(conv_dict):
 def get_backstory_test(backstory, num_questions):
     ret = [[], []] # a list of questions, a list of answers
     for i in range(num_questions):
-        qa = completion_create(config['eval_model'], config, "Based on the following backstory, generate a new fact-based multiple choice question with 5 choices addressed directly IN SECOND PERSON, along with its correct answer. Preface the question with 'Question:' and the answer with 'Answer:'." + '\n' + backstory + ("" if len(ret[0]) == 0 else "\nFor reference, all of the following questions have already been asked:\n" + ''.join(ret[0])))
+        prev_questions = ("" if len(ret[0]) == 0 else "\nFor reference, all of the following questions have already been asked:\n" + ''.join(ret[0]))
+        prompt = prompts["eval_prompts"]["backstory_test"].replace("%SPEAKER_BACKSTORY%", backstory) \
+                                                          .replace("%PREVIOUS_QUESTIONS%", prev_questions)
+        if config["verbose"]:
+            print(prompt)
+        qa = completion_create(config['eval_model'], config, prompt)
         q = qa[qa.find('Question:'): qa.find('Answer:')]
         a = qa[qa.find('Answer:'): ]
         ret[0].append(q)
         ret[1].append(a)
+    
+    if config["verbose"]:
+        print("BACKSTORY TEST")
+        print(ret)
     return ret
 
 def score_backstory_test(prompt, backstory_test):
@@ -96,8 +120,15 @@ def score_backstory_test(prompt, backstory_test):
     answers = []
     verdicts = []
     for i in range(len(backstory_test[0])):
-        answer = completion_create(config['eval_model'], config, prompt + "\n Based on your conversation above so far, answer the following multiple choice question.\n" + backstory_test[0][i])
-        verdict = completion_create(config['eval_model'], config, "As part of grading a test, determine whether the given answer " + answer + " matches the following correct answer. Respond with either YES or NO.\n" + "Correct " + backstory_test[1][i])
+        answer_prompt = prompt.replace("%BACKSTORY_QUESTION%", backstory_test[0][i])
+        answer = completion_create(config['eval_model'], config, answer_prompt)
+
+        verdict_prompt = prompts["eval_prompts"]["grade_backstory"].replace("%GIVEN_ANSWER%", answer) \
+                                                                   .replace("%CORRECT_ANSWER%", backstory_test[1][i])
+        if config["verbose"]:
+            print(answer_prompt)
+            print(verdict_prompt)
+        verdict = completion_create(config['eval_model'], config, verdict_prompt)
         answers.append(answer)
         verdicts.append(verdict)
         score = 1 if 'yes' in verdict.lower() else 0
@@ -127,8 +158,11 @@ def eval_survey_consistency(conv_dict):
     for i, line in enumerate(conv_dict["conversation"]):
         conversation += line
         if pturn == 1:
-            prompt = "You are P1, and you are having a conversation with P2. Your backstory is:\n" + p1_backstory + "\n" + "So far, the conversation is as below:\n" + conversation
-
+            prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                                                .replace("%SPEAKER_BACKSTORY%", p1_backstory) \
+                                                                .replace("%CONVERSATION%", conversation)
+    
             score, answers, verdicts = score_backstory_test(prompt, p1_backstory_test)
             conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
             conv_dict['P1_survey_consistency_score'] += score
@@ -136,7 +170,10 @@ def eval_survey_consistency(conv_dict):
             p1_utterances += 1
             pturn = 2
         else:
-            prompt = "You are P2, and you are having a conversation with P1. Your backstory is:\n" + p2_backstory + "\n" + "So far, the conversation is as below:\n" + conversation
+            prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                                                .replace("%SPEAKER_BACKSTORY%", p2_backstory) \
+                                                                .replace("%CONVERSATION%", conversation)
 
             score, answers, verdicts = score_backstory_test(prompt, p2_backstory_test)
             conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
@@ -157,9 +194,12 @@ def eval_prev_line_consistency(conv_dict):
     pturn = conv_dict["pturn"]
     for i, line in enumerate(conv_dict["conversation"]):
         if pturn == 1:
-            
-            #prompt = "For the following line spoken by P1, answer YES if the line contradicts a previous line stated by P1 or P1's provided background, and answer NO if the line does not contradict the provided conversation history of P1 and P1's provided background. P1 has the following backstory:\n" + conv_dict["P1"] + "\nP1 had the following conversation with P2:\n" + "".join(conv_dict["conversation"][:i]) + "\n P1 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts a previous line stated by P1 or P1's provided background, and answer NO if the line does not contradict the provided conversation history of P1 and P1's provided background, followed by 1 sentence of reasoning.\n\n"
-            prompt = "For the following line spoken by P1, answer YES if the line contradicts a previous line stated by P1, and answer NO if the line does not contradict the provided conversation history of P1. \nP1 had the following conversation with P2:\n" + "".join(conv_dict["conversation"][:i]) + "\n P1 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts a previous line stated by P1, and answer NO if the line does not contradict the provided conversation history of P1, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["prev_line_consistency"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                     .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                                                     .replace("%CONVERSATION%", "".join(conv_dict["conversation"][:i])) \
+                                                                     .replace("%SPEAKER_LINE%", line)
+            if config['verbose']:
+                print(prompt)
             output = completion_create(config['eval_model'], config, prompt)
             conv_dict['eval_prev_line_consistency'].append(output)
             if "YES" not in output: # no contradiction
@@ -167,8 +207,12 @@ def eval_prev_line_consistency(conv_dict):
             p1_utterances += 1
             pturn = 2
         else:
-
-            prompt = "For the following line spoken by P2, answer YES if the line contradicts a previous line stated by P2, and answer NO if the line does not contradict the provided conversation history of P2. \nP2 had the following conversation with P1:\n" + "".join(conv_dict["conversation"][:i]) + "\n P2 spoke the following line: \n" + line + "\n\n Answer YES if the line contradicts a previous line stated by P2, and answer NO if the line does not contradict the provided conversation history of P2, followed by 1 sentence of reasoning.\n\n"
+            prompt = prompts["eval_prompts"]["prev_line_consistency"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                     .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                                                     .replace("%CONVERSATION%", "".join(conv_dict["conversation"][:i])) \
+                                                                     .replace("%SPEAKER_LINE%", line)
+            if config['verbose']:
+                print(prompt)
             output = completion_create(config['eval_model'], config, prompt)
             conv_dict['eval_prev_line_consistency'].append(output)
             if "YES" not in output: # no contradiction
@@ -187,9 +231,17 @@ def run_metrics(filename):
 
     for conversation in tqdm(conversations):
         if conversation['conversation_only']:
+            if config['verbose']:
+                print("BEGIN PROMPT CONSISTENCY")
             eval_prompt_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN ALL LINE CONSISTENCY")
             eval_all_line_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN PREVIOUS LINE CONSISTENCY")
             eval_prev_line_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN SURVEY CONSISTENCY")
             eval_survey_consistency(conversation)
         conversation['conversation_only'] = False
 
@@ -200,8 +252,11 @@ def run_metrics(filename):
     
 
 def main(argv):
+    global prompts
     init()
     config['eval_model'] = 'gpt-4o-mini' # we generally use gpt-4o-mini for evals 
+    with open('config/persona_chat/prompts.json', 'r') as f:
+        prompts = json.load(f)
     exp_folder = './data/anthology/exp'
     if config['filename']:
         run_metrics(config['filename'])
