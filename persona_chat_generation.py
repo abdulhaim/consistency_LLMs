@@ -16,28 +16,28 @@ import pandas as pd
 import numpy as np
 
 def generate_conversation(p1, p2, pturn=1):
-    # conv_dict = {
-    #     "task_name": config['task_name'],
-    #     "P1": p1,
-    #     "P2": p2,
-    #     "conversation": [],
-    #     "pturn": pturn # beginning person (1 or 2)
-    #     }
     round_num = 0
     while round_num < config['convo_length_limit']:
+        conversation = ("".join(stats["conversation"]) if len(stats["conversation"]) != 0 else "[You are starting the conversation.]")
         if pturn == 1:
-            prompt = ("You are " + config['agent1_role'] + ", and you are having a conversation with " + config['agent2_role']
-             + ". Your backstory is:\n" + p1 + "\n" + "So far, the conversation is as below, and it is your turn to speak next.\n" 
-             + ("".join(stats["conversation"]) if len(stats["conversation"]) != 0 else "[You are starting the conversation.]") 
-             + "LIMIT YOUR RESPONSE TO 3 SENTENCES OR LESS. \n" + config['agent1_role'] + ": ")
+            prompt = prompts["dialogue_prompt"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                               .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                               .replace("%SPEAKER_BACKSTORY%", p1) \
+                                               .replace("%CONVERSATION%", conversation)
             pturn = 2
+            if config["verbose"]:
+                print(prompt)
+                print()
             stats["conversation"].append("P1: " + completion_create(config['agent1_model'], config, prompt) + "\n")
         else:
-            prompt = ("You are " + config['agent2_role'] + ", and you are having a conversation with " + config['agent1_role'] 
-            + ". Your backstory is:\n\n" + p2 + "\n\n" + "So far, the conversation is as below, and it is your turn to speak next.\n" 
-            + ("".join(stats["conversation"]) if len(stats["conversation"]) != 0 else "[You are starting the conversation.]")
-            + "LIMIT YOUR RESPONSE TO 3 SENTENCES OR LESS. \n" + config['agent2_role'] + ": ")
-            pturn = 1     
+            prompt = prompts["dialogue_prompt"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                               .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                               .replace("%SPEAKER_BACKSTORY%", p2) \
+                                               .replace("%CONVERSATION%", conversation)
+            pturn = 1    
+            if config["verbose"]:
+                print(prompt)
+                print()
             stats["conversation"].append("P2: " + completion_create(config['agent2_model'], config, prompt) + "\n")
         round_num += 1
 
@@ -61,10 +61,14 @@ def reset_stats():
         stats[key] = value
 
 def main(argv):
+    global prompts
     init()
 
     with open('data/anthology/personas_updated.json', 'r') as f:
         personas_updated = json.load(f)
+
+    with open('config/persona_chat/prompts.json', 'r') as f:
+        prompts = json.load(f)
     
     write_file = (
         f"data/anthology/exp/"

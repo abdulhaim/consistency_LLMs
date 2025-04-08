@@ -55,6 +55,9 @@ config = {}
 # see reset_stats for values, dictionary that is saved
 stats = {}
 
+# dictionary for prompts
+prompts = {}
+
 
 def set_flag_variables():
     for flag in FLAGS:
