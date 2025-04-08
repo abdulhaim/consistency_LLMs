@@ -19,7 +19,265 @@
         "index": 0,
         "timestamp": "2025-04-08 02:54:05",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict P1's backstory, as it aligns with their passion for social justice and their engagement with diverse opinions on the topic.",
+            "NO. The line aligns with P2's advocacy for single-payer healthcare and his commitment to addressing health disparities faced by marginalized communities.",
+            "NO. The line aligns with P1's passion for social justice and their belief in the importance of conversation for progress, as they advocate for healthcare as a human right.",
+            "NO. The line reflects P2's advocacy for single-payer healthcare and aligns with his commitment to addressing inequities in the healthcare system, which is consistent with his backstory.",
+            "NO. The line aligns with P1's backstory of advocating for social justice and engaging in conversations to challenge societal issues.",
+            "NO. The line aligns with P2's backstory as it emphasizes community service, advocacy for healthcare equity, and collaboration\u2014all values that Dr. Kenji Takahashi embodies.",
+            "NO. The line aligns with P1's values of social justice and empowerment, reflecting their belief in the importance of conversation and community engagement learned from their upbringing.",
+            "NO. The line aligns with P2's backstory as it emphasizes the importance of community empowerment and advocacy, which are central to his values and mission in healthcare.",
+            "NO. The line aligns with P1's values of social justice and community empowerment, reflecting their belief in the importance of conversation and collaboration to address issues like healthcare access.",
+            "NO. The line does not contradict P2's backstory, as it aligns with their commitment to advocating for community-driven solutions and serving marginalized communities in healthcare."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "YES. The line contradicts a later statement by P1 where they engage with P2's thoughts on social justice movements, suggesting that they had already discussed how social justice movements have evolved, making it inconsistent to ask for P2's thoughts on the same topic again.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with P2's views on the evolution of social justice movements and their impact on healthcare advocacy.",
+            "NO. The line does not contradict any previous statements made by P1, as P1 consistently advocates for healthcare equity and recognizes healthcare as a human right throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P2; it consistently addresses the challenges in achieving healthcare equity, including entrenched resistance and disparities in advocacy.",
+            "NO. The line does not contradict any previous statements made by P1; it aligns with the emphasis on the importance of advocacy, community engagement, and the criticism of powerful interests in the current healthcare system.",
+            "NO. The line does not contradict any previous statements by P2, as it aligns with their emphasis on grassroots organizing, community engagement, and collaborative efforts to address healthcare equity issues.",
+            "NO. The line does not contradict any previously stated lines by P1 as it aligns with P1's previous comments regarding the importance of grassroots efforts and ongoing partnerships for effective advocacy.",
+            "NO. The line expresses the importance of ongoing partnerships and relationships, which perfectly aligns with P2's earlier statements about grassroots organizing and collaboration in advocacy efforts.",
+            "NO. P1 is consistently emphasizing the importance of fostering relationships and building networks to empower communities and improve healthcare access, which aligns with previous statements made throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with the emphasis on advocacy and community-driven solutions discussed throughout the conversation."
+        ],
+        "P1_all_line_consistency_score": 0.8,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict any previous statement made by P1 as it flows logically from the context of discussing social justice movements.",
+            "NO. P2's statements are consistent as both highlight the role of social justice movements in advocating for equity in healthcare and supporting systemic reforms.",
+            "NO. P1's line is consistent with their previous statements about the importance of healthcare equity and the need to challenge the current system, emphasizing a collective advocacy for change.",
+            "NO. The line does not contradict previous statements by P2, as it expands on the challenges faced in advocating for healthcare equity, consistent with the themes of systemic reform and the inclusion of diverse voices previously mentioned.",
+            "NO. The line aligns with P1's previous statements about the need for community engagement and education for advocacy, emphasizing collective action and addressing disparities.",
+            "NO. P2's latest line aligns with their previous statements about the importance of collaboration and inclusivity in advocacy efforts.",
+            "NO. The line does not contradict previous statements made by P1; it reinforces the importance of building trust and partnerships in community advocacy, which is consistent with P1's earlier thoughts on engaging communities and fostering collective demand for change.",
+            "NO. The line does not contradict previous statements made by P2, as it aligns with their emphasis on collaboration and community empowerment in advocacy efforts.",
+            "NO. P1's line about fostering relationships to empower communities and dismantle barriers to healthcare access aligns with their previous statements emphasizing the importance of community engagement and advocacy in improving healthcare equity.",
+            "NO. The line does not contradict previous statements by P2, as it aligns with the discussion on successful community-driven initiatives and grassroots organizing in healthcare advocacy."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P1: P2: That's right! It's a lot of information to process. What are your thoughts on how social justice movements have evolved in recent years?\n",
+                5,
+                [
+                    "The correct answer is B) Hard work and family.",
+                    "C) 4 years old",
+                    "B) Law and Business",
+                    "B) A belief that conversation is vital for progress",
+                    "C) Being a bisexual, non-binary individual"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P1: I think social justice movements have gained significant momentum and visibility, particularly through social media, allowing for a wider range of voices and issues to be heard. It's inspiring to see so many people come together to advocate for change. How do you feel this has impacted healthcare advocacy specifically? \n\nP2: The evolution of social justice movements has indeed amplified voices calling for equity in healthcare, highlighting the disparities faced by marginalized communities. This shift has fostered greater collaboration among advocates and health professionals, pushing for systemic reforms such as single-payer healthcare. It's a crucial step towards ensuring that healthcare is recognized as a fundamental right for all.\n",
+                5,
+                [
+                    "B) Community service",
+                    "C) English and French",
+                    "The correct answer is B) Single-payer healthcare.",
+                    "The correct answer is B) Marginalized communities.",
+                    "C) Physician"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I completely agree; the focus on healthcare equity has ignited conversations about access and affordability, making it clearer that our current system often neglects the most vulnerable. By recognizing healthcare as a human right, we can challenge the status quo and advocate for policies that truly reflect the needs of our diverse communities. What do you think are the biggest challenges we still face in achieving this goal?\n",
+                5,
+                [
+                    "The correct answer is: B) Hard work and family.",
+                    "C) 4 years old",
+                    "B) Law and Business",
+                    "B) A belief that conversation is vital for progress",
+                    "C) Being a bisexual, non-binary individual"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: One of the biggest challenges is the entrenched resistance from powerful interests who benefit from the current system and its complexities. Additionally, there is often a lack of political will and public understanding regarding the necessity of comprehensive reforms. Lastly, we must also address the disparities in resources and representation within advocacy groups themselves to ensure diverse voices are included in the conversation.\n",
+                5,
+                [
+                    "The correct answer is B) Community service.",
+                    "C) English and French",
+                    "The correct answer is:  \nB) Single-payer healthcare",
+                    "The correct answer is B) Marginalized communities.",
+                    "C) Physician"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I think you're spot on about the resistance from powerful interests; they often prioritize profit over people. We need to engage more communities in advocacy and educate the public on these issues to foster a collective demand for change. What strategies do you think could help bridge that gap in understanding and representation?\n",
+                5,
+                [
+                    "B) Hard work and family",
+                    "C) 4 years old",
+                    "B) Law and Business",
+                    "B) A belief that conversation is vital for progress",
+                    "C) Being a bisexual, non-binary individual"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Engaging in grassroots organizing and community-led initiatives can empower local voices and build trust within underserved populations. Collaboration with educational institutions to create informative campaigns can also increase public awareness about healthcare equity issues. Lastly, fostering inclusive spaces for dialogue among various stakeholders can ensure a more representative and effective advocacy effort.\n",
+                5,
+                [
+                    "B) Community service",
+                    "C) English and French",
+                    "The correct answer is: B) Single-payer healthcare.",
+                    "The correct answer is: B) Marginalized communities.",
+                    "C) Physician"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I love those ideas! Building trust within communities is essential, and educating through grassroots efforts can empower people to advocate for themselves. It's also important to create ongoing partnerships between advocacy groups and local organizations to maintain momentum and ensure sustained impact.\n",
+                5,
+                [
+                    "B) Hard work and family",
+                    "C) 4 years old",
+                    "B) Law and Business",
+                    "B) A belief that conversation is vital for progress",
+                    "C) Being a bisexual, non-binary individual"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Absolutely, ongoing partnerships are vital for creating lasting change. By uniting around common goals and sharing resources, we can create a stronger foundation for advocacy. It\u2019s all about fostering relationships that empower communities to take charge of their own health and well-being.\n",
+                5,
+                [
+                    "B) Community service",
+                    "The correct answer is: C) English and French.",
+                    "The correct answer is B) Single-payer healthcare.",
+                    "B) Marginalized communities",
+                    "C) Physician"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I completely agree; fostering these relationships not only empowers communities but also helps to dismantle existing barriers to healthcare access. By creating a network of support and collaboration, we can amplify our collective impact. Have you seen any successful examples of these partnerships in action?\n",
+                5,
+                [
+                    "B) Hard work and family",
+                    "C) 4 years old",
+                    "B) Law and Business",
+                    "B) A belief that conversation is vital for progress",
+                    "C) Being a bisexual, non-binary individual"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Yes, I've seen successful partnerships in projects like community health worker initiatives, where local residents are trained to provide education and resources for their communities. Additionally, collaborations between non-profits and healthcare providers have facilitated mobile clinics in underserved areas, significantly improving access to care. These examples demonstrate the power of community-driven solutions in addressing healthcare disparities.\n",
+                5,
+                [
+                    "B) Community service",
+                    "C) English and French",
+                    "B) Single-payer healthcare",
+                    "The correct answer is: B) Marginalized communities.",
+                    "C) Physician"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: What values did you learn from your grandparents while growing up in a Korean household?  \nA) Independence and self-sufficiency  \nB) Hard work and family  \nC) Wealth and social status  \nD) Competition and individualism  \nE) Isolation and privacy  \n\n",
+                "Question: At what age did you immigrate to the United States from South Korea?  \nA) 1 year old  \nB) 2 years old  \nC) 4 years old  \nD) 6 years old  \nE) 10 years old  \n\n",
+                "Question: What degree did you graduate with from the University of Washington?  \nA) Psychology  \nB) Law and Business  \nC) Computer Science  \nD) Arts and Humanities  \nE) Environmental Science  \n\n",
+                "Question: What motivates your passion for social justice?  \nA) A desire for popularity  \nB) A belief that conversation is vital for progress  \nC) A wish to avoid conflict  \nD) An interest in financial gain  \nE) A quest for personalization  \n\n",
+                "Question: What identity aspects do you navigate in a rapidly changing world?  \nA) Being a recent immigrant  \nB) Being a graduate student  \nC) Being a bisexual, non-binary individual  \nD) Being a corporate lawyer  \nE) Being a social media influencer  \n\n"
+            ],
+            [
+                "Answer: B) Hard work and family",
+                "Answer: C) 4 years old",
+                "Answer: B) Law and Business",
+                "Answer: B) A belief that conversation is vital for progress",
+                "Answer: C) Being a bisexual, non-binary individual"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What key principle did Dr. Kenji Takahashi's parents instill in him that has influenced his career path?  \nA) Financial independence  \nB) Community service  \nC) Competitive success  \nD) Political ambition  \nE) Technological advancement  \n\n",
+                "Question: What languages were you immersed in until the age of seven?  \nA) Spanish and Mandarin  \nB) English and Korean  \nC) English and French  \nD) Japanese and Russian  \nE) English and Thai  \n\n",
+                "Question: What aspect of healthcare does Dr. Kenji Takahashi advocate for to ensure access for everyone?  \nA) Private healthcare systems  \nB) Single-payer healthcare  \nC) Limited medical coverage  \nD) Employer-sponsored health plans  \nE) Government-funded medical research  \n\n",
+                "Question: Which community does Dr. Kenji Takahashi focus on serving through his political solutions?  \nA) Affluent communities  \nB) Marginalized communities  \nC) Suburban communities  \nD) Urban professionals  \nE) International tourists  \n\n",
+                "Question: What is the primary profession of Dr. Kenji Takahashi's parents?  \nA) Engineer  \nB) Teacher  \nC) Physician  \nD) Lawyer  \nE) Scientist  \n\n"
+            ],
+            [
+                "Answer: B) Community service",
+                "Answer: C) English and French",
+                "Answer: B) Single-payer healthcare",
+                "Answer: B) Marginalized communities",
+                "Answer: C) Physician"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -41,7 +299,265 @@
         "index": 1,
         "timestamp": "2025-04-08 02:54:15",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line aligns with P2's backstory as it reflects their desire to inspire others by sharing their journey and personal experiences.",
+            "NO. The line aligns with P1's backstory, as it expresses a desire to explore the world, embrace diverse cultures, and inspire others, consistent with P1's values and experiences.",
+            "NO. The line does not contradict the backstory of P2, as it reflects their appreciation for personal growth and connection with others through experiences, aligning with their belief in resilience and the desire to inspire.",
+            "NO. The line aligns with P1's backstory of embracing authenticity and connecting with others, reflecting their experiences and values of defying conventions and living their truth.",
+            "NO. The line aligns with P2's backstory, as it emphasizes resilience, hard work, and personal growth, all of which are consistent with Alex's experiences and beliefs.",
+            "NO. The line does not contradict P1's backstory, as it reflects P1's understanding of resilience and self-discovery, which aligns with their emphasis on challenging norms and exploring different cultures.",
+            "NO. The line does not contradict P2's backstory as it aligns with their experiences of resilience, personal growth, and the desire to inspire others through community and connection.",
+            "NO. The line reflects P1's values of education and open dialogue, which align with their background of challenging norms and exploring different cultures.",
+            "NO. The line does not contradict P2's backstory, as it aligns with P2's experiences of illness and desire to connect with others about personal struggles, emphasizing the importance of community support and vulnerability.",
+            "NO. P1's line reflects a sense of community and connection, which aligns with their background of embracing challenges and inspiring others, indicating they value open communication and shared experiences."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line does not contradict any previous statements made by P2, as P2 has consistently expressed a passion for sharing their journey and inspiring others throughout the conversation.",
+            "NO. The line does not contradict any previous lines spoken by P1, as it consistently expresses a commitment to exploring the world, embracing diverse cultures, and inspiring authenticity in others, which aligns with P1's overall message throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P2, as P2 expresses admiration for P1's commitment to authenticity and relates it to their own journey.",
+            "NO. The line does not contradict any line stated by P1, as it consistently emphasizes the value of authenticity and connection with others, which P1 has expressed throughout the conversation.",
+            "NO. The line does not contradict any line stated by P2, as it aligns with the themes of resilience, identity, and the importance of shared experiences discussed throughout the conversation.",
+            "NO. The line expresses appreciation for P2's story and discusses the positive effects of resilience and challenges, which aligns with P1's earlier statements about authenticity and connection.",
+            "NO. The line does not contradict any line stated by P2 as it consistently reflects P2's focus on connection, support, and the importance of shared experiences in relation to mental health.",
+            "NO. The line does not contradict any previous statements made by P1, as it remains consistent with their appreciation for authenticity, connection, and the importance of sharing experiences.",
+            "NO. The line does not contradict any previous statements made by P2, as it continues to emphasize the themes of vulnerability and connection that P2 has previously discussed.",
+            "NO. The line does not contradict any previous statements made by P1, as it continues the theme of discussing the importance of openness and sharing experiences without presenting conflicting ideas."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict any previous statement made by P2, as it is consistent with their intention to share their journey and connect with P1.",
+            "NO. The line spoken by P1 does not contradict any previous statements, as it elaborates on their motivations and aligns with the theme of inspiring others discussed by P2.",
+            "NO. P2's line aligns with their previous statement about being passionate about sharing their journey and inspiring others, as they express admiration for P1's commitment to authenticity, which resonates with P2's own aspirations.",
+            "NO. The line does not contradict previous statements made by P1, as it continues to emphasize the theme of authenticity and connection, which P1 previously mentioned as being important in their journey.",
+            "NO. The line does not contradict previous statements by P2, as it expands on P2's journey towards authenticity without contradicting their earlier emphasis on commitment to authenticity.",
+            "NO. The line does not contradict previous lines stated by P1; it aligns with P1's emphasis on authenticity and connection through shared experiences.",
+            "NO. P2's line about connecting with others through support groups and community events does not contradict previous statements about their journey toward living authentically and sharing experiences.",
+            "NO. P1's line aligns with their earlier statements about the importance of connection and authenticity, continuing the theme of sharing experiences and fostering dialogue.",
+            "NO. The line does not contradict previous statements made by P2, as P2 has consistently emphasized the importance of shared experiences, vulnerability, and community support throughout the conversation.",
+            "NO. P1's line aligns with the previous sentiments about the importance of authenticity, connection, and community, thus maintaining consistency in their viewpoint."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P2: Hey! It's great to connect with you. I'm really passionate about sharing my journey and inspiring others\u2014how about you? What drives you these days?\n",
+                5,
+                [
+                    "B) The pursuit of personal growth",
+                    "B) Tampa",
+                    "E) They are younger, with Maria being 22 and Juan 19",
+                    "C) Strength in resilience",
+                    "C) Marketing professional"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I'm driven by my desire to explore the world and embrace diverse cultures while challenging societal norms. I love inspiring others to break free from their constraints and find their own path. Traveling and sharing my experiences allow me to connect with people and encourage them to live authentically.\n",
+                5,
+                [
+                    "D) Your family's emphasis on education and hard work",
+                    "C) 14",
+                    "D) The diverse culture of San Francisco",
+                    "B) Joining the Air Force",
+                    "E) Your desire to defy conventional expectations"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: That sounds incredible! Traveling and immersing yourself in different cultures can be so transformative. I'm inspired by your commitment to authenticity\u2014it's something I strive for in my own journey as well.\n",
+                5,
+                [
+                    "B) The pursuit of personal growth",
+                    "B) Tampa",
+                    "E) They are younger, with Maria being 22 and Juan 19",
+                    "C) Strength in resilience",
+                    "C) Marketing professional"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Absolutely! Authenticity can really empower us to live our truth and connect with others on a deeper level. What experiences have shaped your journey toward living authentically?\n",
+                5,
+                [
+                    "D) Your family's emphasis on education and hard work",
+                    "C) 14",
+                    "D) The diverse culture of San Francisco",
+                    "B) Joining the Air Force",
+                    "E) Your desire to defy conventional expectations"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Growing up in a tough neighborhood taught me the value of resilience and hard work, which pushed me to pursue my dreams despite challenges. My health struggles also made me rethink my identity, compelling me to embrace my true self beyond appearances. Connecting with others through shared experiences has further deepened my commitment to living authentically.\n",
+                5,
+                [
+                    "B) The pursuit of personal growth",
+                    "B) Tampa",
+                    "E) They are younger, with Maria being 22 and Juan 19.",
+                    "C) Strength in resilience",
+                    "C) Marketing professional"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Thank you for sharing your story; it sounds incredibly powerful! Resilience truly shapes us, and it's amazing how challenges can lead to deeper self-discovery. What are some ways you've connected with others through your shared experiences?\n",
+                5,
+                [
+                    "D) Your family's emphasis on education and hard work",
+                    "C) 14",
+                    "D) The diverse culture of San Francisco",
+                    "B) Joining the Air Force",
+                    "E) Your desire to defy conventional expectations"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I've connected with others through support groups, online forums, and social media platforms, where we share our stories and uplift one another. Additionally, I've participated in community events that focus on mental health awareness, creating a space for open dialogue and connection. These interactions have strengthened my belief in the power of vulnerability and shared experiences.\n",
+                5,
+                [
+                    "B) The pursuit of personal growth",
+                    "B) Tampa",
+                    "E) They are younger, with Maria being 22 and Juan 19",
+                    "C) Strength in resilience",
+                    "C) Marketing professional"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That's really inspiring! It's amazing how creating spaces for open dialogue can foster connection and healing. Have you found that any particular experiences or conversations have significantly impacted your journey?\n",
+                5,
+                [
+                    "The correct answer is:  \nD) Your family's emphasis on education and hard work.",
+                    "C) 14",
+                    "D) The diverse culture of San Francisco",
+                    "B) Joining the Air Force",
+                    "E) Your desire to defy conventional expectations"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Absolutely! One pivotal experience was attending a mental health workshop where I shared my struggles and realized how many others were going through similar challenges. The heartfelt conversations that followed made me feel less alone and motivated me to be more open about my journey, reinforcing the importance of vulnerability and community support.\n",
+                5,
+                [
+                    "B) The pursuit of personal growth",
+                    "B) Tampa",
+                    "E) They are younger, with Maria being 22 and Juan 19",
+                    "C) Strength in resilience",
+                    "C) Marketing professional"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That sounds like a transformative experience! Sharing our struggles can truly create a strong sense of community and connection. Have you found any specific strategies or practices that help you maintain that openness in your daily life?\n",
+                5,
+                [
+                    "D) Your family's emphasis on education and hard work",
+                    "C) 14",
+                    "D) The diverse culture of San Francisco",
+                    "B) Joining the Air Force",
+                    "E) Your desire to defy conventional expectations"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: What aspect of your upbringing in North East Ohio influenced you to challenge the norm and eventually join the Air Force?  \nA) Your parents' Polish descent  \nB) Your desire to travel 14 countries  \nC) Your identity as a bisexual male  \nD) Your family's emphasis on education and hard work  \nE) Your move to San Francisco  \n\n",
+                "Question: How many countries have you visited in your travels?  \nA) 10  \nB) 12  \nC) 14  \nD) 16  \nE) 20  \n\n",
+                "Question: What prompted you to embrace your identity as a bisexual male while living in San Francisco?  \nA) Your travels to 14 countries  \nB) Your family's emphasis on education and hard work  \nC) Your experiences in the Air Force  \nD) The diverse culture of San Francisco  \nE) Your upbringing in North East Ohio  \n\n",
+                "Question: What life experience did you pursue after growing up in a family that emphasized education and hard work?  \nA) Starting a business  \nB) Joining the Air Force  \nC) Studying abroad  \nD) Becoming a teacher  \nE) Traveling to a single country  \n\n",
+                "Question: What inspired you to embrace a lifestyle of travel and adventure after moving to San Francisco?  \nA) Your experiences in the Air Force  \nB) Your Polish heritage  \nC) The opportunities provided by your education  \nD) The encouragement from your family  \nE) Your desire to defy conventional expectations  \n\n"
+            ],
+            [
+                "Answer: D) Your family's emphasis on education and hard work",
+                "Answer: C) 14",
+                "Answer: D) The diverse culture of San Francisco",
+                "Answer: B) Joining the Air Force",
+                "Answer: E) Your desire to defy conventional expectations"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: Based on your story, what is one major motivator for you to pursue your degree while working in marketing?  \nA) A desire for financial security  \nB) The pursuit of personal growth  \nC) Family obligations  \nD) To travel the world  \nE) To start a business  \n\n",
+                "Question: In which city did you grow up, facing socioeconomic struggles during your childhood?  \nA) Miami  \nB) Tampa  \nC) Orlando  \nD) Jacksonville  \nE) St. Petersburg  \n\n",
+                "Question: What is your relationship with your siblings, Maria and Juan, as mentioned in your backstory?  \nA) They are older siblings who have moved out  \nB) They are younger siblings who depend on you  \nC) They are your peers, sharing similar experiences  \nD) You have no siblings  \nE) They are younger, with Maria being 22 and Juan 19  \n\n",
+                "Question: What is your belief that has been shaped by your childhood experiences and illness?  \nA) Acceptance of failure  \nB) Importance of wealth  \nC) Strength in resilience  \nD) Need for popularity  \nE) Focus on superficial appearances  \n\n",
+                "Question: What is your current job while you pursue your degree?  \nA) Teacher  \nB) Engineer  \nC) Marketing professional  \nD) Chef  \nE) Sales representative  \n\n"
+            ],
+            [
+                "Answer: B) The pursuit of personal growth",
+                "Answer: B) Tampa",
+                "Answer: E) They are younger, with Maria being 22 and Juan 19",
+                "Answer: C) Strength in resilience",
+                "Answer: C) Marketing professional"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -63,7 +579,265 @@
         "index": 2,
         "timestamp": "2025-04-08 02:54:27",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict the backstory of P1, as it is consistent with Jess's career as an environmental educator and her focus on sustainability and community engagement.",
+            "NO. The line aligns with P2's backstory as it emphasizes his passion for education and advocacy for marginalized communities, reflecting his values of justice and community support developed from his own experiences.",
+            "NO. The line aligns with P1's backstory, as it reflects her commitment to environmental education and social justice.",
+            "NO. The line reflects P2's strong commitment to community support and advocacy for a just and equitable future, aligning well with his backstory of prioritizing education and collaboration.",
+            "NO. The line aligns with P1's backstory, as it reflects her focus on community engagement, social justice, and fostering connections to address systemic challenges.",
+            "NO. The line reflects P2's values of community support and advocacy, which are consistent with his backstory of dedicating his life to assisting immigrants and promoting inclusivity.",
+            "NO. The line aligns with P1's backstory as it reflects their enthusiasm for community engagement and environmental initiatives, which are central to their career as an environmental educator.",
+            "NO. The line does not contradict P2's backstory, as it aligns with his values of community support and advocacy, showing his commitment to uplifting others through collective action and education.",
+            "NO. The line aligns with P1's backstory as it reflects their passion for sustainability, community engagement, and education, which are all central themes in their career as an environmental educator.",
+            "NO. P2's line aligns with his backstory of valuing community support and engagement, which is evident in his dedication to assisting immigrants and uplifting those facing hardships."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line does not contradict any lines in the conversation history of P1, as it reflects P1's curiosity about P2's motivations for pursuing a career in environmental education.",
+            "NO. The line does not contradict any previous statements made by P2, as it is consistent with their expressed passion for education, justice, and community support throughout the conversation.",
+            "NO. The line aligns with P1's previous statements about desiring equitable access to knowledge and resources, as well as fostering a sense of community in environmental education.",
+            "NO. The line aligns with P2's earlier statements about the importance of collaboration, shared knowledge, and community resilience in achieving equity and justice.",
+            "NO. P1's statement reinforces the ideas expressed in earlier comments about collaboration, community support, and tackling systemic challenges, maintaining a consistent perspective throughout the conversation.",
+            "NO. The line does not contradict any line stated by P2, as it is consistent with P2's emphasis on community connections and the importance of shared commitment in achieving progress throughout the conversation.",
+            "NO. The line expresses enthusiasm for collaboration and a desire to hear more about P2\u2019s experiences, which aligns with P1's previous statements about the importance of collective action and building community connections.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their expressed commitment to community support and educational initiatives related to sustainable practices.",
+            "NO. The line expresses a belief in the benefits of community gardens and aligns with P1's previous statements about the importance of community and sustainability throughout the conversation.",
+            "NO. The line is consistent with P2's previous statements emphasizing the importance of community initiatives and collective action in fostering a sense of belonging and sustainability."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO \n\nThe line does not contradict any previous line stated by P1 since it continues the conversation by asking P2 about their inspiration for pursuing a specific career.",
+            "NO. The line does not contradict P2's previous statements, as it elaborates on P2's motivations for pursuing a career in environmental education, which aligns with the initial question about their inspiration.",
+            "NO. P1's line aligns with their previous statements, emphasizing a shared belief in creating equitable access to knowledge and resources in environmental education.",
+            "NO. P2's statement about collaboration and shared knowledge aligns with their previous emphasis on community support and empowerment, reflecting a consistent belief in the importance of collective efforts for social justice and education.",
+            "NO. The line does not contradict any previous statement made by P1, as it continues to emphasize the importance of collaboration and community support in addressing challenges, aligning with P1's earlier sentiments about fostering a sense of community and making a difference.",
+            "NO. The line does not contradict previous statements made by P2, as it further emphasizes the importance of collaboration and understanding in addressing community needs, which aligns with P2's earlier comments about fostering a resilient community and advocating for justice.",
+            "NO. The line does not contradict previous lines stated by P1, as it aligns with the ongoing theme of collaboration, community connection, and shared experiences in environmental education expressed earlier in the conversation.",
+            "NO. The line does not contradict any previous statements made by P2; it aligns with P2's expressed commitment to community support and collaboration in environmental education and advocacy.",
+            "NO. P1's line does not contradict previous statements; it aligns with their expressed belief in creating equitable access to knowledge and fostering community through environmental education.",
+            "NO. The line does not contradict previous statements made by P2, as it aligns with P2's emphasis on the importance of community gardens in fostering connection and responsibility within the community."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P1: P2: That's true! So, what inspired you to pursue a career in environmental education?\n",
+                5,
+                [
+                    "D) Sustainability and community engagement",
+                    "C) They instilled a strong sense of curiosity and resilience.",
+                    "C) Hiking and stargazing",
+                    "C) Her curiosity and resilience contributed to her views on social justice.",
+                    "B) The love and chaos brought by her upbringing and their dog Rusty"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: My passion for education has always been rooted in my belief in justice and community support. I realized that environmental issues disproportionately affect marginalized communities, and I felt compelled to educate others about these challenges and empower them to advocate for change. It's a way to continue uplifting those who, like my family and me, have faced hardships.\n",
+                5,
+                [
+                    "The correct answer is:  \nB) Education, justice, and community support",
+                    "The most appropriate answer based on my background and commitment to uplifting newcomers is:  \nC) Associate Director of DuPage County's District 5.",
+                    "C) Supporting inclusivity and immigrant rights",
+                    "C) By providing guidance and support to adjust to their new lives",
+                    "B) Your family\u2019s experiences fleeing from a regime"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P2: That's incredibly inspiring! I completely resonate with that\u2014my journey into environmental education also stems from a desire to create equitable access to knowledge and resources. It's empowering to know we can make a difference while fostering a sense of community.\n",
+                5,
+                [
+                    "The correct answer is: D) Sustainability and community engagement.",
+                    "C) They instilled a strong sense of curiosity and resilience.",
+                    "C) Hiking and stargazing",
+                    "The correct answer is: **C) Her curiosity and resilience contributed to her views on social justice.**",
+                    "B) The love and chaos brought by her upbringing and their dog Rusty"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: I'm glad to hear that! Collaboration and shared knowledge are indeed vital in fostering a resilient community. Together, we can amplify our efforts and pave the way for a more just and equitable future for everyone.\n",
+                5,
+                [
+                    "B) Education, justice, and community support",
+                    "C) Associate Director of DuPage County's District 5",
+                    "C) Supporting inclusivity and immigrant rights",
+                    "C) By providing guidance and support to adjust to their new lives",
+                    "B) Your family\u2019s experiences fleeing from a regime"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Absolutely! I believe that by working together and sharing our diverse perspectives, we can tackle the systemic challenges we face more effectively. It\u2019s all about building connections and nurturing a supportive community to drive lasting change.\n",
+                5,
+                [
+                    "The correct answer is: D) Sustainability and community engagement.",
+                    "C) They instilled a strong sense of curiosity and resilience.",
+                    "C) Hiking and stargazing",
+                    "C) Her curiosity and resilience contributed to her views on social justice.",
+                    "The best answer is:  \nB) The love and chaos brought by her upbringing and their dog Rusty  \n\nThis option reflects the supportive and nurturing environment Jess experienced, which likely fostered her values of community engagement and resilience."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Exactly! These connections not only enhance our understanding but also empower us to create solutions that truly reflect the needs of our communities. It's heartening to see how our shared commitment can lead to meaningful progress.\n",
+                5,
+                [
+                    "B) Education, justice, and community support",
+                    "C) Associate Director of DuPage County's District 5",
+                    "C) Supporting inclusivity and immigrant rights",
+                    "C) By providing guidance and support to adjust to their new lives",
+                    "B) Your family\u2019s experiences fleeing from a regime"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I couldn't agree more! It's exciting to think about the potential for innovation that arises when we come together with open minds and hearts. I\u2019m eager to hear more about your own experiences in building community connections for environmental initiatives!\n",
+                5,
+                [
+                    "The primary focus of Jess's career as an environmental educator is:  \nD) Sustainability and community engagement.",
+                    "C) They instilled a strong sense of curiosity and resilience.",
+                    "C) Hiking and stargazing",
+                    "The correct answer is C) Her curiosity and resilience contributed to her views on social justice.",
+                    "B) The love and chaos brought by her upbringing and their dog Rusty"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Throughout my journey, I've organized community workshops and events focused on sustainable practices, bringing together diverse voices to share ideas and strategies. One memorable initiative was a community garden project that not only educated residents about local food sources but also fostered a sense of ownership and pride in our environment. Witnessing the transformation and unity in my community reinforced my belief in the power of collective action.\n",
+                5,
+                [
+                    "The correct answer is:  \nB) Education, justice, and community support",
+                    "C) Associate Director of DuPage County's District 5",
+                    "C) Supporting inclusivity and immigrant rights",
+                    "C) By providing guidance and support to adjust to their new lives",
+                    "B) Your family\u2019s experiences fleeing from a regime"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That sounds like such a rewarding experience! I love how community gardens can create both education and connection\u2014it's amazing to see how they nurture not just the land but the people too. I've always believed that when we invest in our local resources, we can foster a deeper appreciation and commitment to sustainability.\n",
+                5,
+                [
+                    "The correct answer is D) Sustainability and community engagement.",
+                    "The correct answer is: C) They instilled a strong sense of curiosity and resilience.",
+                    "C) Hiking and stargazing",
+                    "C) Her curiosity and resilience contributed to her views on social justice.",
+                    "The correct answer is: B) The love and chaos brought by her upbringing and their dog Rusty."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Absolutely! Community gardens do indeed cultivate a sense of belonging and responsibility, bridging the gap between people and nature. It's essential that we continue to nurture these local initiatives, as they play a crucial role in building a sustainable and engaged community.\n",
+                5,
+                [
+                    "B) Education, justice, and community support",
+                    "C) Associate Director of DuPage County's District 5",
+                    "C) Supporting inclusivity and immigrant rights",
+                    "C) By providing guidance and support to adjust to their new lives",
+                    "B) Your family\u2019s experiences fleeing from a regime"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: Based on Jess's background, what is the primary focus of her career as an environmental educator?  \nA) Organizing community events  \nB) Promoting spiritual practices  \nC) Advocacy for social justice  \nD) Sustainability and community engagement  \nE) Teaching art and literature  \n\n",
+                "Question: Given Jess's upbringing and career path, what influence did her parents' background likely have on her views on sustainability?  \nA) They were deeply involved in organized religion.  \nB) They encouraged competition over collaboration.  \nC) They instilled a strong sense of curiosity and resilience.  \nD) They emphasized traditional Midwestern values without adapting.  \nE) They discouraged engagement with the outdoors.  \n\n",
+                "Question: Which of the following activities does Jess partake in with her close circle of friends, reflecting her passion for the outdoors?  \nA) Cooking gourmet meals  \nB) Attending music festivals  \nC) Hiking and stargazing  \nD) Volunteering at animal shelters  \nE) Traveling to urban cities  \n\n",
+                "Question: How did Jess's upbringing and experiences shape her political views?  \nA) She was influenced by her parents' Midwestern values alone.  \nB) She developed a focus solely on personal success and ambition.  \nC) Her curiosity and resilience contributed to her views on social justice.  \nD) She aims to keep her political views separate from her career.  \nE) She adopted a skeptical attitude toward environmental issues.  \n\n",
+                "Question: What aspect of Jess's upbringing helped shape her interest in community engagement?  \nA) Her parents' meticulous organization of spiritual practices  \nB) The love and chaos brought by her upbringing and their dog Rusty  \nC) Her decision to remain an only child  \nD) The lack of exposure to diverse cultures  \nE) Her parents' emphasis on competition over cooperation  \n\n"
+            ],
+            [
+                "Answer: D) Sustainability and community engagement",
+                "Answer: C) They instilled a strong sense of curiosity and resilience.",
+                "Answer: C) Hiking and stargazing",
+                "Answer: C) Her curiosity and resilience contributed to her views on social justice.",
+                "Answer: B) The love and chaos brought by her upbringing and their dog Rusty"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: Based on your experiences and advocacy work, what key values do you prioritize in your community involvement?  \nA) Competition and individualism  \nB) Education, justice, and community support  \nC) Wealth accumulation and status  \nD) Isolation and self-reliance  \nE) Political neutrality  \n\n",
+                "Question: Given your background and commitment to uplifting newcomers, which roles have you taken on in your community?  \nA) Military service  \nB) Entrepreneurial ventures  \nC) Associate Director of DuPage County's District 5  \nD) Professional sports coaching  \nE) Environmental activism  \n\n",
+                "Question: Considering your journey from being an illegal alien to becoming a citizen of two countries, what has been a significant focus of your advocacy work?  \nA) Promoting isolationist policies  \nB) Increasing barriers for immigrants  \nC) Supporting inclusivity and immigrant rights  \nD) Advocating for total cultural assimilation  \nE) Discouraging community engagement  \n\n",
+                "Question: In what specific ways do you demonstrate your commitment to mentoring newcomers in your community?  \nA) By hosting exclusive events for established citizens  \nB) By only focusing on your personal achievements  \nC) By providing guidance and support to adjust to their new lives  \nD) By avoiding interactions with immigrants  \nE) By discouraging their integration into society  \n\n",
+                "Question: What inspired your commitment to supporting immigrants and serving your community?  \nA) A desire for personal fame  \nB) Your family\u2019s experiences fleeing from a regime  \nC) A lack of opportunities in your life  \nD) Pressure from friends and family  \nE) A goal to gain political power  \n\n"
+            ],
+            [
+                "Answer: B) Education, justice, and community support",
+                "Answer: C) Associate Director of DuPage County's District 5  ",
+                "Answer: C) Supporting inclusivity and immigrant rights",
+                "Answer: C) By providing guidance and support to adjust to their new lives",
+                "Answer: B) Your family\u2019s experiences fleeing from a regime"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -85,7 +859,265 @@
         "index": 3,
         "timestamp": "2025-04-08 02:54:40",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict P2's backstory, as it reflects his supportive nature and his passion for helping others through meaningful conversations.",
+            "NO. The line does not contradict P1's backstory as it aligns with their reflective nature and appreciation for sharing insights and hearing different perspectives, which is indicative of their diverse experiences and values.",
+            "NO. The line aligns with P2's backstory, as it reflects their passion for helping others and their belief in the importance of shared experiences for personal growth and understanding.",
+            "NO. The line does not contradict the backstory, as it aligns with P1's experiences in both diverse careers and relationships that emphasize adaptability and the need for balance in life.",
+            "NO. The line does not contradict the backstory of P2, as it reflects P2's passion for helping others and his experience in navigating life's challenges, which aligns with his role as a Customer Service Representative and his interest in spirituality.",
+            "NO. The line aligns with P1's backstory, as it highlights adaptability in various roles and a focus on communication, which reflects their diverse career experiences and values.",
+            "NO. The line does not contradict P2's backstory, as it reflects his appreciation for supportive environments and potentially relates to his own experiences engaging with personal interests and his passion for helping others.",
+            "NO. The line aligns with P1's backstory, as it emphasizes the importance of personal interests and balance, which is consistent with their experiences of enjoying fishing and quiet nights at home.",
+            "NO. P2's line about maintaining balance through scheduling personal time aligns with their backstory of exploring spirituality and nurturing a supportive community, suggesting they value self-care and focus.",
+            "NO. The line aligns with P1's backstory, as it mentions enjoying fishing along the coast and quiet evenings at home with a cat, both of which are consistent with P1's stated interests and lifestyle."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line does not contradict any line in the conversation history of P2 as it is consistent with their role of engaging with P1 and showing curiosity about their motivations.",
+            "NO. The line does not contradict any previous statements made by P1 as it is consistent with their reflections and desire to connect.",
+            "NO. The line does not contradict any previous lines stated by P2; instead, it is consistent with their earlier thoughts on the value of sharing experiences for personal growth and understanding.",
+            "NO. The line does not contradict any previous statements made by P1, as it reflects their insights about adaptability, relationships, and balance which were thematically consistent throughout the conversation.",
+            "NO. The line does not contradict any previous lines spoken by P2, as it echoes support for the idea of adaptability while asking for specific applications of that concept.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with their reflections on adaptability, communication, and maintaining balance between work and personal life.",
+            "NO. The line does not contradict any of P2's previous statements; it aligns with P2's focus on balance and personal interests.",
+            "NO. The line does not contradict any of P1's previous statements, as P1 has consistently mentioned the importance of prioritizing personal interests and maintaining balance in their life throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with P2's prior acknowledgment of the importance of scheduling personal time for maintaining focus and energy.",
+            "NO. The line does not contradict any previous statements made by P1, as they consistently mentioned looking forward to fishing and enjoying quiet evenings at home with their cat throughout the conversation."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict any previous statements by P2, as it reflects curiosity about P1's motivations for contacting them.",
+            "NO. The line does not contradict any previous statement made by P1; it aligns with the idea of reaching out to connect and share insights.",
+            "NO. The line does not contradict previous statements made by P2, as it is consistent with P2's support for sharing experiences to foster growth and understanding.",
+            "NO. P1\u2019s latest statement about adaptability, relationships, and balance does not contradict the previous statement regarding reflecting on their journey and gaining insights from varied experiences.",
+            "NO. P2's line is consistent with the previous statements about valuing the sharing of experiences and insights, as they continue to engage with P1 by asking how those insights have been applied in life.",
+            "NO. The line does not contradict previous statements made by P1, as it elaborates on the theme of adaptability and balance in life while providing specific examples related to their work at Micro Center and personal interests.",
+            "NO. P2's line does not contradict previous statements, as they have consistently shown an interest in how P1 balances work and personal interests.",
+            "NO. The line does not contradict previous statements made by P1, as it aligns with their earlier mention of balancing work commitments with personal interests and emphasizes the importance of setting time for such activities.",
+            "NO. P2's line aligns with their previous statements about the importance of maintaining balance and scheduling personal time to stay focused and energized, showing consistency in their viewpoint.",
+            "NO. P1's line about enjoying fishing along the coast and quiet evenings at home with their cat does not contradict their previous statements regarding setting aside time for personal interests and the importance of balance in their life."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P2: P2: Hey there! I'm curious, what inspired you to reach out today?\n",
+                5,
+                [
+                    "B) Customer Service Representative",
+                    "B) Japanese and Irish",
+                    "C) 35",
+                    "C) Denver",
+                    "B) Meditation"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I've been reflecting on my journey and how my varied experiences have shaped who I am today. Reaching out felt like a good way to connect and share those insights with someone else. Plus, I always enjoy hearing different perspectives!\n",
+                5,
+                [
+                    "B) Albuquerque, New Mexico",
+                    "C) Barber",
+                    "D) Several years",
+                    "C) Navy",
+                    "C) Fishing"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: That's great to hear! I think sharing our experiences can really help us grow and understand each other better. What specific insights have you gained that stand out the most for you?\n",
+                4,
+                [
+                    "B) Customer Service Representative",
+                    "The primary cultural background of my parents, which contributed to my eclectic upbringing, is B) Japanese and Irish.",
+                    "The correct answer is A) 25. This age reflects the period when I began to transform my life into one of purpose after navigating health challenges and emotional struggles.",
+                    "C) Denver",
+                    "B) Meditation"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: One key insight I've gained is the importance of adaptability\u2014my diverse career path taught me to embrace change and stay open to new opportunities. Additionally, my relationships have shown me that love and commitment take many forms, each with its own lessons. Lastly, I've learned that balance is essential, whether it's between work and personal life or embracing adventure while finding time for quiet moments.\n",
+                5,
+                [
+                    "B) Albuquerque, New Mexico",
+                    "C) Barber",
+                    "D) Several years",
+                    "C) Navy",
+                    "C) Fishing"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Those are powerful insights! Adaptability truly is crucial in navigating life\u2019s ups and downs. How have you applied these lessons in your daily life or work at Micro Center?\n",
+                4,
+                [
+                    "B) Customer Service Representative",
+                    "The correct answer is:  \nB) Japanese and Irish",
+                    "The correct answer is **B) 30**.",
+                    "C) Denver",
+                    "B) Meditation"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: At Micro Center, I've embraced adaptability by taking on various roles and learning from each experience, which has enhanced my problem-solving skills. I also prioritize communication with my team, fostering a collaborative environment where we can share insights and support one another. Balancing my work commitments with my personal interests, like spending time with my cat, ensures I stay grounded and energized.\n",
+                5,
+                [
+                    "B) Albuquerque, New Mexico",
+                    "C) Barber",
+                    "D) Several years",
+                    "C) Navy",
+                    "C) Fishing"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: That's wonderful to hear! It sounds like you\u2019ve created a supportive and dynamic workplace, which is so important. How do you find time to engage in your personal interests amidst your busy schedule?\n",
+                5,
+                [
+                    "B) Customer Service Representative",
+                    "B) Japanese and Irish",
+                    "C) 35",
+                    "C) Denver",
+                    "B) Meditation  "
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I prioritize my personal interests by setting aside dedicated time in my schedule, treating them as essential appointments. Whether it's fishing on the weekends or enjoying quiet evenings at home, these moments rejuvenate me and keep my perspective fresh. It\u2019s all about finding that balance and making time for what truly matters.\n",
+                5,
+                [
+                    "B) Albuquerque, New Mexico",
+                    "C) Barber",
+                    "D) Several years",
+                    "C) Navy",
+                    "C) Fishing"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That's a great approach to maintaining balance! I've found that scheduling personal time really helps me stay focused and energized as well. Do you have any specific activities that you look forward to most on your weekends?\n",
+                4,
+                [
+                    "The correct answer is: B) Customer Service Representative.",
+                    "B) Japanese and Irish",
+                    "Based on the conversation and my backstory, the correct answer would be: B) 30.",
+                    "C) Denver",
+                    "The correct answer is: B) Meditation."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Absolutely! I really look forward to fishing along the coast\u2014being out in nature is incredibly refreshing. I also enjoy quiet evenings at home with my cat, watching movies or reading a good book. Those moments recharge me for the week ahead!\n",
+                5,
+                [
+                    "B) Albuquerque, New Mexico",
+                    "C) Barber",
+                    "D) Several years",
+                    "C) Navy",
+                    "C) Fishing"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 4.4,
+        "P1_backstory_test": [
+            [
+                "Question: Where were you originally from?  \nA) San Diego, California  \nB) Albuquerque, New Mexico  \nC) Dallas, Texas  \nD) Denver, Colorado  \nE) Miami, Florida  \n\n",
+                "Question: What was one of the roles you took on in your diverse career path?  \nA) Teacher  \nB) Electrician  \nC) Barber  \nD) Chef  \nE) Nurse  \n\n",
+                "Question: How many years have you been committed to your wonderful partner?  \nA) 1 year  \nB) 3 years  \nC) 5 years  \nD) Several years  \nE) Over a decade  \n\n",
+                "Question: What branch of military service did your dad belong to?  \nA) Army  \nB) Air Force  \nC) Navy  \nD) Marines  \nE) Coast Guard  \n\n",
+                "Question: What activity do you enjoy that involves spending time at the coast?  \nA) Surfing  \nB) Hiking  \nC) Fishing  \nD) Swimming  \nE) Sunbathing  \n\n"
+            ],
+            [
+                "Answer: B) Albuquerque, New Mexico",
+                "Answer: C) Barber",
+                "Answer: D) Several years",
+                "Answer: C) Navy",
+                "Answer: C) Fishing  "
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What specific role do you hold at Micro Center that reflects your passion for helping others?  \nA) Store Manager  \nB) Customer Service Representative  \nC) Inventory Supervisor  \nD) Sales Associate  \nE) Technical Support Specialist  \n\n",
+                "Question: What is the primary cultural background of your parents, which contributed to your eclectic upbringing?  \nA) Chinese and Italian  \nB) Japanese and Irish  \nC) Mexican and German  \nD) French and African American  \nE) Indian and Russian  \n\n",
+                "Question: At what age did you experience a significant transformation in your life, ultimately leading to your current career?  \nA) 25  \nB) 30  \nC) 35  \nD) 20  \nE) 18  \n\n",
+                "Question: In which city were you raised, contributing to your diverse cultural upbringing?  \nA) Honolulu  \nB) Seattle  \nC) Denver  \nD) San Francisco  \nE) Atlanta  \n\n",
+                "Question: What activity did you find solace in during your upbringing, which may have helped you navigate your emotional struggles?  \nA) Sports  \nB) Meditation  \nC) Video games  \nD) Painting  \nE) Cooking  \n\n"
+            ],
+            [
+                "Answer: B) Customer Service Representative",
+                "Answer: B) Japanese and Irish",
+                "Answer: C) 35",
+                "Answer: C) Denver  ",
+                "Answer: B) Meditation"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -107,7 +1139,265 @@
         "index": 4,
         "timestamp": "2025-04-08 02:54:51",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line reflects a thoughtful engagement with change, which aligns with P1's experiences of navigating life after battling cancer and allows for personal reflection, consistent with their character.",
+            "NO. The line aligns with P2's backstory, highlighting his determination to make an impact in immigration law and his connection to storytelling through poetry, which reflects his values and interests.",
+            "NO. The line aligns with P1's values of authenticity and resilience, as well as her appreciation for literature and storytelling as means of connection and empathy.",
+            "NO. The line aligns with P2's backstory, as it highlights his connection to the immigrant experience and his passion for advocacy, which are consistent with his values and heritage.",
+            "NO. The line aligns with P1's backstory as it emphasizes their appreciation for diverse voices in literature and the importance of resilience, both of which are consistent with their values and experiences.",
+            "NO. The line aligns with P2's backstory as it reflects his values of resilience and the importance of his upbringing, while emphasizing the potential for change amidst challenges.",
+            "NO. The line does not contradict P1's backstory, as it reflects her values of sharing stories, uplifting others, and creating positive impact, which aligns with her experiences and beliefs.",
+            "NO. The line aligns with P2's backstory, as it reflects his passion for advocating for immigrant rights and humanizing the legal process, which are consistent with his goal of becoming an immigration lawyer and his commitment to social justice.",
+            "NO. The line does not contradict P1's backstory, as it reflects their appreciation for storytelling and connection, which aligns with their values as an educator and the inspiration they draw from literature and diverse experiences.",
+            "NO. The line aligns with P2's backstory as it reflects his values of empathy, social justice, and his work at the Legal Aid Society focused on helping individuals with unique stories in the context of immigration."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line reflects a natural progression of the conversation and does not contradict any previous statements made by P1.",
+            "NO. The line aligns with P2\u2019s previous statements about their commitment to making a difference through immigration law and the importance of storytelling in advocacy.",
+            "NO. The line does not contradict any previous statements made by P1, as P1 consistently praises storytelling as a significant tool for empathy and connection.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their expressed thoughts about the importance of stories and their connection to the immigrant experience and advocacy for social change.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with the theme of seeking inspiration through diverse stories and acknowledges the importance of resilience in driving change.",
+            "NO. The line does not contradict any line stated by P2, as it is consistent with P2's emphasis on the importance of storytelling, honoring roots, and fostering change through personal narratives.",
+            "NO. P1's statement about believing in the power of sharing stories and uplifting others is consistent with their previous comments regarding the importance of storytelling and its impact on creating change.",
+            "NO. The line expresses P2's consistent commitment to using storytelling and personal narratives in advocating for immigrant rights, which aligns with their previous statements about making a change through advocacy and empathy.",
+            "NO. The line expresses admiration for P2's approach to humanizing the legal process through storytelling, which aligns with P1's earlier statements about the power of storytelling and connecting with diverse narratives.",
+            "NO. The line does not contradict any lines stated by P2 as it continues the theme of fostering empathy and understanding through storytelling in immigration law, which P2 has consistently emphasized throughout the conversation."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict previous statements made by P1, as it continues the topic of change without conflicting with earlier thoughts.",
+            "NO. P2's line does not contradict their previous statements since they are consistently discussing their thoughts about the future and their desire to make an impact through immigration law and storytelling.",
+            "NO. The line does not contradict any previous statements by P1, as it expresses admiration for P2's commitment and discusses the significance of storytelling, which aligns with the ongoing theme of their conversation.",
+            "NO. P2's statement about the stories of resilience and hope reflecting the immigrant experience aligns with their previous points about wanting to make an impact through immigration law and storytelling.",
+            "NO. P1's line is consistent with their previous statements about valuing diverse voices in literature and how storytelling can inspire change, reinforcing their admiration for P2's commitment.",
+            "NO. P2's line builds on their previous statements about the importance of stories and demonstrates a consistent theme of honoring the past while advocating for change.",
+            "NO. The line does not contradict previous statements by P1, as it continues to support the idea of sharing stories and using narratives to inspire change, which P1 has expressed before.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their earlier expressed commitment to advocacy through storytelling in immigration law.",
+            "NO. The line expressed by P1 aligns with their prior statements about the power of storytelling and connecting human experiences, reinforcing their admiration for P2's approach without contradicting previous sentiments.",
+            "NO. The line aligns with P2's previously stated commitment to humanizing the legal process and emphasizing the importance of individual stories in advocating for immigrant rights."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P1: P2: That's right! It\u2019s interesting to think about how much has changed in just a few months. What has been on your mind lately?\n",
+                5,
+                [
+                    "C) You battled cancer",
+                    "C) Music",
+                    "D) English teacher",
+                    "C) Mississippi",
+                    "B) They instilled a love for learning in you"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I've been thinking a lot about the future and how I can make a bigger impact through my work in immigration law. It's also been on my mind how storytelling, whether through poetry or advocacy, can really help families like mine navigate tough situations. There's so much that needs to be done, and I'm determined to be part of that change.\n",
+                5,
+                [
+                    "The correct answer is: B) Immigration Lawyer.",
+                    "C) Florida International University",
+                    "C) Three",
+                    "B) Hard Work",
+                    "D) 24"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P2, I admire your commitment to making a difference in the world, especially through storytelling\u2014it's such a powerful tool for empathy and understanding. It reminds me of how literature can serve as a bridge, connecting people from different backgrounds and experiences. What kind of stories have resonated with you most in your journey?\n",
+                5,
+                [
+                    "C) You battled cancer",
+                    "C) Music",
+                    "D) English teacher",
+                    "C) Mississippi",
+                    "B) They instilled a love for learning in you"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I've found that stories of resilience and hope resonate deeply with me, especially those that reflect the immigrant experience. Works by writers like Julia de Burgos and Eduardo Galeano have inspired me to embrace my roots while pushing for social change. Their narratives remind me of the struggles my family faced and fuel my passion for advocacy.\n",
+                5,
+                [
+                    "B) Immigration Lawyer",
+                    "C) Florida International University",
+                    "C) Three",
+                    "B) Hard Work",
+                    "D) 24"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I completely relate to that, especially as someone who seeks inspiration from diverse voices in literature. The resilience shown in those narratives not only honors the past but also fuels the fire for change in the present. It\u2019s incredible how stories can keep our roots alive while pushing us toward a brighter future.\n",
+                5,
+                [
+                    "C) You battled cancer",
+                    "C) Music",
+                    "D) English teacher",
+                    "C) Mississippi",
+                    "B) They instilled a love for learning in you"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Absolutely! It's about honoring where we come from while using those stories to shape the path ahead. These narratives give us strength and remind us that change is possible, no matter the challenges we face.\n",
+                5,
+                [
+                    "B) Immigration Lawyer",
+                    "C) Florida International University",
+                    "C) Three",
+                    "B) Hard Work",
+                    "D) 24"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: Exactly! It's a delicate balance, but I believe that by sharing our own stories and uplifting others, we can create a powerful movement for change. I'm curious, how do you envision using your voice in the legal field to amplify those narratives?\n",
+                5,
+                [
+                    "C) You battled cancer",
+                    "C) Music",
+                    "D) English teacher",
+                    "C) Mississippi",
+                    "B) They instilled a love for learning in you"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I envision using my voice in the legal field to advocate passionately for immigrant rights and share the stories of those I've encountered through my work. By incorporating personal narratives into my cases, I aim to humanize the legal process and bring a deeper understanding of our shared experiences. Ultimately, I want to make the law more accessible and relatable, empowering individuals to share their own stories.\n",
+                5,
+                [
+                    "The correct answer is B) Immigration Lawyer.",
+                    "C) Florida International University",
+                    "C) Three",
+                    "B) Hard Work",
+                    "D) 24"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: That's such a powerful approach, and I love the idea of humanizing the legal process through storytelling. By creating that connection, you'll not only empower individuals but also inspire others within the legal community to see the humanity behind the cases. I can only imagine how transformative that will be for both clients and advocates alike!\n",
+                5,
+                [
+                    "C) You battled cancer",
+                    "C) Music",
+                    "The correct answer is: D) English teacher",
+                    "C) Mississippi",
+                    "B) They instilled a love for learning in you"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Thank you! I truly believe that when we view our clients as individuals with unique stories, we can shift the entire conversation around immigration. It\u2019s about fostering empathy and breaking down barriers in understanding. I'm excited to see how these connections can help us create a more just and compassionate legal system.\n",
+                5,
+                [
+                    "B) Immigration Lawyer",
+                    "C) Florida International University",
+                    "C) Three",
+                    "B) Hard Work",
+                    "D) 24"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: What significant life challenge have you overcome that shapes your current perspective and teaching approach?  \nA) You learned to play a musical instrument  \nB) You traveled extensively around the world  \nC) You battled cancer  \nD) You started a non-profit organization  \nE) You published a bestselling novel  \n\n",
+                "Question: What is one of the creative outlets that you use to connect with others amidst your ongoing health challenges?  \nA) Painting  \nB) Cooking  \nC) Music  \nD) Gardening  \nE) Photography  \n\n",
+                "Question: What is the primary profession you are currently pursuing while living in Boulder, Colorado?  \nA) Scientist  \nB) Engineer  \nC) Musician  \nD) English teacher  \nE) Chef  \n\n",
+                "Question: In which state did you grow up before moving to Boulder, Colorado?  \nA) Alabama  \nB) Texas  \nC) Mississippi  \nD) Florida  \nE) Arkansas  \n\n",
+                "Question: What role do your parents\u2019 professions play in your educational values?  \nA) They taught you how to balance work and life  \nB) They instilled a love for learning in you  \nC) They encouraged you to become an artist  \nD) They pushed you to focus only on science  \nE) They cultivated your interest in sports  \n\n"
+            ],
+            [
+                "Answer: C) You battled cancer  ",
+                "Answer: C) Music",
+                "Answer: D) English teacher  ",
+                "Answer: C) Mississippi",
+                "Answer: B) They instilled a love for learning in you"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What profession is Carlos currently pursuing at the Legal Aid Society of Broward County?  \nA) Family Lawyer  \nB) Immigration Lawyer  \nC) Corporate Lawyer  \nD) Criminal Defense Lawyer  \nE) Environmental Lawyer  \n\n",
+                "Question: What university did Carlos graduate from?  \nA) University of Miami  \nB) Florida State University  \nC) Florida International University  \nD) University of Florida  \nE) Nova Southeastern University  \n\n",
+                "Question: How many brothers does Carlos have?  \nA) One  \nB) Two  \nC) Three  \nD) Four  \nE) Five  \n\n",
+                "Question: What is a key value that Carlos\u2019s mother instilled in him?  \nA) Independence  \nB) Hard Work  \nC) Wealth Accumulation  \nD) Competitive Spirit  \nE) Academic Excellence  \n\n",
+                "Question: What is Carlos's age?  \nA) 21  \nB) 22  \nC) 23  \nD) 24  \nE) 25  \n\n"
+            ],
+            [
+                "Answer: B) Immigration Lawyer",
+                "Answer: C) Florida International University",
+                "Answer: C) Three",
+                "Answer: B) Hard Work",
+                "Answer: D) 24  "
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -129,7 +1419,265 @@
         "index": 5,
         "timestamp": "2025-04-08 02:55:04",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict P2's backstory as it reflects P2's ambition and interest in discussing career paths, which aligns with their focus on helping people and pursuing a career in medical science and cosmetology.",
+            "NO. The line aligns with P1's backstory, as it emphasizes their desire to create stability after a tumultuous upbringing and their passion for using technology to help others facing similar struggles.",
+            "NO. The line aligns with P2's backstory as it reflects their understanding of how past experiences influence ambitions and their desire to help others.",
+            "NO. The line does not contradict P1's backstory, as it aligns with P1's desire to advocate for others facing similar struggles and foster a sense of belonging, reflecting their journey toward healing.",
+            "NO. The line does not contradict the backstory as it reflects P2's focus on helping people and improving lives, aligning with their ambition in medical science and cosmetology.",
+            "NO. The line aligns with P1's hope to advocate for others facing similar struggles and their desire to break the cycle of isolation, reflecting their personal journey toward healing and belonging.",
+            "NO. The line aligns with P2's ambition to help people and improve lives, reflecting their supportive nature and understanding of creating a safe space for individuals.",
+            "NO. The line does not contradict P1's backstory, as it aligns with P1's desire to advocate for others facing similar struggles and suggests proactive steps towards healing and community engagement.",
+            "NO. The line reflects P2's interest in helping people and improving lives, which aligns with their career ambitions and supportive nature described in the backstory.",
+            "NO. The line reflects P1's positive outlook on collaboration and engagement, which aligns with their desire to advocate for others and find connection despite their self-imposed loneliness."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line does not contradict any previous statements made by P2, as it expresses excitement about discussing P1's interests and experiences.",
+            "NO. The line does not contradict any previous statements made by P1, as it consistently expresses the influence of P1's upbringing and experiences on their career path and desire to help others.",
+            "NO. The line does not contradict any previous lines stated by P2; it aligns with P2's supportive nature and inquiry about P1's projects and goals.",
+            "NO. The line does not contradict any previous lines stated by P1, as it aligns with their expressed goals of helping individuals facing mental health challenges and creating workshops for underprivileged communities.",
+            "NO. The line expresses enthusiasm and support for P1's initiative, which is consistent with P2's previous comments highlighting the positive impact of using technology to help create communities and provide support.",
+            "NO. The line expresses P1's passion for the app and its goal to create a safe space, which aligns with their previous statements about the app's purpose and the desire to help others facing isolation.",
+            "NO. The line expressed by P2 does not contradict any previous lines, as it is consistent with their supportive perspective regarding the importance of creating a safe space and promoting the app.",
+            "NO. The line does not contradict any previous statements made by P1; it aligns with P1's intentions to promote the app and connect individuals with support resources.",
+            "NO. The line does not contradict any previous statements made by P2; it expresses agreement and encouragement regarding P1's strategy and the potential impact of the app.",
+            "NO. P1's line expresses gratitude for support and emphasizes the importance of collaboration, both of which are consistent with their previous statements about working with organizations and creating a meaningful impact through their app."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict previous statements made by P2, as it expresses excitement about discussing P1's interests and experiences, which is consistent with initiating a conversation.",
+            "NO. The line does not contradict any previous line stated by P1, as it consistently expresses their desire for stability influenced by their upbringing and passion for technology.",
+            "NO. P2's line expresses encouragement and understanding of P1's experiences and aspirations, which aligns with their initial excitement and interest in P1's story.",
+            "NO. The line does not contradict previous statements made by P1, as it elaborates on their desire to help others, which aligns with their previous emphasis on using technology to support people who have faced challenges.",
+            "NO. P2's line is consistent with their previous statements, as they continue to express enthusiasm and support for P1's initiative related to using technology for community building and support.",
+            "NO. The line does not contradict previous statements made by P1, as it aligns with P1's goals of fostering community and providing support through the app they are developing.",
+            "NO. The line does not contradict P2's earlier statements; it continues the supportive and encouraging tone regarding P1's project.",
+            "NO. The line does not contradict any previous statements by P1, as it aligns with P1's goal of connecting individuals with resources and highlights the intention to promote the app through various channels.",
+            "NO. P2's line does not contradict any previous statements, as it expresses support for P1's strategy of partnering with organizations, which aligns with P2's earlier agreement about the importance of promoting the app effectively.",
+            "NO. The line does not contradict previous statements made by P1, as it aligns with their expressed enthusiasm for the app and their intention to keep P2 informed about its development."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P2: Hey, P1! I'm really excited to talk about your interests and experiences\u2014what's something that has influenced your career path the most?\n",
+                5,
+                [
+                    "B) Medical science",
+                    "D) Dancing",
+                    "C) Mexico",
+                    "C) 22",
+                    "C) Helping people and improving lives"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Hey, P2! The biggest influence on my career path has been my desire to create a stable life after such an unstable upbringing. My experiences with technology during tough times have fueled my passion for computers, and I hope to use that passion to help others who have faced similar challenges.\n",
+                5,
+                [
+                    "The correct answer is B) Wisconsin.",
+                    "A) Anxiety and depression",
+                    "B) Mental health awareness",
+                    "C) Computer worker",
+                    "The correct answer is D) Michigan."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That's really inspiring, P1! It's amazing how our past experiences can shape our passions and drive us to make a difference for others. What specific projects or goals do you have in mind for using your tech skills to help people?\n",
+                5,
+                [
+                    "The correct answer is B) Medical science.",
+                    "D) Dancing",
+                    "C) Mexico",
+                    "C) 22",
+                    "The primary focus of Alex's career ambitions is C) Helping people and improving lives."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I'm currently working on a project to develop an app that connects individuals facing mental health challenges with resources and support groups. Additionally, I want to create online workshops that teach tech skills to underprivileged communities, empowering them to improve their circumstances. My ultimate goal is to foster a sense of belonging and community for those who feel isolated, just like I once did.\n",
+                5,
+                [
+                    "B) Wisconsin",
+                    "A) Anxiety and depression",
+                    "B) Mental health awareness",
+                    "C) Computer worker",
+                    "The correct answer is: D) Michigan."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds like a fantastic initiative! Using technology to create communities and provide support is such a powerful way to make a difference. I'm excited to hear more about the app as it develops and how it impacts people's lives!\n",
+                5,
+                [
+                    "The correct answer is B) Medical science.",
+                    "D) Dancing",
+                    "C) Mexico",
+                    "C) 22",
+                    "C) Helping people and improving lives"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Thanks, P2! I'm really passionate about the app, and I hope it can be a safe space for those in need. I believe that by connecting people to resources and each other, we can break the cycle of isolation together.\n",
+                5,
+                [
+                    "B) Wisconsin",
+                    "A) Anxiety and depression",
+                    "B) Mental health awareness",
+                    "C) Computer worker",
+                    "The correct answer is D) Michigan."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: I completely agree! Creating a safe space can really help individuals feel supported and understood. Have you thought about how you'll promote the app to reach those who would benefit the most?\n",
+                5,
+                [
+                    "B) Medical science",
+                    "The correct answer is D) Dancing.",
+                    "The correct answer is: C) Mexico.",
+                    "C) 22",
+                    "C) Helping people and improving lives"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I'm planning to collaborate with mental health organizations and community centers to spread the word, as they already have connections with individuals who need support. Additionally, using social media and online forums will help reach a broader audience. I want to ensure that the app is accessible and easy to find for those who are struggling.\n",
+                5,
+                [
+                    "B) Wisconsin",
+                    "A) Anxiety and depression",
+                    "B) Mental health awareness",
+                    "C) Computer worker",
+                    "The correct answer is D) Michigan."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds like a solid strategy, P1! Partnering with organizations can really amplify your reach and credibility. I'm sure your app will make a meaningful impact in people's lives!\n",
+                5,
+                [
+                    "B) Medical science",
+                    "D) Dancing",
+                    "The correct answer is C) Mexico.",
+                    "C) 22",
+                    "C) Helping people and improving lives"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Thank you, P2! I truly believe that collaboration can create a stronger impact, and I'm grateful for the support and encouragement. I hope to keep you updated on the app as it develops!\n",
+                5,
+                [
+                    "B) Wisconsin",
+                    "A) Anxiety and depression",
+                    "B) Mental health awareness",
+                    "C) Computer worker",
+                    "D) Michigan"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: What state did you grow up in, which was influenced by your parents' troubled marriage?  \nA) Michigan  \nB) Wisconsin  \nC) Minnesota  \nD) Illinois  \nE) Indiana  \n\n",
+                "Question: What mental health issues did you struggle with that stemmed from your childhood experiences?  \nA) Anxiety and depression  \nB) Schizophrenia  \nC) Eating disorders  \nD) Substance abuse  \nE) PTSD  \n\n",
+                "Question: What aspect of your life do you wish to advocate for, in hopes of helping others facing similar struggles?  \nA) Educational opportunities  \nB) Mental health awareness  \nC) Financial literacy  \nD) Career advancement  \nE) Environmental issues  \n\n",
+                "Question: What is your full-time job, which you engage in while navigating personal challenges?  \nA) Teacher  \nB) Chef  \nC) Computer worker  \nD) Salesperson  \nE) Construction worker  \n\n",
+                "Question: What state is your mother originally from, which contributed to your complicated family background?  \nA) Illinois  \nB) Ohio  \nC) Wisconsin  \nD) Michigan  \nE) Minnesota  \n\n"
+            ],
+            [
+                "Answer: B) Wisconsin",
+                "Answer: A) Anxiety and depression",
+                "Answer: B) Mental health awareness",
+                "Answer: C) Computer worker  ",
+                "Answer: D) Michigan"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: Given Alex's background and ambitions, what is one of the career paths Alex is pursuing?  \nA) Engineering  \nB) Medical science  \nC) Graphic design  \nD) Marketing  \nE) Culinary arts  \n\n",
+                "Question: What is one of the personal activities Alex enjoys during their free time?  \nA) Gardening  \nB) Playing video games  \nC) Traveling  \nD) Dancing  \nE) Writing  \n\n",
+                "Question: What is one of the countries that Alex's parents come from?  \nA) Italy  \nB) Canada  \nC) Mexico  \nD) Brazil  \nE) France  \n\n",
+                "Question: What age is Alex as of now?  \nA) 20  \nB) 21  \nC) 22  \nD) 23  \nE) 24  \n\n",
+                "Question: What is the primary focus of Alex's career ambitions?  \nA) Financial success  \nB) Legal advocacy  \nC) Helping people and improving lives  \nD) Creating art  \nE) Sports coaching  \n\n"
+            ],
+            [
+                "Answer: B) Medical science",
+                "Answer: D) Dancing",
+                "Answer: C) Mexico",
+                "Answer: C) 22",
+                "Answer: C) Helping people and improving lives"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -151,7 +1699,265 @@
         "index": 6,
         "timestamp": "2025-04-08 02:55:19",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line aligns with P1's commitment to open-minded discourse and their interest in diverse perspectives, reflecting their values and willingness to learn and adapt.",
+            "NO. The line aligns with P2's backstory, as it reflects Jordan's understanding of the challenges of new parenthood and the importance of community, which is consistent with his desire to support his family and create a better life for his daughter.",
+            "NO. The line aligns with P1's backstory, as it reflects their value of empathy, commitment to open-minded discourse, and the importance they place on sharing personal experiences through their writing.",
+            "NO. The line reflects P2's desire to create a supportive environment in their future classroom, which aligns with P2's commitment to making a difference and fostering resilience in their own life and for their daughter.",
+            "NO. The line aligns with P1's values of fostering open-minded discourse and promoting understanding and empathy, which are reflected in their commitment to diverse perspectives and cultural experiences.",
+            "NO. The line reflects P2's commitment to making a difference in the lives of students and aligns with their aspiration to create a supportive environment, which is consistent with their backstory in elementary education.",
+            "NO. The line aligns with P1\u2019s commitment to racial equality, empathy, and valuing diverse perspectives, which are emphasized in their backstory.",
+            "NO. The line does not contradict the backstory of P2, as it reflects their aspirations for creating a positive and inclusive environment in their future classroom, aligning with their commitment to making a difference and nurturing their daughter's future.",
+            "NO. The line reflects P1's values of open-minded discourse and a commitment to shaping diverse perspectives, aligning with their backstory.",
+            "NO. The line expresses a commitment to making a difference in the lives of future generations, which aligns with P2's aspiration to create a better life for their daughter and their studies in elementary education."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "YES - The line contradicts P1's previous statement because it is incorrectly attributed to P2, while it should be from P1 instead.",
+            "NO. The line expresses a consistent theme of valuing vulnerability, community, and openness, which aligns with P2's previous statements about creating a supportive classroom environment and embracing shared experiences.",
+            "NO. The line does not contradict any prior statements made by P1, as it is consistent with P1's views on the importance of vulnerability and sharing personal experiences to build connections and community.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their expressed desire to create a safe and supportive environment in their future classroom.",
+            "NO. The line does not contradict any previous statements by P1, as it aligns with their ongoing support for creating an inclusive and safe environment for students to share their experiences and grow.",
+            "NO. The line does not contradict any line stated by P2 throughout the conversation, as it aligns with P2's previous emphasis on the importance of community, vulnerability, and celebrating differences in the classroom.",
+            "NO. The line does not contradict any line stated by P1, as P1 consistently emphasizes the importance of empathy, acceptance, and valuing differences throughout the conversation.",
+            "NO. The line aligns with P2's earlier statements about creating a safe and supportive environment for students to express themselves and appreciate diversity.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with the supportive and encouraging tone P1 has maintained throughout the conversation regarding P2's vision for their classroom and the importance of a positive educational environment.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their expressed commitment to creating a positive impact in their future classroom and empowering future generations."
+        ],
+        "P1_all_line_consistency_score": 0.8,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict any previous statements made by P1, as it continues the discussion about changes in societal perspectives and invites P2 to share their insights.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with the theme of societal perspectives and personal experiences discussed in the conversation.",
+            "NO. P1's line supports and builds upon the sentiment expressed in the previous conversation about embracing vulnerability and its positive effects on connections and community.",
+            "NO. P2\u2019s statement about wanting to create a safe space for students to express themselves aligns with their previous remarks about the importance of community and openness, reinforcing their emphasis on vulnerability and connection.",
+            "NO. The line does not contradict any previous statements made by P1; it continues to support the theme of embracing vulnerability and fostering community, which P1 has consistently emphasized.",
+            "NO. The line does not contradict any previous statements by P2, as it continues the theme of creating a supportive environment for sharing experiences and valuing differences that P2 has already expressed.",
+            "NO. The line does not contradict any previous lines stated by P1; instead, it reinforces the previous themes of fostering community and embracing differences among students to cultivate empathy and acceptance.",
+            "NO. The line does not contradict previous statements made by P2; it continues to express a commitment to diversity and community building in the classroom, aligning with earlier sentiments about creating a safe and supportive environment for students.",
+            "NO. The line does not contradict previous statements made by P1, as it continues to support the idea of creating a positive and inclusive environment in the classroom.",
+            "NO. The line does not contradict previous statements made by P2, as it aligns with the overarching theme of fostering a supportive and empowering environment for future generations."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P1: P2: That's true! It\u2019s interesting to think about how much can change in just a few months, especially in terms of societal perspectives and culture. What's something you've learned recently that shifted your viewpoint?\n",
+                5,
+                [
+                    "B) Empathy over statistics",
+                    "B) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                    "C) His identity as a bisexual man in a committed relationship",
+                    "B) A committed relationship as a bisexual man",
+                    "B) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I've recently learned how crucial it is to embrace vulnerability, especially as a new parent. It\u2019s made me realize that asking for help or sharing my struggles doesn\u2019t make me weak; it strengthens my connections and allows others to support me better. Balancing school, family, and my aspirations has taught me the importance of community and openness.\n",
+                5,
+                [
+                    "B) They provide a source of inspiration for resilience.",
+                    "A) Balancing school, parenthood, and family issues.",
+                    "B) A commitment to resilience and love for your family.",
+                    "B) It instills a strong sense of cultural identity and value in education.",
+                    "B) You are uncertain and anxious about the challenges ahead."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That's such an important lesson! Embracing vulnerability truly fosters deeper connections and breaks down barriers. I've found that in my writing as well; sharing personal experiences can resonate with others and create a sense of community.\n",
+                5,
+                [
+                    "B) Empathy over statistics",
+                    "The correct answer is:  \nB) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                    "C) His identity as a bisexual man in a committed relationship",
+                    "The correct answer is:  \nB) A committed relationship as a bisexual man",
+                    "The correct answer is:  \nB) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Absolutely! It's amazing how sharing our stories can unite us and remind us that we're not alone in our struggles. I hope to channel that sense of community into my future classroom, creating a space where students feel safe to express themselves.\n",
+                5,
+                [
+                    "B) They provide a source of inspiration for resilience.",
+                    "The correct answer is: A) Balancing school, parenthood, and family issues.",
+                    "The primary motivation that drives me to create a better life for my daughter amidst my current challenges is B) A commitment to resilience and love for your family.",
+                    "B) It instills a strong sense of cultural identity and value in education.",
+                    "B) You are uncertain and anxious about the challenges ahead."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That's a wonderful goal! Creating a safe space for students will encourage them to embrace their own stories and vulnerabilities, fostering growth and understanding. I believe that kind of environment can truly transform how they engage with each other and the world.\n",
+                5,
+                [
+                    "The correct answer is B) Empathy over statistics.",
+                    "The correct answer is:  \nB) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                    "C) His identity as a bisexual man in a committed relationship",
+                    "B) A committed relationship as a bisexual man",
+                    "B) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Thank you! I really believe that when students feel secure and valued, it empowers them to share their unique experiences, which enriches everyone\u2019s learning. I hope to inspire them to see the beauty in their differences and support one another along the way.\n",
+                5,
+                [
+                    "B) They provide a source of inspiration for resilience.",
+                    "A) Balancing school, parenthood, and family issues.",
+                    "B) A commitment to resilience and love for your family.",
+                    "B) It instills a strong sense of cultural identity and value in education.",
+                    "B) You are uncertain and anxious about the challenges ahead."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I completely agree! Encouraging students to appreciate their differences is essential in cultivating empathy and acceptance. It can lead to a more inclusive society, where everyone's voice is valued.\n",
+                5,
+                [
+                    "B) Empathy over statistics",
+                    "The correct answer is:  \nB) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                    "C) His identity as a bisexual man in a committed relationship",
+                    "The correct answer is:  \nB) A committed relationship as a bisexual man",
+                    "B) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Exactly! I want my future classroom to be a microcosm of the world we want to see\u2014one where diversity is celebrated and students learn to uplift each other. It's about building a foundation for a more compassionate society right from the start.\n",
+                5,
+                [
+                    "B) They provide a source of inspiration for resilience.",
+                    "A) Balancing school, parenthood, and family issues.",
+                    "B) A commitment to resilience and love for your family.",
+                    "B) It instills a strong sense of cultural identity and value in education.",
+                    "B) You are uncertain and anxious about the challenges ahead."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That's a fantastic vision for your classroom! Starting that foundation early can have such a profound impact on shaping how these young minds view and interact with the world around them. I'm excited to see how you create that space for your students!\n",
+                5,
+                [
+                    "B) Empathy over statistics",
+                    "The correct answer is:  \nB) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                    "C) His identity as a bisexual man in a committed relationship",
+                    "B) A committed relationship as a bisexual man",
+                    "B) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Thank you! I can't wait to bring that vision to life and make a difference in their lives. Every little step counts, and I believe the future generations can truly change the world if we equip them with the right values and understanding.\n",
+                5,
+                [
+                    "B) They provide a source of inspiration for resilience.",
+                    "A) Balancing school, parenthood, and family issues.",
+                    "The correct answer is: B) A commitment to resilience and love for your family.",
+                    "B) It instills a strong sense of cultural identity and value in education.",
+                    "B) You are uncertain and anxious about the challenges ahead."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: Based on Alex's background, which of the following values does he particularly prioritize in his social interactions and discussions?  \nA) Strict adherence to statistics  \nB) Empathy over statistics  \nC) Corporate success  \nD) Individualism  \nE) Competitiveness  \n\n",
+                "Question: From where did Alex grow up, and how does it relate to his current values and career?  \nA) Dallas, Texas, where he values corporate success.  \nB) New Braunfels, Texas, where he learned to appreciate diverse perspectives.  \nC) Austin, Texas, where he focused solely on individualism.  \nD) Houston, Texas, where he prioritized competitiveness.  \nE) San Antonio, Texas, where he rejected progressive beliefs.  \n\n",
+                "Question: In addition to his writing career, what significant aspect of his identity does Alex balance in his personal life?  \nA) His passion for corporate management  \nB) His exploring of various competitive sports  \nC) His identity as a bisexual man in a committed relationship  \nD) His dedication to statistical analysis  \nE) His aspiration to become a corporate executive  \n\n",
+                "Question: What kind of relationship does Alex currently maintain in his personal life?  \nA) A casual relationship with multiple partners  \nB) A committed relationship as a bisexual man  \nC) A long-distance relationship with someone in another country  \nD) A relationship focused on individualism  \nE) A relationship strictly based on professional networking  \n\n",
+                "Question: What is a key aspect of Alex's upbringing that influenced his current values and outlook on life?  \nA) He was raised in a rural environment with minimal exposure to diversity.  \nB) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs.  \nC) He grew up in a traditional household that valued strict adherence to rules.  \nD) He was heavily influenced by competitive sports during his childhood.  \nE) He was isolated from different cultures and experiences in his community.  \n\n"
+            ],
+            [
+                "Answer: B) Empathy over statistics",
+                "Answer: B) New Braunfels, Texas, where he learned to appreciate diverse perspectives.",
+                "Answer: C) His identity as a bisexual man in a committed relationship",
+                "Answer: B) A committed relationship as a bisexual man",
+                "Answer: B) His parents, both with corporate backgrounds and MBAs, encouraged him to embrace progressive beliefs."
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What role do your parents' struggles play in your life as you navigate parenthood and education?  \nA) They have no impact on your current situation.  \nB) They provide a source of inspiration for resilience.  \nC) They encourage you to avoid education.  \nD) They convince you to give up on your dreams.  \nE) They distract you from supporting your family.  \n\n",
+                "Question: As a 20-year-old aspiring elementary education teacher, what challenges are you currently navigating while supporting your family?  \nA) Balancing school, parenthood, and family issues.  \nB) Focusing solely on your personal interests.  \nC) Ignoring the importance of education.  \nD) Planning a lengthy vacation.  \nE) Pursuing a career unrelated to teaching.  \n\n",
+                "Question: What primary motivation drives you to create a better life for your daughter amidst your current challenges?  \nA) A desire for personal fame and recognition.  \nB) A commitment to resilience and love for your family.  \nC) The need to prioritize your own needs above others.  \nD) A wish to escape your hometown completely.  \nE) The expectation that your daughter should fend for herself.  \n\n",
+                "Question: How does your background as the child of Puerto Rican immigrants influence your perspective on education and family life?  \nA) It makes you less interested in your studies.  \nB) It instills a strong sense of cultural identity and value in education.  \nC) It discourages you from seeking support for your family.  \nD) It leads you to avoid discussing your heritage.  \nE) It makes you feel disconnected from your community.  \n\n",
+                "Question: How do you feel about the future as you navigate your roles as a student, partner, and new parent?  \nA) You are overwhelmingly optimistic and carefree.  \nB) You are uncertain and anxious about the challenges ahead.  \nC) You feel indifferent and uninterested in what comes next.  \nD) You believe it will be easy to manage everything.  \nE) You are confident that your current struggles will resolve without effort.  \n\n"
+            ],
+            [
+                "Answer: B) They provide a source of inspiration for resilience.",
+                "Answer: A) Balancing school, parenthood, and family issues.",
+                "Answer: B) A commitment to resilience and love for your family.",
+                "Answer: B) It instills a strong sense of cultural identity and value in education.",
+                "Answer: B) You are uncertain and anxious about the challenges ahead."
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -173,7 +1979,265 @@
         "index": 7,
         "timestamp": "2025-04-08 02:55:31",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict the backstory of P2, as it reflects Emily's interest in connecting with others and her passion for creativity and self-expression.",
+            "NO. The line aligns with P1's backstory, as it reflects her passion for making a difference in healthcare, her focus on studying psychology and sociology, and her love for travel and creativity, all of which she mentioned in her backstory.",
+            "NO. The line does not contradict P2's backstory, as it reflects her understanding of how personal experiences can influence creativity and her interest in connecting with others' experiences.",
+            "NO. The line does not contradict the backstory of P1, as it aligns with her passion for travel and appreciation for cultural heritage.",
+            "NO. P2's line about travel opening eyes to new perspectives aligns with her creative pursuits and passion for self-expression in fashion.",
+            "NO. The line does not contradict the backstory of P1, as it reflects her passion for travel and appreciation for nature, which aligns with her character and interests.",
+            "NO. The line reflects P2's appreciation for nature and its impact on mental well-being, which aligns with her interests in outdoor activities like running and hiking mentioned in her backstory.",
+            "NO. The line does not contradict the provided backstory of P1, as it is consistent with her emphasis on compassion, community, and her personal growth in the healthcare field, indicating an interest in mental well-being and mindfulness.",
+            "NO. The line does not contradict the provided backstory of P2 as it aligns with her interests in creativity and self-expression, which are reflected in her degree in fashion and her passion for those themes.",
+            "NO. The line aligns with P1's backstory, as it reflects her experiences in healthcare, her family values, and her connection to her cultural heritage through art and writing."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. The line does not contradict any previous lines spoken by P2; it is consistent with P2's initial greeting and inquiry about P1's passions.",
+            "NO. The line does not contradict any previous statements made by P1, as it consistently expresses their passion for healthcare influenced by a personal experience and their love for traveling and exploring cultures.",
+            "NO. The line does not contradict any previous statements made by P2; it is consistent with P2's supportive responses regarding P1's personal experiences and creativity.",
+            "NO. The line does not contradict any previous statements by P1, as it aligns with their expressed appreciation for travel and the impact of experiences on creativity.",
+            "NO. The line does not contradict any previous statements made by P2; it is a continuation of their enthusiastic engagement with P1's travel experiences.",
+            "NO. The line does not contradict any previous statements by P1, as it aligns with P1's theme of appreciating nature and the importance of mindfulness.",
+            "NO. The line does not contradict any previous statements by P2, as it continues the theme of discussing nature's impact on mindfulness and creativity.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with the theme of incorporating mindfulness and creativity into their daily practices.",
+            "NO. The line does not contradict any previous statements made by P2, as it continues the discussion about mindfulness and its impact on creativity, which P2 has been supportive of throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P1, as it maintains the themes of healthcare, personal experiences, and mindfulness that P1 has consistently expressed throughout the conversation."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict previous statements made by P2, as it introduces a new topic of conversation without conflicting with any prior assertions.",
+            "NO. P1's statement about being passionate about making a difference in healthcare and studying psychology and sociology aligns with their interests and does not contradict any previous lines stated by P1.",
+            "NO. The line does not contradict previous statements by P2, as it reflects P2's encouragement and interest in P1's experiences and does not oppose any prior sentiment expressed.",
+            "NO. The line does not contradict any previous statement made by P1; it expands on P1's love for traveling and the influence it has on their creativity by providing a specific example.",
+            "NO. P2's line does not contradict previous statements as they continue the conversation about the inspirational aspect of travel without any conflicting information.",
+            "NO. The line does not contradict previous statements made by P1, as it continues to elaborate on the inspiration and creativity derived from experiences in Kyoto without conflicting with earlier remarks.",
+            "NO. P2's line does not contradict previous statements, as it continues the theme of appreciating nature and its influence on creativity and personal peace.",
+            "NO. The line does not contradict previous statements by P1, as P1 previously mentioned the importance of mindfulness and nature in their life, and the practices of meditation, journaling, and spending time outdoors align with that sentiment.",
+            "NO. P2's line does not contradict previous statements, as it builds on the conversation about mindfulness and creativity initiated by P1, showing P2's supportive stance towards those practices.",
+            "NO. The line about working on a series of art pieces inspired by themes of healing and connection aligns with P1's earlier statement about making a difference in healthcare and reflects their experiences, including the influence of their grandma's journey with Alzheimer's."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P2: Hi there! What\u2019s something you\u2019re really passionate about right now, whether it\u2019s a hobby, project, or a cause?\n",
+                4,
+                [
+                    "C) Fashion",
+                    "A) Canada and Mexico",
+                    "B) The loss of her second cousin's mom",
+                    "Based on the information given, Emily is currently 22 years old and mentions that she manages anxiety and depression, but the specific age at which she began this journey is not detailed. Therefore, it is not possible to determine the exact age from the options provided. However, since she is now 22, the most logical guess would be A) 18, assuming she may have started this journey earlier in life. Please note this is speculative based on the information available.",
+                    "C) Running and hiking"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I'm really passionate about making a difference in healthcare, especially after my grandma's experience with Alzheimer's. I'm focusing on studying psychology and sociology to better connect with patients and understand their needs. Outside of that, I love traveling and exploring new cultures, which fuels my creativity.\n",
+                5,
+                [
+                    "C) Nursing",
+                    "C) Your grandma's passing from Alzheimer's",
+                    "B) Compassion and community",
+                    "Based on the information provided, I experienced the passing of my grandma before I turned 23, and since I'm now 23, I would have likely been around 20 at the time of her passing. Therefore, the correct answer is:\n\nB) 20",
+                    "The correct answer is: C) The eldest sibling."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds incredibly meaningful! It's amazing how personal experiences can drive us to make a difference in the world. Do you have a favorite place you've traveled to that really inspired your creativity?\n",
+                4,
+                [
+                    "C) Fashion",
+                    "The origin of Emily's parents is A) Canada and Mexico.",
+                    "B) The loss of her second cousin's mom",
+                    "Based on the information provided, the question regarding at what age Emily began her journey in managing anxiety and depression cannot be specifically answered with the options given. It does mention that she faced significant challenges after the loss of her second cousin\u2019s mom, but it does not specify the age she started managing anxiety and depression. Therefore, I cannot determine the correct answer from the provided options.",
+                    "C) Running and hiking"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: Absolutely! One of my favorite places was Kyoto, Japan. The blend of traditional culture, beautiful temples, and serene gardens really sparked my creativity and made me appreciate the importance of balance and mindfulness in life.\n",
+                5,
+                [
+                    "C) Nursing",
+                    "C) Your grandma's passing from Alzheimer's",
+                    "B) Compassion and community",
+                    "The answer is not explicitly stated in the conversation, but based on the context that I am currently 23 years old and my grandma's passing influenced my decision to pursue nursing, it is likely that I experienced her passing at 20 or 21. However, since the options provided do not clearly indicate when the passing occurred, the most reasonable answer based on the process of personal development and timing would be B) 20.",
+                    "C) The eldest sibling"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: Kyoto sounds incredible! I love how travel can really open our eyes to new perspectives and inspire us creatively. Do you have any specific memories or moments from your trip that stand out as particularly inspiring?\n",
+                4,
+                [
+                    "C) Fashion",
+                    "The origin of Emily's parents is A) Canada and Mexico.",
+                    "B) The loss of her second cousin's mom",
+                    "Based on the information provided, we don't have specific details about the exact age when Emily began managing her anxiety and depression. Therefore, it\u2019s not possible to accurately answer the question with the provided options. If there's any additional context or information you can provide, I might be able to help further!",
+                    "The answer is: C) Running and hiking"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: One moment that stands out was visiting the Arashiyama Bamboo Grove at sunrise. Walking through those towering bamboo stalks felt almost otherworldly and gave me a profound sense of peace. It truly reminded me of the beauty of nature and the importance of being present in the moment.\n",
+                5,
+                [
+                    "C) Nursing",
+                    "C) Your grandma's passing from Alzheimer's",
+                    "B) Compassion and community",
+                    "Based on the information provided, the correct answer is not explicitly given in the conversation, but since Sarah is currently 23 years old and reflects on her grandma's passing impacting her decisions, it can be inferred that she likely experienced this loss in her late teens or early twenties. \n\nGiven the options:\n\nA) 16  \nB) 20  \nC) 23  \nD) 18  \nE) 21  \n\nThe most reasonable answer would be B) 20, as it fits the timeline of significant life events leading to her current age of 23.",
+                    "C) The eldest sibling"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds absolutely magical! Nature has such a powerful way of grounding us and reminding us to appreciate the present. Have you found any ways to incorporate that sense of peace into your daily life or creative work?\n",
+                4,
+                [
+                    "C) Fashion",
+                    "A) Canada and Mexico",
+                    "B) The loss of her second cousin's mom",
+                    "The conversation doesn't specify the exact age when Emily began managing her anxiety and depression, so it's not possible to accurately answer the question based on the provided information. Therefore, the correct response is not listed among the options.",
+                    "C) Running and hiking"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I've started incorporating mindfulness practices into my daily routine, such as meditation and journaling. It really helps me stay centered and sparks new ideas for my creative projects. I also try to spend time outdoors whenever I can to reconnect with that sense of peace.\n",
+                4,
+                [
+                    "C) Nursing",
+                    "C) Your grandma's passing from Alzheimer's",
+                    "B) Compassion and community",
+                    "The correct answer is C) 23. Based on the information provided in your backstory, you are currently 23 and mentioned that your grandma's passing from Alzheimer's significantly influenced your decision to pursue nursing.",
+                    "C) The eldest sibling"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That's wonderful to hear! Mindfulness and journaling can be such powerful tools for creativity and self-reflection. Do you have any particular themes or projects you're currently working on that are inspired by your mindfulness practice?\n",
+                4,
+                [
+                    "C) Fashion",
+                    "A) Canada and Mexico",
+                    "B) The loss of her second cousin's mom",
+                    "The conversation does not specify the exact age at which Emily began her journey in managing anxiety and depression. However, she is currently 22 years old and mentions facing significant challenges, including the loss of her second cousin\u2019s mom. Without more context, it's not possible to determine her starting age for managing these conditions. Therefore, based on the options provided, I cannot accurately answer the question.",
+                    "C) Running and hiking"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: I'm currently working on a series of art pieces inspired by the themes of healing and connection, reflecting my experiences with healthcare and my grandma's journey. I'm also writing about the impact of cultural heritage on personal identity, blending my mindfulness practice into both my art and writing. It\u2019s been a fulfilling way to channel my experiences and emotions into something creative.\n",
+                5,
+                [
+                    "C) Nursing",
+                    "C) Your grandma's passing from Alzheimer's",
+                    "B) Compassion and community",
+                    "The passing of my grandma significantly influenced my career choice while I was around 20 years old. So the correct answer is:\n\nB) 20",
+                    "C) The eldest sibling"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 4.8,
+        "P2_survey_consistency_score": 4.0,
+        "P1_backstory_test": [
+            [
+                "Question: What is the primary field of study that you, Sarah, have chosen to pursue in college?\n\nA) Psychology  \nB) Sociology  \nC) Nursing  \nD) Creative Arts  \nE) Travel and Tourism  \n\n",
+                "Question: What event significantly influenced your decision to pursue a career in nursing?  \n\nA) Your parents' immigration story  \nB) Growing up in a middle-class household  \nC) Your grandma's passing from Alzheimer's  \nD) Being the eldest sibling  \nE) Your love for travel  \n\n",
+                "Question: Which values of your cultural heritage do you particularly cherish, drawing from your Korean roots?  \n\nA) Independence and individuality  \nB) Compassion and community  \nC) Competition and hierarchy  \nD) Innovation and technology  \nE) Wealth and success  \n\n",
+                "Question: At what age did you, Sarah, experience the passing of your grandma, which significantly influenced your career choice?  \n\nA) 16  \nB) 20  \nC) 23  \nD) 18  \nE) 21  \n\n",
+                "Question: Which of the following roles do you hold in your family, as described in your backstory?  \n\nA) The youngest sibling  \nB) The only child  \nC) The eldest sibling  \nD) The middle child  \nE) The only daughter  \n\n"
+            ],
+            [
+                "Answer: C) Nursing",
+                "Answer: C) Your grandma's passing from Alzheimer's",
+                "Answer: B) Compassion and community",
+                "Answer: B) 20",
+                "Answer: C) The eldest sibling"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What degree are you currently pursuing at X university?  \nA) Business Administration  \nB) Psychology  \nC) Fashion  \nD) Engineering  \nE) Environmental Science  \n\n",
+                "Question: What is the origin of Emily's parents?  \nA) Canada and Mexico  \nB) Mexico and the United States  \nC) Germany and Canada  \nD) Japan and Mexico  \nE) France and the United Kingdom  \n\n",
+                "Question: What challenges has Emily faced that have influenced her journey through anxiety and depression?  \nA) Financial difficulties  \nB) The loss of her second cousin's mom  \nC) Family relocation  \nD) Academic pressures  \nE) Relationship issues  \n\n",
+                "Question: At what age did Emily begin her journey in managing anxiety and depression?  \nA) 18  \nB) 20  \nC) 22  \nD) 19  \nE) 21  \n\n",
+                "Question: What are some of Emily's outdoor interests?  \nA) Swimming and cycling  \nB) Camping and fishing  \nC) Running and hiking  \nD) Surfing and rock climbing  \nE) Birdwatching and nature photography  \n\n"
+            ],
+            [
+                "Answer: C) Fashion",
+                "Answer: A) Canada and Mexico",
+                "Answer: B) The loss of her second cousin's mom",
+                "Answer: B) 20",
+                "Answer: C) Running and hiking"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -195,7 +2259,265 @@
         "index": 8,
         "timestamp": "2025-04-08 02:55:42",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line aligns with P1's backstory as it reflects his appreciation for simple joys and outdoor adventures, which he emphasized in his personal history.",
+            "NO. The line does not contradict P2's backstory, as it aligns with their mentioned hobbies of skating and surfing and their appreciation for being outdoors.",
+            "NO. The line does not contradict the backstory, as P1 expresses a genuine appreciation for outdoor adventures, which aligns with their values of finding joy in simple experiences.",
+            "NO. The line does not contradict P2's backstory, as it mentions a favorite surfing spot in San Diego, aligning with P2's interests in surfing and their upbringing in that city.",
+            "NO. The line does not contradict P1's backstory as it expresses a desire to experience new places and engage in outdoor adventures, which aligns with P1's appreciation for simple joys and authentic experiences.",
+            "NO. The line does not contradict the backstory of P2, as it reflects their enjoyment of surfing, which is consistent with their hobbies mentioned in the backstory.",
+            "NO. The line shows P1\u2019s interest in nature and outdoor experiences, which aligns with his appreciation for simple joys and outdoor adventures mentioned in his backstory.",
+            "NO. This line aligns with P2's backstory as it reflects their passion for surfing and the joy they find in nature, which complements their hobbies mentioned in the backstory.",
+            "NO. The line reflects P1's appreciation for genuine connections and moments of joy, which aligns with his values of love, freedom, and authenticity as mentioned in his backstory.",
+            "NO. The line does not contradict P2's backstory as it reflects their positive experiences traveling and the values of family and community that were instilled in them."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "NO. P1's line expresses a personal sentiment about finding joy in outdoor adventures, which is consistent with their overall participation in the conversation and does not contradict any previous statements made by P1.",
+            "NO. The line does not contradict any previous statements made by P2, as it is consistent with their expressed love for outdoor activities and finding peace in nature.",
+            "NO. The line does not contradict any previous statements made by P1, as it expresses admiration for surfers and inquires about their favorite surf spot, which aligns with P1's established interest in outdoor activities and connection to nature.",
+            "NO. The line does not contradict any previous statements made by P2 as it reaffirms their favorite surf spot, La Jolla Shores, and describes its features consistently with earlier context.",
+            "NO. P1 has previously expressed a desire to experience the stunning coastal views of California, and this line aligns with that sentiment.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with their expressed connection to nature and the joy of surfing.",
+            "NO. The line expresses curiosity and admiration for the experience of catching a wave at sunrise, which is consistent with P1's previous sentiments about outdoor adventures and their appreciation for nature.",
+            "NO. The line does not contradict any previous statements made by P2, as it aligns with P2's expressions of joy, connection with nature, and the importance of living in the moment.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with P1's appreciation for moments of joy and connection experienced in outdoor adventures.",
+            "NO. The line does not contradict any previous statements made by P2, as it continues to express appreciation for experiences in nature and connections to culture, aligning with their earlier sentiments about outdoor activities and memorable moments."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 1.0,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict any previous line stated by P1 as it expresses a positive sentiment towards outdoor adventures without conflicting with any earlier statements.",
+            "NO. P2's line about loving outdoor activities like surfing and skating aligns with their previous statement about enjoying outdoor adventures and finding peace in nature.",
+            "NO. P1's line does not contradict any previous statements, as it expresses admiration for surfers and a curiosity about P2's favorite surf spot, which aligns with the outdoor adventure theme they were discussing.",
+            "NO. P2's statement about La Jolla Shores being a favorite surf spot is consistent with their earlier expression of love for surfing and the outdoors, and it does not contradict any previous statements made by P2.",
+            "NO. P1's line expresses a desire to visit La Jolla Shores and experience its views, which does not contradict their previous admiration for surfers and the mention of outdoor adventures.",
+            "NO. P2's line about catching a big wave at sunrise does not contradict previous statements, as it is consistent with their expressed love for surfing and finding peace in nature.",
+            "NO. P1's line does not contradict previous statements, as P1 expresses admiration for the experience of surfing and desire to hear more about it without implying any prior knowledge or experience.",
+            "NO. P2's description of the moment while catching the wave is consistent with their previous statements about the thrill of surfing and finding peace in nature.",
+            "NO. P1's line does not contradict previous statements, as it continues to express an appreciation for the connection to nature and the joy derived from such experiences.",
+            "NO. P2's statement about experiencing joy through traveling in Guatemala and Mexico does not contradict any previous lines, as it simply expands on their appreciation for nature and connection, complementing their love for outdoor activities."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P1: Hey, it's great to connect! I find that simple joy in outdoor adventures really centers me\u2014what kind of activities do you enjoy?\n",
+                5,
+                [
+                    "C) Love and freedom",
+                    "B) His parents' immigration from Ireland",
+                    "C) Enduring a felony conviction",
+                    "B) Authenticity and genuine connections",
+                    "B) Cultivating genuine connections"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: I love being outdoors as well! Surfing and skating give me that thrill and freedom, and I always find peace in nature. There's something special about catching a wave or cruising down a path that really clears my mind.\n",
+                5,
+                [
+                    "D) A past engagement",
+                    "B) Family values and a Catholic faith",
+                    "C) Freelance translator",
+                    "C) Skating and surfing",
+                    "B) El Salvador and the Philippines"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: That sounds exhilarating! I\u2019ve always admired surfers for their connection to the ocean. Do you have a favorite surf spot?\n",
+                5,
+                [
+                    "C) Love and freedom",
+                    "B) His parents' immigration from Ireland",
+                    "C) Enduring a felony conviction",
+                    "B) Authenticity and genuine connections",
+                    "Based on David's life experiences, he seems to prioritize over societal expectations:  \nB) Cultivating genuine connections"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Absolutely! One of my favorite surf spots is La Jolla Shores in San Diego. The waves there are perfect for all skill levels, and the scenery is just breathtaking\u2014it's like a little piece of paradise!\n",
+                5,
+                [
+                    "D) A past engagement",
+                    "The correct answer is B) Family values and a Catholic faith.",
+                    "C) Freelance translator",
+                    "C) Skating and surfing",
+                    "B) El Salvador and the Philippines"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: La Jolla Shores sounds amazing! I\u2019ve always wanted to visit California and experience those stunning coastal views. Do you have any memorable moments from your time surfing there?\n",
+                5,
+                [
+                    "C) Love and freedom",
+                    "B) His parents' immigration from Ireland",
+                    "C) Enduring a felony conviction",
+                    "B) Authenticity and genuine connections",
+                    "B) Cultivating genuine connections"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: One memorable moment was catching my first big wave at sunrise\u2014there's something magical about the colors in the sky and the calmness of the water. I felt so alive and connected to the ocean, like all my worries just vanished with the tide. It was an experience I\u2019ll never forget!\n",
+                5,
+                [
+                    "The answer is D) A past engagement.",
+                    "The correct answer is: B) Family values and a Catholic faith.",
+                    "C) Freelance translator",
+                    "C) Skating and surfing",
+                    "The correct answer is B) El Salvador and the Philippines."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: Wow, that sounds incredible! I can only imagine the rush of being out there at sunrise, surrounded by such beauty. I\u2019d love to hear more about the feeling of catching that wave\u2014what went through your mind in that moment?\n",
+                5,
+                [
+                    "C) Love and freedom",
+                    "The correct answer is B) His parents' immigration from Ireland.",
+                    "C) Enduring a felony conviction",
+                    "B) Authenticity and genuine connections",
+                    "B) Cultivating genuine connections"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: In that moment, it felt like time stood still\u2014everything else faded away, and all I could focus on was the wave and my balance. The adrenaline surged as I rode it, and I couldn\u2019t help but smile, feeling completely in tune with nature. It was a reminder that sometimes, letting go and embracing the present is the best way to find joy.\n",
+                5,
+                [
+                    "D) A past engagement",
+                    "The correct answer is:  \nB) Family values and a Catholic faith",
+                    "C) Freelance translator",
+                    "C) Skating and surfing",
+                    "The correct answer is: B) El Salvador and the Philippines."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: That sounds profoundly liberating! It's amazing how those moments can remind us to stay present and appreciate life. Have you had any other experiences that brought you that same sense of joy and connection?\n",
+                5,
+                [
+                    "C) Love and freedom",
+                    "B) His parents' immigration from Ireland",
+                    "C) Enduring a felony conviction",
+                    "The correct answer is: B) Authenticity and genuine connections.",
+                    "B) Cultivating genuine connections"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: Definitely! Traveling through Guatemala and Mexico also gave me that same sense of joy\u2014experiencing new cultures, meeting incredible people, and immersing myself in the beauty of nature was truly humbling. Each moment felt like a gift, reminding me of the importance of family and community.\n",
+                5,
+                [
+                    "D) A past engagement",
+                    "The correct answer is:  \nB) Family values and a Catholic faith",
+                    "C) Freelance translator",
+                    "C) Skating and surfing",
+                    "B) El Salvador and the Philippines"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 5.0,
+        "P1_backstory_test": [
+            [
+                "Question: Which of the following values do you most resonate with based on David's life philosophy?  \nA) Wealth accumulation  \nB) Traditional religious practices  \nC) Love and freedom  \nD) Social status  \nE) Avoiding outdoor activities  \n\n",
+                "Question: Which of the following factors contributed to David's appreciation for hard work and community?  \nA) His wealthy upbringing  \nB) His parents' immigration from Ireland  \nC) His education  \nD) His career in business  \nE) His involvement in sports  \n\n",
+                "Question: Given David's background, what major life experience did he face that significantly impacted him?  \nA) Winning a prestigious award  \nB) Traveling the world  \nC) Enduring a felony conviction  \nD) Growing up in an affluent neighborhood  \nE) Being a professional athlete  \n\n",
+                "Question: What does David value most in his approach to life, according to his backstory?  \nA) Material success  \nB) Authenticity and genuine connections  \nC) Public recognition  \nD) Strict adherence to tradition  \nE) Competition and rivalry  \n\n",
+                "Question: Based on David's life experiences, which of the following does he seem to prioritize over societal expectations?  \nA) Accumulating wealth  \nB) Cultivating genuine connections  \nC) Following traditional career paths  \nD) Pursuing fame  \nE) Attaining higher education degrees  \n\n"
+            ],
+            [
+                "Answer: C) Love and freedom",
+                "Answer: B) His parents' immigration from Ireland",
+                "Answer: C) Enduring a felony conviction",
+                "Answer: B) Authenticity and genuine connections",
+                "Answer: B) Cultivating genuine connections"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What major life event has helped shape your views on love and relationships?  \nA) Traveling through Guatemala  \nB) Growing up in San Diego  \nC) Your freelance translation work  \nD) A past engagement  \nE) Your hobbies like skating and surfing  \n\n",
+                "Question: What strong values were instilled in you by your parents?  \nA) Independence and adventure  \nB) Family values and a Catholic faith  \nC) Career success and ambition  \nD) Cultural diversity and empathy  \nE) Love for travel and languages  \n\n",
+                "Question: What profession have you pursued as a result of your degree in Spanish language and translation?  \nA) Teacher  \nB) Travel guide  \nC) Freelance translator  \nD) Cultural ambassador  \nE) Social worker  \n\n",
+                "Question: What hobbies do you enjoy that help you find fulfillment alongside your professional life?  \nA) Painting and drawing  \nB) Running and yoga  \nC) Skating and surfing  \nD) Reading and writing  \nE) Cooking and gardening  \n\n",
+                "Question: What cultural backgrounds shape your family's values and faith?  \nA) China and Japan  \nB) El Salvador and the Philippines  \nC) Italy and Spain  \nD) Mexico and Guatemala  \nE) India and Thailand  \n\n"
+            ],
+            [
+                "Answer: D) A past engagement",
+                "Answer: B) Family values and a Catholic faith",
+                "Answer: C) Freelance translator",
+                "Answer: C) Skating and surfing",
+                "Answer: B) El Salvador and the Philippines"
+            ]
+        ]
     },
     {
         "task_name": "Anthology",
@@ -217,6 +2539,264 @@
         "index": 9,
         "timestamp": "2025-04-08 02:55:51",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            "NO. The line does not contradict P2's backstory, as it reflects P2's experience in criminology and their understanding of how socioeconomic factors relate to crime, which aligns with their personal background.",
+            "NO. The line aligns with P1's backstory as a successful marketing consultant who is passionate about helping others, particularly startups, which reflects their values and ambition to uplift others.",
+            "NO. The line does not contradict the provided backstory of P2, as it reflects an enthusiasm for supporting others and being involved in meaningful projects, aligning with P2's desire to contribute positively to society.",
+            "NO. The line does not contradict P1's backstory, as it aligns with their current role as a successful marketing consultant who is passionate about creating opportunities for others.",
+            "NO. The line does not contradict the backstory of P2, as it reflects an interest in projects and branding that could align with P2's ambition to contribute positively to society through their criminology studies.",
+            "NO. The line does not contradict the backstory of P1, as it reflects P1's passion for entrepreneurship and creating opportunities for others, aligning with their values of resilience and empathy.",
+            "NO. The line reflects a positive attitude towards supporting sustainable businesses, which aligns with P2's values of contributing positively to society as outlined in their backstory.",
+            "NO. The line does not contradict P1's backstory, as it reflects P1's passion for entrepreneurship and creating opportunities, which aligns with their values of resilience and empathy.",
+            "NO. The line expresses enthusiasm for combining creativity with a meaningful cause, which aligns with P2's values of contributing positively to society and advocating for safety and wellness.",
+            "NO. The line does not contradict the backstory of P1, as it reflects their passion for entrepreneurship and desire to create opportunities and connections within the community, which aligns with their values of resilience and empathy."
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_all_line_consistency": [
+            "YES. The line contradicts P2's previous statements because it erroneously attributes the question about the criminology program to P1, while it was actually P2 who responded about their criminology program.",
+            "NO. The line does not contradict any previous statements made by P1 throughout the conversation; it is consistent with P1 discussing their involvement in their marketing consultancy and helping startups.",
+            "NO. P2's line expresses admiration for helping startups, which is consistent with their positive commentary about P1's work throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P1, as it consistently describes P1's involvement in helping startups with their marketing efforts and expresses excitement about their growth.",
+            "NO. The line does not contradict any previous statements made by P2; it expresses enthusiasm about P1's project and inquires about future projects without conflicting with P2's prior comments.",
+            "NO. The line does not contradict any previous lines spoken by P1, as they consistently express excitement about working on a campaign for a social enterprise focused on sustainable fashion, aligning with their values.",
+            "NO. P2's line expresses enthusiasm about supporting sustainability, which is consistent with previous statements made during the conversation.",
+            "NO. The line does not contradict any statements made by P1; it reflects P1's enthusiasm about sharing updates on the campaign and emphasizes the importance of sustainability in business, which aligns with previous remarks.",
+            "NO. P2's line expresses enthusiasm for a campaign that combines creativity with a meaningful cause, which aligns with previous statements made by P2 throughout the conversation.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with their focus on the campaign for a social enterprise focused on sustainable fashion and reflects their intent to engage the community and build an emotional connection with the audience."
+        ],
+        "P1_all_line_consistency_score": 1.0,
+        "P2_all_line_consistency_score": 0.8,
+        "eval_prev_line_consistency": [
+            "NO. The line does not contradict previous statements made by P2, as they consistently refer to their criminology program and express their interest in the subject matter.",
+            "NO. P1's line about being busy with their marketing consultancy does not contradict any previous statements, as they did not mention any other commitments or activities.",
+            "NO. The line does not contradict previous statements made by P2, as it expresses a positive reaction to P1's work and interest in learning more about it.",
+            "NO. The line does not contradict previous statements by P1; it expands on their work in the marketing consultancy by providing a specific example of a project they recently completed.",
+            "NO. P2's line does not contradict any previous statements, as it continues to express enthusiasm and interest in P1's work without conflicting with earlier remarks.",
+            "NO. The line does not contradict any previous statements made by P1, as it aligns with their ongoing work in marketing consultancy and highlights a new project that reflects their values.",
+            "NO. P2's line about supporting businesses that prioritize sustainability aligns with their previous positive comments about P1's work and enthusiasm for making a positive difference in the world.",
+            "NO. The line does not contradict previous statements made by P1, as it expresses excitement about the campaign for the social enterprise and aligns with P1's previously mentioned values of sustainability and creativity.",
+            "NO. P2's statement about being excited to hear how the campaign turns out and asking about strategies aligns with their previous enthusiasm for P1's projects and sustainability, showing consistent support and interest.",
+            "NO. P1's line about leveraging storytelling through social media and engaging the community aligns with the previous discussion about the campaign for a social enterprise focused on sustainable fashion, showing consistency in P1's approach to the project."
+        ],
+        "P1_prev_line_consistency_score": 1.0,
+        "P2_prev_line_consistency_score": 1.0,
+        "eval_survey_consistency": [
+            [
+                "P2: P1: Hey Alex, how's your criminology program going? \n\nP2: It's going pretty well, actually! I'm learning a lot about the justice system and how socioeconomic factors impact crime rates, which really resonates with my background. How about you? What\u2019s new in your world?\n",
+                4,
+                [
+                    "B) Criminology",
+                    "B) It instilled the importance of hard work and resilience.",
+                    "Based on your backstory, the answer is not explicitly stated, so it could be any of the options. However, given your interests and goals, the most fitting choice is likely:\n\nC) Karate\n\nThis is because Karate often emphasizes self-defense and discipline, which aligns well with your advocacy for safety and wellness in society.",
+                    "The name of my mother who worked tirelessly to support me and my brother is B) Betty.",
+                    "C) 26"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: It's been a busy time for me! I've been fully immersed in my marketing consultancy, helping startups find their voice and reach their audiences. It's rewarding to see the impact of my work on those just starting out in their journeys.\n",
+                5,
+                [
+                    "The correct answer is B) Being raised by a single mother and grandparents.",
+                    "The correct answer is D) Resilience and empathy.",
+                    "C) Being teased in school",
+                    "The correct answer is D) Your siblings.",
+                    "C) Almost losing your family"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds amazing! It's inspiring to help those startups make their mark. Have you worked with any interesting projects lately?\n",
+                4,
+                [
+                    "B) Criminology",
+                    "B) It instilled the importance of hard work and resilience.",
+                    "Based on the information provided, I have a general interest in martial arts, but the specific type is not mentioned. Therefore, the correct answer would be:\n\nE) You do not have any martial arts interest",
+                    "B) Betty",
+                    "C) 26"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: Yes, I recently helped a tech startup develop a unique branding strategy that really highlighted their innovative approach. It was great to see how my guidance boosted their confidence and engagement levels. I'm excited to see their growth in the coming months!\n",
+                5,
+                [
+                    "B) Being raised by a single mother and grandparents",
+                    "D) Resilience and empathy",
+                    "C) Being teased in school",
+                    "D) Your siblings",
+                    "C) Almost losing your family"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds like a fantastic project! It's incredible how branding can transform a startup's presence and impact. Do you have any other projects lined up that you're particularly excited about?\n",
+                5,
+                [
+                    "B) Criminology",
+                    "B) It instilled the importance of hard work and resilience.",
+                    "E) You do not have any martial arts interest",
+                    "B) Betty",
+                    "C) 26"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: Absolutely! I'm about to kick off a campaign for a social enterprise focused on sustainable fashion, which aligns perfectly with my values. It's exciting to collaborate with a company that prioritizes making a positive difference in the world while still being creative!\n",
+                5,
+                [
+                    "B) Being raised by a single mother and grandparents",
+                    "The correct answer is: D) Resilience and empathy.",
+                    "C) Being teased in school",
+                    "The correct answer is: D) Your siblings",
+                    "C) Almost losing your family"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: That sounds like a great opportunity! It\u2019s so important to support businesses that prioritize sustainability. I\u2019d love to hear more about how the campaign develops!\n",
+                5,
+                [
+                    "B) Criminology",
+                    "B) It instilled the importance of hard work and resilience.",
+                    "Based on the information provided in your backstory, it doesn't specifically mention which martial arts interest you have. Therefore, the most appropriate answer would be:\n\nE) You do not have any martial arts interest.",
+                    "B) Betty",
+                    "C) 26"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: I\u2019d be happy to share updates as the campaign progresses! It\u2019s great to connect with like-minded people who understand the importance of sustainability in business. I can\u2019t wait to see the impact we can make together!\n",
+                5,
+                [
+                    "B) Being raised by a single mother and grandparents",
+                    "The key value that my grandparents instilled in me that has influenced my career as a marketing consultant is D) Resilience and empathy.",
+                    "C) Being teased in school",
+                    "D) Your siblings",
+                    "C) Almost losing your family"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P2: P2: I can't wait to hear how it all turns out! It's always exciting to combine creativity with a meaningful cause. Do you have any particular strategies in mind for the campaign?\n",
+                5,
+                [
+                    "B) Criminology",
+                    "B) It instilled the importance of hard work and resilience.",
+                    "E) You do not have any martial arts interest",
+                    "B) Betty",
+                    "C) 26"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "P1: P1: Yes, I'm planning to leverage storytelling through social media to showcase the brand's mission and the artisans behind the products. We also aim to engage the community with interactive events to further spread awareness about sustainable fashion. I believe building that emotional connection will resonate well with the audience!\n",
+                5,
+                [
+                    "B) Being raised by a single mother and grandparents",
+                    "The correct answer is: D) Resilience and empathy",
+                    "C) Being teased in school",
+                    "D) Your siblings",
+                    "C) Almost losing your family"
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ],
+        "P1_survey_consistency_score": 5.0,
+        "P2_survey_consistency_score": 4.6,
+        "P1_backstory_test": [
+            [
+                "Question: What life experience significantly shaped your ambition to uplift others and create opportunities, as described in your backstory?  \nA) Winning a business competition  \nB) Being raised by a single mother and grandparents  \nC) Attending college  \nD) Traveling abroad  \nE) Receiving an award for community service  \n\n",
+                "Question: What key value did your grandparents instill in you that has influenced your career as a marketing consultant?  \nA) Persistence  \nB) Wealth accumulation  \nC) Independence  \nD) Resilience and empathy  \nE) Technology skills  \n\n",
+                "Question: Which of the following challenges you faced in childhood contributed to your strong sense of identity and resilience?  \nA) Moving to a new city  \nB) Winning a sports championship  \nC) Being teased in school  \nD) Attending multiple schools  \nE) Participating in a school play  \n\n",
+                "Question: Which family member played a significant role in helping you overcome childhood bullying?  \nA) Your mother  \nB) Your father  \nC) Your grandparents  \nD) Your siblings  \nE) Your cousins  \n\n",
+                "Question: What traumatic event occurred five years ago that impacted your family and shaped your journey?  \nA) A natural disaster  \nB) A severe illness  \nC) Almost losing your family  \nD) Moving away from Chicago  \nE) A major financial setback  \n\n"
+            ],
+            [
+                "Answer: B) Being raised by a single mother and grandparents",
+                "Answer: D) Resilience and empathy",
+                "Answer: C) Being teased in school",
+                "Answer: D) Your siblings",
+                "Answer: C) Almost losing your family"
+            ]
+        ],
+        "P2_backstory_test": [
+            [
+                "Question: What degree are you pursuing at Golden Gate University?  \nA) Psychology  \nB) Criminology  \nC) Sociology  \nD) Business Administration  \nE) Political Science  \n\n",
+                "Question: How did your upbringing influence your values and ambitions?  \nA) It provided a strong network of support.  \nB) It instilled the importance of hard work and resilience.  \nC) It discouraged academic pursuits altogether.  \nD) It focused solely on financial success.  \nE) It emphasized leisure and relaxation.  \n\n",
+                "Question: What martial arts interest do you have that contributes to your goal of advocating for safety and wellness?  \nA) Tai Chi  \nB) Judo  \nC) Karate  \nD) Kickboxing  \nE) You do not have any martial arts interest  \n\n",
+                "Question: What is the name of your mother who worked tirelessly to support you and your brother?  \nA) Sarah  \nB) Betty  \nC) Jennifer  \nD) Laura  \nE) Karen  \n\n",
+                "Question: At what age do you currently study at Golden Gate University?  \nA) 24  \nB) 25  \nC) 26  \nD) 27  \nE) 28  \n\n"
+            ],
+            [
+                "Answer: B) Criminology",
+                "Answer: B) It instilled the importance of hard work and resilience.",
+                "Answer: E) You do not have any martial arts interest",
+                "Answer: B) Betty",
+                "Answer: C) 26"
+            ]
+        ]
     }
 ]

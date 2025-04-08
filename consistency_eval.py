@@ -129,7 +129,7 @@ def eval_survey_consistency(conv_dict):
         if pturn == 1:
             prompt = "You are P1, and you are having a conversation with P2. Your backstory is:\n" + p1_backstory + "\n" + "So far, the conversation is as below:\n" + conversation
 
-            score, answers, verdicts = score_backstory_test(prompt, p1_backstory_test, config)
+            score, answers, verdicts = score_backstory_test(prompt, p1_backstory_test)
             conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
             conv_dict['P1_survey_consistency_score'] += score
 
@@ -138,7 +138,7 @@ def eval_survey_consistency(conv_dict):
         else:
             prompt = "You are P2, and you are having a conversation with P1. Your backstory is:\n" + p2_backstory + "\n" + "So far, the conversation is as below:\n" + conversation
 
-            score, answers, verdicts = score_backstory_test(prompt, p2_backstory_test, config)
+            score, answers, verdicts = score_backstory_test(prompt, p2_backstory_test)
             conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
             conv_dict['P2_survey_consistency_score'] += score
             p2_utterances += 1
@@ -180,26 +180,29 @@ def eval_prev_line_consistency(conv_dict):
     conv_dict['P2_prev_line_consistency_score'] /= p2_utterances
 
 def run_metrics(filename):
-    print(f"\nBegin metrics: {filename}\n")
+    print(f"Begin metrics: {filename}\n\n")
 
     with open(filename, 'r') as f:
         conversations = json.load(f)
 
-    for conversation in conversations:
-        eval_prompt_consistency(conversation)
-        eval_all_line_consistency(conversation)
-        eval_prev_line_consistency(conversation)
-        eval_survey_consistency(conversation)
+    for conversation in tqdm(conversations):
+        if conversation['conversation_only']:
+            eval_prompt_consistency(conversation)
+            eval_all_line_consistency(conversation)
+            eval_prev_line_consistency(conversation)
+            eval_survey_consistency(conversation)
+        conversation['conversation_only'] = False
 
     with open(filename, 'w') as f:
         json.dump(conversations, f, indent=4)
     
-    print(f"\nEnd metrics: {filename}\n")
+    print(f"End metrics: {filename}\n\n")
     
 
 def main(argv):
     init()
     config['eval_model'] = 'gpt-4o-mini' # we generally use gpt-4o-mini for evals 
+    exp_folder = './data/anthology/exp'
     if config['filename']:
         run_metrics(config['filename'])
     else:
