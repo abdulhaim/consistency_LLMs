@@ -68,7 +68,7 @@ def main(argv):
     
     write_file = (
         f"data/anthology/exp/"
-        f"{config['agent1_model']}-{config['seed']}.json"
+        f"{config['agent1_model']}_{config['seed']}.json"
     )
     
     config["task_name"] = "Anthology"
