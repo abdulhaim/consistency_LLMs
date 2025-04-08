@@ -1,0 +1,16 @@
+
+{
+    "agent1_model": "gpt-4o-mini",
+    "agent2_model": "gpt-4o-mini",
+    "eval_model": "gpt-4o-mini",
+    "agent1_role": "P1",
+    "agent2_role": "P2",
+    "iterations": 10,
+    "verbose": false, 
+    "write": true,
+    "convo_length_limit": 10,
+    "max_tokens": 256,
+    "gpus": 0,
+    "task_name": "Anthology",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+}
