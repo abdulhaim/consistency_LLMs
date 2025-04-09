@@ -58,6 +58,7 @@ stats = {}
 # dictionary for prompts
 prompts = {}
 
+client = None
 
 def set_flag_variables():
     for flag in FLAGS:
