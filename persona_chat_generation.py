@@ -16,6 +16,10 @@ import pandas as pd
 import numpy as np
 
 def generate_conversation(p1, p2, pturn=1):
+    stats['P1'] = p1
+    stats['P2'] = p2
+    stats['pturn'] = pturn
+
     round_num = 0
     while round_num < config['convo_length_limit']:
         conversation = ("".join(stats["conversation"]) if len(stats["conversation"]) != 0 else "[You are starting the conversation.]")
@@ -44,6 +48,7 @@ def generate_conversation(p1, p2, pturn=1):
     stats["rounds"] = round_num
     if config['verbose']:
         print(stats["conversation"])
+    return stats.copy()
 
 def reset_stats():
     stats_template = {
@@ -91,11 +96,8 @@ def main(argv):
 
             p1_dict, p2_dict = personas_paired[index_offset]
             pturn = index_offset % 2 + 1
-            stats['P1'] = p1_dict['persona']
-            stats['P2'] = p2_dict['persona']
-            stats['pturn'] = pturn
 
-            generate_conversation(stats['P1'], stats['P2'], pturn)
+            generate_conversation(p1_dict['persona'], p2_dict['persona'], pturn)
             stats['index'] = (index_offset if config['write'] else -1)
             stats['timestamp'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
