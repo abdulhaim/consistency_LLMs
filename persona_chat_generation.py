@@ -32,7 +32,7 @@ def generate_conversation(p1, p2, pturn=1):
             if config["verbose"]:
                 print(prompt)
                 print()
-            stats["conversation"].append("P1: " + completion_create(config['agent1_model'], config, prompt) + "\n")
+            stats["conversation"].append(f"{prompts["agent1_role"]}: " + completion_create(config['agent1_model'], config, prompt) + "\n")
         else:
             prompt = prompts["dialogue_prompt"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
@@ -42,7 +42,7 @@ def generate_conversation(p1, p2, pturn=1):
             if config["verbose"]:
                 print(prompt)
                 print()
-            stats["conversation"].append("P2: " + completion_create(config['agent2_model'], config, prompt) + "\n")
+            stats["conversation"].append(f"{prompts["agent2_role"]}: " + completion_create(config['agent2_model'], config, prompt) + "\n")
         round_num += 1
 
     stats["rounds"] = round_num
