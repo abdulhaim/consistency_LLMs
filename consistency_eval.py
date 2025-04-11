@@ -54,6 +54,60 @@ def eval_prompt_consistency(conv_dict):
     conv_dict['P1_prompt_consistency_score'] /= p1_utterances
     conv_dict['P2_prompt_consistency_score'] /= p2_utterances
 
+# Replacement for (2) and (4), evaluates whether each pair of lines in the conversation is consistent with each other
+def eval_pairwise_consistency(conv_dict):
+    conv_dict['eval_pairwise_consistency'] = []
+    conv_dict['P1_pairwise_consistency_score'] = 0
+    conv_dict['P2_pairwise_consistency_score'] = 0
+    p1_utterances = 0
+    p2_utterances = 0
+    conversation = conv_dict["conversation"]
+    pturn1 = conv_dict["pturn"]
+    pturn2 = 1 if pturn1 == 2 else 2
+    debug = []
+    for i, line1 in enumerate(conversation):
+        for j, line2 in enumerate(conversation):
+            if i >= j:  # Skip comparing a line with itself or previous lines
+                continue
+            listener_role = prompts["agent1_role"] if pturn2 == 1 else prompts["agent2_role"]
+            if pturn1 == 1:
+                prompt = prompts["eval_prompts"]["pairwise_consistency"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                        .replace("%LISTENER_ROLE%", listener_role) \
+                                                                        .replace("%SPEAKER_LINE%", line1) \
+                                                                        .replace("%LISTENER_LINE%", line2)
+                debug.append(prompt)
+                if config['verbose']:
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_pairwise_consistency'].append(output)
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P1_pairwise_consistency_score'] += 1
+                p1_utterances += 1
+                pturn2 = 1 if pturn2 == 2 else 2
+            else:
+                prompt = prompts["eval_prompts"]["pairwise_consistency"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                        .replace("%LISTENER_ROLE%", listener_role) \
+                                                                        .replace("%SPEAKER_LINE%", line1) \
+                                                                        .replace("%LISTENER_LINE%", line2)
+                debug.append(prompt)
+                if config['verbose']:
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_pairwise_consistency'].append(output)
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P2_pairwise_consistency_score'] += 1
+                p2_utterances += 1
+                pturn2 = 1 if pturn2 == 2 else 2
+        
+        # Swap turns for i for the next iteration
+        pturn1 = 1 if pturn1 == 2 else 2
+        pturn2 = 1 if pturn1 == 2 else 2 # set pturn2 to the opposite of the new pturn1
+
+    if p1_utterances > 0:
+        conv_dict['P1_pairwise_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_pairwise_consistency_score'] /= p2_utterances
+    return debug
 
 # (2) Takes in dialog, checks inconsistencies with every line henceforth 
 def eval_all_line_consistency(conv_dict):
