@@ -297,6 +297,7 @@ def run_metrics(filename):
             if config['verbose']:
                 print("BEGIN SURVEY CONSISTENCY")
             eval_survey_consistency(conversation)
+            eval_pairwise_consistency(conversation)
         conversation['conversation_only'] = False
 
     with open(filename, 'w') as f:
