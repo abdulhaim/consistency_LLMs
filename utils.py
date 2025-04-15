@@ -48,7 +48,6 @@ flags.DEFINE_string('listener_model', None, 'whether to use a listener model (No
 
 flags.DEFINE_string('filename', None, 'run metrics on a particular filename (None/default specifies all filenames in all folders)')
 
-
 # global dictionary for configuration
 config = {}
 
@@ -244,3 +243,21 @@ def write_stats(write_file):
     conversations.append(stats)
     with open(write_file, "w") as f:
         json.dump(conversations, f, indent=4)
+
+def split_conversation(conversation, speaker1, speaker2):
+    '''
+    Splits a conversation (string) into alternating speaker turns.
+    speaker1 and speaker2  are string names/dialogue tags for the speakers (e.g. "Buyer" and "Seller")
+    '''
+    pattern = fr"({speaker1}:|{speaker2}:)(.*?)(?=({speaker1}:|{speaker2}:|$))"
+    matches = re.findall(pattern, conversation, re.DOTALL)
+
+    # Combine consecutive entries with the same speaker
+    combined_entries = []
+    for speaker, message, _ in matches:
+        if combined_entries and combined_entries[-1].startswith(speaker):
+            combined_entries[-1] += " " + message.strip()
+        else:
+            combined_entries.append(f"{speaker.strip()} {message.strip()}")
+
+    return combined_entries

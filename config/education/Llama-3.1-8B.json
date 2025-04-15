@@ -2,8 +2,8 @@
 {
     "agent1_model": "Llama-3.1-8B",
     "agent2_model": "Llama-3.1-8B",
-    "eval_model": "Llama-3.1-8B",
-    "iterations": 10,
+    "eval_model": "gpt-4o-mini",
+    "iterations": 20,
     "verbose": false, 
     "write": true,
     "convo_length_limit": 10,

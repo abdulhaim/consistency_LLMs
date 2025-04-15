@@ -15,6 +15,9 @@ from transformers import AutoTokenizer
 import pandas as pd
 import numpy as np
 
+
+flags.DEFINE_string('task', 'Anthology', 'run metrics on a particular task, searching for files within the task folder (Anthology/default)')
+
 # (1) Takes in dialog, takes in base prompt, checks inconsistencies with base prompt for each line and output
 
 def eval_prompt_consistency(conv_dict):
@@ -277,7 +280,31 @@ def eval_prev_line_consistency(conv_dict):
     conv_dict['P1_prev_line_consistency_score'] /= p1_utterances
     conv_dict['P2_prev_line_consistency_score'] /= p2_utterances
 
-def run_metrics(filename):
+def run_metrics_short(filename):
+    print(f"Begin metrics: {filename}\n\n")
+
+    with open(filename, 'r') as f:
+        conversations = json.load(f)
+
+    for conversation in tqdm(conversations):
+        if conversation['conversation_only']:
+            if config['verbose']:
+                print("BEGIN PROMPT CONSISTENCY")
+            eval_prompt_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN SURVEY CONSISTENCY")
+            eval_survey_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN PAIRWISE CONSISTENCY")
+            eval_pairwise_consistency(conversation)
+        conversation['conversation_only'] = False
+
+    with open(filename, 'w') as f:
+        json.dump(conversations, f, indent=4)
+    
+    print(f"End metrics: {filename}\n\n")
+
+def run_metrics_all(filename):
     print(f"Begin metrics: {filename}\n\n")
 
     with open(filename, 'r') as f:
@@ -297,6 +324,8 @@ def run_metrics(filename):
             if config['verbose']:
                 print("BEGIN SURVEY CONSISTENCY")
             eval_survey_consistency(conversation)
+            if config['verbose']:
+                print("BEGIN PAIRWISE CONSISTENCY")
             eval_pairwise_consistency(conversation)
         conversation['conversation_only'] = False
 
@@ -310,14 +339,19 @@ def main(argv):
     global prompts
     init()
     config['eval_model'] = 'gpt-4o-mini' # we generally use gpt-4o-mini for evals 
-    with open('config/persona_chat/prompts.json', 'r') as f:
-        prompts = json.load(f)
-    exp_folder = './data/anthology/exp'
+    if config['task'] == 'Anthology':
+        with open('config/persona_chat/prompts.json', 'r') as f:
+            prompts = json.load(f)
+        exp_folder = './data/anthology/exp'
+    elif config['task'] == 'Education':
+        with open('config/education/prompts.json', 'r') as f:
+            prompts = json.load(f)
+        exp_folder = './data/education/exp'
     if config['filename']:
-        run_metrics(config['filename'])
+        run_metrics_all(config['filename'])
     else:
         for filename in glob.glob(f'{exp_folder}/*.json'):
-            run_metrics(filename)
+            run_metrics_all(filename)
 
 if __name__ == '__main__':
     app.run(main)

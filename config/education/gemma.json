@@ -1,9 +1,9 @@
 
 {
-    "agent1_model": "Llama-3.1-8B-Instruct",
-    "agent2_model": "Llama-3.1-8B-Instruct",
+    "agent1_model": "gemma-2-27b-it",
+    "agent2_model": "gemma-2-27b-it",
     "eval_model": "gpt-4o-mini",
-    "iterations": 20,
+    "iterations": 10,
     "verbose": false, 
     "write": true,
     "convo_length_limit": 10,
