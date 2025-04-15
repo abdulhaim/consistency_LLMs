@@ -53,9 +53,11 @@ def eval_prompt_consistency(conv_dict):
                 conv_dict['P2_prompt_consistency_score'] += 1
             p2_utterances += 1
             pturn = 1
-
-    conv_dict['P1_prompt_consistency_score'] /= p1_utterances
-    conv_dict['P2_prompt_consistency_score'] /= p2_utterances
+    
+    if p1_utterances > 0:
+        conv_dict['P1_prompt_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_prompt_consistency_score'] /= p2_utterances
 
 # Replacement for (2) and (4), evaluates whether each pair of lines in the conversation is consistent with each other
 def eval_pairwise_consistency(conv_dict):
@@ -148,8 +150,10 @@ def eval_all_line_consistency(conv_dict):
             p2_utterances += 1
             pturn = 1
 
-    conv_dict['P1_all_line_consistency_score'] /= p1_utterances
-    conv_dict['P2_all_line_consistency_score'] /= p2_utterances
+    if p1_utterances > 0:
+        conv_dict['P1_all_line_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_all_line_consistency_score'] /= p2_utterances
 
 
 # (3) Survey of agent at every line (ANTHOLOGY ONLY FOR NOW)
@@ -237,8 +241,10 @@ def eval_survey_consistency(conv_dict):
             conv_dict['P2_survey_consistency_score'] += score
             p2_utterances += 1
             pturn = 1
-    conv_dict['P1_survey_consistency_score'] /= p1_utterances
-    conv_dict['P2_survey_consistency_score'] /= p2_utterances
+    if p1_utterances > 0:
+        conv_dict['P1_survey_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_survey_consistency_score'] /= p2_utterances
     
 
 # (4) Takes in dialog, checks for inconsistency with previous line 
@@ -277,8 +283,10 @@ def eval_prev_line_consistency(conv_dict):
             p2_utterances += 1
             pturn = 1
 
-    conv_dict['P1_prev_line_consistency_score'] /= p1_utterances
-    conv_dict['P2_prev_line_consistency_score'] /= p2_utterances
+    if p1_utterances > 0:
+        conv_dict['P1_prev_line_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_prev_line_consistency_score'] /= p2_utterances
 
 def run_metrics_short(filename):
     print(f"Begin metrics: {filename}\n\n")
@@ -339,14 +347,22 @@ def main(argv):
     global prompts
     init()
     config['eval_model'] = 'gpt-4o-mini' # we generally use gpt-4o-mini for evals 
+    
     if config['task'] == 'Anthology':
+        print("Using Anthology prompts")
         with open('config/persona_chat/prompts.json', 'r') as f:
             prompts = json.load(f)
         exp_folder = './data/anthology/exp'
     elif config['task'] == 'Education':
+        print("Using Education prompts")
         with open('config/education/prompts.json', 'r') as f:
             prompts = json.load(f)
         exp_folder = './data/education/exp'
+    
+    # load general eval prompts
+    with open('config/eval_prompts.json', 'r') as f:
+        prompts['eval_prompts'] = json.load(f)
+
     if config['filename']:
         run_metrics_all(config['filename'])
     else:
