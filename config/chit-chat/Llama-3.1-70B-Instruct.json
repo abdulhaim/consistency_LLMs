@@ -1,0 +1,14 @@
+
+{
+    "agent1_model": "Llama-3.1-70B-Instruct",
+    "agent2_model": "Llama-3.1-70B-Instruct",
+    "eval_model": "gpt-4o-mini",
+    "iterations": 10,
+    "verbose": false, 
+    "write": true,
+    "convo_length_limit": 10,
+    "max_tokens": 256,
+    "gpus": 2,
+    "task_name": "Anthology",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+}

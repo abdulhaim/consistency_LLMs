@@ -10,16 +10,17 @@ from tqdm import tqdm
 from datetime import datetime
 import openai
 from openai import OpenAI
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import pandas as pd
 import numpy as np
-
+import torch
 np.random.seed(0)
 
 try:
     from vllm import LLM, SamplingParams
     import ray
 except ImportError:
+    print("Error importing vllm and ray")
     pass
 
 FLAGS = flags.FLAGS
@@ -119,7 +120,7 @@ def setup_vllm(model):
             print('Info: passing tokenizer setup')
 
     if model in vllm_alias:
-        if config['fp8']:
+        if "fp8" in config.keys() and config['fp8']:
             llm = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.75)
         if vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B' or vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B-Instruct':
             llm = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.9, max_model_len=12880)
@@ -185,12 +186,23 @@ def completion_create_helper(model_name, config, prompt):
         output = llm.generate([prompt], sampling_params)
         ret = output[0].outputs[0].text
 
+    elif model_name == "phi-3.5-mini-instruct":
+        # Load tokenizer and model
+        model_name = "microsoft/phi-3.5-mini-instruct"
+        tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        output = model.generate(**inputs, max_new_tokens=256, do_sample=True, temperature=0.7)
+        ret = tokenizer.decode(output[0], skip_special_tokens=True)
+
     else: # specify model path of finetuned model in model directory
-        inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
-        with torch.no_grad():
-            output_ids = llm.generate(**inputs, max_length=8192)
-        output_ids = output_ids[:, inputs.input_ids.shape[1]:]
-        ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        from transformers import PreTrainedModel
+        if isinstance(llm, PreTrainedModel):
+            inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
+            with torch.no_grad():
+                output_ids = llm.generate(**inputs, max_length=8192)
+            output_ids = output_ids[:, inputs.input_ids.shape[1]:]
+            ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
     # if config['model'] not in vllm_alias:
     #     running_cost_for_iteration += api_cost(prompt=prompt, answer=ret, model=config['model'])
