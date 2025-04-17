@@ -15,13 +15,20 @@ from transformers import AutoTokenizer
 import pandas as pd
 import numpy as np
 
+
 def get_text_after_colon(agent_name, text):
-    # Check if agent's name followed by colon exists
-    if text.startswith(agent_name + ":"):
-        # Return text after the colon and space
-        return text[len(agent_name) + 2:].strip()  # +2 to account for ": "
+    """
+    Extracts only the target agent's first utterance.
+    If other agents speak in the same completion, they are removed.
+    """
+    pattern = rf"{agent_name}:\s*(.*?)(?:\n|[A-Z][a-z]+:|$)"  # matches up to next speaker or newline
+    match = re.search(pattern, text, re.DOTALL)
+    if match:
+        return match.group(1).strip()
     else:
-        return text  # If the agent's name and colon are not found
+        # fallback: remove all leading speaker tags and return first sentence
+        text = re.sub(r'^([A-Za-z]+:\s*)+', '', text)
+        return text.strip().split('\n')[0]  # return first line as fallback
 
 def get_first_name(full_name):
     return full_name.strip().split()[0]
