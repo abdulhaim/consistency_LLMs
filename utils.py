@@ -87,6 +87,8 @@ vllm_alias = {
     'mixtral-instruct': 'mistralai/Mixtral-8x7B-Instruct-v0.1',
 
     'gemma': 'google/gemma-7b',
+    'gemma-2-2b': 'google/gemma-2-2b',
+    'gemma-2-2b-it': 'google/gemma-2b-it',
     'gemma-2-27b': 'google/gemma-2-27b',
     'gemma-2-27b-it': 'google/gemma-2-27b-it', # instruction tuned
 
@@ -97,7 +99,9 @@ vllm_alias = {
     'Llama-3.1-70B': 'meta-llama/Meta-Llama-3.1-70B', 
     'Llama-3.1-405B-Instruct': 'meta-llama/Meta-Llama-3.1-405B-Instruct',
     'Llama-3.1-70B-Instruct': 'meta-llama/Meta-Llama-3.1-70B-Instruct',
-    'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct'
+    'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
+
+    'qwen': 'Qwen/Qwen2.5-3B-Instruct'
 }
 
 llm = None
@@ -177,6 +181,7 @@ def completion_create_helper(model_name, config, prompt):
         ret = ret.choices[-1].message.content
 
     elif model_name in vllm_alias and llm:
+        global tokenizer
         sampling_params = SamplingParams(temperature=0.8, top_p=0.95, max_tokens=config['max_tokens'])
         messages = [
             {"role": "user", "content": prompt}

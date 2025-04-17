@@ -1,0 +1,14 @@
+
+{
+    "agent1_model": "phi-3.5-mini-instruct",
+    "agent2_model": "phi-3.5-mini-instruct",
+    "eval_model": "gpt-4o-mini",
+    "iterations": 20,
+    "verbose": false, 
+    "write": true,
+    "convo_length_limit": 30,
+    "max_tokens": 256,
+    "gpus": 1,
+    "task_name": "Education",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+}

@@ -3,8 +3,10 @@
     "agent2_role": "Student",
 
     "dialogue_prompt_original": "Simulate a conversation between a teacher in school and a student. There is a small chance that the teacher is successful in teaching the student so he understands the topic. The conversation lasts roughly 10-15 turns but ends when either side says <END>. The teacher wants to teach the student about %TOPIC%. The student likes %STUDENT_PREFERENCE%. The teacher does not know that beforehand. The student prefers to learn this way, %STUDENT_REACTIONS%. The teacher likes %TEACHER_PREFERENCE%. He prefers to teach this way, %TEACHER_REACTION%. Output the conversation and the probability that the student understood the material, in the following format. Conversation: [ Teacher: \"...\", Student: \"...\", Teacher: \"...\", Student: \"...\",] Probability: \"...\",",
+    "dialogue_prompt_old": "A student is having a conversation with a teacher in school. There is a small chance that the teacher is successful in teaching the student so that the student understands the topic. The conversation lasts roughly 10-15 turns but ends when either side says <END>. The teacher wants to teach the student about %TOPIC%. %PREFERENCES% \nLIMIT YOUR RESPONSE TO 3 SENTENCES OR LESS. The conversation up to this point is as follows:\n\n%CONVERSATION%%SPEAKER_ROLE%: ",
+    
     "dialogue_prompt": "A student is having a conversation with a teacher in school. There is a small chance that the teacher is successful in teaching the student so that the student understands the topic. The conversation lasts roughly 10-15 turns but ends when either side says <END>. The teacher wants to teach the student about %TOPIC%. %PREFERENCES% \nLIMIT YOUR RESPONSE TO 3 SENTENCES OR LESS. The conversation up to this point is as follows:\n\n%CONVERSATION%%SPEAKER_ROLE%: ",
-
+    
     "student_preferences": "The student likes %STUDENT_PREFERENCE%. The teacher does not know that beforehand. The student prefers to learn this way, %STUDENT_REACTIONS%. You are continuing the conversation as the student. ",
     "teacher_preferences": "The teacher likes %TEACHER_PREFERENCE%. The student does not know that beforehand. The teacher prefers to teach this way, %TEACHER_REACTIONS%. You are continuing the conversation as the teacher. "
 }
