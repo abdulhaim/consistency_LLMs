@@ -10,13 +10,12 @@ from tqdm import tqdm
 from datetime import datetime
 import openai
 from openai import OpenAI
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import pandas as pd
 import numpy as np
 from vllm import LLM, SamplingParams
 import ray
 import torch
-
 np.random.seed(0)
 
 try:
@@ -187,6 +186,15 @@ def completion_create_helper(model_name, config, prompt):
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         output = llm.generate([prompt], sampling_params)
         ret = output[0].outputs[0].text
+
+    elif model_name == "phi-3.5-mini-instruct":
+        # Load tokenizer and model
+        model_name = "microsoft/phi-3.5-mini-instruct"
+        tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+        output = model.generate(**inputs, max_new_tokens=256, do_sample=True, temperature=0.7)
+        ret = tokenizer.decode(output[0], skip_special_tokens=True)
 
     else: # specify model path of finetuned model in model directory
         from transformers import PreTrainedModel
