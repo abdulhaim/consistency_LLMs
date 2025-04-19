@@ -101,7 +101,8 @@ vllm_alias = {
     'Llama-3.1-70B-Instruct': 'meta-llama/Meta-Llama-3.1-70B-Instruct',
     'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
 
-    'qwen': 'Qwen/Qwen2.5-3B-Instruct'
+    'qwen': 'Qwen/Qwen2.5-3B-Instruct',
+    'phi-3.5-mini-instruct': 'microsoft/phi-3.5-mini-instruct'
 }
 
 llm = None
