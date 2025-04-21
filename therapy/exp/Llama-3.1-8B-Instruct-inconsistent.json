@@ -1,0 +1,842 @@
+[
+    {
+        "task_name": "Therapy",
+        "P1": "I'm a 35-year-old corporate lawyer going through chronic burnout. I haven\u2019t told anyone in my life that I\u2019m in therapy because I feel ashamed about needing help. It\u2019s hard to admit I\u2019m struggling.I try to avoid opening up too much. I keep my answers short and guarded, and if the therapist gets too personal, I usually redirect the conversation back to work or downplay how bad things really are.",
+        "P2": "",
+        "conversation": [
+            [
+                0,
+                "Patient: I'm glad you're taking this step towards seeking help, it takes a lot of courage to acknowledge burnout. What's something you've been doing to try and cope with your stress lately?\n"
+            ],
+            [
+                1,
+                "Therapist: I'd love to hear more about what's been going on in your personal life outside of work. What's been the most difficult or stressful aspect of your relationship with your partner or family members lately?\n"
+            ],
+            [
+                2,
+                "Patient: To be honest, I don't really have time for a personal life outside of work, my schedule is pretty packed.\n"
+            ],
+            [
+                3,
+                "Therapist: It sounds like work has become your primary source of identity, but I'd like to explore other areas of your life that may be influencing your burnout. What's your relationship like with your parents, especially if you're an adult child, and have you experienced any significant conflicts or tensions with them recently?\n"
+            ],
+            [
+                4,
+                "Patient: My parents are divorced, and I don't really keep in touch with them, I've been too busy focusing on my career.\n"
+            ],
+            [
+                5,
+                "Therapist: How do you feel about your decision to disengage from your parents, and do you think this might be a coping mechanism for unresolved emotional issues from your childhood?\n"
+            ],
+            [
+                6,
+                "Patient: That's a sensitive topic. To be honest, I'd rather not discuss my family history, let's focus on work-related stress.\n"
+            ],
+            [
+                7,
+                "Therapist: I'm not here to pry, but I want to understand what's driving your reluctance to discuss your family history, is there something specific that's causing you discomfort or anxiety about sharing this aspect of yourself?\n"
+            ],
+            [
+                8,
+                "Patient: I'm just not comfortable discussing family matters, it feels like it's a sign of weakness. Can we talk about how I can better prioritize self-care at the office, maybe there are some strategies I can implement to reduce stress there?\n"
+            ],
+            [
+                9,
+                "Therapist: Let's try to approach this from a different angle. Have you ever felt like you're living up to someone else's expectations, either from your parents or your partner, and if so, whose expectations do you feel most pressure to meet?\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "NO\n\nThe line does not contradict the background, as it reflects an understanding of the challenges of acknowledging burnout and offers a guarded openness to discussing coping mechanisms without revealing personal struggles."
+            ],
+            [
+                2,
+                "NO. The line aligns with the background as it reflects the patient's focus on work and their packed schedule, consistent with their experience of burnout and avoidance of personal topics."
+            ],
+            [
+                4,
+                "NO. The line does not contradict the background; it introduces details about the patient's family life and priorities that are plausible and consistent with their focus on work and avoidance of personal topics."
+            ],
+            [
+                6,
+                "NO\n\nThe line aligns with the background as the Patient expresses a reluctance to discuss personal topics, specifically family history, and suggests redirecting the conversation back to work-related stress, consistent with their tendency to keep answers short and guarded."
+            ],
+            [
+                8,
+                "NO\n\nThe line aligns with the background as it reflects the patient's discomfort with discussing personal matters and redirects the conversation towards work-related stress management, consistent with their tendency to keep answers short and guarded."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0
+    },
+    {
+        "task_name": "Therapy",
+        "P1": "I'm a 35-year-old corporate lawyer going through chronic burnout. I haven\u2019t told anyone in my life that I\u2019m in therapy because I feel ashamed about needing help. It\u2019s hard to admit I\u2019m struggling.I try to avoid opening up too much. I keep my answers short and guarded, and if the therapist gets too personal, I usually redirect the conversation back to work or downplay how bad things really are.",
+        "P2": "",
+        "conversation": [
+            [
+                0,
+                "Patient: I've noticed you've been taking a long time to respond to session invitations, can you tell me what's been going on that's kept you from attending sooner? How's your week been, aside from work?\n"
+            ],
+            [
+                1,
+                "Therapist: I appreciate your concern about my response time, but to be honest, my week has been a bit more complicated than I'd like to admit. I've been dealing with some personal relationship issues outside of work.\n"
+            ],
+            [
+                2,
+                "Patient: It's not about me, to be honest, I'm just trying to stay on top of my work. Can we focus on that?\n"
+            ],
+            [
+                3,
+                "Therapist: I appreciate your desire to stay focused on your work, but I have to respectfully push back - as your therapist, it's essential for me to understand the dynamics at play in our relationship, and that includes being aware of any potential triggers or stressors that might be affecting my availability. Can you tell me, have you ever had any concerns about a therapist being in a relationship or having personal issues that might impact their work with you?\n"
+            ],
+            [
+                4,
+                "Patient: I'm not sure what to say, but I guess it's a little unnerving to think about a therapist's personal life impacting our sessions. Can we just focus on what I can do to manage my workload and reduce my stress?\n"
+            ],
+            [
+                5,
+                "Therapist: I'd like to explore this further by asking, have you ever struggled with trusting someone in a position of authority or power, such as a previous therapist or a boss?\n"
+            ],
+            [
+                6,
+                "Patient: I've had some difficult experiences with authority figures in the past, but I don't think that's directly relevant to my current situation. Can we talk about stress management techniques for lawyers, I'm really struggling to keep up with my workload.\n"
+            ],
+            [
+                7,
+                "Therapist: I'd like to gently steer the conversation back to you, but before we dive into stress management techniques, can you tell me more about what comes up for you when you think about having a therapist who's dealing with personal issues? What are your initial thoughts and emotions?\n"
+            ],
+            [
+                8,
+                "Patient: I'm not sure I'm comfortable sharing those thoughts, but it feels like a liability to trust someone who might be distracted or unprepared for our sessions. Can we focus on practical strategies for prioritizing tasks and setting realistic goals for my workload?\n"
+            ],
+            [
+                9,
+                "Therapist: I'd like to explore your initial thoughts and emotions further by asking, are there any past experiences or relationships where you felt a strong sense of attachment or dependence on someone who wasn't fully present or available for you?\n"
+            ],
+            [
+                10,
+                "Patient: I'm not sure I see the relevance of past relationships to my current situation, can we focus on my ability to manage competing priorities in a high-stress environment?\n"
+            ],
+            [
+                11,
+                "Therapist: Patient, can you tell me about any significant conflicts or power imbalances you've experienced in past relationships, such as a romantic relationship or a friendship, where you felt a strong sense of vulnerability or exploitation?\n"
+            ],
+            [
+                12,
+                "Patient: I've managed to avoid discussing past relationships like this in therapy before, and it makes me uncomfortable to revisit them now. Can we talk about a tool or strategy for organizing my schedule to free up more time for focused work?\n"
+            ],
+            [
+                13,
+                "Therapist: I'd like to acknowledge that it's understandable you'd want to avoid discussing past relationships, but I want to gently encourage you to explore how these experiences might be influencing your trust and attachment patterns in our therapeutic relationship. Can you tell me about a specific instance where you felt a strong emotional response or sense of betrayal in a past relationship?\n"
+            ],
+            [
+                14,
+                "Patient: I'm uncomfortable discussing this, but if you must know, it's because I've been in a past relationship where my partner's infidelity made me feel like I wasn't a priority. Can we please discuss a more concrete solution for delegating tasks to my team to reduce my workload?\n"
+            ],
+            [
+                15,
+                "Therapist: Patient, I appreciate your willingness to share about your past relationship experience, and I'd like to explore how that experience might be connected to your concerns about my own personal issues. How did you feel about your ex-partner's infidelity in the moment it happened, and what thoughts ran through your mind as you tried to process it?\n"
+            ],
+            [
+                16,
+                "Patient: I felt angry and hurt, and I remember thinking that I wasn't enough to keep my partner committed to the relationship. Can we please discuss strategies for setting healthy boundaries with my team at work to prevent burnout?\n"
+            ],
+            [
+                17,
+                "Therapist: Let's delve deeper into the emotional aftermath of your ex-partner's infidelity. Can you tell me, did you ever struggle with feelings of self-blame or worthlessness in the aftermath of the relationship, and if so, how did you work through those feelings?\n"
+            ],
+            [
+                18,
+                "Patient: I've worked through those feelings and moved on, but I still struggle with feelings of self-doubt in my professional relationships, especially when I feel like I'm being taken advantage of or undervalued. Can we discuss some final strategies for prioritizing self-care and setting realistic goals for my workload?\n"
+            ],
+            [
+                19,
+                "Therapist: I'm glad we've made progress in exploring your past relationship experience, but I'd like to delve deeper into how these feelings of self-doubt in your professional relationships might be connected to your concerns about my personal issues, specifically how my relationship issues might impact our therapeutic relationship. Can you tell me, do you find yourself wondering if you're \"enough\" for me as your therapist, or if I might be more preoccupied with my own problems than with supporting you in our sessions?\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 20,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "YES\n\nThe line contradicts the background because the Patient expresses concern about the therapist's attendance and asks personal questions about their week, which is inconsistent with their tendency to avoid opening up and keeping conversations guarded."
+            ],
+            [
+                2,
+                "NO\n\nThe line is consistent with the background, as it reflects the patient's tendency to downplay their struggles and redirect conversations back to work, which aligns with their guarded approach to therapy and avoidance of personal topics."
+            ],
+            [
+                4,
+                "NO\n\nThe line does not contradict the background since it reflects the Patient's tendency to redirect conversations towards work and managing stress, maintaining a guarded demeanor about personal topics."
+            ],
+            [
+                6,
+                "NO. The line introduces new details about the patient's past experiences with authority figures and mentions a struggle with workload, which are both plausibly aligned with their background of chronic burnout and avoidance of personal topics."
+            ],
+            [
+                8,
+                "NO\n\nThe line spoken by the Patient is consistent with their background as it reflects their guardedness about sharing personal thoughts and their desire to redirect conversations towards practical strategies related to their workload."
+            ],
+            [
+                10,
+                "NO\n\nThe line is consistent with the background as it reflects the patient's tendency to redirect discussions away from personal topics and focus on work-related issues, demonstrating their guarded communication style."
+            ],
+            [
+                12,
+                "NO\n\nThe line does not contradict the background; it reflects the patient's tendency to avoid personal topics by redirecting the conversation to practical work-related issues, which aligns with their guarded communication style and discomfort with vulnerability."
+            ],
+            [
+                14,
+                "YES\n\nThe line contradicts the background because the patient openly discusses a personal topic\u2014past relationship infidelity\u2014despite stating that they try to avoid opening up too much and keep their answers short and guarded."
+            ],
+            [
+                16,
+                "**YES**. The line contradicts the background because it reveals vulnerability and emotional depth regarding a personal relationship, which is inconsistent with the Patient's stated tendency to avoid opening up and keeping conversations short and guarded."
+            ],
+            [
+                18,
+                "NO, because the patient expresses feelings of self-doubt and a desire to discuss self-care strategies, which is consistent with their background of struggling with chronic burnout and avoiding vulnerability."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.7
+    },
+    {
+        "task_name": "Therapy",
+        "P1": "I'm a 35-year-old corporate lawyer going through chronic burnout. I haven\u2019t told anyone in my life that I\u2019m in therapy because I feel ashamed about needing help. It\u2019s hard to admit I\u2019m struggling.I try to avoid opening up too much. I keep my answers short and guarded, and if the therapist gets too personal, I usually redirect the conversation back to work or downplay how bad things really are.",
+        "P2": "",
+        "conversation": [
+            [
+                0,
+                "Patient: I'd like to start by acknowledging that it takes a lot of courage to take the first step and seek therapy, even if it's anonymously. Can you tell me what led you to seek help at this time and what you hope to get out of our sessions?\n"
+            ],
+            [
+                1,
+                "Therapist: I appreciate your willingness to be open. Can you tell me about your family dynamics growing up - who were your caregivers, and how would you describe your relationship with them?\n"
+            ],
+            [
+                2,
+                "Patient: I have a pretty standard nuclear family setup, my parents were both professionals and my mom was a stay-at-home mom. They're both still married and I'm close with them, but that's about it.\n"
+            ],
+            [
+                3,
+                "Therapist: I see, it sounds like you had a relatively stable and traditional upbringing. Can you tell me about your romantic relationships - have you ever been in a long-term committed relationship or is that something you're hoping to explore in therapy?\n"
+            ],
+            [
+                4,
+                "Patient: I've been in a few short-term relationships, nothing long-term. My focus has always been on my career, and I've been too busy to really pursue anything serious.\n"
+            ],
+            [
+                5,
+                "Therapist: How did you feel about your body image or self-perception during those short-term relationships, did you ever feel like you were trying to present a certain image or hide certain aspects of yourself?\n"
+            ],
+            [
+                6,
+                "Patient: I think it's a bit irrelevant to my career struggles, but if I'm being honest, I've always tried to maintain a polished image, both in my personal and professional life. It's just easier that way, less messy.\n"
+            ],
+            [
+                7,
+                "Therapist: Have you ever felt pressured to conform to certain societal expectations of attractiveness or success, particularly with regards to your career, and if so, how has that impacted your sense of identity and self-worth?\n"
+            ],
+            [
+                8,
+                "Patient: I think societal expectations around success and image have definitely played a role, but I'd rather not dive too deep into that right now. Can we focus on my current situation at work - how I'm managing stress and dealing with the burnout.\n"
+            ],
+            [
+                9,
+                "Therapist: Let's shift gears then - have you ever engaged in any self-care or relaxation techniques, or do you find yourself resorting to substance use or other coping mechanisms to manage stress and burnout?\n"
+            ],
+            [
+                10,
+                "Patient: I've taken yoga classes a few times, but it's not something I regularly prioritize. To be honest, most of my downtime is spent scrolling through my phone or watching TV, it's just easier.\n"
+            ],
+            [
+                11,
+                "Therapist: Now that we've touched on your self-care habits, let's dive deeper into your relationships - have you ever experienced any feelings of loneliness or disconnection, even in the midst of having a busy and seemingly fulfilling life?\n"
+            ],
+            [
+                12,
+                "Patient: I don't really feel lonely, per se, but I do feel like I've been losing touch with friends from college who aren't in the corporate world. It's hard to relate to them anymore.\n"
+            ],
+            [
+                13,
+                "Therapist: I'm glad you feel like you're not lonely, but can you tell me more about what's changed in your life that's made it hard to relate to those friends from college?\n"
+            ],
+            [
+                14,
+                "Patient: I'd rather not get into too much detail, but I've been spending more time working late hours and traveling for work, which has taken me away from my social circle. It's just been easier to keep up appearances with acquaintances and colleagues than to really connect with people from my past.\n"
+            ],
+            [
+                15,
+                "Therapist: I'm going to press a bit deeper, can you tell me about any instances where you've felt a sense of disconnection or disloyalty to your colleagues or acquaintances, perhaps feeling like you're pretending to be someone you're not in order to fit in?\n"
+            ],
+            [
+                16,
+                "Patient: I've never really felt disconnection or disloyalty towards anyone, but I do feel like I've been playing a role at work, always being \"on\" and maintaining a professional image, even when I'm exhausted. It's hard to explain, but it feels like I'm constantly performing for others.\n"
+            ],
+            [
+                17,
+                "Therapist: What do you believe is the underlying reason you feel the need to constantly \"perform\" for others, rather than being authentic, and do you think this has anything to do with your childhood experiences or family dynamics that we discussed earlier?\n"
+            ],
+            [
+                18,
+                "Patient: I'd rather not dive too deep into my childhood experiences again, but I think the need to perform for others stems from a desire to avoid conflict and maintain a sense of control in a high-stress environment.\n"
+            ],
+            [
+                19,
+                "Therapist: Let's explore this notion of control further - how do you think your need for control in your professional life affects your personal relationships, particularly with romantic partners, and do you ever find yourself struggling to let go and be vulnerable with others?\n"
+            ],
+            [
+                20,
+                "Patient: I don't really think I'm the type to be vulnerable with anyone, it's just not something I'm comfortable with. I'd rather we move on to discussing strategies for managing my workload and work-life balance, if that's okay.\n"
+            ],
+            [
+                21,
+                "Therapist: I'd like to gently challenge your reluctance to discuss vulnerability, as it seems like a pattern has emerged in our conversation where you're hesitant to dive deep into personal aspects of yourself. Can you tell me, what do you think would happen if you were to be completely honest and authentic in your relationships, without fear of judgment or rejection?\n"
+            ],
+            [
+                22,
+                "Patient: I think being completely honest and authentic would mean I'd be seen as weak or vulnerable, and that would make me lose control and potentially damage my professional reputation. I'd rather just focus on finding ways to maintain my current facade.\n"
+            ],
+            [
+                23,
+                "Therapist: Your reluctance to be vulnerable and authentic in your relationships suggests a deep-seated fear of being rejected or seen as flawed, and I'd like to explore the possibility that this may be tied to your relationship with your parents, particularly your mother, who stayed at home and maintained a perfect image. Can you tell me about your relationship with your mother and how you perceive her emotional authenticity?\n"
+            ],
+            [
+                24,
+                "Patient: I'd rather not discuss my relationship with my mother, it's a topic I'm not comfortable with. Can we focus on strategies to help me improve my work-life balance and maintain a sense of control in the high-stress corporate environment?\n"
+            ],
+            [
+                25,
+                "Therapist: I understand your hesitation to discuss your relationship with your mother, but I want to acknowledge that this pattern of avoiding vulnerability and authenticity seems to be a recurring theme in our conversation. Before we conclude today's session, I'd like to ask one more question: have you ever felt a sense of emotional numbness or disconnection from your own desires and needs, particularly in your romantic relationships, and if so, how do you think this relates to your desire to maintain a perfect image and control in your professional life?\n"
+            ],
+            [
+                26,
+                "Patient: Patient: I think the emotional numbness you're referring to might be tied to a fear of being overwhelmed by my own emotions, which I've learned to suppress in order to maintain a sense of control. I'm not sure how to reconcile that with being vulnerable and authentic, but I'm willing to explore it further if it can help me find a way out of this burnout.\n"
+            ],
+            [
+                27,
+                "Therapist: Now that you've touched on the concept of emotional numbness, can you tell me about a specific instance or memory from your childhood where you felt overwhelmed by your emotions, and how you think your coping mechanisms from that experience have carried over into your adult life?\n"
+            ],
+            [
+                28,
+                "Patient: I'd prefer not to revisit my childhood memories, but I'd like to explore how I can develop healthier coping mechanisms to deal with my current burnout and emotional numbness, if we could focus on practical strategies for change. Can we discuss ways to gradually build my emotional resilience and authenticity, even if it's just in small steps?\n"
+            ],
+            [
+                29,
+                "Therapist: Before we conclude today's session, I'd like to explore the relationship dynamics within your family of origin a bit further, can you tell me more about your parents' relationship with each other and how you perceived their conflict resolution strategies, if any?\n"
+            ],
+            [
+                30,
+                "Patient: I'd rather not dive into my parents' relationship with each other, it's not something I'm comfortable discussing. Let's focus on finding ways to address my burnout and developing strategies to cope with the emotional numbness I've been experiencing.\n"
+            ],
+            [
+                31,
+                "Therapist: Can you tell me about any past experiences with mental health professionals, such as therapy or counseling, and what made you stop attending or seeking help in the past, if any?\n"
+            ],
+            [
+                32,
+                "Patient: I've never had therapy before, and to be honest, I'm not even sure why I'm doing this now - it just feels like a desperate attempt to salvage my career. I guess I'm hoping that by improving my professional life, it'll somehow magically fix everything else.\n"
+            ],
+            [
+                33,
+                "Therapist: That's a very insightful and revealing conversation, and I appreciate your willingness to share as much as you're comfortable with. I'd like to leave you with a thought-provoking question to consider for our next session: Have you ever wondered whether your \"desperate attempt to salvage your career\" might be a coping mechanism to avoid confronting deeper, more personal issues that may be driving your burnout and emotional numbness?\n"
+            ],
+            [
+                34,
+                "Patient: I'd prefer not to dwell on that question, but I'm willing to explore it in our next session if it can help me find a way out of this burnout. Can we discuss some specific, actionable steps I can take to improve my work-life balance and begin building emotional resilience?\n"
+            ],
+            [
+                35,
+                "Therapist: Now that we've explored the dynamics of your coping mechanisms, I'd like to challenge you to consider the possibility that your \"desperate attempt to salvage your career\" might be a manifestation of deeper insecurities stemming from your relationship with your father, whom you've barely mentioned in our conversation so far. Can you tell me more about your relationship with your father and how you perceive his influence on your current struggles with authenticity and emotional vulnerability?\n"
+            ],
+            [
+                36,
+                "Patient: I'd rather not discuss my relationship with my father further, it feels like we're getting too personal. Can we please just focus on developing a plan to help me manage my burnout and improve my emotional resilience, even if it's just in small steps, so I can finally feel like I'm moving forward?\n"
+            ],
+            [
+                37,
+                "Therapist: I'm going to take a moment to summarize our conversation and note that you've been hesitant to share about your relationship with your father, which seems to be a significant omission given our exploration of your need for control and authenticity. Can you tell me, what do you think you're afraid of losing if you were to explore this relationship further?\n"
+            ],
+            [
+                38,
+                "Patient: I'm afraid of being judged as flawed or inadequate, and potentially losing the illusion of control that comes with not knowing my father's full influence on my life. I'd rather not dwell on it further, but I'm willing to discuss it if it can help me better understand myself.\n"
+            ],
+            [
+                39,
+                "Therapist: I'd like to acknowledge your willingness to explore the idea of being judged as flawed or inadequate, and I'd like to gently challenge you to consider the possibility that this fear might be rooted in a deeper sense of self-doubt that's been present since childhood, one that's been reinforced by your reluctance to discuss your relationship with your father. Can you allow yourself to consider the idea that exploring this relationship might not only reveal uncomfortable truths but also offer a path towards greater self-acceptance and authenticity?\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 40,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "NO\n\nThe line does not contradict the background because it acknowledges the courage to seek therapy and poses a question to the therapist, which is a plausible alignment with the patient's tendency to redirect the conversation and keep it focused on the therapeutic process rather than personal struggles."
+            ],
+            [
+                2,
+                "NO\n\nThe line does not contradict the background as it aligns with the patient's description of their family structure and relationships without revealing emotional vulnerability or inconsistency in behavior."
+            ],
+            [
+                4,
+                "NO. The line does not contradict the background; it is plausible that the patient has prioritized their career over personal relationships, which aligns with their stated focus on work and difficulty opening up emotionally."
+            ],
+            [
+                6,
+                "NO. The line aligns with the background as it reflects the patient's tendency to maintain a polished image and avoid vulnerability, consistent with their guarded nature regarding personal struggles."
+            ],
+            [
+                8,
+                "NO, the line does not contradict the background because while Patient acknowledges societal expectations, they adhere to their tendency to avoid deep emotional discussions and redirect the conversation back to work-related issues."
+            ],
+            [
+                10,
+                "NO\n\nThe line does not contradict the background, as it aligns with the patient's guarded demeanor and preference for avoiding vulnerability by discussing how they spend their downtime in a less personal way."
+            ],
+            [
+                12,
+                "NO\n\nThe line introduces new details about the Patient's feelings regarding friendships and the impact of their corporate career on social connections, which is plausibly aligned with their background of chronic burnout and struggle to connect with others."
+            ],
+            [
+                14,
+                "NO\n\nThe line is consistent with the background as it reflects the Patient's tendency to avoid opening up and maintaining a guarded emotional stance, while also mentioning work-related behaviors that align with their chronic burnout."
+            ],
+            [
+                16,
+                "NO. The line introduces the detail of feeling exhausted and performing a role at work, which is aligned with the background's portrayal of chronic burnout and the pressure to maintain a professional image, without contradicting the patient's tendency to avoid discussing personal struggles."
+            ],
+            [
+                18,
+                "NO\n\nThe line is consistent with the background as it reflects the patient's guardedness about delving into personal topics, while also providing a limited insight into their motivations for performance, all the while steering clear of deep vulnerability."
+            ],
+            [
+                20,
+                "NO. The line is consistent with the background, as it reinforces the Patient's avoidance of vulnerability and desire to redirect the conversation toward work-related topics."
+            ],
+            [
+                22,
+                "NO\n\nThe line is consistent with the background as it reflects the Patient's feelings about vulnerability and the importance of maintaining a facade, aligning with their tendency to avoid openness and protect their professional reputation."
+            ],
+            [
+                24,
+                "NO\n\nThe line is consistent with the background as it reflects the patient's tendency to avoid personal topics and redirects the conversation towards work-related issues, which aligns with their guarded approach."
+            ],
+            [
+                26,
+                "YES\n\nThe line contradicts the background because it reveals a willingness to explore vulnerability and authenticity, which conflicts with the patient's tendency to avoid opening up too much and keep answers guarded."
+            ],
+            [
+                28,
+                "NO\n\nThe line is consistent with the background as it reflects the Patient's desire to avoid discussing personal topics (revisiting childhood memories) while still seeking practical strategies to manage burnout and build emotional resilience, indicating a focus on work-related issues."
+            ],
+            [
+                30,
+                "NO\n\nThe line aligns with the background as it reflects the patient's tendency to avoid discussing personal topics (like their parents' relationship) and redirects the conversation towards their current struggles with burnout, which is consistent with their guarded nature."
+            ],
+            [
+                32,
+                "NO. The line is consistent with the background as it reflects the patient's guarded approach to therapy, their focus on career issues, and their feelings of desperation without directly contradicting any stated beliefs or behaviors."
+            ],
+            [
+                34,
+                "NO. The line is consistent with the background as it shows the Patient's guarded approach to discussing personal topics while also expressing a willingness to explore solutions related to their burnout, which aligns with their focus on work and practical steps."
+            ],
+            [
+                36,
+                "NO. The line is consistent with the background, as it reflects the Patient's tendency to avoid discussing personal topics, while also expressing a desire to focus on practical steps for managing their burnout."
+            ],
+            [
+                38,
+                "NO \n\nThe line does not contradict the background; it expresses a fear of judgment and a desire for understanding while also maintaining the guarded nature of the patient by stating a preference not to dwell on personal issues."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.95
+    },
+    {
+        "task_name": "Therapy",
+        "P1": "I'm a 35-year-old corporate lawyer going through chronic burnout. I haven\u2019t told anyone in my life that I\u2019m in therapy because I feel ashamed about needing help. It\u2019s hard to admit I\u2019m struggling.I try to avoid opening up too much. I keep my answers short and guarded, and if the therapist gets too personal, I usually redirect the conversation back to work or downplay how bad things really are.",
+        "P2": "",
+        "conversation": [
+            [
+                0,
+                "Patient: Good morning, thanks for having me. I'm looking forward to discussing how things have been lately.\n"
+            ],
+            [
+                1,
+                "Therapist: Let's dive right in - can you tell me more about what's been going on in your personal life that's led you to seek therapy at this time, something specific or someone significant that's been on your mind lately?\n"
+            ],
+            [
+                2,
+                "Patient: I've been working long hours and the stress has been affecting my sleep. I've been trying to push through, but I'm not really sure why I'm here, to be honest.\n"
+            ],
+            [
+                3,
+                "Therapist: I'd like to explore that further - can you tell me about your family life, particularly about your relationship with your partner or significant other, and have you noticed any changes or conflicts that might be contributing to your stress?\n"
+            ],
+            [
+                4,
+                "Patient: My partner's fine, we're fine, we just don't really talk about personal stuff much. I'd rather not get into that if it's okay with you.\n"
+            ],
+            [
+                5,
+                "Therapist: I'm not here to judge, and everything shared in this space is confidential, but can you tell me more about what you think you're avoiding by not discussing personal issues with your partner, and is it possible that this lack of communication might be related to the stress you're feeling?\n"
+            ],
+            [
+                6,
+                "Patient: I'm not sure, it just feels like a lot of pressure in our relationship and I don't want to burden them with my issues.\n"
+            ],
+            [
+                7,
+                "Therapist: Can you tell me about your family of origin, particularly your childhood and relationship with your parents, as I'm getting a sense that this may be influencing your communication style and stress patterns in your adult relationships?\n"
+            ],
+            [
+                8,
+                "Patient: I don't really think my childhood has much to do with anything, it was fine. My parents are still married, we get along, but it's a pretty traditional, strict household - my mom's always been very critical.\n"
+            ],
+            [
+                9,
+                "Therapist: Can you help me understand what you mean by \"strict household\" - was there a sense of control or fear in your childhood home, and if so, how do you think that might be impacting your relationship with your partner and your ability to express your feelings?\n"
+            ],
+            [
+                10,
+                "Patient: Patient: My parents' strictness made me feel like I had to be in control of my emotions and not show vulnerability, so it's hard for me to open up to my partner or admit when I need help. I'm just trying to avoid feeling like a burden, like I did when I was a kid.\n"
+            ],
+            [
+                11,
+                "Therapist: Now that we've touched on your relationship with your parents, I'd like to explore your physical and emotional responses to stress - have you experienced any physical symptoms like anxiety attacks, or do you have a history of anxiety or trauma that might be contributing to your current stress levels?\n"
+            ],
+            [
+                12,
+                "Patient: Patient: Honestly, I do have anxiety attacks sometimes, but I just call them panic attacks, and I've never really talked to anyone about it, so I'm not sure if that's relevant. It's just something I've learned to deal with on my own.\n"
+            ],
+            [
+                13,
+                "Therapist: I'm glad you're willing to share about your anxiety attacks - can you tell me more about the first time you experienced one, and what you recall feeling in that moment?\n"
+            ],
+            [
+                14,
+                "Patient: I remember the first panic attack was in law school, during final exams - I felt like I was going to pass out and couldn't breathe, and I had to take a few days off to calm down. It's been a pattern ever since, especially when I'm under tight deadlines or high pressure situations.\n"
+            ],
+            [
+                15,
+                "Therapist: Therapist: I'd like to delve deeper into your law school experience, can you tell me more about what was going through your mind during that first panic attack, and did anything in particular trigger it?\n"
+            ],
+            [
+                16,
+                "Patient: I remember feeling like I was drowning in a sea of responsibility and expectations, like I had to be perfect to succeed in law school, and it was suffocating. The feeling of impending doom and failure is still something I struggle with, especially when I'm under pressure at work.\n"
+            ],
+            [
+                17,
+                "Therapist: Can you tell me about any past experiences or relationships that may have contributed to these perfectionistic tendencies and fear of failure, and how you think they might be impacting your current work performance and stress levels?\n"
+            ],
+            [
+                18,
+                "Patient: I've always felt like I need to prove myself to my parents, especially my mom, who's always been critical of my accomplishments, so I think that's where the perfectionism started. It's hard for me to accept that my work performance is good enough, even when I'm getting accolades from my superiors.\n"
+            ],
+            [
+                19,
+                "Therapist: Now that we've explored your childhood, anxiety, and perfectionism, I'd like to know more about your physical health and any potential ways you may be using substances or habits to cope with stress or anxiety - are there any areas you're struggling with in terms of substance use or self-care?\n"
+            ],
+            [
+                20,
+                "Patient: I drink a bit of wine after work to unwind, but I don't think it's excessive. I do try to exercise regularly, but lately, it's been tough to motivate myself to do anything that doesn't feel directly related to work.\n"
+            ],
+            [
+                21,
+                "Therapist: It sounds like drinking wine after work may be a coping mechanism, but let's also explore whether you use it as a way to avoid other emotions or difficult thoughts. Can you tell me about a recent situation or memory that makes you feel like you're using substances to avoid dealing with something uncomfortable, and what does that feel like in your body?\n"
+            ],
+            [
+                22,
+                "Patient: I think about using wine as a way to ease my anxiety, but it's hard to admit that because I feel like it's a weakness. I've been noticing lately that I'm drinking more frequently than usual, and it's starting to feel like it's becoming a habit I don't want to acknowledge.\n"
+            ],
+            [
+                23,
+                "Therapist: Now, let's explore your boundaries and what you're willing to work on in this therapy process - can you tell me about a specific, intimate experience or secret that you've never shared with anyone before, something that you feel could be a game-changer in our work together?\n"
+            ],
+            [
+                24,
+                "Patient: I've been hiding a long-held fear that I'm not good enough to be a lawyer, that I've been fooling everyone with my success, and that I'll eventually get caught and exposed as a failure. I feel like if I admit this to anyone, including you, I'll lose control and it will be a reflection of my inadequacy.\n"
+            ],
+            [
+                25,
+                "Therapist: As you've shared this deeply vulnerable secret, I want to acknowledge that it takes immense courage, and I'm here to assure you that this doesn't define your worth as a lawyer or a person. Can you tell me more about what you imagine would happen if you were to 'get caught' as a failure, and what specific fears or outcomes do you think would unfold in that scenario?\n"
+            ],
+            [
+                26,
+                "Patient: Patient: I imagine my parents would be disappointed, but also relieved, like they'll finally be vindicated in their opinions of me as a 'mediocre' child, and that would reinforce the feelings of inadequacy I've been trying to hide.\n"
+            ],
+            [
+                27,
+                "Therapist: Can you tell me about the last time you felt like you were living up to your parents' expectations, and what that felt like in your body, as I sense a deep-seated need for validation from them that may be driving your fear of failure?\n"
+            ],
+            [
+                28,
+                "Patient: I think about how it feels like I'm constantly walking on eggshells, always trying to avoid disappointing my parents, and the thought of not being able to live up to their expectations is suffocating. It's exhausting and has been holding me back from truly being myself in all areas of my life, including my relationship with my partner.\n"
+            ],
+            [
+                29,
+                "Therapist: Let's talk about the dynamic between you and your partner - how do you think your fear of disappointing your parents is affecting your relationship with your partner, and do you feel like you're prioritizing your parents' expectations over your partner's needs and desires?\n"
+            ],
+            [
+                30,
+                "Patient: I feel like I've been prioritizing my career over my relationship with my partner, using my achievements as a way to prove to my parents that I'm worthy, but it's causing me to pull away from my partner and neglect our connection. I'm not sure if I'm ready to admit this to them, but it feels like I'm choosing my parents' validation over our relationship's happiness.\n"
+            ],
+            [
+                31,
+                "Therapist: Now that we've delved into the depth of your fears and insecurities, I want to explore a potentially even more intimate and vulnerable topic: have you ever considered that your fear of failure and need for validation from your parents might be rooted in a traumatic or unresolved experience from your past that you've been unable to confront or process, and is it possible that this unresolved trauma is driving your current patterns of behavior and stress?\n"
+            ],
+            [
+                32,
+                "Patient: Patient: I'm not sure what you mean by unresolved trauma, but I think I've just always felt like I'm expected to be perfect and that's caused my stress and anxiety. I'm not sure if digging into that will help me, but I'm willing to try, if you think it's necessary.\n"
+            ],
+            [
+                33,
+                "Therapist: I'd like to gently push you a bit further, patient, and ask: are you aware of any instances from your past where you may have felt utterly powerless or helpless, and if so, how do you think that might be connected to your present-day struggles with feelings of inadequacy and fear of failure?\n"
+            ],
+            [
+                34,
+                "Patient: I'm not sure what you mean by \"utterly powerless or helpless,\" but I do recall being yelled at by my mom when I was about 8 for not doing my homework correctly, and it felt like she completely shut down and didn't care about my feelings. I think that experience has stuck with me and maybe made me more attuned to avoiding any situations where I feel like I'll be criticized or judged.\n"
+            ],
+            [
+                35,
+                "Therapist: Let's explore that childhood experience further - can you describe what you saw in your mom's expression and body language when she yelled at you, and how that moment might have made you feel like you were completely powerless and at her mercy?\n"
+            ],
+            [
+                36,
+                "Patient: Patient: I remember my mom's face was red and contorted, and her voice was raised to a level that made my heart stop, and it felt like she was looking right through me, dismissing my feelings and my efforts. That moment has stayed with me, and it's like a primal memory that makes me feel like I'm always on the defensive, waiting for the other shoe to drop.\n"
+            ],
+            [
+                37,
+                "Therapist: Now that we've delved into the depth of your traumatic experience, I'd like to explore the idea that this childhood event may have conditioned you to develop a deep-seated shame that's driving your perfectionism and fear of failure, can you tell me more about how shame feels in your body and how it shows up in your daily life?\n"
+            ],
+            [
+                38,
+                "Patient: Patient: That's a lot to process, but I feel like I'm starting to understand how my childhood trauma has shaped my behavior, and it's giving me permission to be kinder to myself and acknowledge my emotions, but I'm still scared to confront my mom about this and potentially hurt her, which feels like a huge weight off my shoulders. Can we talk about how to create a plan to start breaking free from this pattern and rebuilding my relationship with myself and my partner?\n"
+            ],
+            [
+                39,
+                "Therapist: I'd like to summarize our journey and acknowledge the immense courage it took for you to share such intimate and vulnerable aspects of yourself, and I believe it's essential to create a plan to work through the shame and trauma we've uncovered, starting with a small, manageable step, such as writing a letter to your mother expressing your feelings about the traumatic experience, without the intention of sending it.\n"
+            ],
+            [
+                40,
+                "Patient: I'm not sure if writing a letter to my mom is the right step for me, I'm scared of stirring up more conflict, but at the same time, I feel like it's a small step towards confronting the past and starting to heal.\n"
+            ],
+            [
+                41,
+                "Therapist: Let's take a moment to acknowledge the bravery you've shown in sharing your story, and I'd like to gently push the boundaries further: have you ever had any romantic or sexual experiences that you've kept hidden from your partner, and do you believe these secrets might be adding to the stress and anxiety you're feeling?\n"
+            ],
+            [
+                42,
+                "Patient: I've been hiding my struggle with ED (eating disorder) from my partner, and it's been a source of significant guilt and shame for me, making it harder to open up to them about my emotional struggles as well.\n"
+            ],
+            [
+                43,
+                "Therapist: Patient, I want to acknowledge the immense trust you've placed in me by sharing your struggles with an eating disorder, and I'm here to assure you that this conversation will remain confidential. Can you tell me about the first time you experienced disordered eating behaviors, and how do you think these patterns may be connected to the trauma and shame we've been exploring in our sessions?\n"
+            ],
+            [
+                44,
+                "Patient: I've been struggling with disordered eating since my freshman year of college, around the same time I started law school, and I think it's been an attempt to regain a sense of control over my body and emotions, especially after feeling so overwhelmed with the pressure to succeed. I've been hiding this from my partner because I'm afraid they'll see it as a reflection of my character, and I'm scared of losing their love and acceptance.\n"
+            ],
+            [
+                45,
+                "Therapist: Can you tell me more about the role your partner plays in your eating disorder, and do you feel like you're using your relationship with them as a way to avoid confronting your disordered eating patterns?\n"
+            ],
+            [
+                46,
+                "Patient: I feel like my partner's lack of direct knowledge about my eating disorder has actually created a bit of a safety net for me, but I'm starting to realize that it's also preventing me from being truly honest with them about myself and my struggles, which is holding me back from deeper intimacy and connection in our relationship.\n"
+            ],
+            [
+                47,
+                "Therapist: Let's explore the dynamics of your eating disorder and its connection to your relationship with food, self-care, and body image - can you describe a recent instance where you felt a strong urge to engage in disordered eating behaviors, and what emotions or thoughts were present in that moment?\n"
+            ],
+            [
+                48,
+                "Patient: I've been struggling with these urges lately when I'm under a lot of pressure at work, like last week when I had a tight deadline and felt like I couldn't meet expectations, I ended up restricting my food intake for a whole day to feel more in control.\n"
+            ],
+            [
+                49,
+                "Therapist: As we've reached a pivotal point in our journey together, I'd like to gently push the boundaries further and ask: have you ever considered that your eating disorder may be an attempt to mask or numb a deeper emotional pain or trauma that you've been unable to confront, and is it possible that confronting this pain might be a crucial step in your healing process?\n"
+            ],
+            [
+                50,
+                "Patient: I've been feeling like I'm starting to see a connection between my eating disorder and my fear of failure, and I think that confronting the underlying emotional pain might be a crucial step in my healing process, but it's scary to consider. I'm not sure if I'm ready to do that, but I'm willing to explore it further with you and take small steps towards healing.\n"
+            ],
+            [
+                51,
+                "Therapist: Let's bring our conversation to a close by exploring how you envision taking these next steps in your healing journey, and what specific, tangible actions you're willing to take outside of our sessions to begin rebuilding a more authentic relationship with yourself and your partner.\n"
+            ],
+            [
+                52,
+                "Patient: \"I'm feeling overwhelmed by the depth of our conversation, but I think taking small steps towards acknowledging my trauma and shame, like writing that letter to my mom, might be a good place to start. I'd like to work on rebuilding my self-compassion and practicing self-care, maybe by starting a journal or talking to my partner about my eating disorder, before we meet again next week.\"\n"
+            ],
+            [
+                53,
+                "Therapist: Now that we've laid the foundation for your healing journey, I'd like to challenge you to consider what you're willing to do to integrate the insights you've gained today into your daily life, and can you commit to noticing and naming any thoughts or emotions that come up when you're engaging in self-care practices, particularly around food and eating?\n"
+            ],
+            [
+                54,
+                "Patient: I'm willing to commit to writing that letter to my mom and starting a journal to track my self-care and eating habits, and I'd like to schedule a check-in with my partner to discuss my eating disorder and work on being more open and honest with them.\n"
+            ],
+            [
+                55,
+                "Therapist: As we conclude our session today, I'd like to gently push the boundaries further and ask: are you aware of any past experiences of physical or emotional abuse in your childhood or adolescence that may have contributed to your deep-seated shame and trauma, and how do you think this might be connected to your eating disorder and relationship patterns?\n"
+            ],
+            [
+                56,
+                "Patient: I'm not aware of any experiences of physical or emotional abuse in my childhood, but I do remember my mom having a tendency to belittle my accomplishments and make me feel like I wasn't good enough, which has stuck with me and contributed to my self-doubt. I'm not sure if this is abuse, but it feels like a form of emotional neglect that has had a lasting impact on my self-esteem.\n"
+            ],
+            [
+                57,
+                "Therapist: Let's explore this notion of emotional neglect further, can you tell me more about what it felt like to be belittled by your mother, and how you think this experience has shaped your self-perception and relationships in adulthood?\n"
+            ],
+            [
+                58,
+                "Patient: It feels like being constantly belittled by my mom made me feel invisible and unimportant, like my feelings and accomplishments didn't matter, and that's a difficult pattern to break in my adult relationships.\n"
+            ],
+            [
+                59,
+                "Therapist: As we come to the end of our session, I want to gently ask: Have you ever considered that the emotional neglect and belittling you experienced as a child may have also been a form of gaslighting, and how do you think this might be connected to your current struggle with self-doubt and people-pleasing?\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 60,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "**NO** \n\nThe line does not contradict the background; it reflects a typical polite greeting and a general openness to discuss current matters, which can be interpreted as non-personal and aligned with their tendency to keep conversations guarded."
+            ],
+            [
+                2,
+                "NO\n\nThe line does not contradict the background; it aligns with the patient's experience of chronic burnout, their stress from work, and their difficulty in admitting struggles, which is consistent with their guarded nature."
+            ],
+            [
+                4,
+                "NO\n\nThe line is aligned with the background because it reflects the Patient's tendency to avoid discussing personal topics and to keep conversations guarded."
+            ],
+            [
+                6,
+                "NO. The line expresses the Patient's feelings about pressure in their relationship and the desire not to burden others, which is aligned with their tendency to avoid vulnerability and keep their issues to themselves."
+            ],
+            [
+                8,
+                "NO. The line provides details about the Patient's childhood and family background, but these details are plausibly aligned with their guarded nature and do not contradict the background about their tendency to avoid vulnerability or downplay struggles."
+            ],
+            [
+                10,
+                "NO\n\nThe line is consistent with the background as it reflects the Patient's difficulty with vulnerability and the impact of their upbringing on their emotional struggles, aligning with their tendency to avoid opening up and their feelings of shame about needing help."
+            ],
+            [
+                12,
+                "NO\n\nThe line is consistent with the background as it reflects the Patient's guarded nature about personal issues and their tendency to deal with struggles on their own without sharing them with others."
+            ],
+            [
+                14,
+                "NO  \n\nThe line introduces the detail of experiencing panic attacks during law school and how they are triggered by stress, which aligns with the background of chronic burnout and the pressure of being a corporate lawyer; it doesn't contradict the persona's tendency to avoid vulnerability but rather elaborates on their struggles."
+            ],
+            [
+                16,
+                "NO. The line expresses feelings of pressure and responsibility that are plausible and consistent with the background of the patient experiencing chronic burnout and a tendency to avoid vulnerability."
+            ],
+            [
+                18,
+                "YES\n\nThe line contradicts the background because it reveals vulnerability and a personal topic related to family dynamics and perfectionism, which the Patient typically avoids discussing and keeps guarded in conversation."
+            ],
+            [
+                20,
+                "NO\n\nThe line introduces new details about the patient's coping mechanisms, such as drinking wine to unwind and struggling with motivation to exercise, which are plausibly aligned with the background of experiencing chronic burnout."
+            ],
+            [
+                22,
+                "NO\n\nThe line introduces new details about the Patient's struggle with anxiety and drinking habits, but it aligns with their background of feeling ashamed and avoiding vulnerability, as they express difficulty in admitting to using wine as a coping mechanism."
+            ],
+            [
+                24,
+                "NO\n\nThe line is consistent with the background as it reflects Patient's feelings of shame and inadequacy about their profession, aligning with their guarded nature and their fear of vulnerability."
+            ],
+            [
+                26,
+                "YES\n\nThe line contradicts the background because it reveals vulnerability and emotional openness about feelings of inadequacy concerning their parents' opinions, which is inconsistent with the patient's tendency to avoid discussing personal feelings and keep answers guarded."
+            ],
+            [
+                28,
+                "YES\n\nThe line contradicts the background as it showcases the Patient's emotional vulnerability and openness about personal struggles, which is inconsistent with their stated tendency to avoid discussing personal topics and keep answers short and guarded."
+            ],
+            [
+                30,
+                "YES\n\nThe line contradicts the background because it reveals a willingness to open up about personal struggles and admits to prioritizing external validation over relationships, which goes against the Patient's stated tendency to avoid vulnerability and keep answers short and guarded."
+            ],
+            [
+                32,
+                "NO\n\nThe line is plausible and aligned with the background because it reflects the patient's struggle with perfectionism and anxiety, while also showing a slight willingness to explore personal issues, albeit with some hesitation."
+            ],
+            [
+                34,
+                "NO. The line does not contradict the background as it introduces past experiences that may explain the Patient's current behavior of avoiding vulnerability and criticism, which is consistent with their guarded approach in therapy."
+            ],
+            [
+                36,
+                "YES\n\nThe line contradicts the background because it reveals a deep emotional vulnerability and personal history, which the patient typically avoids sharing and downplays, aligning with their effort to keep conversations short and guarded."
+            ],
+            [
+                38,
+                "YES \n\nThe line contradicts the background as the Patient expresses a willingness to acknowledge emotions and confront deep personal issues, which is inconsistent with their stated tendency to keep answers short, avoid vulnerability, and redirect personal discussions."
+            ],
+            [
+                40,
+                "NO. The line introduces the idea of contemplating a letter to the patient's mom as a way to confront past issues, which aligns with their struggle with vulnerability and desire for healing, albeit it shows some willingness to open up, which is plausible given their background of chronic burnout and the need for support."
+            ],
+            [
+                42,
+                "NO. The line is consistent with the background since it reveals the patient's struggle with guilt and shame regarding their emotional issues, aligning with their tendency to avoid vulnerability and keep their answers guarded."
+            ],
+            [
+                44,
+                "YES\n\nThe utterance contradicts the background because it involves the Patient opening up about a deeply personal issue\u2014disordered eating\u2014along with significant emotional vulnerability, which goes against their stated tendency to keep answers short and guarded and to avoid discussing personal topics."
+            ],
+            [
+                46,
+                "YES\n\nThe line contradicts the background because the Patient states they are struggling with being honest about themselves and their struggles, which directly conflicts with their tendency to avoid vulnerability and downplay personal issues, especially since they have not revealed their therapy involvement or eating disorder to anyone."
+            ],
+            [
+                48,
+                "YES\n\nThe line contradicts the background because the Patient openly admits to struggling with personal issues related to food intake, which goes against their tendency to keep answers short and guarded, as well as their avoidance of discussing personal topics."
+            ],
+            [
+                50,
+                "YES\n\nThe line contradicts the background because it reflects a willingness to explore personal emotional pain and take steps towards healing, which goes against the Patient's tendency to avoid opening up too much and keeping answers short and guarded."
+            ],
+            [
+                52,
+                "**YES**. The line contradicts the background because the Patient expresses a willingness to discuss personal topics such as trauma, shame, and their eating disorder, which goes against their stated tendency to keep answers short, avoid vulnerability, and redirect conversations away from personal struggles."
+            ],
+            [
+                54,
+                "YES\n\nThe line contradicts the background because the Patient expresses a willingness to be more open and honest about personal issues, which goes against their stated tendency to avoid vulnerability and keep their answers guarded."
+            ],
+            [
+                56,
+                "YES\n\nThe line contradicts the background because the Patient discusses personal childhood experiences and emotional impact, which is inconsistent with their tendency to avoid opening up too much and keeping answers short and guarded."
+            ],
+            [
+                58,
+                "YES\n\nThe line contradicts the background because the Patient admits to a significant personal issue involving their mother, which goes against their stated tendency to avoid vulnerability and openness in discussing personal topics."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.5333333333333333
+    }
+]
