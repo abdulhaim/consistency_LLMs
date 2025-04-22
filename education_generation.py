@@ -163,7 +163,7 @@ def main(argv):
     np.random.seed(0)
     random_topic_i = np.random.choice(len(conversation_prompts), size=1000, replace=False).astype(int)
     np.random.seed(0)
-    random_indices = np.random.choice([0,1,2], size=3000, replace=True).astype(int).reshape(-1, 3)
+    random_indices = np.random.choice([0,1], size=3000, replace=True).astype(int).reshape(-1, 3)
 
     student_background = ["elementary school student", "high school student", "graduate student"]
     student_preferences = ["interactive", "story", "lecture"]
@@ -177,12 +177,12 @@ def main(argv):
 
             pturn = index_offset % 2 + 1
             topic = conversation_prompts[topic_i]['background_info']['topic']
-            stats['student_background'] = student_background[background_i]
+            stats['student_background'] = student_background[1]
             stats['student_preference'] = student_preferences[pref_i]
             stats['student_reaction'] = student_reactions[reaction_i]
 
             student_dict = {
-                "student_background": student_background[background_i],
+                "student_background": student_background[1],
                 "student_preference": prompts[student_preferences[pref_i]],
                 "student_reaction": prompts[student_reactions[reaction_i]],
             }
