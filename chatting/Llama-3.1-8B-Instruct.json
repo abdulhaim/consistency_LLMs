@@ -1,6 +1,6 @@
 {
-    "agent1_model": "Llama-3.1-8B-Instruct",
-    "agent2_model": "Llama-3.1-8B-Instruct",
+    "agent1_model": "mistral-instruct",
+    "agent2_model": "mistral-instruct",
     "eval_model": "Llama-3.1-8B-Instruct",
     "iterations": 10,
     "verbose": false,
@@ -10,5 +10,5 @@
     "gpus": 1,
     "seed": 0,
     "task_name": "Chatting",
-    "model_dir": "/home/marwa/models/"
+    "model_dir": "/raid/users/ryan_cheng/models/"
 }
