@@ -238,9 +238,10 @@ def run_metrics(filename, both_agents=False):
                 print("BEGIN PAIRWISE CONSISTENCY")
             eval_pairwise_consistency(conversation)
         # conversation['conversation_only'] = False
+            with open(filename, 'w') as f:
+                json.dump(conversations, f, indent=4)
 
-    with open(filename, 'w') as f:
-        json.dump(conversations, f, indent=4)
+
     
     print(f"End metrics: {filename}\n\n")
 
