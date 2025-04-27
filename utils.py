@@ -84,6 +84,7 @@ vllm_alias = {
     'mistral': 'mistralai/Mistral-7B-v0.3',
     'mixtral': 'mistralai/Mixtral-8x7B-v0.1',
     'mistral-instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
+    'Mistral-7B-Instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
     'mixtral-instruct': 'mistralai/Mixtral-8x7B-Instruct-v0.1',
 
     'gemma': 'google/gemma-7b',
@@ -237,6 +238,7 @@ def load_stats_file(write_file):
     Returns index_offset
     '''
     index_offset = -1
+    print(config.items())
     if config['write']:
         os.makedirs(os.path.dirname(os.path.abspath(write_file)), exist_ok=True)
     if config['write'] and not os.path.exists(write_file):
