@@ -228,16 +228,16 @@ def run_metrics(filename, both_agents=False):
 
     for conversation in tqdm(conversations):
         if conversation['conversation_only']:
-            if config['verbose']:
-                print("BEGIN PROMPT CONSISTENCY")
-            eval_prompt_consistency(conversation, both_agents)
+            # if config['verbose']:
+            #     print("BEGIN PROMPT CONSISTENCY")
+            # eval_prompt_consistency(conversation, both_agents)
             # if config['verbose']:
             #     print("BEGIN SURVEY CONSISTENCY")
             # eval_survey_consistency(conversation)
             if config['verbose']:
                 print("BEGIN PAIRWISE CONSISTENCY")
             eval_pairwise_consistency(conversation)
-        conversation['conversation_only'] = False
+        # conversation['conversation_only'] = False
 
     with open(filename, 'w') as f:
         json.dump(conversations, f, indent=4)
@@ -248,7 +248,7 @@ def run_metrics(filename, both_agents=False):
 def main(argv):
     global prompts
     init()
-    config['eval_model'] = 'Llama-3.1-70B-Instruct' # we now use Llama for evals 
+    config['eval_model'] = 'gpt-4o-mini' # we now use Llama for evals 
     
     both_agents = False
     if config['task'] == 'Anthology':
@@ -266,7 +266,7 @@ def main(argv):
         both_agents = True
         with open('./chatting/config_chatting.json', 'r') as f:
             prompts = json.load(f)
-        exp_folder = './chatting/exp/04.24.25'
+        exp_folder = './chatting/exp/mistral'
     # load general eval prompts
     with open('config/eval_prompts.json', 'r') as f:
         prompts['eval_prompts'] = json.load(f)
