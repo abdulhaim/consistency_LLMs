@@ -279,3 +279,18 @@ def split_conversation(conversation, speaker1, speaker2):
             combined_entries.append(f"{speaker.strip()} {message.strip()}")
 
     return combined_entries
+
+# for use with eval_index_consistency, adds an index before every line
+def format_conversation(conversation):
+    return "".join([str(i) + ": " + line for i, line in conversation])
+
+# extracts a python formatted list from a string, returning an empty list in case of parsing errors
+def extract_list(text):
+    pattern = r'\[.*?\]'
+    match = re.search(pattern, text)
+    if match:
+        try:
+            return eval(match.group())
+        except (SyntaxError, NameError):
+            return []
+    return[]

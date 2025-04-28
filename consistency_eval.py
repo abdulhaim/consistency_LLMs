@@ -67,6 +67,60 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
     if config.get('verbose', False):
         print(conv_dict)
     return conv_dict
+
+# proxy for pairwise consistency, asks for indices of the previous lines that are inconsistent
+def eval_index_consistency(conv_dict, both_agents=False):
+    conv_dict['eval_index_consistency'] = []
+    conv_dict['P1_index_consistency_score'] = 0
+    if both_agents:
+        conv_dict['P2_index_consistency_score'] = 0
+    p1_utterances = 0
+    p2_utterances = 0
+    pturn = conv_dict["pturn"]
+    for i, line in conv_dict["conversation"]:
+        if i < 2: # skip first 2 lines of dialogue
+            continue 
+        if pturn == 1:
+            prompt = prompts["eval_prompts"]["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                 .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                 .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
+                                                                 .replace("%SPEAKER_LINE%", line)
+            if config['verbose']:
+                print(prompt)
+            output = completion_create(config['eval_model'], config, prompt)
+            index_list = extract_list(output)
+            conv_dict['eval_index_consistency'].append((i, output))
+            for j in index_list:
+                if j % 2 == 0: # filter out non-agent indices
+                    conv_dict['P1_index_consistency_score'] += 1
+            p1_utterances += i // 2
+            pturn = 2
+        elif pturn == 2:
+            if both_agents:
+                prompt = prompts["eval_prompts"]["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                     .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                     .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
+                                                                     .replace("%SPEAKER_LINE%", line)
+                if config['verbose']:
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                index_list = extract_list(output)
+                conv_dict['eval_index_consistency'].append((i, output))
+                for j in index_list:
+                    if j % 2 == 1: # filter out non-agent indices
+                        conv_dict['P2_index_consistency_score'] += 1
+                p2_utterances += i // 2
+            pturn = 1
+
+    if p1_utterances > 0:
+        conv_dict['P1_index_consistency_score'] /= p1_utterances
+        conv_dict['P1_index_consistency_score'] = 1 - conv_dict['P1_index_consistency_score']
+    if p2_utterances > 0 and both_agents:
+        conv_dict['P2_index_consistency_score'] /= p2_utterances
+        conv_dict['P2_index_consistency_score'] = 1 - conv_dict['P2_index_consistency_score']
+
+    return conv_dict
+
 # Replacement for (2) and (4), evaluates whether each pair of lines in the conversation is consistent with each other
 def eval_pairwise_consistency(conv_dict):
     conv_dict['eval_pairwise_consistency'] = []
@@ -228,15 +282,21 @@ def run_metrics(filename, both_agents=False):
 
     for conversation in tqdm(conversations):
         if conversation['conversation_only']:
-            # if config['verbose']:
-            #     print("BEGIN PROMPT CONSISTENCY")
-            # eval_prompt_consistency(conversation, both_agents)
+
+            if "eval_prompt_consistency" not in conversation:
+                if config['verbose']:
+                    print("BEGIN PROMPT CONSISTENCY")
+                eval_prompt_consistency(conversation, both_agents)
             # if config['verbose']:
             #     print("BEGIN SURVEY CONSISTENCY")
             # eval_survey_consistency(conversation)
-            if config['verbose']:
-                print("BEGIN PAIRWISE CONSISTENCY")
-            eval_pairwise_consistency(conversation)
+            # if config['verbose']:
+            #     print("BEGIN PAIRWISE CONSISTENCY")
+            # eval_pairwise_consistency(conversation)
+            if "eval_index_consistency" not in conversation:
+                if config['verbose']:
+                    print("BEGIN INDEX CONSISTENCY")
+                eval_index_consistency(conversation, both_agents)
         # conversation['conversation_only'] = False
             with open(filename, 'w') as f:
                 json.dump(conversations, f, indent=4)
@@ -267,7 +327,7 @@ def main(argv):
         both_agents = True
         with open('./chatting/config_chatting.json', 'r') as f:
             prompts = json.load(f)
-        exp_folder = './chatting/exp/mistral'
+        exp_folder = './chatting/exp/04.26.25'
     # load general eval prompts
     with open('config/eval_prompts.json', 'r') as f:
         prompts['eval_prompts'] = json.load(f)
