@@ -32,7 +32,7 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
         line_number = line[0]
         convo_line = line[1]
         if pturn == 1:
-            prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+            prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["agent1_prompt"]) \
                                                                 .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
                                                                 .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
                                                                 .replace("%SPEAKER_LINE%", convo_line)
@@ -46,7 +46,7 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
             pturn = 2
         elif pturn == 2:
             if both_agents:
-                prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["agent2_prompt"]) \
                                                                     .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                                                     .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
                                                                     .replace("%SPEAKER_LINE%", convo_line)
@@ -81,7 +81,7 @@ def eval_index_consistency(conv_dict, both_agents=False):
         if i < 2: # skip first 2 lines of dialogue
             continue 
         if pturn == 1:
-            prompt = eval_prompts["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+            prompt = eval_prompts["index_consistency"].replace("%SCENARIO_DESC%", prompts["agent1_prompt"]) \
                                                                  .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
                                                                  .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
                                                                  .replace("%SPEAKER_LINE%", line)
@@ -97,7 +97,7 @@ def eval_index_consistency(conv_dict, both_agents=False):
             pturn = 2
         elif pturn == 2:
             if both_agents:
-                prompt = eval_prompts["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                prompt = eval_prompts["index_consistency"].replace("%SCENARIO_DESC%", prompts["agent2_prompt"]) \
                                                                      .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                                                      .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
                                                                      .replace("%SPEAKER_LINE%", line)

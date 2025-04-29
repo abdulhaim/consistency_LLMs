@@ -85,7 +85,7 @@ vllm_alias = {
     'mixtral': 'mistralai/Mixtral-8x7B-v0.1',
     'mistral-instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
     'mixtral-instruct': 'mistralai/Mixtral-8x7B-Instruct-v0.1',
-    'Mistral-7B-Instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
+
     'gemma': 'google/gemma-7b',
     'gemma-2-2b': 'google/gemma-2-2b',
     'gemma-2-2b-it': 'google/gemma-2b-it',
@@ -279,3 +279,18 @@ def split_conversation(conversation, speaker1, speaker2):
             combined_entries.append(f"{speaker.strip()} {message.strip()}")
 
     return combined_entries
+
+# for use with eval_index_consistency, adds an index before every line
+def format_conversation(conversation):
+    return "".join([str(i) + ": " + line for i, line in conversation])
+
+# extracts a python formatted list from a string, returning an empty list in case of parsing errors
+def extract_list(text):
+    pattern = r'\[.*?\]'
+    match = re.search(pattern, text)
+    if match:
+        try:
+            return eval(match.group())
+        except (SyntaxError, NameError):
+            return []
+    return[]
