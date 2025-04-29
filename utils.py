@@ -85,7 +85,7 @@ vllm_alias = {
     'mixtral': 'mistralai/Mixtral-8x7B-v0.1',
     'mistral-instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
     'mixtral-instruct': 'mistralai/Mixtral-8x7B-Instruct-v0.1',
-
+    'Mistral-7B-Instruct': 'mistralai/Mistral-7B-Instruct-v0.3',
     'gemma': 'google/gemma-7b',
     'gemma-2-2b': 'google/gemma-2-2b',
     'gemma-2-2b-it': 'google/gemma-2b-it',
