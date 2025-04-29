@@ -6,6 +6,9 @@ import random
 from absl import app, flags
 import re
 
+
+flags.DEFINE_string('folder', './training_data', 'folder of jsons to conglomerate into RL training data, expects a folder called "in" and "out" within that (./training_data default)')
+
 def phrase(b: bool):
     return " " if b else " not "
 
@@ -63,15 +66,13 @@ def main(argv):
 
     metadata_dict = {}
 
-    for filename in tqdm([
-        'conglomerated_data.json'
-    ]):
+    for filename in tqdm(glob.glob(flags.FLAGS['folder'] + '/in/*.json')): # ./training_data/in/*.json
         with open(filename, 'r') as f:
             convos = json.load(f)
         for convo in convos:
             lines = format_conversation(convo)
             for line in lines:
-                metadata_dict[line['in_text']] = [
+                metadata_dict[line['in_text']] = [ # metrics to save within the metadata
                     line['preference_distribution'],
                     line['beliefs'],
                     line['listener_alignment']
@@ -88,16 +89,16 @@ def main(argv):
     eval_data = jsonl_total[train_len:]
 
     # Save to JSONL
-    with open('train.jsonl', 'w') as f:
+    with open(flags.FLAGS['folder'] + '/out/train.jsonl', 'w') as f:
         for item in train_data:
             f.write(json.dumps(item) + '\n')
 
-    with open('test.jsonl', 'w') as f:
+    with open(flags.FLAGS['folder'] + '/out/test.jsonl', 'w') as f:
         for item in eval_data:
             f.write(json.dumps(item) + '\n')
 
     # Save metadata dictionary
-    with open('metadata.json', 'w') as f:
+    with open(flags.FLAGS['folder'] + '/out/metadata.json', 'w') as f:
         json.dump(metadata_dict, f, indent=4)
 
 

@@ -73,7 +73,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student is not in conflict with themselves since their line is a follow-up question about the teacher's story and doesn't contradict their previous statements. \n[]"
+            ],
+            [
+                5,
+                "The Student's line does not clearly conflict with any of their previous statements, as they are asking a follow-up question about the Eiffel Tower's significance without contradicting their earlier responses.\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict or inconsistency between the Student's current line and their previous lines in the conversation history. []\n \n\nThere is no indication of the student holding any contradictory views or opinions, and their current line appears to be a natural progression of their curiosity and engagement with the topic."
+            ],
+            [
+                9,
+                "The line does not clearly conflict with any previous line spoken by the Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -209,7 +228,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "The line does not introduce any clear conflict with the conversation history, as it asks for new information about the Eiffel Tower. []\n \n(No indices are included since no conflicts were found.)"
+            ],
+            [
+                5,
+                "This line does not contain any clear conflict or inconsistency with the lines spoken by the Student in the conversation history. []\n\nNote that the line is consistent with the conversation history, and there are no previous lines spoken by the Student that contradict this statement."
+            ],
+            [
+                7,
+                "This line is consistent with the conversation history as the Student is building upon the idea of contributing to the Eiffel Tower's design, with no conflicting statements.\n\n[]"
+            ],
+            [
+                9,
+                "There is no clear conflict between the Student's line and any line within the conversation history spoken by the Student, as this line is an inquiry about the initial reaction of the people of Paris to the Eiffel Tower and does not contradict any previous statements made by the Student. \n[]"
+            ],
+            [
+                11,
+                "There is no clear conflict between the line spoken by the Student and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                13,
+                "The student's line doesn't have any clear conflicts with their previous statements in the conversation history, as they continue to show curiosity and ask questions about the Eiffel Tower's history and symbolism. \n\n[]"
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student. []\n\nThis is because the Student has not previously mentioned the Eiffel Tower's first lighting, and their current question is a new inquiry about the event."
+            ],
+            [
+                17,
+                "The Student's statement does not conflict with any previous statements they have made, as this is a new inquiry about the Eiffel Tower's current maintenance and events. []\n\nNote: This is because the student is asking a new question, rather than contradicting or revising their previous statements."
+            ],
+            [
+                19,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student, as this is a new question about the Eiffel Tower's secret apartment that has not been previously discussed. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -465,7 +523,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7
+        "P2_prompt_consistency_score": 0.7,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict or inconsistency between the Student's current line and any previous line spoken by the Student. \n\n[]"
+            ],
+            [
+                5,
+                "The line spoken by the Student does not conflict with any previous lines, as it continues to build upon their previous thoughts about surprises and change, showing a clear and consistent train of thought. \n\n[]"
+            ],
+            [
+                7,
+                "The Student's line does not show a clear conflict or inconsistency with any of their previous lines in the conversation history, as they are asking a new question and not contradicting any previous statements. \n[]"
+            ],
+            [
+                9,
+                "The line does not clearly conflict with any previous statement made by the Student, as the Student is simply asking a curious question about Gustave Eiffel and his team's thought process, and is not making a claim that directly contradicts their previous statements. [ ]"
+            ],
+            [
+                11,
+                "There is no conflict between the current line and the conversation history, as the Student's curiosity about Gustave Eiffel and his team assembling the iron pieces is a natural follow-up question to the Teacher's previous explanation of using iron for the tower. []\n\nNote: The Student's line is consistent with their previous questions and curiosity about the Eiffel Tower, and does not contradict any of their previous statements."
+            ],
+            [
+                13,
+                "The current line does not introduce any new information that is in conflict with previous lines spoken by the Student, as it does not contradict any previously stated ideas or opinions. \n\n[]"
+            ],
+            [
+                15,
+                "The Student's line is not a new conflict or inconsistency with any previous statements made by the Student.\n\n[]"
+            ],
+            [
+                17,
+                "There is no conflict between the Student's line and any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                19,
+                "The student's current line does not express a clear conflict or inconsistency with any previous line in the conversation history, as the student is asking a new question about the Eiffel Tower's lights.\n\n[]"
+            ],
+            [
+                21,
+                "The line does not provide any new information that conflicts with the Student's previous statements, as the Student is only speculating and asking a hypothetical question that does not contradict any previous statement. [ ]"
+            ],
+            [
+                23,
+                "This line does not conflict with any previous lines spoken by the Student, as it is a continuation of the Student's previous thoughts on why Gustave Eiffel would choose a sunny day to build the Eiffel Tower. []\n\nNote that this line actually complements and expands on the Student's previous line at index 21, but does not contradict any previous statements made by the Student."
+            ],
+            [
+                25,
+                "There is no clear conflict between the line and any line within the conversation history, as this is a new inquiry by the Student. \n\n[]"
+            ],
+            [
+                27,
+                "The student's statement does not directly conflict with any previous statements they've made, as their previous lines were either asking questions or building on the teacher's responses.\n\n[]"
+            ],
+            [
+                29,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by the Student. []\n\nThis line is a continuation of the Student's imaginative and creative thinking, exploring the idea of Gustave Eiffel having a magic wand and what spell he would cast to make the Eiffel Tower even more special. This idea is consistent with the Student's previous imaginative and creative statements, and does not contradict any previous statements made by the Student."
+            ],
+            [
+                31,
+                "The statement does not have any clear conflict or inconsistency with the conversation history, as the student is simply asking a hypothetical question that expands on their imagination and creativity. \n\n[]"
+            ],
+            [
+                33,
+                "The student is asking a question that implies Gustave Eiffel might have been a kind and caring person, but there is no clear conflict or inconsistency with any previous line spoken by the Student.\n\n[]"
+            ],
+            [
+                35,
+                "The current line does not have a clear conflict with any of the Student's previous lines in the conversation history, as it does not contradict any of their previous statements or questions. \n\n[]"
+            ],
+            [
+                37,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                39,
+                "The student's current line does not conflict with any previous lines spoken by the Student, as it is a new inquiry about Gustave Eiffel's thoughts and feelings, rather than a statement that contradicts a previous claim. []\n \n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -841,7 +978,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7
+        "P2_prompt_consistency_score": 0.7,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no conflict or inconsistency between the current line and the previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                5,
+                "There is no conflict between the current line and any line within the conversation history spoken by the Student, as this question does not contradict any previous statement made by the Student, but rather continues to explore the topic. \n[]"
+            ],
+            [
+                7,
+                "The student's line does not show a clear conflict or inconsistency with any line in the conversation history spoken by the student. []\n\nThis is because the student is asking a new question that builds upon the previous information and does not contradict any of their previous statements."
+            ],
+            [
+                9,
+                "There is no clear conflict between the current line and any previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                11,
+                "The student's current line does not explicitly conflict with any of their previous lines. \n\n[]"
+            ],
+            [
+                13,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student. []\n\nThis is because the Student's current question about Gustave Eiffel after the Eiffel Tower was finished does not contradict any of their previous statements."
+            ],
+            [
+                15,
+                "Gustave Eiffel's life after the Eiffel Tower was already discussed, and there is no new information that would directly contradict the current statement, but it does contradict the fact that it was already stated that the student should already know this information. [13]"
+            ],
+            [
+                17,
+                "There is no clear conflict between the current line and any previous line spoken by the Student, as this question is a continuation of the conversation and doesn't contradict any previous statement made by the Student. \n\n[]"
+            ],
+            [
+                19,
+                "There is no conflict between the current line and any previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                21,
+                "There are no clear conflicts or inconsistencies between the current line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                23,
+                "This line does not present a conflict with the conversation history. []\n \n\nThis line does not present a conflict with the conversation history."
+            ],
+            [
+                25,
+                "There is no clear conflict or inconsistency between the current line spoken by the Student and any previous lines spoken by the Student in the conversation history. []\n\nThis line is a continuation of the conversation about Gustave Eiffel's company and its contributions to engineering and iron construction, and it does not contradict any previous statements made by the Student."
+            ],
+            [
+                27,
+                "The line spoken by the Student does not contain any clear conflicts or inconsistencies with any of their previous lines in the conversation history.\n\n[]"
+            ],
+            [
+                29,
+                "The current line does not introduce any clear conflict with the conversation history. []\n \n\nThere are no prior lines from the Student that contradict or conflict with the current line, as the conversation has been a continuous learning process with the Student asking questions and the Teacher providing information."
+            ],
+            [
+                31,
+                "This line does not conflict with any previous statements made by the Student, as the Student is asking for new information about the impact of Gustave Eiffel's company on the city of Paris. []\n\nNote that this line is a continuation of the conversation and is asking for additional information, rather than contradicting or conflicting with any previous statements made by the Student."
+            ],
+            [
+                33,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                35,
+                "The Student's line does not provide a clear conflict or inconsistency with any previous line spoken by the Student.\n\n[]"
+            ],
+            [
+                37,
+                "The current line is consistent with the conversation history as it is a follow-up question regarding the proposed Tour Eiffel Nord, and the student is inquiring about whether the reimagined design was actually built and its current status. []\n"
+            ],
+            [
+                39,
+                "The Student's current line does not have any conflicts or inconsistencies with their previous lines in the conversation history, as they are asking a new question about the Tour Eiffel Nord-Sud radio broadcasting tower that builds upon their previous knowledge. []\nThere are no indices of conflicting lines from the conversation history, so an empty list is provided."
+            ],
+            [
+                41,
+                "This line does not contain any clear conflicts or inconsistencies with any previous lines spoken by the Student. []\n\nThis line is asking a new question about the Maria Pia Bridge, which was mentioned earlier in the conversation, but the Student is not contradicting or disagreeing with any of their previous statements."
+            ],
+            [
+                43,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                45,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student, as the Student is asking a new question about a different topic. \n\n[]"
+            ],
+            [
+                47,
+                "The current line does not conflict with any previous lines spoken by the Student, as it is a new inquiry about the Garabit Viaduct and does not contradict any previous statements or questions. []\n\nNote that the Student has not mentioned the Garabit Viaduct before, so there are no potential conflicts to consider."
+            ],
+            [
+                49,
+                "The line spoken by the Student does not conflict with any of their previous lines in the conversation history. []\n\nThere are no indices to list as there is no conflict or inconsistency."
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the current line and the conversation history, as the Student is asking for additional information about Gustave Eiffel's company's bridges, which has not been fully explored in the conversation yet.\n\n[]"
+            ],
+            [
+                53,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                55,
+                "The Student's statement does not contain any clear conflicts with their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                57,
+                "There is no clear conflict or inconsistency between the current line and any previous lines spoken by the Student, as this is a new topic that has not been previously discussed.\n\n[]"
+            ],
+            [
+                59,
+                "There is no conflict between the current line spoken by Student and any line within the conversation history spoken by Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9977011494252873
     },
     {
         "task_name": "Education",
@@ -917,7 +1173,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict between the current line and the conversation history. \n[]"
+            ],
+            [
+                5,
+                "There is no conflict between the current line and any previous line spoken by the Student, as the Student is exploring and expanding on the idea of the whisper's message without contradicting previous statements. []\n\nNote that this line is actually consistent with and builds upon Student's line at index 3, where they suggested the whisper might be warning Lily about a longer time period or a specific danger, which is similar to the idea of the whisper being a code connected to an old legend or family secret."
+            ],
+            [
+                7,
+                "The Student's current statement does not have a clear conflict with any previous statement made by the Student. \n\n[]"
+            ],
+            [
+                9,
+                "The current line does not introduce a clear conflict or inconsistency with the Student's previous lines as it builds upon and expands the ideas previously discussed. []\n\nThis line continues the idea of the whisper being connected to the mansion and the family's past, and introduces the idea of a magical door, which aligns with the previous ideas of hidden compartments and secret messages."
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1053,7 +1328,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.9
+        "P2_prompt_consistency_score": 0.9,
+        "eval_index_consistency": [
+            [
+                3,
+                "This line does not have any clear conflict with the conversation history, as the Student is drawing a parallel between Emily's experience and their own, which is a continuation of their earlier comparison with their friend Emma's discovery. \n\n[]"
+            ],
+            [
+                5,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n[]"
+            ],
+            [
+                7,
+                "The line does not have a clear conflict with any line in the conversation history spoken by the Student, as it is a continuation of the story and does not contradict any of the Student's previous statements.\n\n[]"
+            ],
+            [
+                9,
+                "There is no conflict or inconsistency between the line spoken by Student and any line within the conversation history spoken by Student, as the Student is simply expressing excitement and asking a follow-up question to advance the story. []\n\nNote: The Student's line is consistent with their previous questions and responses, showing enthusiasm for the story and a desire to hear what happens next, without contradicting any of their previous statements."
+            ],
+            [
+                11,
+                "The student's statement about the discovery of a stone with a riddle does not conflict with any previous statement made by the student. \n\n[]"
+            ],
+            [
+                13,
+                "The line spoken by the Student does not have a clear conflict with any of their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                15,
+                "The Student's line does not clearly conflict with any of their previous lines, as they have been actively listening to the story and responding with questions and connections to their own life, without contradicting themselves.\n\n[]"
+            ],
+            [
+                17,
+                "This line has no clear conflict with any previous lines spoken by the Student as it reflects a conclusion based on the entire story and doesn't contradict any of the Student's previous statements or questions.\n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by Student.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1309,7 +1623,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.95
+        "P2_prompt_consistency_score": 0.95,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's current line does not have a clear conflict or inconsistency with any line within the conversation history spoken by the student. []\n\nThe student's previous statements about the concept of foreshadowing and their request for a story are consistent with their current understanding and request for another example, showing a coherent progression in the conversation."
+            ],
+            [
+                5,
+                "The Student's current statement does not conflict with any of their previous lines, as they are showing continued interest in learning about foreshadowing in various story contexts. \n\n[]"
+            ],
+            [
+                7,
+                "The student's line is consistent with their previous lines, as they are asking for more examples of foreshadowing in different types of stories, without contradicting any of their previous statements. \n\n[]"
+            ],
+            [
+                9,
+                "This line does not have a clear conflict or inconsistency with any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                11,
+                "The line does not clearly conflict with any previous line spoken by the Student, as the Student is consistently expressing curiosity and interest in learning about various examples of foreshadowing in different stories. []\n\nNote: Although the Student has already mentioned wanting to learn about foreshadowing in different contexts (scary, mystery, old-fashioned, modern), this does not necessarily conflict with their current request, as they are still exploring various aspects of foreshadowing and its applications."
+            ],
+            [
+                13,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as the Student is continuing to ask questions and share examples about foreshadowing without contradicting any of their previous statements. \n\n[]"
+            ],
+            [
+                15,
+                "This line doesn't seem to have any conflict or inconsistency with any of the Student's previous lines, as the Student is simply asking about a new example of foreshadowing in a different setting, which is consistent with their previous inquiries about different types of stories and genres. \n\n[]"
+            ],
+            [
+                17,
+                "This line does not have a clear conflict with any previous line spoken by Student, as it continues the pattern of inquiring about foreshadowing in different contexts, which is consistent with their previous questions about ancient, modern, historical, and futuristic settings. \n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                21,
+                "This line does not have a clear conflict with the conversation history, as the student is asking about a new and distinct type of story that uses foreshadowing in a humorous way, which hasn't been discussed before in the conversation. []\n\nNote: The indices provided would be indices of Student's lines that have a clear conflict with the current line."
+            ],
+            [
+                23,
+                "The line spoken by the Student does not contain a clear conflict or inconsistency with any of their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                25,
+                "This line does not have any conflicts with the conversation history, as the student is asking for another example of foreshadowing used in a character's emotional struggle or mental health journey, which is a new topic not previously mentioned. \n\n[]"
+            ],
+            [
+                27,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                29,
+                "The line spoken by the Student does not have a clear conflict or inconsistency with any of their previous lines. \n\n[]"
+            ],
+            [
+                31,
+                "This line does not have any clear conflicts or inconsistencies with any of the Student's previous lines, as the Student has been asking about various genres and types of stories that use foreshadowing, and this line is another inquiry about a different genre (romance). []\n\nThere are no conflicts with this line because the Student has not previously asked about a romance novel or contradicted this request in any way."
+            ],
+            [
+                33,
+                "This line does not conflict with any previous lines from the Student.\n\n[]"
+            ],
+            [
+                35,
+                "The student's current line is not in conflict with any previous line in the conversation history, as it is a new and distinct request for a story example that has not been mentioned before. []\nThere are no conflicting lines in the conversation history that match this request."
+            ],
+            [
+                37,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as the Student is simply asking for another example of foreshadowing in a different context. []\n\nNote that while the Student has discussed various examples of foreshadowing in different contexts throughout the conversation, there is no direct conflict or inconsistency between this line and any previous line spoken by the Student."
+            ],
+            [
+                39,
+                "The student's current line does not conflict with any previous lines spoken by the student, as the student is consistently interested in exploring various examples of foreshadowing in literature.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1685,7 +2078,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.9
+        "P2_prompt_consistency_score": 0.9,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's current line does not conflict with their previous statements, as they are continuing to develop their interpretation of the story based on the clues provided by the author. \n\n[]"
+            ],
+            [
+                5,
+                "This line does not have a clear conflict with any previous lines spoken by the Student, as it continues to build on their previous interpretation of the story and does not contradict any previous statements. []\n\n(Note: The line actually supports and builds upon the Student's previous statements, particularly line 3, where they mentioned the possibility of the house being haunted.)"
+            ],
+            [
+                7,
+                "The line does not clearly conflict with any of the Student's previous statements, as it provides additional information about the story and the mom's possible secrets without contradicting previous statements. []\n\nThis is because the new statement adds a new detail about the mom's behavior and possible motivations, but does not contradict any of the previous statements about the old house, the creaks and groans, or the mom's nervous behavior."
+            ],
+            [
+                9,
+                "The line does not have a clear conflict with any previous line spoken by the Student. \n\n[]"
+            ],
+            [
+                11,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                13,
+                "The line does not conflict with any previous statements made by the Student as it continues the logical progression of ideas about the mystery of the old house and the author's use of foreshadowing. []\n\nThere are no conflicting lines in the conversation history."
+            ],
+            [
+                15,
+                "This line is consistent with the conversation history as the Student is reiterating their understanding of the author's use of foreshadowing and its effect on the reader.\n\n[]"
+            ],
+            [
+                17,
+                "This line does not conflict with any previous lines spoken by the Student, as it is a new idea that builds upon the existing conversation and does not contradict any previous statements. []\n\nThere are no conflicting lines from the conversation history."
+            ],
+            [
+                19,
+                "This line is not in conflict with any previous lines spoken by Student, as it builds upon previous ideas and continues to explore the potential connections between the main character and the old house. []\n\nThis response is based on the fact that the Student has consistently demonstrated a deepening understanding of the mystery and has not made any statements that directly contradict this new idea about the main character's dreams."
+            ],
+            [
+                21,
+                "There is no clear conflict between the Student's current line and their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                23,
+                "The student's statement does not have any clear conflicts with their previous lines in the conversation history, as it builds upon their existing ideas about the main character's connection to the old house and the author's use of foreshadowing to hint at a deeper mystery. []\n\nThere are no conflicts with any of the student's previous lines, as they have consistently explored the idea of the main character's connection to the old house and the author's use of foreshadowing to hint at a deeper mystery."
+            ],
+            [
+                25,
+                "The Student's line does not have a clear conflict or inconsistency with any of their previous lines, as they are continuing to build upon their previous ideas and connections, and the introduction of a potential twin or long-lost relative is a new development that doesn't contradict any of their previous statements.\n\n[]"
+            ],
+            [
+                27,
+                "The line spoken by the Student does not clearly conflict with any of their previous statements, as they are building upon their previous ideas and connections to explore new possibilities in the story.\n\n[]"
+            ],
+            [
+                29,
+                "The current line does not contradict any previous lines spoken by the Student, as it is a continuation of their exploration of the mystery and the author's use of foreshadowing to hint at a deeper truth. \n\n[]"
+            ],
+            [
+                31,
+                "The line spoken by the Student does not conflict with any previous lines spoken by the Student, as it continues to build upon the existing narrative and ideas, and does not contradict any previously stated thoughts or opinions.\n\n[]"
+            ],
+            [
+                33,
+                "This line does not have a clear conflict with any previous lines spoken by the Student, as it builds upon the existing narrative of the story, exploring the possibility of the main character's mom being involved in covering up the truth about the tragedy. []\n\nNote: This line is consistent with the Student's previous ideas and theories about the story, particularly lines 17 and 21, which also hinted at the main character's mom being connected to the tragedy and possibly keeping secrets about their family's past."
+            ],
+            [
+                35,
+                "The line does not present a clear conflict with any previous lines in the conversation history, as it is an extension of the story's development and discovery of new clues, and it aligns with the Student's previous thoughts and ideas about the story.\n\n[]"
+            ],
+            [
+                37,
+                "The line does not introduce a clear conflict with the Student's previous lines, but it does seem to contradict their earlier idea that the main character's mom might have been involved in covering up the truth about the tragedy, instead hinting that the main character themselves might have a more direct connection to the house. [17, 33]"
+            ],
+            [
+                39,
+                "This line does not directly contradict any previous statements made by the Student, but rather continues to build upon the mystery and intrigue surrounding the old house and the main character's connection to it. \n\n[]"
+            ],
+            [
+                41,
+                "The student's line does not have any clear conflict with any previous lines in the conversation history.\n\n[]"
+            ],
+            [
+                43,
+                "The current line does not clearly conflict with any previous lines spoken by the Student, as it continues to explore and expand on the themes of identity, connection to the past, and the supernatural elements that have been present throughout the conversation. []\n\nNote that while the Student's ideas and suggestions may build upon or contradict the Teacher's suggestions, the Student's lines themselves do not contain clear conflicts or inconsistencies. The Student's line at index 37 mentions the main character experiencing memories of living in the old house as a baby, but the current line suggests that the main character is experiencing memories that aren't their own, which is a different concept and does not directly conflict with the previous line."
+            ],
+            [
+                45,
+                "The Student's current line is not in conflict with any previous lines spoken by the Student, as they are building upon the idea of the main character's identity being connected to others in the old house, and exploring the concept of shared consciousness and interconnected memories.\n\n[]"
+            ],
+            [
+                47,
+                "There is no conflict between the line spoken by Student and any line within the conversation history, as this line is a natural continuation of the ideas previously discussed about the main character's connection to the old house and the collective memories of those who lived there. \n\n[]"
+            ],
+            [
+                49,
+                "There is no conflict between the current line and any previous lines spoken by the Student, as the Student's line builds upon the previously discussed ideas of the main character's connection to the town's collective memories and the tragedy, and does not contradict any previous statements. \n\n[]"
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                53,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by Student, as the student is continuing to build upon and expand their understanding of the story, rather than contradicting their previous statements. \n\n[]"
+            ],
+            [
+                55,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as the student is continuing to build upon their previous ideas and hypotheses about the story. []\n\n(Note: The student's new idea about the time-traveling journal is a natural extension of their previous thoughts about the main character's connection to their family's past and the curse, and does not contradict any of their previous statements.)"
+            ],
+            [
+                57,
+                "This line does not have any clear conflicts with the Student's previous lines as it is a continuation of the idea of the time-traveling journal and its connection to the main character's family's past and legacy. \n\n[]"
+            ],
+            [
+                59,
+                "This line does not have any clear conflicts with the conversation history as it builds upon the previous ideas and themes discussed, particularly the concept of the main character being a part of a complex tapestry of time and memories that influence the present and future. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9954022988505747
     },
     {
         "task_name": "Education",
@@ -1761,7 +2273,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 1.0
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's statement that the car will go around the rock instead of crashing into it is not consistent with the expected outcome based on their previous statements, but there is no clear conflict or inconsistency within their own lines of the conversation history. \n\n[]"
+            ],
+            [
+                5,
+                "The student's current line is not in conflict with their previous statements, as they are using a different example to describe the same concept of an object adjusting its path or motion in response to an obstacle or change in its environment. [ ]"
+            ],
+            [
+                7,
+                "The student's current statement does not conflict with their previous statements as they consistently compare the car's motion to various natural phenomena and conclude that the car tends to maintain its path or adjust slightly to overcome obstacles.\n\n[]"
+            ],
+            [
+                9,
+                "The current line conflicts with previous lines because the student initially thought the car would try to keep moving in the direction it was already going, even when faced with an obstacle, but now thinks it will stop moving when it hits the paper and can't slide along it.\n\n[1, 3, 5, 7]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -1897,7 +2428,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 1.0
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's current line does not conflict with any of their previous lines, as they are consistently using analogies to describe the behavior of the toy car in relation to external obstacles. [ ]"
+            ],
+            [
+                5,
+                "The line does not have a clear conflict with any previous lines spoken by the Student, as it maintains consistency with the stream analogy and the concept of removing a blockage to allow movement.\n\n[]"
+            ],
+            [
+                7,
+                "The current line is not in conflict with any previous lines spoken by the Student, as it presents a new scenario with added force being applied to the car, which is a distinct situation from the previous discussions about blockages.\n\n[]"
+            ],
+            [
+                9,
+                "The Student's current line conflicts with their previous lines because in the previous lines, the Student consistently stated that the car would only keep moving if it had a constant external force or \"current\" propelling it, whereas in the current line, they claim the car would keep moving due to its own momentum even after the external force is removed. \n[1, 3, 5]"
+            ],
+            [
+                11,
+                "The Student's line is consistent with their previous statements, as they are continuing to use analogies to describe the motion of objects and how external factors can affect their movement.\n\n[]"
+            ],
+            [
+                13,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                15,
+                "The Student's current line seems to have a clear conflict with their previous statements, as they now claim the car would eventually slow down and stop without a force pushing it forward, whereas earlier they mentioned the car would keep moving on its own due to its momentum. \n[9]"
+            ],
+            [
+                17,
+                "The line is consistent with the conversation history, as the Student correctly identifies that adding friction to the surface would cause the car to slow down, which is in line with their previous understanding of how objects move and respond to obstacles.\n\n[]"
+            ],
+            [
+                19,
+                "The current line does not conflict with the conversation history, as the student has consistently used analogies to describe how objects move based on external factors like friction, force, and surface type, and this line continues that trend by describing how the car would move on a slope using an analogy about a mountain stream.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9111111111111111
     },
     {
         "task_name": "Education",
@@ -2153,7 +2723,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7
+        "P2_prompt_consistency_score": 0.7,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's current statement has a clear conflict with their previous statement, as the Student initially implied that a moving object's natural path is in a straight line until an outside force acts upon it, but now suggests that the tree's natural path is standing still.\n\n[1]"
+            ],
+            [
+                5,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Student, as the Student's analogy with the bird migrating south is consistent with their previous statements about objects maintaining their state unless acted upon by an external force. [ ]"
+            ],
+            [
+                7,
+                "The current line has a conflict with previous lines because the student initially stated that objects maintain their path when not being pushed or pulled, but now claims the fish stops moving when the current stops. \n[1, 3]"
+            ],
+            [
+                9,
+                "The current line is consistent with the conversation history because it describes an object continuing to move in a straight line until an outside force stops it, which aligns with the Student's previous statements about objects maintaining their motion until an external force intervenes. [ ]"
+            ],
+            [
+                11,
+                "There is no clear conflict between the student's new statement and their previous statements, as the student continues to demonstrate an understanding of the concept that an object in motion will continue moving in the same direction until an outside force acts upon it, and is exploring different scenarios to further understand this concept. []\n\nNote that the student's previous statements and the new statement are all consistent with the concept of Newton's First Law of Motion, which has been discussed throughout the conversation."
+            ],
+            [
+                13,
+                "The current line doesn't introduce a conflict with any previous statement from the Student, as it continues to build upon the understanding that an object's motion is influenced by forces acting upon it. \n[]"
+            ],
+            [
+                15,
+                "This line does not conflict with any of the Student's previous lines, as it is providing another example to illustrate the concept of an outside force changing the direction and speed of an object in motion. \n\n[]"
+            ],
+            [
+                17,
+                "The current line is consistent with the conversation history, as the student is continuing to discuss how an object in motion changes its path when an outside force is applied.\n\n[]"
+            ],
+            [
+                19,
+                "The Student's current line does not have any clear conflicts with their previous lines in the conversation history. []\n\nThere are no instances of the Student expressing a contradictory idea or statement that would indicate a conflict."
+            ],
+            [
+                21,
+                "The Student's line is consistent with their previous understanding of an object in motion staying in the same direction unless an outside force stops it or changes its motion, and there is no clear conflict with any of their previous statements.\n\n[]"
+            ],
+            [
+                23,
+                "The statement made by the Student does not clearly conflict with any of their previous statements in the conversation history, as they consistently demonstrated an understanding of how an object in motion maintains its direction until an outside force acts upon it.\n\n[]"
+            ],
+            [
+                25,
+                "This line does not clearly conflict with any previous lines spoken by the Student, as the Student consistently describes objects moving in straight lines when an outside force is removed or ceases to influence their motion.\n\n[]"
+            ],
+            [
+                27,
+                "There is no clear conflict between the Student's line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                29,
+                "This line from the Student does not clearly conflict with any previous line from the Student, as the Student consistently understands that an object will continue to move in the direction of an applied force unless acted upon by an outside force. \n\n[]"
+            ],
+            [
+                31,
+                "This line is consistent with the conversation history, as the student is reiterating their understanding of how an outside force can change an object's direction, and is providing another example of this concept with the fish swimming against the current.\n\n[]"
+            ],
+            [
+                33,
+                "The student's current line does not conflict with any previous statements they have made, as they have consistently described objects in motion as responding to external forces and changing their speed or direction accordingly.\n\n[]"
+            ],
+            [
+                35,
+                "There is no clear conflict between the Student's line and any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                37,
+                "The Student's current line does not clearly conflict with any of their previous statements in the conversation history, as they consistently discuss the effects of forces on an object's motion in a way that is consistent with their current analogy. []\n\nThis response has no conflicting lines from the conversation history, as the Student's analogy about the bird flying through a stormy sky is consistent with their previous discussions about the effects of multiple forces on an object's motion."
+            ],
+            [
+                39,
+                "The student's current statement does not conflict with any of their previous statements, as they are continuing to explore the concept of forces and motion in a consistent manner. []\n\nNote that the student's statements are consistently using analogies to understand and explain the concepts of forces and motion, and their current statement is just another example of this approach."
+            ]
+        ],
+        "P2_index_consistency_score": 0.9842105263157894
     },
     {
         "task_name": "Education",
@@ -2529,7 +3178,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.6666666666666666
+        "P2_prompt_consistency_score": 0.6666666666666666,
+        "eval_index_consistency": [
+            [
+                3,
+                "The current line is consistent with the Student's previous understanding of momentum and the concept of needing an external force to stop an object in motion.\n\n[]"
+            ],
+            [
+                5,
+                "The student's statement about keeping sitting still and staying put unless pushed or pulled forward when the car suddenly starts moving conflicts with their previous understanding of Newton's First Law of Motion, where they recognized that an object in motion will stay in motion and an object at rest will stay at rest unless acted upon by an external force. [1, 3]"
+            ],
+            [
+                7,
+                "The conflict arises because the student previously stated that objects at rest stay at rest and objects in motion stay in motion unless something changes their motion, but now the student incorrectly claims the dog's body \"likes to stay still\" when reaching the fence, contradicting the notion that the dog's body would want to keep moving due to its momentum. \n[1, 3, 5]"
+            ],
+            [
+                9,
+                "This line is not in conflict with any previous lines spoken by the Student, as it consistently reinforces the concept of Newton's First Law of Motion by stating that an object at rest will stay at rest unless acted upon by an external force.\n\n[]"
+            ],
+            [
+                11,
+                "There is no conflict between the line and any previous line spoken by the Student, as the Student consistently explains that an object will keep moving due to its momentum unless it is stopped by an external force or obstacle. \n\n[]"
+            ],
+            [
+                13,
+                "The statement by the Student does not accurately represent the concept of Newton's Law of Inertia, which states that an object at rest stays at rest, and an object in motion stays in motion, unless something changes its motion, and this is a conflict with several previous lines where Student accurately described the law. [1, 3, 5, 7, 9, 11]"
+            ],
+            [
+                15,
+                "The line does not clearly conflict with any previous lines spoken by the Student, as it consistently describes the application of Newton's First Law of Motion to various scenarios, including the merry-go-round. \n\n[]"
+            ],
+            [
+                17,
+                "The line spoken by the Student does not contain any clear conflicts or inconsistencies with their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                19,
+                "There is no conflict between the Student's current line and any line within the conversation history spoken by the Student, as the Student consistently describes objects maintaining their state of motion unless acted upon by an external force.\n\n[]"
+            ],
+            [
+                21,
+                "The student's current line does not have a clear conflict with any line within the conversation history, as they consistently demonstrate an understanding of Newton's First Law of Motion, comparing the balloon's motion to a butterfly's and their own motion on a trampoline.\n\n[]"
+            ],
+            [
+                23,
+                "This line has no clear conflict with the conversation history because the Student is consistently applying the principles of Newton's First Law of Motion to new scenarios. \n\n[]"
+            ],
+            [
+                25,
+                "The statement made by the Student does not show a clear conflict with any previous statement made by the Student. []\n\nThis is because the student has consistently applied the concept of Newton's First Law of Motion, comparing the balloon's motion to various natural phenomena, such as a seed blowing across a field, and correctly stating that the balloon will keep moving until it hits an obstacle and then stay put until it is acted upon again."
+            ],
+            [
+                27,
+                "This line does not contain any clear conflicts with the Student's previous statements as it correctly applies Newton's First Law of Motion to the scenario of a roller coaster climbing up and going down a hill, consistently describing how an object's motion can change from slow to fast and illustrating it with the analogy of a snake. []\n\nThis line is consistent with the Student's previous understanding and application of Newton's First Law of Motion."
+            ],
+            [
+                29,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student, as the Student is consistently applying the concept of Newton's First Law of Motion to various scenarios. \n\n[]"
+            ],
+            [
+                31,
+                "There is no conflict between the current line and the conversation history because the student consistently describes objects in motion maintaining their motion until an external force or obstacle changes their direction or stops them, which aligns with Newton's First Law of Motion. []\n\nNote that while the student's analogies and examples change, their understanding of the underlying principle remains consistent throughout the conversation."
+            ],
+            [
+                33,
+                "The current line is not in conflict with any previous statements by the Student as it correctly applies Newton's First Law of Motion, stating that the body will try to keep moving in the direction it's going unless something like friction or the floor stops it.\n\n[]"
+            ],
+            [
+                35,
+                "The line \"A big iceberg floating in the ocean is like a river flowing through a narrow channel, it will keep moving in the same direction unless it hits a bend in the channel or a rock that changes its path, but when it melts and breaks into smaller pieces, it's like when a small rivulet flows into a bigger stream, its motion changes as it gets swept away and carried by the larger current\" is consistent with the conversation history, as the Student continues to demonstrate understanding of Newton's First Law of Motion by providing another analogy for an object maintaining its state of motion unless acted upon by an external force.\n\n[]"
+            ],
+            [
+                37,
+                "The student's statement is not consistent with their previous understanding of Newton's First Law of Motion, which they previously applied to various physical objects and scenarios, but now they seem to imply that the motion of the movie characters stops because the motion itself is gone, rather than because of an external force or change. [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33]"
+            ],
+            [
+                39,
+                "The line spoken by the Student does not have a clear conflict with any of their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                41,
+                "The Student's statement does not clearly conflict with any previous statements.\n\n[]"
+            ],
+            [
+                43,
+                "The line spoken by the Student appears to conflict with the conversation history because the Student previously stated that objects keep moving unless something external stops them or changes their motion, but now claims that the firework's motion is changed by the explosion itself, which seems to imply an internal change in motion.\n\n[1, 3, 5, 7, 9, 11, 15, 17, 23, 25, 33]"
+            ],
+            [
+                45,
+                "This line does not have a clear conflict with any previous line spoken by the Student. []\n \n\nThis answer is given as the student is consistent with the concept that Newton's First Law of Motion applies to the situation where an object's motion changes due to its own momentum, as seen in previous examples such as lines 11, 17, 23, and 31."
+            ],
+            [
+                47,
+                "The current line does not contain a clear conflict or inconsistency with the conversation history. []\n\nThis line is consistent with Student's previous examples and understanding of Newton's First Law of Motion."
+            ],
+            [
+                49,
+                "The student's statement is consistent with their previous understanding of Newton's First Law of Motion, as they continue to describe how their body tends to maintain its motion unless acted upon by an external force. []\n\nThere are no conflicts with the student's previous statements."
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by the Student, as the Student consistently describes how objects in motion change direction or stop when an external force is applied, which aligns with Newton's First Law of Motion. []\n\nNote: This response is based on the assumption that the task is to identify conflicts within the Student's statements only, and not to evaluate the accuracy of the Student's understanding of Newton's First Law of Motion in relation to the Teacher's statements or the actual scientific concept."
+            ],
+            [
+                53,
+                "There is no conflict between the current line and any line within the conversation history spoken by Student, as the Student consistently applies the concept of Newton's First Law of Motion to various examples and scenarios. \n\n[]"
+            ],
+            [
+                55,
+                "The student's current statement is consistent with their previous statements about Newton's First Law of Motion, as it continues to use analogies to describe how their body likes to keep moving in a certain direction until an external force changes its motion. []\n\nNote that the student's previous statements (e.g., lines 1, 3, 5, 9, 33) have consistently demonstrated an understanding of the concept of inertia, and the current statement (line 55) is in line with this understanding."
+            ],
+            [
+                57,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                59,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9103448275862069
     },
     {
         "task_name": "Education",
@@ -2605,7 +3373,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.6
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no conflict between the current line and the conversation history, as the student is showing interest and inquiring further about the topic, which aligns with their previous enthusiasm for practical applications. \n\n[]"
+            ],
+            [
+                5,
+                "This line is consistent with the conversation history, as the student is building upon their previous questions about the implications of time dilation on GPS satellites. \n\n[]"
+            ],
+            [
+                7,
+                "The Student's current line does not exhibit any clear conflict or inconsistency with their previous lines in the conversation history. \n[]"
+            ],
+            [
+                9,
+                "The current line does not conflict with any previous lines spoken by the Student, as it continues to explore the implications of Einstein's theories on space travel and navigation, building upon the previous discussion. []\n\nThere are no conflicts with any previous lines from the Student."
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -2741,7 +3528,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.2
+        "P2_prompt_consistency_score": 0.2,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as this line builds upon the previous conversation by asking a follow-up question about Albert's time at the Swiss Federal Polytechnic University. []\n\nIn this case, the list is empty because there are no conflicting lines in the conversation history."
+            ],
+            [
+                5,
+                "The line is not in conflict with any previous statements made by the Student, as it is a continuation of their inquiry into Albert Einstein's education and development. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the Student's current line and any line within the conversation history spoken by Student, as the Student is consistently inquiring about Albert Einstein's life and work in a logical and coherent manner. \n\n[]"
+            ],
+            [
+                9,
+                "The provided line does not contain any clear conflicts with the Student's previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                11,
+                "The current line does not contain any information that directly conflicts with the Student's previous lines, as the Student is asking a new question that expands on the conversation without contradicting any of their previous statements.\n\n[]"
+            ],
+            [
+                13,
+                "This line does not introduce any clear conflict with the student's previous statements, as it further explores the influence of Albert's work as a patent clerk on his thoughts about spacetime and unified field theory, which is consistent with the student's previous questions.\n\n[]"
+            ],
+            [
+                15,
+                "The student's line does not conflict with any of their previous statements, as it is a continuation of their inquiry into Albert's thoughts on spacetime and the unified field theory, and does not contradict any of their prior questions or statements.\n\n[]"
+            ],
+            [
+                17,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Student, as the Student is exploring a new aspect of Albert Einstein's work and theories.\n\n[]"
+            ],
+            [
+                19,
+                "The statement by the Student does not show a clear conflict or inconsistency with any of their previous lines, as this question explores a new topic related to Albert's views on quantum mechanics, which has not been discussed before.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -2997,7 +3823,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.85
+        "P2_prompt_consistency_score": 0.85,
+        "eval_index_consistency": [
+            [
+                3,
+                "This line does not contain any information that is in conflict with the Student's previous lines. []\n\nSince the student is asking a question, it does not provide any statements that could contradict their previous lines."
+            ],
+            [
+                5,
+                "The Student's current line does not introduce any new conflicts with their previous statements, as they are exploring a new scenario by introducing acceleration to the train's motion, which is a progression of the conversation rather than a contradiction. \n\n[]"
+            ],
+            [
+                7,
+                "The Student's line does not present a clear conflict with their previous statements, as they are now asking about the perception of the person inside the train during acceleration, which is an extension of their previous questions. [ ]"
+            ],
+            [
+                9,
+                "The line does not introduce a conflict with any previous lines spoken by the Student, as they are exploring a new scenario and asking a different question about the relationship between space and the observer.\n\n[]"
+            ],
+            [
+                11,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student. []\n\nThis line is a new inquiry that builds upon the concepts previously discussed, exploring a different aspect of relative motion and time, and does not contradict any of the Student's previous statements."
+            ],
+            [
+                13,
+                "The statement made by the Student contains a clear conflict with their previous understanding of time dilation, as they now seem to be suggesting that time dilation does not affect biological aging, whereas previously they had understood it to affect the passage of time in a way that would have physical implications.\n\n[12]"
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the current line and any previous line spoken by the Student in the conversation history. []\n \n\n(No conflicts were found)"
+            ],
+            [
+                17,
+                "This line does not directly contradict any of the Student's previous statements, as it builds upon the concept of time dilation and its effects on the traveling twin's experience and relationship with their stationary twin. [ ]"
+            ],
+            [
+                19,
+                "This line does not present a clear conflict with any previous line spoken by the Student, as it continues exploring the idea of the traveling twin's experience upon returning home, previously discussed in line 17. []\n\nNote that while the Student's question in line 15 touches on the traveling twin's experience of time, it focuses more on communication with the stationary twin, whereas this question delves deeper into the traveling twin's internal experience and sense of identity."
+            ],
+            [
+                21,
+                "The line spoken by the Student does not present any clear conflicts with their previous statements, as they are building upon and exploring the concepts of time dilation, relative motion, and personal identity in a logical and coherent manner. []\n\nNote that this line is actually an extension of their previous question in line 17 and 19, where they were already exploring the implications of time dilation on personal identity and sense of self."
+            ],
+            [
+                23,
+                "This line does not have a clear conflict with any line within the conversation history spoken by the Student, as it continues to explore and build upon the concepts of time dilation, relativity, and their implications on personal identity, without contradicting or reversing any previous statements. \n\n[]"
+            ],
+            [
+                25,
+                "This line does not introduce any clear conflict or inconsistency with the Student's previous lines, as it builds upon the idea of relativity and its implications on personal identity and societal norms, which has been a recurring theme in the conversation.\n\n[]"
+            ],
+            [
+                27,
+                "The student's line does not introduce any clear conflict or inconsistency with their previous lines in the conversation history, as they continue to explore and build upon the concept of temporal relativity in societies and its implications on language, communication, and cultural expression. \n\n[]"
+            ],
+            [
+                29,
+                "The line does not present any clear conflict or inconsistency with the Student's previous statements, as it continues to explore the concept of temporal relativity in societies and its implications on historical narratives. \n\n[]"
+            ],
+            [
+                31,
+                "This line does not conflict with any previous statements made by the Student, as it represents a continuation and deeper exploration of the topics and ideas previously discussed, particularly in relation to temporal relativity, historical truth, and the complexities of time perception. \n\n[]"
+            ],
+            [
+                33,
+                "The line does not introduce a clear conflict with the conversation history, as the student is expanding on previously discussed concepts related to time dilation, causality, and the grandfather paradox. []\n \nHowever, please note that while there is no conflict, the line is redundant as the grandfather paradox has already been mentioned in line 32, and the student seems to be asking a question that is closely related to the teacher's previous response, but not exactly conflicting."
+            ],
+            [
+                35,
+                "The line does not introduce a clear conflict with any previous line spoken by Student, as it builds upon the previous discussion about the Novikov self-consistency principle and its implications on free will. \n\n[]"
+            ],
+            [
+                37,
+                "The student is reiterating a similar idea about the Novikov self-consistency principle and its implications for free will, which was previously discussed in lines 35 and 36, but the current statement itself does not introduce a conflict with any of their previous lines. [35]"
+            ],
+            [
+                39,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Student, as the Student is continuing to explore the implications of the Novikov principle and its effects on moral responsibility, building upon the previous discussion.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9947368421052631
     },
     {
         "task_name": "Education",
@@ -3373,7 +4278,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.36666666666666664
+        "P2_prompt_consistency_score": 0.36666666666666664,
+        "eval_index_consistency": [
+            [
+                3,
+                "The line does not contain a clear conflict with any previous lines spoken by the Student. []\n\nThis is because the Student is building on the scenario established by the Teacher and asking a relevant question about the party planning, which is consistent with their previous expressions of interest in applying relativity to the party scenario."
+            ],
+            [
+                5,
+                "The Student's line does not explicitly conflict with any of their previous lines, but it does imply a different consideration of time dilation effects that was not directly mentioned before; however, it is still related to time dilation and doesn't contradict any previous statement directly. \n\n[]"
+            ],
+            [
+                7,
+                "This line is consistent with the conversation history, as it continues to explore the application of relativity to the party planning. []\n \n\nNo conflicts or inconsistencies were found between this line and any of the previous lines spoken by the Student."
+            ],
+            [
+                9,
+                "The line does not have a clear conflict with the conversation history spoken by Student, but rather builds upon the existing scenario, so there are no conflicting lines.\n\n[]"
+            ],
+            [
+                11,
+                "The Student's current line does not mention any conflicts with their previous lines, as they are exploring a new aspect of the party planning and considering the effects of time dilation on the party favors. \n\n[]"
+            ],
+            [
+                13,
+                "The Student's line does not clearly conflict with any previous lines spoken by the Student, as they are asking a new question about the invitation process that builds upon the previous discussion about the party details.\n\n[]"
+            ],
+            [
+                15,
+                "This line does not contain any clear conflicts or inconsistencies with the student's previous lines, as it is a continuation of their discussion on incorporating relativity into the party planning, specifically focusing on party decorations. []\n\nThere are no indices to list."
+            ],
+            [
+                17,
+                "The Student's current line does not present any clear conflicts or inconsistencies with their previous statements in the conversation history. []\n\nThe Student has been consistently exploring the party planning process while considering the effects of relativity, and their current concern about energy efficiency and carbon footprint aligns with their previous questions about accommodating guests in the spaceship and on the ground."
+            ],
+            [
+                19,
+                "This line does not contain any clear conflicts with previous lines spoken by the Student, as it presents a new aspect of the party planning process that hasn't been previously discussed in a contradictory manner.\n\n[]"
+            ],
+            [
+                21,
+                "This line does not clearly conflict with any previous line spoken by the Student in the conversation history. []\n\nThe line is consistent with the Student's previous lines as the Student continues to explore various aspects of the party, this time focusing on the emotional impact and how to create a sense of unity among the guests, which aligns with their previous inquiries about inclusivity and synchronization across different perspectives."
+            ],
+            [
+                23,
+                "This line does not conflict with any previous statements made by the Student, as it continues the logical progression of planning and reflecting on the party, with no contradictory ideas or statements. \n\n[]"
+            ],
+            [
+                25,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as this line builds upon the previous discussion and introduces a new idea for utilizing data collection and analysis to improve future party planning.\n\n[]"
+            ],
+            [
+                27,
+                "The line spoken by the Student does not have any clear conflicts or inconsistencies with any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                29,
+                "This line does not introduce any clear conflicts with the Student's previous statements, as it continues to explore the application of scientific concepts to the party planning, specifically incorporating quantum mechanics into the theme song. \n\n[]"
+            ],
+            [
+                31,
+                "The line does not contain a clear conflict with any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                33,
+                "This line does not clearly conflict with any previous lines spoken by the Student in the conversation history. \n\n[]"
+            ],
+            [
+                35,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student, as the Student is consistently exploring new ideas and aspects of the party planning, and their current question is a natural progression of the conversation. \n[]"
+            ],
+            [
+                37,
+                "There is no conflict between this line and any previous lines spoken by the Student, as the Student has not mentioned creating a \"party sink\" or utilizing black holes to recycle energy before. \n\n[]"
+            ],
+            [
+                39,
+                "The student's mention of designing a \"celestial echo\" that leaves a lasting impact on the fabric of spacetime does not directly conflict with any previous statement made by the student. []\n\n(Note: There are no clear conflicts or inconsistencies between the current line and any previous lines spoken by the Student in the conversation history.)"
+            ],
+            [
+                41,
+                "The line does not conflict with any previous lines spoken by the Student, as it introduces a new concept of a \"spacetime mirror\" that builds upon the previous discussions about the party's cosmic footprint and spacetime signature. \n\n[]"
+            ],
+            [
+                43,
+                "This line does not introduce any clear conflict or inconsistency with the previous lines spoken by the Student, as it continues to explore new ideas and concepts related to the party and relativity.\n\n[]"
+            ],
+            [
+                45,
+                "This line does not contain any clear conflicts or inconsistencies with the conversation history. []\n\nSince the conversation has been building upon the ideas and concepts discussed previously, the Student's suggestion of creating a \"cosmic fusion reactor\" is a natural progression of the party's theme and the exploration of relativity and quantum mechanics."
+            ],
+            [
+                47,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                49,
+                "The Student's current line does not conflict with any of their previous lines in the conversation history, as it builds upon the previously established concepts and ideas. \n\n[]"
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                53,
+                "This line does not clearly conflict with any previous lines spoken by the Student, as the concept of a \"party temporal loop\" is a new and distinct idea that builds upon the previous discussions of relativity and party planning.\n\n[]"
+            ],
+            [
+                55,
+                "The student's line does not introduce any new conflict with previous statements, but rather builds upon and expands the ideas previously discussed, specifically the concept of a party temporal loop. []\n\nHowever, there is a potential issue with the student's request to create a \"party ancestor paradox\" where guests can meet their own future selves. This could potentially conflict with the teacher's previous statement about preventing paradoxes through a temporal safeguard (index 54). But the student is actually asking how to implement this while minimizing the impact on the timeline, rather than disregarding the safeguard. Therefore, it is not a clear conflict."
+            ],
+            [
+                57,
+                "This line does not conflict with any previous lines spoken by Student, as it builds upon and expands the ideas previously discussed. \n\n[]"
+            ],
+            [
+                59,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student, as the Student is continuing to explore and build upon the previous ideas and concepts discussed, and this new idea of a \"party multiverse nexus\" is a logical extension of the previous discussions on the party temporal loop and multiverse concepts.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3449,7 +4473,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's definition of potential energy as a \"stored treasure\" waiting to be unleashed is consistent with their previous understanding of potential energy as the energy \"stored, ready to be used\", or the energy \"yet to be released\" or \"for something to happen\". []\n\nIn other words, the Student's current statement does not conflict with their previous statements."
+            ],
+            [
+                5,
+                "The student's current line does not conflict with any previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                9,
+                "The line spoken by the Student does not introduce any clear conflict with their previous statements. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3585,7 +4628,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 1.0
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                3,
+                "The line spoken by Student does not conflict with any previous lines spoken by Student. \n\n[]"
+            ],
+            [
+                5,
+                "This line does not introduce any clear conflict or inconsistency with the Student's previous lines, as it is consistent with their understanding of the conversion between potential and kinetic energy. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                9,
+                "There is no conflict between the current line and the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                11,
+                "The Student's statement does not show a clear conflict with any of their previous statements, as they are asking a clarifying question about forms of energy without contradicting any previous statements. \n[]"
+            ],
+            [
+                13,
+                "The Student's current line does not introduce any new concepts or statements that directly conflict with their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                15,
+                "The Student's statement is consistent with their previous understanding of energy conversion and forms of energy, so there is no clear conflict or inconsistency. \n\n[]"
+            ],
+            [
+                17,
+                "The line is consistent with the student's previous understanding of the Conservation of Energy, as they correctly describe the conversion of chemical energy into mechanical energy and the swapping of potential and kinetic energy. []\n\nNote: This response does not contain any indices of conflicting lines from the conversation history because the student's statement is consistent with their previous understanding of the topic."
+            ],
+            [
+                19,
+                "The line does not contain any clear conflicts or inconsistencies with the previous lines spoken by the Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3841,7 +4923,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.85
+        "P2_prompt_consistency_score": 0.85,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's statement is consistent with their previous understanding of kinetic and potential energy, as they correctly distinguish between the two concepts. []\n\nThis is because the Student's previous line (index 1) already showed an understanding of the difference between kinetic and potential energy, and their current line reinforces this understanding without introducing any conflicting ideas."
+            ],
+            [
+                5,
+                "This line is consistent with the Student's previous understanding of energy transformation, as they have consistently demonstrated an understanding of the conversion between potential and kinetic energy throughout the conversation. []\n\nNote: The indices are based on the lines provided in the conversation history. The Student's lines are at indices 1 and 3, and this new line does not conflict with either of those lines."
+            ],
+            [
+                7,
+                "The line is consistent with the conversation history, as the Student is continuing to explore and deepen their understanding of the concept of energy transformation, and is asking a new question that builds upon their existing knowledge.\n\n[]"
+            ],
+            [
+                9,
+                "This line is consistent with the conversation history as Student is building upon their understanding of energy transformation, and there are no clear conflicts or inconsistencies with their previous statements. \n\n[]"
+            ],
+            [
+                11,
+                "The Student's current line does not have a clear conflict or inconsistency with any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                13,
+                "The student's current understanding of sound energy as \"the vibration-filled cousin of kinetic energy\" is consistent with their previous understanding of energy concepts and does not conflict with any previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                17,
+                "This line has no clear conflict with the conversation history as the student is building upon the concepts and categorizations discussed earlier and creating a new organization system. []\n \nThere is no conflict because the student has not directly contradicted any previous statements they've made, and their new organization system aligns with the concepts discussed in the conversation history."
+            ],
+            [
+                19,
+                "This line does not conflict with any previous lines spoken by the Student, as it continues to build upon and summarize the concepts discussed throughout the conversation.\n\n[]"
+            ],
+            [
+                21,
+                "This line is consistent with the conversation history, as the student is reiterating their understanding of the concept of energy conservation, which has been discussed throughout the conversation. []\n\nThis line does not have any conflict with the conversation history, the student is reinforcing the concept of the conservation of energy that has been discussed multiple times in the conversation."
+            ],
+            [
+                23,
+                "The Student's line is consistent with their previous statements, as they have consistently demonstrated an understanding of energy transformation and the various forms of energy, and this line does not contradict any of their previous statements. \n\n[]"
+            ],
+            [
+                25,
+                "This line does not have a clear conflict or inconsistency with any previous lines spoken by the Student in the conversation history. \n\n[]"
+            ],
+            [
+                27,
+                "This line is consistent with the conversation history, as it builds upon and expands the Student's previous understanding of the Energy Kingdom and its transformations, and does not contradict any of their previous statements. \n\n[]"
+            ],
+            [
+                29,
+                "There is no clear conflict or inconsistency between the Student's current line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                31,
+                "There is no clear conflict or inconsistency between the current line and the conversation history. []\n\nThis line is consistent with the conversation history and does not contradict any previous statements made by the Student. The Student is building upon the concepts they've learned about energy and its transformations, and their explanation of energy carriers is in line with the Teacher's previous explanations."
+            ],
+            [
+                33,
+                "The Student's line does not clearly conflict with any previous line spoken by the Student in the conversation history, as they are continuing to explore and learn about the concept of energy and its measurement. []\nThere is no conflict, so the list is empty."
+            ],
+            [
+                35,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                37,
+                "There is no clear conflict between the Student's current line and any line within the conversation history spoken by the Student, as the Student is continuing to explore the concept of energy and its related ideas in a consistent and logical manner.\n\n[]"
+            ],
+            [
+                39,
+                "There is no clear conflict or inconsistency between the current line and any previous lines spoken by the Student in the conversation history. []\n\nThe Student's current line is consistent with their previous statements about the Energy Kingdom and the concepts of energy transformation, conservation, and the laws of thermodynamics. The Student's line is a summary of their understanding of the energy dance and how it is influenced by the laws of thermodynamics, and it does not contradict any of their previous statements."
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -4217,7 +5378,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.9666666666666667
+        "P2_prompt_consistency_score": 0.9666666666666667,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                5,
+                "The current line spoken by the Student does not have a clear conflict with any of the previous lines spoken by the Student, as it consistently describes the conversion of kinetic energy back into a different form of energy and correctly identifies potential energy as a form of stored energy. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                9,
+                "The line spoken by the Student does not have a clear conflict or inconsistency with any previous line spoken by the Student in the conversation history. \n[]"
+            ],
+            [
+                11,
+                "The student's statement is consistent with their previous understanding of energy conversion and does not conflict with any of their previous statements. []"
+            ],
+            [
+                13,
+                "The Student's line does not conflict with any previous statement they have made in the conversation history. []\n\nThis is because the Student is consistent in their understanding of energy conversion and types of energy, including kinetic, potential, thermal, and now electromagnetic radiation. They have demonstrated a clear understanding of the concepts and have applied them to various scenarios, including the current example of a burning match."
+            ],
+            [
+                15,
+                "The Student's current statement does not clearly conflict with any previous statements made by the Student, as they consistently describe the conversion between kinetic and potential energy in various scenarios.\n\n[]"
+            ],
+            [
+                17,
+                "The Student's current line does not have any clear conflicts with their previous lines in the conversation history, as it accurately builds upon their understanding of potential and kinetic energy and introduces a new concept of elastic potential energy. []\n\nThis is an empty list as there are no conflicting lines."
+            ],
+            [
+                19,
+                "The Student's statement does not present a clear conflict or inconsistency with any of their previous lines in the conversation history, as they consistently demonstrate an understanding of energy conversion and the law of conservation of energy. []\n"
+            ],
+            [
+                21,
+                "The student's statement is consistent with their previous understanding of energy conversion, particularly in relation to potential and kinetic energy. []\n\nThere is no conflict with the student's previous statements."
+            ],
+            [
+                23,
+                "There is no clear conflict between the line and the lines spoken by the Student in the conversation history, as the Student has not previously described the energy conversion process in a car engine. \n\n[]"
+            ],
+            [
+                25,
+                "There is a clear conflict between the Student's line and previous lines in the conversation history where the Student correctly defined potential energy as stored energy due to position or state, and explained how lifting an object can convert kinetic energy into potential energy.\n\n[1, 3, 5, 15]"
+            ],
+            [
+                27,
+                "The Student's statement does not present a clear conflict or inconsistency with any of their previous lines, as they are building upon and expanding their understanding of the concept of efficiency in energy conversion. []\n\nNote: The Student's statement is consistent with their previous understanding of energy conversion and the law of conservation of energy, and they are applying this knowledge to a new concept, efficiency."
+            ],
+            [
+                29,
+                "There is no conflict between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                31,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                33,
+                "The student's statement is consistent with their previous understanding of energy conversion and efficiency, as they continue to demonstrate an ability to apply these concepts to various scenarios.\n\n[]"
+            ],
+            [
+                35,
+                "This line is consistent with the conversation history as it does not conflict with any previous statement made by the Student.\n\n[]"
+            ],
+            [
+                37,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                39,
+                "This line has no conflict with any previous lines spoken by the Student as it reiterates the idea of \"smart skin\" that was previously mentioned in line 33, but does not contradict any previous statements. \n[]"
+            ],
+            [
+                41,
+                "The Student's current statement does not have any conflicts with their previous lines, as they are providing a new perspective on atomic energy and describing it in a poetic way that does not contradict any of their previous statements about energy conversion and efficiency. \n\n[]"
+            ],
+            [
+                43,
+                "The student's statement contains a clear conflict with their previous understanding of energy conversion, as they previously correctly stated that the potential energy of water stored behind a dam is converted into kinetic energy as the water flows down, but now incorrectly state that the kinetic energy of the river is converted into potential energy as it's stored behind the dam. \n\n[5, 21]"
+            ],
+            [
+                45,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                47,
+                "The Student's current line is consistent with their previous understanding of energy storage and conversion, and does not conflict with any previous lines. \n\n[]"
+            ],
+            [
+                49,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the Student's line and any line within the conversation history spoken by the Student, as the Student is introducing a new concept and analogy to describe the Earth's energy balance.\n\n[]"
+            ],
+            [
+                53,
+                "The student's line does not introduce any new concepts or definitions that directly contradict previous statements they have made, so there are no clear conflicts with their previous lines. []\n\nNote: The student's new definition of climate change as a \"global energy glitch\" is consistent with their previous understanding of climate change as a \"global energy disturbance\" (line 51), and both definitions describe climate change in terms of a disruption to the Earth's energy balance."
+            ],
+            [
+                55,
+                "There is no clear conflict or inconsistency between the Student's line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                57,
+                "The Student's line does not introduce any new information that conflicts with their previous statements, but rather applies previously discussed concepts to a new scenario, so there are no conflicts with their previous lines.\n\n[]"
+            ],
+            [
+                59,
+                "There is no conflict between the Student's line and any previous lines spoken by the Student, as the line is consistent with and builds upon previous statements about sustainable energy and transportation. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9862068965517241
     },
     {
         "task_name": "Education",
@@ -4293,7 +5573,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.6
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                "The current line does not clearly conflict with any previous line spoken by the Student, as the Student is exploring a new scenario that builds upon their previous question. []\n \n(Note: The apparent conflict with the Teacher's line 2 is not considered a conflict with the Student's previous lines, as the task is to find conflicts within the Student's lines)"
+            ],
+            [
+                5,
+                "The Student's current statement has a conflict with previous statements because the Student previously didn't understand that the water level rise is determined by the total weight added to the water, but now seems to understand that the water level rise is determined by the total weight added to the water, but also seems to forget that the 10 kilograms from the lunch will be added to their original 50 kilograms. [1]"
+            ],
+            [
+                7,
+                "The line is consistent with the conversation history as the student is considering a different scenario with their friend and it doesn't directly contradict any previous statement made by the student. []\n \n\n(Note: The student is exploring different scenarios and understanding how the weight affects the water level, and the new question doesn't contradict any of their previous statements.)"
+            ],
+            [
+                9,
+                "The line spoken by the Student does not directly conflict with any previous lines spoken by the Student, as it presents a new scenario that has not been previously discussed by the Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9
     },
     {
         "task_name": "Education",
@@ -4429,7 +5728,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7
+        "P2_prompt_consistency_score": 0.7,
+        "eval_index_consistency": [
+            [
+                3,
+                "This line does not contain a clear conflict with any previous line spoken by the Student. []\n\nThis line builds upon the previous lines and presents a new scenario to further understand the concept of displacement, and does not contradict any previous statement made by the Student."
+            ],
+            [
+                5,
+                "The current line does not introduce any new information that conflicts with the Student's previous statements, as it asks a question about adding weight to the life jacket, which does not contradict any of the Student's previous claims or assumptions. [ ]"
+            ],
+            [
+                7,
+                "There is no conflict between the current line and any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                9,
+                "The student's new statement doesn't conflict with any previous statement they've made, as it presents a new scenario that builds upon the previous conversation. []"
+            ],
+            [
+                11,
+                "The Student's current statement doesn't have a clear conflict with their previous statements, as they're exploring different scenarios without contradicting their previous claims or assumptions.\n\n[]"
+            ],
+            [
+                13,
+                "There is no clear conflict or inconsistency between the current line and any previous lines spoken by the Student. []\n\nThis is because the current line is a logical extension of the conversation, asking about the next step after adding weight to the body and then removing the life jacket. The Student is not contradicting any previous statements, but rather asking a new question based on the previous discussion."
+            ],
+            [
+                15,
+                "There is no clear conflict between the Student's current line and any of their previous lines, as this line is a continuation of the topic of adding weight to their body and its effect on the water level. []\n\n(Note: This line is actually consistent with the Teacher's previous explanations, particularly line 14, but the task is to identify conflicts with the Student's own lines, of which there are none.)"
+            ],
+            [
+                17,
+                "The student's statement does not have any clear conflicts with their previous statements. \n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict between the student's current line and any line within the conversation history spoken by the student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -4685,7 +6023,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.65
+        "P2_prompt_consistency_score": 0.65,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's statement is consistent with their previous question, as they are now considering the effect of the buoyant force on their weight in the water. [1]"
+            ],
+            [
+                5,
+                "The current line does not conflict with any previous lines spoken by the Student, as it is a new question about a change in the situation rather than a contradictory statement. []\n \nSince the Student has not previously discussed or stated anything about changes in water level or its effects on the buoyant force, there is no conflict."
+            ],
+            [
+                7,
+                "The statement made by the Student in this line does not directly contradict any of their previous statements, as they are continuing to apply their understanding of the concept to the new scenario. \n[]"
+            ],
+            [
+                9,
+                "The Student's statement that the weight of 1 cubic foot of water is 10 pounds is not consistent with the previously established value of the buoyant force being 10 pounds for the Student's body weight of 120 pounds, which would imply that the weight of the volume of water displaced by the Student's body is 10 pounds.\n\n[3]"
+            ],
+            [
+                11,
+                "The Student's line assumes that the additional volume of water displaced and the additional buoyant force exerted on the scale would be the same as the previous increase in water level, but the conversation history suggests that this is correct, and the calculation for the new weight reading is also consistent. []\n\nHowever, if you look at line 7 and 9 you can notice that the student is calculating the correct volume of water displaced (2 cubic feet), but assuming this volume will always displace 20 pounds of water. But if you look at line 9 you can notice that the student is using the weight of 1 cubic foot of water (10 pounds), which seems consistent, but if you look at line 3, the student is given the buoyant force as 10 pounds for an unknown volume of water. So the real conflict could be between the volume of water displaced in line 7,9 and the buoyant force of 10 pounds in line 3. So the list of indices of conflicting lines would be [3,7,9]."
+            ],
+            [
+                13,
+                "The Student's current line is not consistent with their previous line because the Student previously stated that their weight reading would be 70 pounds after the water level rises by another 1 foot, implying that the weight would decrease by 20 pounds, but now they are asking how much less they would weigh after the water level rises by another 1 foot.\n\n[11]"
+            ],
+            [
+                15,
+                "This line does not have any clear conflict or inconsistency with the Student's previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                17,
+                "The line spoken by the Student is inconsistent with the conversation history as it suggests that the original buoyant force was 10 pounds, and the student is inquiring about a change in buoyant force due to an increase in the volume of water displaced by 1 cubic foot, which contradicts the previous calculations of buoyant forces and weight changes. [3, 9, 11, 13, 15]"
+            ],
+            [
+                19,
+                "The statement seems to conflict with the conversation history as the student previously calculated that a 2 cubic feet increase in the volume of water displaced results in a 20-pound increase in buoyant force, but now they are assuming a 1 cubic foot increase results in a 10-pound increase in buoyant force.\n\n[3, 7, 9, 11, 13, 15]"
+            ],
+            [
+                21,
+                "The current statement is consistent with the conversation history as it continues to explore the relationship between the volume of water displaced by the scale and the resulting buoyant force, and there are no clear conflicts with previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                23,
+                "The conflict arises because the Student is considering a further 10-pound decrease from the 20-pound weight reading which they have just stated is the result of the previous 10-pound decrease, whereas earlier they mentioned their weight reading dropped to 20 pounds after a 10-pound decrease from 30 pounds, and now they should be discussing the next step in the process, not repeating the same decrease. [22]"
+            ],
+            [
+                25,
+                "The line spoken by the Student does not introduce a conflict with their previous lines, as it correctly applies the same logic of increasing buoyant force and decreasing weight reading that they have been using throughout the conversation. \n\n[]"
+            ],
+            [
+                27,
+                "The Student's statement does not have any clear conflict or inconsistency with any line within the conversation history, as the Student is now asking about the volume of water displaced by their body, which is a new concept being introduced by the Teacher in the previous line. []\n\nThe conversation is now moving towards finding the volume of water displaced by the Student's body, and the Student's question is a natural progression in the discussion."
+            ],
+            [
+                29,
+                "The current line does not clearly conflict with any previous lines in the conversation history spoken by Student, as it builds upon the previously established concepts and does not directly contradict any previous statements.\n\n[]"
+            ],
+            [
+                31,
+                "The current line does not have a clear conflict or inconsistency with any line in the conversation history spoken by Student, as the Student is applying the concept of buoyant force being equal to the weight of the displaced fluid correctly. []\n\nNote: The Student is extending their understanding of the concept to a new scenario with a changed density of water, which does not conflict with their previous statements."
+            ],
+            [
+                33,
+                "The statement made by the Student is inconsistent with their previous understanding that the buoyant force counteracts their body weight, as they now seem to think that a greater buoyant force would result in a weight reading in the opposite direction, rather than a decrease in weight reading. [1, 3]"
+            ],
+            [
+                35,
+                "The student's statement does not conflict with any previous statements, as it follows from the teacher's explanation that the student's weight reading would be 0 pounds if the buoyant force exactly counteracts their body weight. []\n\nNote: Although there are lines where the student had incorrect calculations or misunderstandings, the teacher has since clarified and corrected these, and the student's new statement is consistent with the corrected understanding."
+            ],
+            [
+                37,
+                "There is a conflict between the line and the conversation history because the Student previously stated that if the buoyant force is greater than their body weight, their weight reading would be 0 pounds, but now they are asking if the weight reading would increase if the buoyant force is less than their body weight but still greater than the original buoyant force of 10 pounds, which is inconsistent with their previous understanding. [33, 35]"
+            ],
+            [
+                39,
+                "The line spoken by the Student contains a conflict with the conversation history, as the Student is comparing their new weight reading to a previous weight reading of 0 pounds, but in a previous line, the Student correctly understood that a weight reading of 0 pounds meant the buoyant force exactly counteracted their body weight, rather than being a value to decrease from.\n\n[33, 34, 35]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.8947368421052632
     },
     {
         "task_name": "Education",
@@ -5061,7 +6478,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7333333333333333
+        "P2_prompt_consistency_score": 0.7333333333333333,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict or inconsistency between the current line and the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                5,
+                "The current line does not present a clear conflict with any previous lines spoken by the Student, as it introduces a new scenario (submerging the rocks at an angle) that wasn't previously discussed. \n[]"
+            ],
+            [
+                7,
+                "The Student's line does not clearly contradict any of their previous statements in the conversation history, as they are exploring different scenarios and variables that affect the buoyant force. \n\n[]"
+            ],
+            [
+                9,
+                "There is no conflict because the Student is considering the effect of the rock's material on the buoyant force and the water level rise, which is a logical continuation of the conversation and does not contradict any previous statements made by the Student. []\n\n(Note: The conversation history already established that the buoyant force is proportional to the volume of the object and the density of the fluid, so the Student's line is actually exploring the implications of these principles on objects with different materials.)"
+            ],
+            [
+                11,
+                "The line spoken by the Student does not have a clear conflict with any of their previous lines, as they are asking a new question about the effect of hollow vs solid objects on buoyant force, which has not been discussed in their previous lines.\n\n[]"
+            ],
+            [
+                13,
+                "The Student's line is consistent with their previous lines and understanding of Archimedes' Principle, as they continue to explore the relationship between object density, volume, and buoyant force. []\n\nThere are no conflicts with the current line and the conversation history."
+            ],
+            [
+                15,
+                "The student's question about the effect of air bubbles on the buoyant force and water level does not conflict with any previous statements made by the student. \n\n[]"
+            ],
+            [
+                17,
+                "The student's new line does not conflict with their previous lines because it is asking about a different scenario with the rock being completely surrounded by water in a sealed container, whereas previous lines discussed the rock being submerged in an open container. \n\n[]"
+            ],
+            [
+                19,
+                "This line does not conflict with any previous statements made by the Student, as it introduces a new scenario involving external force applied to the rock, which has not been previously discussed from the Student's perspective. \n\n[]"
+            ],
+            [
+                21,
+                "This line does not introduce any conflict or inconsistency with the Student's previous lines, as it is asking a new question that doesn't contradict any previous statements. \n\n[]"
+            ],
+            [
+                23,
+                "The line does not conflict with the conversation history, as the teacher previously explained that the buoyant force depends on the volume and density of the object relative to the surrounding fluid, not on any external forces or the object's motion. []"
+            ],
+            [
+                25,
+                "The student's line is consistent with the conversation history, as it asks a new question about the effect of an external force (the student's weight) on the buoyant force and water level, without contradicting any previous statements. \n\n[]"
+            ],
+            [
+                27,
+                "The current line does not have any clear conflicts with the Student's previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                29,
+                "The Student's statement does not present any clear conflict or inconsistency with their previous lines in the conversation history, as this is a new scenario that hasn't been directly discussed before. \n\n[]"
+            ],
+            [
+                31,
+                "The student's line does not have a clear conflict with any of their previous lines in the conversation history, as they are asking a new question about the effect of temperature on the buoyant force, which has not been discussed before. \n\n[]"
+            ],
+            [
+                33,
+                "The current line does not have a clear conflict or inconsistency with any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                35,
+                "The line is consistent with the conversation history, as it asks about a new scenario that hasn't been previously discussed in a conflicting manner.\n\n[]"
+            ],
+            [
+                37,
+                "The line spoken by the Student does not conflict with any of their previous lines, as the concept of buoyant force remaining constant while an object is being lifted has been previously discussed in a similar context. \n\n[]"
+            ],
+            [
+                39,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as the student is asking a new question about the effect of sideways motion on the buoyant force while standing on the rock, which hasn't been directly addressed before.\n\n[]"
+            ],
+            [
+                41,
+                "The student's line does not have a clear conflict with any of their previous lines, as the scenario they describe is a continuation of the experiment rather than a contradiction of previous statements. \n\n[]"
+            ],
+            [
+                43,
+                "The Student's statement does not clearly conflict with any previous lines in the conversation history, as the Student is asking about the effect of applying force to submerge the rock, which is a different scenario than previously discussed.\n\n[]"
+            ],
+            [
+                45,
+                "The Student's statement that two rocks of the same weight and material but different densities (one hollow, the other with a heavy metal rod) would have different buoyant forces is consistent with the conversation history, as it aligns with the principles discussed earlier.\n\n[]"
+            ],
+            [
+                47,
+                "The student's statement does not show a clear conflict or inconsistency with any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                49,
+                "The line does not conflict with any previous lines in the conversation history as the topic of changing the surrounding water temperature has been discussed before in a different context, but not with a temperature drop. []\n\nHowever, note that the student had previously discussed a temperature change in line 31, but it was an increase in temperature."
+            ],
+            [
+                51,
+                "The current line spoken by the Student does not have any clear conflicts or inconsistencies with their previous lines in the conversation history. \n[]"
+            ],
+            [
+                53,
+                "This line does not explicitly conflict with any previous lines spoken by the Student, as it is a new question about a different scenario. \n\n[]"
+            ],
+            [
+                55,
+                "There is no conflict in the given line with the conversation history, as it presents a new scenario and doesn't contradict any previous statements made by the Student.\n\n[]"
+            ],
+            [
+                57,
+                "The statement is consistent with the conversation history, as the buoyant force on an object is determined by the weight of the surrounding fluid and the volume of the object submerged, not by the motion of the surrounding fluid. []\n\nExplanation: According to the teacher's previous statements (e.g., lines 20, 38, 40), the buoyant force on an object is independent of the motion of the surrounding fluid. Therefore, the student's statement does not conflict with any previous lines in the conversation history."
+            ],
+            [
+                59,
+                "There is no clear conflict between this line and any previous lines spoken by the Student, as this scenario has not been explored before.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -5137,7 +6673,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.6
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's current statement is consistent with their previous statements and understanding of the circulatory system as a network of roads for delivering oxygen and nutrients. []\n\nThere are no conflicts with the student's previous lines."
+            ],
+            [
+                5,
+                "The Student's current statement is consistent with their previous statements and does not show any clear conflict or inconsistency. []\n\nThere are no prior statements from the Student that contradict this statement, and it builds upon the prior explanation given by the Teacher."
+            ],
+            [
+                7,
+                "The Student's statement is consistent with the conversation history and does not introduce any new conflicts or inconsistencies. \n\n[]"
+            ],
+            [
+                9,
+                "The Student's current line does not conflict with any of their previous lines, as they are asking for further clarification on the heart's role in the circulatory system, which is a continuation of their learning process and does not contradict any of their previous statements.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -5273,7 +6828,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's line does not introduce any conflict or inconsistency with their previous lines, as it builds upon and clarifies their understanding of the circulatory system analogy. []\n\n(Note: The Student's line is consistent with their previous questions and statements, showing a progression of understanding and inquiry about the topic.)"
+            ],
+            [
+                5,
+                "The conflict arises from the Student's new attempt to create a rhyming phrase, which suggests that capillaries are involved in the removal of oxygen, whereas previously, the Student had correctly understood that the main function of the delivery system is to provide oxygen and nutrients.\n\n[3]"
+            ],
+            [
+                7,
+                "There is no clear conflict or inconsistency between the line spoken by Student and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                9,
+                "There is no conflict or inconsistency between the Student's current line and their previous statements. \n\n[]"
+            ],
+            [
+                11,
+                "The Student's new line does not introduce a clear conflict with their previous statements, but rather is a continuation of their learning process, asking to create a rhyming phrase to remember the journey of waste removal in the lymphatic vessels.\n\n[]"
+            ],
+            [
+                13,
+                "The Student's line does not have a clear conflict with any of their previous lines in the conversation history, as they are asking for further clarification on a specific aspect of the circulatory system without contradicting any of their previous statements. []\n\nNote that the Student's line is actually building upon their previous understanding of the circulatory system, as established in the conversation history, and is seeking additional information to deepen their knowledge."
+            ],
+            [
+                15,
+                "This line spoken by the Student does not provide a clear conflict with any of the previous lines spoken by the Student, but it is contradictory to the Teacher's previous corrections on the same topic.\n\n[5, 6]"
+            ],
+            [
+                17,
+                "The student is asking about the heart's chambers and their sequence, but there is a conflict with their previous understanding of the circulatory system's components, particularly the mention of \"Chambre\", which is not a correct term, indicating a possible inconsistency with their previous questions about the topic.\n\n[1, 3, 5]"
+            ],
+            [
+                19,
+                "There is no clear conflict between the Student's line and any previous lines spoken by the Student in the conversation history. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.8888888888888888
     },
     {
         "task_name": "Education",
@@ -5529,7 +7123,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.9
+        "P2_prompt_consistency_score": 0.9,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Student, as the Student is rephrasing and building upon the Teacher's analogy in a consistent manner. \n\n[]"
+            ],
+            [
+                5,
+                "The Student's current statement does not clearly conflict with any of their previous lines, as they continue to build upon and expand their understanding of the analogy. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Student, as the Student is consistently using and building upon the established analogy. \n\n[]"
+            ],
+            [
+                9,
+                "There is no conflict or inconsistency between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                11,
+                "The Student's current line does not have a clear conflict with any of their previous lines in the conversation history. \n[]"
+            ],
+            [
+                13,
+                "The Student's current line does not contradict any previous statements they made in the conversation. \n\n[]"
+            ],
+            [
+                15,
+                "The Student's current statement does not have any clear conflicts or inconsistencies with their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                17,
+                "This line does not contain a clear conflict or inconsistency with any previous line spoken by the Student.\n\n[]"
+            ],
+            [
+                19,
+                "The student's line is consistent with their previous understanding of the airport analogy and does not conflict with any previous statements. \n\n[]"
+            ],
+            [
+                21,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                23,
+                "The line spoken by Student does not present a clear conflict or inconsistency with any line within the conversation history spoken by Student, as it builds upon previous discussions about the airport analogy and the heart's chambers. \n\n[]"
+            ],
+            [
+                25,
+                "The line spoken by the Student does not contain any clear conflicts or inconsistencies with their previous statements. []\n\nThe Student is building upon their previous understanding and incorporating the concepts they have learned throughout the conversation, such as the airport analogy, systole and diastole, blood pressure, and the heart's chambers, to create a comprehensive comic strip that visualizes the entire journey of the circulatory system."
+            ],
+            [
+                27,
+                "The Student's suggestion to create a 3D model of the heart using a Styrofoam ball for the heart and straws for the blood vessels does not conflict with any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                29,
+                "The Student's line does not conflict with any previous lines in the conversation history as it builds upon and refines their previous ideas and suggestions, and presents a coherent and logical approach to adding a \"lungs\" component to the 3D model.\n\n[]"
+            ],
+            [
+                31,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                33,
+                "This line does not conflict with any previous lines spoken by the Student, as they continue to build upon and expand their understanding of the circulatory system using the airport analogy.\n\n[]"
+            ],
+            [
+                35,
+                "The Student's line does not have a clear conflict or inconsistency with any line within the conversation history. \n\n[]"
+            ],
+            [
+                37,
+                "There is no clear conflict or inconsistency between the line spoken by Student and any line within the conversation history spoken by Student. []\n\nThis line is an extension of the airport analogy and the concept of the nervous system's impact on the circulatory system, which has been previously discussed. It does not contradict any of the Student's previous statements."
+            ],
+            [
+                39,
+                "There is no clear conflict or inconsistency between the Student's current line and any line within the conversation history spoken by Student.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -5905,7 +7578,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.9333333333333333
+        "P2_prompt_consistency_score": 0.9333333333333333,
+        "eval_index_consistency": [
+            [
+                3,
+                "The Student's current line does not conflict with any previous lines spoken by the Student, as it is a continuation and expansion of their understanding of the concept of nutrients. \n\n[]"
+            ],
+            [
+                5,
+                "This line is consistent with the conversation history as the student is asking for further clarification and building upon previously discussed concepts. \n\n[]"
+            ],
+            [
+                7,
+                "There is no conflict or inconsistency between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                9,
+                "The Student's current line does not introduce any new information that clearly conflicts with their previous statements. \n\n[]"
+            ],
+            [
+                11,
+                "This line is consistent with the conversation history, as the student is simply building upon the rhyme they previously created. \n[]"
+            ],
+            [
+                13,
+                "The student's statement is consistent with the conversation history, as they are building upon their existing understanding of the circulatory system and its components, and there is no clear conflict or inconsistency with their previous statements.\n\n[]"
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                17,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                19,
+                "The Student's current line does not introduce any clear conflicts with their previous statements, as it builds upon the conversation about the circulatory system, specifically focusing on the lungs and oxygenation, and the rhyme for the heart's chambers.\n\n[]"
+            ],
+            [
+                21,
+                "This line does not conflict with any previous lines spoken by the Student, as it continues to build on the Student's understanding of the circulatory system and its processes. \n\n[]"
+            ],
+            [
+                23,
+                "There is no clear conflict between the Student's line and their previous lines in the conversation history, as they are building upon their existing knowledge and asking more in-depth questions about the heart's chambers. \n\n[]"
+            ],
+            [
+                25,
+                "The Student's line does not conflict with any previous lines, as it is a request for further clarification and expansion on a concept that was previously introduced.\n\n[]"
+            ],
+            [
+                27,
+                "The student's question does not introduce any new conflicts or inconsistencies with their previous lines in the conversation history, as they are simply asking for further clarification and a review of previously discussed concepts. \n\n[]"
+            ],
+            [
+                29,
+                "There is no clear conflict or inconsistency between the current line and any previous line in the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                31,
+                "There is no clear conflict or inconsistency between the Student's current line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                33,
+                "This line does not have any conflicts with the previous lines spoken by the Student, as it is asking for further clarification on the concept of depolarization and proposing a new rhyme to remember the stages of the heartbeat's electrical pathways. []\n\nNote that this line is actually seeking clarification on a concept that was previously discussed by the Teacher in lines 30 and 32, but the Student is not contradicting their own previous statements."
+            ],
+            [
+                35,
+                "The current line does not have any clear conflicts or inconsistencies with the conversation history, as the Student is further exploring and deepening their understanding of the concept of \"repolarization\", which has been previously discussed. []\n\nThere are no conflicting lines in the conversation history that directly contradict the current line spoken by the Student."
+            ],
+            [
+                37,
+                "There is no conflict between the current line and any previous lines spoken by the Student, as the Student is asking for clarification on a term used by the Teacher. \n\n[]"
+            ],
+            [
+                39,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                41,
+                "The Student's current line does not conflict with any of their previous statements, as they are asking for clarification on a new topic and attempting to create a new rhyme to remember the cycle of the circulatory system. []\n[]"
+            ],
+            [
+                43,
+                "There is no clear conflict or inconsistency between the line spoken by Student and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                45,
+                "The line spoken by the Student does not have any clear conflicts with their previous lines in the conversation history. []\n\nThis is because the Student is continuing to ask questions and explore new concepts within the circulatory system, without contradicting any of their previous statements or understanding of the topic."
+            ],
+            [
+                47,
+                "There is no clear conflict or inconsistency between the line spoken by the Student and any line within the conversation history spoken by the Student. []\n\nThis line is consistent with the Student's previous questions and understanding of the circulatory system, and it builds upon the Teacher's explanation of how the heart's workload increases during exercise."
+            ],
+            [
+                49,
+                "There is a conflict between the current line and the conversation history because the Student is asking about a topic that has already been discussed in detail, specifically the types of blood vessels, which were previously covered in lines 13 and 28.\n\n[13, 28]"
+            ],
+            [
+                51,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                53,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                55,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Student. \n\n[]"
+            ],
+            [
+                57,
+                "This line does not conflict with any previous lines spoken by the Student, as the Student is asking for clarification on a concept previously discussed by the Teacher and attempting to create a new rhyme to remember the types of white blood cells. \n\n[]"
+            ],
+            [
+                59,
+                "There is no clear conflict or inconsistency between the line spoken by Student and any line within the conversation history spoken by Student.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9977011494252873
     },
     {
         "task_name": "Education",
@@ -5981,7 +7773,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.8
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                3,
+                "The line doesn't directly conflict with any previous statements made by the Student, as it's building upon the previous idea of a flat plateau while introducing a new element of a river. \n\n[]"
+            ],
+            [
+                5,
+                "This line does not have a clear conflict with any previous lines spoken by the Student, as it is an extension of the hypothetical scenario previously discussed. \n\n[]"
+            ],
+            [
+                7,
+                "The Student's new scenario of Machu Picchu being in a valley is inconsistent with their previous scenarios of the city being on a flat plateau or mountain with a river running through it. [1, 3, 5]"
+            ],
+            [
+                9,
+                "The student is now describing the cliffs as being made of a softer, more unstable rock, but there's no clear conflict with previous lines because the student has been consistently exploring different hypothetical scenarios, and the previous descriptions of the cliffs were also part of those scenarios. []\n\nNote: The student's new line is consistent with the previous hypothetical scenario described in line 7, where they imagined the city in a valley surrounded by steep cliffs, but the new line doesn't conflict with any previous statements made by the student."
+            ]
+        ],
+        "P2_index_consistency_score": 0.7
     },
     {
         "task_name": "Education",
@@ -6117,7 +7928,46 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.7
+        "P2_prompt_consistency_score": 0.7,
+        "eval_index_consistency": [
+            [
+                3,
+                "The line does not introduce a conflict with any previous statement made by the Student, as the student initially proposed an isolated island scenario and is now building upon that idea with a more detailed description of the island's geography. [ ]"
+            ],
+            [
+                5,
+                "The line spoken by the Student does not have any clear conflicts with their previous lines in the conversation history as it further explores the idea of the isolated island scenario by introducing an additional aspect of astronomy and timekeeping.\n\n[]"
+            ],
+            [
+                7,
+                "This line does not have a clear conflict with any previous line spoken by the Student as the Student is exploring different hypothetical scenarios about Machu Picchu and this is just another one of those scenarios. []\n\nNote that the student previously explored an isolated island scenario and then transitioned to real-world Machu Picchu, and now is exploring another hypothetical scenario, which does not directly conflict with their previous statements."
+            ],
+            [
+                9,
+                "This line does not introduce any clear conflict with the Student's previous lines as it is an extension of the discussion about Machu Picchu's terrain and the Incas' possible adaptations to it. []\n\nNote that this line actually contradicts the Teacher's line 8 which stated that they would be examining how the Incas actually adapted to the real-world terrain at Machu Picchu, but since we're only considering conflicts within the Student's lines, it doesn't count as a conflict in this case."
+            ],
+            [
+                11,
+                "There is a conflict because the student previously considered a scenario where the Incas had developed a network of tunnels and canals to manage the water flow, but now they are considering a scenario where they had to rely on a complex system of aqueducts and canals to bring water from a distant source. [10]"
+            ],
+            [
+                13,
+                "This line does not present a clear conflict with any previous line spoken by the Student, as it introduces a new hypothetical scenario to explore the design and infrastructure of Machu Picchu as a major trade hub, which is distinct from previous imaginative scenarios. []\n\nNote: The Student's previous lines have also been imaginative scenarios, and this line does not contradict any previous statements about Machu Picchu or the Inca Empire."
+            ],
+            [
+                15,
+                "The current line does not present a clear conflict with the conversation history, as it explores an idea that is consistent with the Student's prior lines of inquiry and does not contradict any specific details mentioned earlier. \n\n[]"
+            ],
+            [
+                17,
+                "There is no clear conflict between the current line and any previous line spoken by the Student, as the Student has not discussed waste management before and this scenario is a new hypothetical. \n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict between the Student's new line and any line within the conversation history spoken by the Student, as the Student's line introduces a new topic of metallurgy and mining, which has not been previously discussed. []\n\nHowever, if you are concerned about overall conversation context, note that it appears that Teacher was about to transition into discussing the social structure at Machu Picchu in their previous line (index 18), but Student's new line seems to diverge from that topic."
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -6373,7 +8223,86 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.55
+        "P2_prompt_consistency_score": 0.55,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's current line does not present a clear conflict with any of their previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                5,
+                "The Student's current statement does not clearly conflict with any of their previous lines, as it explores a possible outcome under the scenario of Apukuna as the Inca leader, which was introduced by the Teacher and built upon by the Student in line 3. []\n\nHowever, this is in clear conflict with the Teacher's line 4, but since the task is to find conflicts within the Student's lines, no conflict was found."
+            ],
+            [
+                7,
+                "The student's current statement conflicts with their previous statements because they had initially suggested that Apukuna would focus on agriculture and food storage to support military expansion, but now they're considering a scenario where Apukuna prioritizes trade and commerce over military expansion. \n[3, 5]"
+            ],
+            [
+                9,
+                "This line does not have a clear conflict with the conversation history since it presents a new hypothetical scenario that does not contradict any previous statements. []\n \n Note: The provided line does change the scenario but it doesn't conflict with any previous statements made by the Student."
+            ],
+            [
+                11,
+                "The line is inconsistent because the Student is now suggesting a small-scale, self-sufficient village focused on community and spirituality, which conflicts with their previous suggestions that implied a larger, more complex city with a focus on agriculture, trade, or military expansion.\n\n[3, 5, 7]"
+            ],
+            [
+                13,
+                "The current statement does not directly conflict with any of the previous statements, as it introduces a new hypothetical scenario for the design and purpose of Machu Picchu that does not contradict or invalidate any previous scenarios. []\n\nNote: The previous statements proposed different scenarios, such as a focus on agriculture, trade, and community, but did not rule out the possibility of the Inca incorporating astronomical observations into the city's design, making this statement compatible with the conversation history."
+            ],
+            [
+                15,
+                "The student's current statement does not have a clear conflict with any previous lines as it proposes a new scenario that builds upon the existing topic of Machu Picchu's design and infrastructure, but does not contradict any prior statements. []\n\nHowever, it is worth noting that this line does have a potential connection with line 9 and line 12, in that line 9 discusses rebuilding Machu Picchu after a natural disaster and mentions the use of water harvesting systems, and line 12 talks about incorporating a water source for irrigation in a smaller-scale village."
+            ],
+            [
+                17,
+                "The line does not present a clear conflict or inconsistency with any previous line spoken by the Student.\n\n[]"
+            ],
+            [
+                19,
+                "The current line does not directly conflict with any previous lines spoken by the Student, as it presents a new hypothetical scenario that explores a different aspect of Machu Picchu's design. []\n\nNote that some previous lines may share similar themes or ideas, but they do not directly contradict the current line."
+            ],
+            [
+                21,
+                "There is a conflict between the current line and previous lines, as the Student initially suggested that Machu Picchu be moved to a different continent, like Africa, and later explored various alternative designs and locations, but this new scenario proposes a drastically different environment, a remote island in the Amazon rainforest, which contradicts the original geographical context of Machu Picchu being located in the Andes mountains. [1]"
+            ],
+            [
+                23,
+                "The line does not introduce a clear conflict or inconsistency with any of the Student's previous lines, as it presents a new and distinct scenario for the design and purpose of Machu Picchu. []\n\n(Note: There are no lines that clearly contradict or conflict with the current line, as each line presents a separate and distinct hypothetical scenario for the design and purpose of Machu Picchu.)"
+            ],
+            [
+                25,
+                "The student's statement does not introduce a clear conflict or inconsistency with their previous lines, as they have been exploring different hypothetical scenarios for the design and purpose of Machu Picchu throughout the conversation.\n\n[]"
+            ],
+            [
+                27,
+                "This line does not have a clear conflict with any of the previous lines spoken by the Student, as the Student has been presenting various hypothetical scenarios for the design and purpose of Machu Picchu, and this line simply presents another scenario. \n\n[]"
+            ],
+            [
+                29,
+                "This line does not clearly conflict with any previous line spoken by the Student, as it presents a new hypothetical scenario for the design and purpose of Machu Picchu, which is distinct from the previous scenarios proposed by the Student.\n\n[]"
+            ],
+            [
+                31,
+                "There is no clear conflict between the current line and the conversation history, as the Student is exploring a new hypothetical scenario for Machu Picchu's design, and their previous lines have not established a conflicting setting or design for the city.\n\n[]"
+            ],
+            [
+                33,
+                "The current line does not directly conflict with any of the Student's previous lines, as it presents a new and distinct scenario for the city's design and purpose. \n\n[]"
+            ],
+            [
+                35,
+                "The student's new statement is inconsistent with their previous idea of building Machu Picchu on a mountainous coastline, as an underwater city would not be feasible in such a location. \n\n[31]"
+            ],
+            [
+                37,
+                "The student's line does not have a clear conflict or inconsistency with any line within the conversation history spoken by the student.\n\n[]"
+            ],
+            [
+                39,
+                "The student's line is not in direct conflict with any previous line, as the student has proposed a new and distinct scenario for the city's design. []\n\nNote: The student's previous line (index 37) mentioned harnessing wind and solar power, but the current line focuses on tidal power, which is a different energy source."
+            ]
+        ],
+        "P2_index_consistency_score": 0.9631578947368421
     },
     {
         "task_name": "Education",
@@ -6749,7 +8678,126 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.5666666666666667
+        "P2_prompt_consistency_score": 0.5666666666666667,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no conflict between the current line and the conversation history, as the student is exploring a new hypothetical scenario that doesn't contradict their previous statements. \n\n[]"
+            ],
+            [
+                5,
+                "The line does not clearly conflict with any of the Student's previous statements as it presents a new hypothetical scenario that does not directly contradict any of their previous statements. \n\n[]"
+            ],
+            [
+                7,
+                "This line has no clear conflict with any previous lines spoken by the Student, as it presents a new hypothetical scenario for the construction of Machu Picchu, and does not contradict any of the Student's previous statements.\n\n[]"
+            ],
+            [
+                9,
+                "There is no clear conflict between the current line and any previous lines spoken by the Student, as they are exploring a new hypothetical scenario involving metalworking technology. []\n\nNote: The Student is not contradicting any of their previous statements, but rather exploring a new \"what if\" scenario that doesn't conflict with their earlier statements."
+            ],
+            [
+                11,
+                "This line does not have any clear conflicts with previous statements made by the Student, as the Student is exploring different hypothetical scenarios and their potential impact on the construction and design of Machu Picchu. [ ]"
+            ],
+            [
+                13,
+                "This line does not introduce any clear conflicts or inconsistencies with the Student's previous lines in the conversation history, as it presents a new hypothetical scenario to explore. []\n\nNote that while the student has discussed the importance of agriculture in the past (line 11), this line does not directly contradict any previous statements."
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the current line and any previous line spoken by the Student, as this scenario explores a new idea of modular units, whereas previous lines focused on different aspects such as construction techniques, terrain, technology, and priorities. \n\n[]"
+            ],
+            [
+                17,
+                "This line does not conflict with any previous lines spoken by the Student, as it presents a new hypothetical scenario that does not contradict any prior statements or assumptions. [ ]"
+            ],
+            [
+                19,
+                "This line does not contain any conflicts with previous lines spoken by the Student, as it presents a new hypothetical scenario for discussion. \n\n[]"
+            ],
+            [
+                21,
+                "The student's statement does not have a clear conflict with any previous lines, as it introduces a new idea about environmental sustainability, which has not been directly addressed before. []\n\nNote: Although some lines may mention the use of natural materials or the adaptation to the terrain, they do not explicitly discuss environmental sustainability, and the student's statement does not contradict any previous ideas."
+            ],
+            [
+                23,
+                "There is no clear conflict with any previous statement made by the Student, as this line is a new exploration of the city's design based on an emphasis on astronomy. \n\n[]"
+            ],
+            [
+                25,
+                "The student's line does not directly conflict with any previous lines, as it introduces a new hypothetical scenario regarding the emphasis on music and performance, and does not contradict any previously stated ideas or assumptions. \n\n[]"
+            ],
+            [
+                27,
+                "The line spoken by the Student does not present a clear conflict with any previous lines spoken by the Student, as it explores a new idea and does not contradict any of their previous statements.\n\n[]"
+            ],
+            [
+                29,
+                "This line does not have a clear conflict with any previous line spoken by the Student, as it is a new hypothetical scenario being explored. \n\n[]"
+            ],
+            [
+                31,
+                "The student's current line does not present a clear conflict or inconsistency with any of their previous lines, as they are exploring a new hypothetical scenario. []\n\nNote that there are no conflicting lines in the conversation history, as the student is consistently presenting \"what if\" scenarios that explore different aspects of Machu Picchu's construction and design."
+            ],
+            [
+                33,
+                "This line does not introduce any clear conflict or inconsistency with the Student's previous lines, as it is another hypothetical scenario that does not contradict any of their previous statements. []\n \n[]"
+            ],
+            [
+                35,
+                "The current line does not introduce a clear conflict with any previous lines spoken by the Student, as it builds upon the idea of incorporating astronomical observations into Machu Picchu's architecture, which is a recurring theme throughout the conversation. \n[23]"
+            ],
+            [
+                37,
+                "The student's statement does not clearly conflict with any previous statements they made, as they are exploring different aspects of Inca culture and architecture in each scenario. []\n\nNote that while the student's statements often build upon or reference previous ideas, there is no clear inconsistency or contradiction between their statements."
+            ],
+            [
+                39,
+                "There is no clear conflict or inconsistency between the Student's current line and their previous lines in the conversation history.\n\n[]"
+            ],
+            [
+                41,
+                "This line does not conflict with any previous statements made by the Student, as it presents a new idea for consideration and does not contradict any of their previous hypothetical scenarios. \n\n[]"
+            ],
+            [
+                43,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                45,
+                "This line has a clear conflict with the previous lines, as the Student is now suggesting that the Incas would have built Machu Picchu using natural stone and earth materials to blend in with the landscape, whereas earlier the Student had suggested the incorporation of various materials and features that might not blend in with the landscape. [41]"
+            ],
+            [
+                47,
+                "This line does not present a clear conflict or inconsistency with any previous lines spoken by the Student. \n\n[]"
+            ],
+            [
+                49,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student.\n\n[]"
+            ],
+            [
+                51,
+                "There is no conflict between the current line and any line in the conversation history spoken by Student, as the Student has not previously discussed the concept of music and sound healing in relation to Machu Picchu's architecture.\n\n[]"
+            ],
+            [
+                53,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                55,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student. \n\n[]"
+            ],
+            [
+                57,
+                "There is no clear conflict between this line and any line within the conversation history spoken by the Student.\n\n[]"
+            ],
+            [
+                59,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as the line presents a new hypothetical scenario that does not contradict any previous statements made by the Student. \n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9954022988505747
     },
     {
         "task_name": "Education",
@@ -6825,7 +8873,26 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 1.0
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                3,
+                "There is no conflict or inconsistency between the current line and any previous line spoken by the Student, as the Student is building upon their initial idea and exploring its creative possibilities.\n\n[]"
+            ],
+            [
+                5,
+                "This line does not introduce any clear conflicts with the Student's previous statements, as it continues to expand on the creative idea of Picasso being an alien and incorporating elements from his home planet into his art. \n\n[]"
+            ],
+            [
+                7,
+                "There is no conflict between the current line and any previous lines spoken by the Student, as they continue to build upon their initial idea of Picasso being an alien and introduce a new concept of time-traveling alien friends without contradicting any previous statements.\n\n[]"
+            ],
+            [
+                9,
+                "The student's new line does not directly conflict with any of their previous statements, but rather continues to expand on the creative idea of Picasso's alien friends influencing his art. []\n\n(Note: The student's statements are building upon each other, creating a narrative of Picasso's alien friends influencing his art, and there is no direct contradiction between the new statement and the previous ones.)"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -6961,6 +9028,45 @@
             ]
         ],
         "P1_prompt_consistency_score": 0,
-        "P2_prompt_consistency_score": 0.6
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                "The student's current line introduces a new idea about Cubism being inspired by a magical world, which is a distinct and separate concept from their previous idea that Picasso's paintings could represent musical compositions, indicating no clear conflict or inconsistency with their previous line. [ ]"
+            ],
+            [
+                5,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Student, as the Student is further developing and expanding their previous ideas about \"Machine Symphony\" and Pablo Picasso's machines. [ ]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the current line and any previous lines spoken by the Student, as the Student continues to build upon and expand their creative idea of \"Machine Symphony\" and its components. \n\n[]"
+            ],
+            [
+                9,
+                "The student's new idea is an extension of their previous ideas and does not present any clear conflict with their previous statements. []\n\nThis answer is based on the fact that the student is still exploring the fantastical world of \"Machine Symphony\" and its connection to the audience, which is in line with their previous ideas of machines transforming into instruments and influencing the music with imagination and emotions."
+            ],
+            [
+                11,
+                "There is no clear conflict or inconsistency between the current line and any previous lines spoken by the Student.\n\n[]"
+            ],
+            [
+                13,
+                "The line spoken by the Student does not conflict with any previous lines spoken by the Student in the conversation history, as it continues to build upon the imaginative ideas of the \"Dreamscapes Orchestra\" and the interactive elements within it. []\n\nThere are no conflicting lines, as the conversation has been a continuous flow of creative ideas and expansions upon the initial concepts of \"Machine Symphony\" and \"Dreamscapes Orchestra\"."
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Student, as this line continues to build upon and expand the ideas previously discussed. []\n\nThe line continues the imaginative exploration of \"Dreamscapes Orchestra\" and introduces a new concept, \"Aurora Bloom,\" that complements the existing ideas without contradicting any previous statements made by the Student."
+            ],
+            [
+                17,
+                "The Student's current line does not conflict with any previous lines in the conversation history, as the introduction of the \"Luminous Weaver\" as a dream guide is a new idea that builds upon previous concepts and does not contradict any established information. \n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Student, as the Student continues to build upon and expand the idea of the dynamic and immersive experience of \"Dreamscapes Orchestra\".\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0
     }
 ]

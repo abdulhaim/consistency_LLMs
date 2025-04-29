@@ -25,7 +25,7 @@ except ImportError:
 
 FLAGS = flags.FLAGS
 flags.DEFINE_string('openai_key', glob.glob(os.path.abspath('../*openai*'))[0], 'path to openai key')
-# flags.DEFINE_string('tmp_dir', glob.glob(os.path.abspath('../../*tmp*'))[0], 'path to tmp directory to download vLLM models')
+flags.DEFINE_string('tmp_dir', "/tmp/ray", 'path to tmp directory for ray to use')
 
 flags.DEFINE_string('agent1_model', 'gpt-4o-mini', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
 flags.DEFINE_string('agent2_model', 'gpt-4o-mini', 'gpt-3.5-turbo / default, gpt-4-turbo, gpt-4o, gpt-3.5-turbo-instruct, meta-llama/Llama-2-70b-hf')
@@ -110,7 +110,7 @@ llm = None
 # run 'ray start --head --num-gpus <NUM>' in bash first!
 def setup_vllm(model):
     if config['gpus'] > 1:
-        ray.init(ignore_reinit_error=True) 
+        ray.init(ignore_reinit_error=True, _temp_dir=config['tmp_dir']) 
 
     global llm
     global tokenizer

@@ -20,10 +20,12 @@ flags.DEFINE_string('task', 'Anthology', 'run metrics on a particular task, sear
 
 # (1) Takes in dialog, takes in base prompt, checks inconsistencies with base prompt for each line and output
 
-def eval_prompt_consistency(conv_dict, both_agents=False):
+def eval_prompt_consistency(conv_dict, agents=(1,)):
     conv_dict['eval_prompt_consistency'] = []
-    conv_dict['P1_prompt_consistency_score'] = 0
-    conv_dict['P2_prompt_consistency_score'] = 0
+    if 1 in agents:
+        conv_dict['P1_prompt_consistency_score'] = 0
+    if 2 in agents:
+        conv_dict['P2_prompt_consistency_score'] = 0
     p1_utterances = 0
     p2_utterances = 0
 
@@ -32,20 +34,21 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
         line_number = line[0]
         convo_line = line[1]
         if pturn == 1:
-            prompt = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
-                                                                .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
-                                                                .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
-                                                                .replace("%SPEAKER_LINE%", convo_line)
-            if config.get('verbose', False):
-                print(prompt)
-            output = completion_create(config['eval_model'], config, prompt)
-            conv_dict['eval_prompt_consistency'].append((line_number, output))
-            if "YES" not in output:  # no contradiction
-                conv_dict['P1_prompt_consistency_score'] += 1
-            p1_utterances += 1
+            if 1 in agents:
+                prompt = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                    .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
+                                                                    .replace("%SPEAKER_LINE%", convo_line)
+                if config.get('verbose', False):
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_prompt_consistency'].append((line_number, output))
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P1_prompt_consistency_score'] += 1
+                p1_utterances += 1
             pturn = 2
         elif pturn == 2:
-            if both_agents:
+            if 2 in agents:
                 prompt = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
                                                                     .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                                                     .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
@@ -68,11 +71,16 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
         print(conv_dict)
     return conv_dict
 
-# proxy for pairwise consistency, asks for indices of the previous lines that are inconsistent
-def eval_index_consistency(conv_dict, both_agents=False):
+
+def eval_index_consistency(conv_dict, agents=(1,)):
+    '''
+    proxy for pairwise consistency, asks for indices of the previous lines that are inconsistent
+    agents is a list of what agents to include in evals (e.g. both agents: [1,2], only agent 2: [2])
+    '''
     conv_dict['eval_index_consistency'] = []
-    conv_dict['P1_index_consistency_score'] = 0
-    if both_agents:
+    if 1 in agents:
+        conv_dict['P1_index_consistency_score'] = 0
+    if 2 in agents:
         conv_dict['P2_index_consistency_score'] = 0
     p1_utterances = 0
     p2_utterances = 0
@@ -81,22 +89,23 @@ def eval_index_consistency(conv_dict, both_agents=False):
         if i < 2: # skip first 2 lines of dialogue
             continue 
         if pturn == 1:
-            prompt = prompts["eval_prompts"]["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
-                                                                 .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
-                                                                 .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
-                                                                 .replace("%SPEAKER_LINE%", line)
-            if config['verbose']:
-                print(prompt)
-            output = completion_create(config['eval_model'], config, prompt)
-            index_list = extract_list(output)
-            conv_dict['eval_index_consistency'].append((i, output))
-            for j in index_list:
-                if j % 2 == 0: # filter out non-agent indices
-                    conv_dict['P1_index_consistency_score'] += 1
-            p1_utterances += i // 2
+            if 1 in agents:
+                prompt = prompts["eval_prompts"]["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                    .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
+                                                                    .replace("%SPEAKER_LINE%", line)
+                if config['verbose']:
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                index_list = extract_list(output)
+                conv_dict['eval_index_consistency'].append((i, output))
+                for j in index_list:
+                    if j != None and j % 2 == 0: # filter out non-agent indices
+                        conv_dict['P1_index_consistency_score'] += 1
+                p1_utterances += i // 2
             pturn = 2
         elif pturn == 2:
-            if both_agents:
+            if 2 in agents:
                 prompt = prompts["eval_prompts"]["index_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
                                                                      .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                                                      .replace("%CONVERSATION%", format_conversation(conv_dict["conversation"][:i])) \
@@ -107,15 +116,15 @@ def eval_index_consistency(conv_dict, both_agents=False):
                 index_list = extract_list(output)
                 conv_dict['eval_index_consistency'].append((i, output))
                 for j in index_list:
-                    if j % 2 == 1: # filter out non-agent indices
+                    if j != None and j % 2 == 1: # filter out non-agent indices
                         conv_dict['P2_index_consistency_score'] += 1
-                p2_utterances += i // 2
+                p2_utterances += (i-1) // 2
             pturn = 1
 
-    if p1_utterances > 0:
+    if p1_utterances > 0 and 1 in agents:
         conv_dict['P1_index_consistency_score'] /= p1_utterances
         conv_dict['P1_index_consistency_score'] = 1 - conv_dict['P1_index_consistency_score']
-    if p2_utterances > 0 and both_agents:
+    if p2_utterances > 0 and 2 in agents:
         conv_dict['P2_index_consistency_score'] /= p2_utterances
         conv_dict['P2_index_consistency_score'] = 1 - conv_dict['P2_index_consistency_score']
 
@@ -274,7 +283,7 @@ def eval_survey_consistency(conv_dict):
         conv_dict['P2_survey_consistency_score'] /= p2_utterances
     
 
-def run_metrics(filename, both_agents=False):
+def run_metrics(filename, agents=(1,)):
     print(f"Begin metrics: {filename}\n\n")
 
     with open(filename, 'r') as f:
@@ -286,7 +295,7 @@ def run_metrics(filename, both_agents=False):
             if "eval_prompt_consistency" not in conversation:
                 if config['verbose']:
                     print("BEGIN PROMPT CONSISTENCY")
-                eval_prompt_consistency(conversation, both_agents)
+                eval_prompt_consistency(conversation, agents)
             # if config['verbose']:
             #     print("BEGIN SURVEY CONSISTENCY")
             # eval_survey_consistency(conversation)
@@ -296,7 +305,7 @@ def run_metrics(filename, both_agents=False):
             if "eval_index_consistency" not in conversation:
                 if config['verbose']:
                     print("BEGIN INDEX CONSISTENCY")
-                eval_index_consistency(conversation, both_agents)
+                eval_index_consistency(conversation, agents)
         # conversation['conversation_only'] = False
             with open(filename, 'w') as f:
                 json.dump(conversations, f, indent=4)
@@ -311,7 +320,7 @@ def main(argv):
     init()
     config['eval_model'] = 'Llama-3.1-70B-Instruct' # we now use Llama for evals 
     
-    both_agents = False
+    agents = (1,)
     if config['task'] == 'Anthology':
         print("Using Anthology prompts")
         with open('config/persona_chat/prompts.json', 'r') as f:
@@ -319,12 +328,13 @@ def main(argv):
         exp_folder = './data/anthology/exp'
     elif config['task'] == 'Education':
         print("Using Education prompts")
-        with open('config/education/prompts.json', 'r') as f:
+        with open('config/education/config_education.json', 'r') as f:
             prompts = json.load(f)
-        exp_folder = './data/education/exp'
+        exp_folder = './data/education/exp/04.28.25'
+        agents = (2,)
     elif config['task'] == 'Chatting':
         print("Using Chatting prompts")
-        both_agents = True
+        agents = (1,2)
         with open('./chatting/config_chatting.json', 'r') as f:
             prompts = json.load(f)
         exp_folder = './chatting/exp/04.26.25'
@@ -333,10 +343,10 @@ def main(argv):
         prompts['eval_prompts'] = json.load(f)
 
     if config['filename']:
-        run_metrics(config['filename'], both_agents)
+        run_metrics(config['filename'], agents)
     else:
         for filename in glob.glob(f'{exp_folder}/*.json'):
-            run_metrics(filename, both_agents)
+            run_metrics(filename, agents)
 
 if __name__ == '__main__':
     app.run(main)
