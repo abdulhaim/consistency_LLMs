@@ -309,7 +309,7 @@ def run_metrics(filename, both_agents=False):
 def main(argv):
     global prompts
     init()
-    config['eval_model'] = 'gpt-4o-mini' # we now use Llama for evals 
+    config['eval_model'] = 'Llama-3.1-70B-Instruct' # we now use Llama for evals 
     
     both_agents = False
     if config['task'] == 'Anthology':
