@@ -6,82 +6,200 @@ import random
 from absl import app, flags
 import re
 
+def extract_list(text):
+    pattern = r'\[.*?\]'
+    match = re.search(pattern, text)
+    if match:
+        try:
+            return eval(match.group())
+        except (SyntaxError, NameError):
+            return []
+    return[]
+
+prompts = {}
 
 flags.DEFINE_string('folder', './training_data', 'folder of jsons to conglomerate into RL training data, expects a folder called "in" and "out" within that (./training_data default)')
+flags.DEFINE_string('task', 'Chatting', 'prompts to use for a particular task (Chatting/default)')
 
-def phrase(b: bool):
-    return " " if b else " not "
-
-def format_conversation(convo):
+def format_conversation_jsonl(convo, prompts):
     '''
     Formats the conversation as a list of dictionaries with "in_text" and "out_text" corresponding to the input prompt and desired output of the LLM
     "score" is used for offline RL/KTO rewards (binary 0 or 1)
     additional fields are added to the dictionary as necessary for online RL, which loads particular model data from metadata_dict
     '''
     conversation = convo['conversation']
-
-    statements = re.split(r'(Buyer:|Seller:)', conversation)
-    
-    # Combine the speaker tag with the following statement
-    paired_statements = [statements[i] + statements[i+1] for i in range(1, len(statements) - 1, 2)]
-    utterances = [statement.strip() for statement in paired_statements]
-
     ret = []
-    prompt_desc = "A seller is trying to convince a buyer to come to a house showing. "
-    prompt_desc += "In this situation, there are five features: whether the house is big, whether the house has a garage, whether the neighborhood is quiet, whether the house has a basement, and whether the house has a backyard. The buyer has their own preferences about whether they want each of these features to be true or false, but they do not know about the reality of any of these features. Only the seller knows about the reality of each of these features, but they do not initially know about the buyer's preferences. If the buyer believes enough of the features match their preferences, they will decide to come to the house showing. Otherwise, they will not come to the showing. There are up to 10 turns (consisting of the buyer followed by the seller) to have a conversation, after which it automatically ends, defaulting to the buyer not coming to the house showing. As soon as the buyer has made their decision and would like to end the conversation, the buyer can state either '<YES>' denoting that they will come to the house showing or '<NO>' denoting that they will not come to the house showing, along with the reasoning for their decision.\n\n BE SHORT AND CONCISE IN YOUR DISCUSSION, LIMIT YOUR RESPONSE TO A MAXIMUM OF 2 SENTENCES. \n\n"
-    for i in range(len(utterances)-1): 
-        if utterances[i] != 'Buyer:' and utterances[i] != 'Seller:' and utterances[i+1] != 'Buyer:' and utterances[i+1] != 'Seller:':
-            # TASK REWARD - BELIEF MISALIGNMENT
-            if int(convo['agree'])/2 - convo['belief_misalignment'] > 0.5:
-                score = 1
-            else:
-                score = 0
-            # TASK REWARD BINARY
-            if convo['agree']:
-                score = 1
-            else:
-                score = 0
 
-            if 'Buyer:' in utterances[i] and "Seller:" in utterances[i+1]:
-                seller_desc = f"\nYou are the seller. Here are the true features of the house: the house is{phrase(convo['big_truth'])}big, the house does{phrase(convo['garage_truth'])}have a garage, the neighborhood is{phrase(convo['quiet_truth'])}quiet, the house does{phrase(convo['basement_truth'])}have a basement, and the house does{phrase(convo['backyard_truth'])}have a backyard. Remember that all the information you have on the buyer's preferences is what they tell you and your only goal is to convince the buyer to come to the house showing."
+    pturn = convo['pturn']
+
+    p1 = convo["P1"]
+    p2 = convo["P2"]
+    if convo["task_name"] == "Chatting":
+        # grab the first names of both agents from the text before the ":"
+        # NOTE: assumes agent1 is first and agent2 is second
+        prompts["agent1_role"] = convo["conversation"][0][1].split(":")[0]
+        prompts["agent2_role"] = convo["conversation"][1][1].split(":")[0]
+
+    for i, line in enumerate(conversation):
+        # speaker appended to the end of in_text if needed, utterance is out_text
+        utterance = line[1].split(":")[-1]
+        conversation_history = "".join([turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]])
+
+        consistency_score = 0
+        if convo["task_name"] == "Chatting":
+            prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i][1].upper() else 0)
+            if i > 1:
+                indices = extract_list(convo['eval_index_consistency'][i-2][1])
+            else:
+                indices = []
+        elif convo["task_name"] == "Education" and pturn == 2:
+            prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i//2][1].upper() else 0)
+            indices = extract_list(convo['eval_index_consistency'][i // 2][1])
+        else:
+            # TODO: Therapy
+            pass
+
+        if pturn == 1:
+            if convo["task_name"] != "Education": # education only has P2
+                for j in indices:
+                    if j != None and j % 2 == 1: # filter out non-agent indices
+                    #NOTE: assumption is that P1 is first and P2 is second
+                        consistency_score += 1
+                
+                # generate prompt for each scenario, prefaces the line
+                if convo["task_name"] == "Chatting":
+                    prompt = prompts["agent1_prompt"]
+                    if i!=0: 
+                        prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+                    
+                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+                    if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
+                        prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
+                    elif i>len(conversation)*2-1:
+                        prompt+= "This is your concluding line in the conversation."
+
+                    if i!=0: 
+                        prompt+= "Continue the conversation with " + prompts["agent2_role"] +  ". Remember you are " +  prompts["agent1_role"] + "."
+                        
+                    prompt += prompts["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
+                    prompt+="%SPEAKER_ROLE%:"
+                    prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                .replace("%SPEAKER_BACKSTORY%", p1) \
+                                .replace("%CONVERSATION%", conversation_history)
+                else:
+                    # TODO: set up therapy prompt
+                    pass
+
+                score = prompt_consistency
                 try:
                     ret.append({
-                        "in_text": prompt_desc + seller_desc + "\nThis is the conversation so far, and you will speak next:\n\n" + ''.join(utterances[:i+1]), 
-                        "out_text": utterances[i+1], 
-                        'score':score,
-                        'preference_distribution': [convo['big_pref'], convo['garage_pref'], convo['quiet_pref'], convo['basement_pref'], convo['backyard_pref']],
-                        'beliefs': convo['belief_bool'][i//2],
-                        'listener_alignment': convo['listener_alignment']
-                    })
-                except:
-                    print(i//2)
-                    print(len(convo['belief_bool']))
-                    print(len(utterances))
-                    raise Exception("")
-    return ret
+                        # train and test data entries
+                        "in_text": prompt,
+                        "out_text": utterance,
+                        'score': score,
 
+                        # metadata dict entries
+                        "scenario": prompts["scenario"],
+                        "agent_role": prompts["agent1_role"],
+                        'task_name': convo["task_name"],
+                        "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
+                        'P': p1,
+                    })
+                except Exception as e:
+                    print(f"Error processing turn {i}: {e}")
+                    raise e
+            pturn = 2
+        elif pturn == 2:
+            if convo["task_name"] != "Therapy": # therapy only has P1
+                for j in indices:
+                    if j != None and j % 2 == 1: # filter out non-agent indices
+                    #NOTE: assumption is that P1 is first and P2 is second
+                        consistency_score += 1
+
+                if convo["task_name"] == "Chatting":
+                    prompt = prompts["agent2_prompt"]
+                    if i!=0: 
+                        prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+                    
+                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+                    if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
+                        prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
+                    elif i>len(conversation)*2-1:
+                        prompt+= "This is your concluding line in the conversation."
+
+                    if i!=0: 
+                        prompt+= "Continue the conversation with " + prompts["agent1_role"] +  ". Remember you are " +  prompts["agent2_role"] + "."
+                        
+                    prompt += prompts["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
+                    prompt+="%SPEAKER_ROLE%:"
+                    prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                .replace("%SPEAKER_BACKSTORY%", p2) \
+                                .replace("%CONVERSATION%", conversation_history)
+                else:
+                    # TODO: set up education prompt
+                    pass
+                
+                score = prompt_consistency
+                try:
+                    ret.append({
+                        # train and test data entries
+                        "in_text": prompt,
+                        "out_text": utterance,
+                        'score': score,
+
+                        # metadata dict entries
+                        "scenario": prompts["scenario"],
+                        "agent_role": prompts["agent2_role"],
+                        'task_name': convo["task_name"],
+                        "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
+                        'P': p2
+                    })
+                except Exception as e:
+                    print(f"Error processing turn {i}: {e}")
+                    raise e
+                
+            pturn = 1
+
+            
+    return ret
 def main(argv):
     random.seed(0)
     jsonl_total = []
-
     metadata_dict = {}
+    prompts = {}
+    if flags.FLAGS['task'].value == 'Chatting':
+        with open('./chatting/config_chatting.json', 'r') as f:
+            prompts = json.load(f)
+    elif flags.FLAGS['task'].value == 'Anthology':
+        with open('config/persona_chat/prompts.json', 'r') as f:
+            prompts = json.load(f)
+    elif flags.FLAGS['task'].value == 'Education':
+        with open('config/education/config_education.json', 'r') as f:
+            prompts = json.load(f)
 
-    for filename in tqdm(glob.glob(flags.FLAGS['folder'] + '/in/*.json')): # ./training_data/in/*.json
+    for filename in tqdm(glob.glob(flags.FLAGS['folder'].value + '/in/*.json')): # ./training_data/in/*.json
+        print("begin file", filename)
         with open(filename, 'r') as f:
             convos = json.load(f)
-        for convo in convos:
-            lines = format_conversation(convo)
+        for convo in tqdm(convos):
+            lines = format_conversation_jsonl(convo, prompts)
             for line in lines:
-                metadata_dict[line['in_text']] = [ # metrics to save within the metadata
-                    line['preference_distribution'],
-                    line['beliefs'],
-                    line['listener_alignment']
-                ]
-                del line['preference_distribution']
-                del line['beliefs']
-                del line['listener_alignment']
+                metadata_dict[line['in_text']] = { # info to save for online RL training
+                    "scenario": line['scenario'],
+                    "agent_role": line['agent_role'],
+                    "task_name": line['task_name'],
+                    "conversation_history": line['conversation_history'],
+                    "P": line['P'] # background for agent
+                }                
+                del line["scenario"]
+                del line["agent_role"]
+                del line["task_name"]
+                del line["conversation_history"]
+                del line["P"]
             jsonl_total += lines
-
+        print("end file", filename)
     random.shuffle(jsonl_total)
 
     train_len = int(0.8 * len(jsonl_total))
@@ -89,16 +207,16 @@ def main(argv):
     eval_data = jsonl_total[train_len:]
 
     # Save to JSONL
-    with open(flags.FLAGS['folder'] + '/out/train.jsonl', 'w') as f:
+    with open(flags.FLAGS['folder'].value + '/out/train.jsonl', 'w') as f:
         for item in train_data:
             f.write(json.dumps(item) + '\n')
 
-    with open(flags.FLAGS['folder'] + '/out/test.jsonl', 'w') as f:
+    with open(flags.FLAGS['folder'].value + '/out/test.jsonl', 'w') as f:
         for item in eval_data:
             f.write(json.dumps(item) + '\n')
 
     # Save metadata dictionary
-    with open(flags.FLAGS['folder'] + '/out/metadata.json', 'w') as f:
+    with open(flags.FLAGS['folder'].value + '/out/metadata.json', 'w') as f:
         json.dump(metadata_dict, f, indent=4)
 
 

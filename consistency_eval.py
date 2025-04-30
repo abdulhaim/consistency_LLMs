@@ -100,7 +100,8 @@ def eval_index_consistency(conv_dict, agents=(1,)):
                 index_list = extract_list(output)
                 conv_dict['eval_index_consistency'].append((i, output))
                 for j in index_list:
-                    if j != None and j % 2 == 0: # filter out non-agent indices
+                    if j != None and j % 2 == 0: # filter out non-agent indices, 
+                    # NOTE: assumption is that P1 is first and P2 is second
                         conv_dict['P1_index_consistency_score'] += 1
                 p1_utterances += i // 2
             pturn = 2
@@ -117,6 +118,7 @@ def eval_index_consistency(conv_dict, agents=(1,)):
                 conv_dict['eval_index_consistency'].append((i, output))
                 for j in index_list:
                     if j != None and j % 2 == 1: # filter out non-agent indices
+                    # NOTE: assumption is that P1 is first and P2 is second
                         conv_dict['P2_index_consistency_score'] += 1
                 p2_utterances += (i-1) // 2
             pturn = 1
