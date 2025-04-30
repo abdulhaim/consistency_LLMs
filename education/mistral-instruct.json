@@ -1,0 +1,14 @@
+{
+    "agent1_model": "mistral-instruct",
+    "agent2_model": "mistral-instruct",
+    "eval_model": "Llama-3.1-70B-Instruct",
+    "iterations": 10,
+    "verbose": false,
+    "write": true,
+    "convo_length_limit": 10,
+    "max_tokens": 256,
+    "gpus": 1,
+    "seed": 0,
+    "task_name": "Education",
+    "model_dir": "/home/marwa/models/"
+}
