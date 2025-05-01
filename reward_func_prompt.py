@@ -5,14 +5,14 @@ import json
 import ray
 
 metric_model = 'meta-llama/Meta-Llama-3.1-70B-Instruct'
-metadata_path = './training_data/out/metadata.json' # path to metadata json for evals to use
+metadata_path = '/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out/metadata.json' # path to metadata json for evals to use
 port = "8001" # port number vLLM is hosted on
-eval_prompt_path = "./config/eval_prompts.json"
+eval_prompt_path = "/nfs/kun2/users/ryan_cheng/consistency_LLMs/config/eval_prompts.json"
 with open(metadata_path, 'r') as f:
     metadata_dict_ref = ray.put(json.load(f))
 
 with open(eval_prompt_path, 'r') as f:
-    eval_prompts = json.load(f)
+    eval_prompts_ref = ray.put(json.load(f))
 
 def completion_create(prompt, model):
     # print('Prompt:', prompt)
@@ -32,9 +32,8 @@ def completion_create(prompt, model):
 
 def eval_prompt_consistency(metadata, line):
     prompt_consistency_score = 0
-
+    eval_prompts = ray.get(eval_prompts_ref)
     pturn = conv_dict["pturn"]
-            if 1 in agents:
     prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
                                                         .replace("%SPEAKER_ROLE%", prompts["agent_role"]) \
                                                         .replace("%SPEAKER_BACKSTORY%", conv_dict["P"]) \
@@ -55,6 +54,6 @@ def reward_func(queries, prompts, labels):
     for i, query in enumerate(queries):
         metadata = ray.get(metadata_dict_ref)[prompts[i]] # 0: preference_distribution, 1: beliefs, 2: listener_alignment
         print(labels[i]) # remove when done debugging
-        scores.append(eval_prompt_consistency(metadata, labels[i])
+        scores.append(eval_prompt_consistency(metadata, labels[i]))
 
     return torch.tensor(scores)
