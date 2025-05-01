@@ -33,10 +33,9 @@ def completion_create(prompt, model):
 def eval_prompt_consistency(metadata, line):
     prompt_consistency_score = 0
     eval_prompts = ray.get(eval_prompts_ref)
-    pturn = conv_dict["pturn"]
-    prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
-                                                        .replace("%SPEAKER_ROLE%", prompts["agent_role"]) \
-                                                        .replace("%SPEAKER_BACKSTORY%", conv_dict["P"]) \
+    prompt = eval_prompts["combined_prompt_consistency"].replace("%SCENARIO_DESC%", metadata["scenario"]) \
+                                                        .replace("%SPEAKER_ROLE%", metadata["agent_role"]) \
+                                                        .replace("%SPEAKER_BACKSTORY%", metadata["P"]) \
                                                         .replace("%SPEAKER_LINE%", line)
     output = completion_create(prompt, metric_model)
     if "YES" not in output:  # no contradiction
@@ -53,7 +52,9 @@ def reward_func(queries, prompts, labels):
     scores = []
     for i, query in enumerate(queries):
         metadata = ray.get(metadata_dict_ref)[prompts[i]] # 0: preference_distribution, 1: beliefs, 2: listener_alignment
-        print(labels[i]) # remove when done debugging
-        scores.append(eval_prompt_consistency(metadata, labels[i]))
+        print(prompts[i])
+        print(query)
+        # print(labels[i]) # remove when done debugging
+        scores.append(float(eval_prompt_consistency(metadata, query[len(prompts[i]):])))
 
     return torch.tensor(scores)

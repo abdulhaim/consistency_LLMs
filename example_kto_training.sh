@@ -11,8 +11,8 @@ conda activate openrlhf
 python jsonl_gen.py --task=Chatting
 
 # specify gpu numbers to host on after localhost:
-nohup deepspeed --include localhost:0,1 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-49k-prompt \  # around 15 gb
+nohup deepspeed --include localhost:5,7 --master_port 61000 --module openrlhf.cli.train_kto \
+   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-prompt \  # around 15 gb
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
@@ -24,7 +24,7 @@ nohup deepspeed --include localhost:0,1 --master_port 61000 --module openrlhf.cl
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@./training_data/out \  # directory with train.jsonl and test.jsonl
+   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \  # directory with train.jsonl and test.jsonl
    --input_key in_text \
    --output_key out_text \
    --label_key score \
