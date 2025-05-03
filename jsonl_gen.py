@@ -11,7 +11,13 @@ def extract_list(text):
     match = re.search(pattern, text)
     if match:
         try:
-            return eval(match.group())
+            ret = eval(match.group())
+            if ret and isinstance(ret[0], str):
+                try:
+                    ret = [int(line) for line in ret]
+                except (SyntaxError, NameError):
+                    pass
+            return ret
         except (SyntaxError, NameError):
             return []
     return[]
@@ -46,15 +52,15 @@ def format_conversation_jsonl(convo, prompts):
         conversation_history = "".join([turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]])
 
         consistency_score = 0
+        indices = []
         if convo["task_name"] == "Chatting":
             prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i][1].upper() else 0)
             if i > 1:
                 indices = extract_list(convo['eval_index_consistency'][i-2][1])
-            else:
-                indices = []
         elif convo["task_name"] == "Education" and pturn == 2:
             prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i//2][1].upper() else 0)
-            indices = extract_list(convo['eval_index_consistency'][i // 2][1])
+            if i > 2:
+                indices = extract_list(convo['eval_index_consistency'][i // 2 - 1][1])
         else:
             # TODO: Therapy
             pass
@@ -139,8 +145,27 @@ def format_conversation_jsonl(convo, prompts):
                                 .replace("%CONVERSATION%", conversation_history)
                 else:
                     # TODO: set up education prompt
-                    pass
-                
+                    prompt = prompts["agent2_prompt"]
+                    if i!=0: 
+                        prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+                    
+                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+                    if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
+                        prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
+                    elif i>len(conversation)*2-1:
+                        prompt+= "This is your concluding line in the conversation."
+
+                    if i!=0: 
+                        prompt+= "Continue the conversation with the teacher. Remember you are the student. "
+
+                    prompt += prompts["reminder_prompt"]
+                    prompt+="%SPEAKER_ROLE%:"
+                    prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                .replace("%SPEAKER_BACKSTORY%", p2) \
+                                .replace("%ROLE%", convo["grade"]) \
+                                .replace("%SUBJECT%", convo["topic"]) \
+                                .replace("%CONVERSATION%", conversation_history)
                 score = prompt_consistency
                 try:
                     ret.append({
@@ -153,6 +178,8 @@ def format_conversation_jsonl(convo, prompts):
                         "scenario": prompts["scenario"],
                         "agent_role": prompts["agent2_role"],
                         'task_name': convo["task_name"],
+                        "grade": (convo["grade"] if "grade" in convo else None),
+                        "topic": (convo["topic"] if "topic" in convo else None),
                         "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
                         'P': p2
                     })
@@ -184,6 +211,8 @@ def main(argv):
         with open(filename, 'r') as f:
             convos = json.load(f)
         for convo in tqdm(convos):
+            if convo["topic"] == "The Eiffel TowerConfucius":
+                continue
             lines = format_conversation_jsonl(convo, prompts)
             for line in lines:
                 metadata_dict[line['in_text']] = { # info to save for online RL training
@@ -191,12 +220,16 @@ def main(argv):
                     "agent_role": line['agent_role'],
                     "task_name": line['task_name'],
                     "conversation_history": line['conversation_history'],
+                    "grade": line['grade'],
+                    "topic": line['topic'],
                     "P": line['P'] # background for agent
                 }                
                 del line["scenario"]
                 del line["agent_role"]
                 del line["task_name"]
                 del line["conversation_history"]
+                del line["grade"]
+                del line["topic"]
                 del line["P"]
             jsonl_total += lines
         print("end file", filename)

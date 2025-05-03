@@ -14,8 +14,8 @@ python jsonl_gen.py --task=Chatting
   # around 15 gb
     # directory with train.jsonl and test.jsonl
     # wandb key to monitor run stats
-nohup deepspeed --include localhost:2,3 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-prompt \
+nohup deepspeed --include localhost:1,2 --master_port 61000 --module openrlhf.cli.train_kto \
+   --save_path /raid/users/ryan_cheng/checkpoints/education/llama3-8b-kto-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
@@ -34,4 +34,4 @@ nohup deepspeed --include localhost:2,3 --master_port 61000 --module openrlhf.cl
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto.out & 
+   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto_education.out & 
