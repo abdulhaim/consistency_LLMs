@@ -105,14 +105,15 @@ vllm_alias = {
     'phi-3.5-mini-instruct': 'microsoft/phi-3.5-mini-instruct'
 }
 
-llm = None
+llms = {}
 
 # run 'ray start --head --num-gpus <NUM>' in bash first!
 def setup_vllm(model):
     if config['gpus'] > 1:
         ray.init(ignore_reinit_error=True, _temp_dir=config['tmp_dir']) 
 
-    global llm
+    print("using model ", model)
+    global llms
     global tokenizer
 
     if model in vllm_alias:
@@ -126,25 +127,25 @@ def setup_vllm(model):
 
     if model in vllm_alias:
         if "fp8" in config.keys() and config['fp8']:
-            llm = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.75)
-        if vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B' or vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B-Instruct':
-            llm = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.9, max_model_len=12880)
+            llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.5)
+            print("Using fp8")
+        elif vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B' or vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B-Instruct':
+            llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.9, max_model_len=12880)
         else:
-            llm = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'])
+            llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'])
+    elif model[0] == '/':
+        print("Info: using finetuned model setup")
+        llms[model] = AutoModelForCausalLM.from_pretrained(
+            model,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            device_map="auto"
+        )
     else:
         try:
-            llm = LLM(model=model, tensor_parallel_size=config['gpus'], download_dir=config['model_dir'])
+            llms[model] = LLM(model=model, tensor_parallel_size=config['gpus'], download_dir=config['model_dir'])
         except:
             print('Info: Passing vllm setup')
-            try:
-                llm = AutoModelForCausalLM.from_pretrained(
-                    model,
-                    torch_dtype=torch.bfloat16,
-                    low_cpu_mem_usage=True,
-                    device_map="auto"
-                )
-            except:
-                print("Info: passing finetuned model setup")
         
 
 def completion_create_helper(model_name, config, prompt):
@@ -153,7 +154,7 @@ def completion_create_helper(model_name, config, prompt):
     #     # for some reason vLLM models simply repeat this last statement if present
     #     prompt += " Limit your answer to three sentences or less!"
 
-    if model_name in vllm_alias and not llm:
+    if (model_name in vllm_alias and model_name not in llms) or (model_name[0] == '/' and model_name not in llms):
         # set up vllm if not already set up
         setup_vllm(model_name)
         
@@ -181,7 +182,7 @@ def completion_create_helper(model_name, config, prompt):
         )
         ret = ret.choices[-1].message.content
 
-    elif model_name in vllm_alias and llm:
+    elif model_name in vllm_alias and model_name in llms:
         global tokenizer
         sampling_params = SamplingParams(temperature=0.8, top_p=0.95, max_tokens=config['max_tokens'])
         messages = [
@@ -189,7 +190,7 @@ def completion_create_helper(model_name, config, prompt):
         ]
         if tokenizer.chat_template:
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        output = llm.generate([prompt], sampling_params)
+        output = llms[model_name].generate([prompt], sampling_params)
         ret = output[0].outputs[0].text
 
     elif model_name == "phi-3.5-mini-instruct":
@@ -202,13 +203,13 @@ def completion_create_helper(model_name, config, prompt):
         ret = tokenizer.decode(output[0], skip_special_tokens=True)
 
     else: # specify model path of finetuned model in model directory
-        from transformers import PreTrainedModel
-        if isinstance(llm, PreTrainedModel):
-            inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
-            with torch.no_grad():
-                output_ids = llm.generate(**inputs, max_length=8192)
-            output_ids = output_ids[:, inputs.input_ids.shape[1]:]
-            ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        # from transformers import PreTrainedModel
+        # if isinstance(llm, PreTrainedModel):
+        inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
+        with torch.no_grad():
+            output_ids = llms[model_name].generate(**inputs, max_new_tokens=256)
+        output_ids = output_ids[:, inputs.input_ids.shape[1]:]
+        ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
     # if config['model'] not in vllm_alias:
     #     running_cost_for_iteration += api_cost(prompt=prompt, answer=ret, model=config['model'])

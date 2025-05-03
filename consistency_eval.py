@@ -339,7 +339,7 @@ def main(argv):
         agents = (1,2)
         with open('./chatting/config_chatting.json', 'r') as f:
             prompts = json.load(f)
-        exp_folder = './chatting/exp/04.26.25'
+        exp_folder = './chatting/ppo'
     # load general eval prompts
     with open('config/eval_prompts.json', 'r') as f:
         prompts['eval_prompts'] = json.load(f)

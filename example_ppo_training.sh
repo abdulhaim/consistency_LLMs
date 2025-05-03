@@ -94,7 +94,7 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --ref_reward_offload \
     --pretrain meta-llama/Meta-Llama-3.1-8B-Instruct \
     --remote_rm_url /nfs/kun2/users/ryan_cheng/consistency_LLMs/reward_func_prompt.py \
-    --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama-8b-ppo-prompt \
+    --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama-8b-ppo-prompt2 \
     --micro_train_batch_size 8 \
     --train_batch_size 128 \
     --micro_rollout_batch_size 16 \
@@ -117,6 +117,6 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --gradient_checkpointing \
     --save_steps 10 \
     --max_ckpt_num 3 \
-    --ckpt_path /raid/users/ryan_cheng/checkpoints/Chatting/checkpoints/llama-8b-ppo-prompt \
+    --ckpt_path /raid/users/ryan_cheng/checkpoints/Chatting/checkpoints/llama-8b-ppo-prompt2 \
     --save_hf_ckpt \
     --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > ppo.out &

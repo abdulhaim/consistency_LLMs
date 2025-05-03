@@ -11,8 +11,11 @@ conda activate openrlhf
 python jsonl_gen.py --task=Chatting
 
 # specify gpu numbers to host on after localhost:
-nohup deepspeed --include localhost:5,7 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-prompt \  # around 15 gb
+  # around 15 gb
+    # directory with train.jsonl and test.jsonl
+    # wandb key to monitor run stats
+nohup deepspeed --include localhost:2,3 --master_port 61000 --module openrlhf.cli.train_kto \
+   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
@@ -24,11 +27,11 @@ nohup deepspeed --include localhost:5,7 --master_port 61000 --module openrlhf.cl
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \  # directory with train.jsonl and test.jsonl
+   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
    --input_key in_text \
    --output_key out_text \
    --label_key score \
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto.out & # wandb key to monitor run stats
+   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto.out & 

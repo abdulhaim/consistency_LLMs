@@ -52,9 +52,11 @@ def reward_func(queries, prompts, labels):
     scores = []
     for i, query in enumerate(queries):
         metadata = ray.get(metadata_dict_ref)[prompts[i]] # 0: preference_distribution, 1: beliefs, 2: listener_alignment
-        print(prompts[i])
-        print(query)
+        # print("prompt:", prompts[i])
+        # print("query:", query)
+        cut_query = str(query.replace("<|eot_id|>", "")[len(prompts[i]):])
+        # print("cut query:", cut_query)
         # print(labels[i]) # remove when done debugging
-        scores.append(float(eval_prompt_consistency(metadata, query[len(prompts[i]):])))
+        scores.append(float(eval_prompt_consistency(metadata, cut_query)))
 
     return torch.tensor(scores)
