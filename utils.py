@@ -1,6 +1,7 @@
 import os
 import glob
 import re
+import ast
 import json
 import random
 import time
@@ -250,17 +251,17 @@ def load_stats_file(write_file):
     return index_offset
 
 
-def write_stats(write_file):    
-    '''
-    Appends stats to end of write file
-    '''
+def write_stats(write_file, new_entry):
+    """
+    Appends new_entry to the JSON array in write_file.
+    """
     if config['verbose']:
         print("Writing to file!")
     with open(write_file, "r") as f:
-        conversations = json.load(f)
-    conversations.append(stats)
+        data = json.load(f)
+    data.append(new_entry)
     with open(write_file, "w") as f:
-        json.dump(conversations, f, indent=4)
+        json.dump(data, f, indent=4)
 
 def split_conversation(conversation, speaker1, speaker2):
     '''
@@ -284,13 +285,23 @@ def split_conversation(conversation, speaker1, speaker2):
 def format_conversation(conversation):
     return "".join([str(i) + ": " + line for i, line in conversation])
 
-# extracts a python formatted list from a string, returning an empty list in case of parsing errors
+
 def extract_list(text):
     pattern = r'\[.*?\]'
     match = re.search(pattern, text)
-    if match:
-        try:
-            return eval(match.group())
-        except (SyntaxError, NameError):
-            return []
-    return[]
+    if not match:
+        return []
+    try:
+        result = ast.literal_eval(match.group())
+    except (ValueError, SyntaxError):
+        return []
+    if result == [None]:
+        return []
+    # Optionally: coerce any numeric-strings into actual ints
+    output = []
+    for item in result:
+        if isinstance(item, str) and item.isdigit():
+            output.append(int(item))
+        else:
+            output.append(item)
+    return output
