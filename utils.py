@@ -291,6 +291,12 @@ def extract_list(text):
     match = re.search(pattern, text)
     if match:
         try:
+            ret = eval(match.group())
+            if ret and isinstance(ret[0], str):
+                try:
+                    ret = [eval(line) for line in ret]
+                except (SyntaxError, NameError):
+                    pass
             return eval(match.group())
         except (SyntaxError, NameError):
             return []

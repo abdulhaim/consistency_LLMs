@@ -109,6 +109,8 @@ def format_conversation_jsonl(convo, prompts):
                         "scenario": prompts["scenario"],
                         "agent_role": prompts["agent1_role"],
                         'task_name': convo["task_name"],
+                        "grade": (convo["grade"] if "grade" in convo else None),
+                        "topic": (convo["topic"] if "topic" in convo else None),
                         "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
                         'P': p1,
                     })
@@ -211,7 +213,7 @@ def main(argv):
         with open(filename, 'r') as f:
             convos = json.load(f)
         for convo in tqdm(convos):
-            if convo["topic"] == "The Eiffel TowerConfucius":
+            if "topic" in convo and convo["topic"] == "The Eiffel TowerConfucius":
                 continue
             lines = format_conversation_jsonl(convo, prompts)
             for line in lines:
