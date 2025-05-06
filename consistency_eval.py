@@ -42,7 +42,7 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
                     print(prompt)
                 output = completion_create(config['eval_model'], config, prompt)
                 conv_dict['eval_prompt_consistency'].append((line_number, output))
-                if "YES" not in output:  # no contradiction
+                if "NO" not in output:  # no contradiction
                     conv_dict['P1_prompt_consistency_score'] += 1
                 p1_utterances += 1
             pturn = 2
@@ -55,7 +55,7 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
                 print(prompt)
             output = completion_create(config['eval_model'], config, prompt)
             conv_dict['eval_prompt_consistency'].append((line_number, output))
-            if "YES" not in output:  # no contradiction
+            if "NO" not in output:  # no contradiction
                 conv_dict['P2_prompt_consistency_score']+= 1
             p2_utterances += 1
             pturn = 1
@@ -69,6 +69,55 @@ def eval_prompt_consistency(conv_dict, both_agents=False):
         print(conv_dict)
     return conv_dict
 
+def eval_prompt_consistency_basic(conv_dict, both_agents=False):
+    conv_dict['eval_prompt_consistency_basic'] = []
+    conv_dict['P1_prompt_consistency_score_basic'] = 0
+    conv_dict['P2_prompt_consistency_score_basic'] = 0
+    p1_utterances = 0
+    p2_utterances = 0
+
+    pturn = conv_dict["pturn"]
+    for line in conv_dict["conversation"]:
+        print("eval_prompt_consistency")
+        line_number = line[0]
+        convo_line = line[1]
+        if pturn == 1:
+            if both_agents:
+                prompt = eval_prompts["basic_consistency"].replace("%SCENARIO_DESC%", prompts["agent1_prompt"]) \
+                                                                    .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
+                                                                    .replace("%SPEAKER_LINE%", convo_line)
+                if config.get('verbose', False):
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_prompt_consistency_basic'].append((line_number, output))
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P1_prompt_consistency_score_basic'] += 1
+                p1_utterances += 1
+            pturn = 2
+        elif pturn == 2:
+            prompt = eval_prompts["basic_consistency"].replace("%SCENARIO_DESC%", prompts["agent2_prompt"]) \
+                                                                .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
+                                                                .replace("%SPEAKER_LINE%", convo_line)
+            if config.get('verbose', False):
+                print(prompt)
+            output = completion_create(config['eval_model'], config, prompt)
+            conv_dict['eval_prompt_consistency_basic'].append((line_number, output))
+            if "YES" not in output:  # no contradiction
+                conv_dict['P2_prompt_consistency_score_basic']+= 1
+            p2_utterances += 1
+            pturn = 1
+
+    if p1_utterances > 0:
+        conv_dict['P1_prompt_consistency_score_basic'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_prompt_consistency_score_basic'] /= p2_utterances
+
+    if config.get('verbose', False):
+        print(conv_dict)
+    return conv_dict
+    
 # proxy for pairwise consistency, asks for indices of the previous lines that are inconsistent
 def eval_index_consistency(conv_dict, both_agents=False):
     print("eval_index_consistency")
