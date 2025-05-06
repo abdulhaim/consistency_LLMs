@@ -1,0 +1,15 @@
+\begin{table}
+\caption{LLM Consistency Metrics Across Tasks}
+\label{tab:llm_metrics}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+ & \multicolumn{3}{r}{line-to-prompt Consistency} & \multicolumn{3}{r}{line-to-line consistency} & \multicolumn{3}{r}{q&a consistency} \\
+LLM & Llama-3.1-8B-Instruct & gemma-2-2b-it & mistral-instruct & Llama-3.1-8B-Instruct & gemma-2-2b-it & mistral-instruct & Llama-3.1-8B-Instruct & gemma-2-2b-it & mistral-instruct \\
+Task &  &  &  &  &  &  &  &  &  \\
+\midrule
+chatting & 0.155 & 0.871 & 0.955 & 0.248 & 0.900 & 0.984 & 0.000 & 0.000 & 0.000 \\
+education & 0.824 & 0.511 & 0.728 & 0.800 & 0.928 & 0.975 & 0.000 & 0.000 & 0.000 \\
+therapy & 0.566 & 0.000 & 0.000 & 0.496 & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
