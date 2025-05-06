@@ -127,8 +127,8 @@ def setup_vllm(model):
 
     if model in vllm_alias:
         if "fp8" in config.keys() and config['fp8']:
-            llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.5)
             print("Using fp8")
+            llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.75)
         elif vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B' or vllm_alias[model] == 'meta-llama/Meta-Llama-3.1-70B-Instruct':
             llms[model] = LLM(model=vllm_alias[model], tensor_parallel_size=config['gpus'], download_dir=config['model_dir'], gpu_memory_utilization=0.9, max_model_len=12880)
         else:

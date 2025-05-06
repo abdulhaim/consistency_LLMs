@@ -49,7 +49,87 @@
         "index": 0,
         "timestamp": "2025-05-06 02:23:37",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the line is to initiate friendly conversation and show genuine interest in getting to know the other person, which aligns with Alex's warm and hospitable personality as a true Charlestonian who values community and connection, so it does not contradict her background.\n\nNO"
+            ],
+            [
+                1,
+                "The intention behind Ethan's statement is to express his enthusiasm and fulfillment in his role as a sustainability coordinator, which aligns with his background as someone who is passionate about sustainability and conservation, and values making a positive impact on the environment.\n\nNO"
+            ],
+            [
+                2,
+                "The intention behind the line is to show genuine interest and curiosity about the other person's career and experiences, which aligns with Alex's friendly and community-driven personality, as well as her background in environmental science and passion for sustainability. NO"
+            ],
+            [
+                3,
+                "The intention behind Ethan's statement is to convey the pivotal moment that strengthened his passion for sustainability and environmental protection, which aligns with his background as someone who grew up surrounded by nature and developed a passion for sustainability during college, thus it does not contradict his background.\n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Alexandra's statement is to express her shared passion for environmental conservation and connect with the other person over a shared experience, which aligns with her background as a conservation biologist and owner of a sustainable landscaping business; NO."
+            ],
+            [
+                5,
+                "The intention behind Ethan's line is to express genuine interest in the other person's experiences and passion for environmental conservation, which aligns with his background as someone who values community, sustainability, and the environment, and is a sustainability coordinator himself. NO"
+            ],
+            [
+                6,
+                "The line's intention is to share Person A's passion for environmental conservation and her career as a sustainable landscaper, which aligns with her background as a conservation biologist and sustainable landscaping business owner, showcasing her genuine interest in the topic and her authenticity in sharing her personal experience. NO."
+            ],
+            [
+                7,
+                "The intention behind Ethan's statement is to express genuine interest in the person's profession and its relation to the specific region's environment, which aligns with his background as an environmental science graduate and sustainability coordinator with a passion for conservation and appreciation for regional uniqueness. NO"
+            ],
+            [
+                8,
+                "The intention behind the line is to express Person A's passion for community-driven environmental initiatives and spark a conversation about environmental concerns in the other person's community, which aligns with her background as a conservation biologist and sustainable business owner. NO"
+            ],
+            [
+                9,
+                "This line is in alignment with Ethan's background, as his intention to address and raise awareness about climate change and water quality in the Chippewa River reflects his passion for environmental conservation, his job as a sustainability coordinator, and his involvement in local activism, which are all central aspects of his personality and values. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no conflict or inconsistency between the line and any line within the conversation history spoken by Person A. \n\n[]"
+            ],
+            [
+                3,
+                "This line does not introduce any clear conflicts with Ethan's previous statements, as it provides additional background information that aligns with his job description and passion for sustainability. [ ]"
+            ],
+            [
+                4,
+                "There is no clear conflict between Alexandra's current statement and any of her previous lines in the conversation. []\n \n\nThis is because Alexandra's statement is consistent with her initial message, where she expressed excitement to learn about Ethan, and her follow-up question about his inspiration for pursuing a career in sustainability."
+            ],
+            [
+                5,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Person B.\n\n[]"
+            ],
+            [
+                6,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Person A. \n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the line spoken by Person B and any line within the conversation history spoken by Person B. \n\n[]"
+            ],
+            [
+                8,
+                "This line is consistent with the conversation history as Alexandra has previously mentioned her passion for environmental conservation and her career as a sustainable landscaper in Charleston, South Carolina, and this statement further reinforces her positive views on her community's support for sustainable initiatives.\n\n[]"
+            ],
+            [
+                9,
+                "There is no clear conflict or inconsistency between the line spoken by Person B and any line within the conversation history spoken by Person B. \n\n[]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -101,7 +181,87 @@
         "index": 1,
         "timestamp": "2025-05-06 02:24:50",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Ethan's statement is to show genuine interest in getting to know Harold better and build a connection, which aligns with his personality traits of being down-to-earth, friendly, and willing to engage with others. NO."
+            ],
+            [
+                1,
+                "The intention behind the statement is to showcase Person B's enthusiasm for tinkering with old machinery and finding satisfaction in restoring them, which aligns with their background as a retiree who enjoys tinkering with old machinery in their free time. NO"
+            ],
+            [
+                2,
+                "The line suggests that Ethan has an interest in old machinery, which aligns with his father's profession as a mechanic and the values of a traditional upbringing, indicating that this statement does not contradict his background. NO"
+            ],
+            [
+                3,
+                "The intention behind this line is to convey Hal's passion for tinkering with old machinery and his love for the simple joys of rural life, which aligns perfectly with his background as a rural Iowa resident who enjoys tinkering and appreciates the countryside. NO"
+            ],
+            [
+                4,
+                "The intention behind Ethan's statement is to convey his appreciation for preserving the past and appreciating old architecture, which aligns with his background as an environmental conservationist with a strong sense of community and respect for tradition. NO"
+            ],
+            [
+                5,
+                "The line suggests that Hal values history, learning, and tinkering, which aligns with his background as a history buff and someone who enjoys tinkering with old machinery, indicating that his statement is consistent with his personality and interests. NO"
+            ],
+            [
+                6,
+                "The intention behind the statement is to express genuine interest and appreciation for Person B's (Harold's) work, which aligns with Ethan's background as someone who is an avid reader, has a love for history, and values eclectic interests, making this statement consistent with his personality and background. NO"
+            ],
+            [
+                7,
+                "The line suggests that Person B, Harold, has a hobby of woodworking that brings him comfort and allows him to remember his late wife, which aligns with his background of being a devoted husband and a sentimental person who still misses his wife, who passed away five years ago.\n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Ethan's line is to express his appreciation for the communal aspect of woodworking and its potential to create meaningful connections, which aligns with his background of valuing community and social responsibility. NO"
+            ],
+            [
+                9,
+                "The intention behind this line is for Harold to share his creative pursuits and interests with Ethan, showcasing his passion for history and storytelling, which aligns with his background as a retired history teacher with a love for historical fiction and a knack for storytelling; NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no clear conflict between the current line and any previous lines spoken by Person A, as Ethan is expressing his genuine interest in Harold's hobby, which is consistent with his initial friendly tone. []\n\nSince Ethan has only spoken once before, and the current line is consistent with his friendly and inquiring nature, there are no conflicting lines."
+            ],
+            [
+                3,
+                "This line is consistent with Person B's previously stated hobby of restoring old machinery, particularly tractors, and no conflict is found within the conversation history. [ ]"
+            ],
+            [
+                4,
+                "This line does not introduce any clear conflict with Person A's previous statements. []\n\nThis is because Ethan's appreciation for old machinery and the stories behind them (line 2) aligns with his statement about preserving and honoring the past, showing consistency in his interests."
+            ],
+            [
+                5,
+                "This line is consistent with the conversation history as it further emphasizes Person B's interest in old machinery and the stories behind them, which aligns with their previous statements. []\n"
+            ],
+            [
+                6,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Person A. []\n\nThis is because Ethan's statement about being drawn to the intersection of technology and history is consistent with his previous statements about being fascinated by old machinery, preserving and honoring the past, and appreciating the beauty of old architecture."
+            ],
+            [
+                7,
+                "The line does not provide a clear conflict or inconsistency with the conversation history. []\n\nThis reasoning is based on the fact that Harold is simply sharing another hobby and personal detail about his life, which does not contradict any of his previous statements."
+            ],
+            [
+                8,
+                "This line does not have a clear conflict with any line in the conversation history spoken by Person A, as it is a general statement that does not contradict any of Ethan's previous statements. \n[]"
+            ],
+            [
+                9,
+                "There is a clear conflict between this line and previous statements by Person B, as Harold had mentioned taking up woodworking in his retirement, implying he had a career before that, but he did not mention being a history teacher.\n\n[7]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 0.9
     },
     {
         "task_name": "Chatting",
@@ -153,7 +313,87 @@
         "index": 2,
         "timestamp": "2025-05-06 02:25:54",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Alexis' statement is to introduce herself and establish common ground, showcasing her profession and interests, which aligns with her background as a high school science teacher and conservation specialist who values education and environmental conservation.\n\nNO"
+            ],
+            [
+                1,
+                "The line suggests Alex is sharing her genuine interests and profession, which aligns with her background of working as a sustainability consultant and being passionate about environmental conservation, so there is no contradiction. NO."
+            ],
+            [
+                2,
+                "The intention behind this line is to express genuine interest and enthusiasm for the other person's career in sustainability consulting, which aligns with Lexi's background as an environmental science graduate, conservation specialist, and environmental education advocate, indicating a natural curiosity about related fields. NO."
+            ],
+            [
+                3,
+                "The intention behind this statement is to convey Alexandra's genuine interest in environmental conservation, which aligns with her background of growing up surrounded by nature and pursuing a degree in Environmental Science, and as such, does not contradict her background. NO"
+            ],
+            [
+                4,
+                "The intention behind this statement appears to be genuine interest and enthusiasm for the other person's profession, which aligns with Lexi's background as a person who values community involvement, environmental conservation, and is a self-proclaimed \"news junkie,\" indicating she is likely interested in sustainability-related topics. NO"
+            ],
+            [
+                5,
+                "The line does not contradict her background as Alexandra's intention is to share a personal and professional accomplishment that reflects her passion for environmental conservation and sustainability, which aligns with her career as a sustainability consultant and her upbringing surrounded by the importance of environmental conservation. NO"
+            ],
+            [
+                6,
+                "The intention behind the statement is to express enthusiasm and shared experience in sustainability education, and to spark a deeper conversation about its importance, which aligns with Lexi's background as an environmental science teacher and advocate for environmental education. NO"
+            ],
+            [
+                7,
+                "The intention behind Alexandra's statement is to emphasize the importance of hands-on experiences in sustainability education, which aligns perfectly with her background as someone who grew up surrounded by nature, works as a sustainability consultant, and values teaching her kids about environmental conservation through outdoor activities. NO."
+            ],
+            [
+                8,
+                "The intention behind the statement is to express enthusiasm for hands-on experiences and spark a meaningful conversation about sustainability efforts, which aligns perfectly with Lexi's background as an environmental educator who values community involvement and hands-on learning. NO"
+            ],
+            [
+                9,
+                "The intention behind the line is to convey Alexandra's concern for the balance between economic development and environmental protection in rural areas and her belief in education and collaboration as a solution, which aligns with her background as an environmental science graduate and sustainability consultant who values environmental conservation. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "The line does not contain any information that conflicts with the conversation history of Person A, as it is a response that builds upon the conversation and does not contradict any previous statements. \n\n[]"
+            ],
+            [
+                3,
+                "This line does not have a clear conflict or inconsistency with any previous line spoken by Person B, as it provides more background information that aligns with her previous statements about her job and interests.\n\n[]"
+            ],
+            [
+                4,
+                "This line does not have any conflicts with the conversation history as it is a follow-up question that builds upon the conversation, showing genuine interest in Alexandra's experiences. \n\n[]"
+            ],
+            [
+                5,
+                "There is no conflict between the line spoken by Person B and any line within the conversation history, as the details provided about Alexandra's job and interests are consistent with her previous statements.\n\n[]"
+            ],
+            [
+                6,
+                "There is no clear conflict between this line and any line within the conversation history spoken by Person A. []\n\nThis line is consistent with Person A's previous statements about being a high school science teacher and conservation specialist, and their passion for educating students about sustainability and environmental conservation."
+            ],
+            [
+                7,
+                "There is no clear conflict between the given line and any previous lines spoken by Person B, as this line is consistent with her background and interests in sustainability, conservation, and hands-on experiences.\n\n[]"
+            ],
+            [
+                8,
+                "There is no clear conflict or inconsistency between the current line and any previous line spoken by Person A.\n\n[]"
+            ],
+            [
+                9,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Person B. \n[]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -205,7 +445,87 @@
         "index": 3,
         "timestamp": "2025-05-06 02:27:02",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's line is to initiate a friendly conversation, show genuine interest in getting to know Person B, and potentially find common interests, which aligns with Lexi's outgoing and social side as an \"introverted extrovert\" and her desire to connect with like-minded individuals who share her passions and values. NO"
+            ],
+            [
+                1,
+                "The line suggests that Nia is interested in exploring her mixed cultural heritage through food, which contradicts her background as it is described that she is deeply rooted in her Southern heritage and proud of her Black identity, with no indication of a mixed cultural background, YES."
+            ],
+            [
+                2,
+                "The intention behind the line is to show interest in the other person's hobby and share a lighthearted aspect of oneself, which aligns with Lexi's background as a friendly and outgoing person who values connections with like-minded individuals, and does not contradict her background as her interests and personality traits are not in direct opposition to enjoying cooking or trying new recipes. NO"
+            ],
+            [
+                3,
+                "The intention behind Nia's statement is to share her interest in cooking and her involvement in a cookbook club focused on African American cuisine, which aligns with her background as a proud Black woman in the South who values her heritage and culture, and enjoys trying out new recipes in the kitchen. NO"
+            ],
+            [
+                4,
+                "The intention behind Alexis' statement is to express her genuine interest in the project and its cultural significance, which aligns with her background as someone who values learning, culture, and social issues, particularly as she is described as someone who \"speaks her mind and stands up for what she believes in, particularly when it comes to... social justice\"; NO."
+            ],
+            [
+                5,
+                "The intention behind the statement is to express Nia's appreciation for her partner's family's cultural heritage and her efforts to connect with it through cooking, which aligns with her background of being a proud Black woman with a strong appreciation for her own cultural heritage, and her openness to learning and new experiences. NO"
+            ],
+            [
+                6,
+                "The line suggests that Person A values cultural traditions and the role of food in bringing people together, which aligns with their background of being proud of their heritage and having a strong sense of family, so the statement does not contradict their background. NO"
+            ],
+            [
+                7,
+                "The intention behind Nia's statement is to share her interest in exploring the historical context of traditional Southern cuisine, which aligns with her background as a proud Black woman from the South who values her cultural heritage and history. NO"
+            ],
+            [
+                8,
+                "The intention behind the statement appears to be a genuine expression of interest in exploring the connection between food, culture, and identity, which aligns with Lexi's described passions for literature, creative writing, and learning, and does not seem to contradict her background as a curious and open-minded individual.\n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Nia's statement is to engage in a meaningful conversation about her interests and learn about the other person's interests, which aligns with her background as a curious and nurturing individual who values education and social justice. NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.8,
+        "eval_index_consistency": [
+            [
+                2,
+                "This line is consistent with the conversation history, as Person A is continuing to express enthusiasm for food and cooking while describing their own approach as less methodical. \n\n[]"
+            ],
+            [
+                3,
+                "This line does not introduce any clear conflicts or inconsistencies with Person B's previous statements. []\n\n(Note: The line is consistent with Person B's interest in soul food and cultural heritage mentioned in line 1.)"
+            ],
+            [
+                4,
+                "This line is consistent with the conversation history, as Person A has previously shown interest in food and cooking, and is now expressing interest in the cultural aspect of food, which is a natural extension of that interest. \n\n[]"
+            ],
+            [
+                5,
+                "This line does not present a clear conflict with any previous lines spoken by Person B, as it provides additional information about her interests in cooking and cultural heritage that complements her earlier statements. [ ]"
+            ],
+            [
+                6,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Person A, as Alexis consistently expresses interest and enthusiasm for food and its connection to culture and heritage.\n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between this line and the conversation history, as the speaker's interest in learning about the history of traditional Southern dishes is consistent with their previously expressed enthusiasm for exploring their cultural heritage through food.\n\n[]"
+            ],
+            [
+                8,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Person A, as this statement aligns with and expands upon their previous expressions of interest in the cultural significance of food. \n\n[]"
+            ],
+            [
+                9,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Person B, as this line is a new topic and doesn't contradict any previous statement made by Person B. []\n\nThis line is a new topic and doesn't contradict any previous statements made by Person B, who has been discussing food, cooking, and cultural heritage up until this point."
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -257,7 +577,87 @@
         "index": 4,
         "timestamp": "2025-05-06 02:28:12",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind this statement is to show genuine interest in getting to know the other person, which aligns with Kaito's background of being a free-spirited individualist with a strong sense of social responsibility and a desire to bring people together. NO"
+            ],
+            [
+                1,
+                "The intention behind the statement is to share Maya's hobbies and interests, specifically her love for gardening and yoga, and how her Japanese heritage has influenced her gardening skills, which aligns with her background as she was raised by a Japanese mother who likely passed on her cultural traditions and skills. NO."
+            ],
+            [
+                2,
+                "The intention behind Kaito's statement appears to be an expression of genuine interest in the other person's hobbies and a desire to learn more about their experiences, which aligns with his background as a free-spirited individualist with a strong sense of social responsibility who values diversity and is interested in various cultures and practices. NO"
+            ],
+            [
+                3,
+                "The intention behind Maya's statement is to share her personal experience and connection with yoga, highlighting its role in managing stress, connecting with her body, and appreciating her cultural heritage, which aligns with her background as someone who values her mixed heritage, wellness, and mindfulness through her yoga practice. NO"
+            ],
+            [
+                4,
+                "The intention behind Kaito's statement is to express genuine interest in learning about the cultural significance of bonsai trees in Japan, which aligns with his Japanese heritage and curiosity about different cultures, and therefore does not contradict his background.\n\nNO"
+            ],
+            [
+                5,
+                "The intention behind the statement is to convey Maya's personal growth and connection to her heritage through her experience with bonsai trees, which aligns with her background as she has a Japanese mother and values her mixed heritage. NO."
+            ],
+            [
+                6,
+                "The intention behind Kaito's line is to show genuine interest in Maya's profession and start a meaningful conversation, which aligns with his background as someone who values connection and fostering understanding. NO"
+            ],
+            [
+                7,
+                "The intention behind the statement is to convey Maya's passion for teaching and the challenges she faces in meeting the diverse needs of her students, which aligns with her background as a middle school art teacher who values creativity, self-expression, and cultural exchange. NO"
+            ],
+            [
+                8,
+                "The intention behind Kaito's line is to show genuine interest in Maya's thoughts and experiences as a teacher, aligning with his background as someone who values connection, understanding, and community, as well as being a marketing specialist who connects with diverse clients and colleagues. NO"
+            ],
+            [
+                9,
+                "The intention behind Maya's statement is to convey her teaching philosophy, emphasizing the importance of empathy and creating a safe and inclusive classroom environment, which aligns perfectly with her background as a middle school art teacher who values self-expression, cultural exchange, and inspiring young minds. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "The line spoken by Kaito does not contain any clear conflict or inconsistency with his previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                3,
+                "There is no conflict or inconsistency between the line and any line within the conversation history spoken by Person B. []\n \n\n(No conflicts found)"
+            ],
+            [
+                4,
+                "This line does not have a clear conflict or inconsistency with any of Kaito's previous lines in the conversation history.\n\n[]"
+            ],
+            [
+                5,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Person B. \n[]"
+            ],
+            [
+                6,
+                "The line spoken by Person A does not have a clear conflict with any previous lines spoken by Person A.\n\n[]"
+            ],
+            [
+                7,
+                "There is no conflict between the current line spoken by Maya and any of her previous lines in the conversation history, as she consistently presents herself as a caring and motivated teacher who values her students and her craft. \n\n[]"
+            ],
+            [
+                8,
+                "This line does not have a clear conflict or inconsistency with any line within the conversation history spoken by Person A.\n\n[]"
+            ],
+            [
+                9,
+                "This line does not contain any clear conflicts or inconsistencies with the conversation history spoken by Person B, as it continues to reflect her values and experiences as a teacher in a manner consistent with her previous statements.\n\n[]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -309,7 +709,87 @@
         "index": 5,
         "timestamp": "2025-05-06 02:29:24",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line \"Hi Kendrick! I'm excited to get to know you better. What's your story? What do you do, and what are your passions?\" aligns with Jasper's background as a teacher and Park Ranger, as the intention is to engage in a friendly and inquisitive conversation, which is consistent with his down-to-earth and curious personality. NO"
+            ],
+            [
+                1,
+                "The intention behind Kendrick's statement appears to be genuine and informative, as he is sharing his profession and interests while showing curiosity about the other person, which aligns with his background as a city commissioner and a community-oriented individual.\n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Jasper's statement is to express his enthusiasm for his work as a Park Ranger and his commitment to preserving the natural beauty of Acadia National Park, which aligns perfectly with his background as a nature-loving individual and his role as a Park Ranger. NO."
+            ],
+            [
+                3,
+                "Kendrick's statement shows genuine interest in Jasper's work as a Park Ranger and his history, aligning with Kendrick's own passion for historical fiction and biographies, particularly those focused on African American history and the Civil Rights Movement; NO"
+            ],
+            [
+                4,
+                "The intention behind Jasper's statement is to express his lifelong fascination with the history of Maine and his gratitude for being able to share that passion with others, which aligns perfectly with his background as a history enthusiast, teacher, and park ranger. NO."
+            ],
+            [
+                5,
+                "This statement aligns with Kendrick's background, as it reflects his genuine interest in diverse cultures and stories of resilience, which is a recurring theme in his life and career, thus showing his curiosity and open-minded nature. NO."
+            ],
+            [
+                6,
+                "The intention behind Jasper's statement is to share a meaningful experience that highlights the significance of connecting people with nature, which aligns with his background as a nature-loving individual and a Park Ranger who values environmentalism and education. NO"
+            ],
+            [
+                7,
+                "The intention behind Kendrick's line is to express genuine interest in Jasper's work and build a connection with him by sharing a personal interest, which aligns with Kendrick's background as a community-oriented and culturally rich individual who values social connections. NO"
+            ],
+            [
+                8,
+                "The intention behind this statement is to express Jasper's appreciation for traditional folk and Celtic music and its connection to his love of local history and storytelling, which aligns with his background as a nature-loving, history enthusiast who values community and storytelling. NO"
+            ],
+            [
+                9,
+                "The intention behind Kendrick's statement is to show appreciation for traditional music and explore potential collaboration opportunities, which aligns with his background of being influenced by his Jamaican heritage and enjoying music, particularly jazz guitar; NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no conflict or inconsistency between the line spoken by Person A and any line within the conversation history spoken by Person A, as this is the second statement made by Person A. \n[]"
+            ],
+            [
+                3,
+                "This line has no conflict with any of Person B's (Kendrick's) previous lines in the conversation, as it is a follow-up question that builds upon Jasper's statement about being a Park Ranger and a history teacher. \n[]"
+            ],
+            [
+                4,
+                "There is no clear conflict between the line spoken by Person A and any line within the conversation history spoken by Person A. []\n\nThis line is consistent with Jasper's background as a history teacher and Park Ranger, and it provides more information about what sparked his interest in history, which aligns with his previous statements."
+            ],
+            [
+                5,
+                "This line does not present any clear conflicts or inconsistencies with Person B's previous statements in the conversation history. []\n\nThe statement by Kendrick sharing his interest in stories of resilience and adaptation, like those of his own ancestors who migrated from Jamaica to the United States, is a new piece of information and does not contradict any of his previous statements."
+            ],
+            [
+                6,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Person A. \n\n[]"
+            ],
+            [
+                7,
+                "Kendrick's mention of being from Fort Lauderdale is inconsistent with his earlier statement about his ancestors migrating from Jamaica to the United States, which doesn't necessarily imply a connection to Fort Lauderdale.\n\n[1]"
+            ],
+            [
+                8,
+                "There are no clear conflicts or inconsistencies between the line and any line within the conversation history spoken by Person A. []\n \n\nPerson A's line about being a fan of traditional folk and Celtic music and playing harmonica during campfire gatherings does not contradict any previous statements."
+            ],
+            [
+                9,
+                "There is a clear inconsistency between the current line and the conversation history, as Person B (Kendrick) previously mentioned being a jazz enthusiast but now claims to be a fan of traditional Jamaican music, and also mentioned playing impromptu performances at local events in Fort Lauderdale but now talks about experimenting with traditional African rhythms on his guitar. \n[7]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -361,7 +841,87 @@
         "index": 6,
         "timestamp": "2025-05-06 02:30:40",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Kofi's statement expresses a genuine interest in getting to know Elena and learning about her background, which aligns with his empathetic and socially responsible personality, as well as his appreciation for diverse cultures instilled by his Ghanaian heritage. NO"
+            ],
+            [
+                1,
+                "This statement aligns with Elena's background as it reflects her interest in photography and exploring the Connecticut River Valley with her family, indicating that her intention is to share her genuine hobbies and passions with Kofi, which is consistent with her warm and empathetic nature.\n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Kofi's statement is to express his casual interest in photography, and this intention aligns with his laid-back personality and lack of background emphasis on photography as a significant interest or passion. NO"
+            ],
+            [
+                3,
+                "The intention behind Elena's line is to express her passion for photography as a way to preserve and showcase the cultural heritage of her community, which aligns with her background as a proud Hispanic woman who is deeply rooted in her cultural identity and actively involved in the local Latin American community. NO"
+            ],
+            [
+                4,
+                "The intention behind Kofi's statement is to express appreciation for the intersection of technology and culture, aligning with his background as someone who values his cultural heritage and believes in the potential of innovation to drive positive social change. NO."
+            ],
+            [
+                5,
+                "The intention behind Elena's statement is to share her passion for using photography as a tool for social change and to highlight the intersection of her interests in culture, social justice, and sustainability, which aligns with her background as a Hispanic woman, sustainability consultant, and advocate for social justice causes. NO"
+            ],
+            [
+                6,
+                "The line suggests that Person A, Kofi, is interested in using technology to address social issues in his community, which aligns with his background of being passionate about social justice and believing that innovation can be a powerful tool for addressing systemic issues. NO"
+            ],
+            [
+                7,
+                "The intention behind Elena's statement is to express genuine interest in and support for Kofi's work on social issues in Newark, which aligns with her background as someone who is committed to social responsibility and advocating for social justice causes. NO"
+            ],
+            [
+                8,
+                "The intention behind the line is to convey Kofi's passion for using technology to drive positive change and address social inequality, which aligns with his background as someone who believes innovation can be a powerful tool for addressing systemic issues and is involved in advocating for greater representation and opportunities for students of color in the STEM fields. NO"
+            ],
+            [
+                9,
+                "The intention behind Elena's statement is to show genuine interest in Kofi's work and values, which aligns with her own background of being socially responsible and passionate about making a positive impact, as evident in her career as a sustainability consultant and her community involvement. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Person A, as Kofi is sharing a new aspect of his interests and experiences. \n[]"
+            ],
+            [
+                3,
+                "This line is consistent with the conversation history, as it further elaborates on Person B's interest in photography, but there is no mention of Hartford's Latin American community in Elena's previous statement, however, it is not a conflict, it is an addition of new information, but since there is no previous mention of Elena's community or cultural background, there is a potential inconsistency with line 1 if Elena's background is not related to Hartford's Latin American community. [1]"
+            ],
+            [
+                4,
+                "The line does not introduce any new information that directly conflicts with Kofi's previous statements. \n\n[]"
+            ],
+            [
+                5,
+                "There is no conflict or inconsistency between the current line and any line within the conversation history spoken by Person B, as Elena's interests in culture, social justice, and sustainability are an extension of her previously mentioned passions. []\n\n(Note: The line does build upon Elena's previous interests in culture and community, and introduces new aspects of her photography focus, but it does not contradict anything she has said previously.)"
+            ],
+            [
+                6,
+                "There is no clear conflict between this line and any line within the conversation history spoken by Person A, as this statement aligns with and builds upon previous expressions of interest in the intersection of technology and culture.\n\n[]"
+            ],
+            [
+                7,
+                "The current line spoken by Person B does not introduce a clear conflict with any previous lines spoken by Person B in the conversation history. \n\n[]"
+            ],
+            [
+                8,
+                "This line does not have a clear conflict with any previous line spoken by Person A. \n\n[]"
+            ],
+            [
+                9,
+                "The line \"That's incredible, Kofi, I can see how your work with robotics is not only innovative but also socially responsible and impactful\" does not have a clear conflict with any previous lines spoken by Person B, as it is a supportive and inquiring statement that aligns with her previous expressions of interest in social justice and cultural preservation. \n\n[]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 0.9
     },
     {
         "task_name": "Chatting",
@@ -413,7 +973,87 @@
         "index": 7,
         "timestamp": "2025-05-06 02:31:50",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement is to show interest in getting to know Deborah and starting a friendly conversation, which aligns with Alex's background as a warm and people-oriented person who values community and connection. NO"
+            ],
+            [
+                1,
+                "The intention behind the statement is to convey Deborah's passion for gardening and cooking, which aligns with her background as someone who tends to her own garden and experiments with sustainable gardening practices, as well as being an accomplished cook and baker. NO"
+            ],
+            [
+                2,
+                "The intention behind Alexandra's statement is to show genuine interest in the other person's gardening experiences and share her own enthusiasm for sustainable gardening, which aligns perfectly with her background as the owner of a sustainable gardening business and her degree in Environmental Science. NO"
+            ],
+            [
+                3,
+                "The intention behind the statement is to share a personal experience and highlight Deborah's passion for environmental conservation and native plant species, which aligns perfectly with her background as an environmental educator and volunteer with the Kansas Native Plant Society. NO"
+            ],
+            [
+                4,
+                "The intention behind the statement is to express genuine interest in learning about the other person's experiences with pollinator-friendly plants, aligning with Alex's background as an environmental science graduate and sustainable gardening business owner who is passionate about conservation and the natural world. NO"
+            ],
+            [
+                5,
+                "The intention behind Deborah's statement is to share her experience and knowledge about creating a pollinator-friendly garden, which aligns perfectly with her background as an environmental educator and her passion for sustainability and conservation, showcasing her expertise in the field. NO"
+            ],
+            [
+                6,
+                "The intention behind Alexandra's statement appears to be an expression of her interest in gardening and sharing her knowledge, which aligns with her background as a sustainable gardening business owner and environmental enthusiast. NO"
+            ],
+            [
+                7,
+                "The intention behind the statement is to share a personal hobby and interest in cooking and gardening, which aligns with Debbie's background as an environmental educator and someone who tends to her own garden and experiments with sustainable gardening practices. NO"
+            ],
+            [
+                8,
+                "The intention behind the line is to express shared interest and enthusiasm for cooking with rosemary, which aligns with Person A's background as someone who enjoys experimenting with new recipes and showcasing Southern cuisine. NO"
+            ],
+            [
+                9,
+                "The intention behind this statement is to express Debbie's interest in exploring the creative side of food and photography, which aligns with her background as someone who values community, local culture, and family, as well as her experience with gardening and her son's profession as a photographer. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no conflict between the line spoken by Person A and any line within the conversation history, as Person A's new statement aligns with and builds upon their initial introduction and interest in learning more about Person B's life. []\n\n(Note: The conversation is just starting, and Person A's statements are consistent and show genuine interest in getting to know Person B, with no contradictions or inconsistencies.)"
+            ],
+            [
+                3,
+                "There is no conflict with the current line and any previous lines spoken by Person B. \n[]"
+            ],
+            [
+                4,
+                "Person A's line does not conflict with any previous statements they've made, as they're showing continued interest in permaculture and native plants, which aligns with their earlier statements. \n\n[]"
+            ],
+            [
+                5,
+                "This line does not introduce any new information that contradicts Person B's previous statements. \n\n[]"
+            ],
+            [
+                6,
+                "There is no conflict between the current line and any line within the conversation history spoken by Person A.\n\n[]"
+            ],
+            [
+                7,
+                "Deborah's mention of growing rosemary in her cooking does not conflict with her previous statements, as she had not mentioned her favorite herbs before or stated that she doesn't grow rosemary.\n\n[]"
+            ],
+            [
+                8,
+                "There is no clear conflict or inconsistency between the current line and any previous lines spoken by Person A, as the current line aligns with and expands upon their previous statements. []\n \n Note that Person A had not previously explicitly mentioned rosemary, but they had mentioned experimenting with herbs in general, and now they are providing more specific information about their use of rosemary."
+            ],
+            [
+                9,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Person B.\n\n[]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -465,7 +1105,87 @@
         "index": 8,
         "timestamp": "2025-05-06 02:32:57",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Elena's line is to show genuine interest in getting to know Emily and engaging in a meaningful conversation, which aligns with her background of being warm, kind, and valuing connections with others. NO"
+            ],
+            [
+                1,
+                "The intention behind this statement is for Emily to share her personal experience and benefits of practicing yoga, which aligns with her background as she is described as enjoying yoga in her free time. NO."
+            ],
+            [
+                2,
+                "The intention behind Elena's statement is to express her interest in yoga and its spiritual aspects, while also sharing a personal limitation that prevents her from practicing it, which aligns with her background as an elderly woman who values spirituality and has physical limitations due to her age and arthritis. NO"
+            ],
+            [
+                3,
+                "The intention behind the statement is to offer suggestions and share personal experience to help someone with physical limitations or mobility issues find alternative yoga options, which aligns with Emily's background of prioritizing self-care and her husband being an art teacher, who also teaches chair yoga. NO."
+            ],
+            [
+                4,
+                "The intention behind the statement is to express genuine interest and enthusiasm in getting to know the other person, which aligns with Elena's warm hospitality and strong family values as described in her background, as it shows her eagerness to learn about the other person's life and interests. NO"
+            ],
+            [
+                5,
+                "The statement aligns with Emily's background as it highlights her husband's involvement in art and social justice, which aligns with her own interests and career in non-profit work focused on the arts and social impact. NO"
+            ],
+            [
+                6,
+                "The intention behind Elena's statement appears to be genuine interest in Emily's husband's work and the school's social justice projects, which aligns with Elena's background as an advocate for social justice, particularly in issues affecting the Hispanic community and the elderly. NO"
+            ],
+            [
+                7,
+                "The intention behind Emily's statement is to share her enthusiasm for her husband's work and its alignment with social causes, which aligns with her background as a passionate advocate for social justice and environmental causes. NO"
+            ],
+            [
+                8,
+                "The intention behind the statement is to express support for social justice projects and acknowledge the impact of art in creating positive change, which aligns with Elena's background as an advocate for social justice and her experiences navigating cultural identities and societal expectations as a Hispanic woman in America.\n\nNO"
+            ],
+            [
+                9,
+                "The intention behind the statement is to establish a connection with the other person by exploring shared interests in art and social justice, which aligns with Emily's background as a development director for a local arts organization that provides art therapy programs for at-risk youth and her passion for social justice causes. NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no clear conflict or inconsistency between Elena's statement about having arthritis making it difficult for her to bend and move and her previous statements in the conversation history. []\n\nThis reasoning is based on the fact that Elena's previous statement was a question about Emily's experiences with learning a new skill or hobby, and there is no mention of Elena's own physical abilities or limitations in that statement."
+            ],
+            [
+                3,
+                "This line does not contain any clear conflicts or inconsistencies with Emily's previous statements.\n\n[]"
+            ],
+            [
+                4,
+                "There is no clear conflict between the current line and the conversation history spoken by Person A, as Elena is consistently showing interest in learning more about yoga and the art school. [ ]"
+            ],
+            [
+                5,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Person B, as this line builds upon the previous conversation about the husband's art school and does not contradict any of Emily's prior statements. \n\n[]"
+            ],
+            [
+                6,
+                "This line does not introduce any new information that conflicts with Elena's previous statements. \n\n[]"
+            ],
+            [
+                7,
+                "This line does not introduce any new information that conflicts with Emily's previous statements. []\n\nThe line is consistent with the conversation history, as it expands on the information provided in line 5, and does not contradict any of Emily's previous statements."
+            ],
+            [
+                8,
+                "This line does not introduce any clear conflict or inconsistency with Elena's previous statements. \n\n[]"
+            ],
+            [
+                9,
+                "This line does not present a clear conflict or inconsistency with any previous line spoken by Person B, as it is an extension of their previous discussions about art and social justice. [ ]"
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -517,6 +1237,86 @@
         "index": 9,
         "timestamp": "2025-05-06 02:34:13",
         "rounds": 10,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Ethan's line appears to be a genuine and friendly inquiry into Ryder's profession and background, which aligns with his down-to-earth and affable personality. NO"
+            ],
+            [
+                1,
+                "The statement aligns with Ryder's background as it reflects his educational pursuits and passion for environmental issues, indicating his intention is to share his genuine interests and goals with the other person. NO"
+            ],
+            [
+                2,
+                "The intention behind Ethan's statement is to show genuine interest in the other person's passion for environmental science and potentially find common ground, which aligns with his down-to-earth and affable personality, as well as his interest in environmental policy. NO"
+            ],
+            [
+                3,
+                "The line aligns with Ryder's background, as his upbringing in his parents' outdoor gear shop and his degree in Environmental Science with a minor in Business Administration suggest a strong passion for environmental responsibility, which is reflected in the intention behind his statement about promoting sustainable practices and community involvement. NO"
+            ],
+            [
+                4,
+                "The intention behind this line is to express enthusiasm and shared values, which aligns with Ethan's background as someone who works in precision agriculture technology and is interested in environmental policy, indicating that he is genuinely interested in sustainable practices and willing to share his expertise. NO"
+            ],
+            [
+                5,
+                "The line suggests Ryder is genuinely interested in learning more about sustainable agricultural practices and their impact, which aligns with his background as an Environmental Science major and his passion for environmental responsibility, so the intention aligns perfectly with the provided background. NO"
+            ],
+            [
+                6,
+                "The intention behind the statement is to share knowledge and provide an example of a successful implementation of sustainable farming practices, which aligns with Ethan's background as a sales engineer for precision agriculture technology and his interest in environmental policy and helping farmers increase efficiency and productivity. NO"
+            ],
+            [
+                7,
+                "The intention behind Ryder's statement is to express genuine interest and enthusiasm for regenerative agriculture and its potential to mitigate climate change, which aligns perfectly with his background as an Environmental Science major and his passion for environmental issues. NO"
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement is to express his enthusiasm for the positive environmental and economic impact of adopting new farming practices, which aligns with his background as a sales engineer in precision agriculture and his interest in environmental policy. NO"
+            ],
+            [
+                9,
+                "The intention behind Ryder's statement is to express his genuine interest in sustainable living and minimalism, and to initiate a conversation about environmentally responsible practices, which aligns with his background as an Environmental Science major with a strong sense of environmental responsibility and values of simplicity. NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0,
+        "eval_index_consistency": [
+            [
+                2,
+                "There is no conflict or inconsistency between the current line and any line in the conversation history spoken by Person A. \n[]"
+            ],
+            [
+                3,
+                "There is no conflict or inconsistency between the given line and the conversation history spoken by Person B. []\n\nThis is because the new information about Ryder's background and interests does not contradict any previous statements they have made."
+            ],
+            [
+                4,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Person A. \n[]"
+            ],
+            [
+                5,
+                "There is no clear conflict or inconsistency between the line spoken by Person B and any line within the conversation history spoken by Person B. []\n\nThis is because Person B's latest statement aligns with and builds upon their previous statements about their interest in sustainable practices, environmental science, and community involvement."
+            ],
+            [
+                6,
+                "There is no clear conflict between the given line and any line within the conversation history spoken by Person A. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict between the current line and any line in the conversation history spoken by Person B. \n\n[]"
+            ],
+            [
+                8,
+                "There is no conflict between the current line and any previous lines spoken by Person A, as the current line provides additional insight into Ethan's motivations for working with farmers and is consistent with his previous statements about regenerative agriculture.\n\n[]"
+            ],
+            [
+                9,
+                "This line is consistent with Person B's previous statements about their passion for sustainable practices and environmental conservation. []\n\nAlthough this line is consistent, the conversation history does not contain any lines that explicitly address Person B's daily habits and personal lifestyle choices."
+            ]
+        ],
+        "P1_index_consistency_score": 1.0,
+        "P2_index_consistency_score": 1.0
     }
 ]
