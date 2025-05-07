@@ -1,0 +1,1073 @@
+[
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am 21-year-old philosophy student recently diagnosed with bipolar disorder. I\u2019m stable right now, but I\u2019ve come to therapy to work through past episodes and learn how to manage what\u2019s ahead. I tend to think about emotions like philosophical problems. I prefer discussing ideas over feelings, and I often avoid emotional language even when asked directly about how I feel.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand that you're finding it challenging to open up about your feelings, but I believe it's essential for our progress. Can we identify a specific event that's been troubling you recently, and together we can explore how it's affecting you? I notice you tend to brush off your emotions; let's delve deeper into that pattern to understand its roots.\n"
+            ],
+            [
+                1,
+                "Patient: I appreciate your patience, therapist. The event that comes to mind is a recent disagreement with a friend. I've been dwelling on the philosophical implications of our differing viewpoints rather than the emotional impact. Let's analyze why I might be doing that.\n"
+            ],
+            [
+                2,
+                "Therapist: That's a great start. Let's focus on the emotional impact of the disagreement. Can you identify any feelings that you've been suppressing about the situation? Sometimes, understanding our emotions can help us gain a clearer perspective on our thoughts.\n"
+            ],
+            [
+                3,
+                "Patient: I've noticed feelings of frustration and a sense of being misunderstood, but I've found it easier to contemplate these ideas intellectually rather than emotionally. I'm interested in understanding why I might do this.\n"
+            ],
+            [
+                4,
+                "Therapist: It's common to avoid emotional discomfort, but understanding the reasons behind it can be enlightening. Let's explore your tendency to intellectualize emotions and how it may be a defense mechanism against vulnerability.\n"
+            ],
+            [
+                5,
+                "Patient: I've always found solace in the logic of philosophical concepts. Maybe it's a way to maintain control when emotions feel overwhelming. I'm curious to learn more about this coping mechanism and its implications.\n"
+            ],
+            [
+                6,
+                "Therapist: Let's delve deeper into this coping mechanism. How does intellectualizing emotions help you manage feelings of vulnerability, and are there any unintended consequences to this approach?\n"
+            ],
+            [
+                7,
+                "Patient: I believe it helps me maintain a sense of order and clarity, minimizing the emotional turmoil. However, I fear I might miss out on experiencing emotions fully, potentially stunting my emotional growth.\n"
+            ],
+            [
+                8,
+                "Therapist: Let's examine how this intellectualization strategy may limit your emotional experiences. Can we explore situations where you might miss out on emotional connections due to your tendency to rationalize feelings? Furthermore, let's consider alternative ways to cope with vulnerability that promote emotional growth.\n"
+            ],
+            [
+                9,
+                "Patient: I can think of instances where I might have missed emotional connections due to intellectualization. As for alternative coping strategies, I'd like to learn techniques that help me engage with emotions without feeling overwhelmed. Let's work on that together.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to delve into the analysis of a personal issue from a philosophical perspective, which is consistent with their background as a philosophy student who tends to avoid emotional language and prefers discussing ideas over feelings. YES, the line is consistent with their background."
+            ],
+            [
+                3,
+                " The speaker intends to understand their tendency to intellectualize emotions rather than experiencing them directly. This intention fits their background as a philosophy student with bipolar disorder who prefers discussing ideas over feelings. NO, the line does not contradict the background. This is because the line reflects the very behavior that the patient has admitted to, and it shows their willingness to examine and understand this behavior in therapy."
+            ],
+            [
+                5,
+                " The speaker intends to delve deeper into their coping mechanism of using philosophical concepts to manage their emotions, which fits their background as a philosophy student who prefers discussing ideas over feelings. The intention is consistent with their background, as it shows an interest in understanding the connection between their philosophical studies and their emotional management strategies. YES, the line is consistent with their background."
+            ],
+            [
+                7,
+                " The speaker intends to express their strategy of approaching emotions like philosophical problems as a means of maintaining control, but also acknowledges the potential downside of this approach, which could limit their emotional experiences and growth. This intention fits their background, as they have a tendency to avoid emotional language and prefer discussing ideas over feelings, but are now expressing concerns about the impact of this approach on their emotional development. (NO)"
+            ],
+            [
+                9,
+                " The speaker intends to acknowledge the potential impact of their intellectualization on emotional connections, and expresses a desire to develop coping strategies that allow them to engage with emotions more effectively. This intention fits their background, as the patient's avoidance of emotional language and preference for discussing ideas aligns with the statement about intellectualization. The request for techniques to manage emotions without feeling overwhelmed also aligns with the patient's goal of learning to manage their bipolar disorder.\n\nNO, the line and its intended meaning do not contradict the background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                " The patient has acknowledged feelings of frustration and being misunderstood, but still seems to be focusing more on intellectual analysis rather than emotional exploration. This could indicate a conflict with the therapist's earlier suggestion to focus on the emotional impact of the disagreement (Line 2).\n\nReasoning: The patient's current statement indicates a tendency to intellectualize emotions, which seems to conflict with the therapist's guidance to focus on emotional feelings (Line 2).\n\nConflicting lines: [2]"
+            ],
+            [
+                5,
+                " Reasoning: The patient mentioned a possible coping mechanism for emotional discomfort, which aligns with the therapist's previous statement about defense mechanisms. There is no clear conflict in the conversation history.\n\nConflicting lines list (empty because there is no conflict): []"
+            ],
+            [
+                7,
+                " The patient's statement about missing out on experiencing emotions fully and potentially stunting their emotional growth does not conflict with any previous lines in the conversation history.\n\nReasoning: The patient has consistently discussed their tendency to intellectualize emotions and the potential reasons behind it, including a desire for control and clarity. The fear of missing out on experiencing emotions fully and stunting their emotional growth is a natural progression of this discussion."
+            ],
+            [
+                9,
+                " The patient acknowledges the potential missed emotional connections due to intellectualization, which aligns with the conversation history. No clear conflict or inconsistency is found in the patient's statement.\n\nEmpty list: []"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. Although the Patient's background suggests a tendency to avoid emotional language and focus on ideas, the line indicates a deliberate attempt to analyze the emotional impact of a disagreement with a friend. However, the Patient is still framing the discussion in philosophical terms, which aligns with their preference for discussing ideas over feelings."
+            ],
+            [
+                3,
+                " NO. This line aligns with the provided background. The patient mentions experiencing feelings (frustration and a sense of being misunderstood) but prefers to contemplate these feelings intellectually rather than emotionally, which is consistent with their tendency to think about emotions like philosophical problems and their preference for discussing ideas over feelings."
+            ],
+            [
+                5,
+                " NO. This line aligns with the provided background. The patient is discussing their coping mechanism (philosophical concepts) that they use to manage emotions, which is a common theme in their background."
+            ],
+            [
+                7,
+                " YES. The line suggests that the patient is aware of and concerned about their emotional experiences, which contradicts their stated tendency to avoid emotional language."
+            ],
+            [
+                9,
+                " NO. The line aligns with the provided background. The patient acknowledges the impact of intellectualization on emotional connections, indicating an awareness of emotions, and expresses a desire to engage with them more effectively, which is a step towards addressing emotional avoidance."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.6
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 29-year-old teacher who deals with a lot of overthinking and anxiety, especially about what others think of me. I tend to ramble when I\u2019m nervous and I overshare without meaning to. I really want to get things 'right' in therapy. I talk a lot and jump between topics. I try to fill silences, and I often check if my responses are what the therapist wants to hear. I\u2019m eager to please and sometimes share too much too fast.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand that you've been feeling quite anxious lately. Can we explore the specific situations that trigger this anxiety? I notice you mention them often but haven't delved deeply into them. Let's investigate these triggers together to better understand their impact on your feelings.\n"
+            ],
+            [
+                1,
+                "Patient: I'm sorry if I've been vague, but there are two main situations that cause my anxiety. First, when I'm in front of a large group of students or colleagues, and second, when I'm interacting with people I consider important or influential. I tend to overthink what I say and worry about how I'm perceived.\n"
+            ],
+            [
+                2,
+                "Therapist: It's understandable to feel self-conscious in high-pressure situations. Let's examine these triggers more closely. When you're in front of a large group, what specific thoughts or fears come up for you? And when interacting with important people, can we identify any particular scenarios where you feel most anxious?\n"
+            ],
+            [
+                3,
+                "Patient: In large groups, I fear saying something silly or being judged. With important people, I worry they won't see the real me or I'll disappoint them.\n"
+            ],
+            [
+                4,
+                "Therapist: It seems fear of judgment and concern about not being seen authentically are common themes for you. Let's work on identifying the evidence for these fears and evaluating its validity. Can we start by examining instances where you've been in these situations, but didn't experience the worst-case scenarios you fear?\n"
+            ],
+            [
+                5,
+                "Patient: I remember a time during a parent-teacher conference where I was nervous about impressing parents. However, I felt relieved when they expressed their appreciation for my efforts and the progress their child had made. Another example is a presentation I gave in front of my colleagues, where I worried about making a mistake, but I received positive feedback and didn't notice any harsh judgment.\n"
+            ],
+            [
+                6,
+                "Therapist: Great, it's encouraging to hear about those positive experiences. Let's use these examples to challenge your fears. Imagine yourself in future situations, drawing on these successes to bolster your confidence and confront your fears head-on.\n"
+            ],
+            [
+                7,
+                "Patient: I'll try to focus on those successes in future situations to boost my confidence. I'm ready to face my fears more assertively.\n"
+            ],
+            [
+                8,
+                "Therapist: Great, let's continue building on these successes. In your next high-pressure situation, take a moment to recall those positive experiences and remind yourself that you're capable of handling the anxiety.\n"
+            ],
+            [
+                9,
+                "Patient: Thank you for your guidance, therapist. I'll make a conscious effort to focus on my past successes in high-pressure situations and believe in my abilities to manage my anxiety. Looking forward to our next session.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to express the specific sources of their anxiety, which aligns with their background. They mentioned two scenarios that cause their anxiety: being in front of large groups and interacting with people they consider important or influential. This is consistent with their background, as they have anxiety about how they are perceived by others.\n\nYES, the line and its intended meaning are consistent with the background. The speaker is acknowledging and clarifying the sources of their anxiety, which is an action that someone with overthinking and anxiety about how others perceive them would likely do."
+            ],
+            [
+                3,
+                " The speaker intends to express their fear of being judged and not being accepted by others, which is consistent with their background of dealing with anxiety, particularly about what others think of them. The line fits well with their background as it highlights their concerns about being perceived as silly or disappointing people, which are themes that align with their anxiety and the fear of oversharing or saying something inappropriate. YES, the line is consistent with their background."
+            ],
+            [
+                5,
+                " The speaker intends to share examples from their past experiences that demonstrate a pattern of overthinking and anxiety about what others think of them, as well as a desire to be appreciated and approved of. This intention is consistent with their background, as it highlights their struggle with managing these feelings in social situations, such as during a parent-teacher conference and a professional presentation.\n\n(Yes, the line is consistent with the background.)"
+            ],
+            [
+                7,
+                " The speaker's intention seems to be expressing a desire to confront their anxiety and overthinking by focusing on their successes and facing their fears more assertively. This intention fits their background as it shows an attempt to address their overthinking and anxiety about what others think of them.\n\nYES, the line is consistent with their background because it demonstrates an active effort to deal with their anxiety and overthinking in a constructive way."
+            ],
+            [
+                9,
+                " The speaker intends to show their eagerness to follow the therapist's guidance, a desire to improve, and a proactive approach to managing their anxiety. This intention is consistent with their background as they are eager to please, prone to overthinking, and anxious about what others think.\n\nYES, the line is consistent with the background. The speaker's desire to focus on past successes and manage their anxiety aligns with their struggle with overthinking and anxiety. Their eagerness to follow the therapist's guidance and proactive approach to self-improvement also fits with their background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.2,
+        "eval_index_consistency": [
+            [
+                3,
+                " Reasoning: There is no clear conflict in the provided line with the conversation history.\n\nConflicting lines: []"
+            ],
+            [
+                5,
+                " The patient's line does not contradict the conversation history.\nReasoning: The patient provided examples of situations where they felt anxious but did not experience the worst-case scenarios they fear, which aligns with the therapist's suggestion to examine instances where things didn't go as badly as expected.\nEmpty list because there are no conflicting lines in the conversation history."
+            ],
+            [
+                7,
+                " Reasoning: The patient has expressed a commitment to confronting their fears assertively, which aligns with the therapist's suggestions. No clear conflict or inconsistency has been identified in the patient's statement.\n\nEmpty list: []"
+            ],
+            [
+                9,
+                " The patient's statement does not conflict with any previous lines. ([])"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " NO, this line aligns with the provided background. The patient is expressing their anxiety in specific situations, which is a manifestation of their general anxiety about what others think of them, as stated in the background."
+            ],
+            [
+                3,
+                " YES. The provided line indicates that the patient's anxiety and fear of judgment extend beyond the therapy session and into social situations with large groups and important people. However, in their background, there is no mention of this fear in social settings outside of the therapy session."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient's anxiety about what others think of them and their tendency to worry about making a mistake in social situations (like parent-teacher conferences or presentations) is evident in the line. The relief they feel when receiving positive feedback is also consistent with their desire to get things 'right' in therapy and their eagerness to please."
+            ],
+            [
+                7,
+                " NO. This line aligns with the provided background. The patient is expressing a desire to face their fears more assertively, which could be interpreted as an attempt to manage their anxiety, and focusing on successes to boost confidence addresses the issue of overthinking and self-doubt."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient is demonstrating a desire for guidance and self-improvement, which reflects their eagerness to please and their anxiety about getting things right. They are also focusing on their past successes, which can be a strategy to combat overthinking and build confidence, addressing their overthinking and anxiety about what others think of them."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.8
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 42-year-old veteran and former army medic. I\u2019ve been through a lot, and while I\u2019ve avoided therapy for years, my partner finally convinced me to give it a try. I don\u2019t really trust the process yet. I keep my guard up. I\u2019m skeptical about therapy and tend to shut down emotional questions. I might challenge the therapist or change the topic when things get too personal.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand you're feeling stuck, and that's a common feeling. Let's delve deeper. Can you share more about the specific situation that's causing this sense of being stuck? I'd like to help you explore possible patterns and beliefs that might be limiting your progress.\n"
+            ],
+            [
+                1,
+                "Patient: I've been dealing with PTSD and adjusting to civilian life. It's tough to open up about my experiences, but I'll try to share more if it helps.\n"
+            ],
+            [
+                2,
+                "Therapist: I appreciate your bravery in sharing, and I commend you for taking this step towards healing. Let's focus on your PTSD symptoms. Can you identify any triggers that tend to exacerbate your feelings of being stuck?\n"
+            ],
+            [
+                3,
+                "Patient: I'm triggered by loud noises and crowded places. They take me back to the battlefield and make me feel helpless. I try to avoid them as much as possible.\n"
+            ],
+            [
+                4,
+                "Therapist: I'm sorry to hear that. It's understandable to want to avoid triggers, but it might be beneficial to explore coping strategies for managing them, rather than avoiding them entirely. Would you be open to discussing potential ways to navigate these situations in the future?\n"
+            ],
+            [
+                5,
+                "Patient: I've tried some coping techniques, but they don't always work. I'm willing to learn more about managing triggers effectively.\n"
+            ],
+            [
+                6,
+                "Therapist: Great! Let's explore a few techniques together, such as deep breathing, grounding exercises, or cognitive restructuring. We can work on finding what works best for you in managing your triggers. Shall we start with deep breathing?\n"
+            ],
+            [
+                7,
+                "Patient: Alright, I'm open to trying deep breathing exercises. Just remind me again how to do them properly.\n"
+            ],
+            [
+                8,
+                "Therapist: Of course. Deep breathing involves inhaling slowly through your nose for a count of four, holding for a count of seven, and exhaling through your mouth for a count of eight. This can help calm your nervous system. Would you like to practice it now or during a future session?\n"
+            ],
+            [
+                9,
+                "Patient: I'd prefer to practice it during a future session, so I can remember it better. Thanks for your help. Looking forward to our next session.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to share their struggles with PTSD and adjusting to civilian life, indicating a willingness to open up about their experiences to some extent. This intention fits their background, as they have been avoiding therapy for years due to their skepticism and guardedness, but are now trying to give it a chance. However, they also mentioned that they keep their guard up and might shut down emotional questions or change the topic when things get too personal, so this willingness to share may be limited.\n\nYes, the line is consistent with the background. The speaker is revealing a part of their struggles, showing a tentative openness that aligns with their background of being a veteran dealing with PTSD and hesitant to fully engage in therapy."
+            ],
+            [
+                3,
+                " The speaker intends to share a specific struggle related to their past military experience, which is consistent with their background as a veteran. They are revealing their sensitivity to loud noises and crowded places, which can be associated with their time in the army and battlefield experiences. YES, the line is consistent with their background as it provides insight into the emotional challenges they face due to their military service."
+            ],
+            [
+                5,
+                " The speaker intends to express a willingness to engage in the therapy process and learn new coping strategies, despite their initial skepticism. This intention is consistent with their background as they are seeking therapy and expressing a desire to learn, even though they may still have reservations about the process.\n\nYes, the line is consistent with their background."
+            ],
+            [
+                7,
+                " The speaker intends to engage in a suggested activity (deep breathing exercises) as a part of the therapy session, but with caution and a preferred focus on practical aspects rather than emotional exploration. This intention is consistent with their background as they are opening up to the process but maintain their guard, preferring practical exercises over personal emotional questions. YES, the line is consistent with their background."
+            ],
+            [
+                9,
+                " The patient intends to use the upcoming sessions as a learning opportunity, taking a cautious approach due to their skepticism and guarded nature. This intention fits their background, as it aligns with their reluctance to fully commit and their tendency to maintain control over the therapeutic process.\n\nYES, the line is consistent with the patient's background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.4,
+        "eval_index_consistency": [
+            [
+                3,
+                " The patient has provided an example of a trigger for their PTSD symptoms, which aligns with the therapist's question. No clear conflict or inconsistency has been identified in the conversation history.\n\nList of conflicting lines (empty list because there are no conflicting lines): []"
+            ],
+            [
+                5,
+                " The patient's statement about being willing to learn more about managing triggers effectively (5) is consistent with the conversation history. There are no conflicting lines in the conversation history.\n\nReasoning: The patient has previously acknowledged trying some coping techniques (3) and has expressed a willingness to share more about their experiences with PTSD (1), which suggests openness to learning new strategies. The therapist has also suggested discussing potential coping strategies (4). Therefore, the patient's statement in line 5 aligns with the ongoing conversation.\n\nNo conflicting lines found: []"
+            ],
+            [
+                7,
+                " The patient's statement is consistent with the conversation history as it shows a willingness to learn and try new coping strategies. There is no clear conflict in the conversation history.\n\nEmpty list: []"
+            ],
+            [
+                9,
+                " The patient has expressed a desire to practice deep breathing exercises during a future session, which could be perceived as a potential inconsistency with their earlier statement about being willing to learn and try new coping strategies (line 5). However, the patient has not explicitly stated that they will not practice the technique, but rather that they would like to remember it better before trying it.\n\nReasons: The patient's response might suggest a need for more time to prepare or a preference for reinforcing the technique before trying it.\n\nConflicting lines: [5]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " NO, this line aligns with the provided background. The patient mentions dealing with PTSD, which suggests they have experienced trauma, which is consistent with their background as a veteran and former army medic. The struggle to open up and share experiences also aligns with their stated skepticism and tendency to shut down emotional questions."
+            ],
+            [
+                3,
+                " NO. This line aligns with the provided background as it suggests the patient has been through traumatic experiences (in the military), which could lead to triggers such as loud noises and crowded places, causing feelings of helplessness, which is a common symptom of PTSD, a condition that many veterans may face."
+            ],
+            [
+                5,
+                " NO. The line aligns with the provided background as the patient is indicating a willingness to learn more about managing triggers effectively, which suggests they are open to therapy and improving their coping mechanisms. However, they may still exhibit some skepticism and guardedness during the process."
+            ],
+            [
+                7,
+                " NO, this line aligns with the provided background. The patient is open to trying a suggested approach (deep breathing exercises) as part of the therapy process, demonstrating a willingness to engage despite maintaining a cautious and guarded approach."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient is open to continuing the therapy process by looking forward to the next session, which suggests a level of trust and commitment despite initial reservations."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 1.0
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 26-year-old barista and I just got out of a toxic relationship. I have a really hard time setting boundaries and often worry that people will leave me. I'm trying to work on that. I try hard to make the therapist like me. I mirror their language and avoid conflict. I often go along with what they say even if I\u2019m unsure, and I have trouble expressing my own needs.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand your feelings are complicated right now. Can you help me understand why you might be avoiding discussing them more deeply? Let's explore together what might be holding you back from addressing these emotions directly.\n"
+            ],
+            [
+                1,
+                "Patient: I'm afraid of being judged or rejected, and I fear that expressing my feelings might push people away. I've been practicing, but it's still challenging for me.\n"
+            ],
+            [
+                2,
+                "Therapist: I appreciate your vulnerability, and I want you to know that I'm here to support you. Let's consider together, what are some possible positive outcomes if you were to share your feelings honestly with others, despite the fear of judgment or rejection?\n"
+            ],
+            [
+                3,
+                "Patient: I'm hopeful for stronger connections and understanding if I open up, but it still feels risky. I'm eager to learn strategies for expressing my feelings more confidently.\n"
+            ],
+            [
+                4,
+                "Therapist: That's a valuable insight, and I'm glad to see your desire for stronger connections. Let's work on building your confidence in expressing your feelings. We can start by identifying triggers and patterns that lead to avoidance, and then develop strategies to manage them effectively.\n"
+            ],
+            [
+                5,
+                "Patient: I appreciate your guidance, therapist. I'd like to start by identifying my patterns of avoidance and discussing strategies for managing them.\n"
+            ],
+            [
+                6,
+                "Therapist: Let's begin by reflecting on specific situations where you usually feel the need to avoid expressing your feelings. Once we've identified those, we can discuss strategies for confronting them head-on, fostering self-awareness, and building resilience.\n"
+            ],
+            [
+                7,
+                "Patient: One situation I recall is during arguments with my ex, where I would often suppress my feelings to avoid confrontation. A strategy I'd like to explore is assertive communication.\n"
+            ],
+            [
+                8,
+                "Therapist: Great progress! Let's focus on assertive communication as a tool for your growth. We can start by exploring different assertive communication styles and role-playing scenarios to practice expressing your feelings effectively.\n"
+            ],
+            [
+                9,
+                "Patient: Thank you for your guidance, Therapist. I'm looking forward to learning and practicing assertive communication to foster healthier relationships.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to express their fear of judgement, rejection, and the difficulty they face in expressing their feelings, which is consistent with their background as they have a hard time setting boundaries and expressing their own needs due to fear of abandonment. YES, the line fits their background as it reflects their struggle with emotional vulnerability and assertiveness."
+            ],
+            [
+                3,
+                " The speaker intends to express a desire for healthier relationships and the need for personal growth in asserting their feelings. This intention is consistent with their background, as they are acknowledging their struggles with boundaries and expressing their feelings, which are key areas they are trying to work on.\n\nYes, the line is consistent with the background."
+            ],
+            [
+                5,
+                " The speaker intends to work on their patterns of avoidance and seek guidance from the therapist, which fits their background as they have difficulty expressing their own needs and often avoid conflict. YES, this line is consistent with the background as the patient is actively acknowledging their issues and taking steps to address them."
+            ],
+            [
+                7,
+                " The speaker's intention appears to be expressing a desire to work on their communication skills, specifically towards becoming more assertive, in order to establish healthier boundaries and express their feelings more effectively. This intention is consistent with their background as they have previously mentioned struggling with setting boundaries, avoiding conflict, and difficulty expressing their own needs.\n\n(Yes, the line is consistent with the background.)"
+            ],
+            [
+                9,
+                " The speaker's intention appears to be expressing a desire to learn and practice assertive communication, which fits their background as they are trying to work on setting boundaries and expressing their own needs in relationships. YES, the line is consistent with their background as it demonstrates a proactive approach to addressing their struggles with assertiveness and communication."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.4,
+        "eval_index_consistency": [
+            [
+                3,
+                " The patient's line is consistent with the previous lines in the conversation, as they express a hope for stronger connections and understanding but still acknowledge the fear of judgment and rejection. They also express a desire to learn strategies for expressing their feelings more confidently, which aligns with their earlier statement about practicing to express their feelings.\n\nEmpty list, as there are no conflicting lines in the conversation history from the patient."
+            ],
+            [
+                5,
+                " Reasoning: The patient's statement aligns with the therapist's previous suggestions and does not present any conflicts in the conversation.\n\nConflicting lines: []"
+            ],
+            [
+                7,
+                " The patient's statement does not contradict the previous conversation. They are acknowledging a specific situation of avoiding expressing feelings and expressing a desire to explore a strategy (assertive communication) to address this issue. No conflicting lines found in the conversation history.\n\nReasoning: The patient is providing a specific example of a situation where they have difficulty expressing feelings and showing interest in learning a strategy to improve their communication. This aligns with the therapist's guidance and the patient's earlier statements about wanting to identify patterns of avoidance and strategies for managing them.\n\n[No conflicting lines found.]"
+            ],
+            [
+                9,
+                " The Patient's statement aligns with the therapy session's goals and does not present a clear conflict with the conversation history.\n\nReasoning: The Patient expresses gratitude for the therapist's guidance and looks forward to learning and practicing assertive communication, which is a continuation of their ongoing therapy session.\n\nConflicting lines list: []"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. While the line indicates a fear of being judged or rejected, which aligns with the patient's background, it contradicts the part where the patient tries hard to make people like them, suggesting they might be more concerned about losing connection rather than being rejected outright."
+            ],
+            [
+                3,
+                " NO. This line aligns with the provided background as the patient is expressing a desire for stronger connections, understanding, and confidence in expressing feelings, which are indicative of their efforts to work on setting boundaries and expressing their own needs."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient is expressing a desire to work on their patterns of avoidance, which is part of their effort to improve their boundary-setting skills and self-expression."
+            ],
+            [
+                7,
+                " YES. While the patient acknowledges a desire for assertive communication, their background suggests they struggle with expressing their own needs and often suppress their feelings, which is the opposite of assertive communication."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient is expressing a desire to learn and practice assertive communication, which is a positive step towards setting boundaries and expressing their own needs, both of which they mentioned as things they are trying to work on."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.6
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 39-year-old data scientist dealing with the loss of my father. I\u2019m in therapy to process the grief, but I\u2019d rather focus on the practical aspects of what\u2019s happening than talk about my emotions. I tend to stay detached and analytical. I talk about the situation like it\u2019s a project I\u2019m managing, using logic and facts. I avoid emotional reflection whenever possible.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand you're feeling overwhelmed, and it's natural to want to avoid these emotions. Can we explore together why you might be avoiding dealing with these feelings? Let's consider what might happen if we address them head-on, and how that could bring about a sense of relief and progress.\n"
+            ],
+            [
+                1,
+                "Patient: I understand your point, but I find it challenging to delve into emotions. Perhaps discussing specific triggers and their impact on my work and personal life could help me better manage the situation.\n"
+            ],
+            [
+                2,
+                "Therapist: I appreciate your openness, and I'd like to delve deeper. Can we identify some of the specific triggers you've mentioned, and then examine how they might be connected to your emotions? This could potentially unlock insights that help you better navigate your work and personal life.\n"
+            ],
+            [
+                3,
+                "Patient: I can list some triggers like visiting my father's empty house or hearing a song he used to play. These situations often cause a drop in productivity and increased stress at work. Understanding the emotional response to these triggers could help me develop coping strategies.\n"
+            ],
+            [
+                4,
+                "Therapist: Let's explore the connection between those triggers and the emotions they evoke. How do these feelings affect your productivity and stress levels, and what thoughts or beliefs might be reinforcing this cycle?\n"
+            ],
+            [
+                5,
+                "Patient: My father's house reminds me of memories, and the song triggers emotional attachment. The emotions lead to distraction, affecting my productivity, and I believe this is due to my mind dwelling on the past instead of focusing on the present.\n"
+            ],
+            [
+                6,
+                "Therapist: I'd like to delve further into these feelings of emotional attachment. Can we explore the specific memories or feelings associated with your father's house and the song? Understanding these connections might provide additional insights into your coping strategies.\n"
+            ],
+            [
+                7,
+                "Patient: My father's house holds memories of his presence and the family we used to be. The song was a shared joy between us, and its melody evokes nostalgia. Understanding these associations could help me cope better.\n"
+            ],
+            [
+                8,
+                "Therapist: It seems you're finding comfort in nostalgia, but it also seems to be a source of distress. Can we examine the dual nature of these memories and how they contribute to your feelings of being overwhelmed?\n"
+            ],
+            [
+                9,
+                "Patient: Understanding the duality of these memories could help me find a balance, allowing me to appreciate the good times without the overwhelming emotions. I'd like to learn strategies to maintain focus and productivity in the face of these triggers.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to find a middle ground in therapy, focusing on practical and tangible aspects of their grief that have an impact on their work and personal life, while still avoiding direct emotional reflection. This intention fits their background as a data scientist who prefers to approach problems in a detached, analytical manner.\n\nYES, the line and its intended meaning are consistent with the background. The speaker is seeking to discuss practical triggers and their impact, which aligns with their preference for dealing with situations like a project."
+            ],
+            [
+                3,
+                " The speaker intends to identify and understand the emotional responses to specific triggers as a means to develop coping strategies. This intention fits their background, as they prefer a practical and analytical approach to dealing with their grief, and are looking to manage the impact of the loss on their professional life.\n\n(NO) This line does not contradict the background, as the speaker is trying to approach their grief in a practical, data-driven manner, which aligns with their background as a data scientist."
+            ],
+            [
+                5,
+                " The speaker intends to express how certain triggers, such as his father's house and a particular song, evoke emotions that interfere with his productivity by causing him to dwell on the past. This intention is consistent with the patient's background as they tend to approach situations from a detached, analytical perspective and focus on practical aspects. The line does not contradict the background because it shows how the emotional impact of his father's loss affects his productivity, a practical aspect that the patient is concerned about."
+            ],
+            [
+                7,
+                " The speaker intends to explore the emotional connections and associations linked with certain items and experiences from their past, such as memories in their father's house or shared musical moments. This intention fits their background, as it aligns with a desire to approach the grief in a practical manner by understanding the emotional aspects that are affecting them, albeit in a more analytical and detached way. (Yes, the line is consistent with their background as it demonstrates an attempt to process their emotions using a logical and fact-based approach.)"
+            ],
+            [
+                9,
+                " The speaker intends to find a way to manage their emotions and triggers associated with their father's loss while maintaining productivity, which fits their analytical and detached background. They are seeking strategies to cope with the emotional aspect of their grief in a practical, data-driven manner, which aligns with their approach to problem-solving. YES, the line is consistent with their background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                " Reasoning: The patient has provided specific triggers that cause a drop in productivity and increased stress at work, which aligns with the ongoing discussion.\n\nConflicting lines list: [] (There is no clear conflict in the conversation history with the current line.)"
+            ],
+            [
+                5,
+                " The patient's statement about the emotions causing distraction affecting productivity aligns with the previous conversation. There are no conflicting lines in the conversation history.\n\nList of conflicting lines is empty: []"
+            ],
+            [
+                7,
+                " The patient's current line does not conflict with the conversation history as it provides more detail about the emotional associations related to the triggers.\n\nReasoning: The patient is providing additional information about the emotional connections to the triggers, which deepens the understanding of their emotions and how they are affected.\n\nConflicting lines list: []"
+            ],
+            [
+                9,
+                " The patient's statement aligns with the previous discussion, indicating no clear conflict.\n\nReasoning: The patient is expressing a desire to understand and manage the dual nature of their memories, which is a logical progression from discussing the emotional impact of triggers and their connections to feelings.\n\nEmpty list because there is no conflict with the previous lines."
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. The line contradicts the provided background because although the patient mentions managing the situation, they are showing a willingness to discuss emotional triggers and their impact, which is a departure from their usual detached and analytical approach."
+            ],
+            [
+                3,
+                " NO, this line aligns with the provided background. The patient is expressing a desire to understand the practical impact of emotional triggers (drop in productivity and increased stress) and find coping strategies, which is consistent with their analytical and detached approach."
+            ],
+            [
+                5,
+                " YES, this line contradicts the provided background. While the patient tends to avoid emotional reflection and discuss the situation in a detached and analytical manner, this line shows a moment of emotional awareness and reflection, acknowledging the emotional impact of his father's house and a song."
+            ],
+            [
+                7,
+                " NO, this line aligns with the provided background. The patient is acknowledging the emotional aspects of the situation but doing so in a detached, analytical way, focusing on the associations and memories that could potentially help them cope."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient is showing an analytical and detached approach by wanting to understand the duality of memories (a logical perspective) and seeking strategies to maintain focus and productivity (practical aspects). They are expressing a desire to manage their emotions in a controlled manner, which is consistent with their stated tendency to avoid emotional reflection whenever possible."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.6
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 31-year-old freelance photographer who tends to spiral into depressive episodes during the winter months. Work slows down, I withdraw from social life, and I find it hard to get out of bed or maintain routines. Lately, I\u2019ve been struggling to find meaning in what I do, and I often feel like I\u2019m failing at adulthood. I speak in a low-energy tone and sometimes pause for a while before answering. I\u2019m often self-deprecating, question the point of therapy, and struggle to find hopeful language when describing my life.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I appreciate your sharing that you've been feeling overwhelmed, John. Can you help me understand what specific situations or thoughts are causing this feeling? I'd like to explore those areas together to gain a clearer picture and find strategies to manage your emotions more effectively.\n"
+            ],
+            [
+                1,
+                "Patient: I struggle with feeling unproductive during the winter, especially when work slows down. I question if my work has any real purpose sometimes.\n"
+            ],
+            [
+                2,
+                "Therapist: I see you've identified a pattern of feeling unproductive during winter and questioning your work's purpose. Let's delve deeper into these feelings, John. Can you share more about what specifically makes you feel unproductive or doubtful about your work during the winter months?\n"
+            ],
+            [
+                3,
+                "Patient: I feel like I'm not creating anything meaningful, and the lack of sun affects my energy levels, making it hard to focus. I often compare myself to others who seem to thrive in winter.\n"
+            ],
+            [
+                4,
+                "Therapist: I see you're battling with self-doubt and feeling overshadowed by others during winter, John. It's essential we address these comparisons and energy levels. Let's discuss strategies to maintain focus and productivity, despite the seasonal changes. Can we explore these aspects further in our next session?\n"
+            ],
+            [
+                5,
+                "Patient: Yes, I'd appreciate that. Also, I've been trying to force myself to exercise more during winter to boost my energy levels.\n"
+            ],
+            [
+                6,
+                "Therapist: Great, John. Let's examine how exercise can contribute to your energy levels and productivity, and discuss potential barriers that might arise in maintaining this routine. Also, let's explore other self-care strategies that could help you manage winter-related energy fluctuations during our next session.\n"
+            ],
+            [
+                7,
+                "Patient: I appreciate that, Therapist. Another issue is my social life dwindling during winter, which I've noticed exacerbates my feelings of isolation. Can we discuss ways to stay connected with people despite the cold weather and shorter days?\n"
+            ],
+            [
+                8,
+                "Therapist: Absolutely, John. Let's brainstorm social activities that can be enjoyed indoors or outdoors, depending on the weather. We can also explore ways to strengthen your current relationships and possibly make new connections in the upcoming session.\n"
+            ],
+            [
+                9,
+                "Patient: Thank you, Therapist. I also struggle with finding motivation to maintain my routine and stay hopeful. Can we discuss strategies to boost my motivation and foster a more positive outlook during winter?\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to express their struggle with finding purpose in their work, particularly during the winter months when their productivity decreases. This intention is consistent with their background as a freelance photographer who questions the meaning of their work and experiences a lack of motivation during the winter. YES, the line and its intended meaning are consistent with the background."
+            ],
+            [
+                3,
+                " The speaker intends to express feelings of inadequacy and lack of productivity during the winter, which is consistent with their background as a freelance photographer who struggles with depressive episodes during this season. They feel discouraged because they compare themselves to others who seem to thrive in winter, suggesting a lack of self-confidence and possibly self-criticism. YES, the line is consistent with the background as it highlights the challenges they face during the winter months."
+            ],
+            [
+                5,
+                " The speaker seems to intend to express their effort to combat their winter-related depressive episodes by taking proactive steps, such as exercising more, in an attempt to boost their energy levels. This intention fits their background as it reflects an attempt to address the challenges they face during winter, which is consistent with their struggle to maintain routines and energy levels during this period.\n\nYES, the line is consistent with their background."
+            ],
+            [
+                7,
+                " The speaker intends to discuss strategies for maintaining social connections during the winter months, as they have noticed that their social life dwindles during this time and it exacerbates their feelings of isolation, which fits their background as a freelance photographer who tends to spiral into depressive episodes during the winter.\n\nNO, the line and its intended meaning do not contradict the background because the speaker is expressing a concern that is directly related to their winter depression and the challenges they face during this season."
+            ],
+            [
+                9,
+                " The speaker intends to express a desire to work on strategies to boost their motivation and cultivate a more positive outlook during the winter months, which is consistent with their background as a freelance photographer who struggles with depression and loss of motivation during the winter months. YES, the line is consistent with their background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.2,
+        "eval_index_consistency": [
+            [
+                3,
+                " The Patient's statement about feeling unproductive and questioning the purpose of their work (1) aligns with the previous exchange. However, the Patient now mentions a lack of sunlight affecting their energy levels and difficulty focusing, which might contradict a potential assumption that the Patient has a stable living environment with proper lighting (information not explicitly stated in the background or conversation history).\n\nReasons: The mention of sunlight and energy levels implies a potential impact of the physical environment on the Patient's mood, which could suggest inconsistencies with a stable living environment.\n\nIndices of conflicting lines: [0] (Since there is no explicit mention or confirmation about the Patient's living conditions in the given conversation history.)"
+            ],
+            [
+                5,
+                " Reasoning: The patient's statement about trying to force themselves to exercise more to boost their energy levels seems inconsistent with previous statements about how the lack of sun affects their energy levels, making it hard to focus.\n\nIndices of conflicting lines: [3]"
+            ],
+            [
+                7,
+                " The patient has introduced a new issue, which is their dwindling social life during winter, that was not previously mentioned as a significant contributor to their feelings of isolation.\n\nThere is no clear conflict with any previous lines in the conversation history. The patient has mentioned feeling unproductive, questioning work's purpose, struggling with self-doubt, and energy levels being affected by the lack of sunlight, but they have not explicitly discussed their social life as a factor until now.\n\nTherefore, the list of conflicting lines is empty: []"
+            ],
+            [
+                9,
+                " Reasoning: The patient is expressing a concern about finding motivation and maintaining a positive outlook, which seems to be related to their overall feelings of unproductivity and low energy levels during winter. However, this concern is not explicitly conflicting with any previous lines in the conversation history.\n\nConflicting lines list: []"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. While the line aligns with the struggle with work slowing down during winter and questioning the purpose of work, it doesn't mention the depressive episodes, social withdrawal, low energy, self-deprecation, questioning the point of therapy, or difficulty finding hopeful language, which are all part of the provided background."
+            ],
+            [
+                3,
+                " YES. The line suggests a lack of meaningful creation in the patient's work, which is not explicitly mentioned in their background. However, the line does align with their struggle during winter months and their self-deprecating tendencies."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient mentions trying to exercise more during winter to boost their energy levels, which could be a positive step towards maintaining routines and combating depression symptoms, as regular exercise is known to improve mood and energy levels."
+            ],
+            [
+                7,
+                " NO. This line aligns with the provided background as it discusses the patient's struggle with social isolation during winter, which is a common issue they mentioned in their background."
+            ],
+            [
+                9,
+                " NO, the line aligns with the provided background. The patient is expressing a desire to find strategies to boost their motivation and foster a more positive outlook during winter, which is a struggle they mentioned in their background."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.6
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 24-year-old grad student in a highly competitive PhD program. I constantly feel like I don\u2019t belong and worry that my advisor is going to realize I\u2019m a fraud. Even though I get praise sometimes, I never believe it\u2019s sincere. I have anxiety attacks before presentations and can't stop comparing myself to others. I often minimize my accomplishments and second-guess myself out loud. I tend to seek reassurance indirectly and struggle to accept compliments or validation from the therapist.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand you've mentioned feeling stuck in your current situation. Can you help me understand what specific aspects of this situation are causing you discomfort? I notice you tend to avoid discussing these issues directly. Let's explore this avoidance together, as it might be a key to understanding your feelings better.\n"
+            ],
+            [
+                1,
+                "Patient: I feel overwhelmed by the constant comparison to my peers and the fear of being exposed as a fraud. I find it hard to accept praise, even when I deserve it.\n"
+            ],
+            [
+                2,
+                "Therapist: I hear your concerns about comparison and imposter feelings. Let's delve deeper into these thoughts. Can you share an instance where you felt like a fraud, and how it might be connected to your current discomfort?\n"
+            ],
+            [
+                3,
+                "Patient: I remember the first time I presented my research in front of my advisor. I felt like I was stumbling through it, and when he praised my work, I thought it was just being polite. It's a pattern that's been repeating itself ever since.\n"
+            ],
+            [
+                4,
+                "Therapist: It's interesting how that initial experience may have set a pattern of self-doubt. Let's consider if this pattern is still serving you positively or if it's time to challenge it. How might re-framing your advisor's praise as genuine help you approach your work differently?\n"
+            ],
+            [
+                5,
+                "Patient: I see your point. If I start to believe that my advisor's praise is sincere, it could help reduce my anxiety and improve my self-confidence. I'm ready to try reframing it.\n"
+            ],
+            [
+                6,
+                "Therapist: Great progress! Now let's build on this. Can we identify any specific beliefs or thoughts that might be reinforcing this pattern of self-doubt? We can challenge these beliefs together, fostering self-awareness and resilience.\n"
+            ],
+            [
+                7,
+                "Patient: I think my fear of not being good enough might be the root of my self-doubt. I've always been hard on myself, setting high standards that I often struggle to meet.\n"
+            ],
+            [
+                8,
+                "Therapist: Let's explore this fear of not being good enough. How might it have originated, and are there any ways you can reframe these self-imposed standards to foster growth instead of self-criticism?\n"
+            ],
+            [
+                9,
+                "Patient: I believe this fear has been ingrained since childhood, where I was always expected to excel. I need to learn to set realistic goals and focus on growth, not just perfection.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to express their feelings of self-doubt, comparison, and fear of being exposed as a fraud, which are consistent with their background. They also acknowledge their struggle in accepting praise, which further aligns with their background of struggling to accept compliments or validation. YES, the line and its intended meaning fit the background very well."
+            ],
+            [
+                3,
+                " The speaker intends to express their persistent self-doubt and inability to accept praise from their advisor. This intention fits their background, as they consistently question the sincerity of the praise they receive and struggle with impostor syndrome, feeling like they don't belong in their PhD program. The line does not contradict their background, as it demonstrates the recurring pattern of their feelings of inadequacy and self-doubt."
+            ],
+            [
+                5,
+                " The speaker intends to work on improving their self-confidence and reducing anxiety by accepting their advisor's praise as sincere. This intention is consistent with their background, as the feelings of inadequacy and self-doubt they experience are evident in their struggle to believe in the sincerity of the praise they receive."
+            ],
+            [
+                7,
+                " The speaker's intention is to express their self-doubt and high personal standards that they often find challenging to meet, which aligns with their background as a student constantly feeling like they don't belong and struggling to believe praise is sincere.\n\nYES, the line is consistent with the background as it directly reveals the speaker's struggle with self-doubt and high personal expectations, which are central themes in their background."
+            ],
+            [
+                9,
+                " The speaker intends to express that their current anxiety and impostor syndrome, as evidenced by their fear of not belonging, constant self-doubt, and inability to accept compliments, originated from childhood expectations of excellence. This intention is consistent with their background as a high-achieving grad student who feels pressure to excel and fears being exposed as a fraud.\n\nYes, the line is consistent with their background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.6,
+        "eval_index_consistency": [
+            [
+                3,
+                " The patient's current statement (3) does not appear to conflict with any previous statements. The patient is discussing an instance of feeling like a fraud, which aligns with their earlier statements about these feelings (1) and the therapist's prompt (2).\n\nReasoning: The patient is providing a specific example that supports their earlier claims about feeling like a fraud and avoiding acceptance of praise.\n\nEmpty list as there are no conflicting lines in the conversation history: []"
+            ],
+            [
+                5,
+                " Reasoning: The patient has agreed to try reframing their advisor's praise as genuine, which aligns with the therapist's suggestions.\n\nConflicting lines list (empty list as there is no conflict): []"
+            ],
+            [
+                7,
+                " The Patient's statement aligns with the conversation history. The fear of not being good enough is indeed a belief that might be reinforcing the pattern of self-doubt (as mentioned in the therapist's line at index 6). No clear conflicts have been identified in the conversation history.\n\nReasoning: The Patient's statement about self-doubt being rooted in the fear of not being good enough is in agreement with the therapist's question about identifying beliefs reinforcing the pattern of self-doubt (index 6). The Patient's statement is not contradictory to any previous statements made in the conversation history.\n\nConflicting lines list: []"
+            ],
+            [
+                9,
+                " Reasoning: The patient's current line aligns with their previous statements about setting realistic goals and focusing on growth rather than perfection.\n\nList of conflicting lines (empty in this case as there are no conflicting lines): []"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. While the line does align with feeling overwhelmed by comparison and struggling to accept praise, the provided background also mentions frequent anxiety attacks before presentations and minimizing accomplishments, which are not explicitly mentioned in the line."
+            ],
+            [
+                3,
+                " YES. The line contradicts the background because it specifically mentions a situation where the patient received praise from their advisor, which goes against the pattern they've established in their background of not believing the praise is sincere."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient is open to accepting their advisor's praise as sincere and trying to reframe their perspective, which is a step towards addressing their self-doubt and low self-confidence."
+            ],
+            [
+                7,
+                " YES. While the line acknowledges the self-doubt and high standards, it does not mention the specific fears of not belonging, imposter syndrome, anxiety attacks, or the struggle to accept compliments, which are key elements of the provided background."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient's fear of not belonging and impostor syndrome (believing they are a fraud) can stem from childhood experiences where they were expected to excel, which may contribute to their current struggle with perfectionism and self-doubt."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.4
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 46-year-old school principal who's been asked to attend therapy after a couple of emotional outbursts at work. My spouse says I have trouble expressing feelings unless it\u2019s anger. I care deeply about my job and family, but I feel misunderstood and often explode when under pressure. I speak confidently and assertively but get defensive if I feel judged. I deflect vulnerable topics by focusing on other people\u2019s faults or bringing up work responsibilities.",
+        "conversation": [
+            [
+                0,
+                "Therapist: Patient, I appreciate your sharing today. It seems there's a fear underlying your reluctance to change. Can you help me understand why you might be apprehensive about stepping out of your comfort zone? Additionally, I've noticed a pattern in our sessions where we discuss potential growth areas, yet progress seems stagnant. Let's delve deeper into this pattern to uncover any hidden barriers.\n"
+            ],
+            [
+                1,
+                "Patient: I'm apprehensive because I fear change might make me vulnerable, and I've built a coping mechanism around my defenses. I've noticed that I often revert to discussing others' faults when feeling uncomfortable or threatened.\n"
+            ],
+            [
+                2,
+                "Therapist: I'd like to explore this vulnerability further. Can we discuss what specific fears or anxieties you might encounter if you were to let go of your defenses? Also, let's consider the potential benefits of focusing on personal growth instead of others' faults, as a means to empower yourself.\n"
+            ],
+            [
+                3,
+                "Patient: I'm afraid of appearing weak and losing control, but I also see the potential for greater connection and understanding if I can manage my emotions better. Focusing on others' faults has been a shield, but it may hinder personal growth.\n"
+            ],
+            [
+                4,
+                "Therapist: Let's examine how focusing on personal growth may lead to a stronger sense of self and empowerment. Additionally, let's explore ways to manage vulnerability effectively, so it doesn't feel overwhelming.\n"
+            ],
+            [
+                5,
+                "Patient: I understand that personal growth can help me take control and strengthen my emotional resilience. Managing vulnerability effectively will help me maintain balance and avoid feeling overwhelmed.\n"
+            ],
+            [
+                6,
+                "Therapist: Great, let's identify specific steps towards personal growth and self-empowerment that resonate with you. Also, let's work on strategies to manage vulnerability, ensuring you maintain control while fostering openness.\n"
+            ],
+            [
+                7,
+                "Patient: I'd like to focus on mindfulness practices for self-awareness and emotional regulation. I'm also open to exploring assertive communication techniques to express feelings constructively.\n"
+            ],
+            [
+                8,
+                "Therapist: Let's begin by incorporating mindfulness into daily life to enhance self-awareness. Next, we'll practice assertive communication to express feelings effectively while maintaining control. Now, let's explore any potential obstacles that may arise in implementing these strategies.\n"
+            ],
+            [
+                9,
+                "Patient: I'm excited to begin mindfulness practice and assertive communication exercises. Let's also address any potential roadblocks together to ensure my success. Looking forward to our continued sessions.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to acknowledge their defensive behavior and vulnerability, and express concerns about changing their coping mechanism. This intention is consistent with their background, as they have a history of difficulty expressing feelings and deflecting vulnerable topics, often by focusing on others' faults. YES, the line is consistent with their background."
+            ],
+            [
+                3,
+                " The speaker intends to acknowledge their defensive behavior and the need for emotional growth, which fits their background as they struggle to express feelings other than anger and deflect vulnerable topics. There is no contradiction in this line as it aligns with the patient's statement about wanting to manage their emotions better and recognizing that focusing on others' faults might be hindering personal growth."
+            ],
+            [
+                5,
+                " The speaker intends to acknowledge the need for personal growth and emotional resilience to better manage their vulnerabilities and avoid overwhelming emotions, which fits their background as they have been asked for therapy due to emotional outbursts. YES, this line is consistent with their background. The speaker acknowledges their difficulty in managing emotions and seeks to improve their emotional resilience, which is in line with the issues they have been facing."
+            ],
+            [
+                7,
+                " The speaker intends to take a proactive step towards addressing their emotional outbursts and communication issues by focusing on mindfulness practices for self-awareness and emotional regulation, as well as assertive communication techniques. This intention fits their background as they are a principal who has been asked to attend therapy due to emotional outbursts and a perceived inability to express feelings except anger. The fact that they are open to exploring assertive communication techniques suggests an awareness of their defensive behavior and a desire to change it, aligning with their background.\n\nYes, the line or its intended meaning is consistent with their background."
+            ],
+            [
+                9,
+                " The speaker intends to actively engage in therapy, focusing on mindfulness and assertive communication to address their difficulties in expressing feelings beyond anger. This intention is consistent with their background as they acknowledge the need for improvement in emotional expression and personal growth. YES, the line is consistent with the background."
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.4,
+        "eval_index_consistency": [
+            [
+                3,
+                " The patient acknowledges the potential benefits of focusing on personal growth and managing emotions better (4), which seems consistent with the previous lines. However, there is no clear conflict or inconsistency in the conversation history.\n\nEmpty list: []"
+            ],
+            [
+                5,
+                " The statement by the patient does not appear to be in conflict with the previous lines.\n\nReasoning: The patient's statement reinforces their understanding of the benefits of personal growth and managing vulnerability, which aligns with the discussion in the previous lines.\n\nConflicting lines list: []"
+            ],
+            [
+                7,
+                " The patient's statement does not seem to conflict with the conversation history. They are expressing a willingness to engage in practices that were previously discussed as being beneficial for personal growth and emotional regulation (mindfulness practices) and assertive communication (expressing feelings constructively).\n\nReasoning: The patient is expanding on the strategies for managing vulnerability and personal growth that were already agreed upon in the conversation.\n\nEmpty list since there is no conflict found in the conversation history."
+            ],
+            [
+                9,
+                " The patient's excitement about starting mindfulness practice and assertive communication exercises does not seem to conflict with any previous lines in the conversation history.\n\nEmpty list: []"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " NO, the line aligns with the provided background. The patient acknowledges their tendency to deflect vulnerable topics by focusing on other people's faults, which is consistent with the background information."
+            ],
+            [
+                3,
+                " NO, this line aligns with the provided background. The patient expresses an awareness of their emotional difficulties, a desire for better emotional management, and an understanding that their defensive behavior may be hindering personal growth, which are consistent with their stated issues in the background."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient acknowledges the need for personal growth, which indicates an understanding of their emotional challenges, and expresses a desire to manage vulnerability effectively, suggesting an intent to address their difficulty in expressing feelings other than anger."
+            ],
+            [
+                7,
+                " NO, this line aligns with the provided background. The patient is expressing a desire to work on emotional regulation, which suggests an awareness of their emotional outbursts, and to express feelings constructively, which indicates an intention to address their struggle with expressing feelings other than anger."
+            ],
+            [
+                9,
+                " NO. This line aligns with the provided background as the patient expresses a willingness to work on improving their communication skills and addressing potential issues, which can be seen as a step towards expressing feelings beyond anger and addressing defensive behavior."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 1.0
+    },
+    {
+        "task_name": "Therapy",
+        "topic": "",
+        "grade": "",
+        "P1": "",
+        "P2": "I am a 33-year-old UX designer in a fast-paced startup. I feel constant pressure to be perfect \u2014 in my work, relationships, even in therapy. I make endless to-do lists but feel like I'm never doing enough. I lie awake at night thinking about what I forgot to do. I talk quickly and sometimes overwhelm the conversation with details. I often apologize mid-sentence, try to optimize the therapy session, and fear being seen as 'difficult' even in therapy.",
+        "conversation": [
+            [
+                0,
+                "Therapist: I understand you've mentioned feeling stuck in your current situation. Can you help me understand why you believe this is the case? I'm curious, have you considered exploring potential barriers or fears that might be holding you back from making changes?\n"
+            ],
+            [
+                1,
+                "Patient: I feel like my need for perfection and fear of being seen as difficult might be hindering my ability to make changes. I often find myself caught up in the details and struggling to step back and see the bigger picture.\n"
+            ],
+            [
+                2,
+                "Therapist: It's interesting that you identify perfectionism and fear of being seen as difficult as potential obstacles. Let's delve deeper into these feelings. Can you share an example of a situation where these thoughts might have prevented you from making a change? This could help us better understand how they're impacting your current situation.\n"
+            ],
+            [
+                3,
+                "Patient: I remember a project at work where I spent countless hours perfecting a design, which led to delayed deadlines and stress. I fear that if I don't do everything perfectly, I'll be seen as incompetent.\n"
+            ],
+            [
+                4,
+                "Therapist: It seems the fear of being perceived as incompetent is a significant concern. Let's examine this fear more closely. Can we explore the origins of this fear and how it might be contributing to your current predicament?\n"
+            ],
+            [
+                5,
+                "Patient: I think this fear stems from past experiences where I was criticized for minor mistakes. It's causing me to overthink and overwork, which affects my productivity and mental health.\n"
+            ],
+            [
+                6,
+                "Therapist: It's clear that past experiences have shaped your current fears. Let's work together to reframe these experiences and understand how they can help you grow instead of holding you back. How about we explore strategies to manage your perfectionism and fear of criticism, so you can maintain quality work without sacrificing your well-being?\n"
+            ],
+            [
+                7,
+                "Patient: I appreciate your guidance. One strategy I've heard about is setting realistic goals and accepting that perfection isn't always achievable. Also, I'd like to learn techniques to challenge my inner critic and develop self-compassion.\n"
+            ],
+            [
+                8,
+                "Therapist: Great, let's start by setting achievable goals and breaking down larger tasks into manageable parts. This can help reduce the pressure of perfection and allow for more progress. Also, exploring mindfulness and self-compassion practices may help you manage your inner critic and improve your overall well-being.\n"
+            ],
+            [
+                9,
+                "Patient: Thank you for your guidance, therapist. I'm looking forward to practicing these strategies and seeing improvements in my work and well-being. I'll also research mindfulness and self-compassion techniques to help manage my inner critic.\n"
+            ]
+        ],
+        "pturn": 1,
+        "index": -1,
+        "timestamp": "",
+        "rounds": 10,
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                " The speaker intends to express their struggle with their perfectionist tendencies and fear of being perceived as difficult, which is consistent with their background. They are aware that these traits might be hindering their personal growth and ability to make changes. YES, the line is consistent with their background as it reflects their constant pressure to be perfect, fear of being seen as difficult, and their tendency to focus on details."
+            ],
+            [
+                3,
+                " The speaker intends to express their fear of being perceived as incompetent if they do not achieve perfection in their work, which is consistent with their background of feeling constant pressure to be perfect at work and fearing being seen as incompetent. (YES) This fear likely stems from a past incident at work, as indicated in their line about a project that led to delayed deadlines and stress."
+            ],
+            [
+                5,
+                " The speaker intends to express that their fear of being perceived as imperfect and being criticized for minor mistakes is deeply rooted in past experiences, which has led to an unhealthy pattern of overthinking, overworking, and poor mental health. This intention fits their background, as it shows the source of their constant pressure to be perfect and their fear of being seen as 'difficult' in various aspects of their life, including therapy.\n\nNo, the line does not contradict the background. Instead, it provides further insight into the reasons behind the behaviors and feelings described in the background."
+            ],
+            [
+                7,
+                " The speaker's intention appears to be seeking strategies to reduce the pressure they feel to be perfect, and to learn techniques for self-compassion, which is consistent with their background. They are actively acknowledging that perfection isn't always achievable and are seeking help to manage their inner critic, which aligns with their expressed feelings of constant pressure to be perfect and their self-critical tendencies.\n\nYES, the line or its intended meaning is consistent with the background."
+            ],
+            [
+                9,
+                " The speaker intends to take actionable steps towards managing their stress and self-criticism, which is consistent with their background of feeling pressure to be perfect and struggling with an inner critic. They are seeking to improve their work and well-being through guidance, self-compassion techniques, and mindfulness. (NO)"
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.4,
+        "eval_index_consistency": [
+            [
+                3,
+                " Reasoning: The patient's current statement is consistent with their previous lines in the conversation history, as they have already mentioned their fear of being seen as difficult or incompetent due to their perfectionism.\n\nEmpty list: []"
+            ],
+            [
+                5,
+                " The patient's current statement about the fear of being criticized for minor mistakes aligns with their previous statements (1, 3). There is no clear conflict in this line with the conversation history.\n\nReasoning: The patient is providing more detail about the origin of their fear, which is consistent with their past statements about their fear of being criticized and perceived as incompetent.\n\nConflicting lines list: []"
+            ],
+            [
+                7,
+                " The Patient's statement aligns with the conversation as they are discussing strategies to manage their perfectionism and fear of criticism. No clear conflict or inconsistency can be identified.\n\nReasoning: The Patient acknowledges strategies for managing their fears and perfectionism, which aligns with the therapist's guidance.\n\nConflicting lines: []"
+            ],
+            [
+                9,
+                " Reasoning: The patient expresses gratitude for the therapist's guidance and plans to practice the suggested strategies. There is no clear conflict with the conversation history.\nList of conflicting lines: []"
+            ]
+        ],
+        "P2_index_consistency_score": 1.0,
+        "eval_prompt_consistency_basic": [
+            [
+                1,
+                " YES. The line aligns with the patient's feelings of fearing perfection and being overwhelmed by details, but it suggests a new insight about their inability to step back and see the bigger picture, which was not explicitly mentioned in the provided background."
+            ],
+            [
+                3,
+                " YES. The line does not contradict the background, as it aligns with the patient's persistent need for perfection, especially in their work, which is a recurring theme in their background."
+            ],
+            [
+                5,
+                " NO, this line aligns with the provided background. The patient expresses fear and overthinking, which are symptoms of feeling pressured to be perfect, as mentioned in their background. The line also hints at past experiences of being criticized for minor mistakes, which might contribute to the patient's current anxiety and perfectionism."
+            ],
+            [
+                7,
+                " NO. This line aligns with the provided background as the patient is expressing an awareness of the need to set realistic goals and practice self-compassion, which can help alleviate the pressure to be perfect and the fear of being seen as difficult."
+            ],
+            [
+                9,
+                " NO, this line aligns with the provided background. The patient is seeking guidance and self-improvement, which is consistent with the pressure to be perfect and the desire to do more. They also plan to practice mindfulness and self-compassion techniques, which may help address the anxiety and inner critic mentioned in the background."
+            ]
+        ],
+        "P2_prompt_consistency_score_basic": 0.6
+    }
+]
