@@ -332,7 +332,7 @@ def main(argv):
         print("Using Education prompts")
         with open('config/education/config_education.json', 'r') as f:
             prompts = json.load(f)
-        exp_folder = './data/education/exp/04.28.25'
+        exp_folder = './education/exp/05.06.25'
         agents = (2,)
     elif config['task'] == 'Chatting':
         print("Using Chatting prompts")
