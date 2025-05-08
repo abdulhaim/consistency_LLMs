@@ -1,14 +1,39 @@
 {
+<<<<<<< HEAD
     "agent1_model": "Llama-3.1-8B-Instruct",
     "agent2_model": "Llama-3.1-8B-Instruct",
+<<<<<<<< HEAD:chatting/Llama-3.1-8B-Instruct.json
     "eval_model": "Llama-3.1-70B-Instruct",
     "iterations": 10,
     "verbose": false,
+========
+    "eval_model": "gpt-4o-mini",
+    "iterations": 40,
+    "verbose": false, 
+>>>>>>>> main:config/education/Llama-3.1-8B-Instruct.json
+=======
+    "agent1_model": "mistral-instruct",
+    "agent2_model": "mistral-instruct",
+    "eval_model": "Llama-3.1-8B-Instruct",
+    "iterations": 10,
+    "verbose": false,
+>>>>>>> main
     "write": true,
     "convo_length_limit": 10,
     "max_tokens": 256,
     "gpus": 1,
+<<<<<<< HEAD
+<<<<<<<< HEAD:chatting/Llama-3.1-8B-Instruct.json
     "seed": 0,
     "task_name": "Chatting",
     "model_dir": "/home/marwa/models/"
+========
+    "task_name": "Education",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+>>>>>>>> main:config/education/Llama-3.1-8B-Instruct.json
+=======
+    "seed": 0,
+    "task_name": "Chatting",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+>>>>>>> main
 }

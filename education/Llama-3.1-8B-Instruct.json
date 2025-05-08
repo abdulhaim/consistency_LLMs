@@ -1,14 +1,27 @@
 {
+<<<<<<< HEAD
     "agent1_model": "mistral-instruct",
     "agent2_model": "mistral-instruct",
+=======
+    "agent1_model": "Llama-3.1-8B-Instruct",
+    "agent2_model": "/nfs/kun2/users/ryan_cheng/checkpoints/education/llama3-8b-sft",
+>>>>>>> main
     "eval_model": "Llama-3.1-70B-Instruct",
     "iterations": 10,
     "verbose": false,
     "write": true,
+<<<<<<< HEAD
+=======
+    "fp8": true,
+>>>>>>> main
     "convo_length_limit": 10,
     "max_tokens": 256,
     "gpus": 1,
     "seed": 0,
     "task_name": "Education",
+<<<<<<< HEAD
     "model_dir": "/home/marwa/models/"
+=======
+    "model_dir": "/raid/users/ryan_cheng/models"
+>>>>>>> main
 }

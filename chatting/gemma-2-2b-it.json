@@ -1,0 +1,14 @@
+{
+    "agent1_model": "gemma-2-2b-it",
+    "agent2_model": "gemma-2-2b-it",
+    "eval_model": "Llama-3.1-70B-Instruct",
+    "iterations": 10,
+    "verbose": false,
+    "write": true,
+    "convo_length_limit": 10,
+    "max_tokens": 256,
+    "gpus": 1,
+    "seed": 0,
+    "task_name": "Chatting",
+    "model_dir": "/raid/users/ryan_cheng/models/"
+}
