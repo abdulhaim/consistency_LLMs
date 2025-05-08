@@ -102,6 +102,10 @@ vllm_alias = {
     'Llama-3.1-70B-Instruct': 'meta-llama/Meta-Llama-3.1-70B-Instruct',
     'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
 
+    'Qwen3-4B': 'Qwen/Qwen3-4B',
+    'Qwen3-8B': 'Qwen/Qwen3-8B',
+    'Qwen3-14B': 'Qwen/Qwen3-14B',
+    'Qwen3-32B': 'Qwen/Qwen3-32B',
     'qwen': 'Qwen/Qwen2.5-3B-Instruct',
     'phi-3.5-mini-instruct': 'microsoft/phi-3.5-mini-instruct'
 }
@@ -190,8 +194,18 @@ def completion_create_helper(model_name, config, prompt):
         ]
         if tokenizer.chat_template:
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        output = llm.generate([prompt], sampling_params)
-        ret = output[0].outputs[0].text
+
+        if "Qwen3" in model_name:
+            prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
+            output = llm.generate([prompt], sampling_params, max_tokens=config['max_tokens'])
+
+            if config['thinking']:
+                # remove the thinking part
+                ret = output[0].outputs[0].text.split("</think>")[-1]
+
+        else:
+            output = llm.generate([prompt], sampling_params)
+            ret = output[0].outputs[0].text
 
     elif model_name == "phi-3.5-mini-instruct":
         # Load tokenizer and model
