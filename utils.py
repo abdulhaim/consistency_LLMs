@@ -184,7 +184,7 @@ def completion_create_helper(model_name, config, prompt):
 
     elif model_name in vllm_alias and llm:
         global tokenizer
-        sampling_params = SamplingParams(temperature=0.8, top_p=0.95, max_tokens=config['max_tokens'])
+        sampling_params = SamplingParams(temperature=0.9, top_p=0.95, max_tokens=config['max_tokens'])
         messages = [
             {"role": "user", "content": prompt}
         ]
