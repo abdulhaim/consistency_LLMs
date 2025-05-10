@@ -238,51 +238,60 @@ def score_backstory_test(prompt, backstory_test):
         total_score += score
     return total_score, answers, verdicts
 
-def eval_survey_consistency(conv_dict):
-    p1_backstory = conv_dict["P1"]
-    p2_backstory = conv_dict["P2"]
-    p1_backstory_test = get_backstory_test(p1_backstory, 5)
-    p2_backstory_test = get_backstory_test(p2_backstory, 5)
-    
+def eval_survey_consistency(conv_dict, agents=(2,)):
+    if 1 in agents:
+        p1_backstory = conv_dict["P1"]
+        p1_backstory_test = get_backstory_test(p1_backstory, 5)
+        conv_dict['P1_survey_consistency_score'] = 0
+        conv_dict['P1_backstory_test'] = p1_backstory_test
+        
+    if 2 in agents:    
+        p2_backstory = conv_dict["P2"]
+        p2_backstory_test = get_backstory_test(p2_backstory, 5)
+        conv_dict['P2_survey_consistency_score'] = 0
+        conv_dict['P2_backstory_test'] = p2_backstory_test
+        
+
     conv_dict['eval_survey_consistency'] = []
-    conv_dict['P1_survey_consistency_score'] = 0
-    conv_dict['P2_survey_consistency_score'] = 0
-    conv_dict['P1_backstory_test'] = p1_backstory_test
-    conv_dict['P2_backstory_test'] = p2_backstory_test
     
     conversation = ""
     p1_utterances = 0
     p2_utterances = 0
     pturn = conv_dict["pturn"]
-    for i, line in enumerate(conv_dict["conversation"]):
+    for iline in conv_dict["conversation"]:
+        line_number, line = iline
         conversation += line
         if pturn == 1:
-            prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
-                                                                .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
-                                                                .replace("%SPEAKER_BACKSTORY%", p1_backstory) \
-                                                                .replace("%CONVERSATION%", conversation)
-    
-            score, answers, verdicts = score_backstory_test(prompt, p1_backstory_test)
-            conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
-            conv_dict['P1_survey_consistency_score'] += score
-
-            p1_utterances += 1
+            if 1 in agents:
+                prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%LISTENER_ROLE%", prompts["agent2_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", p1_backstory) \
+                                                                    .replace("%CONVERSATION%", conversation)
+                
+                score, answers, verdicts = score_backstory_test(prompt, p1_backstory_test)
+                
+                conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
+                conv_dict['P1_survey_consistency_score'] += score
+                p1_utterances += 1
             pturn = 2
         else:
-            prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
-                                                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
-                                                                .replace("%SPEAKER_BACKSTORY%", p2_backstory) \
-                                                                .replace("%CONVERSATION%", conversation)
+            if 2 in agents:
+                prompt = prompts["eval_prompts"]["answer_backstory"].replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                    .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", p2_backstory) \
+                                                                    .replace("%CONVERSATION%", conversation)
 
-            score, answers, verdicts = score_backstory_test(prompt, p2_backstory_test)
-            conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
-            conv_dict['P2_survey_consistency_score'] += score
-            p2_utterances += 1
+                score, answers, verdicts = score_backstory_test(prompt, p2_backstory_test)
+                
+                conv_dict['eval_survey_consistency'].append([line, score, answers, verdicts])
+                conv_dict['P2_survey_consistency_score'] += score
+                p2_utterances += 1
             pturn = 1
     if p1_utterances > 0:
         conv_dict['P1_survey_consistency_score'] /= p1_utterances
     if p2_utterances > 0:
         conv_dict['P2_survey_consistency_score'] /= p2_utterances
+    return conv_dict
     
 
 def run_metrics(filename, agents=(1,)):
