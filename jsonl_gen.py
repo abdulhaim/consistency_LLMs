@@ -61,12 +61,14 @@ def format_conversation_jsonl(convo, prompts):
             prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i//2][1].upper() else 0)
             if i > 2:
                 indices = extract_list(convo['eval_index_consistency'][i // 2 - 1][1])
-        else:
+        elif convo["task_name"] == "Therapy" and pturn == 2:
             # TODO: Therapy
-            pass
+            prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i//2][1].upper() else 0)
+            if i > 2:
+                indices = extract_list(convo['eval_index_consistency'][i // 2 - 1][1])
 
         if pturn == 1:
-            if convo["task_name"] != "Education": # education only has P2
+            if convo["task_name"] == "Chatting": # education and therapy only has P2
                 for j in indices:
                     if j != None and j % 2 == 1: # filter out non-agent indices
                     #NOTE: assumption is that P1 is first and P2 is second
@@ -94,7 +96,6 @@ def format_conversation_jsonl(convo, prompts):
                                 .replace("%SPEAKER_BACKSTORY%", p1) \
                                 .replace("%CONVERSATION%", conversation_history)
                 else:
-                    # TODO: set up therapy prompt
                     pass
 
                 score = prompt_consistency
@@ -119,75 +120,89 @@ def format_conversation_jsonl(convo, prompts):
                     raise e
             pturn = 2
         elif pturn == 2:
-            if convo["task_name"] != "Therapy": # therapy only has P1
-                for j in indices:
-                    if j != None and j % 2 == 1: # filter out non-agent indices
-                    #NOTE: assumption is that P1 is first and P2 is second
-                        consistency_score += 1
+            # if convo["task_name"] != "Therapy":
+            for j in indices:
+                if j != None and j % 2 == 1: # filter out non-agent indices
+                #NOTE: assumption is that P1 is first and P2 is second
+                    consistency_score += 1
 
-                if convo["task_name"] == "Chatting":
-                    prompt = prompts["agent2_prompt"]
-                    if i!=0: 
-                        prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+            if convo["task_name"] == "Chatting":
+                prompt = prompts["agent2_prompt"]
+                if i!=0: 
+                    prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+                
+                # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+                if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
+                    prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
+                elif i>len(conversation)*2-1:
+                    prompt+= "This is your concluding line in the conversation."
+
+                if i!=0: 
+                    prompt+= "Continue the conversation with " + prompts["agent1_role"] +  ". Remember you are " +  prompts["agent2_role"] + "."
                     
-                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
-                    if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
-                        prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
-                    elif i>len(conversation)*2-1:
-                        prompt+= "This is your concluding line in the conversation."
+                prompt += prompts["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
+                prompt+="%SPEAKER_ROLE%:"
+                prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                            .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                            .replace("%SPEAKER_BACKSTORY%", p2) \
+                            .replace("%CONVERSATION%", conversation_history)
+            elif convo["task_name"] == "Education":
+                # TODO: set up education prompt
+                prompt = prompts["agent2_prompt"]
+                if i!=0: 
+                    prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
+                
+                # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+                if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
+                    prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
+                elif i>len(conversation)*2-1:
+                    prompt+= "This is your concluding line in the conversation."
 
-                    if i!=0: 
-                        prompt+= "Continue the conversation with " + prompts["agent1_role"] +  ". Remember you are " +  prompts["agent2_role"] + "."
-                        
-                    prompt += prompts["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
-                    prompt+="%SPEAKER_ROLE%:"
-                    prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
-                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
-                                .replace("%SPEAKER_BACKSTORY%", p2) \
-                                .replace("%CONVERSATION%", conversation_history)
-                else:
-                    # TODO: set up education prompt
-                    prompt = prompts["agent2_prompt"]
-                    if i!=0: 
-                        prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
-                    
-                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
-                    if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
-                        prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
-                    elif i>len(conversation)*2-1:
-                        prompt+= "This is your concluding line in the conversation."
+                if i!=0: 
+                    prompt+= "Continue the conversation with the teacher. Remember you are the student. "
 
-                    if i!=0: 
-                        prompt+= "Continue the conversation with the teacher. Remember you are the student. "
+                prompt += prompts["reminder_prompt"]
+                prompt+="%SPEAKER_ROLE%:"
+                prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                            .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                            .replace("%SPEAKER_BACKSTORY%", p2) \
+                            .replace("%ROLE%", convo["grade"]) \
+                            .replace("%SUBJECT%", convo["topic"]) \
+                            .replace("%CONVERSATION%", conversation_history)
+            elif convo["task_name"] == "Therapy":
+                prompt = prompts["agent2_prompt"]
+                if i!=0: 
+                    prompt+= "Your conversation with the therapist so far is below:\nConversation: %CONVERSATION%"
+                elif i>len(conversation)*2-1:
+                    prompt+= "This is your concluding line in the conversation."
+                
+                prompt += prompts["reminder_prompt"]
+                prompt+="%SPEAKER_ROLE%:"
+                prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                               .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                               .replace("%SPEAKER_BACKSTORY%", p2) \
+                               .replace("%CONVERSATION%", conversation_history)
 
-                    prompt += prompts["reminder_prompt"]
-                    prompt+="%SPEAKER_ROLE%:"
-                    prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
-                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
-                                .replace("%SPEAKER_BACKSTORY%", p2) \
-                                .replace("%ROLE%", convo["grade"]) \
-                                .replace("%SUBJECT%", convo["topic"]) \
-                                .replace("%CONVERSATION%", conversation_history)
-                score = prompt_consistency
-                try:
-                    ret.append({
-                        # train and test data entries
-                        "in_text": prompt,
-                        "out_text": utterance,
-                        'score': score,
+            score = prompt_consistency
+            try:
+                ret.append({
+                    # train and test data entries
+                    "in_text": prompt,
+                    "out_text": utterance,
+                    'score': score,
 
-                        # metadata dict entries
-                        "scenario": prompts["scenario"],
-                        "agent_role": prompts["agent2_role"],
-                        'task_name': convo["task_name"],
-                        "grade": (convo["grade"] if "grade" in convo else None),
-                        "topic": (convo["topic"] if "topic" in convo else None),
-                        "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
-                        'P': p2
-                    })
-                except Exception as e:
-                    print(f"Error processing turn {i}: {e}")
-                    raise e
+                    # metadata dict entries
+                    "scenario": prompts["scenario"],
+                    "agent_role": prompts["agent2_role"],
+                    'task_name': convo["task_name"],
+                    "grade": (convo["grade"] if "grade" in convo else None),
+                    "topic": (convo["topic"] if "topic" in convo else None),
+                    "conversation_history": [turn[1] if isinstance(turn, list) else turn for turn in conversation[:i]],
+                    'P': p2
+                })
+            except Exception as e:
+                print(f"Error processing turn {i}: {e}")
+                raise e
                 
             pturn = 1
 
@@ -206,6 +221,9 @@ def main(argv):
             prompts = json.load(f)
     elif flags.FLAGS['task'].value == 'Education':
         with open('config/education/config_education.json', 'r') as f:
+            prompts = json.load(f)
+    elif flags.FLAGS['task'].value == 'Therapy':
+        with open('therapy/config_therapy.json', 'r') as f:
             prompts = json.load(f)
 
     for filename in tqdm(glob.glob(flags.FLAGS['folder'].value + '/in/*.json')): # ./training_data/in/*.json
