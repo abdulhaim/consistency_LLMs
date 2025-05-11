@@ -62,7 +62,7 @@ def load_data(base_path: Path, task_name):
 
     return data, file_paths
 
-def select_random_dialogs(data, num_dialogs=5, seed=42):
+def select_random_dialogs(data, num_dialogs=15, seed=42):
     """Selects a specified number of random dialogs from the dataset using a seed and returns their indices."""
     random.seed(seed)
     indices = random.sample(range(len(data)), num_dialogs)
