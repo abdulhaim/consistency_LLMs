@@ -1,6 +1,6 @@
 {
     "agent1_model": "Llama-3.1-8B-Instruct",
-    "agent2_model": "/raid/users/ryan_cheng2/checkpoints/therapy/llama-8b-sft-ppo-prompt",
+    "agent2_model": "/raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-kto-sft-prompt",
     "eval_model": "Llama-3.1-70B-Instruct",
     "iterations": 10,
     "verbose": false,
@@ -9,6 +9,7 @@
     "max_tokens": 256,
     "gpus": 1,
     "seed": 0,
+    "fp8": true,
     "task_name": "Therapy",
     "model_dir": "/raid/users/ryan_cheng2/models/"
 }
