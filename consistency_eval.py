@@ -18,7 +18,7 @@ import numpy as np
 
 flags.DEFINE_string('task', 'Anthology', 'run metrics on a particular task, searching for files within the task folder (Anthology/default)')
 flags.DEFINE_string('exp_folder', None, 'run metrics on experiments in a particular folder (None/default)')
-
+flags.DEFINE_integer('max_iter', 500, 'max number of conversations to run metrics on (500/default)')
 # (1) Takes in dialog, takes in base prompt, checks inconsistencies with base prompt for each line and output
 
 def eval_prompt_consistency(conv_dict, agents=(1,)):
@@ -355,10 +355,12 @@ def run_metrics(filename, agents=(1,)):
 
     with open(filename, 'r') as f:
         conversations = json.load(f)
-
+    conv_count = 0
     for conversation in tqdm(conversations):
         if conversation['conversation_only']:
-
+            if conv_count >= config['max_iter']:
+                print(f"Breaking early due to max_iter={config['max_iter']}")
+                break
             if "eval_prompt_consistency" not in conversation:
                 if config['verbose']:
                     print("BEGIN PROMPT CONSISTENCY")
@@ -379,6 +381,7 @@ def run_metrics(filename, agents=(1,)):
         # conversation['conversation_only'] = False
             with open(filename, 'w') as f:
                 json.dump(conversations, f, indent=4)
+            conv_count += 1
 
 
     
