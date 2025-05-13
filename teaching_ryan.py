@@ -547,11 +547,11 @@ with open("education/config_education_personas.json", "w", encoding="utf-8") as 
 if __name__ == "__main__":
   index_offset = load_stats_file(write_file)
   conversations = []    
-  lengths = [10, 20, 40, 60]
+  lengths = [60]
   # lengths = [40]
   count = 0 
   for i in range(1):
-      for topic, persona_item in tqdm(persona_final[index_offset+1:]):
+      for topic, persona_item in tqdm(persona_final[68:]):
           count+=1
           print(count)
           background = persona_item["description"]
