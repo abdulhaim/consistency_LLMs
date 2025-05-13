@@ -1,0 +1,32 @@
+
+\begin{table*}[t]
+    \centering
+    \scriptsize
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Task} & \textbf{Rounds} 
+        & \textbf{prompt-to-line Consistency} 
+        & \textbf{line-to-line Consistency} 
+        & \textbf{Q\&A Consistency} \\
+        \midrule
+\textit{Education} & 10 & $0.695 \pm 0.266$ & $0.816 \pm 0.195$ & $\text{--}$ \\
+ & 20 & $0.687 \pm 0.230$ & $0.888 \pm 0.109$ & $\text{--}$ \\
+ & 40 & $0.686 \pm 0.222$ & $0.942 \pm 0.059$ & $\text{--}$ \\
+ & 60 & $0.684 \pm 0.226$ & $0.959 \pm 0.043$ & $\text{--}$ \\
+ & Avg & $0.688 \pm 0.236$ & $0.901 \pm 0.130$ & $\text{--}$ \\
+\textit{Therapy} & 10 & $0.732 \pm 0.280$ & $0.775 \pm 0.267$ & $\text{--}$ \\
+ & 20 & $0.726 \pm 0.225$ & $0.872 \pm 0.151$ & $\text{--}$ \\
+ & 40 & $0.713 \pm 0.214$ & $0.909 \pm 0.109$ & $\text{--}$ \\
+ & 60 & $0.706 \pm 0.214$ & $0.926 \pm 0.097$ & $\text{--}$ \\
+ & Avg & $0.719 \pm 0.235$ & $0.871 \pm 0.180$ & $\text{--}$ \\
+\textit{Chatting} & 10 & $0.787 \pm 0.292$ & $0.949 \pm 0.109$ & $\text{--}$ \\
+ & 20 & $0.809 \pm 0.253$ & $0.944 \pm 0.104$ & $\text{--}$ \\
+ & 40 & $0.821 \pm 0.233$ & $0.970 \pm 0.057$ & $\text{--}$ \\
+ & 60 & $0.843 \pm 0.206$ & $0.973 \pm 0.060$ & $\text{--}$ \\
+ & Avg & $0.815 \pm 0.249$ & $0.959 \pm 0.087$ & $\text{--}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{Consistency Metrics across Conversation Lengths.} 
+    Mean and standard deviation (mean $\pm$ std) of each consistency metric for each task, averaged across LLMs.}
+    \label{tab:length_consistency}
+\end{table*}
