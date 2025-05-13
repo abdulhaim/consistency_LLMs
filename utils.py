@@ -46,6 +46,7 @@ flags.DEFINE_string('config_file', None, 'config file to set up experiment, over
 flags.DEFINE_boolean('fp8', False, 'low memory Llama-3.1-70B generation')
 flags.DEFINE_boolean('vllm', True, 'whether to load vllm (True/default)')
 flags.DEFINE_string('listener_model', None, 'whether to use a listener model (None/default)')
+flags.DEFINE_boolean('thinking', False, 'whether to use thinking in Qwen3 (False/default)')
 
 flags.DEFINE_string('filename', None, 'run metrics on a particular filename (None/default specifies all filenames in all folders)')
 
@@ -101,7 +102,12 @@ vllm_alias = {
     'Llama-3.1-70B-Instruct': 'meta-llama/Meta-Llama-3.1-70B-Instruct',
     'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
 
+    'Qwen3-4B': 'Qwen/Qwen3-4B',
+    'Qwen3-8B': 'Qwen/Qwen3-8B',
+    'Qwen3-14B': 'Qwen/Qwen3-14B',
+    'Qwen3-32B': 'Qwen/Qwen3-32B',
     'qwen': 'Qwen/Qwen2.5-3B-Instruct',
+
     'phi-3.5-mini-instruct': 'microsoft/phi-3.5-mini-instruct'
 }
 
@@ -190,8 +196,25 @@ def completion_create_helper(model_name, config, prompt):
         ]
         if tokenizer.chat_template:
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        output = llms[model_name].generate([prompt], sampling_params)
-        ret = output[0].outputs[0].text
+
+        if "Qwen3" in model_name:
+            prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
+            output = llms[model_name].generate([prompt], sampling_params)
+
+    
+
+            if config['thinking']:
+                # remove the thinking part
+                ret = output[0].outputs[0].text.split("</think>")[-1]
+            else:
+                ret = output[0].outputs[0].text
+
+            if config['verbose']:
+                print("Response from model: ", output[0].outputs[0].text)
+
+        else:
+            output = llms[model_name].generate([prompt], sampling_params)
+            ret = output[0].outputs[0].text
 
     elif model_name == "phi-3.5-mini-instruct":
         # Load tokenizer and model
@@ -215,7 +238,8 @@ def completion_create_helper(model_name, config, prompt):
     #     running_cost_for_iteration += api_cost(prompt=prompt, answer=ret, model=config['model'])
     #     if config['verbose']:
     #         print(f"RUNNING COST FOR ITERATION SO FAR: {running_cost_for_iteration}")
-    
+    if config['verbose']:
+        print("Response from model: ", ret)
     return ret
 
 def completion_create(model_name, config, prompt, keep_trying=False):
