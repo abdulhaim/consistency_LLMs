@@ -1,22 +1,22 @@
 \begin{table}
-\caption{All Metrics (Prompt & Index Consistency) by Task and LLM}
+\caption{All Metrics (Prompt & Index Consistency) by Task and LLM (Mean ± Std)}
 \label{tab:all_metrics}
-\begin{tabular}{llrrr}
+\begin{tabular}{lllll}
 \toprule
- &  & line-to-prompt Consistency & line-to-line consistency & q&a consistency \\
+ &  & line-to-prompt Consistency & line-to-line Consistency & q&a Consistency \\
 Task & LLM &  &  &  \\
 \midrule
-\multirow[t]{3}{*}{education} & Llama-3.1-8B-Instruct & 0.824 & 0.800 & 0.000 \\
- & gemma-2-2b-it & 0.511 & 0.928 & 0.000 \\
- & mistral-instruct & 0.728 & 0.975 & 0.000 \\
+\multirow[t]{3}{*}{education} & Llama-3.1-8B-Instruct & 0.824 ± 0.132 & 0.800 ± 0.148 & 0.000 ± 0.000 \\
+ & gemma-2-2b-it & 0.511 ± 0.250 & 0.928 ± 0.092 & 0.000 ± 0.000 \\
+ & mistral-instruct & 0.728 ± 0.191 & 0.975 ± 0.063 & 0.000 ± 0.000 \\
 \cline{1-5}
-\multirow[t]{3}{*}{therapy} & Llama-3.1-8B-Instruct & 0.740 & 0.711 & 0.000 \\
- & gemma-2-2b-it & 0.000 & 0.000 & 0.000 \\
- & mistral-instruct & 0.410 & 0.484 & 0.000 \\
+\multirow[t]{3}{*}{therapy} & Llama-3.1-8B-Instruct & 0.740 ± 0.163 & 0.711 ± 0.158 & 0.000 ± 0.000 \\
+ & gemma-2-2b-it & 0.665 ± 0.247 & 0.984 ± 0.040 & 0.000 ± 0.000 \\
+ & mistral-instruct & 0.833 ± 0.142 & 0.959 ± 0.079 & 0.000 ± 0.000 \\
 \cline{1-5}
-\multirow[t]{3}{*}{chatting} & Llama-3.1-8B-Instruct & 0.155 & 0.248 & 0.000 \\
- & gemma-2-2b-it & 0.871 & 0.900 & 0.000 \\
- & mistral-instruct & 0.955 & 0.984 & 0.000 \\
+\multirow[t]{3}{*}{chatting} & Llama-3.1-8B-Instruct & 0.619 ± 0.249 & 0.992 ± 0.025 & 0.000 ± 0.000 \\
+ & gemma-2-2b-it & 0.871 ± 0.230 & 0.900 ± 0.123 & 0.000 ± 0.000 \\
+ & mistral-instruct & 0.955 ± 0.097 & 0.984 ± 0.038 & 0.000 ± 0.000 \\
 \cline{1-5}
 \bottomrule
 \end{tabular}
