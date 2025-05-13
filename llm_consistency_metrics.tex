@@ -1,0 +1,26 @@
+
+\begin{table*}[t]
+    \centering
+    \scriptsize
+    \begin{tabular}{l l c c c}
+        \toprule
+        \textbf{Task} & \textbf{LLM} 
+        & \textbf{prompt-to-line Consistency} 
+        & \textbf{line-to-line Consistency} 
+        & \textbf{Q\&A Consistency} \\
+        \midrule
+\textit{Education} & Llama-3.1-8B-Instruct & $0.824 \pm 0.132$ & $0.800 \pm 0.148$ & $\text{--}$ \\
+ & gemma-2-2b-it & $0.511 \pm 0.250$ & $0.928 \pm 0.092$ & $\text{--}$ \\
+ & mistral-instruct & $0.728 \pm 0.191$ & $0.975 \pm 0.063$ & $\text{--}$ \\
+\textit{Therapy} & Llama-3.1-8B-Instruct & $0.657 \pm 0.207$ & $0.681 \pm 0.168$ & $\text{--}$ \\
+ & gemma-2-2b-it & $0.665 \pm 0.247$ & $0.984 \pm 0.040$ & $\text{--}$ \\
+ & mistral-instruct & $0.863 \pm 0.186$ & $0.964 \pm 0.078$ & $\text{--}$ \\
+\textit{Chatting} & Llama-3.1-8B-Instruct & $0.619 \pm 0.249$ & $0.992 \pm 0.025$ & $\text{--}$ \\
+ & gemma-2-2b-it & $0.871 \pm 0.230$ & $0.900 \pm 0.123$ & $\text{--}$ \\
+ & mistral-instruct & $0.955 \pm 0.097$ & $0.984 \pm 0.038$ & $\text{--}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{\textbf{LLM Consistency Metrics across Tasks.} 
+    Mean and standard deviation (mean $\pm$ std) of three consistency metrics—prompt-to-line, line-to-line, and Q\&A consistency—for each LLM across different dialogue tasks.}
+    \label{tab:llm_consistency}
+\end{table*}
