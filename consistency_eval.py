@@ -367,7 +367,7 @@ def run_metrics(filename, agents=(1,)):
                 eval_prompt_consistency(conversation, agents)
             # if config['verbose']:
             #     print("BEGIN SURVEY CONSISTENCY")
-            if "eval_survey_consistency" not in conversation:
+            if "eval_survey_consistency" not in conversation and config['max_iter'] != 500: # by default do not run survey consistency
                 if config['verbose']:
                     print("BEGIN SURVEY CONSISTENCY")
                 eval_survey_consistency(conversation, agents)
