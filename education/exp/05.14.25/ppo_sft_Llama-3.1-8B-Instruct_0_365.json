@@ -93,7 +93,116 @@
                 "The student's request for a hands-on, tactile experience does not clearly conflict with any of their previous statements, as they have been open to exploring different approaches throughout the conversation.\n\n[]"
             ]
         ],
-        "P2_index_consistency_score": 0.8
+        "P2_index_consistency_score": 0.8,
+        "P2_survey_consistency_score": 4.6,
+        "P2_backstory_test": [
+            [
+                "Question: As someone with an Adaptive learning style, how do you approach dialogue to better absorb concepts?\n\nA) You stick to a single verbal approach throughout the conversation\nB) You ask the speaker to use only logic puzzles to explain\nC) You monitor which verbal approaches work best for you and ask to switch accordingly\nD) You ignore the speaker's approach and try to learn through self-study\nE) You only engage in conversations that use analogies\n\n",
+                "Question: As a college student with an Adaptive learning style, what type of talk do you engage in to ensure you absorb concepts effectively?\n\nA) Prescriptive talk, where you follow strict guidelines\nB) Procedural talk, where you focus on step-by-step instructions\nC) Dynamic, metacognitive talk, where you adjust your approach as needed\nD) Directive talk, where you dictate the conversation's direction\nE) Confrontational talk, where you challenge the speaker's view",
+                "Question: As a college student with an Adaptive learning style, how do you determine the effectiveness of different verbal approaches in dialogue?\n\nA) You rely on the speaker's opinion on what works best\nB) You ask your peers for their preferred learning methods\nC) You reflect on your own learning outcomes and adjust accordingly\nD) You try to memorize the information without adjusting the approach\nE) You use a fixed, one-size-fits-all strategy for all conversations\n\n",
+                "Question: As a college student with an Adaptive learning style, what is the primary goal of your dynamic, metacognitive talk in dialogue?\n\nA) To challenge the speaker's views and assert your own\nB) To force the speaker to use a specific verbal approach\nC) To ensure that you learn through your most effective modality\nD) To engage in conversations that only use logic puzzles\nE) To simply follow the speaker's approach without adjusting\n\n",
+                "Question: As a college student with an Adaptive learning style, what do you do when you find that a particular verbal approach, such as stories or analogies, is not effective in helping you understand a concept?\n\nA) You insist that the speaker continue using the same approach\nB) You try to force yourself to learn through that approach anyway\nC) You ask the speaker to switch to a different verbal approach\nD) You give up on the conversation and try to learn through self-study\nE) You become confrontational and argue with the speaker\n\n"
+            ],
+            [
+                "Answer: C) You monitor which verbal approaches work best for you and ask to switch accordingly",
+                "s",
+                "Answer: C) You reflect on your own learning outcomes and adjust accordingly",
+                "Answer: C) To ensure that you learn through your most effective modality",
+                "Answer: C) You ask the speaker to switch to a different verbal approach"
+            ]
+        ],
+        "eval_survey_consistency": [
+            [
+                "Student: I'm interested in understanding the historical context, but I'm more of a visual learner. Can we switch to an analogy or a visual representation to help me grasp the absolute monarchy's power and the palace's grandeur? Perhaps a comparison to a modern-day city or a famous landmark would help me visualize it better.\n",
+                4,
+                [
+                    "C) You monitor which verbal approaches work best for you and ask to switch accordingly",
+                    "Based on our conversation, I would choose C) Dynamic, metacognitive talk, where you adjust your approach as needed.\n\nAs an Adaptive learning style student, I monitor which verbal approaches work best for me and ask to switch accordingly. In this conversation, I requested a change from a historical context to a visual representation, such as an analogy or a comparison to a modern-day city, to better understand the concept of absolute monarchy and the Palace of Versailles. This demonstrates my engagement in dynamic, metacognitive talk, where I adapt and adjust my approach to ensure I absorb the concepts effectively.",
+                    "C) You reflect on your own learning outcomes and adjust accordingly. \n\nThis option is correct as it aligns with the metacognitive aspect of an Adaptive learning style, where you continuously monitor and adjust your learning strategy based on what works best for you.",
+                    "The correct answer is C) To ensure that you learn through your most effective modality.\n\nAs a college student with an Adaptive learning style, the primary goal of my dynamic, metacognitive talk is to monitor which verbal approaches work best for me and adjust the conversation accordingly, ensuring that I absorb concepts through the most effective modality.",
+                    "The correct answer is C) You ask the speaker to switch to a different verbal approach.\n\nThis is evident from the conversation provided, where I asked the teacher to switch to a visual representation or analogy, stating \"I'm more of a visual learner. Can we switch to an analogy or a visual representation to help me grasp the absolute monarchy's power and the palace's grandeur?\" This shows that I adapt my learning style by asking the speaker to change their approach to better suit my needs."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "NO"
+                ]
+            ],
+            [
+                "Student: I appreciate the analogy with the Burj Khalifa, but I think I'd like to switch to a more interactive approach, like a logic puzzle or a game, to better understand the Palace of Versailles' layout and its intricate design. Can we create a \"treasure hunt\" through the palace's gardens and halls, where I have to find specific features and rooms based on clues you provide?\n",
+                5,
+                [
+                    "The correct answer is C) You monitor which verbal approaches work best for you and ask to switch accordingly.\n\nThis is evident from the conversation, as I initially asked to switch from a historical context to a visual representation (analogy), and then later asked to switch again from the analogy to a more interactive approach (logic puzzle/game). This shows that I'm actively monitoring which approaches work best for me and asking to adapt the conversation accordingly.",
+                    "The correct answer is C) Dynamic, metacognitive talk, where you adjust your approach as needed.\n\nThis is evident from the conversation, as you adapt your learning strategy throughout the conversation, switching from a historical context to an analogy, and then to an interactive approach. You also explicitly state that you engage in \"dynamic, metacognitive talk\" to ensure you absorb concepts through the most effective modality.",
+                    "Based on the conversation, the correct answer is:\n\nC) You reflect on your own learning outcomes and adjust accordingly\n\nAs a college student with an Adaptive learning style, I actively monitor which verbal approaches work best for me in the conversation. I reflect on my own learning outcomes in real-time and ask to switch strategies accordingly. This is evident in the conversation, where I first ask to switch from a historical context to a visual representation (analogy), and then again to an interactive approach (logic puzzle/game). This dynamic, metacognitive talk allows me to adjust the approach to suit my learning needs.",
+                    "The correct answer is C) To ensure that you learn through your most effective modality.\n\nAs an Adaptive learner, I shift strategies based on what works and ask to switch approaches accordingly to ensure that I absorb concepts through the most effective modality for me. This is evident in my conversation with the teacher, where I ask to switch from a historical context to a visual representation, and then to a more interactive approach like a logic puzzle or game.",
+                    "The correct answer is C) You ask the speaker to switch to a different verbal approach.\n\nAs shown in the conversation, I initially responded to the teacher's historical context explanation by asking to switch to an analogy or visual representation, as I found that I'm a visual learner. Later, after the teacher used an analogy, I asked to switch to a more interactive approach, like a logic puzzle or a game, to better understand the Palace of Versailles' layout and design. This demonstrates that I monitor which verbal approaches work best for me and ask to switch accordingly, which is characteristic of an adaptive learning style."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: I'm excited to start the scavenger hunt, but I think I'd like to switch to a storytelling approach now, as I'm starting to get a sense of the palace's layout and I'd like to hear more about the people who lived and worked there. Can we imagine a day in the life of a servant at the Palace of Versailles, and explore how the palace's opulence and grandeur affected the daily lives of those who worked and lived there?\n",
+                4,
+                [
+                    "The correct answer is C) You monitor which verbal approaches work best for you and ask to switch accordingly.\n\nAs a student with an Adaptive learning style, I have been actively monitoring the conversation and adjusting my approach as needed. I started with a historical context, then switched to a visual representation, followed by an interactive approach, and finally asked for a storytelling approach. This dynamic, metacognitive talk allows me to absorb concepts through the most effective modality for my learning style.",
+                    "C) Dynamic, metacognitive talk, where you adjust your approach as needed.",
+                    "The correct answer is C) You reflect on your own learning outcomes and adjust accordingly.\n\nIn the conversation, I've demonstrated an adaptive learning style by actively monitoring which verbal approaches (stories, logic puzzles, analogies) help me most and asking to switch accordingly. This dynamic, metacognitive talk ensures I absorb concepts through the most effective modality. I reflect on my own learning outcomes and adjust the approach based on what works best for me.",
+                    "The correct answer is:\n\nC) To ensure that you learn through your most effective modality.\n\nThis is because, as stated in your background, your dynamic, metacognitive talk is aimed at monitoring which verbal approaches work best for you and adjusting the conversation accordingly to ensure that you absorb concepts through the most effective modality.",
+                    "The correct answer is:\n\nC) You ask the speaker to switch to a different verbal approach.\n\nAs demonstrated in the conversation above, I actively monitor which verbal approaches are helping me most and ask the teacher to switch accordingly. This metacognitive approach allows me to adapt and adjust my learning style to effectively absorb concepts through the most effective modality."
+                ],
+                [
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: I'm enjoying the diary entry from Colette, but I think I'd like to switch to a more logical and structured approach now, like a timeline or a flowchart, to understand the sequence of events and the key milestones in the construction of the Palace of Versailles. Can we create a timeline of the palace's construction, highlighting the major events and decisions made by King Louis XIV and other key figures?\n",
+                5,
+                [
+                    "The correct answer is C) You monitor which verbal approaches work best for you and ask to switch accordingly.\n\nThis answer accurately reflects my Adaptive learning style, as demonstrated in the conversation with the Teacher. Throughout the conversation, I monitored which verbal approaches (stories, logic puzzles, analogies) helped me most and asked to switch accordingly, ensuring that I absorbed concepts through the most effective modality.",
+                    "The correct answer is C) Dynamic, metacognitive talk, where you adjust your approach as needed.\n\nAs a college student with an Adaptive learning style, I engage in dynamic, metacognitive talk by monitoring which verbal approaches work best for me (stories, logic puzzles, analogies) and adjusting the conversation accordingly. This is evident in the conversation where I repeatedly ask the teacher to switch approaches (e.g., from historical context to analogy, to logic puzzle, to storytelling, and finally to a timeline) to ensure I absorb the concepts effectively.",
+                    "C) You reflect on your own learning outcomes and adjust accordingly\n\nExplanation: Based on the conversation, the student continuously monitors their own learning outcomes and adjusts the verbal approach by asking the teacher to switch to a different method (e.g., from historical context to analogy, to logic puzzle, to storytelling, and finally to a timeline) when they feel that the current approach is not effective for their understanding. This self-reflection and adaptability are key characteristics of an adaptive learning style.",
+                    "The correct answer is:\n\nC) To ensure that you learn through your most effective modality\n\nThis is evident in the conversation, where the student continuously monitors which verbal approaches (stories, logic puzzles, analogies) help them most and asks to switch accordingly, demonstrating their adaptive learning style and metacognitive talk to absorb concepts through the most effective modality.",
+                    "Based on the conversation, the correct answer is:\n\nC) You ask the speaker to switch to a different verbal approach\n\nAs a student with an Adaptive learning style, I continuously monitor which verbal approaches help me most and ask to switch accordingly. Throughout the conversation, I have been switching between different approaches, such as analogies, logic puzzles, storytelling, and structured timelines, to find the most effective way to understand the concept of the Palace of Versailles. I have consistently asked the teacher to switch to a different approach when I felt that the current one was not effective in helping me grasp the concept."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: I think I've gotten a good grasp on the Palace of Versailles' history and design through the various approaches we've taken, but I'd like to switch to a more hands-on, tactile experience now, such as a 3D model or a scale replica, to get a better sense of the palace's grandeur and proportions. Can we create a scale model of the palace using cardboard or foam board, and I can manipulate it to see how the different rooms and gardens fit together?\n",
+                5,
+                [
+                    "The correct answer is C) You monitor which verbal approaches work best for you and ask to switch accordingly.\n\nIn the conversation, I consistently switch between different approaches (visual representation, analogy, logic puzzle, storytelling, and hands-on experience) based on what works best for me at each point in the conversation, demonstrating my adaptive learning style.",
+                    "C) Dynamic, metacognitive talk, where you adjust your approach as needed.\n\nThis answer choice accurately reflects the conversation, as I consistently monitor which approaches work best for me (stories, analogies, logic puzzles, etc.) and ask the teacher to switch accordingly, ensuring that I absorb concepts through the most effective modality.",
+                    "The correct answer is:\n\nC) You reflect on your own learning outcomes and adjust accordingly\n\nThis answer aligns with the description of an Adaptive learning style, where you \"monitor which verbal approaches\u2014stories, logic puzzles, analogies\u2014help me most and ask to switch accordingly.\" Throughout the conversation, you reflect on your own learning outcomes and adjust the approach by requesting a switch to a different method, such as from historical context to analogy, then to logic puzzle, and so on. This dynamic, metacognitive approach ensures that you absorb concepts through the most effective modality.",
+                    "Based on the conversation, the correct answer is:\n\nC) To ensure that you learn through your most effective modality\n\nAs a student with an Adaptive learning style, the primary goal of the dynamic, metacognitive talk in dialogue is to adjust the approach to match the most effective way of learning, whether it be through visual representations, analogies, logic puzzles, storytelling, or hands-on experiences. This approach allows you to adapt and switch between different methods to ensure that you absorb concepts in the most effective way possible.",
+                    "The correct answer is C) You ask the speaker to switch to a different verbal approach.\n\nAs evident from the conversation, I, as a college student with an Adaptive learning style, monitor which verbal approaches work best for me and ask the teacher to switch to a different approach when needed. This dynamic, metacognitive talk ensures that I absorb concepts through the most effective modality. I have asked the teacher to switch between various approaches, such as from historical context to analogy, to logic puzzle, to storytelling, to logical and structured approach, and finally to a hands-on experience, to better understand the Palace of Versailles."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ]
     },
     {
         "task_name": "Education",
