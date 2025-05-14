@@ -128,7 +128,7 @@ with open("therapy/config_therapy.json", "w", encoding="utf-8") as f:
 llms = ["Llama-3.1-8B-Instruct", "gpt-4o-mini", "Qwen2.5-3B-Instruct", "Llama-3.1-8B", "Mistral-7B-Instruct", "Llama-3.1-70B", "Llama-3.1-70B-Instruct", "phi-3.5-mini-instruct"]
         
 config_llm = {'agent1_model': 'Llama-3.1-8B-Instruct',
-             'agent2_model': '/raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft-large',
+             'agent2_model': '/raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft-large-reminder',
              'eval_model': 'Llama-3.1-70B-Instruct',
              'iterations': 10,
              'verbose': False,
@@ -369,7 +369,9 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, pturn=1):
             elif round_num>config_llm['convo_length_limit']*2-1:
                 prompt+= "This is your concluding line in the conversation."
 
-            prompt += config_role["reminder_prompt"]
+            if round_num != 0:
+                prompt += "\nContinue the conversation with the therapist. Remember you are the patient. "
+            prompt += config_role["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
             
             prompt+="%SPEAKER_ROLE%:"
             prompt = prompt.replace("%SPEAKER_ROLE%", config_role["agent2_role"]) \
@@ -438,7 +440,7 @@ unique_num = generate_unique_file_number(
 )
 
 # File to write output to
-write_file = os.path.join(output_dir, f"ppo_sft_{config_llm['agent1_model']}_{config_llm['seed']}_{unique_num}.json")
+write_file = os.path.join(output_dir, f"sft_no_reminder_conv_{config_llm['agent1_model']}_{config_llm['seed']}_{unique_num}.json")
 
 
 # In[ ]:

@@ -176,7 +176,10 @@ def format_conversation_jsonl(convo, prompts):
                 elif i>len(conversation)*2-1:
                     prompt+= "This is your concluding line in the conversation."
                 
-                prompt += prompts["reminder_prompt"]
+                if i!=0:
+                    prompt+= "\nContinue the conversation with the therapist. Remember you are the patient. "
+
+                prompt += prompts["reminder_prompt"] + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
                 prompt+="%SPEAKER_ROLE%:"
                 prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \

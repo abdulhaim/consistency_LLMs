@@ -74,7 +74,7 @@ os.makedirs("chatting", exist_ok=True)
 with open("chatting/config_chatting.json", "w", encoding="utf-8") as f:
     json.dump(config_chatting, f, indent=4)
 
-config_llm = {'agent1_model': '/nfs/kun2/users/ryan_cheng/checkpoints_raid/Chatting/llama3-8b-sft',
+config_llm = {'agent1_model': '/nfs/kun2/users/ryan_cheng/checkpoints_raid/Chatting/llama3-8b-kto-sft-prompt',
              'agent2_model': 'Llama-3.1-8B-Instruct',
              'eval_model': 'Llama-3.1-8B-Instruct',
              'iterations': 10,
