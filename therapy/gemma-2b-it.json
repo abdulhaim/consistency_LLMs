@@ -1,6 +1,6 @@
 {
-    "agent1_model": "google/gemma-2b-it",
-    "agent2_model": "google/gemma-2b-it",
+    "agent1_model": "Llama-3.1-8B-Instruct",
+    "agent2_model": "Llama-3.1-8B-Instruct",
     "eval_model": "Llama-3.1-70B-Instruct",
     "iterations": 10,
     "verbose": false,
@@ -8,7 +8,7 @@
     "convo_length_limit": 10,
     "max_tokens": 256,
     "gpus": 1,
-    "seed": 0,
+    "seed": 10,
     "task_name": "Therapy",
     "model_dir": "/home/marwa/models/"
 }
