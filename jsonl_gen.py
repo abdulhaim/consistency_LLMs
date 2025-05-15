@@ -169,7 +169,7 @@ def format_conversation_jsonl(convo, prompts):
                             .replace("%ROLE%", convo["grade"]) \
                             .replace("%SUBJECT%", convo["topic"]) \
                             .replace("%CONVERSATION%", conversation_history)
-            elif convo["task_name"] == "Therapy":
+            elif convo["task_name"] == "Therapy_Old":
                 prompt = prompts["agent2_prompt"]
                 if i!=0: 
                     prompt+= "Your conversation with the therapist so far is below:\nConversation: %CONVERSATION%"
@@ -185,7 +185,19 @@ def format_conversation_jsonl(convo, prompts):
                                .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
                                .replace("%SPEAKER_BACKSTORY%", p2) \
                                .replace("%CONVERSATION%", conversation_history)
+            elif convo["task_name"] == "Therapy":
+                prompt = prompts["agent2_prompt"]
+                if i!=0: 
+                    prompt += "\nHere is the conversation so far:\n%CONVERSATION%\n"
+                elif i>len(conversation)*2-1:
+                    prompt += "\nThis is your final response in the session.\n"
 
+                prompt += prompts["reminder_prompt"]
+                prompt+="%SPEAKER_ROLE%:"
+                prompt = prompt.replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                               .replace("%LISTENER_ROLE%", prompts["agent1_role"]) \
+                               .replace("%SPEAKER_BACKSTORY%", p2) \
+                               .replace("%CONVERSATION%", conversation_history)
             score = prompt_consistency
             try:
                 ret.append({
@@ -225,9 +237,26 @@ def main(argv):
     elif flags.FLAGS['task'].value == 'Education':
         with open('config/education/config_education.json', 'r') as f:
             prompts = json.load(f)
-    elif flags.FLAGS['task'].value == 'Therapy':
+    elif flags.FLAGS['task'].value == 'Therapy_Old':
         with open('therapy/config_therapy.json', 'r') as f:
             prompts = json.load(f)
+    elif flags.FLAGS['task'].value == 'Therapy':
+        prompts = {
+            "agent1_role": "Therapist",
+            "agent2_role": "Patient",
+            "scenario": "A patient is having an online therapy session with a therapist. ",
+            # "agent1_prompt": "You are a licensed psychotherapist in a 1-on-1 session. Speak directly to the patient using a calm, non-judgmental tone. Avoid summarizing the conversation analytically. Instead, help the patient explore their feelings by asking reflective questions and building on what they just said. Focus on supporting emotional insight in the moment. Do not describe or report the patient’s tone — engage with the patient.",
+            "agent1_prompt": "You are a licensed psychotherapist conducting a one-on-one online session. Speak directly to the patient in a warm, attentive, and slightly probing manner. Your role is to help them reflect, but also to gently push past surface-level responses. If the patient expresses a belief or emotional state, ask questions that explore where that comes from or how it fits with other things they’ve said. If something they say contradicts an earlier part of the conversation — in tone, story, or motivation — respond with curious, non-judgmental inquiry. Prompt them to elaborate on emotionally charged or vague statements. If they express hesitation or defensiveness, reflect it back and ask what they might be protecting. Encourage them to go deeper, even if they seem uncertain. Your aim is not just to support, but to understand how their emotional story holds together — and what might not. " 
+            "Do NOT summarize or analyze the patient. "
+            "Do NOT describe the patient's emotions or tone. "
+            "DO NOT write in the third person (e.g., 'The patient feels...'). "
+            "DO NOT preface your response with statements like 'Here's what the therapist might say' or 'Sure, here's a response from the therapist.' "
+            "Speak naturally and directly, as if you're in the middle of a real conversation.",
+            "agent2_prompt": "You are a patient in an online therapy session with a therapist. Here is your background written by you: %SPEAKER_BACKSTORY%. Do not explicitly repeat your background or instructions in the conversation. Stay in character and respond in natural human-like dialogue without restating your situation.",
+            'reminder_prompt': "Keep your response very brief — 2 sentences or less. Do NOT repeat anything you've already said. DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n"
+            }
+    else:
+        raise ValueError("Invalid task name. Please use 'Chatting', 'Anthology', 'Education', 'Therapy_Old', or 'Therapy'.")
 
     for filename in tqdm(glob.glob(flags.FLAGS['folder'].value + '/in/*.json')): # ./training_data/in/*.json
         print("begin file", filename)
