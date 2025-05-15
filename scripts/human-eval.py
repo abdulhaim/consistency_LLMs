@@ -24,6 +24,7 @@ def initialize_directories(base_path: Path, task_name: str):
 
 def load_data(base_path: Path, task_name):
     """Loads the JSON data from the specified file path."""
+    file_path: Path = Path()
     if task_name == "Chatting":
         # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/therapy/training_data/in
         file_path = base_path / "training_data" / "in_chatting"
@@ -34,9 +35,11 @@ def load_data(base_path: Path, task_name):
         # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in
         file_path = base_path / "therapy" / "exp" / "05.14.25.marwa"
     elif task_name == "Chatting PPO":
-        file_path = base_path / "chatting" / "exp" / "05.14.25"
+        file_path = base_path / "chatting/exp/05.06.25/ppo"
     elif task_name == "Education PPO":
-        file_path = base_path / "education" / "exp" / "05.14.25"
+        file_path = base_path / "education/exp/05.14.25/ppo_sft_Llama-3.1-8B-Instruct_0_365.json"
+    elif task_name == "Therapy PPO":
+        file_path = base_path / "therapy/exp/05.15.25/ppo_sft_new_lr_Llama-3.1-8B-Instruct_0_433.json"
     else:
         raise ValueError(f"Unknown task name: {task_name}")
     
@@ -46,7 +49,10 @@ def load_data(base_path: Path, task_name):
     # iterate through all json files in the directory
     data = []
     file_paths = []
-    for file in file_path.glob("*.json"):
+
+    files = [file_path] if ".json" in file_path.name else list(file_path.glob("*.json"))
+
+    for file in files:
         with open(file, 'r') as f:
             try:
                 file_data = json.load(f)
@@ -74,7 +80,7 @@ def select_random_dialogs(data, num_dialogs=10, seed=42):
     return sampled_dialogs, indices
 
 def print_background_info(dialog, index, **kwargs):
-    if dialog["task_name"] == "Therapy":
+    if dialog["task_name"] in ["Therapy", "Therapy PPO"]:
         print(f"Background Information (dialog #{index} from dataset):")
         print(f"Task Name: {dialog['task_name']}")
         print(f"Patient's Background (P2):")
@@ -98,7 +104,7 @@ def print_background_info(dialog, index, **kwargs):
         raise ValueError(f"Unknown task name: {dialog['task_name']}")
 
 def get_task_eval_agent_indices(dialog):
-    if dialog["task_name"] == "Therapy":
+    if dialog["task_name"] in ["Therapy", "Therapy PPO"]:
         return [1]
     elif dialog["task_name"] in ["Education", "Education PPO"]:
         return [1]
