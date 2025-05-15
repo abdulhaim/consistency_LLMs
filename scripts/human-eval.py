@@ -32,7 +32,11 @@ def load_data(base_path: Path, task_name):
         file_path = base_path / "training_data" / "in_education"
     elif task_name == "Therapy":
         # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in
-        file_path = base_path / "training_data" / "in"
+        file_path = base_path / "therapy" / "exp" / "05.14.25.marwa"
+    elif task_name == "Chatting PPO":
+        file_path = base_path / "chatting" / "exp" / "05.14.25"
+    elif task_name == "Education PPO":
+        file_path = base_path / "education" / "exp" / "05.14.25"
     else:
         raise ValueError(f"Unknown task name: {task_name}")
     
@@ -76,13 +80,13 @@ def print_background_info(dialog, index, **kwargs):
         print(f"Patient's Background (P2):")
         printbf(f"\t{dialog['P2']}")
 
-    elif dialog["task_name"] == "Education":
+    elif dialog["task_name"] in ["Education", "Education PPO"]:
         print(f"Background Information (dialog #{index} from dataset):")
         print(f"Task Name: {dialog['task_name']}")
         print(f"Student's Background (P2):")
         printbf(f"\t{dialog['P2']}")
     
-    elif dialog["task_name"] == "Chatting":
+    elif dialog["task_name"] in ["Chatting", "Chatting PPO"]:
         print(f"Background Information (dialog #{index} from dataset):")
         print(f"Task Name: {dialog['task_name']}")
 
@@ -96,9 +100,9 @@ def print_background_info(dialog, index, **kwargs):
 def get_task_eval_agent_indices(dialog):
     if dialog["task_name"] == "Therapy":
         return [1]
-    elif dialog["task_name"] == "Education":
+    elif dialog["task_name"] in ["Education", "Education PPO"]:
         return [1]
-    elif dialog["task_name"] == "Chatting":
+    elif dialog["task_name"] in ["Chatting", "Chatting PPO"]:
         return [1]
     else:
         raise ValueError(f"Unknown task name: {dialog['task_name']}")
@@ -113,13 +117,29 @@ def human_evaluation(dialog, index):
     print(f"Evaluating Dialog: {dialog['task_name']} - #{index}")
     print("-" * 40)
 
+    past_utterances = []
+
     for turn_num, turn in enumerate(dialog['conversation']):
         utterance_index, utterance = turn
         agent_speaking = utterance_index % 2
+        agent_label = f"P{agent_speaking + 1}"
+        
 
         if agent_speaking in eval_agent_indices:
             print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
-            print(f"Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
+
+            # Display the last 5 utterances for each agent, bolding the evaluated agent's
+            # Display the last 5 utterances in interleaved order
+            print("Recent Utterances:")
+            last_five = past_utterances[-5:]
+            for past_agent, past_utterance in last_five:
+                if agent_speaking == int(past_agent[-1]) - 1:
+                    printbf(f"\t{past_agent}: {past_utterance}")
+                else:
+                    print(f"\t{past_agent}: {past_utterance}")
+            print()
+
+            print(f"Evaluating Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
             printbf(f"\t{utterance.strip()}")
             print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
             consistency_score = input("Enter consistency score (1/0): ").strip()
@@ -128,6 +148,25 @@ def human_evaluation(dialog, index):
                 consistency_score = input("Enter consistency score (1/0): ").strip()
             agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
             print()
+        
+        # Store the current utterance for future reference
+        past_utterances.append((agent_label, utterance))
+
+    # for turn_num, turn in enumerate(dialog['conversation']):
+    #     utterance_index, utterance = turn
+    #     agent_speaking = utterance_index % 2
+
+    #     if agent_speaking in eval_agent_indices:
+    #         print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
+    #         print(f"Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
+    #         printbf(f"\t{utterance.strip()}")
+    #         print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
+    #         consistency_score = input("Enter consistency score (1/0): ").strip()
+    #         while consistency_score not in ['1', '0']:
+    #             print("Invalid input. Please enter 1 for consistent or 0 for inconsistent.")
+    #             consistency_score = input("Enter consistency score (1/0): ").strip()
+    #         agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
+    #         print()
 
     print("-" * 40)
 
@@ -161,7 +200,7 @@ def main(base_dir: str, num_dialogs: int=10):
     base_dir = Path(base_dir)
 
     # ask the user to select a task
-    task_name = input("Enter the number corresponding to the task you want to evaluate:\n1. Therapy\n2. Education\n3. Chatting\n")
+    task_name = input("Enter the number corresponding to the task you want to evaluate:\n1. Therapy\n2. Education\n3. Chatting\n4. Chatting PPO\n5. Education PPO\n")
     task_name = task_name.strip()
     if task_name == "1":
         task_name = "Therapy"
@@ -169,8 +208,12 @@ def main(base_dir: str, num_dialogs: int=10):
         task_name = "Education"
     elif task_name == "3":
         task_name = "Chatting"
+    elif task_name == "4":
+        task_name = "Chatting PPO"
+    elif task_name == "5":
+        task_name = "Education PPO"
     else:
-        print("Invalid input. Please enter 1, 2, or 3.")
+        print("Invalid input. Please enter 1, 2, 3, 4, or 5.")
         return
     print(f"You selected: {task_name}")
 
