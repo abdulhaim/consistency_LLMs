@@ -5,9 +5,9 @@ import json
 import ray
 
 metric_model = 'meta-llama/Meta-Llama-3.1-70B-Instruct'
-metadata_path = '/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out/metadata.json' # path to metadata json for evals to use
+metadata_path = './training_data/out/metadata.json' # path to metadata json for evals to use
 port = "8001" # port number vLLM is hosted on
-eval_prompt_path = "/nfs/kun2/users/ryan_cheng/consistency_LLMs/config/eval_prompts.json"
+eval_prompt_path = "./config/eval_prompts.json"
 with open(metadata_path, 'r') as f:
     metadata_dict_ref = ray.put(json.load(f))
 
@@ -52,11 +52,7 @@ def reward_func(queries, prompts, labels):
     scores = []
     for i, query in enumerate(queries):
         metadata = ray.get(metadata_dict_ref)[prompts[i]] # 0: preference_distribution, 1: beliefs, 2: listener_alignment
-        # print("prompt:", prompts[i])
-        # print("query:", query)
         cut_query = str(query.replace("<|eot_id|>", "")[len(prompts[i]):])
-        # print("cut query:", cut_query)
-        # print(labels[i]) # remove when done debugging
         scores.append(float(eval_prompt_consistency(metadata, cut_query)))
 
     return torch.tensor(scores)

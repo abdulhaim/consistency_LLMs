@@ -16,7 +16,7 @@ import pandas as pd
 import numpy as np
 
 
-flags.DEFINE_string('task', 'Anthology', 'run metrics on a particular task, searching for files within the task folder (Anthology/default)')
+flags.DEFINE_string('task', 'Chatting', 'run metrics on a particular task, searching for files within the task folder (Chatting/default)')
 flags.DEFINE_string('exp_folder', None, 'run metrics on experiments in a particular folder (None/default)')
 flags.DEFINE_integer('max_iter', 500, 'max number of conversations to run metrics on (500/default)')
 # (1) Takes in dialog, takes in base prompt, checks inconsistencies with base prompt for each line and output

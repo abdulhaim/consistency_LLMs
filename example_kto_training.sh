@@ -15,7 +15,7 @@ python jsonl_gen.py --task=Chatting
     # directory with train.jsonl and test.jsonl
     # wandb key to monitor run stats
 nohup deepspeed --include localhost:1,2 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/education/llama3-8b-kto-prompt \
+   --save_path ./checkpoints/education/llama3-8b-kto-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
@@ -27,80 +27,80 @@ nohup deepspeed --include localhost:1,2 --master_port 61000 --module openrlhf.cl
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+   --dataset json@./consistency_LLMs/training_data/out \
    --input_key in_text \
    --output_key out_text \
    --label_key score \
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto_education.out & 
+   --use_wandb ... > kto_education.out & 
 
 # education sft kto
 nohup deepspeed --include localhost:1,2 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/education/llama3-8b-kto-sft-prompt \
+   --save_path ./checkpoints/education/llama3-8b-kto-sft-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
    --train_batch_size 256 \
    --micro_train_batch_size 1 \
-   --pretrain /nfs/kun2/users/ryan_cheng/checkpoints/education/llama3-8b-sft \
+   --pretrain ./checkpoints/education/llama3-8b-sft \
    --bf16 \
    --max_epochs 1 \
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+   --dataset json@./consistency_LLMs/training_data/out \
    --input_key in_text \
    --output_key out_text \
    --label_key score \
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto_sft_education.out & 
+   --use_wandb ... > kto_sft_education.out & 
 
 # Chatting sft kto
 nohup deepspeed --include localhost:5,6 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-kto-sft-prompt \
+   --save_path ./checkpoints/Chatting/llama3-8b-kto-sft-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
    --train_batch_size 256 \
    --micro_train_batch_size 1 \
-   --pretrain /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-sft \
+   --pretrain ./checkpoints/Chatting/llama3-8b-sft \
    --bf16 \
    --max_epochs 1 \
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+   --dataset json@./consistency_LLMs/training_data/out \
    --input_key in_text \
    --output_key out_text \
    --label_key score \
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto_sft_chatting.out & 
+   --use_wandb ... > kto_sft_chatting.out & 
 
 
 nohup deepspeed --include localhost:4,5,6 --master_port 61000 --module openrlhf.cli.train_kto \
-   --save_path /raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-kto-sft-prompt \
+   --save_path ./checkpoints/therapy/llama3-8b-kto-sft-prompt \
    --save_steps -1 \
    --logging_steps 1 \
    --eval_steps -1 \
    --train_batch_size 255 \
    --micro_train_batch_size 1 \
-   --pretrain /raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft \
+   --pretrain ./checkpoints/therapy/llama3-8b-sft \
    --bf16 \
    --max_epochs 1 \
    --max_len 8192 \
    --zero_stage 3 \
    --learning_rate 5e-7 \
-   --dataset json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+   --dataset json@./consistency_LLMs/training_data/out \
    --input_key in_text \
    --output_key out_text \
    --label_key score \
    --flash_attn \
    --beta 0.1 \
    --gradient_checkpointing \
-   --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > kto_sft_therapy.out & 
+   --use_wandb ... > kto_sft_therapy.out & 

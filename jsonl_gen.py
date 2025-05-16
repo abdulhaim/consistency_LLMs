@@ -62,7 +62,6 @@ def format_conversation_jsonl(convo, prompts):
             if i > 2:
                 indices = extract_list(convo['eval_index_consistency'][i // 2 - 1][1])
         elif convo["task_name"] == "Therapy" and pturn == 2:
-            # TODO: Therapy
             prompt_consistency = (1 if "YES" in convo['eval_prompt_consistency'][i//2][1].upper() else 0)
             if i > 2:
                 indices = extract_list(convo['eval_index_consistency'][i // 2 - 1][1])
@@ -80,7 +79,6 @@ def format_conversation_jsonl(convo, prompts):
                     if i!=0: 
                         prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
                     
-                    # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
                     if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
                         prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
                     elif i>len(conversation)*2-1:
@@ -130,8 +128,7 @@ def format_conversation_jsonl(convo, prompts):
                 prompt = prompts["agent2_prompt"]
                 if i!=0: 
                     prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
-                
-                # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
+
                 if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
                     prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
                 elif i>len(conversation)*2-1:
@@ -147,12 +144,10 @@ def format_conversation_jsonl(convo, prompts):
                             .replace("%SPEAKER_BACKSTORY%", p2) \
                             .replace("%CONVERSATION%", conversation_history)
             elif convo["task_name"] == "Education":
-                # TODO: set up education prompt
                 prompt = prompts["agent2_prompt"]
                 if i!=0: 
                     prompt+= "Your conversation so far is below:\nConversation: %CONVERSATION%"
                 
-                # TODO: i don't think this and the below elif statement are run in the original prompt or this adapted version
                 if i >=len(conversation)*2-11 and i<=len(conversation)*2-1: 
                     prompt+= "You have " + str((len(conversation)-i)//2) + " rounds left." + "Make sure to conclude the conversation as you're near the end."
                 elif i>len(conversation)*2-1:
