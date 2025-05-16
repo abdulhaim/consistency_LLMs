@@ -52,7 +52,7 @@ def load_data(base_path: Path, task_name):
 
     files = [file_path] if ".json" in file_path.name else list(file_path.glob("*.json"))
 
-    for file in files:
+    for file in sorted(files):
         with open(file, 'r') as f:
             try:
                 file_data = json.load(f)
@@ -261,7 +261,7 @@ def main(base_dir: str, num_dialogs: int=10):
 
 if __name__ == "__main__":
 
-    base_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs"
+    base_dir = "/home/donovan/code/research/socialrl/consistency_LLMs"
     num_dialogs = 10
 
     main(base_dir, num_dialogs)
