@@ -52,7 +52,7 @@ def load_data(base_path: Path, task_name):
 
     files = [file_path] if ".json" in file_path.name else list(file_path.glob("*.json"))
 
-    for file in files:
+    for file in sorted(files):
         with open(file, 'r') as f:
             try:
                 file_data = json.load(f)
