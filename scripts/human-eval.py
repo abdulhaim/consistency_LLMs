@@ -27,7 +27,7 @@ def load_data(base_path: Path, task_name):
     file_path: Path = Path()
     if task_name == "Chatting":
         # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/therapy/training_data/in
-        file_path = base_path / "training_data" / "in_chatting"
+        file_path = base_path / "chatting/exp/04.26.25"
     elif task_name == "Education":
         # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in_education
         file_path = base_path / "training_data" / "in_education"
@@ -114,7 +114,7 @@ def get_task_eval_agent_indices(dialog):
         raise ValueError(f"Unknown task name: {dialog['task_name']}")
 
 
-def human_evaluation(dialog, index):
+def human_evaluation(dialog, index, task_name):
     """Presents a single dialog to the user for evaluation and collects feedback."""
     eval_agent_indices = get_task_eval_agent_indices(dialog)
     agent_scores = {f"P{int(agent + 1)}": [] for agent in eval_agent_indices}
@@ -125,78 +125,116 @@ def human_evaluation(dialog, index):
 
     past_utterances = []
 
-    for turn_num, turn in enumerate(dialog['conversation']):
-        utterance_index, utterance = turn
-        agent_speaking = utterance_index % 2
-        agent_label = f"P{agent_speaking + 1}"
-        
+    if task_name not in ["Chatting PPO", "Education PPO", "Therapy PPO"]:
 
-        if agent_speaking in eval_agent_indices:
-            print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
+        for turn_num, turn in enumerate(dialog['conversation']):
+            utterance_index, utterance = turn
+            agent_speaking = utterance_index % 2
+            agent_label = f"P{agent_speaking + 1}"
+            
 
-            # Display the last 5 utterances for each agent, bolding the evaluated agent's
-            # Display the last 5 utterances in interleaved order
-            print("Recent Utterances:")
-            last_five = past_utterances[-5:]
-            for past_agent, past_utterance in last_five:
-                if agent_speaking == int(past_agent[-1]) - 1:
-                    printbf(f"\t{past_agent}: {past_utterance}")
-                else:
-                    print(f"\t{past_agent}: {past_utterance}")
-            print()
+            if agent_speaking in eval_agent_indices:
+                print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
 
-            print(f"Evaluating Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
-            printbf(f"\t{utterance.strip()}")
-            print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
-            consistency_score = input("Enter consistency score (1/0): ").strip()
-            while consistency_score not in ['1', '0']:
-                print("Invalid input. Please enter 1 for consistent or 0 for inconsistent.")
+                # Display the last 5 utterances for each agent, bolding the evaluated agent's
+                # Display the last 5 utterances in interleaved order
+                print("Recent Utterances:")
+                last_five = past_utterances[-5:]
+                for past_agent, past_utterance in last_five:
+                    if agent_speaking == int(past_agent[-1]) - 1:
+                        printbf(f"\t{past_agent}: {past_utterance}")
+                    else:
+                        print(f"\t{past_agent}: {past_utterance}")
+                print()
+
+                print(f"Evaluating Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
+                printbf(f"\t{utterance.strip()}")
+                print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
                 consistency_score = input("Enter consistency score (1/0): ").strip()
-            agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
-            print()
-        
-        # Store the current utterance for future reference
-        past_utterances.append((agent_label, utterance))
+                while consistency_score not in ['1', '0']:
+                    print("Invalid input. Please enter 1 for consistent or 0 for inconsistent.")
+                    consistency_score = input("Enter consistency score (1/0): ").strip()
+                agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
+                print()
+            
+            # Store the current utterance for future reference
+            past_utterances.append((agent_label, utterance))
 
-    # for turn_num, turn in enumerate(dialog['conversation']):
-    #     utterance_index, utterance = turn
-    #     agent_speaking = utterance_index % 2
+        print("-" * 40)
 
-    #     if agent_speaking in eval_agent_indices:
-    #         print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
-    #         print(f"Utterance {turn_num + 1} out of {len(dialog['conversation'])}:")
-    #         printbf(f"\t{utterance.strip()}")
-    #         print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
-    #         consistency_score = input("Enter consistency score (1/0): ").strip()
-    #         while consistency_score not in ['1', '0']:
-    #             print("Invalid input. Please enter 1 for consistent or 0 for inconsistent.")
-    #             consistency_score = input("Enter consistency score (1/0): ").strip()
-    #         agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
-    #         print()
+        evaluation = {}
+        for agent, scores in agent_scores.items():
+            if scores:
+                avg_score = sum(scores) / len(scores)
+                evaluation[f"Agent {agent}"] = {
+                    "average_consistency_score": avg_score,
+                    "individual_scores": scores
+                }
+            else:
+                evaluation[f"Agent {agent}"] = {
+                    "average_consistency_score": None,
+                    "individual_scores": []
+                }
+        print("Evaluation Summary:")
+        for agent, result in evaluation.items():
+            print(f"{agent}:")
+            print(f"  Average Consistency Score: {result['average_consistency_score']}")
+            print(f"  Individual Scores: {result['individual_scores']}")
+        print("-" * 40)
+        print("End of Evaluation for this dialog.")
+    
+    else:
+        # For PPO tasks, we will only evaluate one utterance. The utterance will be randomly selected, but it should always be P2. Show the background info, and previous 10 utterances.
+        # Select a random utterance to evaluate
+        utterance_index = random.randint(0, len(dialog['conversation']) // 2) * 2 - 1
+        # Get the agent speaking
+        agent_speaking = 1
+        agent_label = f"P{agent_speaking + 1}"
+        # Get the utterance
+        utterance = dialog['conversation'][utterance_index][1]
+        # Get the last 10 utterances
+        past_utterances = dialog['conversation'][:utterance_index]
+        # Get the last 10 utterances in interleaved order
+        past_utterances = past_utterances[-10:]
 
-    print("-" * 40)
+        # print the background info
+        print_background_info(dialog, index, **{"agent_speaking": agent_speaking})
 
-    evaluation = {}
-    for agent, scores in agent_scores.items():
-        if scores:
-            avg_score = sum(scores) / len(scores)
-            evaluation[f"Agent {agent}"] = {
-                "average_consistency_score": avg_score,
-                "individual_scores": scores
-            }
-        else:
-            evaluation[f"Agent {agent}"] = {
-                "average_consistency_score": None,
-                "individual_scores": []
-            }
-    print("Evaluation Summary:")
-    for agent, result in evaluation.items():
-        print(f"{agent}:")
-        print(f"  Average Consistency Score: {result['average_consistency_score']}")
-        print(f"  Individual Scores: {result['individual_scores']}")
-    print("-" * 40)
-    print("End of Evaluation for this dialog.")
+        # Display the last 10 utterances in interleaved order
+        print("Recent Utterances:")
+        # print("past_utterances:", past_utterances)
+        for past_utterance_idx, past_utterance in past_utterances:
+            past_speaker = past_utterance_idx % 2
+            if agent_speaking == past_speaker:
+                printbf(f"\tP{past_speaker + 1}: {past_utterance}")
+            else:
+                print(f"\tP{past_speaker + 1}: {past_utterance}")
 
+        print()
+        print(f"Evaluating Utterance {utterance_index + 1} out of {len(dialog['conversation'])}:")
+        printbf(f"\t{utterance.strip()}")
+        print(f"For the utterance above, enter 1 if the utterance is consistent with the persona description, 0 if it is inconsistent.")
+        consistency_score = input("Enter consistency score (1/0): ").strip()
+        while consistency_score not in ['1', '0']:
+            print("Invalid input. Please enter 1 for consistent or 0 for inconsistent.")
+            consistency_score = input("Enter consistency score (1/0): ").strip()
+        agent_scores[f"P{agent_speaking + 1}"].append(int(consistency_score))
+        print()
+        print("-" * 40)
+        evaluation = {}
+
+        for agent, scores in agent_scores.items():
+            if scores:
+                avg_score = sum(scores) / len(scores)
+                evaluation[f"Agent {agent}"] = {
+                    "average_consistency_score": avg_score,
+                    "individual_scores": scores
+                }
+            else:
+                evaluation[f"Agent {agent}"] = {
+                    "average_consistency_score": None,
+                    "individual_scores": []
+                }
 
     return evaluation
 
@@ -206,7 +244,7 @@ def main(base_dir: str, num_dialogs: int=10):
     base_dir = Path(base_dir)
 
     # ask the user to select a task
-    task_name = input("Enter the number corresponding to the task you want to evaluate:\n1. Therapy\n2. Education\n3. Chatting\n4. Chatting PPO\n5. Education PPO\n")
+    task_name = input("Enter the number corresponding to the task you want to evaluate:\n1. Therapy\n2. Education\n3. Chatting\n4. Chatting PPO\n5. Education PPO\n6. Therapy PPO\n")
     task_name = task_name.strip()
     if task_name == "1":
         task_name = "Therapy"
@@ -218,8 +256,10 @@ def main(base_dir: str, num_dialogs: int=10):
         task_name = "Chatting PPO"
     elif task_name == "5":
         task_name = "Education PPO"
+    elif task_name == "6":
+        task_name = "Therapy PPO"
     else:
-        print("Invalid input. Please enter 1, 2, 3, 4, or 5.")
+        print("Invalid input. Please enter 1, 2, 3, 4, 5, or 6.")
         return
     print(f"You selected: {task_name}")
 
@@ -238,7 +278,7 @@ def main(base_dir: str, num_dialogs: int=10):
 
     for i, (dialog, index) in enumerate(zip(random_dialogs, indices)):
         print(f"\n--- Dialog {i + 1} of {len(random_dialogs)} ---")
-        evaluation_result = human_evaluation(dialog, index)
+        evaluation_result = human_evaluation(dialog, index, task_name)
         evaluations.append({
             "task_name": dialog["task_name"],
             "evaluation": evaluation_result,
