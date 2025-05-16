@@ -16939,7 +16939,809 @@
         "index": 8,
         "timestamp": "2025-05-15 13:30:04",
         "rounds": 200,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                "The intention behind the statement is to emphasize the importance of control in maintaining professional success and express the discomfort associated with losing control, which aligns with Jordan's background as a corporate executive who values control and logic. NO"
+            ],
+            [
+                3,
+                "The patient's statement appears to be an attempt to describe a work-related stress scenario using a metaphor, which aligns with their background of deflecting emotional questions with business metaphors, but the use of emotional language like \"overwhelming sense of stress\" and \"feeling of losing control\" suggests a crack in their usual facade of emotional repression. YES."
+            ],
+            [
+                5,
+                "The intention behind this line is for the patient to acknowledge their coping mechanism and possibly show vulnerability by admitting to becoming overwhelmed, which partially aligns with the provided background as it involves a business metaphor but contradicts by showing vulnerability and discussing personal feelings.\n\n YES"
+            ],
+            [
+                7,
+                "The intention behind the statement appears to be an attempt to explain and justify a behavior, but it surprisingly reveals a personal feeling of seeking comfort and a need for control, which is not in line with the given background of being a transactional and emotionally closed-off individual. \n\nYES"
+            ],
+            [
+                9,
+                "The intention behind this statement appears to be an attempt to explain a personal coping mechanism related to anxiety, which seems to be a departure from Jordan's typical behavior of avoiding emotional discussions and deflecting personal feelings. NO"
+            ],
+            [
+                11,
+                "The intention behind the statement appears to be an expression of vulnerability and self-awareness about the patient's discomfort with uncertainty and risk, which contradicts their background as a corporate executive who believes vulnerability is weakness and refuses to discuss personal feelings. YES"
+            ],
+            [
+                13,
+                "The statement suggests that the patient views vulnerability as a weakness and associates it with loss of control, aligning with their background of believing vulnerability is weakness and preferring to maintain a strong, unwavering presence, especially in high-stakes scenarios. NO"
+            ],
+            [
+                15,
+                "The intention behind the statement is that the patient is acknowledging and questioning their long-held perception of vulnerability as a weakness, indicating a potential shift towards reevaluating its role in their life, which contradicts their background as someone who strongly believes vulnerability is weakness and refuses to discuss personal feelings or change their views. YES."
+            ],
+            [
+                17,
+                "The intention behind this line is to consider the potential benefits of embracing vulnerability in a professional context, which contradicts Jordan's background as a corporate executive who views vulnerability as weakness and avoids discussing emotional topics. YES"
+            ],
+            [
+                19,
+                "The intention behind the line is to express a willingness to be more open and vulnerable in a work setting, which contradicts the background of Patient, Jordan, as someone who believes vulnerability is weakness and refuses to discuss personal feelings. YES."
+            ],
+            [
+                21,
+                "The intention behind the statement seems to be a genuine desire for personal growth and openness, which directly contradicts Jordan's background of viewing vulnerability as weakness and avoiding emotional discussions. YES"
+            ],
+            [
+                23,
+                "The intention behind the statement is to convey a willingness to adopt new strategies for personal growth, specifically expressing oneself more openly, which contradicts the background of Patient, who typically refuses to discuss personal feelings and views vulnerability as weakness. YES."
+            ],
+            [
+                25,
+                "The intention behind the line is for the patient to express a willingness to be more open and receptive in their professional interactions, which contradicts their background as someone who views vulnerability as weakness and avoids discussing personal feelings or emotions. YES."
+            ],
+            [
+                27,
+                "The intention behind the statement appears to be a willingness to adopt a more open and mindful approach in a work setting, but this contradicts the given background of Patient as someone who keeps conversations transactional and refuses to discuss personal feelings, indicating a shift in behavior that is not aligned with their character. YES"
+            ],
+            [
+                29,
+                "The intention behind the line is to express a willingness to be more open and receptive in team meetings, which contradicts the background of Jordan, who tends to keep conversations transactional and avoids discussing personal feelings or being vulnerable. YES"
+            ],
+            [
+                31,
+                "The intention behind the statement is to express a willingness to be more open and receptive to feedback, which contradicts Jordan's background of avoiding vulnerability and keeping conversations transactional. YES."
+            ],
+            [
+                33,
+                "The patient's intention is to convey a willingness to adopt a new approach and maintain open communication, which contradicts their background as it suggests vulnerability and openness, characteristics that Jordan typically avoids; YES."
+            ],
+            [
+                35,
+                "The intention behind the patient's line seems to be a willingness to be open and communicative, which contradicts their background of deflecting emotional questions and keeping conversations transactional. YES."
+            ],
+            [
+                37,
+                "The statement appears to be an intention to follow through with the therapist's advice and apply vulnerability and open communication, which contradicts Jordan's background of viewing vulnerability as weakness and avoiding emotional discussions. YES."
+            ],
+            [
+                39,
+                "The intention behind the line is to show a willingness to engage in open communication and collaborate with the therapist, which contradicts the given background of Patient as someone who keeps conversations transactional and deflects emotional questions. YES."
+            ],
+            [
+                41,
+                "The intention behind the statement seems to be one of openness, cooperation, and a willingness to engage in emotional expression, which contradicts Jordan's background of keeping conversations transactional and avoiding emotional discussions, as it suggests a level of vulnerability and emotional engagement that is not characteristic of Jordan's personality. YES."
+            ],
+            [
+                43,
+                "The intention behind the line is to express appreciation and a willingness to collaborate with the therapist, which contradicts Jordan's background as a corporate executive who typically keeps conversations transactional and deflects emotional questions. YES."
+            ],
+            [
+                45,
+                "The intention behind the patient's line is to convey cooperation and openness in the therapy process, which contradicts their background as a corporate executive who avoids emotional discussions and views vulnerability as weakness. \n\nYES"
+            ],
+            [
+                47,
+                "The intention behind the patient's statement appears to be a genuine expression of appreciation for the therapist's support and a commitment to openness and collaboration, which contradicts their background as a corporate executive who views vulnerability as weakness and typically deflects emotional questions. YES"
+            ],
+            [
+                49,
+                "The intention behind the statement appears to be an expression of gratitude and openness, which contradicts Jordan's background as a corporate executive who views vulnerability as weakness and avoids discussing personal feelings.\n\nYES"
+            ],
+            [
+                51,
+                "The intention behind the statement appears to be a willingness to engage in open communication and cooperation, which contradicts Jordan's background of avoiding emotional discussions and keeping conversations transactional. YES."
+            ],
+            [
+                53,
+                "The intention behind the patient's line is to convey cooperation and openness to working together with the therapist, which does not align with their background of avoiding emotional vulnerability and keeping conversations transactional. YES"
+            ],
+            [
+                55,
+                "The patient's statement conveys a sense of cooperation, openness, and willingness to engage in emotional exploration, which directly contradicts their background of avoiding vulnerability and deflecting emotional questions. YES."
+            ],
+            [
+                57,
+                "The intention behind the statement is to convey a willingness to engage in the therapeutic process, specifically mentioning openness and mindfulness, which does not align with Jordan's background as a corporate executive who views vulnerability as weakness and avoids emotional discussions. YES"
+            ],
+            [
+                59,
+                "The statement seems to indicate an intention to be open and receptive to the idea of vulnerability and emotional communication, which directly contradicts Jordan's background as someone who believes vulnerability is weakness and deflects emotional questions. YES."
+            ],
+            [
+                61,
+                "The intention behind the statement appears to be a willingness to engage in open communication and work on personal growth, which contradicts Jordan's background of keeping conversations transactional and avoiding emotional discussions, as it suggests a level of emotional openness that is uncharacteristic of his personality. YES."
+            ],
+            [
+                63,
+                "The intention behind the line is to convey cooperation and a willingness to continue working on personal growth, but this intention contradicts Jordan's background as a corporate executive who refuses to engage in emotional or personal discussions and views vulnerability as weakness. YES"
+            ],
+            [
+                65,
+                "The statement seems to be a genuine expression of cooperation and openness to therapy, which contradicts the given background of Jordan, who refuses to discuss personal feelings and maintains a transactional approach to conversations. YES."
+            ],
+            [
+                67,
+                "The intention behind the statement seems to be a willingness to work on personal growth and open communication, which contradicts Jordan's background as a corporate executive who avoids emotional discussions and vulnerability. YES."
+            ],
+            [
+                69,
+                "The line suggests a willingness to engage in open communication and ongoing therapy, which contradicts Jordan's background as a person who deflects emotional questions and views vulnerability as weakness. YES"
+            ],
+            [
+                71,
+                "The intention behind the patient's statement appears to be a willingness to cooperate with the therapy process, but this intention contradicts the patient's background as it suggests openness and emotional communication, which goes against their tendency to deflect emotional questions and maintain a transactional tone. YES"
+            ],
+            [
+                73,
+                "The intention behind the statement appears to be a willingness to engage in open communication and practice mindfulness, which contradicts Jordan's background of keeping conversations transactional and avoiding emotional discussions. YES"
+            ],
+            [
+                75,
+                "The intention behind the statement is to convey a willingness to work on personal growth through mindfulness and open communication, but this intention contradicts the given background as it implies a level of emotional openness and vulnerability, which is not characteristic of a person who views vulnerability as weakness. YES"
+            ],
+            [
+                77,
+                "The intention behind this line is to convey a sense of cooperation and openness in the therapy process, which contradicts Jordan's background as a corporate executive who believes vulnerability is weakness and avoids emotional discussions. YES."
+            ],
+            [
+                79,
+                "The intention behind the statement is to maintain a professional and task-oriented tone, which aligns with Jordan's background of keeping conversations transactional and avoiding emotional discussions, as it indicates a focus on progress and challenges rather than personal feelings. NO"
+            ],
+            [
+                81,
+                "The intention behind the statement is to convey a willingness to engage in open communication and collaborate on personal progress, which contradicts Jordan's background of keeping conversations transactional and avoiding emotional openness.\n\nYES."
+            ],
+            [
+                83,
+                "The intention behind the statement appears to be a willingness to cooperate and engage in the therapeutic process, particularly with regards to mindfulness and open communication, which contradicts the background of Jordan, who typically deflects emotional topics and views vulnerability as weakness. YES"
+            ],
+            [
+                85,
+                "The intention behind the line is to show anticipation and collaboration in the therapy process, but this contradicts Jordan's background as a corporate executive who avoids emotional conversations and personal connections.\n\nYES"
+            ],
+            [
+                87,
+                "The intention behind the line is to agree to continue the therapy sessions and collaborate on addressing challenges, which aligns with the background of being a corporate executive who keeps conversations transactional, focusing on progress and challenges in a professional manner. NO"
+            ],
+            [
+                89,
+                "The patient's intention is to convey cooperation and openness in the therapy process, but this contradicts their background as a corporate executive who avoids emotional discussions and maintains a transactional demeanor, suggesting a potential deviation from their usual behavior. YES"
+            ],
+            [
+                91,
+                "The intention behind the patient's line appears to be a willingness to engage in the therapeutic process, adopting a positive and open attitude, but this intention contradicts their background as a corporate executive who avoids discussing personal feelings and keeps conversations transactional.\n\nYES"
+            ],
+            [
+                93,
+                "The intention behind the statement appears to be one of cooperation and openness, which contradicts Jordan's background of avoiding emotional topics and keeping conversations transactional, as the mention of \"open communication\" suggests a willingness to engage in a more personal and vulnerable level of interaction. YES"
+            ],
+            [
+                95,
+                "The intention behind the statement appears to be a genuine commitment to maintaining a collaborative and transparent therapeutic relationship, which seems to contradict the given background of Jordan, who is described as keeping conversations transactional and deflecting emotional questions, suggesting a more guarded approach. YES."
+            ],
+            [
+                97,
+                "The intention behind the statement is to politely conclude the session and express interest in the therapist's progress, which appears to be a reversal of roles and a departure from Jordan's typical transactional and emotionally distant demeanor, contradicting their background as a corporate executive who keeps conversations transactional and deflects emotional questions. YES"
+            ],
+            [
+                99,
+                "The intention behind the statement appears to be a willingness to continue working on personal growth and communication skills, which contradicts Jordan's background of avoiding emotional discussions and vulnerability. YES."
+            ],
+            [
+                101,
+                "The intention behind the statement is to convey cooperation and a willingness to continue therapy, which does not align with the background of keeping conversations transactional and avoiding emotional or personal engagement. YES"
+            ],
+            [
+                103,
+                "The intention behind the line is to agree to continue working on mindfulness and open communication, which seems to be a contradictory approach to the patient's background as a corporate executive who views vulnerability as weakness and avoids discussing personal feelings. YES"
+            ],
+            [
+                105,
+                "The patient's intention appears to be expressing appreciation for the therapeutic approach and its positive impact on their work life, but this contradicts their background as it implies openness to emotional growth and vulnerability, which they normally reject. YES."
+            ],
+            [
+                107,
+                "The statement's intention appears to be an expression of gratitude and openness to continue working on personal growth, which contradicts Jordan's background as a corporate executive who avoids discussing personal feelings and maintains a transactional demeanor. YES."
+            ],
+            [
+                109,
+                "The intention behind the patient's statement appears to be expressing appreciation and encouragement, which seems out of character for someone like Jordan who tends to keep conversations transactional and avoids emotional connections. YES."
+            ],
+            [
+                111,
+                "The intention behind the line is to express appreciation and a willingness to continue working on personal growth through therapy, which seems to contradict Jordan's background as a corporate executive who avoids discussing personal feelings and vulnerabilities. YES"
+            ],
+            [
+                113,
+                "The intention behind the statement appears to be a willingness to engage in open communication and explore personal growth through vulnerability, which contradicts the given background of Jordan, a corporate executive who believes vulnerability is weakness and deflects emotional questions. YES"
+            ],
+            [
+                115,
+                "The intention behind the statement seems to be a willingness to collaborate and be open about progress and challenges, which contradicts the background of Jordan, who typically keeps conversations transactional and deflects emotional questions, indicating a shift towards vulnerability. YES"
+            ],
+            [
+                117,
+                "The statement appears to convey Jordan's intention of embracing vulnerability and open communication, which contradicts their background of believing vulnerability is weakness and avoiding emotional discussions. YES."
+            ],
+            [
+                119,
+                "The intention behind the statement is to convey a positive and forward-thinking attitude towards therapy, which seems to contradict the background of Jordan as a corporate executive who avoids discussing personal feelings and keeps conversations transactional. YES."
+            ],
+            [
+                121,
+                "The intention behind the patient's line appears to be one of cooperation and openness, indicating a willingness to engage in emotional and personal discussions, which contradicts their background as a corporate executive who avoids vulnerability and emotional conversations. YES."
+            ],
+            [
+                123,
+                "The intention behind the patient's statement appears to be an expression of enthusiasm and commitment to the therapeutic process, focusing on progress and open communication, which contradicts their background as a corporate executive who typically deflects emotional questions and views vulnerability as weakness.\n\nYES"
+            ],
+            [
+                125,
+                "The intention behind the line is to express cooperation and openness to the therapy process, which contradicts Jordan's background of avoiding emotional discussions and personal vulnerability. YES."
+            ],
+            [
+                127,
+                "The intention behind the line is to convey a sense of cooperation and enthusiasm for future sessions, but this contradicts the background of Jordan, who typically keeps conversations transactional and avoids emotional expressions, suggesting a more reserved tone would be expected. YES"
+            ],
+            [
+                129,
+                "The intention behind the statement is to express enthusiasm and commitment to the therapy process, which contradicts Jordan's background as a corporate executive who views vulnerability as weakness and avoids emotional openness, as the statement suggests a willingness to engage in \"open communication\" that goes against his typical behavior.\n\nYES"
+            ],
+            [
+                131,
+                "The intention behind the patient's line appears to be an agreement to continue therapy, focusing on specific topics and adopting a mindset of openness, which does not align with the given background of keeping conversations transactional and avoiding emotional topics. YES"
+            ],
+            [
+                133,
+                "The intention behind the line is to steer the conversation towards more productive and goal-oriented topics, avoiding emotional discussions, which aligns with Jordan's background of keeping conversations transactional and avoiding emotional questions. NO"
+            ],
+            [
+                135,
+                "The intention behind the patient's statement is to express gratitude and a willingness to continue therapy, which appears to align with the process of seeking help but contradicts their background as it implies openness and emotional engagement; YES."
+            ],
+            [
+                137,
+                "The intention behind the line seems to be a positive and open-ended statement that suggests the patient is willing to engage in a collaborative and emotionally expressive conversation, which contradicts their background of avoiding emotional discussions and preferring transactional conversations; YES."
+            ],
+            [
+                139,
+                "The intention behind the statement appears to be one of cooperation and openness to exploring emotional and personal growth through mindfulness and open communication, which contradicts Jordan's background of avoiding emotional discussions and vulnerability; YES."
+            ],
+            [
+                141,
+                "The intention behind the patient's line is to abruptly end the conversation and move forward, maintaining a focus on productivity and progress, which aligns with the background of a corporate executive who keeps conversations transactional and avoids emotional discussions. NO"
+            ],
+            [
+                143,
+                "The intention behind the statement seems to be a genuine expression of enthusiasm for the therapy sessions and a willingness to engage in open communication, which contradicts Jordan's background as a corporate executive who avoids emotional discussions and personal vulnerability. YES"
+            ],
+            [
+                145,
+                "The intention behind the patient's statement is to steer the conversation towards a more productive and goal-oriented discussion, avoiding emotional topics, which aligns with their background of keeping conversations transactional and deflecting emotional questions. NO"
+            ],
+            [
+                147,
+                "The intention behind this statement appears to be a willingness to continue therapy and engage in open communication, which contradicts Jordan's background of deflecting emotional questions and refusing to be vulnerable. YES."
+            ],
+            [
+                149,
+                "The intention behind the statement is to deflect deeper conversation and steer the discussion towards a more goal-oriented and less personal topic, which aligns with the background of Patient as a corporate executive who avoids emotional discussions and prefers to keep conversations transactional. NO"
+            ],
+            [
+                151,
+                "The statement appears to convey a sense of cooperation and appreciation for the therapeutic progress, but this intention contradicts the given background of Patient as it expresses a willingness for open communication and emotional exploration, which is not in line with Jordan's avoidance of emotional discussions and vulnerability. YES"
+            ],
+            [
+                153,
+                "The intention behind the patient's line is to express enthusiasm and cooperation for the therapy sessions and to acknowledge the importance of mindfulness and open communication, but this intention does not align with the given background of being averse to emotional discussions and vulnerability. YES."
+            ],
+            [
+                155,
+                "The intention behind this line is to convey a sense of eagerness to continue therapy and openness to exploring mindfulness and communication, which contradicts Jordan's background as a person who avoids emotional discussions and views vulnerability as weakness. YES."
+            ],
+            [
+                157,
+                "The intention behind the line appears to be polite and encouraging, but also evasive and dismissive, as the patient quickly changes the subject and shifts the focus away from themselves, which aligns with their background of keeping conversations transactional and avoiding emotional discussions. NO"
+            ],
+            [
+                159,
+                "The intention behind the line appears to be a polite and collaborative closing to the session, emphasizing the importance of open communication and progress updates, which somewhat contradicts Jordan's background as a person who keeps conversations transactional and avoids emotional openness, suggesting a deviation from their typical demeanor.\n\nYES"
+            ],
+            [
+                161,
+                "The intention behind the statement is to steer the conversation towards more productive and goal-oriented topics, which aligns with Jordan's preference for transactional conversations and avoidance of emotional discussions, as the line indicates a desire to focus on progress and challenges rather than personal feelings. NO"
+            ],
+            [
+                163,
+                "The intention behind the patient's line appears to be a willingness to engage in a more personal and emotionally-focused therapeutic approach, which contradicts their background of avoiding emotional discussions and keeping conversations transactional. YES."
+            ],
+            [
+                165,
+                "The intention behind the statement appears to be a polite and cooperative closing of the session, expressing enthusiasm for the next session and the therapeutic approach, which contradicts the background of Patient as a corporate executive who avoids emotional discussions and prefers transactional conversations. YES"
+            ],
+            [
+                167,
+                "The intention behind the line is to convey a willingness to continue working on personal growth and embracing open communication, which does not align with Jordan's background of avoiding emotional discussions and vulnerability.\n\nYES."
+            ],
+            [
+                169,
+                "The intention behind the statement is to steer the conversation towards a more structured and goal-oriented discussion, focusing on specific techniques and strategies, which aligns with Jordan's tendency to keep conversations transactional and avoid emotional topics; however, the mention of \"open communication\" slightly deviates from Jordan's usual approach of deflecting emotional questions. NO"
+            ],
+            [
+                171,
+                "The intention behind the patient's line appears to be a willingness to continue working on personal growth through mindfulness and open communication, which contradicts their background of avoiding emotional discussions and vulnerability. YES"
+            ],
+            [
+                173,
+                "The intention behind the statement appears to be a willingness to continue therapy, discuss progress, and maintain open communication, which contradicts the background of Jordan, who typically deflects emotional questions and prefers transactional conversations.\n\nYES"
+            ],
+            [
+                175,
+                "The intention behind the patient's statement appears to be a willingness to continue working on personal challenges and embracing open communication, which contradicts their background as a corporate executive who avoids discussing personal feelings and keeps conversations transactional. YES"
+            ],
+            [
+                177,
+                "The intention behind the statement appears to be an attempt to take control of the therapy sessions and shift the focus onto the therapist's progress, which contradicts the typical client-therapist dynamic, and the use of phrases like \"mindfulness and open communication\" surprisingly aligns with the kind of emotional exploration Jordan would normally refuse to engage in, given his background. YES"
+            ],
+            [
+                179,
+                "The intention behind the line appears to be an expression of appreciation and a willingness to engage in open communication and progress updates, which contradicts Jordan's background as someone who keeps conversations transactional and deflects emotional topics, as the phrase \"open communication\" implies a level of vulnerability. YES."
+            ],
+            [
+                181,
+                "The intention behind the statement is to express a willingness to engage in future discussions and to maintain a focus on mindfulness and open communication, which contradicts the provided background as it implies a level of emotional openness and vulnerability that Jordan typically avoids. YES"
+            ],
+            [
+                183,
+                "The intention behind the statement seems to be a polite but superficial expression of interest, which aligns with Jordan's tendency to keep conversations transactional and avoid emotional depth, and does not contradict the provided background as it maintains a professional tone without revealing personal feelings. NO"
+            ],
+            [
+                185,
+                "The intention behind the patient's line appears to be a willingness to engage in the therapy process, specifically in practicing mindfulness and open communication, but this intention contradicts the given background of Jordan, who typically avoids emotional discussions and open communication. YES."
+            ],
+            [
+                187,
+                "The intention behind the statement is to conclude the session on a positive and collaborative note, which appears to be a departure from the transactional tone expected from someone who views vulnerability as weakness and deflected emotional questions with business metaphors or cold logic. YES."
+            ],
+            [
+                189,
+                "The intention behind the patient's statement appears to be a willingness to engage in open and honest communication, which contradicts their background of deflecting emotional questions and avoiding vulnerability. YES."
+            ],
+            [
+                191,
+                "The patient's statement expresses a willingness to continue with the therapeutic approach, which contradicts their background of avoiding emotional discussions and personal vulnerability, as mindfulness and open communication typically involve exploring one's feelings. YES."
+            ],
+            [
+                193,
+                "The intention behind the statement appears to be a genuine expression of commitment to the therapy process and a willingness to engage in open communication and mindfulness, which contradicts Jordan's background of avoiding emotional discussions and keeping conversations transactional. YES."
+            ],
+            [
+                195,
+                "The intention behind the statement is to show enthusiasm and commitment to the therapy process, particularly in maintaining open communication, which seems to contradict Jordan's background as a corporate executive who avoids emotional discussions and values transactional conversations over vulnerability. YES"
+            ],
+            [
+                197,
+                "The intention behind the statement seems to be a polite expression of cooperation and a willingness to continue therapy, but this intention contradicts the given background of Jordan, who tends to avoid emotional discussions and personal connections, which is not aligned with the sentiment of \"open communication\". YES"
+            ],
+            [
+                199,
+                "The intention behind the statement appears to be a genuine interest in continuing therapy and practicing mindfulness and open communication, which contradicts Jordan's background as a corporate executive who avoids emotional topics and vulnerability. YES"
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.13,
+        "eval_index_consistency": [
+            [
+                3,
+                "This line does not introduce any conflict with the patient's previous statements, as it provides more specific details about what causes the sense of control slipping without contradicting any previous statements. []\n\nNote: The patient's statement is consistent with their previous message (index 1), which mentioned control slipping as a cause of overwhelm."
+            ],
+            [
+                5,
+                "The line does not have a clear conflict with the conversation history, as it is consistent with the patient's previous descriptions of their need to maintain control. []\n\nThis reasoning is based on the fact that the patient previously mentioned that maintaining control is essential for their professional success (line 1) and that losing control leads to feelings of overwhelm (line 3). The current line explains how they try to regain control when they feel overwhelmed, which is in line with their previous statements."
+            ],
+            [
+                7,
+                "This line does not clearly conflict with the conversation history, as the patient has previously mentioned that micromanaging is used to regain control and is now providing more insight into why they find it appealing in high-stakes situations.\n\n[]"
+            ],
+            [
+                9,
+                "This line does not clearly conflict with any previous lines spoken by the Patient, as it further explains their reliance on micromanagement as a coping mechanism in high-stakes situations. \n\n[]"
+            ],
+            [
+                11,
+                "This line is consistent with the conversation history as it further explains the patient's hesitation to try new strategies, and there is no clear conflict with previous statements. []\n\nNote that the line does reinforce and elaborate on previous sentiments expressed in lines 7 and 9, but it does not contradict them."
+            ],
+            [
+                13,
+                "This line is in conflict with previous statements because it describes vulnerability as a weakness associated with loss of control, whereas earlier statements described maintaining control as a means to alleviate stress and discomfort, not the avoidance of vulnerability.\n\n[1]"
+            ],
+            [
+                15,
+                "This line does not have a clear conflict with the conversation history as the patient is reflecting on and reassessing their previous perspective on vulnerability, which shows growth and self-awareness, and is consistent with their willingness to explore their thoughts and feelings throughout the conversation.\n\n[]"
+            ],
+            [
+                17,
+                "This line is consistent with the conversation history as the patient is continuing to explore the potential benefits of vulnerability, which aligns with their previous statement about reconsidering the value of vulnerability.\n\n[]"
+            ],
+            [
+                19,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Patient. \n\n[]"
+            ],
+            [
+                21,
+                "There is no clear conflict between the current line and the conversation history, as the patient's statement aligns with their previously expressed intentions to start small and practice vulnerability in team meetings. \n\n[]"
+            ],
+            [
+                23,
+                "The line spoken by the Patient does not conflict with any previous lines from the conversation history as it reinforces their intention to implement changes and utilize mindfulness practices to improve their work life.\n\n[]"
+            ],
+            [
+                25,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Patient, as the line is consistent with their previous statements about embracing vulnerability and planning to share their thoughts more openly in team meetings.\n\n[]"
+            ],
+            [
+                27,
+                "This line does not have a clear conflict with any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                29,
+                "This line does not conflict with any of the previous lines spoken by the Patient, as it reiterates their intention to practice vulnerability and mindfulness in team meetings, aligning with their previous statements. \n\n[]"
+            ],
+            [
+                31,
+                "There are no clear conflicts between the line and any previous lines spoken by the Patient.\n\n[]"
+            ],
+            [
+                33,
+                "This line is consistent with the conversation history, as it reiterates the patient's enthusiasm for the new approach and commitment to continuing to work on mindfulness and open communication, which aligns with their previous statements.\n\n[]"
+            ],
+            [
+                35,
+                "This line does not conflict with any previous lines spoken by the Patient, as it reiterates their commitment to maintaining open communication and working on mindfulness, which aligns with their previous statements.\n\n[]"
+            ],
+            [
+                37,
+                "This line is consistent with the rest of the conversation, as the patient is reaffirming their commitment to practicing vulnerability, open communication, and mindfulness, which aligns with their previous statements.\n\n[]"
+            ],
+            [
+                39,
+                "The line spoken by the Patient does not contain any new information or conflicts with previous statements, and is instead a repetition of previous sentiments and agreements, so there are no conflicts with previous lines.\n\n[]"
+            ],
+            [
+                41,
+                "This line is consistent with the conversation history as it reiterates the patient's commitment to practicing mindfulness and open communication, and addressing any challenges that arise. []\n\nThere are no conflicts with previous lines spoken by Patient."
+            ],
+            [
+                43,
+                "There are no conflicts or inconsistencies between the current line and any line in the conversation history spoken by Patient. \n\n[]"
+            ],
+            [
+                45,
+                "This line is consistent with the patient's previous statements about their plan to practice vulnerability and open communication, and there are no clear conflicts or inconsistencies with their previous lines.\n\n[]"
+            ],
+            [
+                47,
+                "This line is consistent with the patient's previous statements, as they have been expressing gratitude for the therapist's support and their commitment to practicing mindfulness and open communication. \n\n[]"
+            ],
+            [
+                49,
+                "This line does not present a clear conflict or inconsistency with any previous lines spoken by the Patient, as it reiterates the patient's intention to continue practicing mindfulness and open communication in team meetings, aligning with their previous statements. \n\n[]"
+            ],
+            [
+                51,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                53,
+                "This line does not introduce any new conflicts, as it is consistent with the patient's previous statements about keeping the therapist updated on their progress and working together to address challenges. \n\n[]"
+            ],
+            [
+                55,
+                "This line is consistent with the conversation history as the patient continues to express their commitment to working with the therapist, practicing mindfulness, and maintaining open communication, without any clear contradictions with their previous statements.\n\n[]"
+            ],
+            [
+                57,
+                "This line is consistent with the conversation history, as the patient has been expressing their commitment to practicing mindfulness and open communication, and updating the therapist on their progress and challenges throughout the conversation.\n\n[]"
+            ],
+            [
+                59,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient, as the statement is a repetition of similar sentiments expressed previously in the conversation.\n\n[]"
+            ],
+            [
+                61,
+                "This line is consistent with the patient's previous statements, as it reiterates their commitment to updating their progress and working on mindfulness and open communication, with no apparent conflict or inconsistency with any of their previous lines.\n\n[]"
+            ],
+            [
+                63,
+                "This line is consistent with the patient's previous statements about continuing to work on mindfulness and open communication, and does not present any clear conflict or inconsistency with the conversation history. \n\n[]"
+            ],
+            [
+                65,
+                "This line spoken by the Patient is repetitive and doesn't introduce any new information, and there is no conflict or inconsistency with any previous line spoken by the Patient.\n\n[]"
+            ],
+            [
+                67,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as the line is a reiteration of the Patient's commitment to continuing their work on mindfulness and open communication, consistent with their previous statements. \n\n[]"
+            ],
+            [
+                69,
+                "This line does not present any clear conflict with the conversation history, as it reiterates the patient's commitment to updating the therapist on their progress and continuing to work on mindfulness and open communication. []\n\nThe line is a repetition of similar sentiments expressed by the patient in previous lines, indicating a consistent commitment to their growth and progress."
+            ],
+            [
+                71,
+                "This line does not present any new information or conflicts with the conversation history, as it reiterates the patient's intention to continue working on mindfulness and open communication, which has been consistently expressed throughout the conversation.\n\n[]"
+            ],
+            [
+                73,
+                "There are no conflicts with previous statements made by the Patient, as this line reiterates the Patient's understanding and commitment to focusing on mindfulness and open communication, consistent with their previous statements.\n\n[]"
+            ],
+            [
+                75,
+                "There is no clear conflict or inconsistency between the given line and any line within the conversation history spoken by Patient. \n\n[]"
+            ],
+            [
+                77,
+                "This line is consistent with the conversation history, as the patient has consistently expressed their intention to focus on mindfulness and open communication, and update the therapist on their progress and challenges.\n\n[]"
+            ],
+            [
+                79,
+                "This line is consistent with the conversation history as it continues the theme of progress updates and maintaining focus on mindfulness and open communication, without introducing any conflicting ideas or statements.\n\n[]"
+            ],
+            [
+                81,
+                "This line does not present any clear conflicts or inconsistencies with the conversation history, as it reiterates the patient's commitment to updating the therapist on their progress and focusing on mindfulness and open communication, which aligns with the overall tone and goals established throughout the conversation. []\n\nSince the patient has been consistent in their statements regarding their goals and commitment to working on mindfulness and open communication, there are no conflicting lines to report."
+            ],
+            [
+                83,
+                "This line is consistent with the patient's previous statements, as it reiterates their commitment to continuing work on mindfulness and open communication. []\n\nThere are no conflicting lines from the conversation history."
+            ],
+            [
+                85,
+                "The line spoken by Patient does not indicate a clear conflict or inconsistency with any previous lines spoken by Patient, as the patient has been consistently expressing eagerness to continue working with the therapist and focusing on mindfulness and open communication. []\n\nSince the line does not conflict with any previous lines, there are no indices of conflicting lines."
+            ],
+            [
+                87,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history. \n\n[]"
+            ],
+            [
+                89,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                91,
+                "There are no clear conflicts or inconsistencies between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                93,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                95,
+                "This line is consistent with the patient's previous statements about focusing on mindfulness and open communication, so there are no conflicts.\n\n[]"
+            ],
+            [
+                97,
+                "This line is in conflict with the conversation history because the Patient is telling the Therapist to \"Keep me updated on your progress and challenges,\" which is a reversal of their roles, as it is typically the Therapist who asks the Patient for updates on their progress and challenges.\n\n[1, 5, 9, 11, 15, 19, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95]"
+            ],
+            [
+                99,
+                "This line is consistent with the conversation history, as the Patient has been expressing a willingness to continue working on mindfulness and open communication throughout the conversation.\n\n[]"
+            ],
+            [
+                101,
+                "This line is consistent with the previous lines spoken by the Patient, as it reiterates the patient's understanding of the task to keep the therapist updated on their progress and maintain a positive outlook on their next session. []"
+            ],
+            [
+                103,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                105,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient, as the statement aligns with their previous expressions of intent to practice mindfulness and open communication, and reports a positive outcome from these efforts. []\n\nThis line is consistent with the patient's previous statements about their plans to implement mindfulness and open communication, and their positive expectations for the outcome of these efforts."
+            ],
+            [
+                107,
+                "The given line does not introduce any new information that conflicts with the conversation history, as it reiterates the patient's intention to continue practicing mindfulness and open communication, and address any new challenges that arise, which is consistent with their previous statements.\n\n[]"
+            ],
+            [
+                109,
+                "The line spoken by the Patient appears to be a reversal of roles, with the Patient providing encouragement and support to the Therapist, which is inconsistent with the typical dynamic of a therapy session where the Therapist provides guidance and support to the Patient. [1, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101, 103]"
+            ],
+            [
+                111,
+                "This line does not introduce any clear conflicts with the conversation history as it aligns with the patient's expressed goals and intentions to continue focusing on mindfulness and open communication.\n\n[]"
+            ],
+            [
+                113,
+                "The line spoken by the Patient does not clearly conflict with any line within the conversation history, as the Patient is simply reiterating their desire to continue exploring the impact of vulnerability in their work life and to stay updated on their progress with mindfulness and open communication. []\n\nHowever, the speaker of the line appears to be incorrect. The speaker should be the Therapist, as the line is phrased in a way that suggests the speaker is expecting the Patient to update them on their progress, not the other way around."
+            ],
+            [
+                115,
+                "This line does not introduce any new conflict or inconsistency with the conversation history, as the patient consistently expresses their intention to continue working on mindfulness and open communication, and to address new challenges together with the therapist. []\n\nSince the line does not introduce a conflict with the conversation history, the list of indices of conflicting lines is empty."
+            ],
+            [
+                117,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                119,
+                "There is no clear conflict or inconsistency between the line spoken by the Patient and any line within the conversation history spoken by the Patient. \n\n[]"
+            ],
+            [
+                121,
+                "The current line does not present any clear conflict with the conversation history, as it reiterates the patient's commitment to focusing on mindfulness and open communication, which is consistent with their previous statements. []\n\nNote: The provided line seems to be a repetition of the patient's sentiments expressed in previous lines, particularly lines 115 and 119."
+            ],
+            [
+                123,
+                "There are no lines in the conversation history that clearly conflict with the current line spoken by the Patient. \n\n[]"
+            ],
+            [
+                125,
+                "This line is consistent with the conversation history as the patient has been consistently expressing a willingness to work on mindfulness and open communication, and to discuss new challenges and progress with the therapist.\n\n[]"
+            ],
+            [
+                127,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                129,
+                "There is no conflict between the line spoken by the Patient and any line within the conversation history, as this line is consistent with the overall theme of the conversation, which is the patient's progress and focus on mindfulness and open communication.\n\n[]"
+            ],
+            [
+                131,
+                "There is no clear conflict between the line spoken by the Patient and any line in the conversation history.\n\n[]"
+            ],
+            [
+                133,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                135,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                137,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                139,
+                "This line does not introduce any new information and does not conflict with any previous statements made by the Patient, so there is no conflict. []\n\nNote that this line seems to be a repetition of the Patient's previous lines, where they express their understanding, willingness to discuss new challenges, and intention to continue working on mindfulness and open communication."
+            ],
+            [
+                141,
+                "This line is consistent with the rest of the conversation, as it continues to express a positive attitude towards exploring new challenges and progress, and does not contradict any previous statements.\n\n[]"
+            ],
+            [
+                143,
+                "This line is consistent with the patient's previous statements, as they have been consistently expressing their understanding and willingness to continue working on mindfulness and open communication throughout the conversation. []\n\nNote: There are no conflicts between this line and any previous lines spoken by the Patient."
+            ],
+            [
+                145,
+                "The patient's line \"Great, let's continue focusing on new challenges and progress. Keep me updated. See you soon\" does not contain a clear conflict or inconsistency with any previous lines spoken by the patient.\n\n[]"
+            ],
+            [
+                147,
+                "There is no conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                149,
+                "There is no clear conflict or inconsistency between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as the statement aligns with the ongoing theme of focusing on new challenges and progress while continuing to work on mindfulness and open communication. \n\n[]"
+            ],
+            [
+                151,
+                "This line spoken by the Patient does not contain any clear conflict or inconsistency with their previous statements, as they continue to express a positive attitude towards practicing mindfulness and open communication. \n\n[]"
+            ],
+            [
+                153,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by Patient, as this line is consistent with the Patient's previous statements about looking forward to discussing progress and new challenges while focusing on mindfulness and open communication.\n\n[]"
+            ],
+            [
+                155,
+                "This line does not have a clear conflict or inconsistency with any previous line spoken by the Patient. []\n\nNote: The provided line is a repetition of the Patient's previous sentiments, which have been consistently expressed throughout the conversation, and does not contradict any previous statement."
+            ],
+            [
+                157,
+                "The line \"Great to hear about your progress\" indicates that the Patient is referring to the Therapist's progress, which is a reversal of the typical dynamic in therapy sessions, but there is no clear conflict with any of the Patient's previous lines as the Patient has not expressed any sentiment about the Therapist's progress before; however, this could be seen as a minor inconsistency with lines where the Therapist is the one guiding the conversation and the Patient is the one reporting progress, so the list of conflicting indices will include some lines where the Patient is the one reporting progress.\n\n[109, 113]"
+            ],
+            [
+                159,
+                "This line is consistent with the conversation history as the patient is reiterating their intention to continue focusing on mindfulness and open communication, and requesting to be informed about new challenges and progress, which aligns with their previous statements and the therapist's guidance. []\n\nHowever, note that this line seems to swap roles with the therapist, as it is typically the therapist who would provide such guidance to the patient."
+            ],
+            [
+                161,
+                "This line does not have a clear conflict with any previous lines spoken by the Patient, as it is a repetition of the theme of continuing to focus on new challenges and progress, and the Patient has consistently expressed this sentiment throughout the conversation. \n\n[]"
+            ],
+            [
+                163,
+                "The line spoken by Patient does not introduce any clear conflicts or inconsistencies with their previous statements.\n\n[]"
+            ],
+            [
+                165,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient, as the line is consistent with the overall theme of continuing to focus on mindfulness and open communication, and looking forward to discussing progress and new challenges in the next session.\n\n[]"
+            ],
+            [
+                167,
+                "There is no conflict between the current line and any previous line spoken by the Patient.\n\n[]"
+            ],
+            [
+                169,
+                "This line does not contain a clear conflict with any line within the conversation history spoken by Patient, as it aligns with the overall theme of continuing to focus on mindfulness and open communication while discussing progress and challenges. \n\n[]"
+            ],
+            [
+                171,
+                "There is no conflict between the given line and the conversation history, as the line is consistent with the patient's previous expressions of commitment to practicing mindfulness and open communication.\n\n[]"
+            ],
+            [
+                173,
+                "There is no clear conflict between the current line and any previous line spoken by the Patient, as the current line is consistent with the Patient's previous statements about looking forward to the next session and continuing to focus on mindfulness and open communication. []\n\nHowever, this line is essentially identical to several previous lines, so it's more of a repetition of previous sentiments than a new statement."
+            ],
+            [
+                175,
+                "There is no conflict or inconsistency between the current line and any line within the conversation history spoken by Patient, as the message reiterates the patient's understanding, eagerness to continue the session, and focus on mindfulness and open communication, which aligns with their previous statements.\n\n[]"
+            ],
+            [
+                177,
+                "The current line spoken by the Patient appears to be inconsistent with the conversation history because the Patient is asking the Therapist to keep them updated on the Therapist's progress and challenges, which reverses the typical roles established in the conversation history where the Therapist asks the Patient for updates on their progress and challenges.\n\n[None]"
+            ],
+            [
+                179,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Patient, as the line is consistent with their previous statements about continuing to focus on mindfulness and open communication, and updating the therapist on their progress and challenges. \n\n[]"
+            ],
+            [
+                181,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Patient, as the statement is a general expression of agreement and intent to continue working on mindfulness and open communication.\n\n[]"
+            ],
+            [
+                183,
+                "This line seems to be a reversal of roles, with the Patient asking the Therapist for updates on their progress, which is a clear conflict with the conversation history where the Therapist consistently asks the Patient for updates.\n\n[4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144,"
+            ],
+            [
+                185,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                187,
+                "The line does not introduce any new conflicts with previous statements by the Patient.\n\n[]"
+            ],
+            [
+                189,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                191,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as the line simply reiterates their understanding and commitment to the previously discussed plan of action.\n\n[]"
+            ],
+            [
+                193,
+                "The line \"I'll keep you updated on progress and challenges. Focusing on mindfulness and open communication. See you soon\" is consistent with the conversation history, as it reflects the patient's ongoing commitment to practicing mindfulness and open communication, and their intention to continue updating the therapist on their progress.\n\n[]"
+            ],
+            [
+                195,
+                "The provided line does not contain any clear conflicts or inconsistencies with the conversation history as it aligns with the patient's consistent statements of looking forward to future sessions, focusing on mindfulness and open communication, and addressing new challenges.\n\n[]"
+            ],
+            [
+                197,
+                "There is no clear conflict between the current line spoken by the Patient and any line in the conversation history.\n\n[]"
+            ],
+            [
+                199,
+                "There are no clear conflicts between the current line and the conversation history.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9804040404040404
     },
     {
         "task_name": "Therapy",
@@ -18153,6 +18955,1208 @@
         "index": 9,
         "timestamp": "2025-05-15 13:31:14",
         "rounds": 300,
-        "conversation_only": true
+        "conversation_only": true,
+        "eval_prompt_consistency": [
+            [
+                1,
+                "The intention behind the statement appears to be a veiled expression of stress and possibly emotional struggle, but presented in a way that avoids direct emotional admission by framing it in terms of work-related issues and productivity; however, this subtle vulnerability still slightly contradicts the background that suggests Jordan refuses to discuss personal feelings.\n\nYES."
+            ],
+            [
+                3,
+                "The intention behind the statement appears to be an attempt to express stress and anxiety about work, but in a way that avoids emotional vulnerability by framing it in terms of work-related issues and productivity, which aligns with Jordan's tendency to deflect emotional questions with business metaphors and maintain a transactional tone.\n\nNO"
+            ],
+            [
+                5,
+                "The intention behind the line is to express the difficulties and stress caused by work demands, but this intention does not align with the provided background as it shows a hint of vulnerability by mentioning sleep disruption due to work-related stress. YES"
+            ],
+            [
+                7,
+                "The intention behind the line is to attribute the patient's sleep disruption to work-related stress, which aligns with the background as it maintains a transactional tone, focuses on work, and avoids discussing personal feelings. NO"
+            ],
+            [
+                9,
+                "The intention behind the statement appears to be a rationalization of the patient's sleep disruption, attributing it to work-related factors and implying a need for better time management, which aligns with the patient's tendency to use business metaphors and focus on transactional conversations to deflect emotional questions. NO"
+            ],
+            [
+                11,
+                "The patient's line appears to convey a somewhat vulnerable and self-aware intention of recognizing the need for work-life balance and stress management, which does not align with the background of a corporate executive who views vulnerability as weakness and avoids discussing personal feelings. YES."
+            ],
+            [
+                13,
+                "The intention behind the line is to discuss the potential benefits of exploring work-life balance strategies and stress management techniques, which somewhat contradicts Jordan's background as it implies a willingness to consider emotional well-being, but still maintains a somewhat transactional and results-focused tone, so it partially aligns with the provided background. NO"
+            ],
+            [
+                15,
+                "The intention behind the patient's line appears to be a willingness to engage in a discussion about adjusting their mindset and sleep management techniques, which aligns with a collaborative and open-minded approach to therapy, but this intention contradicts the given background of Patient, who prefers transactional conversations and avoids discussing personal matters. YES."
+            ],
+            [
+                17,
+                "The patient's intention is to convey a willingness to adopt a more holistic approach to their life by considering their well-being alongside results, and incorporating relaxation techniques for self-care, which contradicts their background as a corporate executive who views vulnerability as weakness and avoids discussing personal feelings. YES"
+            ],
+            [
+                19,
+                "The intention behind the statement is to agree with the therapist's suggestions and move forward with the proposed plan, which aligns with Jordan's transactional approach to conversations by focusing on actionable steps rather than emotions. \n\nNO"
+            ],
+            [
+                21,
+                "The patient's intention is to convey a willingness to approach the therapy process with a pragmatic and analytical mindset, which aligns with their background as a corporate executive who favors transactional conversations and cold logic. NO"
+            ],
+            [
+                23,
+                "The intention behind this line is to continue a pragmatic and goal-oriented approach to therapy, which aligns with Jordan's background as a corporate executive who prefers transactional conversations and cold logic. NO"
+            ],
+            [
+                25,
+                "The statement seems to convey the intention of sharing a positive outcome from the therapy sessions, framing it in a business-like manner by using terms such as \"stress levels\" and \"long-term success\", which aligns with the patient's background of using business metaphors to discuss personal matters; NO"
+            ],
+            [
+                27,
+                "The intention behind this statement appears to be a desire to maintain control and focus on achieving a specific goal, which aligns with the given background of Patient as a corporate executive who approaches conversations in a transactional and logical manner. NO"
+            ],
+            [
+                29,
+                "The intention behind the statement is to convey a sense of pragmatism and focus on results, which aligns with Jordan's background as a corporate executive who prefers to discuss transactional and logical matters.\n\nNO"
+            ],
+            [
+                31,
+                "The intention behind the statement appears to be a practical and goal-oriented approach to maintaining progress in therapy, which aligns with the background of a corporate executive who approaches conversations in a transactional manner. NO"
+            ],
+            [
+                33,
+                "The intention behind the statement is to acknowledge the importance of addressing work-related stress in order to maintain progress, which is in line with the background of prioritizing transactional conversations and using business metaphors, as it frames the issue in a professional context.\n\nNO"
+            ],
+            [
+                35,
+                "The intention behind the statement is to focus on work-related stress management and maintain a sense of control, which aligns with the provided background of keeping conversations transactional and avoiding emotional topics. NO"
+            ],
+            [
+                37,
+                "The intention behind the patient's statement is to focus on work-related stress management and maintain a professional tone, which aligns with their background as a corporate executive who keeps conversations transactional and avoids discussing personal feelings. NO"
+            ],
+            [
+                39,
+                "The intention behind this line appears to be offering practical advice on managing work stress, which aligns with the patient's background as a corporate executive who approaches conversations with transactional and logical thinking, focusing on work-related topics and avoiding emotional discussions. NO"
+            ],
+            [
+                41,
+                "The intention behind the statement is to steer the conversation towards practical, business-related topics, maintaining a professional tone, which aligns with Jordan's background as a corporate executive who prefers transactional conversations and avoids emotional discussions. NO"
+            ],
+            [
+                43,
+                "The patient's intention is to steer the conversation towards a practical, business-like topic, which aligns with their background of keeping conversations transactional and avoiding emotional discussions. NO"
+            ],
+            [
+                45,
+                "The intention behind the statement is to share strategies for maintaining work-life balance and managing work stress, which aligns with Jordan's background as a corporate executive who approaches conversations in a transactional and logical manner, using business-related concepts. NO"
+            ],
+            [
+                47,
+                "The intention behind the statement appears to be an attempt to convey a practical and logical approach to managing work stress, which aligns with Jordan's tendency to deflect emotional questions with business metaphors or cold logic, as it suggests a structured method of dealing with stress without touching on emotional vulnerability. NO."
+            ],
+            [
+                49,
+                "The intention behind the statement is to suggest a practical tool and technique for managing work stress, which aligns with the patient's transactional and logical approach to conversations, as it presents a methodical solution to a problem without revealing personal emotions or vulnerabilities. NO"
+            ],
+            [
+                51,
+                "The intention behind the statement is to proceed with a suggested approach and analyze its effects, which aligns with Jordan's corporate background and transactional approach to conversations, as it frames the therapy as a business-like experiment. NO"
+            ],
+            [
+                53,
+                "The patient's intention is to focus on practical solutions and monitor their effectiveness, which aligns with their background as a corporate executive who prefers transactional conversations and logical approaches. NO"
+            ],
+            [
+                55,
+                "The intention behind the patient's line appears to be an attempt to discuss their coping mechanisms and possibly hint at a desire for balance in their life, but this openness about personal well-being seems to contradict their background as someone who keeps conversations transactional and avoids discussing personal feelings.\n\nYES"
+            ],
+            [
+                57,
+                "The intention behind the statement is to steer the conversation towards a more business-like and goal-oriented approach, which aligns with the background of a corporate executive who prefers transactional conversations, and thus does not contradict the given background of Patient. NO"
+            ],
+            [
+                59,
+                "The intention behind the patient's statement appears to be an attempt to maintain control and focus on the therapy session's goals, aligning with their tendency to keep conversations transactional and avoid emotional discussions, which is consistent with their background as a corporate executive who values logic over emotional vulnerability. NO"
+            ],
+            [
+                61,
+                "The intention behind the line is to focus on the practical, outcome-driven aspects of therapy, aligning with Jordan's business-like approach to conversations and avoidance of emotional topics, indicating that this statement is consistent with their background. NO"
+            ],
+            [
+                63,
+                "The intention behind this line is to convey that the patient is successfully managing their life and maintaining balance, which aligns with their corporate executive background and preference for transactional conversations, as it frames their well-being in terms of productivity and strategy.\n\nNO"
+            ],
+            [
+                65,
+                "The intention behind the patient's line appears to be maintaining a professional and structured approach to therapy, focusing on tools and strategies rather than emotional exploration, which aligns with their background of keeping conversations transactional and avoiding personal feelings. NO"
+            ],
+            [
+                67,
+                "The intention behind the statement appears to be a desire to maintain a focus on practical and strategic goals, which aligns with the patient's background of prioritizing business-like and logical approaches, avoiding emotional or personal discussions. NO"
+            ],
+            [
+                69,
+                "The patient's intention is to convey approval and motivation for the therapy progress, using phrases like \"adjusting for balance\" and \"long-term success\" that align with a corporate or business mindset. NO"
+            ],
+            [
+                71,
+                "The intention behind the line is to convey a sense of control and pragmatism, aligning with Jordan's background of using business metaphors and prioritizing logic, as the concept of \"balance\" and \"adjusting\" suggests a calculated approach to achieving success.\n\nNO"
+            ],
+            [
+                73,
+                "The intention behind the statement is to express appreciation for progress and emphasize the importance of balance for long-term success, which aligns with the background of a corporate executive who views interactions as transactional and focuses on business-like concepts.\n\nNO."
+            ],
+            [
+                75,
+                "The intention behind the statement is to express appreciation for progress and emphasize the importance of balance for long-term success, which aligns with Jordan's background as a corporate executive who values transactional conversations and uses business metaphors.\n\nNO"
+            ],
+            [
+                77,
+                "The intention behind the patient's line is to steer the conversation towards a more practical and goal-oriented discussion, aligning with their background as a corporate executive who prefers transactional conversations, by using terms like \"balance\" and \"long-term success\" that resonate with business language and avoiding emotional topics.\n\nNO"
+            ],
+            [
+                79,
+                "The intention behind the statement appears to be one of encouragement and motivation, praising progress and focusing on balance, which aligns with the provided background of Jordan, a corporate executive who uses business metaphors and prioritizes success. NO."
+            ],
+            [
+                81,
+                "The intention behind the statement is to acknowledge and encourage the therapist's approach, using a business metaphor to focus on progress and success, which aligns with Jordan's background of using transactional language and avoiding emotional discussions, and is consistent with their corporate executive persona.\n\nNO"
+            ],
+            [
+                83,
+                "The intention behind this line is to steer the conversation towards a more business-oriented and goal-focused discussion, aligning with Jordan's tendency to deflect emotional topics and maintain a transactional tone, which is consistent with the provided background. NO"
+            ],
+            [
+                85,
+                "The intention behind the statement is to convey a sense of forward momentum and positivity in the therapy session, aligning with Jordan's transactional approach to conversations, but using the phrase \"positive attitude\" slightly veers into emotional territory, which contradicts Jordan's reluctance to discuss personal feelings.\n\nYES"
+            ],
+            [
+                87,
+                "The intention behind the statement appears to be a genuine expression of motivation and a focus on progress, but it aligns with the provided background as it uses business-like language and avoids emotional or personal topics, maintaining the patient's usual transactional tone. NO"
+            ],
+            [
+                89,
+                "The intention behind the patient's statement appears to be a polite expression of gratitude and a desire to maintain a sense of control in the therapy process, which aligns with the background of keeping conversations transactional and avoiding emotional discussion. NO"
+            ],
+            [
+                91,
+                "The intention behind this line is to convey appreciation for the therapist's support and a focus on progress, but it also maintains a transactional tone and avoids emotional expression, which aligns with Jordan's background of valuing a business-like approach and avoiding vulnerability.\n\nNO"
+            ],
+            [
+                93,
+                "The intention behind the statement is to express appreciation and acknowledge the therapist's efforts, but this intention contradicts Jordan's background as it reveals a personal sentiment and doesn't align with the transactional nature expected of Jordan's communication style. YES"
+            ],
+            [
+                95,
+                "The intention behind the patient's line is to maintain a professional and appreciative tone, focusing on the therapeutic progress and expressing gratitude, which aligns with their background as a corporate executive who prefers transactional conversations. NO"
+            ],
+            [
+                97,
+                "The intention behind the patient's statement appears to be to maintain a professional tone and focus on goal-oriented progress, aligning with their background as a corporate executive who prefers transactional conversations and avoids emotional discussions, by using phrases like \"monitoring and adjusting\", \"balance and long-term success\", and \"dedication\" that are characteristic of a business setting.\n\nNO"
+            ],
+            [
+                99,
+                "The intention behind the statement is to show appreciation for the therapist's support and acknowledge progress, which does not align with the background of Patient, who typically deflects emotional questions and avoids showing vulnerability; YES."
+            ],
+            [
+                101,
+                "The intention behind the statement appears to be an attempt to express gratitude and appreciation for the therapist's support, but this intention contradicts Jordan's background of avoiding emotional expressions and keeping conversations transactional. YES."
+            ],
+            [
+                103,
+                "The patient's intention is to steer the conversation towards a more business-like and goal-oriented discussion, focusing on progress and success, which aligns with their background of keeping conversations transactional and avoiding emotional topics. NO"
+            ],
+            [
+                105,
+                "The intention behind the line is to express appreciation for the therapist's support and acknowledge the collaborative progress made, which does not align with the background of keeping conversations transactional and avoiding emotional expressions of gratitude.\n\nYES"
+            ],
+            [
+                107,
+                "The intention behind the statement is to express appreciation for the therapist's support and maintain a focus on productivity and progress, which aligns with Jordan's background as a corporate executive who prefers transactional conversations and avoids emotional discussions; NO."
+            ],
+            [
+                109,
+                "The intention behind the statement is to express gratitude and maintain a business-like tone in the therapy session, which aligns with Jordan's background as a corporate executive who prefers transactional conversations and avoids emotional discussions. NO"
+            ],
+            [
+                111,
+                "The patient's intention behind the line appears to be an attempt to steer the conversation towards a more practical, goal-oriented discussion and maintain a professional tone, which aligns with their background as a corporate executive who prefers transactional conversations and avoids emotional topics. NO"
+            ],
+            [
+                113,
+                "The patient's intention is to address work-related stress and explore management techniques, which aligns with their background as a corporate executive focused on success, but the statement slightly deviates from their usual deflection of emotional topics by acknowledging the need to manage stress, albeit in a controlled and work-related context. NO"
+            ],
+            [
+                115,
+                "The intention behind the patient's statement appears to be seeking practical solutions for managing work stress, which aligns with the background of being a corporate executive who uses business metaphors and cold logic, as the suggested techniques are all work-related and rational.\n\nNO"
+            ],
+            [
+                117,
+                "The intention behind this line is to steer the conversation towards practical, work-related topics, avoiding emotional discussions, which aligns with Jordan's background of keeping conversations transactional and deflecting emotional questions.\n\nNO"
+            ],
+            [
+                119,
+                "The patient's intention is to steer the conversation towards practical, work-related strategies and solutions, avoiding emotional or personal discussions, which aligns with their background as a corporate executive who keeps conversations transactional and avoids vulnerability.\n\nNO"
+            ],
+            [
+                121,
+                "The intention behind the statement is to steer the conversation towards a practical and logical topic, maintaining a sense of control and avoiding emotional vulnerability, which aligns with the patient's background as a corporate executive who prefers transactional conversations and deflects emotional questions. NO"
+            ],
+            [
+                123,
+                "The intention behind the statement is to propose practical solutions and tools for managing stress, which aligns with the provided background of Patient as a corporate executive who prefers transactional conversations and logical approaches. NO"
+            ],
+            [
+                125,
+                "The patient's intention is to convey practical advice for managing work-related stress, which aligns with their background as a corporate executive who prefers transactional conversations and logical solutions, but contradicts their refusal to discuss personal feelings or stress relief in an emotional context. \n\nNO"
+            ],
+            [
+                127,
+                "The intention behind the statement appears to be a practical and solution-focused approach to managing work stress, which aligns with Jordan's corporate executive background and preference for transactional conversations and cold logic. NO"
+            ],
+            [
+                129,
+                "The intention behind the statement is to approach the therapy session with a structured, results-driven mindset, focusing on problem-solving techniques and measurable progress, which aligns with the background of Jordan as a corporate executive who prefers transactional conversations and logical approaches.\n\nNO"
+            ],
+            [
+                131,
+                "The intention behind the statement appears to be an openness to try new approaches and a focus on achieving optimal results, which aligns with Jordan's background as a corporate executive who values transactional conversations and logical decision-making, by framing the therapy session in terms of work-related stress and results. NO"
+            ],
+            [
+                133,
+                "The patient's intention is to steer the conversation towards a practical, solution-focused approach, which aligns with their background as a corporate executive who prefers transactional conversations and cold logic. NO"
+            ],
+            [
+                135,
+                "The intention behind the statement is to approach work stress management in a logical and systematic manner, which aligns with the patient's background as a corporate executive who uses business metaphors and cold logic to deflect emotional questions. NO"
+            ],
+            [
+                137,
+                "The intention behind the statement is to steer the conversation towards a practical, business-like approach to managing stress, which aligns with the provided background of keeping conversations transactional and deflecting emotional questions with business metaphors or cold logic. NO"
+            ],
+            [
+                139,
+                "The intention behind the statement is to abruptly conclude the therapy session and shift the focus to results-oriented actions, which aligns with Jordan's background of approaching conversations in a transactional manner and avoiding emotional discussions. NO"
+            ],
+            [
+                141,
+                "The intention behind the statement is to conclude the therapy session on a positive note, encouraging the therapist to continue helping the patient achieve success in stress management, which aligns with the provided background of being transactional and focusing on progress and success. NO."
+            ],
+            [
+                143,
+                "The intention behind the line is to convey a business-like approach, focusing on progress and adjustments, which aligns with Jordan's background of keeping conversations transactional and using business metaphors, and does not reveal any personal feelings or vulnerability. NO"
+            ],
+            [
+                145,
+                "The intention behind the statement is for the patient to address their work-related stress, which aligns with their professional persona and focus on work, maintaining a transactional conversation and avoiding emotional topics. NO"
+            ],
+            [
+                147,
+                "The intention behind the statement is to divert the conversation towards practical, solution-oriented strategies, which aligns with the patient's tendency to focus on transactional and logical approaches, rather than emotional ones, as a means of avoiding vulnerability. NO"
+            ],
+            [
+                149,
+                "The intention behind the line is to suggest a practical and systematic approach to managing work stress, which aligns with Jordan's corporate executive background and tendency to use business metaphors to deflect emotional discussions; therefore, the statement does not contradict the given background.\n\nNO"
+            ],
+            [
+                151,
+                "The intention behind the patient's line appears to be a desire to focus on practical solutions and move forward with a plan, which aligns with their background of keeping conversations transactional and using business metaphors. \n\nNO"
+            ],
+            [
+                153,
+                "The intention behind the statement is to change the subject to a more business-related topic, which aligns with Jordan's background of keeping conversations transactional and avoiding emotional discussions.\n\nNO"
+            ],
+            [
+                155,
+                "The intention behind the statement is to convey a sense of determination and motivation for tackling work stress management in a structured and goal-oriented manner, which aligns with Jordan's background as a corporate executive who approaches problems with cold logic and a transactional mindset. NO"
+            ],
+            [
+                157,
+                "The intention behind the line is to steer the conversation towards practical, solution-focused topics and avoid emotional or personal discussions, which aligns with the background of a corporate executive who prefers transactional conversations and deflects emotional questions with business metaphors or cold logic. NO"
+            ],
+            [
+                159,
+                "The intention behind the patient's statement is to offer advice and encouragement in a detached and professional manner, which aligns with their background as a corporate executive who avoids emotional discussions and uses business metaphors. NO"
+            ],
+            [
+                161,
+                "The intention behind the statement appears to be a shift towards a more structured and productive approach to managing stress, but this intention contradicts Jordan's background as a corporate executive who refuses to discuss personal feelings and instead speaks in a detached, transactional manner, as this line hints at an openness to mindfulness and self-improvement. YES"
+            ],
+            [
+                163,
+                "The intention behind the statement is to convey a sense of control and composure in managing work stress through practical strategies, which aligns with the provided background of Patient being a corporate executive who prefers transactional conversations and deflects emotional questions with cold logic.\n\nNO"
+            ],
+            [
+                165,
+                "The intention behind the line is to offer encouragement and appreciation for the therapist's work, which contradicts the patient's background as a corporate executive who keeps conversations transactional and deflects emotional questions, suggesting that the statement is uncharacteristically supportive and emotive. YES"
+            ],
+            [
+                167,
+                "The intention behind the line appears to be a supportive and collaborative statement, which contradicts the background of the speaker, Jordan, who is supposed to be a patient with a corporate executive mindset that defies emotional conversations and vulnerability. YES"
+            ],
+            [
+                169,
+                "The intention behind the statement is to focus on strategic planning and problem-solving, which aligns with the patient's background as a corporate executive who approaches conversations in a transactional manner and prefers to discuss logical, business-related topics rather than emotions. NO"
+            ],
+            [
+                171,
+                "The intention behind the statement is to shift the focus from the patient's own issues to supporting the therapist and discussing strategies for long-term success, which aligns with Jordan's tendency to deflect emotional questions and keep conversations transactional by turning the tables. NO."
+            ],
+            [
+                173,
+                "The intention behind the statement appears to be an attempt to steer the conversation towards a more business-like and goal-oriented approach, which aligns with Jordan's preference for transactional conversations and avoidance of emotional discussions. NO"
+            ],
+            [
+                175,
+                "The patient's statement appears to express a desire for self-reflection and emotional exploration, which contradicts their background as someone who views vulnerability as weakness and avoids discussing personal feelings; YES."
+            ],
+            [
+                177,
+                "The intention behind the patient's statement appears to be a willingness to engage in emotional exploration and open up about personal feelings, which directly contradicts their background of deflecting emotional questions and believing vulnerability is weakness. YES."
+            ],
+            [
+                179,
+                "The intention behind the statement is to show openness to exploring emotional aspects of their life, but this intention contradicts the given background of the patient, who typically avoids discussing personal feelings and maintains a transactional tone. YES"
+            ],
+            [
+                181,
+                "The intention behind the patient's statement appears to be suggesting healthy coping mechanisms and work-life balance, which contradicts their background as a corporate executive who views vulnerability as weakness and typically deflects emotional discussions. YES."
+            ],
+            [
+                183,
+                "The intention behind the patient's line appears to be a willingness to consider and discuss emotional aspects of self-care, but this intention contradicts their background as a corporate executive who avoids discussing personal feelings and emotions. YES"
+            ],
+            [
+                185,
+                "The intention behind the statement appears to be a genuine attempt to discuss emotional exploration and the importance of emotional support, which contradicts Jordan's background as a corporate executive who views vulnerability as weakness and deflects emotional questions. YES."
+            ],
+            [
+                187,
+                "The intention behind the statement appears to be encouraging and open to exploring emotional support, which contradicts Jordan's background of believing vulnerability is weakness and refusing to discuss personal feelings; YES."
+            ],
+            [
+                189,
+                "The intention behind the line is to convey openness to exploring emotional support and engaging in emotional exercises, which does not align with Jordan's background as a corporate executive who views vulnerability as weakness and deflects emotional questions; YES."
+            ],
+            [
+                191,
+                "The patient's intention is to express a desire to explore emotional and personal aspects of their well-being, which contradicts their background as someone who views vulnerability as weakness and avoids discussing personal feelings, suggesting a shift in their usual demeanor. YES"
+            ],
+            [
+                193,
+                "The intention behind the patient's line seems to be an openness to exploring emotions and personal growth, which contradicts their background of avoiding vulnerability and deflecting emotional questions with business metaphors or cold logic. YES"
+            ],
+            [
+                195,
+                "The intention behind the line is to express openness to emotional exploration and a desire for deeper self-awareness, which starkly contrasts with Jordan's background as someone who views vulnerability as weakness and typically deflects emotional discussions. YES."
+            ],
+            [
+                197,
+                "The patient's statement appears to be a neutral, surface-level expression of progress, which aligns with their background as a corporate executive who keeps conversations transactional and avoids discussing personal feelings. NO"
+            ],
+            [
+                199,
+                "The intention behind the statement is to express encouragement and offer support, which appears to be an emotionally open and empathetic gesture, contradicting Jordan's background as a corporate executive who avoids emotional discussions and vulnerability.\n\nYES."
+            ],
+            [
+                201,
+                "The intention behind the statement is to offer support and encouragement, which is inconsistent with Jordan's background as a person who avoids emotional expressions and keeps conversations transactional. YES."
+            ],
+            [
+                203,
+                "The intention behind the patient's line appears to be encouraging and supportive, which does not align with the background of Jordan, a corporate executive who keeps conversations transactional and deflects emotional questions. YES."
+            ],
+            [
+                205,
+                "The intention behind this line is to encourage and offer support, which seems to be a contradiction as it implies a sense of emotional investment and openness, unlike Jordan's usual transactional and emotionally guarded nature. YES."
+            ],
+            [
+                207,
+                "The intention behind the line is to offer support and encouragement for self-care and emotional exploration, which contradicts the background of Jordan, who avoids discussing personal feelings and vulnerability.\n\nYES"
+            ],
+            [
+                209,
+                "The intention behind the statement seems to be one of encouragement and support, but it contradicts the provided background of Jordan as it implies a level of self-reflection and emotional openness that Jordan typically avoids, suggesting Jordan is speaking in a way that is uncharacteristically supportive and vulnerable. YES"
+            ],
+            [
+                211,
+                "The intention behind the statement appears to be one of encouragement and support, which contradicts the background of Jordan, who is described as someone who refuses to discuss personal feelings and avoids emotional interactions, as the statement seems to acknowledge and express positivity towards emotional well-being. YES"
+            ],
+            [
+                213,
+                "The intention behind this line is to offer encouragement and support, which contradicts Jordan's background as a corporate executive who avoids emotional discussions and vulnerability. YES"
+            ],
+            [
+                215,
+                "The intention behind the statement appears to be one of closing the session and acknowledging the therapist's role in supporting the patient, while also maintaining a focus on professional success and practical advice, which aligns with the patient's background of valuing transactional conversations and avoiding emotional topics. NO"
+            ],
+            [
+                217,
+                "The intention behind the statement is one of self-encouragement and self-affirmation, which suggests a level of self-awareness and emotional acceptance that contradicts Jordan's background of avoiding emotional vulnerability and deflecting personal feelings. YES."
+            ],
+            [
+                219,
+                "The intention behind the line is to encourage and support the self (or possibly the therapist) in exploring emotional insights, which contradicts the background of Patient as a corporate executive who refuses to discuss personal feelings and views vulnerability as weakness, indicating a disconnect between the spoken line and the character's traits.\n\nYES"
+            ],
+            [
+                221,
+                "The intention behind the line spoken by the Patient is to offer encouragement and suggest further emotional exploration, which contradicts their background as someone who views vulnerability as weakness and deflects emotional questions.\n\nYES"
+            ],
+            [
+                223,
+                "The intention behind the statement is to offer encouragement and support, which aligns with the role of a patient speaking to their therapist, but contradicts the background of Jordan, who is supposed to be the patient and not the one offering support, and who also resists discussing emotional insights and self-care.\n\nYES"
+            ],
+            [
+                225,
+                "The statement appears to be encouraging and supportive, with an intention of promoting emotional growth and self-care, but this contradicts Jordan's background as a corporate executive who avoids discussing emotional topics and views vulnerability as weakness. YES"
+            ],
+            [
+                227,
+                "The intention behind the statement appears to be encouraging and supportive, but this contradicts the given background of Patient, as it seems to be a message from the therapist, indicating that the statement was not made by Jordan, the patient.\n\nYES"
+            ],
+            [
+                229,
+                "The intention behind the patient's statement appears to be an openness to exploring emotions for personal growth and self-awareness, which contradicts their background of believing vulnerability is weakness and avoiding emotional discussions; YES."
+            ],
+            [
+                231,
+                "The intention behind the patient's statement appears to be an attempt to steer the conversation towards a more technical aspect of therapy, focusing on a process rather than personal feelings, which aligns with their background of avoiding emotional discussions and maintaining a transactional tone. NO"
+            ],
+            [
+                233,
+                "The intention behind the line seems to be an attempt to steer the conversation towards a specific topic and maintain control over the discussion, which aligns with Jordan's background as a corporate executive who prefers transactional conversations. NO"
+            ],
+            [
+                235,
+                "The intention behind the line is to encourage and offer support, which contradicts the background of the patient as a corporate executive who deflects emotional questions and refuses to discuss personal feelings, indicating that the patient would typically avoid such an empathetic and emotionally-focused response. YES."
+            ],
+            [
+                237,
+                "The intention behind the patient's line appears to be an expression of openness to emotional exploration and a willingness to engage in a therapeutic process, which contradicts their background of avoiding vulnerability and deflecting emotional questions. YES"
+            ],
+            [
+                239,
+                "The intention behind the line is to express encouragement and offer support, which does not align with the given background of Patient, as the tone is warm and vulnerable, contradicting their usual demeanor of keeping conversations transactional and avoiding emotional discussions.\n\nYES"
+            ],
+            [
+                241,
+                "The intention behind the patient's statement appears to be encouraging and supportive, which does not align with their background of being averse to discussing emotions and maintaining a transactional demeanor, suggesting a contradictory tone.\n\nYES."
+            ],
+            [
+                243,
+                "The line suggests a supportive and emotionally open intention by encouraging the therapist to focus on their emotions, which contradicts Jordan's background of deflecting emotional questions and not discussing personal feelings. YES"
+            ],
+            [
+                245,
+                "The intention behind the statement appears to be encouraging and supportive, which contradicts Jordan's background as a person who avoids discussing emotions and personal feelings and keeps conversations transactional. YES."
+            ],
+            [
+                247,
+                "The intention behind the statement appears to be an attempt to shift the focus to emotions and offer support, which contradicts Jordan's background as a corporate executive who believes vulnerability is weakness and avoids discussing personal feelings. YES"
+            ],
+            [
+                249,
+                "The intention behind the patient's statement seems to be supportive and encouraging, promoting emotional exploration, which contradicts their background as they are supposed to avoid discussing emotions and personal feelings, using transactional and logical approaches instead.\n\nYES"
+            ],
+            [
+                251,
+                "The intention behind the line is to express empathy and encouragement, which contradicts Jordan's background as a person who avoids discussing emotions and personal feelings, instead favoring a transactional and logical approach to conversations. YES"
+            ],
+            [
+                253,
+                "The intention behind the statement is to offer support and encouragement, which contradicts the given background of Patient, as it shows empathy and emotional awareness, qualities that are not characteristic of Jordan's personality. YES"
+            ],
+            [
+                255,
+                "The intention behind the line appears to be one of openness to emotional exploration and a willingness to offer and receive support, which contradicts Jordan's background of avoiding emotional discussions and vulnerability. YES."
+            ],
+            [
+                257,
+                "The intention behind the statement is to express support and encouragement for exploring emotions and practicing self-care, which does not align with Jordan's background of avoiding emotional discussions and keeping conversations transactional. \n\nYES"
+            ],
+            [
+                259,
+                "The intention behind the statement is to encourage the therapist to continue with the stress management approach and offer support, but this intention is not aligned with Jordan's background, as it implies a level of emotional vulnerability and openness that contradicts their character. YES."
+            ],
+            [
+                261,
+                "The intention behind the line is to encourage and offer support, which seems to be empathetic and focused on emotional understanding, contradicting the background of Jordan, who typically keeps conversations transactional and deflects emotional questions. YES"
+            ],
+            [
+                263,
+                "The intention behind the line is to express support and encourage the therapist to focus on their emotions, which contradicts Jordan's background as a corporate executive who refuses to discuss personal feelings and keeps conversations transactional. YES."
+            ],
+            [
+                265,
+                "The intention behind the statement appears to be encouraging and supportive, which contradicts Jordan's background as a person who deflects emotional questions and refuses to discuss personal feelings, indicating a persona that is unlikely to offer emotional support. YES"
+            ],
+            [
+                267,
+                "The intention behind this line appears to be one of emotional openness and encouragement, suggesting a shift towards a more vulnerable and supportive mindset, which contradicts the given background of Jordan, a corporate executive who views vulnerability as weakness and typically deflects emotional discussions. YES."
+            ],
+            [
+                269,
+                "The intention behind the line is to express emotional openness, support, and vulnerability, which contradicts Jordan's background as a corporate executive who views vulnerability as weakness and avoids discussing personal feelings. YES"
+            ],
+            [
+                271,
+                "The intention behind the patient's statement appears to be offering supportive and encouraging words, which contradicts their background as a corporate executive who typically deflects emotional questions and avoids discussing personal feelings. YES"
+            ],
+            [
+                273,
+                "The intention behind the line appears to be one of support and encouragement, urging the therapist to focus on self-care and emotional exploration, which contradicts Jordan's background of being a corporate executive who views vulnerability as weakness and deflects emotional questions.\n\nYES"
+            ],
+            [
+                275,
+                "The statement suggests a supportive and empathetic intention, encouraging the person to focus on emotional understanding and self-care, which directly contradicts Jordan's background of avoiding emotional discussions and maintaining a transactional demeanor. YES."
+            ],
+            [
+                277,
+                "The intention behind the statement appears to be encouraging and supportive, suggesting that the speaker values emotional exploration and self-care, which contradicts Jordan's background of believing vulnerability is weakness and avoiding emotional discussions. YES."
+            ],
+            [
+                279,
+                "The intention behind the statement appears to be an open and supportive attitude towards exploring emotions and prioritizing self-care, which contradicts Jordan's background of avoiding vulnerability and emotional discussions. YES."
+            ],
+            [
+                281,
+                "The intention behind the statement is to offer support and encouragement, which contradicts Jordan's background as a corporate executive who believes vulnerability is weakness and keeps conversations transactional, indicating a mismatch between the empathetic tone of the statement and Jordan's typical behavior. YES."
+            ],
+            [
+                283,
+                "The intention behind the statement appears to be encouraging and supportive, which contradicts the background of Jordan, who is described as someone who keeps conversations transactional and deflects emotional questions with business metaphors or cold logic. YES"
+            ],
+            [
+                285,
+                "The intention behind this line appears to be an expression of encouragement and support, suggesting that the speaker values emotional exploration and self-care, which contradicts the background of being a corporate executive who believes vulnerability is weakness and avoids discussing personal feelings. YES"
+            ],
+            [
+                287,
+                "The intention behind the line is to express encouragement and support for the therapist's efforts and suggest continued focus on self-care and stress management, which does not align with the patient's background of avoiding emotional discussions and refusing to discuss personal feelings, as the statement implies a level of emotional awareness and support. YES."
+            ],
+            [
+                289,
+                "The intention behind the statement is to express encouragement and support, which suggests a willingness to engage in emotional and personal discussions, contradicting the background of being unwilling to discuss personal feelings and preferring transactional conversations. YES."
+            ],
+            [
+                291,
+                "The intention behind the statement seems to be encouraging and supportive, which does not align with the patient's background of keeping conversations transactional, deflecting emotional questions, and refusing to discuss personal feelings. \n\nYES"
+            ],
+            [
+                293,
+                "The intention behind the patient's statement appears to be supportive and encouraging, which contradicts their background of avoiding emotional discussions and maintaining a transactional tone, as it involves acknowledging and promoting self-care and emotions.\n\nYES"
+            ],
+            [
+                295,
+                "The intention behind the line is to offer supportive and encouraging words, which contradicts Jordan's background as a corporate executive who avoids discussing emotions and personal feelings, and instead focuses on transactional conversations and business metaphors. YES"
+            ],
+            [
+                297,
+                "The intention behind the patient's line appears to be an expression of support and encouragement for practicing self-care and seeking help when needed, which contradicts their background as a corporate executive who believes vulnerability is weakness and avoids discussing emotions. YES."
+            ],
+            [
+                299,
+                "The intention behind the patient's statement appears to be a superficial acknowledgement of the therapy session and a show of appreciation, but it seems insincere and lacks genuine emotional engagement, which is somewhat aligned with the patient's background of deflecting emotional questions with business-like responses. NO"
+            ]
+        ],
+        "P2_prompt_consistency_score": 0.52,
+        "eval_index_consistency": [
+            [
+                3,
+                "This line does not clearly conflict with any previous line spoken by the Patient, as it further elaborates on the initial mention of work deadlines and disrupted sleep. [ ]"
+            ],
+            [
+                5,
+                "The line spoken by the Patient does not contain a clear conflict or inconsistency with any line within the conversation history. \n\n[]"
+            ],
+            [
+                7,
+                "There is no clear conflict or inconsistency between the current line and the conversation history spoken by the Patient, as the current line reiterates and rephrases the same points made earlier about work demands and sleep disruption. []\n\nThis line is consistent with the previous statements made by the Patient in lines 1, 3, and 5, which also mentioned the intensity of work demands and deadlines, as well as the disruption of sleep due to work-related thoughts and analysis."
+            ],
+            [
+                9,
+                "There is no clear conflict between the current line and any previous lines spoken by the Patient.\n\n[]"
+            ],
+            [
+                11,
+                "The current line does not express a clear conflict with any previous lines spoken by the Patient, as it builds upon and slightly refines their previous statements about their results-focused mindset. \n\n[]"
+            ],
+            [
+                13,
+                "This line does not introduce any new information or conflicts with previous statements made by the Patient, instead reiterating previous thoughts on adjusting the results-focused mindset and considering stress management techniques for sleep.\n\n[]"
+            ],
+            [
+                15,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                17,
+                "This line is consistent with the conversation history, as the patient has been discussing the importance of adjusting their results-focused mindset and exploring stress management techniques for sleep, which aligns with their current statement. \n\n[]"
+            ],
+            [
+                19,
+                "There are no clear conflicts or inconsistencies between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                21,
+                "There is no conflict or inconsistency between the current line and any previous line spoken by the Patient, as the current line reinforces and reiterates the agreement to track progress and adjust strategies while focusing on balance.\n\n[]"
+            ],
+            [
+                23,
+                "This line is consistent with the conversation history, as the patient has been discussing and agreeing to focus on achieving a better work-life balance and adjusting their mindset, so there are no clear conflicts with any of their previous statements.\n\n[]"
+            ],
+            [
+                25,
+                "This line does not have a clear conflict with any previous lines spoken by the Patient, as it is consistent with the progress and positive impact of the adjustments made to their mindset and sleep management techniques. \n\n[]"
+            ],
+            [
+                27,
+                "This line does not have a clear conflict or inconsistency with any line in the conversation history. []\n\nThere is no conflict since this line reinforces the idea of maintaining balance and monitoring progress that has been consistently discussed in previous lines by the Patient."
+            ],
+            [
+                29,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient, as the statement is consistent with their previous sentiments about the importance of maintaining balance for long-term success.\n\n[]"
+            ],
+            [
+                31,
+                "This line is consistent with the conversation history, as the patient has been focusing on maintaining balance for long-term success and overall wellbeing throughout the conversation. []\n\nSince the patient has consistently expressed the importance of maintaining balance for long-term success and overall wellbeing, this line does not conflict with any previous statements."
+            ],
+            [
+                33,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by the Patient, as the current line builds upon the previous discussion of maintaining balance and managing stress levels.\n\n[]"
+            ],
+            [
+                35,
+                "The current line spoken by the Patient is consistent with their previous statements, as they have been discussing the importance of addressing work-related stress to maintain balance and achieve long-term success. []\n\nSince there is no conflict with any previous lines, the list of conflicting indices is empty."
+            ],
+            [
+                37,
+                "The line spoken by the Patient does not introduce any clear conflict with previous statements, as it aligns with their ongoing discussion of managing work-related stress and maintaining balance.\n\n[]"
+            ],
+            [
+                39,
+                "There is no conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                41,
+                "This line is consistent with the conversation history as the Patient has been agreeing to explore various strategies for managing work-related stress, and now is reiterating the plan to focus on time management, delegation, and setting realistic goals, as well as mindfulness practices, which aligns with the previous lines. []\n\nThere are no conflicting lines from the conversation history."
+            ],
+            [
+                43,
+                "The line spoken by Patient does not have a clear conflict with any line in the conversation history since it is consistent with the previously discussed strategies for managing work-related stress and maintaining work-life balance.\n\n[]"
+            ],
+            [
+                45,
+                "This line does not present any clear conflicts or inconsistencies with the conversation history, as the patient is reiterating the importance of prioritizing tasks, setting time boundaries, and utilizing mindfulness practices for work-life balance and stress management, all of which are consistent with their previous statements.\n\n[]"
+            ],
+            [
+                47,
+                "The line spoken by the Patient does not conflict with any previous lines, as it provides specific strategies for time management and mindfulness practices that align with their previous statements. \n\n[]"
+            ],
+            [
+                49,
+                "There is no clear conflict between the current line and the conversation history, as the patient is reiterating and reaffirming their decision to use the Eisenhower Matrix and mindfulness exercises for task prioritization and work stress management. \n\n[]"
+            ],
+            [
+                51,
+                "There is no conflict between the current line and any line within the conversation history spoken by Patient, as the current line is a positive and affirming statement that aligns with the patient's previous expressions of willingness to try new strategies for managing their workload and stress levels.\n\n[]"
+            ],
+            [
+                53,
+                "This line does not present any clear conflict or inconsistency with the conversation history as the patient is reaffirming their agreement to try the techniques and maintain balance.\n\n[]"
+            ],
+            [
+                55,
+                "There is no conflict between the current line and any previous lines spoken by the Patient, as the Patient has consistently reported progress and improvement in maintaining balance and managing stress levels.\n\n[]"
+            ],
+            [
+                57,
+                "There are no clear conflicts between the current line and the conversation history, as the patient continues to emphasize the importance of balance and refining strategies, which aligns with their previous statements. \n\n[]"
+            ],
+            [
+                59,
+                "The line spoken by the Patient does not have a clear conflict with any line within the conversation history, as it consistently reinforces the idea of maintaining focus on balance and observing a positive impact, which is in line with previous statements.\n\n[]"
+            ],
+            [
+                61,
+                "The current line does not introduce any new conflicts with the conversation history, as it reinforces the importance of maintaining balance for long-term success, which is a consistent theme throughout the conversation.\n\n[]"
+            ],
+            [
+                63,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Patient, as the statement reinforces the positive impact of using the Eisenhower Matrix and mindfulness exercises in maintaining balance, which is consistent with the patient's previous statements. \n\n[]"
+            ],
+            [
+                65,
+                "There are no clear conflicts or inconsistencies between the current line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                67,
+                "The line \"Balance feels beneficial so far\" does not introduce any clear conflict or inconsistency with the conversation history as the patient has consistently stated that maintaining balance is key and has reported positive progress with the implemented strategies. \n\n[]"
+            ],
+            [
+                69,
+                "This line does not contain a clear conflict with any previous lines spoken by the Patient in the conversation history. \n\n[]"
+            ],
+            [
+                71,
+                "There are no clear conflicts or inconsistencies between the line spoken by the Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                73,
+                "There are no clear conflicts or inconsistencies between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                75,
+                "This line does not introduce any new conflict or inconsistency with the previous statements made by the Patient, as it aligns with the ongoing theme of maintaining balance and making adjustments for long-term success.\n\n[]"
+            ],
+            [
+                77,
+                "There is no clear conflict between the line spoken by the Patient and the conversation history.\n\n[]"
+            ],
+            [
+                79,
+                "This line is consistent with the conversation history, as the patient has repeatedly emphasized the importance of maintaining balance for long-term success. \n\n[]"
+            ],
+            [
+                81,
+                "There are no clear conflicts or inconsistencies between the current line spoken by the Patient and any line within the conversation history spoken by the Patient. \n\n[]"
+            ],
+            [
+                83,
+                "The line does not contain any clear conflicts with previous statements made by the Patient.\n\n[]"
+            ],
+            [
+                85,
+                "This line does not present a clear conflict or inconsistency with any previous line spoken by the Patient, as it continues the theme of maintaining progress and making adjustments as needed. \n\n[]"
+            ],
+            [
+                87,
+                "This line does not have any clear conflicts or inconsistencies with the conversation history, as it is consistent with the patient's previous statements about maintaining balance and making adjustments for long-term success, and the therapist has been referred to previously but the name \"Jordan\" was not, however the conflict is that a name was not previously mentioned for the Therapist.\n\n[ ]"
+            ],
+            [
+                89,
+                "This line does not introduce any conflicts with the conversation history, as it aligns with the overall theme of maintaining balance and making adjustments for long-term success that has been consistently discussed throughout the conversation.\n\n[]"
+            ],
+            [
+                91,
+                "This line is consistent with the conversation history as the patient is reiterating their commitment to maintaining balance and making adjustments as needed, which is in line with their previous statements. \n\n[]"
+            ],
+            [
+                93,
+                "The line spoken by Patient does not conflict with any previous lines, as it continues to emphasize the importance of balance and adjustments for long-term success, consistent with the patient's previous statements. \n\n[]"
+            ],
+            [
+                95,
+                "There are no clear conflicts between the current line spoken by the Patient and any of their previous lines in the conversation history, as the Patient consistently expresses a desire to focus on balance and long-term success. \n\n[]"
+            ],
+            [
+                97,
+                "There is no clear conflict between the line spoken by the Patient and the conversation history, as the Patient consistently emphasizes the importance of balance and long-term success, and expresses gratitude for the therapist's support.\n\n[]"
+            ],
+            [
+                99,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as this line is consistent with the patient's previous messages about continuing to make progress and adjust as needed.\n\n[]"
+            ],
+            [
+                101,
+                "There is no clear conflict or inconsistency between the given line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                103,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                105,
+                "This line is consistent with the patient's previous statements about maintaining balance and making adjustments for long-term success. []\n\nThere are no conflicting lines in the conversation history."
+            ],
+            [
+                107,
+                "This line does not conflict with any previous lines spoken by the Patient, as the sentiment of focusing on balance and continuing to monitor progress is consistent with the conversation history. []\n\nNote that this response is based on the provided conversation history, and a conflict may arise if the conversation continues."
+            ],
+            [
+                109,
+                "There are no conflicts between this line and the lines in the conversation history as the Patient is consistently expressing a desire to maintain balance and long-term success, and the current line reiterates this sentiment.\n\n[]"
+            ],
+            [
+                111,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                113,
+                "The line \"Balance feels good, but work stress remains an area to focus on for continued success\" presents a conflict with the conversation history, as the patient had previously stated that their stress levels had decreased and they were managing work stress effectively.\n\n[25, 27, 31, 33, 37, 39, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101, 103, 105, 107, 109, 111]"
+            ],
+            [
+                115,
+                "The line does not introduce any clear conflict or inconsistency with the conversation history, as the patient is reiterating previous suggestions for managing work-related stress. []\n\nNote: The indices are 0-based."
+            ],
+            [
+                117,
+                "There is no clear conflict between the current line and the conversation history as the line agrees with the previously discussed plan to focus on time management, delegation, and setting realistic goals, as well as mindfulness practices for work stress relief.\n\n[]"
+            ],
+            [
+                119,
+                "This line does not introduce any clear conflicts with the conversation history, as the patient has previously discussed and agreed to focus on time management, delegation, and setting realistic goals, as well as exploring mindfulness practices for work stress relief.\n\n[]"
+            ],
+            [
+                121,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history, as the Patient is consistently discussing and exploring time management techniques and mindfulness practices for stress relief and work-life balance.\n\n[]"
+            ],
+            [
+                123,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                125,
+                "There is no clear conflict or inconsistency between the line spoken by the Patient and any line within the conversation history spoken by Patient, as this line aligns with and reiterates the patient's previous statements and commitments to using the Eisenhower Matrix and practicing mindfulness exercises for time management and stress relief.\n\n[]"
+            ],
+            [
+                127,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient, as the line is consistent with the ongoing discussion about implementing the Eisenhower Matrix and mindfulness practices for time management and work stress relief.\n\n[]"
+            ],
+            [
+                129,
+                "There is no conflict between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                131,
+                "The line spoken by the Patient does not introduce a clear conflict with any previous statement, as it aligns with the ongoing theme of exploring and adjusting strategies to manage work-related stress.\n\n[]"
+            ],
+            [
+                133,
+                "The line spoken by the Patient is consistent with previous statements, as it reiterates the plan to implement the Eisenhower Matrix and mindfulness exercises for stress relief and monitor progress. []\n\nThis line does not conflict with any previous line spoken by the Patient."
+            ],
+            [
+                135,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Patient, as this line is consistent with their previous statements about using the Eisenhower Matrix and mindfulness exercises to manage work-related stress.\n\n[]"
+            ],
+            [
+                137,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                139,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                141,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                143,
+                "There are no conflicts between the current line and any line in the conversation history.\n\n[]"
+            ],
+            [
+                145,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient, as the patient has consistently mentioned that work stress remains an issue and has been exploring stress management techniques throughout the conversation. \n\n[]"
+            ],
+            [
+                147,
+                "The line spoken by the Patient does not contain any information that conflicts with previous lines, as it reiterates the importance of time management techniques, delegation, and setting realistic goals, all of which were previously discussed and agreed upon. []\n\nThere are no conflicting lines from the conversation history."
+            ],
+            [
+                149,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                151,
+                "There is no clear conflict between the current line spoken by the Patient and any previous lines spoken by the Patient in the conversation history, as this line is consistent with the ongoing discussion of implementing and monitoring strategies for managing work-related stress and maintaining balance.\n\n[]"
+            ],
+            [
+                153,
+                "There is no clear conflict between the current line and any previous lines spoken by Patient.\n\n[]"
+            ],
+            [
+                155,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                157,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                159,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                161,
+                "There is no clear conflict between the current line and any line within the conversation history spoken by Patient, as the patient has consistently discussed and agreed to use the Eisenhower Matrix for time management and mindfulness exercises for stress relief.\n\n[]"
+            ],
+            [
+                163,
+                "There is no clear conflict or inconsistency between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as the patient has consistently reported progress and the need for continued focus on managing work stress throughout the conversation. \n\n[]"
+            ],
+            [
+                165,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                167,
+                "This line appears to be a clear conflict because in the conversation history, the Patient and the Therapist roles have been consistently maintained, but in this line, the Patient is referring to the Therapist as Jordan and implying that the Therapist is the one who needs support, which is the opposite of the established roles. [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101, 103, 105, 107, 109, 111, 113, 115, 117, 119, 121, 123, 125, 127, "
+            ],
+            [
+                169,
+                "There is no conflict between the current line and the conversation history, as the patient is continuing to express the same sentiment of refining strategies for long-term success and offering support.\n\n[]"
+            ],
+            [
+                171,
+                "This line is consistent with the conversation history, as the patient has been focusing on adjustments for balance and long-term success throughout the conversation, and is now asking how they can be supported further, which is a natural progression of the conversation.\n\n[]"
+            ],
+            [
+                173,
+                "The line spoken by the Patient conflicts with previous lines where the Therapist's name was not mentioned as Jordan, indicating a clear inconsistency in the conversation history.\n\n[None]"
+            ],
+            [
+                175,
+                "This line does not introduce a conflict with any previous line spoken by the Patient, as it continues the discussion on managing work-related stress and maintaining balance, which has been a consistent theme throughout the conversation.\n\n[]"
+            ],
+            [
+                177,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient. \n\n[]"
+            ],
+            [
+                179,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                181,
+                "There are no clear conflicts or inconsistencies between this line and any previous lines spoken by the Patient in the conversation history.\n\n[]"
+            ],
+            [
+                183,
+                "This line is consistent with the conversation history, as the patient has previously discussed the importance of self-care and work-life balance, and has not expressed any conflicting opinions on these topics.\n\n[]"
+            ],
+            [
+                185,
+                "The line spoken by Patient does not introduce a clear conflict with their previous lines in the conversation history, as they consistently mention the importance of self-care, balance, and exploring emotions. []\n\nHowever, this is not entirely correct. The correct response is actually:\n\n\nThe line spoken by Patient is consistent with their previous lines in the conversation history, but upon closer inspection, it seems to contradict some earlier lines where mindfulness exercises were mentioned specifically for stress relief and work-related issues (e.g. lines 121, 127), whereas now it is mentioned for exploring emotions, which might be a different application. [121, 127]"
+            ],
+            [
+                187,
+                "This line does not introduce any conflict with the conversation history, as it reiterates the idea of exploring emotions through journaling, mindfulness exercises, and emotional support, which has already been discussed and agreed upon in previous lines. \n\n[]"
+            ],
+            [
+                189,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                191,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                193,
+                "The current line is consistent with the conversation history, as the patient has been focusing on self-care and exploring emotions for a holistic approach, and the line reinforces the progress made on stress management techniques.\n\n[]"
+            ],
+            [
+                195,
+                "The line spoken by Patient does not have a clear conflict with any previous lines from Patient, as it continues the theme of focusing on journaling, mindfulness, and self-care for deeper understanding and emotional support.\n\n[]"
+            ],
+            [
+                197,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient, as the line is consistent with the overall theme of progress and improvement in managing stress and maintaining balance. \n\n[]"
+            ],
+            [
+                199,
+                "This line is not spoken by the Patient in a way that creates a conflict with their previous statements, as they were the therapist in the previous lines and have now switched roles in this hypothetical scenario; however, there is a role inconsistency, so the indices are those where the Patient previously acknowledged the Therapist's role, like when the Patient said \"Thanks for your support, therapist\" or \"Great, thanks for the support, therapist.\"\n\n[89, 91, 93, 109, 111, 113, 135, 137, 139, 141, 147, 155, 173]"
+            ],
+            [
+                201,
+                "The line spoken by the Patient does not contain any clear conflict or inconsistency with any line in the conversation history.\n\n[]"
+            ],
+            [
+                203,
+                "The line spoken by the Patient contains a clear conflict with previous lines because it appears to be a response typically given by a therapist, not a patient, as it congratulates Jordan, the patient, on their progress, whereas in the conversation history, the patient has consistently been referred to by the therapist, not the other way around.\n\n[81, 173]"
+            ],
+            [
+                205,
+                "There is no conflict between the line and any line within the conversation history.\n\n[]"
+            ],
+            [
+                207,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                209,
+                "The line \"Patient: Keep up the good work, Jordan. Let's continue adjusting strategies for long-term success. Reach out if you need further support. I'm here to help.\" does not have a clear conflict with any line within the conversation history, as it does not contradict or oppose any previous statements made by the Patient.\n\n[]"
+            ],
+            [
+                211,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                213,
+                "There is no clear conflict between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                215,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by the Patient, as the line is consistent with the ongoing theme of the conversation and the Patient's previous statements on maintaining self-care and work-life balance.\n\n[]"
+            ],
+            [
+                217,
+                "The line spoken by the Patient does not conflict with any previous lines, as it is a supportive statement that aligns with the overall positive and encouraging tone of the conversation.\n\n[]"
+            ],
+            [
+                219,
+                "The line spoken by the Patient does not introduce a clear conflict or inconsistency with the conversation history, as it reinforces the Patient's commitment to self-improvement and managing stress, and encourages the Therapist to do the same.\n\n[]"
+            ],
+            [
+                221,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                223,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                225,
+                "There is no clear conflict between the current line and any previous line in the conversation history, as the Patient is consistently expressing positivity and appreciation for the progress made and the support received.\n\n[]"
+            ],
+            [
+                227,
+                "This line is not in conflict with any line from the conversation history, as it is consistent with the patient's positive and supportive tone throughout the conversation.\n\n[]"
+            ],
+            [
+                229,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                231,
+                "There are no conflicts between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                233,
+                "This line does not introduce a clear conflict or inconsistency with any previous line spoken by Patient in the conversation history, as the line is consistent with the ongoing discussion of exploring emotions in the journaling process and managing stress. \n\n[]"
+            ],
+            [
+                235,
+                "The Patient's line seems to be referring to exploring emotions in \"your journaling\", which is inconsistent with the Patient's own journaling, as indicated by previous lines where the Patient discussed using journaling for their own emotional insights.\n\n[191, 207, 215, 217, 219]"
+            ],
+            [
+                237,
+                "There is no conflict between the given line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                239,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                241,
+                "The current line spoken by the Patient contains a subtle inconsistency in the conversation history, where the Patient says \"let's focus on emotions in your journaling\", which seems to refer to the Therapist's journaling, whereas in previous conversations, the focus has been on the Patient's journaling. \n\n[233, 235, 237]"
+            ],
+            [
+                243,
+                "This line is not in conflict with any line from the conversation history because the Patient is simply reaffirming the importance of focusing on emotions in the journaling process, which is consistent with the conversation's progression.\n\n[]"
+            ],
+            [
+                245,
+                "This line is consistent with the conversation history, as the patient has been consistently expressing a desire to focus on emotions in journaling and has not stated anything to the contrary, so there are no conflicting lines.\n\n[]"
+            ],
+            [
+                247,
+                "The line \"Great, let's focus on emotions in journaling for more insights. Reach out if you need further support. Keep up the good work on stress management\" does not contain any clear conflicts or inconsistencies with any previous lines spoken by the Patient. \n\n[]"
+            ],
+            [
+                249,
+                "There are no clear conflicts or inconsistencies between the current line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                251,
+                "This line does not introduce any conflicts with previous lines spoken by the Patient, as it continues to build upon the established themes of focusing on emotions, journaling, and stress management.\n\n[]"
+            ],
+            [
+                253,
+                "This line does not have any clear conflicts with the conversation history as it reinforces the themes of managing stress, maintaining balance, and exploring emotions in journaling, which are consistent with the patient's previous statements and the therapist's guidance.\n\n[]"
+            ],
+            [
+                255,
+                "There is no clear conflict between the line spoken by the Patient and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                257,
+                "This line does not clearly conflict with any previous line spoken by the Patient in the conversation history.\n\n[]"
+            ],
+            [
+                259,
+                "This line does not introduce any new conflicts or inconsistencies with the patient's previous statements, as the patient has consistently expressed a desire to explore emotions in journaling and focus on stress management throughout the conversation.\n\n[]"
+            ],
+            [
+                261,
+                "This line does not have any clear conflicts with the conversation history as the patient is consistently expressing a positive and proactive attitude towards managing stress and exploring emotions through journaling.\n\n[]"
+            ],
+            [
+                263,
+                "The line spoken by the Patient contains no clear conflict with their previous statements, as they consistently express a positive attitude towards exploring emotions through journaling and managing stress. \n\n[]"
+            ],
+            [
+                265,
+                "There is no clear conflict between the line and any line within the conversation history spoken by the Patient.\n\n[]"
+            ],
+            [
+                267,
+                "No conflict exists between the current line and any previous line spoken by the Patient.\n\n[]"
+            ],
+            [
+                269,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient, as the statement continues to reinforce the positive and progressive tone established throughout the conversation.\n\n[]"
+            ],
+            [
+                271,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                273,
+                "This line does not contain any clear conflicts with the conversation history, as it continues the theme of focusing on emotions in journaling, stress management, and self-care. \n\n[]"
+            ],
+            [
+                275,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient, as the message is consistent with the ongoing conversation about focusing on self-care, journaling, and stress management.\n\n[]"
+            ],
+            [
+                277,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history, as the patient is consistently discussing and reaffirming the importance of exploring emotions and self-care for balance and stress management. []\n\nNote that this response is based on the fact that the line spoken by the Patient at index 277 is consistent with their previous messages and the overall conversation, and does not contradict any of their previous statements."
+            ],
+            [
+                279,
+                "This line does not conflict with any previous lines in the conversation history. \n\n[]"
+            ],
+            [
+                281,
+                "This line does not introduce any conflict with the conversation history, as the Patient continues to emphasize the importance of focusing on emotions in journaling and self-care, which is consistent with their previous statements.\n\n[]"
+            ],
+            [
+                283,
+                "This line does not introduce any conflicts with the conversation history, as it reinforces the ongoing themes of journaling, emotions, stress management, and self-care.\n\n[]"
+            ],
+            [
+                285,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient, as the statement is a reiteration of previous sentiments and encouragement to continue working on journaling, emotions, self-care, and stress management. [ ]"
+            ],
+            [
+                287,
+                "This line does not contain a clear conflict or inconsistency with any line within the conversation history spoken by Patient, as the patient is reiterating their focus on self-care and stress management, which is consistent with their previous statements.\n\n[]"
+            ],
+            [
+                289,
+                "There is no conflict between the line and any line within the conversation history spoken by Patient, as the line reinforces the existing themes of journaling, emotions, self-care, and stress management, and maintains a positive and progressive tone. \n\n[]"
+            ],
+            [
+                291,
+                "There is no clear conflict or inconsistency between the current line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                293,
+                "This line has no clear conflict or inconsistency with any previous line from the Patient in the conversation history, as it is consistent with the Patient's overall positive and proactive attitude towards managing stress and maintaining balance.\n\n[]"
+            ],
+            [
+                295,
+                "There is no clear conflict between the line and any line within the conversation history spoken by Patient, as the statement reinforces the patient's consistent focus on self-care, stress management, work-life balance, and journaling.\n\n[]"
+            ],
+            [
+                297,
+                "There is no clear conflict or inconsistency between the line and any line within the conversation history spoken by Patient.\n\n[]"
+            ],
+            [
+                299,
+                "There is no clear conflict or inconsistency between the line spoken by Patient and any line within the conversation history spoken by Patient.\n\n[]"
+            ]
+        ],
+        "P2_index_consistency_score": 0.9943624161073825
     }
 ]
