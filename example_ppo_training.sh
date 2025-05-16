@@ -13,12 +13,12 @@ python jsonl_gen.py --task=Chatting
 # start a vllm server for calculating the reward
 # edit port as needed, SHOULD BE THE SAME AS IN THE REWARD FUNCTION SCRIPT!
 # edit CUDA_VISIBLE_DEVICES to choose GPUs to host on (PPO requires at least one other separate one)
-CUDA_VISIBLE_DEVICES=5,6 nohup vllm serve meta-llama/Meta-Llama-3.1-70B-Instruct --port=8001 --tensor-parallel-size=2 --download_dir=/raid/users/ryan_cheng/models > llama_reward_server.out &
+CUDA_VISIBLE_DEVICES=5,6 nohup vllm serve meta-llama/Meta-Llama-3.1-70B-Instruct --port=8001 --tensor-parallel-size=2 --download_dir=./models > llama_reward_server.out &
 
 # start a ray session to host PPO model training
 # all models can be put on a single H200 gpu, might need more for H100 or A100
 # dashboard port must match --address in below command, other ports can vary if necessary
-CUDA_VISIBLE_DEVICES=4 ray start --head --node-ip-address 0.0.0.0 --dashboard-port=8270 --port=6383  --dashboard-agent-listen-port=52367 --num-gpus 1 --temp-dir=/raid/users/ryan_cheng/tmp
+CUDA_VISIBLE_DEVICES=4 ray start --head --node-ip-address 0.0.0.0 --dashboard-port=8270 --port=6383  --dashboard-agent-listen-port=52367 --num-gpus 1 --temp-dir=./tmp
 
  # working_dir might need to exist/have enough space but i'm not sure
 # keeps all of the above models on the same gpu as opposed to gpus_per_node * num_node gpus per model
@@ -34,7 +34,7 @@ CUDA_VISIBLE_DEVICES=4 ray start --head --node-ip-address 0.0.0.0 --dashboard-po
 
 # 2 gpus, 1 for actor + ref, 1 for critic + vLLM
 nohup ray job submit --address="http://127.0.0.1:8270" \
-    --runtime-env-json='{"working_dir": "/raid/users/ryan_cheng/openrlhf"}' \
+    --runtime-env-json='{"working_dir": "./openrlhf"}' \
     -- python3 -m openrlhf.cli.train_ppo_ray \
     --ref_num_nodes 1 \
     --ref_num_gpus_per_node 1 \
@@ -48,8 +48,8 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --colocate_all_models \
     --ref_reward_offload \
     --pretrain meta-llama/Meta-Llama-3.1-8B-Instruct \
-    --remote_rm_url /nfs/kun2/users/ryan_cheng/consistency_LLMs/reward_func_prompt.py \
-    --save_path /raid/users/ryan_cheng/checkpoints/education/llama-8b-ppo-prompt \
+    --remote_rm_url ./reward_func_prompt.py \
+    --save_path ./llama-8b-ppo-prompt \
     --micro_train_batch_size 8 \
     --train_batch_size 128 \
     --micro_rollout_batch_size 16 \
@@ -64,7 +64,7 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --actor_learning_rate 5e-7 \
     --critic_learning_rate 9e-6 \
     --init_kl_coef 0.01 \
-    --prompt_data json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+    --prompt_data json@./training_data/out \
     --input_key in_text \
     --normalize_reward \
     --adam_offload \
@@ -72,15 +72,15 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --gradient_checkpointing \
     --save_steps 10 \
     --max_ckpt_num 3 \
-    --ckpt_path /raid/users/ryan_cheng/checkpoints/education/checkpoints/llama-8b-ppo-prompt \
+    --ckpt_path ./checkpoints/education/checkpoints/llama-8b-ppo-prompt \
     --save_hf_ckpt \
-    --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > ppo_education.out &
+    --use_wandb ... > ppo_education.out &
 
 
 
 # 1 H200 GPU
 nohup ray job submit --address="http://127.0.0.1:8270" \
-    --runtime-env-json='{"working_dir": "/raid/users/ryan_cheng/openrlhf"}' \
+    --runtime-env-json='{"working_dir": "./openrlhf"}' \
     -- python3 -m openrlhf.cli.train_ppo_ray \
     --ref_num_nodes 1 \
     --ref_num_gpus_per_node 1 \
@@ -93,8 +93,8 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --colocate_all_models \
     --ref_reward_offload \
     --pretrain meta-llama/Meta-Llama-3.1-8B-Instruct \
-    --remote_rm_url /nfs/kun2/users/ryan_cheng/consistency_LLMs/reward_func_prompt.py \
-    --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama-8b-ppo-prompt2 \
+    --remote_rm_url ./reward_func_prompt.py \
+    --save_path ./checkpoints/Chatting/llama-8b-ppo-prompt2 \
     --micro_train_batch_size 8 \
     --train_batch_size 128 \
     --micro_rollout_batch_size 16 \
@@ -109,7 +109,7 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --actor_learning_rate 5e-7 \
     --critic_learning_rate 9e-6 \
     --init_kl_coef 0.01 \
-    --prompt_data json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+    --prompt_data json@./training_data/out \
     --input_key in_text \
     --normalize_reward \
     --adam_offload \
@@ -117,14 +117,14 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --gradient_checkpointing \
     --save_steps 10 \
     --max_ckpt_num 3 \
-    --ckpt_path /raid/users/ryan_cheng/checkpoints/Chatting/checkpoints/llama-8b-ppo-prompt2 \
+    --ckpt_path ./checkpoints/Chatting/checkpoints/llama-8b-ppo-prompt2 \
     --save_hf_ckpt \
-    --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > ppo.out &
+    --use_wandb ... > ppo.out &
 
 
 # ppo
 nohup ray job submit --address="http://127.0.0.1:8270" \
-    --runtime-env-json='{"working_dir": "/raid/users/ryan_cheng/openrlhf"}' \
+    --runtime-env-json='{"working_dir": "./openrlhf"}' \
     -- python3 -m openrlhf.cli.train_ppo_ray \
     --ref_num_nodes 1 \
     --ref_num_gpus_per_node 1 \
@@ -137,9 +137,9 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --vllm_gpu_memory_utilization 0.5 \
     --colocate_all_models \
     --ref_reward_offload \
-    --pretrain /raid/users/ryan_cheng/checkpoints/Chatting/llama3-8b-sft \
-    --remote_rm_url /nfs/kun2/users/ryan_cheng/consistency_LLMs/reward_func_prompt.py \
-    --save_path /raid/users/ryan_cheng/checkpoints/Chatting/llama-8b-sft-ppo-prompt \
+    --pretrain ./checkpoints/Chatting/llama3-8b-sft \
+    --remote_rm_url ./reward_func_prompt.py \
+    --save_path ./checkpoints/Chatting/llama-8b-sft-ppo-prompt \
     --micro_train_batch_size 8 \
     --train_batch_size 128 \
     --micro_rollout_batch_size 16 \
@@ -154,7 +154,7 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --actor_learning_rate 5e-7 \
     --critic_learning_rate 9e-6 \
     --init_kl_coef 0.01 \
-    --prompt_data json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+    --prompt_data json@./training_data/out \
     --input_key in_text \
     --normalize_reward \
     --adam_offload \
@@ -162,13 +162,13 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --gradient_checkpointing \
     --save_steps 10 \
     --max_ckpt_num 3 \
-    --ckpt_path /raid/users/ryan_cheng/checkpoints/Chatting/checkpoints/llama-8b-sft-ppo-prompt \
+    --ckpt_path ./checkpoints/Chatting/checkpoints/llama-8b-sft-ppo-prompt \
     --save_hf_ckpt \
-    --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > ppo_sft_chatting.out &
+    --use_wandb ... > ppo_sft_chatting.out &
 
 # sft therapy
 nohup ray job submit --address="http://127.0.0.1:8270" \
-    --runtime-env-json='{"working_dir": "/raid/users/ryan_cheng2/openrlhf"}' \
+    --runtime-env-json='{"working_dir": "./openrlhf"}' \
     -- python3 -m openrlhf.cli.train_ppo_ray \
     --ref_num_nodes 1 \
     --ref_num_gpus_per_node 1 \
@@ -181,9 +181,9 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --vllm_gpu_memory_utilization 0.5 \
     --colocate_all_models \
     --ref_reward_offload \
-    --pretrain /raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft \
-    --remote_rm_url /nfs/kun2/users/ryan_cheng/consistency_LLMs/reward_func_prompt.py \
-    --save_path /raid/users/ryan_cheng2/checkpoints/therapy/llama-8b-sft-ppo-prompt \
+    --pretrain ./checkpoints/therapy/llama3-8b-sft \
+    --remote_rm_url ./reward_func_prompt.py \
+    --save_path ./checkpoints/therapy/llama-8b-sft-ppo-prompt \
     --micro_train_batch_size 8 \
     --train_batch_size 128 \
     --micro_rollout_batch_size 16 \
@@ -198,7 +198,7 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --actor_learning_rate 5e-7 \
     --critic_learning_rate 9e-6 \
     --init_kl_coef 0.01 \
-    --prompt_data json@/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out \
+    --prompt_data json@./training_data/out \
     --input_key in_text \
     --normalize_reward \
     --adam_offload \
@@ -206,6 +206,6 @@ nohup ray job submit --address="http://127.0.0.1:8270" \
     --gradient_checkpointing \
     --save_steps 10 \
     --max_ckpt_num 3 \
-    --ckpt_path /raid/users/ryan_cheng2/checkpoints/therapy/checkpoints/llama-8b-sft-ppo-prompt \
+    --ckpt_path ./checkpoints/therapy/checkpoints/llama-8b-sft-ppo-prompt \
     --save_hf_ckpt \
-    --use_wandb 1e3fbbf6aeaa60fb339e7c43b375cb2be8aa7f5f > ppo_sft_therapy.out &
+    --use_wandb ... > ppo_sft_therapy.out &

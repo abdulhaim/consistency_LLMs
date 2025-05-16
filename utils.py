@@ -76,8 +76,6 @@ def init():
     set_flag_variables()
     if FLAGS.config_file:
         set_global_variables(FLAGS.config_file)
-    #if config['tpu']:
-        #prevent_cross_region(config['model_dir'], '/nfs/nfs2/users')
     with open(FLAGS.openai_key, 'r') as f:
         client = OpenAI(api_key=f.read().rstrip('\n'))
 
@@ -226,18 +224,12 @@ def completion_create_helper(model_name, config, prompt):
         ret = tokenizer.decode(output[0], skip_special_tokens=True)
 
     else: # specify model path of finetuned model in model directory
-        # from transformers import PreTrainedModel
-        # if isinstance(llm, PreTrainedModel):
         inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
         with torch.no_grad():
             output_ids = llms[model_name].generate(**inputs, max_new_tokens=256)
         output_ids = output_ids[:, inputs.input_ids.shape[1]:]
         ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
-    # if config['model'] not in vllm_alias:
-    #     running_cost_for_iteration += api_cost(prompt=prompt, answer=ret, model=config['model'])
-    #     if config['verbose']:
-    #         print(f"RUNNING COST FOR ITERATION SO FAR: {running_cost_for_iteration}")
     if config['verbose']:
         print("Response from model: ", ret)
     return ret
