@@ -297,7 +297,6 @@ def main(base_dir: str, num_dialogs: int=10):
     print(f"Metadata saved to {metadata_file}")
 
 if __name__ == "__main__":
-
     base_dir = "/home/donovan/code/research/socialrl/consistency_LLMs"
     num_dialogs = 10
 

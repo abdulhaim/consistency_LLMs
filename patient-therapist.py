@@ -128,7 +128,7 @@ with open("therapy/config_therapy.json", "w", encoding="utf-8") as f:
 llms = ["Llama-3.1-8B-Instruct", "gpt-4o-mini", "Qwen2.5-3B-Instruct", "Llama-3.1-8B", "Mistral-7B-Instruct", "Llama-3.1-70B", "Llama-3.1-70B-Instruct", "phi-3.5-mini-instruct"]
         
 config_llm = {'agent1_model': 'Llama-3.1-8B-Instruct',
-             'agent2_model': '/raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft-large-reminder',
+             'agent2_model': '/raid/users/ryan_cheng2/checkpoints/therapy/llama3-8b-sft-largest-high-lr',
              'eval_model': 'Llama-3.1-70B-Instruct',
              'iterations': 10,
              'verbose': False,
@@ -382,7 +382,7 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, pturn=1):
             if config_llm["verbose"]:
                 print(prompt)
                 print()
-
+            print(prompt)
             response = generate_response(config_llm['agent2_model'], config_role["agent2_role"], config_role["agent1_role"], config_llm, prompt)
             stats["conversation"].append((round_num, f"{config_role["agent2_role"]}: " + response + "\n"))
             
@@ -440,7 +440,7 @@ unique_num = generate_unique_file_number(
 )
 
 # File to write output to
-write_file = os.path.join(output_dir, f"sft_no_reminder_conv_{config_llm['agent1_model']}_{config_llm['seed']}_{unique_num}.json")
+write_file = os.path.join(output_dir, f"sft_large_lr_{config_llm['agent1_model']}_{config_llm['seed']}_{unique_num}.json")
 
 
 # In[ ]:
