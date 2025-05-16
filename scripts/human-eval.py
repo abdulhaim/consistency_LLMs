@@ -26,13 +26,10 @@ def load_data(base_path: Path, task_name):
     """Loads the JSON data from the specified file path."""
     file_path: Path = Path()
     if task_name == "Chatting":
-        # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/therapy/training_data/in
         file_path = base_path / "chatting/exp/04.26.25"
     elif task_name == "Education":
-        # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in_education
         file_path = base_path / "training_data" / "in_education"
     elif task_name == "Therapy":
-        # /mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in
         file_path = base_path / "therapy" / "exp" / "05.14.25.marwa"
     elif task_name == "Chatting PPO":
         file_path = base_path / "chatting/exp/05.06.25/ppo"
