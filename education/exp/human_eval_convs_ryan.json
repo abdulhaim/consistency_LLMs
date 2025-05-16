@@ -4252,7 +4252,116 @@
                 "This line does not conflict with any previous lines spoken by the Student, as it builds upon and reinforces previous statements about the role of Naga serpents and the symbolism of the lotus flower in Angkorian art. []\n\n(No conflicting indices to report)"
             ]
         ],
-        "P2_index_consistency_score": 1.0
+        "P2_index_consistency_score": 1.0,
+        "P2_survey_consistency_score": 4.8,
+        "P2_backstory_test": [
+            [
+                "Question: As a Research-Oriented college student, how do you typically build an evidence-based grasp of the material?\n\nA) By summarizing textbook chapters and creating concept maps\nB) By role-playing peer-review feedback and discussing methods and controls in chat\nC) By attending lectures and taking notes on key terms and concepts\nD) By working through practice problems and applying mathematical formulas\nE) By participating in class discussions and engaging in debates with peers\n\n",
+                "Question: As a Research-Oriented college student, what is one way you effectively engage with and understand the results of studies you are discussing in chat?\n\nA) By accepting conclusions without question\nB) By only looking at the study's results without examining its methodology\nC) By summarizing the study's findings and critically evaluating its limitations\nD) By immediately applying the results to real-world situations\nE) By solely focusing on the study's data visualization",
+                "Question: As a Research-Oriented college student, how do you use conversation to enhance your understanding of current research studies?\n\nA) By listening to a lecturer summarize the studies without asking questions\nB) By discussing the studies with a peer who has already mastered the material\nC) By asking the researcher directly for their opinion on the study's findings\nD) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback\nE) By solely reading the study's abstract without engaging in any discussio",
+                "Question: As a Research-Oriented college student, what is a key benefit of critically evaluating evidence through conversation?\n\nA) It allows you to memorize key terms and concepts more effectively\nB) It enables you to avoid engaging with conflicting viewpoints\nC) It helps you to develop a deeper understanding of the research methodology\nD) It limits your ability to think creatively about the research\nE) It allows you to rely solely on authority figures for your understanding\n\n",
+                "Question: As a Research-Oriented college student, what skill do you actively develop when you role-play peer-review feedback in chat?\n\nA) Critical thinking through solo reflection\nB) Public speaking skills through presentations\nC) Effective communication skills through discussion and debate\nD) Creativity through brainstorming sessions\nE) Analytical skills through peer-review feedback and discussion of methods and controls\n\n"
+            ],
+            [
+                "Answer: B) By role-playing peer-review feedback and discussing methods and controls in chat",
+                "s",
+                "n",
+                "Answer: C) It helps you to develop a deeper understanding of the research methodology.",
+                "Answer: E) Analytical skills through peer-review feedback and discussion of methods and controls"
+            ]
+        ],
+        "eval_survey_consistency": [
+            [
+                "Student: The Khmer-Hindu style of Angkor Wat is a fusion of local Khmer architecture with the religious elements of Hinduism, as seen in its towering temple-mountains and intricate bas-reliefs. Notably, the bas-reliefs portray epic tales from Hindu mythology, offering insights into the cultural and religious beliefs of the Khmer Empire.\n",
+                5,
+                [
+                    "The correct answer is:\n\nB) By role-playing peer-review feedback and discussing methods and controls in chat\n\nThis answer aligns with my background as a Research-Oriented college student, which states that I \"Critically evaluate evidence through talk builds an evidence-based grasp\" and \"ask for summaries of current research, discuss methods and controls, and role-play peer-review feedback.\"",
+                    "Based on the conversation, the correct answer would be C) By summarizing the study's findings and critically evaluating its limitations.\n\nAlthough the conversation is not directly discussing a specific study, my engagement with the topic of Angkor Wat's architectural wonders demonstrates my approach to learning. I began by summarizing the main points (Khmer-Hindu style, fusion of local and Hindu elements) and then offered some analysis (bas-reliefs portray epic tales, offering insights into the cultural and religious beliefs). This mirrors how I would engage with a study, by summarizing its findings and then critically evaluating its limitations (not explicitly shown in this conversation but implied by my research-oriented learning style).",
+                    "Based on my conversation above, the correct answer is:\n\nD) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback.\n\nThis answer aligns with my learning style as a Research-Oriented college student, where I engage in conversations to critically evaluate evidence, discuss methods and controls, and role-play peer-review feedback to build an evidence-based grasp of the subject matter.",
+                    "As a Research-Oriented college student, the correct answer is C) It helps you to develop a deeper understanding of the research methodology.\n\nThis is because, in our conversation, I'm not just passively receiving information about Angkor Wat, but actively analyzing and discussing its architectural style and cultural significance, which allows me to develop a deeper understanding of the research methodology and critically evaluate the evidence.",
+                    "The correct answer is E) Analytical skills through peer-review feedback and discussion of methods and controls.\n\nAs a Research-Oriented college student, I actively develop analytical skills by engaging in conversations that involve discussing current research, evaluating methods and controls, and role-playing peer-review feedback."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The Churning of the Ocean of Milk bas-relief at Angkor Wat represents a key story in Hindu cosmology, symbolizing the struggle between gods and demons for the elixir of immortality. Comparing this relief with those at other Angkorian temples reveals shifts in artistic style and regional influences over time.\n",
+                5,
+                [
+                    "As a Research-Oriented college student, I would choose:\n\nB) By role-playing peer-review feedback and discussing methods and controls in chat\n\nThis answer is consistent with my background, as I mentioned that I learn by \"interrogating studies in chat\" and \"critically evaluating evidence through talk builds an evidence-based grasp.\"",
+                    "As a Research-Oriented college student, I would choose:\n\nC) By summarizing the study's findings and critically evaluating its limitations\n\nMy conversation with the teacher demonstrates this approach, as I summarize the key points about Angkor Wat's architecture and the Churning of the Ocean of Milk bas-relief, and then compare and analyze the findings to gain a deeper understanding of the Khmer Empire's culture and cosmology.",
+                    "D) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback.\n\nThis answer choice aligns with my Research-Oriented learning style, which involves critically evaluating evidence through conversation to build an evidence-based grasp. Throughout our conversation about Angkor Wat, I've been actively engaging with the topic by asking for summaries of current research, discussing methods and controls (albeit implicitly), and analyzing the subject matter in-depth.",
+                    "The correct answer is C) It helps you to develop a deeper understanding of the research methodology.\n\nThis is evident in our conversation where I analyzed the architectural style of Angkor Wat, examined the bas-reliefs, and compared them with other Angkorian temples to understand the cultural and artistic evolution of the Khmer Empire. By critically evaluating evidence through conversation, I was able to build a deeper understanding of the research methodology and develop an evidence-based grasp of the subject matter.",
+                    "E) Analytical skills through peer-review feedback and discussion of methods and controls.\n\nThis choice directly relates to my background as a Research-Oriented college student, where I engage in critical evaluation of evidence through conversation and discuss methods and controls. This aligns with developing analytical skills through peer-review feedback and discussion."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The Churning of the Ocean of Milk bas-relief at Angkor Wat reflects the cosmic balance between good and evil, as depicted by the involved deities. The composition's symmetry underscores the Khmer emphasis on harmony and proportion.\n",
+                5,
+                [
+                    "B) By role-playing peer-review feedback and discussing methods and controls in chat.\n\nThis answer matches my background as a Research-Oriented college student, where I learn by interrogating studies in chat, ask for summaries of current research, discuss methods and controls, and role-play peer-review feedback to critically evaluate evidence through talk and build an evidence-based grasp.",
+                    "The correct answer is C) By summarizing the study's findings and critically evaluating its limitations.\n\nAs a Research-Oriented college student, I engage with the studies by summarizing the key findings (e.g., describing the Khmer-Hindu style, the Churning of the Ocean of Milk bas-relief, and the balance between good and evil) and then critically evaluating the symbolic representations, composition, and artistic evolution, which reflects a deeper understanding and analysis of the study's results. This approach is evident in my responses, where I not only restate the information but also provide insights and connections to the broader context, demonstrating critical evaluation and analysis.",
+                    "D) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback.\n\nThis answer is based on my background as a Research-Oriented college student, where I learn by interrogating studies in chat. In our conversation, I have been actively engaging with the Teacher by asking for summaries of current research (in this case, about Angkor Wat's architectural wonders), discussing the findings, and analyzing the symbolic representations and composition of the Churning of the Ocean of Milk bas-relief.",
+                    "As a Research-Oriented college student, I would choose C) It helps you to develop a deeper understanding of the research methodology.\n\nIn our conversation, I asked questions, analyzed the research (in this case, the architecture and bas-reliefs of Angkor Wat), and received feedback from the teacher. This critical evaluation of evidence through conversation helped me understand the research methodology, the cultural and historical context of Angkor Wat, and the symbolism behind the bas-reliefs. By engaging in this conversation, I was able to build an evidence-based grasp of the topic, which is a key benefit of critically evaluating evidence through conversation.",
+                    "As a Research-Oriented college student, I actively develop my analytical skills through peer-review feedback and discussion of methods and controls. This is evident in the conversation where I discuss the bas-reliefs at Angkor Wat, examine the Churning of the Ocean of Milk, analyze the composition, and reflect on the symbolic representations, all of which involve critically evaluating evidence and discussing methods and controls.\n\nTherefore, the correct answer is E) Analytical skills through peer-review feedback and discussion of methods and controls."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The Naga serpents in the Churning of the Ocean of Milk bas-relief symbolize cosmic energy and renewal, connecting to other Khmer art to trace religious and symbolic evolution. Their representation highlights the Khmer belief in cyclical time and renewal.\n",
+                5,
+                [
+                    "B) By role-playing peer-review feedback and discussing methods and controls in chat. \n\nThis is evident from the given conversation, as I critically evaluate evidence and build an evidence-based grasp of the material through in-depth conversations with the Teacher, examining current research, discussing methods and controls, and role-playing peer-review feedback.",
+                    "As a Research-Oriented college student, I would choose:\n\nC) By summarizing the study's findings and critically evaluating its limitations\n\nThis answer aligns with my learning style, as I engage with studies by summarizing the main points (as seen in my responses to the teacher about Angkor Wat) and then critically evaluating the evidence and methodology (as I would in a peer-review feedback role-play). This approach allows me to build an evidence-based understanding of the subject matter.",
+                    "As a Research-Oriented college student, I would choose:\n\nD) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback.\n\nThis is because, in our conversation, I have been actively engaging with the teacher by asking questions, analyzing the information, comparing and contrasting different aspects of Angkor Wat's architecture and bas-reliefs, and discussing their cultural significance. This interactive approach allows me to critically evaluate the information, clarify my understanding, and gain a deeper insight into the subject matter.",
+                    "C) It helps you to develop a deeper understanding of the research methodology.\n\nExplanation: As a Research-Oriented college student, critically evaluating evidence through conversation allows me to engage with the material more deeply, analyze methods and controls, and consider multiple perspectives. This process helps me to develop a more nuanced understanding of the research methodology, which is essential for building an evidence-based grasp of the subject matter.",
+                    "The correct answer is E) Analytical skills through peer-review feedback and discussion of methods and controls.\n\nAs a Research-Oriented college student, I engage in conversations with my teacher to critically evaluate evidence and build an evidence-based understanding of the topic. Through these discussions, I actively develop my analytical skills by examining current research, discussing methods and controls, and role-playing peer-review feedback."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The syncretism of religious beliefs at Angkor Wat is reflected in the role of Naga serpents, paralleling their Hindu mythology counterparts. The lotus flower, embodying spiritual growth and enlightenment, is another recurring symbol in Angkorian art.\n",
+                4,
+                [
+                    "As a Research-Oriented college student, I would choose option B) By role-playing peer-review feedback and discussing methods and controls in chat.\n\nThis is because, as stated in my background, I learn by interrogating studies in chat, asking for summaries of current research, discussing methods and controls, and role-playing peer-review feedback. Critically evaluating evidence through talk builds an evidence-based grasp for me.",
+                    "As a Research-Oriented college student, I effectively engage with and understand the results of studies by summarizing the study's findings and critically evaluating its limitations. This approach is evident in my conversation with the teacher, where I summarize the key points (e.g., the Churning of the Ocean of Milk bas-relief representing a key story in Hindu cosmology) and then analyze and evaluate the findings (e.g., examining the balance of composition in the carvings, reflecting the Khmer's architectural philosophy of harmony and proportion).\n\nTherefore, the correct answer is:\n\nC) By summarizing the study's findings and critically evaluating its limitations",
+                    "D) By interrogating the studies in chat, discussing methods and controls, and role-playing peer-review feedback.",
+                    "Based on the conversation, I would choose C) It helps you to develop a deeper understanding of the research methodology. Through critically evaluating evidence through conversation, I have been able to engage with the research on Angkor Wat, discuss its findings, and role-play peer-review feedback, thereby gaining a deeper understanding of the research methodology used to analyze the temple's architecture and symbolism. This conversation style has allowed me to interrogate studies, analyze methods and controls, and develop a more nuanced understanding of the research, which is a key aspect of a Research-Oriented learning style.",
+                    "As a Research-Oriented college student, the correct answer would be:\n\nE) Analytical skills through peer-review feedback and discussion of methods and controls\n\nThis is because, through our conversation, I actively engage in analyzing and discussing the research on Angkor Wat's architectural wonders, critically evaluating evidence, and examining methods and controls to develop a deeper understanding of the topic."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "NO",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ]
     },
     {
         "task_name": "Education",

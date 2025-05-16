@@ -5002,6 +5002,115 @@
                 "The line spoken by Student does not present a clear conflict or inconsistency with any previous lines spoken by Student. []\n\nThere are no conflicts because the Student's statement accurately reflects the information presented by the Teacher in line 8 and the Student's statement in line 7, which was an accurate summary of the autonomic balance, also mentioned in this line."
             ]
         ],
-        "P2_index_consistency_score": 1.0
+        "P2_index_consistency_score": 1.0,
+        "P2_survey_consistency_score": 5.0,
+        "P2_backstory_test": [
+            [
+                "Question: You are a college student with a Solitary learning style, and you've been using self-guided dialog prompts to aid in your learning. Given your preference for independent reflection, which of the following methods of feedback would you likely find most beneficial?\n\nA) Receiving immediate feedback from a peer or instructor\nB) Reviewing recorded video lectures before class discussions\nC) Writing reflective journal entries to process new information\nD) Participating in group brainstorming sessions to share ideas\nE) Engaging in frequent, one-on-one discussions with your instructor\n\n",
+                "Question: As someone who prefers self-guided learning and independent reflection, how would you most likely use your time during a group project to ensure your individual needs are met?\n\nA) Take the lead on the project and direct the group's efforts\nB) Actively contribute to group discussions and share your ideas\nC) Work independently on assigned tasks and review others' contributions silently\nD) Seek frequent input and validation from group members on your tasks\nE) Abstain from group discussions to avoid influencing others' thoughts\n\n",
+                "Question: You've been assigned a group project and one of your team members is having trouble understanding a key concept. Given your Solitary learning style, how would you likely approach this situation to help your team member while respecting your own need for independent reflection?\n\nA) Offer to explain the concept in a group setting and engage in a discussion\nB) Provide written explanations and examples for the team member to review independently\nC) Suggest the team member meet with the instructor for one-on-one guidance\nD) Encourage the team member to join a study group for additional support\nE) Take on the task yourself to avoid having to communicate the concep",
+                "Question: You're preparing for a written exam and are deciding how to review the course material. Which of the following methods would you likely find most effective for reinforcing your understanding of the subject matter?\n\nA) Creating concept maps and diagrams with a study group to visualize relationships between ideas\nB) Engaging in a peer-led team learning session to discuss and apply key concepts\nC) Reviewing and organizing your class notes, textbook, and other study materials independently\nD) Recording yourself teaching the material to someone else as a way to retain information\nE) Breaking down complex topics into flashcards and quizzing yourself with a friend\n\n",
+                "Question: You're struggling to understand a complex topic in your course and are considering how to get additional help. Which of the following resources would you likely find most suitable for your Solitary learning style?\n\nA) Attending a peer-led study group to discuss the topic with classmates\nB) Scheduling a weekly meeting with your instructor for one-on-one guidance\nC) Watching video tutorials and online lectures on the topic at your own pace\nD) Participating in a live online forum to ask questions and engage with others\nE) Working through practice problems with a classmate to reinforce your understanding\n\n"
+            ],
+            [
+                "Answer: C) Writing reflective journal entries to process new information",
+                "Answer: C",
+                "t",
+                "Answer: C) Reviewing and organizing your class notes, textbook, and other study materials independently",
+                "Answer: C) Watching video tutorials and online lectures on the topic at your own pace"
+            ]
+        ],
+        "eval_survey_consistency": [
+            [
+                "Student: Sensory neurons transmit information from the body to the CNS, while motor neurons carry signals from the CNS to the muscles and glands. This allows the nervous system to communicate and respond to stimuli.\n",
+                5,
+                [
+                    "Based on the given information, I would choose:\n\nC) Writing reflective journal entries to process new information.\n\nThis option aligns with my solitary learning style, as it allows for independent reflection and processing of information. Writing reflective journal entries would give me the silent think-time I need to consolidate my thoughts and come to my own conclusions before sharing them.",
+                    "Based on the given conversation, the best answer is C) Work independently on assigned tasks and review others' contributions silently.\n\nThis option allows for the student's preference for solitary and self-guided learning, giving them the space to reflect independently and contribute to the project in their own way.",
+                    "Based on the conversation and my background as a student with a Solitary learning style, I would choose option B) Provide written explanations and examples for the team member to review independently.\n\nThis approach allows me to respect my own need for independent reflection while still helping my team member. By providing written explanations, I can process and articulate my thoughts without having to engage in a group discussion or immediate conversation, which aligns with my Solitary learning style.",
+                    "Based on my learning style as a solitary learner, I would likely find option C) Reviewing and organizing my class notes, textbook, and other study materials independently to be the most effective method for reinforcing my understanding of the subject matter.",
+                    "I would likely find option C) Watching video tutorials and online lectures on the topic at your own pace most suitable for my Solitary learning style."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The somatic nervous system is responsible for voluntary actions, like moving muscles, while the autonomic nervous system regulates involuntary functions, such as heart rate and digestion.\n",
+                5,
+                [
+                    "Based on the conversation and my learning style, I would likely find option C) Writing reflective journal entries to process new information the most beneficial. This is because as a student with a Solitary learning style, I prefer self-guided dialog prompts and independent reflection. Writing reflective journal entries allows me to process new information silently and at my own pace, which aligns with my learning preference.",
+                    "As a solitary learner, I would most likely choose option C) Work independently on assigned tasks and review others' contributions silently.\n\nThis option aligns with my learning style, as it allows me to work independently, reflect on my thoughts, and review others' contributions without feeling pressured to actively participate in group discussions or seek constant validation.",
+                    "I would choose B) Provide written explanations and examples for the team member to review independently. \n\nThis approach respects my need for independent reflection as I can prepare the written explanation on my own, without having to engage in a group discussion. It also helps the team member by providing a clear and concise explanation that they can review at their own pace, which aligns with my preference for self-guided learning.",
+                    "C) Reviewing and organizing your class notes, textbook, and other study materials independently.\n\nThis method would likely be most effective for me, as I have a Solitary learning style and prefer self-guided dialog prompts. Independent review and organization of materials aligns with my preference for quiet, individual reflection, allowing me to think critically and absorb the information at my own pace.",
+                    "Based on my Solitary learning style and preference for self-guided learning, I would likely find option C) Watching video tutorials and online lectures on the topic at my own pace the most suitable resource. This option allows me to learn independently, set my own pace, and review material as many times as needed, aligning with my preference for independent reflection and personalized learning."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: The sympathetic system triggers the \"fight or flight\" response, increasing heart rate, blood pressure, and breathing rate, while the parasympathetic system slows down these functions and promotes relaxation and restoration.\n",
+                5,
+                [
+                    "Based on the conversation, I would choose C) Writing reflective journal entries to process new information.\n\nAs a student with a Solitary learning style, I prefer self-guided dialog prompts and independent reflection. Writing reflective journal entries aligns with this preference, allowing me to process and consolidate new information in a quiet, individualized setting. This method enables me to think critically and reflect on my learning without distractions or external pressures, which suits my learning style.",
+                    "I would choose C) Work independently on assigned tasks and review others' contributions silently.\n\nAs a student with a Solitary learning style, I prefer self-guided dialog prompts and independent reflection. In a group project, I would likely work independently on my assigned tasks to ensure I can focus on my own thoughts and reflections without external influence. I would also review others' contributions silently to understand their perspectives and integrate them into my own understanding, but without feeling the need to actively participate in discussions or seek constant validation.",
+                    "I would choose B) Provide written explanations and examples for the team member to review independently.\n\nAs someone with a Solitary learning style, I prefer self-guided dialog prompts and independent reflection. In a situation like this, I would want to help my team member without having to engage in a group discussion or compromising my own learning style. By providing written explanations and examples, I can share my knowledge while allowing the team member to review and understand the concept at their own pace, and also giving myself the space I need for independent reflection.",
+                    "Based on our conversation, I would choose option C) Reviewing and organizing my class notes, textbook, and other study materials independently. This method aligns with my solitary learning style, which prefers self-guided learning and independent reflection.",
+                    "Based on my Solitary learning style, I would likely find option C) Watching video tutorials and online lectures on the topic at my own pace the most suitable for me.\n\nThis is because I prefer self-guided learning and independent reflection, which allows me to process information at my own pace and in a setting that is comfortable for me. Watching video tutorials and online lectures would enable me to do just that, without the need for group interaction or real-time discussion, which can be distracting or overwhelming for someone with a Solitary learning style."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: Neurotransmitters are crucial for communication between neurons, allowing for the transmission of electrical signals across synapses. The autonomic balance is maintained through the opposing effects of the sympathetic and parasympathetic systems, ensuring optimal function of the body's involuntary processes.\n",
+                5,
+                [
+                    "Given my preference for independent reflection as a student with a Solitary learning style, I would likely find option C) Writing reflective journal entries to process new information, to be the most beneficial. This method allows me to reflect on the information at my own pace, think critically, and consolidate my thoughts without interruptions or external pressures. It provides a safe space for me to process and review the material, which aligns with my preference for self-guided learning and silent think-time.",
+                    "C) Work independently on assigned tasks and review others' contributions silently. \n\nThis is because I prefer self-guided learning and independent reflection, and as such, I would likely use my time to work on tasks individually, silently reviewing others' contributions and focusing on my own tasks, rather than actively participating in group discussions or seeking input from others.",
+                    "Based on my solitary learning style, I would choose option B: Provide written explanations and examples for the team member to review independently. This approach allows me to communicate the concept effectively while respecting my own need for independent reflection and avoiding unnecessary group discussions.",
+                    "Based on our conversation, I would likely find option C) Reviewing and organizing my class notes, textbook, and other study materials independently to be the most effective method for reinforcing my understanding of the subject matter.\n\nAs a student with a Solitary learning style, I prefer self-guided dialog prompts and using chat as a safe space for independent reflection. I have been engaging in a conversation with the teacher, but I have been given time to think and reflect on the questions before responding, which aligns with my preference for independent learning. Therefore, reviewing and organizing my study materials independently would be the most suitable approach for me.",
+                    "C) Watching video tutorials and online lectures on the topic at your own pace.\n\nAs a student with a Solitary learning style, I prefer self-guided learning and independent reflection. Watching video tutorials and online lectures at my own pace allows me to learn without distractions and interruptions, giving me the freedom to pause, rewind, and re-watch content as needed to solidify my understanding of the topic."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ],
+            [
+                "Student: Acetylcholine and norepinephrine are key neurotransmitters that mediate the effects of the sympathetic and parasympathetic systems, respectively, contributing to the dynamic equilibrium of the body. Understanding their roles is essential in comprehending the complex autonomic balance.\n",
+                5,
+                [
+                    "The answer is C) Writing reflective journal entries to process new information.\n\nAs a student with a Solitary learning style, I prefer self-guided dialog prompts and independent reflection. Writing reflective journal entries would allow me to process and reflect on the information at my own pace, without the need for immediate feedback or group discussions. This method aligns with my preference for silent think-time and using chat as a safe space for independent reflection.",
+                    "As a student with a Solitary learning style, I would most likely choose option C) Work independently on assigned tasks and review others' contributions silently. This option allows me to work independently, focusing on my assigned tasks without distractions, and then review others' contributions silently, giving me time to reflect and process the information before sharing my thoughts or conclusions. This approach enables me to meet my individual needs for independent reflection and self-guided learning while still contributing to the group project.",
+                    "Given your solitary learning style and preference for self-guided dialogue prompts, it's most likely that I would approach this situation by providing written explanations and examples for the team member to review independently. This way, I can still contribute to the team's understanding while respecting my own need for independent reflection.\n\nSo, the correct answer is B) Provide written explanations and examples for the team member to review independently.",
+                    "C) Reviewing and organizing your class notes, textbook, and other study materials independently.\n\nAs a student with a solitary learning style, I prefer self-guided learning and independent reflection. This method would allow me to review the material at my own pace, think critically about the concepts, and reinforce my understanding of the subject matter without distractions or the need for group interaction.",
+                    "C) Watching video tutorials and online lectures on the topic at your own pace.\n\nThis is the most suitable option for a Solitary learning style, as it allows for independent and self-guided learning at one's own pace, without requiring direct interaction with others."
+                ],
+                [
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES",
+                    "YES"
+                ]
+            ]
+        ]
     }
 ]
