@@ -297,8 +297,7 @@ def main(base_dir: str, num_dialogs: int=10):
     print(f"Metadata saved to {metadata_file}")
 
 if __name__ == "__main__":
-
-    base_dir = "/nfs/kun2/users/ryan_cheng/consistency_LLMs"
+    base_dir = "/home/donovan/code/research/socialrl/consistency_LLMs"
     num_dialogs = 10
 
     main(base_dir, num_dialogs)
