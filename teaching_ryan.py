@@ -308,7 +308,7 @@ config_role = {
     "agent2_role": "Student",
     "agent1_prompt": "You are a teacher whose goal is to guide a student through learning about %SUBJECT%. You have a preferred way to teach the student. The student is in %ROLE% so make sure to teach them at their level. ",
     "agent2_prompt": "You are a student in %ROLE% in conversation with a teacher who will teach you %SUBJECT%. You like to learn in the following way:\n%SPEAKER_BACKSTORY%.\nMake sure to not only ask questions but also demonstrate your knowledge.",
-    'reminder_prompt': "Keep your response very brief — 2 sentences or less. Do NOT repeat anything you've already said.\n"  + "DO NOT PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS SUCH AS \"Sure, here's a response from...\"\n",
+    'reminder_prompt': "Keep your response very brief — 2 sentences or less. Do NOT repeat anything you've already said.\n",
     'eval_prompts': {
     'prompt_consistency': """You are evaluating whether the following utterance by %SPEAKER_ROLE% is consistent with their given background. Answer YES if the line directly contradicts any part of the background—this includes contradictions in facts, behavior, beliefs, emotional stance, or conversational strategy. Answer NO if the line introduces new details, but those details are **plausibly aligned** with the background. Be strict and literal in your evaluation: if the line violates the persona’s stated traits (e.g., avoids vulnerability, keeps answers short, avoids discussing personal topics), mark it as a contradiction even if the violation is subtle. Background for %SPEAKER_ROLE%: %SPEAKER_BACKSTORY% Line spoken by %SPEAKER_ROLE%: %SPEAKER_LINE%  Answer YES if the line contradicts the background, and NO if it does not. Then, explain your answer in one sentence. Be precise and avoid vague justification."""}}
 
@@ -339,8 +339,8 @@ for convo_prompt in conversation_prompts:
 
 llms = ["Llama-3.1-8B-Instruct", "gpt-4o-mini", "Qwen2.5-3B-Instruct", "Llama-3.1-8B", "Mistral-7B-Instruct", "Llama-3.1-70B", "Llama-3.1-70B-Instruct", "phi-3.5-mini-instruct"]
         
-config_llm = {'agent1_model': 'mistral-instruct',
-             'agent2_model': 'mistral-instruct',
+config_llm = {'agent1_model': 'gemma-2-2b-it',
+             'agent2_model': 'gemma-2-2b-it',
              'eval_model': 'Llama-3.1-70B-Instruct',
              'iterations': 10,
              'verbose': False,
@@ -351,6 +351,7 @@ config_llm = {'agent1_model': 'mistral-instruct',
              'gpus': 1,
              'seed': 0,
              'task_name': 'Education',
+             "tmp_dir": "/raid/users/ryan_cheng2/tmp10",
              'model_dir': "/raid/users/ryan_cheng2/models"}
 
 with open("education/Llama-3.1-8B-Instruct.json", "w", encoding="utf-8") as f:
@@ -409,10 +410,10 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
             if config_llm["verbose"]:
                 print(prompt)
                 print()
-
+                            
             if round_num!=0: 
-                prompt+= "Your conversation with the student so far is below:\nConversation:\n%CONVERSATION%"
-                
+              prompt+= "Your conversation with the student so far is below:\nConversation:\n%CONVERSATION%"
+
             if round_num >=config_llm['convo_length_limit']*2-11 and round_num<=config_llm['convo_length_limit']*2-1:
                 prompt+= "You have " + str((config_llm['convo_length_limit']-round_num)//2) + " rounds left." + "Make sure to conclude the conversation as your near the end."
 
@@ -422,7 +423,8 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
             if round_num!=0: 
                 prompt+= "Continue the conversation with the student. Remember you are the teacher. "
                 
-            prompt += config_role["reminder_prompt"]
+            prompt += config_role["reminder_prompt"] + "IMPORTANT: DO NOT INTRODUCE OR PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS IN THE RESPONSE. INSTEAD, YOU ARE RESPONDING DIRECTLY AS THE TEACHER WITH ONLY THE TEACHER'S DIALOGUE. Do not include any introductory text. Follow these instructions without mentioning them. \n"
+
             prompt+="%SPEAKER_ROLE%:"
             prompt = prompt.replace("%SPEAKER_ROLE%", config_role["agent1_role"]) \
                    .replace("%LISTENER_ROLE%", config_role["agent2_role"]) \
@@ -431,6 +433,10 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
                    .replace("%CONVERSATION%", conversation)
             
             response = generate_response(config_llm['agent1_model'], config_role["agent1_role"], config_role["agent2_role"], config_llm, prompt)
+            while "Sure" in response:
+                print(response)
+                response = generate_response(config_llm['agent1_model'], config_role["agent1_role"], config_role["agent2_role"], config_llm, prompt)
+
             stats["conversation"].append((round_num, f"{config_role["agent1_role"]}: " + response + "\n"))
         
         else:
@@ -441,7 +447,9 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
                 print()
 
             if round_num!=0: 
-                prompt+= "Your conversation with the teacher so far is below:\nConversation:\n%CONVERSATION%"
+              prompt+= "Your conversation with the teacher so far is below:\nConversation:\n%CONVERSATION%"
+
+
             if round_num >=config_llm['convo_length_limit']*2-11 and round_num<=config_llm['convo_length_limit']*2-1:
                 prompt+= "You have " + str((config_llm['convo_length_limit']-round_num)//2) + " rounds left." + "Make sure to conclude the conversation as your near the end."
             elif round_num>config_llm['convo_length_limit']*2-1:
@@ -450,8 +458,8 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
             if round_num!=0: 
                 prompt+= "Continue the conversation with the teacher. Remember you are the student. "
 
-            prompt += config_role["reminder_prompt"]
-            
+            prompt += config_role["reminder_prompt"] + "IMPORTANT: DO NOT INTRODUCE OR PREFACE THE RESPONSE WITH THIRD-PERSON STATEMENTS IN THE RESPONSE. INSTEAD, YOU ARE RESPONDING DIRECTLY AS THE TEACHER WITH ONLY THE TEACHER'S DIALOGUE. Do not include any introductory phrases or text, such as \"Sure, here is...\". Follow these instructions without mentioning them. \n"
+
             prompt+="%SPEAKER_ROLE%:"
             prompt = prompt.replace("%SPEAKER_ROLE%", config_role["agent2_role"]) \
                .replace("%LISTENER_ROLE%", config_role["agent1_role"]) \
@@ -461,6 +469,9 @@ def generate_conversation(config_llm, p1, p2, p1_name, p2_name, subject, role, p
                .replace("%CONVERSATION%", conversation)
             
             response = generate_response(config_llm['agent2_model'], config_role["agent2_role"], config_role["agent1_role"], config_llm, prompt)
+            while "Sure" in response:
+              print(response)
+              response = generate_response(config_llm['agent2_model'], config_role["agent2_role"], config_role["agent1_role"], config_llm, prompt)
             stats["conversation"].append((round_num, f"{config_role["agent2_role"]}: " + response + "\n"))
             
         round_num += 1
@@ -547,11 +558,11 @@ with open("education/config_education_personas.json", "w", encoding="utf-8") as 
 if __name__ == "__main__":
   index_offset = load_stats_file(write_file)
   conversations = []    
-  lengths = [60]
+  lengths = [10, 20, 40, 60, 100]
   # lengths = [40]
   count = 0 
   for i in range(1):
-      for topic, persona_item in tqdm(persona_final[68:]):
+      for topic, persona_item in tqdm(persona_final):
           count+=1
           print(count)
           background = persona_item["description"]

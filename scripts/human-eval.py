@@ -298,7 +298,7 @@ def main(base_dir: str, num_dialogs: int=10):
 
 if __name__ == "__main__":
 
-    base_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs"
+    base_dir = "/nfs/kun2/users/ryan_cheng/consistency_LLMs"
     num_dialogs = 10
 
     main(base_dir, num_dialogs)
