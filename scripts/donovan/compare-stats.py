@@ -17,8 +17,8 @@ eval_keys = [
     # "eval_survey_consistency"
 ]
 
-qwen_eval = Path("/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/qwen-14b-evals/in_chatting/Llama-3.1-8B-Instruct_0_623.json")
-lamma_eval = Path("/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in_chatting/Llama-3.1-8B-Instruct_0_623.json")
+qwen_eval = Path("/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/qwen-14b-evals/in_education/test/Llama-3.1-8B-Instruct_len_60.json")
+lamma_eval = Path("/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/in_education/Llama-3.1-8B-Instruct_len_60.json")
 
 def load_json(file_path):
     with open(file_path, 'r') as f:
@@ -57,9 +57,14 @@ def compare_evals(qwen_eval, lamma_eval):
 
 def main():
     eval_mse, eval_values = compare_evals(qwen_eval, lamma_eval)
+
+    print("Eval values keys:", list(eval_values.keys()))
+    # print("len of P2_prompt_consistency_score:", len(eval_values.get("P2_prompt_consistency_score")[0]))
+
     for key, mse in eval_mse.items():
         if mse is not None:
             print(f"{key}: {mse:.4f}")
+            print(f"Number of values: {len(eval_values[key][0])}")
         else:
             print(f"{key}: No data available for comparison.")
 
@@ -71,11 +76,13 @@ def main():
             plt.plot(qwen_values, label='Qwen Values', color='blue')
             plt.plot(lamma_values, label='Lamma Values', color='orange')
             plt.title(f'Comparison of {key}')
+            plt.ylim(ymin=-.1, ymax=1.1)
             plt.xlabel('Index')
             plt.ylabel(key)
             plt.legend()
             # plt.show()
             plt.savefig(f"./results/images/{key}_comparison.png")
+            print(f"Plot saved for {key} at ./results/images/{key}_comparison.png")
         else:
             print(f"No data available for plotting {key}.")
 
