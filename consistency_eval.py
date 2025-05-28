@@ -72,6 +72,68 @@ def eval_prompt_consistency(conv_dict, agents=(1,)):
         print(conv_dict)
     return conv_dict
 
+# Prompt consistency but first computes the 
+def eval_prompt_2_stage_consistency(conv_dict, agents=(1,)):
+    conv_dict['eval_prompt_2_stage_consistency'] = []
+    if 1 in agents:
+        conv_dict['P1_prompt_2_stage_consistency_score'] = 0
+    if 2 in agents:
+        conv_dict['P2_prompt_2_stage_consistency_score'] = 0
+    p1_utterances = 0
+    p2_utterances = 0
+
+    pturn = conv_dict["pturn"]
+    for line in conv_dict["conversation"]:
+        line_number = line[0]
+        convo_line = line[1]
+        if pturn == 1:
+            if 1 in agents:
+                prompt = prompts["eval_prompts"]["combined_prompt_consistency_stage_1"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                    .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
+                                                                    .replace("%SPEAKER_LINE%", convo_line)
+                if config.get('verbose', False):
+                    print(prompt)
+                output_description = completion_create(config['eval_model'], config, prompt)
+                
+                eval_prompt = prompts["eval_prompts"]["combined_prompt_consistency_stage_2"].replace("%REASONING%", output_description)
+                output = completion_create(config['eval_model'], config, eval_prompt)
+                if config.get('verbose', False):
+                    print(output)
+
+                conv_dict['eval_prompt_2_stage_consistency'].append((line_number, output_description, output))
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P1_prompt_2_stage_consistency_score'] += 1
+                p1_utterances += 1
+            pturn = 2
+        elif pturn == 2:
+            if 2 in agents:
+                prompt = prompts["eval_prompts"]["combined_prompt_consistency_stage_1"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                    .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
+                                                                    .replace("%SPEAKER_LINE%", convo_line)
+                if config.get('verbose', False):
+                    print(prompt)
+                output_description = completion_create(config['eval_model'], config, prompt)
+
+                eval_prompt = prompts["eval_prompts"]["combined_prompt_consistency_stage_2"].replace("%REASONING%", output_description)
+                output = completion_create(config['eval_model'], config, eval_prompt)
+                if config.get('verbose', False):
+                    print(output)
+                conv_dict['eval_prompt_2_stage_consistency'].append((line_number, output_description, output))
+                if "YES" not in output:  # no contradiction
+                    conv_dict['P2_prompt_2_stage_consistency_score']+= 1
+                p2_utterances += 1
+            pturn = 1
+
+    if p1_utterances > 0:
+        conv_dict['P1_prompt_2_stage_consistency_score'] /= p1_utterances
+    if p2_utterances > 0:
+        conv_dict['P2_prompt_2_stage_consistency_score'] /= p2_utterances
+
+    if config.get('verbose', False):
+        print(conv_dict)
+    return conv_dict
 
 def eval_index_consistency(conv_dict, agents=(1,)):
     '''
@@ -378,6 +440,11 @@ def run_metrics(filename, agents=(1,)):
                 if config['verbose']:
                     print("BEGIN INDEX CONSISTENCY")
                 eval_index_consistency(conversation, agents)
+            
+            if "eval_prompt_2_stage_consistency" not in conversation:
+                if config['verbose']:
+                    print("BEGIN 2-STAGE PROMPT CONSISTENCY")
+                eval_prompt_2_stage_consistency(conversation, agents)
         # conversation['conversation_only'] = False
             with open(filename, 'w') as f:
                 json.dump(conversations, f, indent=4)
