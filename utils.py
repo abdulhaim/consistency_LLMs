@@ -100,6 +100,7 @@ vllm_alias = {
     'Llama-3.1-70B': 'meta-llama/Meta-Llama-3.1-70B', 
     'Llama-3.1-405B-Instruct': 'meta-llama/Meta-Llama-3.1-405B-Instruct',
     'Llama-3.1-70B-Instruct': 'meta-llama/Meta-Llama-3.1-70B-Instruct',
+    'Llama-3.3-70B-Instruct': 'meta-llama/Meta-Llama-3.3-70B-Instruct',
     'Llama-3.1-8B-Instruct': 'meta-llama/Meta-Llama-3.1-8B-Instruct',
 
     'Qwen3-4B': 'Qwen/Qwen3-4B',
@@ -158,7 +159,9 @@ def setup_vllm(model):
             print('Info: Passing vllm setup')
         
 
-def completion_create_helper(model_name, config, prompt):
+def completion_create_helper(model_name, config, prompt, batch_inference=False):
+    if batch_inference:
+        prompt = [prompt] if not isinstance(prompt, list) else prompt
     # # limit prompt in all cases
     # if model_name not in vllm_alias:
     #     # for some reason vLLM models simply repeat this last statement if present
@@ -195,17 +198,60 @@ def completion_create_helper(model_name, config, prompt):
     elif model_name in vllm_alias and model_name in llms:
         global tokenizer
         sampling_params = SamplingParams(temperature=0.8, top_p=0.95, max_tokens=config['max_tokens'])
-        messages = [
-            {"role": "user", "content": prompt}
-        ]
-        if tokenizer.chat_template:
-            prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-        if "Qwen3" in model_name:
-            prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
+        if batch_inference:
+            # if batch inference, we need to tokenize the prompt
+            
+            if isinstance(prompt, list):
+                messages = [{"role": "user", "content": p} for p in prompt]
+            else:
+                messages = [{"role": "user", "content": prompt}]
+
+            formatted_prompts = []
+
+            if "Qwen3" in model_name:
+                # Qwen3 models use a different chat template
+                formatted_prompts = [tokenizer.apply_chat_template([message], tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking']) for message in messages]
+                    # tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
+            else:
+                # for other models, we can use the default chat template
+                # prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+                formatted_prompts = [tokenizer.apply_chat_template([message], tokenize=False, add_generation_prompt=True) for message in messages]
+
+            outputs = llms[model_name].generate(formatted_prompts, sampling_params)
+
+            if config['thinking'] and "Qwen3" in model_name:
+                # remove the thinking part
+                ret = [output.outputs[0].text.split("</think>")[-1] for output in outputs]
+            else:
+                ret = [output.outputs[0].text for output in outputs]
+            if config['verbose']:
+                print("Response from model: ", ret)
+
+        else:
+            # if not batch inference, we can use the prompt directly
+            messages = [{"role": "user", "content": prompt}]
+            if "Qwen3" in model_name:
+                # Qwen3 models use a different chat template
+                prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
+            else:
+                # for other models, we can use the default chat template
+                prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+
+
+
+        # messages = [
+        #     {"role": "user", "content": prompt}
+        # ]
+        # if tokenizer.chat_template:
+        #     prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+
+        # if "Qwen3" in model_name:
+
+        #     prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=config['thinking'])
             output = llms[model_name].generate([prompt], sampling_params)
 
-    
+
 
             if config['thinking']:
                 # remove the thinking part
@@ -216,7 +262,7 @@ def completion_create_helper(model_name, config, prompt):
             if config['verbose']:
                 print("Response from model: ", output[0].outputs[0].text)
 
-        else:
+        # else:
             output = llms[model_name].generate([prompt], sampling_params)
             ret = output[0].outputs[0].text
 
@@ -246,9 +292,9 @@ def completion_create_helper(model_name, config, prompt):
         print("Response from model: ", ret)
     return ret
 
-def completion_create(model_name, config, prompt, keep_trying=False):
+def completion_create(model_name, config, prompt, keep_trying=False, batch_inference=False):
     try:
-        return completion_create_helper(model_name, config, prompt)
+        return completion_create_helper(model_name, config, prompt, batch_inference)
     except (openai.APIError, openai.OpenAIError) as e:
         # print("ERROR", e)
         # print("sleeping for 10 seconds.")

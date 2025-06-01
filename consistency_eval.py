@@ -23,50 +23,88 @@ flags.DEFINE_integer('max_iter', 500, 'max number of conversations to run metric
 
 def eval_prompt_consistency(conv_dict, agents=(1,)):
     conv_dict['eval_prompt_consistency'] = []
-    if 1 in agents:
-        conv_dict['P1_prompt_consistency_score'] = 0
-    if 2 in agents:
-        conv_dict['P2_prompt_consistency_score'] = 0
+    
+    # Store prompts for batching
+    p1_prompts_to_batch = []
+    p2_prompts_to_batch = []
+    # Store corresponding (line_number, index_in_batch) to correctly assign results
+    p1_line_indices = []
+    p2_line_indices = []
+
     p1_utterances = 0
     p2_utterances = 0
 
     pturn = conv_dict["pturn"]
-    for line in conv_dict["conversation"]:
+
+    for line_idx, line in enumerate(conv_dict["conversation"]):
         line_number = line[0]
         convo_line = line[1]
+
         if pturn == 1:
             if 1 in agents:
-                prompt = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
-                                                                    .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
-                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
-                                                                    .replace("%SPEAKER_LINE%", convo_line)
-                if config.get('verbose', False):
-                    print(prompt)
-                output = completion_create(config['eval_model'], config, prompt)
-                conv_dict['eval_prompt_consistency'].append((line_number, output))
-                if "YES" not in output:  # no contradiction
-                    conv_dict['P1_prompt_consistency_score'] += 1
-                p1_utterances += 1
+                prompt_text = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                            .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                            .replace("%SPEAKER_BACKSTORY%", conv_dict["P1"]) \
+                                                                            .replace("%SPEAKER_LINE%", convo_line)
+                p1_prompts_to_batch.append(prompt_text)
+                p1_line_indices.append(line_number) # Store line number for mapping back
             pturn = 2
         elif pturn == 2:
             if 2 in agents:
-                prompt = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
-                                                                    .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
-                                                                    .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
-                                                                    .replace("%SPEAKER_LINE%", convo_line)
-                if config.get('verbose', False):
-                    print(prompt)
-                output = completion_create(config['eval_model'], config, prompt)
-                conv_dict['eval_prompt_consistency'].append((line_number, output))
-                if "YES" not in output:  # no contradiction
-                    conv_dict['P2_prompt_consistency_score']+= 1
-                p2_utterances += 1
+                prompt_text = prompts["eval_prompts"]["combined_prompt_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                            .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                            .replace("%SPEAKER_BACKSTORY%", conv_dict["P2"]) \
+                                                                            .replace("%SPEAKER_LINE%", convo_line)
+                p2_prompts_to_batch.append(prompt_text)
+                p2_line_indices.append(line_number) # Store line number for mapping back
             pturn = 1
 
+    # Initialize scores
+    if 1 in agents:
+        conv_dict['P1_prompt_consistency_score'] = 0
+    if 2 in agents:
+        conv_dict['P2_prompt_consistency_score'] = 0
+
+    # --- Batch Inference for Agent 1 Prompts ---
+    if 1 in agents and p1_prompts_to_batch:
+        if config.get('verbose', False):
+            print(f"\n--- Batching {len(p1_prompts_to_batch)} prompts for Agent 1 (eval model: {config['eval_model']}) ---")
+        
+        # Call completion_create with the list of prompts and batch_inference=True
+        outputs_p1 = completion_create(config['eval_model'], config, p1_prompts_to_batch, batch_inference=True)
+        
+        # Process results
+        for i, output in enumerate(outputs_p1):
+            line_number = p1_line_indices[i] # Get original line number
+            conv_dict['eval_prompt_consistency'].append((line_number, output))
+            if "YES" not in output: # no contradiction
+                conv_dict['P1_prompt_consistency_score'] += 1
+            p1_utterances += 1 # Increment only if output is valid/processed
+
+    # --- Batch Inference for Agent 2 Prompts ---
+    if 2 in agents and p2_prompts_to_batch:
+        if config.get('verbose', False):
+            print(f"\n--- Batching {len(p2_prompts_to_batch)} prompts for Agent 2 (eval model: {config['eval_model']}) ---")
+        
+        # Call completion_create with the list of prompts and batch_inference=True
+        outputs_p2 = completion_create(config['eval_model'], config, p2_prompts_to_batch, batch_inference=True)
+
+        # Process results
+        for i, output in enumerate(outputs_p2):
+            line_number = p2_line_indices[i] # Get original line number
+            conv_dict['eval_prompt_consistency'].append((line_number, output))
+            if "YES" not in output: # no contradiction
+                conv_dict['P2_prompt_consistency_score'] += 1
+            p2_utterances += 1 # Increment only if output is valid/processed
+
+    # Calculate final scores
     if p1_utterances > 0:
         conv_dict['P1_prompt_consistency_score'] /= p1_utterances
     if p2_utterances > 0:
         conv_dict['P2_prompt_consistency_score'] /= p2_utterances
+
+    # Sort eval_prompt_consistency by line number for consistent output
+    conv_dict['eval_prompt_consistency'].sort(key=lambda x: x[0])
 
     if config.get('verbose', False):
         print(conv_dict)
@@ -429,10 +467,10 @@ def run_metrics(filename, agents=(1,)):
                 eval_prompt_consistency(conversation, agents)
             # if config['verbose']:
             #     print("BEGIN SURVEY CONSISTENCY")
-            if "eval_survey_consistency" not in conversation and config['max_iter'] != 500: # by default do not run survey consistency
-                if config['verbose']:
-                    print("BEGIN SURVEY CONSISTENCY")
-                eval_survey_consistency(conversation, agents)
+            # if "eval_survey_consistency" not in conversation and config['max_iter'] != 500: # by default do not run survey consistency
+            #     if config['verbose']:
+            #         print("BEGIN SURVEY CONSISTENCY")
+            #     eval_survey_consistency(conversation, agents)
             # if config['verbose']:
             #     print("BEGIN PAIRWISE CONSISTENCY")
             # eval_pairwise_consistency(conversation)
@@ -458,7 +496,8 @@ def run_metrics(filename, agents=(1,)):
 def main(argv):
     global prompts
     init()
-    config['eval_model'] = 'Llama-3.1-70B-Instruct' # we now use Llama for evals 
+    # config['eval_model'] = 'Llama-3.1-8B-Instruct' # we now use Llama for evals 
+    config['eval_model'] = 'Qwen3-14B'
     
     agents = (1,)
     if config['task'] == 'Anthology':
