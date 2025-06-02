@@ -278,11 +278,20 @@ def completion_create_helper(model_name, config, prompt, batch_inference=False):
     else: # specify model path of finetuned model in model directory
         # from transformers import PreTrainedModel
         # if isinstance(llm, PreTrainedModel):
-        inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
-        with torch.no_grad():
-            output_ids = llms[model_name].generate(**inputs, max_new_tokens=256)
-        output_ids = output_ids[:, inputs.input_ids.shape[1]:]
-        ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        if isinstance(prompt, list):
+            ret = []
+            for p in prompt:
+                inputs = tokenizer(p, return_tensors='pt').to('cuda')
+                with torch.no_grad():
+                    output_ids = llms[model_name].generate(**inputs, max_new_tokens=256)
+                output_ids = output_ids[:, inputs.input_ids.shape[1]:]
+                ret.append(tokenizer.decode(output_ids[0], skip_special_tokens=True))
+        else:
+            inputs = tokenizer(prompt, return_tensors='pt').to('cuda')
+            with torch.no_grad():
+                output_ids = llms[model_name].generate(**inputs, max_new_tokens=256)
+            output_ids = output_ids[:, inputs.input_ids.shape[1]:]
+            ret = tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
     # if config['model'] not in vllm_alias:
     #     running_cost_for_iteration += api_cost(prompt=prompt, answer=ret, model=config['model'])
