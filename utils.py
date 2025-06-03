@@ -220,7 +220,7 @@ def completion_create_helper(model_name, config, prompt, batch_inference=False):
 
             outputs = llms[model_name].generate(formatted_prompts, sampling_params)
 
-            if config['thinking'] and "Qwen3" in model_name:
+            if "Qwen3" in model_name and config['thinking']:
                 # remove the thinking part
                 ret = [output.outputs[0].text.split("</think>")[-1] for output in outputs]
             else:
@@ -253,7 +253,7 @@ def completion_create_helper(model_name, config, prompt, batch_inference=False):
 
 
 
-            if config['thinking']:
+            if 'thinking' in config and config['thinking']:
                 # remove the thinking part
                 ret = output[0].outputs[0].text.split("</think>")[-1]
             else:
