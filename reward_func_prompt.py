@@ -5,7 +5,7 @@ import json
 import ray
 
 metric_model = 'meta-llama/Meta-Llama-3.1-70B-Instruct'
-metadata_path = '/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out/metadata.json' # path to metadata json for evals to use
+metadata_path = '/nfs/kun2/users/ryan_cheng/consistency_LLMs/training_data/out_chatting/metadata.json' # path to metadata json for evals to use
 port = "8001" # port number vLLM is hosted on
 eval_prompt_path = "/nfs/kun2/users/ryan_cheng/consistency_LLMs/config/eval_prompts.json"
 with open(metadata_path, 'r') as f:
@@ -42,6 +42,14 @@ def eval_prompt_consistency(metadata, line):
         return 1
     return 0
 
+def eval_question(line):
+    eval_prompts = ray.get(eval_prompts_ref)
+    prompt = eval_prompts["question"].replace("%SPEAKER_LINE%", line)
+    output = completion_create(prompt, metric_model)
+    if "YES" in output:  # no contradiction
+        return 1
+    return 0
+
 def reward_func(queries, prompts, labels):
     '''
     OpenRLHF uses this to score the online model outputs
@@ -57,6 +65,9 @@ def reward_func(queries, prompts, labels):
         cut_query = str(query.replace("<|eot_id|>", "")[len(prompts[i]):])
         # print("cut query:", cut_query)
         # print(labels[i]) # remove when done debugging
-        scores.append(float(eval_prompt_consistency(metadata, cut_query)))
+        prompt_score = float(eval_prompt_consistency(metadata, cut_query))
+        # question_score = float(eval_question(cut_query))
+        question_score = 0
+        scores.append(prompt_score - question_score)
 
     return torch.tensor(scores)
