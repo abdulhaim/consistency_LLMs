@@ -295,6 +295,74 @@ def eval_pairwise_consistency(conv_dict):
     return debug
 
 
+def eval_pairwise_consistency_stop_early(conv_dict, agents=(1,)):
+    conv_dict['eval_pairwise_consistency_stop_early'] = []
+    if 1 in agents:
+        conv_dict['P1_pairwise_consistency_stop_early_score'] = 0
+    if 2 in agents:
+        conv_dict['P2_pairwise_consistency_stop_early_score'] = 0
+    p1_utterances = 0
+    p2_utterances = 0
+    conversation = conv_dict["conversation"]
+    pturn1 = conv_dict["pturn"]
+    pturn2 = pturn1
+
+    for i, line1 in enumerate(conversation):
+        if i % 2 == 0:
+            p1_utterances += 1
+        else:
+            p2_utterances += 1
+        
+        score_1 = 1
+        score_2 = 1
+        for j, line2 in enumerate(conversation):
+            if i >= j:
+                continue
+            if i % 2 != j % 2:
+                continue
+            # Only evaluate for the specified agent
+            if 1 in agents and pturn1 == 1:
+                prompt = prompts["eval_prompts"]["pairwise_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                        .replace("%SPEAKER_ROLE%", prompts["agent1_role"]) \
+                                                                        .replace("%LISTENER_ROLE%", prompts["agent1_role"] if pturn2 == 1 else prompts["agent2_role"]) \
+                                                                        .replace("%SPEAKER_LINE%", line1[1]) \
+                                                                        .replace("%LISTENER_LINE%", line2[1])
+                if config.get('verbose', False):
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_pairwise_consistency_stop_early'].append([line1[1], line2[1], output])
+                if "YES" in output:
+                    score_1 = 0
+                    break
+                # p1_utterances += 1
+            elif 2 in agents and pturn1 == 2:
+                prompt = prompts["eval_prompts"]["pairwise_consistency"].replace("%SCENARIO_DESC%", prompts["scenario"]) \
+                                                                        .replace("%SPEAKER_ROLE%", prompts["agent2_role"]) \
+                                                                        .replace("%LISTENER_ROLE%", prompts["agent2_role"] if pturn2 == 2 else prompts["agent1_role"]) \
+                                                                        .replace("%SPEAKER_LINE%", line1[1]) \
+                                                                        .replace("%LISTENER_LINE%", line2[1])
+                if config.get('verbose', False):
+                    print(prompt)
+                output = completion_create(config['eval_model'], config, prompt)
+                conv_dict['eval_pairwise_consistency_stop_early'].append([line1[1], line2[1], output])
+                if "YES" in output:
+                    score_2 = 0
+                    break
+                # p2_utterances += 1
+        if i % 2 == 0 and 1 in agents and pturn1 == 1:
+            conv_dict['P1_pairwise_consistency_stop_early_score'] += score_1
+        elif i % 2 == 0 and 2 in agents and pturn2 == 2:
+            conv_dict['P2_pairwise_consistency_stop_early_score'] += score_2
+
+        pturn1 = 1 if pturn1 == 2 else 2
+        pturn2 = pturn1
+
+    if p1_utterances > 0 and 1 in agents:
+        conv_dict['P1_pairwise_consistency_stop_early_score'] /= p1_utterances
+    if p2_utterances > 0 and 2 in agents:
+        conv_dict['P2_pairwise_consistency_stop_early_score'] /= p2_utterances
+    return conv_dict
+
 # (3) Survey of agent at every line (ANTHOLOGY ONLY FOR NOW)
 def get_backstory_test(backstory, num_questions):
     ret = [[], []] # a list of questions, a list of answers
@@ -483,6 +551,11 @@ def run_metrics(filename, agents=(1,)):
                 if config['verbose']:
                     print("BEGIN 2-STAGE PROMPT CONSISTENCY")
                 eval_prompt_2_stage_consistency(conversation, agents)
+
+            if "eval_pairwise_consistency_stop_early" not in conversation:
+                if config['verbose']:
+                    print("BEGIN PAIRWISE CONSISTENCY STOP EARLY")
+                eval_pairwise_consistency_stop_early(conversation, agents)
         # conversation['conversation_only'] = False
             with open(filename, 'w') as f:
                 json.dump(conversations, f, indent=4)
@@ -496,8 +569,8 @@ def run_metrics(filename, agents=(1,)):
 def main(argv):
     global prompts
     init()
-    # config['eval_model'] = 'Llama-3.1-8B-Instruct' # we now use Llama for evals 
-    config['eval_model'] = 'Qwen3-14B'
+    config['eval_model'] = 'Llama-3.1-70B-Instruct' # we now use Llama for evals 
+    # config['eval_model'] = 'Qwen3-14B'
     
     agents = (1,)
     if config['task'] == 'Anthology':
