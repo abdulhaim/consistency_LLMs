@@ -169,11 +169,11 @@ for eval_model in eval_models_to_compare:
             print(f"    No common (data_gen_model, run_id) pairs found for comparison in task '{task}' for model '{eval_model}'. Skipping plot.")
             continue
 
-        benchmark_filepath = benchmark_model_files_map[(data_gen_model, run_id)]
+        
 
-        benchmark_values = get_metrics_from_json(benchmark_filepath)
+        # model_to_values[benchmark_model_name] = benchmark_values
 
-        model_to_values[benchmark_model_name] = benchmark_values
+        # print("commond file keys:\n", common_file_keys)
 
         for data_gen_model, run_id in common_file_keys:
             eval_filepath = eval_model_files_map[(data_gen_model, run_id)]
@@ -181,9 +181,13 @@ for eval_model in eval_models_to_compare:
 
             eval_values = get_metrics_from_json(eval_filepath)
 
-            print(eval_values.keys())
+            benchmark_filepath = benchmark_model_files_map[(data_gen_model, run_id)]
 
-            model_to_values[eval_model] = eval_values
+            benchmark_values = get_metrics_from_json(benchmark_filepath)
+
+            # print(eval_values.keys())
+
+            # model_to_values[eval_model] = eval_values
             
 
             if eval_values is not None and benchmark_values is not None:
@@ -199,14 +203,14 @@ for eval_model in eval_models_to_compare:
 
             plt.plot(eval_values['P2_prompt_2_stage_consistency_score'], label=f'{eval_model} {task}', marker='o')
             plt.plot(benchmark_values['P2_prompt_2_stage_consistency_score'], label=f'{benchmark_model_name} {task}', marker='x')
-            plt.title(f'{eval_model} vs {benchmark_model_name}; task: {task}')
+            plt.title(f'{eval_model} vs {benchmark_model_name}; task: {task}, id: {run_id}')
             plt.xlabel('Data Generating Model and Run ID')
             plt.ylabel('P2 Prompt Consistency Score')
             plt.ylim(ymin=-0.1, ymax=1.1)
             plt.legend()
 
             plt.tight_layout() # Adjust layout to prevent labels from overlapping
-            plot_filename = f"{eval_model}_{task}_comparison_P2_consistency.png"
+            plot_filename = f"{eval_model}_{task}_{run_id}_comparison_P2_consistency.png"
             plt.savefig(output_dir + plot_filename)
             print(f"    Generated plot: {plot_filename}")
             plt.close()
