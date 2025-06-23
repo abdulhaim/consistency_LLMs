@@ -103,7 +103,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind this statement is to express admiration and connection with the person being referred to, Alexandra, based on shared values and interests, which aligns with Alex's background as an environmental scientist and conservationist."
+            ],
+            [
+                1,
+                "The intention behind Ethan's statement appears to be insincere, as it seems unlikely that someone from Eau Claire, Wisconsin, with no mentioned connection to Charleston, would be genuinely enthusiastic about someone else's dedication to protecting its natural beauty and sense of community, particularly given his own strong ties to his local community in the Midwest. \nYES."
+            ],
+            [
+                2,
+                "The intention behind Alexandra's statement appears to be a genuine expression of her love and appreciation for her hometown and its natural beauty, which aligns with her background as a native Charlestonian, a conservation biologist, and a proud community leader, and so NO."
+            ],
+            [
+                3,
+                "The line contradicts Ethan's background as it implies that he finds solace and inspiration primarily through nature, when his background suggests he finds inspiration through multiple aspects, including reading, learning, and music, and the emphasis on nature is not a dominant characteristic of his personality. \nYES."
+            ],
+            [
+                4,
+                "The statement appears to align with Alex's background and values as it reflects her passion for environmental conservation, her commitment to her community, and her pride in her hometown, all of which are consistently emphasized throughout her profile. \n\nNO"
+            ],
+            [
+                5,
+                "The intention behind Ethan's statement appears to be a genuine expression of enthusiasm for his environmental work and a desire to connect with the other person, aligning with his background as a sustainability coordinator and environmentalist, and thus the intention aligns with the provided background, NO."
+            ],
+            [
+                6,
+                "The intention behind Alexandra's statement appears to be a genuine expression of her passion for nature and her commitment to environmental conservation, aligning with her background as a former conservation biologist and current sustainable landscaping business owner, as well as her involvement in local initiatives to protect the environment. NO."
+            ],
+            [
+                7,
+                "The intention behind Ethan's statement is to express his pride and commitment to preserving the natural environment of Eau Claire, which aligns with his background as a strong advocate for sustainability and conservation."
+            ],
+            [
+                8,
+                "Alexandra's statement appears to be genuine and aligns with her background as a conservation biologist and her current work in sustainable landscaping, as it showcases her enthusiasm for the natural beauty of Charleston and her dedication to protecting its environment and community. NO"
+            ],
+            [
+                9,
+                "The intention behind Person B's statement aligns with their background, as it reflects their passion for the environment, conservation, and sustainability, which are consistently highlighted in their upbringing, education, and career as a sustainability coordinator. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Chatting",
@@ -209,7 +253,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Ethan's statement appears to be a genuine and humble description of his profession and values, aligning with his background of being a conservation coordinator and having a strong sense of social responsibility, which is deeply rooted in his upbringing and education. \n\nNO"
+            ],
+            [
+                1,
+                "The intention behind Harold's statement aligns with his background as a retired high school history teacher who developed a passion for storytelling and bringing the past to life for his students, and therefore the intention does not contradict his background. \nNO"
+            ],
+            [
+                2,
+                "Ethan's statement appears to be genuine and aligns with his background, as his job as a conservation coordinator for a local non-profit organization focused on preserving Oklahoma's natural habitats and wildlife has instilled in him a strong interest in environmental issues and sustainable practices, making it consistent with his personality and values."
+            ],
+            [
+                3,
+                "The intention behind this line suggests that Harold is proud of his role as a historian and the impact his storytelling has on preserving Iowa's history, which aligns with his background as a retired high school history teacher and his passion for storytelling, but there's a minor discrepancy as the line makes him sound more proactive in preserving Iowa's history, whereas his background emphasizes that he's more focused on teaching and sharing history rather than actively preserving it, so the intention slightly contradicts his background. \nYES"
+            ],
+            [
+                4,
+                "The intention behind Ethan's statement is to express his genuine enthusiasm for environmental conservation and sustainability, which aligns perfectly with his background as a conservation coordinator for a local non-profit organization focused on preserving Oklahoma's natural habitats and wildlife, as well as his passion for the outdoors and his involvement in local environmental activism. \n\nNO"
+            ],
+            [
+                5,
+                "The intention behind Person B's statement appears to be a genuine expression of their passion for preserving history and cultural heritage, which aligns with their background as a retired history teacher who values storytelling and appreciates the importance of the past, but the phrase \"the beauty of the present\" suggests a somewhat unconventional perspective for someone who describes themselves as an optimist and looks to the future with hope and anticipation, indicating that the intention may slightly diverge from the background. \n\nANSWER: YES"
+            ],
+            [
+                6,
+                "The intention behind Ethan's statement appears to be insincere and contradictory to his background, as he expresses a sudden and vague interest in Iowa, which is not mentioned anywhere in his background information, suggesting that he may be trying to connect with the other person on a superficial level rather than genuinely sharing a common interest. \n\nYES."
+            ],
+            [
+                7,
+                "Hal's statement aligns with his background as a retired history teacher who takes pride in preserving Iowa's history and culture, which is consistent with his lifelong passion for storytelling and his current emphasis on appreciating the present and looking forward to the future, indicating that the intention aligns with his background, so NO."
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement appears to be a romanticized and creative expression of his love for storytelling, yet it contradicts his background as he is from Oklahoma and works as a conservation coordinator, with no mention of Iowa or a background in storytelling, suggesting that the statement is out of character and likely a fabrication to impress. YES."
+            ],
+            [
+                9,
+                "The intention behind Harold's statement aligns with his background as a retired history teacher who has a deep love for the land and community, as well as a passion for bringing the past to life for others, which suggests that this statement is a genuine expression of his values and experiences. \n\nYES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Chatting",
@@ -315,7 +403,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Person A's intention behind the statement appears to be a genuine expression of their affection for their hometown and their passion for environmental and community involvement, which aligns perfectly with their described background of growing up in a close-knit family, valuing education and community involvement, and having a strong passion for sustainability and environmental conservation.\n\nANSWER: NO"
+            ],
+            [
+                1,
+                "The intention behind the statement appears to be a genuine expression of Alex's passion for environmental conservation and her professional fulfillment in her role as a sustainability consultant, aligning with her background as an Environmental Science graduate and her current occupation, which involves helping small businesses reduce their environmental footprint and her love for nature that has shaped her values and career choices, making it NO."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement is to proudly declare their dedication to environmental causes and inspire others to join them in their efforts, which aligns with their background as a conservation specialist, high school science teacher, and advocate for environmental education and conservation, making it consistent with their profile. \n\nNO."
+            ],
+            [
+                3,
+                "The intention behind Person B's line appears to be a genuine expression of appreciation and admiration for Person A's values and work, aligning with their background as a sustainability consultant and a passionate environmentalist, and thus it does not contradict their background.\n\nYES"
+            ],
+            [
+                4,
+                "Person A's statement seems to be a genuine expression of their values and commitment to environmental conservation, aligning with their background as an environmental educator and conservationist, as well as their upbringing in the Midwest which emphasizes community involvement and a love for the natural world. \n\nNO"
+            ],
+            [
+                5,
+                "The intention behind the statement appears to be a genuine expression of Alexandra's deep connection to and commitment to preserving the natural beauty of her surroundings, which aligns perfectly with her background as a Montanan raised by parents who owned an outdoor gear shop and worked in environmental conservation. NO"
+            ],
+            [
+                6,
+                "Person A's statement seems to be a contradictory intention based on their background, as Lexi has described herself as a high school science teacher, not a sustainability consultant, which suggests that she may not have the actual expertise or experience to be a consultant in that field, despite her strong commitment to environmental conservation. \n\n YES"
+            ],
+            [
+                7,
+                "The statement aligns with the background of Person B, as it reflects her profession as a sustainability consultant and her stated values of preserving the natural beauty and community spirit of Missoula, which is consistent with her upbringing and education in environmental science and conservation.\n\nANSWER: NO"
+            ],
+            [
+                8,
+                "Lexi's stated intention of being a \"sustainability consultant\" contradicts her background, as she is actually a high school science teacher, not a sustainability consultant, indicating a possible inconsistency in her self-presentation."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a genuine expression of her passion for sustainability and environmental conservation, which aligns with her background and career as a sustainability consultant, working for a local non-profit organization, and her upbringing in a small town with a strong emphasis on the outdoors and environmental values; however, the statement is somewhat generic and does not reveal any particularly unique or nuanced perspective that would suggest a deeper layer of intention beyond her background."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -421,7 +553,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.4
+        "P2_prompt_2_stage_consistency_score": 0.4,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Lexi's statement aligns with her background as a first-generation college student pursuing Environmental Science, and her passion for the environment is evident in her love for nature, photography, and volunteer work at the animal shelter, so her intention does not contradict her given background. \n\nANSWER: NO"
+            ],
+            [
+                1,
+                "The line suggests that Person B is expressing admiration for Person A's dedication to environmental causes, which contradicts the provided background of Nia Thompson, as there is no mention of environmental concerns being a significant aspect of her interests or passions, indicating that this line contradicts Nia's background. \n\nYES"
+            ],
+            [
+                2,
+                "The intention behind this statement appears to be a genuine expression of enthusiasm for environmental research and a desire to follow in her grandmother's footsteps, aligning with the background information provided about Lexi's passion for the environment, her family's influence, and her academic pursuits in Environmental Science, therefore: NO."
+            ],
+            [
+                3,
+                "Person B's statement about protecting and preserving natural resources may seem somewhat contradictory to her background, as her expressed pride in her Southern heritage and love for Birmingham, a city with a complex history of environmental degradation and environmental justice issues, might not typically align with a focus on environmental preservation, suggesting that the intention may not align with the background.\n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Alexis' statement appears to be a genuine expression of her values and goals, aligning with her background as a first-generation college student, environmental science major, and activist for social justice and sustainability, suggesting that she genuinely wants to use her education to create positive change, so NO."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement aligns with her background by highlighting her commitment to using her education to make a positive impact and protect her community, which is consistent with her involvement in local initiatives focused on social justice and education, but the phrase \"environmental justice\" slightly diverges from the provided background, which does not explicitly mention environmental concerns as a significant part of her interests or activities, thus it is somewhat inconsistent with her provided background.\n\n YES"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement aligns with their background as a first-generation college student, passionate about environmental science and fueled by her grandmother's influence, so it does not contradict their provided background, resulting in NO."
+            ],
+            [
+                7,
+                "Nia's statement seems to prioritize environmental protection over social justice, which contrasts with her background as an active member of the NAACP and her focus on education, voting rights, and social justice, indicating that her intention does not align with her background."
+            ],
+            [
+                8,
+                "The intention behind Person A's statement appears to be one of genuine interest and admiration for Person B's environmental passion, which aligns with Lexi's background of being a first-generation college student pursuing a degree in Environmental Science and her love for nature, indicating that it aligns with her background, so the answer is NO."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be an expression of enthusiasm for Birmingham's cultural heritage, but it contradicts the background of Person B, as her strong sense of pride in her Southern heritage and deep appreciation for the rich cultural history of the city suggests that she would already be aware of and value the city's cultural heritage, making her claim to be sharing her passion for it seem insincere or overly modest.\n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -527,7 +703,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind this statement appears to be a generic and superficial description of Person A's background, lacking the personal anecdotes and depth that are characteristic of the provided background, suggesting that it may not be genuine or could be an attempt to impress. \n\nYES."
+            ],
+            [
+                1,
+                "The line spoken by Person B, Maya, appears to be insincere or at least tone-deaf, as it seems to be mimicking the way Maya values and celebrates her own diverse heritage, which is deeply rooted in her upbringing and background, suggesting that Maya is attempting to show solidarity or relate to Person A's story but is not actually genuine in her intentions, YES."
+            ],
+            [
+                2,
+                "The intention behind Kaito's statement appears to be polite and humble, with an emphasis on reciprocating Maya's kind words and showing appreciation for the conversation, which aligns with his personality as a \"free-spirited individualist\" who values social responsibility and is eager to connect with others, and thus the intention does align with the provided background of Person A, NO."
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a genuine expression of her appreciation for diversity and the potential for creative collaboration that arises from embracing differences, which aligns with her background of being raised in a multiracial household and valuing cultural exchange, so NO."
+            ],
+            [
+                4,
+                "Kaito's intention behind the statement is to express his appreciation for the other person's unique perspective and cultural background, which aligns with his own values of diversity and multiculturalism, reflecting his upbringing and personality, so NO."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement seems to be an expression of genuine admiration for Person A's commitment to diversity, creativity, and community involvement, aligning with their background as a proud advocate for cultural exchange and a middle school art teacher who emphasizes the value of creativity and self-expression. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Kaito's statement appears to be a desire to share his personal and professional aspirations, which aligns with his background as a marketing specialist and his passion for making a positive impact on his community. \nNO"
+            ],
+            [
+                7,
+                "The line seems to be an attempt to shift the focus away from herself and onto the other person, which aligns with Maya's background as an art teacher who emphasizes the value of self-expression and cultural exchange, suggesting a genuine interest in others and a willingness to listen, so NO."
+            ],
+            [
+                8,
+                "The intention behind Kaito's statement appears to be a genuine expression of his appreciation for diversity and his desire to contribute positively to his community, which aligns with his background as a multicultural individual who values his mixed heritage and is actively involved in addressing social issues, so NO."
+            ],
+            [
+                9,
+                "The intention behind Maya's statement appears to be a genuine and enthusiastic expression of her pride in her multicultural heritage, which aligns perfectly with her background of being born to a Japanese mother and an African American father, and her upbringing in a multiracial household, thus it does not contradict her provided background.\n\nANSWER: NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -633,7 +853,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The statement aligns with Jasper's background and personality as it reflects his passion for history, his appreciation for the natural beauty of Acadia National Park, and his desire to share his knowledge with others, all of which are consistent with his profession as a retired high school history teacher and part-time Park Ranger."
+            ],
+            [
+                1,
+                "The interpreted intention behind Person B's statement is that they find peace and connection in nature and the community, which aligns with their background as a community-focused and socially conscious individual who values community service and connection with others, and the statement does not contradict their background as it reflects their values and experiences as a city commissioner and a community servant, but rather highlights a specific aspect of their job and personality. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Jasper's statement is likely an expression of his deep connection with nature and appreciation for its solace, which aligns with his background as a nature-loving individual who values the preservation of natural beauty and has a career as a Park Ranger at Acadia National Park. \n\nANSWER: NO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement seems to highlight a sense of calmness and connection to nature, which does not align with the background description of Kendrick, who enjoys playing jazz guitar and taking long walks along the beach, suggesting that he already values and appreciates the tranquility of nature, but his statement comes across as somewhat generic and clich\u00e9d, contradicting his unique and specific interests and background."
+            ],
+            [
+                4,
+                "The statement contradicts Jasper's background because his occupation and values suggest a strong affinity for the natural world, but his profession as a city commissioner is not mentioned anywhere in his background, and it seems out of character for someone who has dedicated their life to working in and advocating for the preservation of Acadia National Park. \n\nYES."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement appears to highlight a desire for solitude and rejuvenation through nature, which contrasts with their background, as the description emphasizes their strong connection to their community and a life of public service, suggesting a more communal and people-oriented approach to finding purpose and rejuvenation, YES."
+            ],
+            [
+                6,
+                "The intention behind Jasper's statement appears to be a genuine expression of his deep connection to nature and the park, aligning with his personality, values, and background as a nature-loving individual who values community and the preservation of natural beauty, making it NO."
+            ],
+            [
+                7,
+                "The intention behind Kendrick's statement appears to be a reflection of his appreciation for his work in community development and its positive impact on his well-being, which aligns with his background as a city commissioner who has dedicated his career to promoting education, economic development, and environmental sustainability, therefore: NO."
+            ],
+            [
+                8,
+                "The intention behind Jasper's statement appears to be a genuine expression of his deep connection with nature, aligning with his background as a nature-loving, down-to-earth individual who values the preservation of natural beauty, but it does not necessarily contradict any aspect of his background, rather it is a consistent expression of his personality and values. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Kendrick's statement appears to be a desire to convey his continued involvement and dedication to community service, which aligns with his background as a city commissioner and his lifelong commitment to community building and social justice; however, the statement \"As a retired city commissioner\" contradicts his background as he is currently serving as a city commissioner."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -739,7 +1003,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Person A's statement aligns with their background as it reflects their passion for social justice, their desire to address systemic issues in their community, and their interest in technology as a tool for driving positive change, all of which are consistent with their involvement in the local Black Student Union and their dream of pursuing a career in artificial intelligence to drive positive change in their community. \n\nANSWER: NO"
+            ],
+            [
+                1,
+                "Based on Elena's background, it appears that she genuinely values her Hispanic heritage and is committed to promoting cultural exchange and social justice, and her statement aligns with her passion for bridging cultural divides and empowering marginalized communities, therefore it does not contradict her background.\n\nAnswer: NO"
+            ],
+            [
+                2,
+                "Person A's statement appears to be a genuine expression of admiration for the conversation partner's values and shared commitment to social justice, aligning with Kofi's background as a socially conscious individual who is passionate about using technology to drive positive change in his community, and his experience as a Black Student Union advocate for greater representation and opportunities in STEM fields. NO."
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a genuine expression of admiration for Kofi's values and dedication to social justice and community empowerment, which aligns with Elena's own background and passion for promoting eco-friendly practices and green infrastructure, as well as her strong sense of social responsibility and commitment to her Hispanic heritage, NO."
+            ],
+            [
+                4,
+                "Person A's statement appears to be an expression of genuine admiration and appreciation for Elena's perspective, and its intention aligns with their background as someone who values social responsibility, community involvement, and the potential of technology to drive positive change, which is reflected in their passion for social justice and involvement in the Black Student Union, so NO."
+            ],
+            [
+                5,
+                "The line spoken by Person B, Elena, aligns with her background as a Hispanic woman who is driven by her cultural heritage and a strong sense of social responsibility, making it a genuine expression of her values and identity. \n\n NO"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement appears to be an expression of gratitude and acknowledgment of the importance of bridging cultural divides and empowering communities, which aligns with Kofi's background of valuing his Ghanaian heritage and being involved in social justice causes, such as advocating for greater representation and opportunities for students of color in the STEM fields. \nNO"
+            ],
+            [
+                7,
+                "Person B's statement aligns with their background as it reflects their described passion for creating positive change and bridging cultural divides, which is consistent with their role as a sustainability consultant and their involvement in advocating for environmental initiatives and social justice causes. \nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement appears to be a genuine expression of solidarity and a desire to learn from someone who shares similar values, which aligns with their background as someone who is deeply committed to social justice and community involvement, particularly in the context of advocating for greater representation and opportunities for students of color in STEM fields, and believes in the power of innovation to drive positive change. \n\nAnswer: NO"
+            ],
+            [
+                9,
+                "The intention behind the statement appears to be a genuine expression of Elena's commitment to using her cultural heritage and professional expertise to promote social good, which aligns with her described background as a devoted advocate for environmental initiatives and social justice causes within her community, rooted in her strong sense of Hispanic identity. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -845,7 +1153,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement is likely to establish a connection with the other person by highlighting her shared connection to Georgia and her passion for the environment and community, which aligns perfectly with her background and upbringing, as described in her profile. \nNO"
+            ],
+            [
+                1,
+                "The intention behind the statement \"It's wonderful to meet someone so passionate about the environment like yourself\" appears to be a genuine expression of excitement and shared interest, but it contradicts Debbie's background because she is the one who is typically passionate about the environment, not the person she is talking to, suggesting that she may be trying to elicit a similar passion from Alex or mask her own excitement about the conversation.\n\nYES"
+            ],
+            [
+                2,
+                "The intention behind Alex's statement appears to be a genuine expression of her passion for environmental conservation and her connection to her native state of Georgia, aligning with her background as an environmental scientist and entrepreneur who runs a sustainable gardening business and has a strong sense of community and connection to the natural world, so NO."
+            ],
+            [
+                3,
+                "The intention behind Person B's statement aligns with their background as it reinforces their established passion for environmental conservation, their connection to the local community, and their dedication to preserving the natural beauty of Kansas, a theme that is consistently present throughout their background. \nNO."
+            ],
+            [
+                4,
+                "The intention behind this line is likely an attempt to show an interest in preserving a place that is not native to Alexandra's roots, which contradicts her strong connection to her Southern upbringing and her specific passion for the environment of Georgia, suggesting that she may be being insincere or trying to connect with someone from Kansas on a superficial level. \n YES"
+            ],
+            [
+                5,
+                "The statement appears to be a genuine expression of shared interest and enthusiasm for environmental causes, aligning with Debbie's background as a dedicated environmental educator and advocate, suggesting that her intention is authentic and NO."
+            ],
+            [
+                6,
+                "The intention behind Person A's statement appears to be a genuine and sincere expression of appreciation for the other person's environmental dedication and cultural heritage, but it contradicts the background of Person A, as the conversation is taking place between two people online, and there is no mention of Kansas, which is not a place associated with Person A's background or experiences. \n\nYES."
+            ],
+            [
+                7,
+                "The statement appears to be a genuine expression of shared values and community pride, aligning with Debbie's background as a lifelong Kansan who is deeply rooted in the state's culture and history, with a strong passion for environmental conservation, and therefore it does not contradict her background."
+            ],
+            [
+                8,
+                "The intention behind Alexandra's statement appears to be a genuine expression of her pride and appreciation for her home state, aligning with her background as a proud Georgian born and raised in a culturally diverse small town in Georgia, which has been shaped by her upbringing, education, and professional experience in environmental science and conservation, suggesting that she genuinely values and cherishes her state's natural beauty and culture."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a genuine expression of her deep-rooted love and connection to Kansas's natural beauty and cultural heritage, aligning with her background as a lifelong Kansan who was born, raised, and has dedicated her career to environmental conservation and community involvement in the state, NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -951,7 +1303,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.2
+        "P2_prompt_2_stage_consistency_score": 0.2,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement appears to be a factual recitation of Elena's bio, but it contradicts her background by oversimplifying her advocacy work, as it implies she is an active advocate in the present, whereas her background states that, although she is an advocate for social justice, she \"may not be as politically active as she once was.\" \n\nYES."
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be a polite expression of unfamiliarity, but it contradicts the provided background of Person B, Emily, as it suggests a lack of interest or knowledge about people, whereas her background highlights her strong sense of community and storytelling, which would imply an appreciation for learning about others' lives.\n\nYES."
+            ],
+            [
+                2,
+                "The line spoken by Elena aligns with her background as it reflects her strong emphasis on family values, her Hispanic heritage, and her experiences as a Hispanic woman navigating social justice issues, all of which are consistent with her personality and life story as described. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement is to express appreciation for Elena's commitment to social justice and community impact, which aligns with Emily's background as a passionate advocate for social justice and community causes, therefore the intention does not contradict her background."
+            ],
+            [
+                4,
+                "The statement contradicts Elena's background as the intention of the line implies a boastful or overly formal tone, which does not align with Elena's described personality as warm and humble, rather than as an 87-year-old who has dedicated her life to advocating, but her tone typically is more humble and not boastful, and she is described as an advocate who may not be \"as politically active as she once was\"."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement is that they are genuinely admiring and appreciative of Elena's values and community work, which aligns with the background of Person A (Emily) as someone who is described as a passionate advocate for social justice and environmental causes, and prioritizes giving back to her community through her job at the local arts organization, suggesting that the statement aligns with Emily's background. \n\nAnswer: NO"
+            ],
+            [
+                6,
+                "Elena's statement contradicts her background as it portrays her as being more actively involved in social justice advocacy than she currently is, whereas the background describes her as \"though she may not be as politically active as she once was, her voice is still heard through her family and community.\" \n\nYES."
+            ],
+            [
+                7,
+                "Person B's statement appears to express admiration for Elena's social justice efforts, which, given Emily's background as a passionate advocate for social justice and environmental causes, aligns with her profile, indicating a genuine interest in social justice that is not exclusive to the Hispanic community or elderly population. \n\nNO."
+            ],
+            [
+                8,
+                "The statement appears to be a contradiction with Elena's background, as while it is true that she is an advocate for social justice, particularly for the Hispanic community and the elderly, the statement suggests a level of political activism and focus on advocacy that is not fully aligned with the description of her being \"not as politically active as she once was\" and having a more indirect influence through her family and community, which implies a more low-key and familial approach to advocacy rather than a dedicated, career-like commitment to social justice. YES"
+            ],
+            [
+                9,
+                "Person B's intention of complimenting someone on their dedication to social justice, particularly in regards to the Hispanic community and the elderly, contradicts their background because Emily's background describes her as a 49-year-old white woman from Oklahoma, with no mention of her being involved in advocacy for the Hispanic community or the elderly, and instead highlights her focus on arts-related causes and community involvement in Oklahoma. \n\nYES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -1057,7 +1453,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Ethan's statement appears to be a genuine introduction that aligns with his background, as he accurately shares his age, location, and education, and highlights his passion for agriculture, which is consistent with his profession and upbringing, so NO."
+            ],
+            [
+                1,
+                "The line spoken by Ryder seems to contradict his background as Ryder's interests and values emphasize environmental responsibility and the importance of preserving the natural beauty of Arizona, suggesting he would be cautious about contributing to its exploitation rather than advocating for more exploration, so YES."
+            ],
+            [
+                2,
+                "The intention behind Ethan's statement appears to be an expression of his appreciation for the outdoors, aligning with his background of growing up on a farm and enjoying outdoor activities with his family, suggesting that his interest in nature is genuine and authentic."
+            ],
+            [
+                3,
+                "The intention behind Ryder's statement appears to be a genuine expression of his environmental passion and values, aligning with his background as an environmental science major, his family's outdoor gear shop, and his strong sense of environmental responsibility, so the line does not contradict his background."
+            ],
+            [
+                4,
+                "The statement appears to contradict Ethan's background because it mentions an environmental science major, whereas his actual background states that he earned a Bachelor's degree in Agricultural Engineering from Iowa State University, and also, there is no mention of Arizona being his family's connection to the outdoors.\n\n YES."
+            ],
+            [
+                5,
+                "The statement aligns with Person B's background as it aligns with his stated interests, values, and goals, indicating that his intention is genuine and authentic to his personality and character, and therefore, the answer is NO."
+            ],
+            [
+                6,
+                "Ethan's statement about Arizona's diverse ecosystem and natural environment may seem like a genuine interest in environmental issues, but given his background as a farmer from Iowa and a moderate Democrat interested in environmental policy, it's surprising he wouldn't be more specifically focused on issues related to Midwestern agriculture and the environment, rather than a state like Arizona. \nYES"
+            ],
+            [
+                7,
+                "The intention behind Ryder's statement is to express his genuine love and appreciation for nature and his commitment to environmental conservation, which aligns perfectly with his background and values as a nature enthusiast, environmental science major, and outdoor recreation club member who has participated in several conservation projects, resulting in a NO."
+            ],
+            [
+                8,
+                "The statement contradicts Ethan's background because it suggests that he is pursuing a degree in Environmental Science, which is not mentioned in his background information, and it also suggests that he finds solace in Arizona landscapes, which is not mentioned anywhere in his background, instead, his love for the outdoors and appreciation for the land was instilled in him through his upbringing on a small farm in Iowa."
+            ],
+            [
+                9,
+                "The intention behind the statement is to showcase Ryder's love for nature and his commitment to environmental conservation, which aligns perfectly with his background as a nature enthusiast, Environmental Science major, and someone who has grown up surrounded by the outdoors, YES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -1163,7 +1603,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Agnes' statement appears to be a genuine and brief introduction of herself, highlighting her key life experiences and values, which aligns with the provided background, but it's a summary of her life in a way that is overly formal and polished, which contrasts with the description of her as having a \"wicked sense of humor\" and being a \"warm and nurturing\" person who \"loves to tell stories\" rather than present herself in a straightforward and professional manner. \n\nANSWER: YES"
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be a genuine expression of enthusiasm for meeting new people and discussing shared interests, but it contradicts her background as a 49-year-old woman from a rural Kentucky upbringing, where her personality is described as \"warm-hearted and fiercely independent\" and she has already demonstrated a strong sense of community involvement and family commitment through her volunteer work, family farm, and local activism."
+            ],
+            [
+                2,
+                "The intention behind the statement appears to be a genuine expression of Aggie's passion for education and her desire to share that with others, aligning with her background as a dedicated music teacher and her personality as a warm and nurturing educator, as well as her experiences during the Civil Rights Movement, which instilled in her a strong sense of resilience and determination to promote equality and inclusion. \nNO"
+            ],
+            [
+                3,
+                "The intention behind Emily's line suggests a genuine interest and admiration for Person A's values, aligning with Emily's own background and personality, as she is described as having a strong connection to the outdoors and a deep concern for environmental conservation, and her statement is likely a sincere expression of appreciation and shared values.\n\nNO."
+            ],
+            [
+                4,
+                "The line suggests that Agnes has a strong interest in environmental protection, which, although admirable, contradicts her background as someone who loves to garden, but does not necessarily imply that she prioritizes environmental protection, as gardening can be a form of environmental conservation. YES"
+            ],
+            [
+                5,
+                "Emily's line about being drawn to Agnes's dedication to education and passion for sharing her heritage suggests that she values knowledge, cultural preservation, and community involvement, which aligns with her upbringing by educators who encouraged her to think critically and explore the world, and her own passion for sharing stories about Kentucky's history and complex past. \n NO"
+            ],
+            [
+                6,
+                "The intention behind Agnes' statement is that she values education and community engagement, aligning with her background as a dedicated educator and her current community involvement; however, the use of the phrase \"inclusion\" may subtly suggest a desire to address and rectify past inequalities, which is not explicitly mentioned in her background, though it is implied by her experiences growing up during the Civil Rights Movement and her lifelong passion for learning.\n\nYES"
+            ],
+            [
+                7,
+                "The intention behind Person B's line appears to be a genuine expression of admiration and appreciation for Emily's values and efforts, which aligns with her background of being a proud and passionate advocate for sustainability and environmental conservation. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to express her dedication to inspiring and promoting academic and social growth in her students, which aligns perfectly with her background as a music educator with over 30 years of experience in public schools and a personality described as warm and nurturing. \nNO"
+            ],
+            [
+                9,
+                "The intention behind Emily's statement appears to be an admiration for Agnes's commitment to education and cultural sharing, which aligns with Emily's own background as a former teacher's assistant and her pride in her family's history and cultural heritage, indicating a genuine appreciation for preserving and sharing knowledge. \nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -1269,7 +1753,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Maya's statement appears to be a genuine introduction and a way to immediately convey her values and background, but it contradicts her background because she seems to be reiterating information that is already established in her background description, suggesting a possible attempt to present a more polished or idealized version of herself rather than a genuine introduction.\n\nYES"
+            ],
+            [
+                1,
+                "The intention behind Rohan's statement appears to be a genuine expression of openness to new ideas and a desire to learn from others, which aligns with his background as someone who values education and cultural diversity, having grown up in a culturally rich and diverse household and pursuing a degree in Environmental Science.\n\nYES."
+            ],
+            [
+                2,
+                "The intention behind the statement appears to be a genuine expression of Maya's love and appreciation for her hometown, Tampa, and its cultural diversity, aligning with her background as a multiracial individual who was exposed to a blend of African American, Latinx, and Caribbean traditions and values diversity and inclusion, making the intention align with her background, so the answer is NO."
+            ],
+            [
+                3,
+                "The intention behind Rohan's line is likely an expression of appreciation for Maya's inclusive and open-minded attitude, and it aligns with Rohan's background as an Asian-American who values diversity and has a strong sense of cultural identity. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Maya's statement appears to be a genuine expression of her connection to her environment and cultural heritage, but it contradicts her background as the statement focuses more on her connection to Tampa, whereas her background highlights her multiracial identity as being shaped by a \"culturally diverse neighborhood in Tampa\" and not specifically her connection to Tampa itself. \n YES"
+            ],
+            [
+                5,
+                "Person B's line aligns with his background as a passionate environmental advocate who values sustainability and is committed to creating positive change, showcasing his consistent values and dedication to environmental conservation. \nYES."
+            ],
+            [
+                6,
+                "The intention behind Maya's statement appears to be a genuine expression of her deep connection to her environment and community, which aligns with her background as a multiracial individual with a strong sense of social justice and a love for art, nature, and cultural diversity, as she has grown up in a culturally diverse neighborhood in Tampa and is passionate about preserving the state's unique ecosystems, therefore: NO."
+            ],
+            [
+                7,
+                "The intention behind Rohan's statement appears to be a genuine expression of appreciation and respect for Maya's values, but it contradicts his background as it seems overly formal and corporate, which is not in line with the casual tone and personal details shared in his background, suggesting that the intention does not align with the provided background of Rohan."
+            ],
+            [
+                8,
+                "Maya's statement about being drawn to Tampa's vibrant diversity and natural beauty aligns with her background as a multiracial individual who grew up in a culturally diverse neighborhood in Tampa, has a deep appreciation for diversity and a strong sense of social justice, and is passionate about preserving Florida's unique ecosystems, indicating that the intention is consistent with her background. \nNO"
+            ],
+            [
+                9,
+                "The interpreted intention of Person B's statement is that he values and respects Person A's stories and perspectives, which aligns with his background as a husband and father who prioritizes spending quality time with his family and learning from others, but the statement contradicts his background as a strong advocate for environmental sustainability and social justice, as there is no mention of him being a speaker or someone who typically shares their own stories or insights.\n\nYES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -1375,7 +1903,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement appears to be a casual and brief introduction of herself, showcasing her connection to Michigan and environmental background, which aligns with her provided background of being a proud Michigander and having a degree in Environmental Science. \n\nNO"
+            ],
+            [
+                1,
+                "Person B's statement aligns with her background as an Environmental Specialist who has a strong commitment to environmental stewardship and community engagement, reflecting her upbringing, education, and career, indicating a genuine intention to promote sustainable practices and community involvement, therefore: NO."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement is to express her enthusiasm for environmental sustainability and connect with others who share her passion, which aligns with her background as a proud Michigander with a degree in Environmental Science and a career in environmental consulting, indicating a strong commitment to environmental issues. \n\nANSWER: NO"
+            ],
+            [
+                3,
+                "The line spoken by Person B contradicts their background because while Alex's background emphasizes her strong connection to her Scandinavian heritage and upbringing in a modest, hardworking family, the language used in the statement suggests a more polished and possibly pretentious tone that may not align with her humble background, implying YES."
+            ],
+            [
+                4,
+                "The statement aligns with the background of Person A, as it reflects her experience as an environmental consultant, her passion for the environment, and her appreciation for the resilience of local communities, which are all core aspects of her personality and values as described in her background."
+            ],
+            [
+                5,
+                "Person B's line, \"Thank you for your warm welcome, Deborah,\" contradicts the given background of Alex because Alex's background does not mention anything about being welcoming or friendly in an outgoing manner, but rather focuses on her reserved, understated style, suggesting a more introverted personality.\n\nYES"
+            ],
+            [
+                6,
+                "Debbie's intention behind the statement appears to be genuine and heartfelt, as it aligns with her background and personality, which highlights her enthusiasm for environmental stewardship and community engagement, making it a consistent expression of her values and passions."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement seems to align with their background as it reflects their passion for sustainability, environmental stewardship, and community engagement, all of which are deeply ingrained in their upbringing, education, and career. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement aligns with their background as it reflects their self-described love for nature and the outdoors, as well as their passion for community engagement, which is evident in their involvement with the community garden and their desire to inspire others as an environmental consultant and non-profit worker. NO."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement seems to be an enthusiastic expression of her desire to share her interests and values, which aligns with her background as an Environmental Specialist and her emphasis on community engagement and sustainability in her job and personal life, so the intention does not contradict her background.\n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Chatting",
@@ -1481,7 +2053,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement appears to be to provide a brief, neutral summary of Barbara's background, but this contradicts her background as it lacks specific details, lacks her teaching profession, and does not mention her strong connection to her family or her involvement in local politics, all of which are significant aspects of her life according to her provided background. \nYES"
+            ],
+            [
+                1,
+                "The intention behind Person B's line is to be genuinely appreciative and complimentary, but it contradicts with her background because the text describes her as Alexandra \"Alex\" Thompson, not Barbara, which suggests that Person B may be intentionally deceiving or misrepresenting herself. \n\nYES."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement appears to be a genuine expression of her appreciation for nature and her love for the Arizona landscape, aligning with her background as a lifelong nature lover who enjoys hiking in the Santa Catalina Mountains and exploring the Arizona-Sonora Desert Museum. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Alexandra's statement appears to be a genuine expression of her passion for the environment and teaching others about it, which aligns with her background as a former conservation biologist and current environmental educator, and her commitment to her community and sustainability causes. \n\nANSWER: NO"
+            ],
+            [
+                4,
+                "The intention behind Barbara's statement is to showcase her deep connection to and appreciation for the natural world, which aligns with her background as a lifelong nature lover who enjoys hiking and exploring the Arizona-Sonora Desert Museum, making it a consistent expression of her character."
+            ],
+            [
+                5,
+                "Alex's intention behind the statement appears to be genuine and heartfelt, as it is a common appreciation for nature shared by someone with a background in environmental science and a passion for community engagement, so her statement aligns with her background and interests. \n\nANSWER: NO"
+            ],
+            [
+                6,
+                "The interpreted intention of the statement is that Person A appreciates the person they are talking to for allowing them to share their love for nature, which aligns with Barbara's background as a lifelong nature lover who enjoys hiking and exploring the Arizona-Sonora Desert Museum. \n\nNO"
+            ],
+            [
+                7,
+                "The intention behind this statement appears to be a genuine expression of Alexandra's passion for her work as an environmental educator, aligning with her background as a conservation biologist and her commitment to sustainability, and therefore it does not contradict her provided background."
+            ],
+            [
+                8,
+                "The statement's intention appears to be an objective description of Barbara's characteristics, but it contradicts her background since it portrays her as a passionate nature lover and lifelong Democrat, which is accurate, but does not mention that she's a 68-year-old woman, a fact that seems to be an important aspect of her background. \n YES"
+            ],
+            [
+                9,
+                "The statement aligns with Person B's background as it reflects her profession as an environmental educator, her passion for environmental protection, and her love for the natural beauty of her home state, Georgia. \nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -1587,7 +2203,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Harold's statement is to highlight his dedication to educating others and giving back to his community, which aligns with his background as a retired high school history teacher who is deeply committed to public service and community involvement, as evidenced by his volunteering at a community center, teaching history classes to seniors, and participating in local protests and rallies. \n\nNO"
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be a polite and humble expression of gratitude, which aligns with Eddie's described personality as a warm and hospitable person, NO."
+            ],
+            [
+                2,
+                "The interpreted intention behind the line is that Harold 'Hal' Thompson values education and wants to inspire others to appreciate the significance of history, which aligns with his background as a retired high school history teacher who spent 35 years teaching history and social studies and is passionate about education and public service; NO."
+            ],
+            [
+                3,
+                "Eddie's statement appears to contradict his background, as he is described as a proud father of two children and his wife is a teacher, suggesting that his family life is his primary focus, but his statement instead suggests a profession as an educator, which is not mentioned in his background.\n\nYES."
+            ],
+            [
+                4,
+                "The intention behind Harold's statement is that he genuinely derives happiness from imparting historical knowledge to others, which aligns with his background as a dedicated high school history teacher who spent 35 years teaching and connecting historical events to everyday life. \nNO"
+            ],
+            [
+                5,
+                "Eduardo's statement appears to be a contradiction with his background, as it describes him as a passionate educator, which is not consistent with the provided background that states his wife, Maria, is a teacher at a local elementary school, implying that Eduardo is not the educator, but rather a supportive spouse.\n\nYES."
+            ],
+            [
+                6,
+                "The intention behind this statement aligns with Harold's background as a retired history teacher and his lifelong passion for sharing his love of learning, which is evident in his volunteer work teaching history classes to seniors at the community center, but the statement's emphasis on \"transcending borders and cultures\" seems somewhat out of character for a person from a relatively homogeneous region like New Jersey, suggesting a possible contradiction in his background.\n\nYES"
+            ],
+            [
+                7,
+                "The line spoken by Eduardo contradicts his background as it suggests he is an educator, which does not align with his actual profession as a business owner and food truck operator, and also highlights a career path that emphasizes a love of learning, which is not a primary aspect of his described personality. \n YES."
+            ],
+            [
+                8,
+                "The line spoken by Harold aligns with his background as a retired history teacher and his passion for sharing his knowledge, which is evident in his current involvement in teaching history classes to seniors at a community center, suggesting that this statement reflects his genuine interest in educational outreach. NO"
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a selfless expression of his desire to share his passion for cultural heritage with others, but this contradicts the background, which portrays Eddie as a passionate entrepreneur who is deeply invested in his own business success, with his passion for his heritage and community being more of a secondary aspect, suggesting that his primary intention is not solely focused on inspiring others through history and preserving cultural heritage.\n\nANSWER: YES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -1693,7 +2353,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The interpreted intention behind Leela's statement appears to be a genuine expression of her identity and values, aligning with her background as a first-generation American who grew up in a diverse community, values environmental sustainability, and is an advocate for social justice and equality, which matches her described personality and professional work as a sustainability consultant. \n\nANSWER: NO"
+            ],
+            [
+                1,
+                "Person B's intention behind the statement seems to be an attempt to express solidarity and shared values, but it contradicts their background as a 32-year-old Hispanic woman, as the text states that she is a second-generation Hispanic, born to Mexican immigrant parents who settled in the United States, not a first-generation Hispanic.\n\nYES."
+            ],
+            [
+                2,
+                "The intention behind Leela's statement appears to be a humble and polite response to being recognized or acknowledged, aligning with her background as someone who values community and is a good listener, and therefore does not contradict her background. \nNO"
+            ],
+            [
+                3,
+                "Person B's statement about being a first-generation Hispanic contradicts her background, as Elena is actually a second-generation Hispanic, born to Mexican immigrant parents in the United States, making her a second-generation Hispanic. YES."
+            ],
+            [
+                4,
+                "Leela's intention appears to be to express admiration for Elena's dedication to social justice and environmental sustainability, but it contradicts her background as it specifically highlights the Hispanic community, whereas Leela's background emphasizes her work with immigrant and refugee women, who are predominantly from her own Indian community and not Hispanic."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement appears to be a genuine expression of appreciation for Elena's commitment to social justice and equality, specifically within the Hispanic community, which aligns with Elena's background as someone who is proud of her heritage and actively involved in promoting Latin American culture in her community, with her current role as a marketing coordinator for a non-profit organization that supports Hispanic artists in Ohio. \n\nAnswer: NO"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement appears to be a sincere expression of solidarity and commitment to social justice, but it contradicts her background as a woman of Indian descent who has expressed her own experiences with social justice and equality, particularly as a woman of color in a predominantly white state, suggesting that her statement might be insincere or lack self-awareness about her own experiences.\n\n YES."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement seems to be a genuine expression of shared values and mutual respect, but it contradicts Elena's background as a Hispanic woman deeply connected to her cultural heritage and community, as environmental sustainability and social justice are not explicitly mentioned in Elena's background, and her focus is more on promoting Latin American culture and community rather than environmental issues. \n\nYES."
+            ],
+            [
+                8,
+                "Leela's intention behind this statement appears to be genuine admiration for Elena's social justice and environmental advocacy efforts, but it contradicts her background since Leela is already involved in similar work at her non-profit organization and has a strong personal commitment to social justice and environmental sustainability."
+            ],
+            [
+                9,
+                "Person B's statement aligns with Elena's background as an advocate for Latin American culture and community, and her current role as a marketing coordinator for a non-profit organization that supports Hispanic artists, indicating that she has a strong foundation in social justice and community involvement."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Chatting",
@@ -1799,7 +2503,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Takeshi's statement appears to be a genuine expression of his unique cultural identity and commitment to community involvement, which aligns with his background as a Japanese-American man who grew up in a bilingual household, valued his Japanese roots, and now actively participates in community events and gardening projects. \nYES"
+            ],
+            [
+                1,
+                "The line seems to be a genuine expression of interest and admiration for Takeshi's involvement in sustainability, but it contradicts Rohan's background as it suggests he is more likely to be the one sharing his passion for sustainability rather than someone else, Takeshi, as his background describes him as a sustainability consultant who is enthusiastic about environmental conservation. \nYES"
+            ],
+            [
+                2,
+                "This statement aligns with Takeshi's background, as it reflects his passion for environmental sustainability and cross-cultural understanding, values that have been emphasized throughout his upbringing, education, career, and community involvement. \n\nANSWER: NO"
+            ],
+            [
+                3,
+                "The intention behind Rohan's statement appears to be a genuine expression of his enthusiasm for cultural diversity and his connection to his Japanese heritage, but this contradicts his background as a second-generation Japanese-American who was born and raised in Seattle, suggesting that he may not have much personal experience or deep knowledge of traditional Japanese culture, and was therefore likely raised with more of a fusion of Japanese and American influences. YES."
+            ],
+            [
+                4,
+                "The statement suggests that Takeshi is eager to share his Japanese culture with others and contribute to the Seattle community, which aligns with his background of maintaining strong ties to his Japanese roots and promoting cross-cultural understanding, especially since he has spent his life navigating different social situations with ease. \n\nYES."
+            ],
+            [
+                5,
+                "The line appears to be an expression of Rohan's cultural identity and commitment to community involvement, which aligns with his background as a second-generation Japanese-American who values his cultural heritage and has a strong sense of loyalty to his community, so NO."
+            ],
+            [
+                6,
+                "Takeshi's statement appears to be an expression of gratitude and enthusiasm for community engagement, which aligns with his background as a passionate advocate for promoting cross-cultural understanding and environmental awareness, particularly in his community, making the intention consistent with his provided background. \n\nNO"
+            ],
+            [
+                7,
+                "Rohan's statement of gratitude and eagerness to share his passion for sustainable practices and community engagement aligns with his background as a sustainability consultant and self-proclaimed \"foodie\" who values making a positive impact in his community, suggesting that it is consistent with his character."
+            ],
+            [
+                8,
+                "The interpreted intention of the statement is that Takeshi is highlighting his dedication to giving back to the community and his efforts to promote sustainability and cross-cultural understanding in Seattle, which aligns with his background of being a long-time resident of Seattle, a green architecture professional, and a strong advocate for environmental awareness and cross-cultural understanding.\n\nYES"
+            ],
+            [
+                9,
+                "Rohan's statement appears to be in alignment with his background as a second-generation Japanese-American who grew up in a culturally diverse neighborhood in Seattle, where he was exposed to various Asian cuisines, traditions, and values, suggesting that embracing and celebrating his diverse culture is a core aspect of his identity and values. \nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -1905,7 +2653,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Henry's statement appears to be a genuine expression of his life experiences and values, aligning with his background as a retired history teacher and a proud member of a traditional Italian-American family, but it may also subtly imply a sense of nostalgia and a desire to be seen as a respected authority figure, which is not explicitly mentioned in his background. \n\nYES."
+            ],
+            [
+                1,
+                "Person B's statement seems to align with her background, as it reflects her upbringing in a tight-knit community in the heart of Memphis, her family's legacy in the Civil Rights Movement, and her academic and professional aspirations centered around community development and youth empowerment.\n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Henry's statement appears to be a genuine expression of admiration for Akua's qualities, but it contradicts his background as a proud White American from a traditional Italian-American family, suggesting a potential openness to social justice and diversity that isn't explicitly mentioned in his background, indicating that his stated intention does not align with the provided background of Person A."
+            ],
+            [
+                3,
+                "The intention behind Person B's line is to express genuine appreciation and interest in Person A's life story and community impact, which aligns with her background of being deeply connected to her community and having a strong sense of social justice and activism. \n\nNO"
+            ],
+            [
+                4,
+                "Given Henry's traditional Italian-American background and upbringing, which emphasizes hard work, dedication, and preserving history for future generations, it seems unlikely that he would be captivated by someone's dedication to social justice, which is a more progressive and contemporary concept that may not align with his likely more conservative values, therefore the line contradicts his background. \n\n YES"
+            ],
+            [
+                5,
+                "Based on Akua's background as a socially conscious and activist-oriented individual, her statement of gratitude towards Henry's encouragement suggests a reliance on validation from others, which seems at odds with her background of being driven by a strong sense of purpose and resilience, making it a potential contradiction.\n\nYES."
+            ],
+            [
+                6,
+                "Given Henry's background as a 79-year-old retired history teacher from a traditional Italian-American family and his values emphasizing hard work, dedication, and preserving history, his expressed admiration for someone's dedication to social justice and inspiring others contradicts his background as it seems more aligned with the values of a younger, progressive individual, thus: YES."
+            ],
+            [
+                7,
+                "The statement aligns perfectly with Akua's background, as it reflects her deep connection to her community, her passion for social justice, and her desire to empower others, all of which are core aspects of her identity and aspirations as described."
+            ],
+            [
+                8,
+                "The line \"As a retired history teacher, I have always been passionate about sharing my knowledge and passion for history with others\" seems to align with the intention of genuinely sharing his expertise and values, but it also appears to be a self-aggrandizing statement that fits perfectly within Henry's personality and background as a proud teacher who values his profession and legacy, so it aligns with his background. NO"
+            ],
+            [
+                9,
+                "The line spoken by Person B, Akua, aligns with her background as it is consistent with her expressed desire to work in community development and youth empowerment, her involvement in local community projects, and her academic focus on sociology, indicating that she genuinely intends to amplify marginalized voices and promote unity."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -2011,7 +2803,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The statement appears to be a genuine expression of Akira's cultural identity and heritage, aligning with her background as a Din\u00e9 woman who was raised surrounded by the Arizona desert and has a deep appreciation for her native language and culture, NO."
+            ],
+            [
+                1,
+                "The intention behind Person B's line appears to be genuine and complimentary, but it contradicts their background because Akira is not mentioned as being connected to nature or having a similar dedication to environmental conservation, and instead, Mia's background is emphasized as a central aspect of her personality and values.\n\nYES."
+            ],
+            [
+                2,
+                "The line \"My Navajo heritage and passion for environmental conservation are my driving forces in life\" suggests a strong sense of cultural identity and environmental stewardship that aligns with Akira's background, which highlights her upbringing, education, and career in environmental science and conservation, showcasing her commitment to preserving her cultural heritage and the natural world. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement seems to be an expression of admiration and appreciation for Akira's environmental dedication and cultural background, however, it contradicts the background provided, as there is no mention of Akira having a Navajo heritage, suggesting that Person B is not familiar with Akira's background or is pretending to be interested in Akira's heritage to build a connection."
+            ],
+            [
+                4,
+                "The intention behind Person A's statement appears to be a genuine expression of her passion for environmentalism and her connection to her Din\u00e9 heritage, which aligns with her background as a Din\u00e9 woman who grew up surrounded by the rich cultural heritage of the Navajo Nation and is currently working in the Arizona State Parks department, overseeing the development of eco-friendly trails and educational programs."
+            ],
+            [
+                5,
+                "The statement aligns with Person B's background as it reflects her expressed interests and academic pursuits in environmental science and creative writing, as well as her commitment to environmental advocacy and sustainability, which are values instilled in her by her upbringing and reinforced by her university involvement and long-term goals. \nNO"
+            ],
+            [
+                6,
+                "The intention behind Akira's statement is a genuine expression of her passion for the environment, which aligns with her background as an Environmental Science graduate, her job at Arizona State Parks, and her values of sustainability and conservation. \n\n YES."
+            ],
+            [
+                7,
+                "The intention behind this statement appears to be a genuine expression of Person B's passion for environmental conservation, which aligns with her background, but the specific location mentioned, the Arizona desert, does not match with her background information, which states that she grew up in Springfield, Missouri, and has a strong connection to her local community and the Ozark Mountains. \n\n YES"
+            ],
+            [
+                8,
+                "The intention behind the statement seems to be an authentic expression of Akira's connection to her cultural heritage and her passion for environmental conservation, which aligns with her background as a proud Din\u00e9 woman who was raised in a Navajo community, values her Navajo traditions, and works in environmental science. \n\nNO"
+            ],
+            [
+                9,
+                "Person B's statement aligns with their background as it reflects their passion for the environment and community, as well as their appreciation for learning and social issues, which are all evident in their description of being environmentally conscious, participating in community service, and writing about social and environmental issues in high school and college. \n NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -2117,7 +2953,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement appears to be a genuine introduction of himself and his interests, but it contradicts his background as it does not mention his bilingual upbringing, his family's immigration story, his education, or his career, which are all significant aspects of his identity and experiences that are not highlighted in his self-introduction. \n\n YES"
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be a genuine expression of admiration and solidarity, aiming to establish a sense of shared values and common ground with Person A, but it contradicts the background of Person B (Ethan) as it describes him as being already deeply committed to environmental causes and conservation efforts, suggesting that he wouldn't be \"intrigued\" by someone else's dedication to social justice."
+            ],
+            [
+                2,
+                "The intention behind Alejandro's line is to express his enthusiasm for discussing environmentally and socially conscious topics, which aligns with his background as an environmental science major and sustainability coordinator, but the statement itself does not directly reveal anything about his personal experiences or the specific context that led him to develop these passions, making it a more generic statement that could apply to anyone with similar interests. \n\n YES"
+            ],
+            [
+                3,
+                "The intention behind Ethan's statement appears to be a genuine expression of respect and admiration for Alejandro's sense of purpose, but it contradicts his background as Ethan's rugged and outdoorsy personality does not typically express itself in a formal or polite manner, and he usually values authenticity and simplicity, suggesting that such a phrase may not be in line with his typical way of speaking. \n\n YES"
+            ],
+            [
+                4,
+                "The intention behind Person A's statement is to express their appreciation for the connection between nature and social causes they care about, which aligns with their background as a passionate advocate for environmental conservation and social justice, and therefore, NO."
+            ],
+            [
+                5,
+                "Ethan's statement about finding solace and inspiration in the injustices he's passionate about seems to contradict his background, as his description portrays him as a compassionate and environmentally-driven individual who is deeply connected to the natural world, but does not mention any previous involvement in or passion for social or political activism, instead highlighting his focus on conservation efforts through volunteering and advocating for environmental causes. \n YES"
+            ],
+            [
+                6,
+                "The intention behind the statement suggests a deep appreciation for the natural world and a desire to challenge societal injustices, aligning closely with Alex's background as an environmental science graduate and sustainability coordinator who values social and environmental justice, but the use of the phrase \"injustices I'm passionate about\" is a bit vague, which could suggest a broader scope of interests beyond environmental sustainability, however, considering his background and personality, the overall intention seems to still align with his values, so the answer is NO."
+            ],
+            [
+                7,
+                "Ethan's statement expresses admiration for Alejandro's passion for social justice, which contradicts his background as a rugged outdoorsman who is deeply committed to environmental conservation efforts in Maine, suggesting that he might be more focused on environmental issues rather than social justice. YES."
+            ],
+            [
+                8,
+                "The intention behind Alejandro's statement appears to be a genuine expression of his values and commitment to social and environmental causes, aligning with his background as a compassionate and empathetic individual who cares deeply about social and environmental justice, making it a NO."
+            ],
+            [
+                9,
+                "The intention behind Ethan's statement is likely genuine and complimentary, but it contradicts his background as an outdoorsman and environmentalist in Maine, as he expresses admiration for Alejandro's passion for social justice, which is not mentioned in his background, suggesting he may not prioritize social justice as a key aspect of his own values. YES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -2223,7 +3103,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.0
+        "P2_prompt_2_stage_consistency_score": 0.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement is likely a casual introduction that showcases their interests and passions, which aligns with their background as a high school graduate with a passion for photography and an avid member of the school's soccer team, who has showcased their photography skills on social media. NO"
+            ],
+            [
+                1,
+                "The intention behind the statement appears to be an attempt to find common ground and initiate a connection with the other person, but it contradicts Alex's background as she specifically mentions being passionate about environmental issues and conservation, whereas the statement implies that Alejandro shares the same passion, without knowing anything about him.\n\nYES"
+            ],
+            [
+                2,
+                "The statement appears to be an authentic expression of Alex's passion for photography, as it aligns with his described love for capturing the beauty of Utah's landscapes and cityscapes, which he has showcased on his social media profiles and has led him to pursue a part-time job at a local photo studio. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a genuine expression of their interest in photography and appreciation for the natural beauty of Utah, but it contradicts their provided background as Alexandra \"Alex\" Thompson, a 38-year-old woman from New Hampshire who has a strong affinity for the New England lifestyle and has spent her career focused on conservation and sustainability in the same region, suggesting that they have shifted locations and interests significantly.\n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Alejandro's statement appears to be an expression of his passion for photography, specifically capturing the unique and beautiful aspects of his surroundings, which aligns with his background as an avid photographer and his goal of specializing in landscape photography. \n\nNO."
+            ],
+            [
+                5,
+                "The line spoken by Alex contradicts her background because as a 38-year-old woman from New Hampshire, there is no indication that she was ever an 18-year-old, and her stated interests and experiences as a conservationist and environmentalist in her home state do not align with the romanticized and youthful tone of being captivated by Utah's landscapes and cityscapes as an 18-year-old, suggesting that the intention behind the statement is likely not genuinely reflective of her actual experiences or age. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Alejandro's line appears to be a genuine expression of his passion for photography and the beauty of Utah, aligning with his background as a high school graduate who has showcased his love for photography and has a part-time job at a photo studio, where he assists with event coverage and editing.\n\nANSWER: NO"
+            ],
+            [
+                7,
+                "This line contradicts the given background of Person B, as Alexandra \"Alex\" Thompson was born and raised in New Hampshire and does not have a known connection to Utah, indicating that her stated passion for photography in Utah may not align with her actual experiences and environment.\n\nYES."
+            ],
+            [
+                8,
+                "The intention behind the line seems to align with the provided background, as it reflects Alex's passion for photography and his interest in capturing the beauty of Utah's landscapes and cityscapes, which is consistent with his profile as a high school graduate with a passion for photography and his post-graduation plans to study fine arts with a focus on photography at the University of Utah.\n\nNO."
+            ],
+            [
+                9,
+                "The intention behind Person B's line appears to be that they are expressing a passion for photography and a desire to showcase the natural beauty of Utah, which does not align with Alex's background as she is deeply rooted in her New England lifestyle and has a strong connection to the Merrimack River and surrounding watershed in New Hampshire. \nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Chatting",
@@ -2329,7 +3253,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Person A's statement seems to be a redundant and overly simplistic summary of their background, as it is already heavily detailed and explicitly stated in the provided background description, suggesting that Person A may not be genuinely interested in sharing their personal details or is trying to make a generic impression. YES"
+            ],
+            [
+                1,
+                "The statement appears to be a polite and friendly expression of appreciation for the connection, but it contradicts Agnes's background as someone who values community and a strong sense of place, as she would likely appreciate connecting with someone nearby rather than \"someone so far\" from her. \nYES"
+            ],
+            [
+                2,
+                "Kai's intention behind the statement seems to align with his background, as it reflects his passion for environmentalism and his desire to protect his community, which are core aspects of his personality and future goals, although it could be slightly redundant as he is already described as an environmentalist in his background. \n\nANSWER: NO"
+            ],
+            [
+                3,
+                "The intention behind Agnes's statement is to express her strong commitment to environmental issues and social justice, which aligns with her background as a moderate Democrat who values education, equality, and social justice and is passionate about environmental issues and concerned about the impact of climate change, so the intention does not contradict her background, NO."
+            ],
+            [
+                4,
+                "The intention behind Person A's statement aligns with his background as an avid environmentalist who is passionate about addressing climate change, particularly in multicultural and underserved communities, suggesting that his concern for the planet's ecosystems and desire to make a positive impact is a genuine reflection of his values and personality, so the answer is NO."
+            ],
+            [
+                5,
+                "The intention behind Agnes's statement appears to be a genuine expression of solidarity and shared values, as she mentions specific issues she is concerned about and hopes to contribute to positive change, which aligns with her background as a moderate Democrat who values environmental issues, equality, and social justice. \n\nANSWER: NO"
+            ],
+            [
+                6,
+                "The intention behind Kai's line is to initiate a connection with the other person based on their shared interests in environmentalism and social justice, which aligns with Kai's personality, values, and aspirations, and thus does not contradict his background. \nANSWER: NO"
+            ],
+            [
+                7,
+                "Agnes's intention behind this statement appears to be a genuine expression of her concern for environmental and social issues, which aligns with her background as a moderate Democrat who values education, equality, and social justice, as well as her described passion for environmental issues and advocacy."
+            ],
+            [
+                8,
+                "The intention behind Kai's statement appears to be a genuine expression of his commitment to environmentalism and cultural diversity, aligning with his background as an environmentalist and someone deeply rooted in his mixed cultural heritage, suggesting that this statement does not contradict his background, therefore the answer is NO."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be expressing her deep appreciation for the natural world and her desire to give back to the community, which aligns with her background as an environmentally-conscious, community-oriented, and altruistic individual who values education and social justice, as evident in her past volunteer work and activism, so the statement does not contradict her background."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -2435,7 +3403,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Agnes' statement appears to be a genuine introduction of herself and highlighting her interests, which aligns with her background as a retired school librarian and her deep connection to the Black Hills region, as well as her passions for gardening and preserving history and natural beauty, so NO."
+            ],
+            [
+                1,
+                "Person B's intention appears to be expressing genuine appreciation and admiration for the other person's enthusiasm for the Black Hills, but this contradicts with Ethan's background, which states he is a park ranger at High Cliff State Park, a spot on the shores of Lake Winnebago in Wisconsin, not the Black Hills.\n\nYES."
+            ],
+            [
+                2,
+                "The intention behind Agnes' line is to show appreciation for Ethan's enthusiasm for the Black Hills, but it contradicts her background because, despite her progressive views, Agnes' statement comes across as overly formal and gracious, which may not align with her sharp wit and kind heart that earned her respect for expressing her opinions freely."
+            ],
+            [
+                3,
+                "The intention behind Ethan's statement seems to be a genuine expression of shared values and enthusiasm for environmental conservation, which aligns with his background as a park ranger and his passion for sustainability, NO."
+            ],
+            [
+                4,
+                "The interpreted intention behind the line is an expression of gratitude and appreciation for the person's perspective, which aligns with Agnes's background as a community-oriented and polite individual who values relationships and respect, and therefore does not contradict her background."
+            ],
+            [
+                5,
+                "The intention behind Ethan's statement appears to be a genuine expression of his love for the environment and the state of Wisconsin, aligning with his background as a park ranger who values sustainability and has a deep connection to the natural world, so the line does not contradict his given background."
+            ],
+            [
+                6,
+                "The line aligns with the background of Person A, as it reflects her described interests and values of being an avid gardener, history enthusiast, and community member who is committed to preserving the region's natural beauty and history. \nNO"
+            ],
+            [
+                7,
+                "Based on the background provided, the line spoken by Ethan appears to be a genuine expression of enthusiasm and admiration for Agnes's environmental efforts, aligning with his described passion for sustainability and conservation, so NO."
+            ],
+            [
+                8,
+                "The intention behind the line appears to be an attempt to establish a connection with Ethan based on shared interests and a sense of community, while subtly hinting at her local pride and the rich history of the Black Hills, which aligns with her background as a lifelong resident of the region and a passionate advocate for preserving its natural beauty and history. \n\nYES"
+            ],
+            [
+                9,
+                "The intention behind Ethan's statement appears to be a genuine expression of his passion and fulfillment in his work as a park ranger, aligning with his background as a charismatic, adventurous, and environmentally conscious individual who values sharing his knowledge with others and inspiring a sense of wonder."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -2541,7 +3553,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a brief summary of Person A's background, which aligns with the detailed description provided about Hal, and NO."
+            ],
+            [
+                1,
+                "The intention behind Jamie's statement appears to be an attempt to showcase her connection to the outdoors and her love for the natural world, which aligns with her background as a conservation coordinator and her deep-rooted love for the Blue Ridge Mountains, but the description of herself as a \"seasoned outdoorsman\" contradicts her background as a woman and a mother of two, suggesting a masculine identity that does not align with her provided background. \n YES."
+            ],
+            [
+                2,
+                "The intention behind Harold's statement seems to be an expression of appreciation and a shared sense of values, but it contradicts his background as a \"staunch Democrat\" who is \"passionate about environmental issues and conservation\" because the statement \"finds solace in the beauty of nature\" is a neutral, non-partisan phrase that doesn't explicitly convey the depth of his environmental convictions. YES."
+            ],
+            [
+                3,
+                "The line spoken by Person B contradicts their background because the description portrays Jamie as a spiritual person who finds solace in the beauty of the mountains and the rhythms of nature, but does not mention her as an \"outdoorsman,\" and the term \"seasoned outdoorsman\" typically conveys a more rugged, masculine image that doesn't align with the provided background of a 49-year-old woman from North Carolina with a more nurturing and domestic persona."
+            ],
+            [
+                4,
+                "The intention behind Person A's statement appears to be a description of his past life as a mechanic and how it led him to appreciate the outdoors, which aligns with the background provided as Hal spent his working life running his own mechanic shop in Marquette, where he developed a reputation for being honest and reliable, and later found a love for the outdoors, but his use of the phrase \"camaraderie of fellow outdoorsmen\" suggests a more refined and polished tone than expected from Hal's background description, which often highlights his rugged, unpretentious nature, which makes the intention slightly contradict his background. \n\nANSWER: YES"
+            ],
+            [
+                5,
+                "The intention behind Jamie's statement seems to align with her background as a conservation coordinator for a local non-profit organization, a fierce advocate for environmental protection, and a spiritual person who finds solace in the natural world, suggesting that her statement is an authentic expression of her values and experiences. \n\nANSWER: NO"
+            ],
+            [
+                6,
+                "The intention behind Harold's statement seems to highlight his appreciation for nature and the sense of community he found among fellow outdoorsmen, which aligns with his background as a proud Yooper with a love for the outdoors, his work as a mechanic who spent time working outdoors, and his passion for environmental issues and conservation, despite the fact that his previous role as a mechanic may not directly involve nature, but rather allowed him to appreciate it as a retiree. \n\nNO"
+            ],
+            [
+                7,
+                "The intention behind Jamie's statement is to express her dedication to environmental protection, but this contradicts her background as she is described as working part-time as a conservation coordinator for a local non-profit organization, suggesting that she has been in the field for a short time, and is not yet a seasoned conservationist, and her phrase \"passion for the outdoors and the beauty of nature has led me to become an advocate for environmental protection and social justice\" implies a recent development of her advocacy work.\n\n YES"
+            ],
+            [
+                8,
+                "The intention behind Harold's statement appears to be a genuine expression of his love for the outdoors and his desire for social connection, aligning with his background as a nature-loving, environmentally conscious individual who values simplicity and a deep connection to the natural world, so NO."
+            ],
+            [
+                9,
+                "The intention behind Jamie's statement seems to be a genuine expression of her passion for environmental conservation and social justice, aligning with her background as a conservation coordinator for a local non-profit organization and her values centered around stewardship of the land, NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -2647,7 +3703,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The statement appears to be a genuine expression of Ethan's identity and values, aligning with his background as a fifth-generation Nebraskan, a proud outdoorsman, and a strong advocate for environmental conservation, therefore, NO."
+            ],
+            [
+                1,
+                "The intention behind the statement seems to be a genuine expression of shared values and professional experience, as Alex aligns her career with environmental conservation and emphasizes her contribution to the preservation of natural resources, which aligns with her background as a sustainability consultant and a passionate advocate for environmental issues. \n\nNO"
+            ],
+            [
+                2,
+                "Ethan's line contradicts his background as he claims to be a proud Nebraskan and has a deep connection to the state, but he mentions Alexandra was raised in rural Nebraska, implying she is from his home state, when the description of Ethan states he is the one who grew up in Kearney, Nebraska."
+            ],
+            [
+                3,
+                "The interpreted intention behind Person B's statement is that they are enthusiastic about sharing their knowledge and expertise in environmental sustainability, which aligns with their background as a sustainability consultant and their passion for environmental issues, and therefore the intention does not contradict their background, NO."
+            ],
+            [
+                4,
+                "The intention behind Ethan's statement seems to contradict his background, as it appears to be a departure from his described values and experiences as a proud Nebraskan and a self-taught advocate for sustainable farming practices, suggesting that he is now promoting a more formal education-driven approach rather than his previous DIY learning style and community-based advocacy.\n\nYES"
+            ],
+            [
+                5,
+                "The interpreted intention of the statement is that Alex is expressing her genuine passion for environmental conservation and her commitment to using her professional skills to benefit her community, which aligns with her background as a sustainability consultant and her expressed values of environmentalism and social responsibility, indicating that the intention does not contradict her background. \n\nNO."
+            ],
+            [
+                6,
+                "The line contradicts the background of Person A because, although Ethan is described as having a passion for environmental conservation, his physical appearance and lifestyle suggest that he has a strong background in agriculture, which might not necessarily align with the more city-dwelling, possibly environmentally focused intentions implied by the statement. \n\nYES"
+            ],
+            [
+                7,
+                "The statement \"As an Ohio State University alumna, I'm dedicated to protecting and preserving the natural beauty of Columbus through sustainable practices\" suggests that Person B's intention is to emphasize her commitment to environmental protection, which aligns with her background as a sustainability consultant and a strong advocate for environmental issues, but the statement does not specify a local focus on Columbus, whereas her background mentions her passion for the environment in a broader sense, including visiting Hocking Hills and other nearby state parks, indicating a more general focus on environmental conservation rather than specifically on Columbus. \n\n YES"
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement seems to be a genuine expression of his deep affection for Nebraska and its natural landscapes, which aligns perfectly with his background as a proud Nebraskan who grew up surrounded by the state's rolling plains and the Platte River, and is now an outspoken advocate for environmental conservation."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a genuine expression of her passion for environmental conservation, which aligns with her background as a sustainability consultant and her strong focus on environmental issues."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -2753,7 +3853,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line spoken by Person A aligns with their background, as it explicitly states their experience as a mixed-heritage individual and mentions their appreciation for both Japanese and Caddo heritage, which is consistent with the details provided about their upbringing and cultural values. \n\nAnswer: NO"
+            ],
+            [
+                1,
+                "This line contradicts Agnes's background because, while it emphasizes her appreciation for her cultural heritage, the phrase \"ancestral land\" suggests a deeper connection to a land that is not explicitly stated to be Maine, whereas Agnes's background emphasizes her deep connection to Maine, specifically her upbringing in the Pine Tree State and her strong sense of loyalty to her community and local traditions.\n\nYES"
+            ],
+            [
+                2,
+                "Kaito's statement appears to be genuine and heartfelt, expressing admiration and appreciation for Agnes's diverse heritage and its impact on her life, which aligns with his own background as a mixed-heritage individual who values his cultural heritage and community engagement, suggesting that it does not contradict his background."
+            ],
+            [
+                3,
+                "The intention behind Agnes' statement appears to be a genuine expression of appreciation for her surroundings and her love for nature and Maine's culture, which aligns with her background as a nature-loving, community-oriented, and proud Mainer, so NO."
+            ],
+            [
+                4,
+                "The line spoken by Person A seems to align with his background as a mixed-heritage individual who values and strives to honor his dual cultural identities, indicating that he is genuinely interested in promoting cross-cultural understanding and appreciation, which is reflected in his passion for preserving the natural world and engaging with his community, so NO."
+            ],
+            [
+                5,
+                "The intention behind Agnes's statement appears to be a genuine expression of her love and appreciation for Maine's culture, history, and natural beauty, which aligns with her background as a proud Mainer who values her heritage, community, and the outdoors, and so the answer is NO."
+            ],
+            [
+                6,
+                "Based on Kaito's background, the intention behind his statement aligns with his values of promoting understanding and appreciation for diverse perspectives, which is a reflection of his upbringing and personal experiences as a mixed-heritage individual, YES."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement appears to be an expression of appreciation for cultural diversity and the importance of community, which aligns with Agnes's background as a Mainer who is proud of her heritage and values a strong sense of tradition and connection to her community, but the phrase \"Maine's diverse culture\" contradicts her background as someone who grew up in a small town near Acadia National Park, which suggests a more homogeneous and close-knit community.\n\nYES."
+            ],
+            [
+                8,
+                "The intention behind Kaito's statement appears to be a genuine expression of his professional goals as a cultural consultant, which aligns with his background of being a mixed-heritage individual with a strong appreciation for his Japanese and Caddo cultural roots, and his desire to promote understanding and appreciation for diverse perspectives. \n\nYES"
+            ],
+            [
+                9,
+                "The intention behind this line aligns with Agnes's background as it highlights her deep connection to community and storytelling, which are both core aspects of her personality and upbringing, making it a reflection of her values and experiences. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -2859,7 +4003,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This statement contradicts the background of Person A, as she is actually a second-generation Latina, as her parents immigrated to the United States when her mother was pregnant with her, implying that Alex herself was born in the US. \nYES"
+            ],
+            [
+                1,
+                "The intention behind the statement suggests that Darnell is not only passionate about preserving African American heritage but also acknowledges the transformation of the city's cultural landscape, implying a recognition of changes that may not necessarily be beneficial to the community, which seems to contradict his background as a proud African American man deeply connected to his community and its history, particularly the rich jazz heritage of the 18th & Vine neighborhood. \n\nYES."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement appears to be an expression of admiration and appreciation for cultural diversity, aligning with her background as a proud Latina who bridges the gap between her parents' traditional Mexican values and her own experiences as a member of a predominantly white community, suggesting that it does align with her background. \nANSWER: NO"
+            ],
+            [
+                3,
+                "Darnell's statement aligns with his background because it reflects his strong sense of social responsibility and commitment to preserving historical narratives, particularly those related to his community and city, which is a central aspect of his personality and life's work. \nNO"
+            ],
+            [
+                4,
+                "The intention behind this statement contradicts Alex's background, as her upbringing in Eugene, Oregon, and her Mexican-American heritage suggest a strong connection to Latin American culture, not African American culture, making it unlikely that she would be committed to preserving and celebrating the culture of Kansas City, a city in the heart of the Midwest.\n\nYES."
+            ],
+            [
+                5,
+                "The intention behind Darnell's statement aligns with his background as a retired history teacher and his deep connection to his community's culture and history, as it reflects his stated passion for preserving historical narratives often overlooked in mainstream education and his commitment to community engagement through educational projects."
+            ],
+            [
+                6,
+                "The intention behind this statement contradicts Alex's background, as it mentions her desire to preserve and celebrate African American history and culture, whereas her background emphasizes her Latin American heritage and upbringing, suggesting that her interests and passions would be more focused on preserving and celebrating Mexican and Latin American culture rather than African American culture.\n\nYES"
+            ],
+            [
+                7,
+                "Darnell's statement aligns with his background and passion for preserving African American history and culture, as evident in his profession as a history teacher, his love for the 18th & Vine neighborhood, and his dedication to volunteering at a local museum, indicating that his intention is genuine and authentic. \nNO"
+            ],
+            [
+                8,
+                "This line contradicts Alex's background because it states she is a lifelong resident of Kansas City, which does not align with the provided background that mentions she is from Eugene, Oregon, and grew up in a predominantly white community, indicating that she has never actually lived in Kansas City."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement seems to be a genuine and heartfelt expression of his passion for preserving and sharing African American history and culture, which aligns with his background as a retired history teacher with a deep connection to his community and a commitment to preserving historical narratives often overlooked in mainstream education. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -2965,7 +4153,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a genuine expression of Harold's background and personal identity as a retired history teacher, but the phrase \"I'm a retired history teacher\" and the subsequent description seems to downplay the significance of his 32-year teaching career, which was a central part of his life, contrasting with the casual and simplified tone he uses to describe it, and the rest of the statement aligns with his background.\n\nYES"
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be an expression of appreciation for Harold's enthusiasm for history, but it contradicts Evelyn's background as she is the one sharing her passion and expertise, as indicated by her background as a librarian and her lifelong love of learning. \n YES"
+            ],
+            [
+                2,
+                "The line spoken by Harold aligns with his background as it reflects his passion for history and education, as well as his dedication to sharing his knowledge with others, which is a consistent theme throughout his life and career as a high school history teacher, and YES."
+            ],
+            [
+                3,
+                "The intention behind Person B's line suggests a deep connection to her Indiana heritage and a love for nature, which aligns with her background as a proud Hoosier who grew up in a small town in southern Indiana and now finds solace in gardening, but it somewhat contradicts her urban lifestyle as a retired librarian living in the \"heart of Indianapolis,\" a city that may not be as closely associated with rolling hills and cornfields as her rural upbringing. YES."
+            ],
+            [
+                4,
+                "The intention behind Harold's statement appears to be a genuine expression of his passion for sharing history and his appreciation for diverse perspectives, which aligns with his background as a dedicated and empathetic educator who has spent his career making history come alive for his students and values listening to opposing viewpoints, and the statement does not contradict his background, so the answer is NO."
+            ],
+            [
+                5,
+                "The intention behind Evelyn's statement appears to be a genuine expression of her appreciation for the natural world and her connection to her home state, aligning with her background as a nature-loving Hoosier who values her roots in southern Indiana and the importance of preserving the environment, which is in line with her moderate politics and concern for social justice."
+            ],
+            [
+                6,
+                "The intention behind Harold's statement is to express a deep appreciation for the natural world and the value of learning from history, which aligns with his upbringing, educational background, and lifelong interests, and is consistent with his conservative values and love for storytelling, so NO."
+            ],
+            [
+                7,
+                "The intention behind Evelyn's statement appears to be a genuine expression of her fondness for nature and her Hoosier roots, aligning with her background as a retired librarian and a proud Hoosier who values her connection to the natural world and her state's history, and therefore: NO."
+            ],
+            [
+                8,
+                "This line aligns with Harold's background as a retired history teacher, highlighting his passion for sharing historical knowledge with younger generations and preserving the past, which reflects his traditional values and dedication to education, and thus it does not contradict his provided background.\n\nANSWER: NO"
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a nostalgic reflection on her past experiences as a librarian, while also highlighting her appreciation for the natural world and the historical significance of her home state, which aligns with her background as a proud Hoosier with a love for learning and a deep connection to her community. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -3071,7 +4303,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a brief introduction and summary of her background, but it contradicts her background as it doesn't reveal her personality or spirit, which is described as \"proud and spirited, quick-witted, and sharp-tongued,\" implying that she should be more vividly expressing her personality in the introduction rather than simply stating her background facts."
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be insincere or trying to hide their true identity as Ana\u00efs, whose background is deeply rooted in Mexican heritage, as they mistakenly claim to appreciate Italian-American culture, which contradicts their actual background and interests. YES"
+            ],
+            [
+                2,
+                "The intention behind the statement appears to be a genuine expression of Agnes' love for reading, history, and her connection to her community, aligning with her described passion for literature and local history, and her identity as a lifelong resident of Rhode Island. \n\nANSWER: NO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a genuine expression of her interests and hobbies, which aligns with her background as it highlights her love for reading historical fiction, especially novels about the American West and Latin American history, which is a reflection of her mixed cultural background and her abuela's influence. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A's statement is likely intended to highlight their interest in historical fiction, which appears to contradict their background as a 79-year-old retired librarian from Rhode Island, where they grew up in a traditional Italian-American family and spent most of their career surrounded by books on Rhode Island's local history, suggesting that their interests should be more focused on regional and family-specific historical stories rather than those from the American West and Latin America. \nYES"
+            ],
+            [
+                5,
+                "Person B's statement appears to be a compliment directed at Agnes, but it contradicts Ana\u00efs's background because Ana\u00efs is the one who is captivated by her own cultural heritage and dedicates herself to preserving it, not Agnes, implying that the speaker has mixed up her own identity with Agnes's. YES."
+            ],
+            [
+                6,
+                "The intention behind this line seems to be a genuine interest in history, but it contradicts Aggie's background as a proud and deeply connected Rhode Islander, as the American West and Latin American history are not necessarily relevant to her local identity and interests, which are more focused on the Ocean State's rich history. YES."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement appears to be a genuine expression of her passion for preserving her cultural heritage and learning about the rich history and culture of her ancestors, aligning with her background as a proud Hispanic woman who values her heritage and works hard to preserve it for her family and community. \n\nNO."
+            ],
+            [
+                8,
+                "Person A's statement appears to be a polite and appreciative response, aligning with Aggie's described personality of being warm and having a kind heart, but it contradicts the background of Aggie, who is a proud and spirited woman with a sharp tongue and a tendency to speak her mind, suggesting that she might be more likely to offer unsolicited advice rather than thanking someone for their comments. YES."
+            ],
+            [
+                9,
+                "Person B's statement appears to be a genuine expression of their cultural heritage and personal interests, as it aligns with their background as a Hispanic woman who grew up learning about her parents' Mexican heritage and values the importance of preserving her cultural roots, NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -3177,7 +4453,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Harold's statement appears to be a genuine introduction and sharing of his current activities, aligning with his background as a retired engineer, volunteer at a makerspace, and advocate for sustainable practices, which suggests that the statement aligns with the provided background. \n\nANSWER: NO"
+            ],
+            [
+                1,
+                "The intention behind Person B's line is to convey her enthusiasm for community involvement and a sense of belonging in Grand Forks, but it contradicts with her background, as there is no mention of her previously feeling disconnected or lacking opportunities to contribute, and her existing commitment to social justice and sustainability initiatives suggests she is already actively engaged in the community. \n\n YES."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement seems to be an expression of genuine interest and admiration for Person B's achievements, which aligns with Hal's background as someone who values community and education, and has a strong sense of social responsibility. \n\nNO"
+            ],
+            [
+                3,
+                "The line spoken by Person B aligns with her background as it reinforces her established personality traits, values, and goals mentioned in the description, such as her advocacy for social justice and environmental causes, which is a key aspect of her personality and a driving force behind her academic and professional pursuits. \n\nANSWER: NO"
+            ],
+            [
+                4,
+                "The intention behind Person A's statement appears to be a poetic and somewhat idealistic expression of their passion for problem-solving and engineering, but the use of the phrase \"dance across the gears of invention\" and the focus on solving the \"mysteries of the universe\" suggests a level of romanticism and existential wonder that seems at odds with the background of a practical and down-to-earth individual like Hal, who values hard work and education but is described as having a \"no-nonsense attitude\" and a focus on tangible, everyday problems like sustainable practices and renewable energy. \n\nYES."
+            ],
+            [
+                5,
+                "Person B's line contradicts their background as it does not mention anything about having an interest or involvement in sustainability, environmental engineering, or being drawn to sustainable practices, and instead appears to be referring to someone named Harold, who is not mentioned in their background."
+            ],
+            [
+                6,
+                "The intention behind Harold's statement appears to be a reflection of his lifelong passion for tinkering and problem-solving, which aligns with his background as a mechanical engineer and his continued involvement in volunteering at a makerspace, indicating a strong affinity for creative and technical pursuits."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement appears to be a genuine expression of her values and goals, which aligns with her background as an environmental engineering major with a passion for sustainability and a desire to make a positive impact on her community, making it a statement that aligns with her background. \n\nANSWER: NO"
+            ],
+            [
+                8,
+                "The line spoken by Person A (\"Harold\") suggests a deep passion and engagement with creative and innovative pursuits that aligns with his background as a retired mechanical engineer who continues to volunteer at a makerspace and enjoys tinkering with problem-solving, and therefore this intention aligns with his background."
+            ],
+            [
+                9,
+                "The line spoken by Person B, Alexandra, aligns with her background as an aspiring environmental engineer who is passionate about sustainability and problem-solving, as she is expressing admiration for someone's dedication to sustainable practices and problem-solving skills, which are core aspects of her own interests and values, and does not contradict her personality or professional goals. \n\nANSWER: NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -3283,7 +4603,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a self-promotional and likely a cover-up attempt, as the description significantly exaggerates Ethan's dedication to his causes and presents a more idealized version of himself, contradicting the more nuanced and introspective background provided, indicating a mismatch between the presented image and the actual person. \n\nYES"
+            ],
+            [
+                1,
+                "Person B's statement seems to be in line with her background as an environmental advocate and social justice leader, aligning with her self-described passion for the outdoors and her commitment to creating positive change in her community, NO."
+            ],
+            [
+                2,
+                "Ethan's statement appears to be a genuine expression of gratitude for Alexandra's acknowledgement of his values, which aligns with his background as a progressive conservative who is deeply passionate about environmental protection and social justice. \n\nAnswer: NO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement seems to be an expression of admiration and appreciation for Person A's environmental and social justice efforts, which aligns with Alex's background as a leader in Concord's sustainability initiatives and her commitment to social justice, indicating a sincere interest in sharing common values and goals. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Ethan's statement aligns with his background, as his past experiences as a conservationist, his current involvement in the community garden and local activism, and his self-described \"progressive conservative\" views all suggest a strong commitment to environmental protection and sustainability, making it a consistent reflection of his values."
+            ],
+            [
+                5,
+                "Person B's statement aligns with her background as it accurately reflects her commitment to environmental causes, community involvement, and her passion for creating a positive impact in her local ecosystem and community, which are all highlighted in her profile. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Ethan's statement appears to be an expression of his genuine commitment to environmental conservation and social justice, which aligns perfectly with his background as a dedicated environmentalist, conservationist, and community volunteer, as well as his strong views on environmental protection and social justice.\n\nYES."
+            ],
+            [
+                7,
+                "The intention behind the statement appears to be a genuine expression of Alexandra's commitment to environmental causes and community involvement, which aligns with her described background as a community-driven woman who advocates for social justice, volunteering, and sustainability initiatives. \nNO"
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement is an expression of humility and gratitude towards someone who shares his values, but it contradicts his background as a self-described \"progressive conservative,\" implying that his views on social justice may be more nuanced than initially expected, and may not align with the traditional progressive or liberal connotations of the term \"social justice.\" \n\nYES."
+            ],
+            [
+                9,
+                "Alexandra's statement about Oregon implies a deeper connection to the state than is mentioned in her background, suggesting a possible intention to expand her geographic horizons beyond Massachusetts, and thus it contradicts her background by implying a level of familiarity with Oregon that is not previously established. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -3389,7 +4753,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.4
+        "P2_prompt_2_stage_consistency_score": 0.4,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a neutral, factual description of Person A's characteristics, but it contradicts his background because it lacks the personal and nuanced details that make him unique, such as his love for woodworking, his local roots, and his specific environmental causes, which suggests a more personal and specific intention to highlight his faith and broadened views rather than a factual description. \n\nYES."
+            ],
+            [
+                1,
+                "The intention behind the statement appears to be a genuine compliment towards Harold, which contradicts Hank's background as the statement suggests he is focusing on someone named Harold, whereas his conversation partner is actually Henry, and there is no mention of a Harold in his background. \n\nYES"
+            ],
+            [
+                2,
+                "The intention behind Person A's line seems to be a genuine expression of shared interests and values, but it may contradict his background as a staunch supporter of environmental causes because the statement is a direct expression of caring for the environment, which is already a known aspect of his personality, making the statement seem somewhat generic or insincere.\n\nYES."
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be an attempt to build a connection with Person A, establishing a mutual interest in history, which aligns with the background of Person B, a 79-year-old retired history teacher. \n\nYES."
+            ],
+            [
+                4,
+                "The intention behind Person A's statement appears to be a genuine expression of appreciation and respect for Person B's (Henry) opinions, aligning with Hal's background as a strong supporter of open-mindedness and community engagement, indicating a desire to engage in meaningful conversations and learn from others. \n\nNO"
+            ],
+            [
+                5,
+                "The intention behind Person B's statement is a genuine compliment to express admiration for Person A's passion for learning and community dedication, but it contradicts his background as Hank is the one receiving the compliment, not giving it, and his name is also not Harold but rather Hank. \nYES"
+            ],
+            [
+                6,
+                "The intention behind Harold's line appears to be sincere and appreciative, indicating a genuine interest in getting to know Henry and valuing diverse perspectives, which aligns with Harold's background of being open to change and progressive ideas as a result of his broadened views through his business and community work, making it a NO."
+            ],
+            [
+                7,
+                "The intention behind this line appears to be a genuine expression of admiration for a historical figure named Harold, which contradicts the background of Person B, who is actually named Henry 'Hank' Thompson and has a background focused on his own life experiences, interests, and family, rather than someone named Harold.\n\nYES"
+            ],
+            [
+                8,
+                "The statement aligns with the background of Person A as it reflects his passion for woodworking, which was instilled in him from his childhood and is a hobby he has continued to pursue throughout his life, and also resonates with his appreciation for nature, which has been fostered through his upbringing and family experiences.\n\nYES."
+            ],
+            [
+                9,
+                "The intention behind Person B's line seems to be an expression of shared interests and admiration for history, but it contradicts Person B's background because the conversation has been initiated by Person A, not Person B, and Person A's background is not mentioned in the provided text, which contains only the description of Person B, 'Hank', whose name is now being referred to as Henry, and not Harold. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Chatting",
@@ -3495,7 +4903,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind the statement appears to be a genuine expression of Maya's appreciation for her connection to the natural world and its impact on her values and experiences, aligning with her upbringing in the Ouachita Mountains and her community organizer work focused on environmental sustainability, NO."
+            ],
+            [
+                1,
+                "The intention behind Person B's statement appears to be a genuine expression of their appreciation for nature and conservation, aligning with their background as a park ranger and environmental advocate, as they have spent their career educating visitors and advocating for conservation efforts in the unique ecosystems of Maine. \n\nNO."
+            ],
+            [
+                2,
+                "The intention behind Person A's statement appears to be a genuine expression of admiration and appreciation for Person B's values and actions, which aligns with Maya's own background and passion for community engagement and environmental sustainability, reflecting her upbringing, education, and career as a community organizer. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a genuine expression of their commitment to environmental conservation, which aligns with their background as a park ranger and passionate advocate for conservation efforts, and their love for Maine's natural beauty, and thus, the intention aligns with the provided background.\n\nNO."
+            ],
+            [
+                4,
+                "The intention behind Person A's statement seems to be a genuine expression of shared appreciation for natural beauty, but it contradicts the provided background of Maya, as the statement is about finding solace in Maine's ecosystems, whereas Maya is from Little Rock, Arkansas, with a deep connection to the Ouachita Mountains and her local environment.\n\nYES"
+            ],
+            [
+                5,
+                "The intention behind Person B's statement is that they believe everyone should play a role in preserving the environment, which aligns with their background as a park ranger, environmental advocate, and supporter of local conservation efforts. \n\nNO"
+            ],
+            [
+                6,
+                "Maya's line appears to be insincere, as her intention is to appear supportive and welcoming, but the statement contradicts her background, where she is described as a community organizer focusing on promoting racial equality and environmental sustainability, suggesting that she is already dedicated to these causes. \nYES"
+            ],
+            [
+                7,
+                "Person B's intention behind the line \"Thank you for the warm welcome and the opportunity to share my passion for protecting Maine's natural beauty\" is to express gratitude for the online interaction and highlight her dedication to environmental conservation, which aligns with her background as a park ranger and community advocate, making it a NO."
+            ],
+            [
+                8,
+                "The intention behind the line appears to be a genuine expression of Maya's love for the natural world, which aligns with her background as someone who was \"born and raised in the small town of Hot Springs, Arkansas, surrounded by the natural beauty of the Ouachita Mountains,\" and who \"enjoys practicing yoga\" and has a deep connection to her community and the environment through her work as a community organizer.\n\nANSWER: NO"
+            ],
+            [
+                9,
+                "Person B's intention is to express her genuine commitment to environmental protection, aligning with her background as an environmental advocate and conservationist, indicating a strong sense of responsibility towards preserving the natural beauty of Maine for future generations, and her statement aligns with the given background of Person B. \n\nAnswer: NO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -3601,7 +5053,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Kai's statement appears to be a factual and genuine expression of his background, as it accurately describes his mixed heritage and the blending of cultural elements, which aligns with his personality and upbringing as a proud representation of the two or more races demographic, therefore the intention does not contradict his background, NO."
+            ],
+            [
+                1,
+                "The interpreted intention of the statement is to convey Alex's deep connection to nature and her heritage, but it contradicts her background because while she values nature and her upbringing was heavily influenced by her parents, there is no mention of her having a strong connection to her ancestors or cultural heritage. \n\nYES"
+            ],
+            [
+                2,
+                "The intention behind Kai's statement is to express his admiration for Alexandra's views, which aligns with his own values and interests, as evident in his appreciation for cultural heritage and his passion for exploring different cultures, which he has demonstrated through his culinary blog, cultural background, and teaching career, therefore NO."
+            ],
+            [
+                3,
+                "The intention behind Alexandra's statement seems to be insincere or attention-seeking, as she is not actually inquiring about Kai's background and values, but rather responding to her own conversation as if Kai had shared something about their similar interests, which contradicts her background description that highlights her environmentally conscious and genuine nature. \nYES"
+            ],
+            [
+                4,
+                "Person A's intention appears to be genuine and heartfelt, as he is expressing gratitude and shared values, which aligns with his background of being proud of his cultural heritage and being influenced by his mother's nurturing spirit, YES."
+            ],
+            [
+                5,
+                "The intention behind Alexandra's statement is to emphasize her strong emotional connection to Montana and its cultural heritage, which contradicts her background as she does not have a rich cultural heritage in Montana since she is a native to the state and her family are park rangers, suggesting a more practical and environmental appreciation rather than a deep cultural one, so YES."
+            ],
+            [
+                6,
+                "The intention behind Kai's statement appears to be genuine and heartfelt, but it contradicts his background, as there is no mention of him having any connection to Montana or its cultural heritage, and he is specifically described as having a strong cultural connection to his Filipino and Puerto Rican heritage. \n\nYES"
+            ],
+            [
+                7,
+                "The intention behind Person B's line appears to be an expression of her profound connection to nature and a sense of roots, aligning with her background as a nature-loving, environmentally conscious individual who was raised by park ranger parents and has spent her life exploring and working to preserve Montana's natural beauty, suggesting that the intention does align with her background, so the answer is NO."
+            ],
+            [
+                8,
+                "The intention behind Kai's statement is that he values a connection to his cultural heritage and the natural world, which aligns with his background as a proud representation of a multicultural identity and his appreciation for his Filipino and Puerto Rican roots, as well as his love for nature, making it a NO."
+            ],
+            [
+                9,
+                "This statement suggests that Alexandra has a strong emotional connection to her ancestors and their stories, which contradicts her background that only mentions her parents as park rangers and does not indicate any cultural or familial significance placed on ancestral heritage, leading to a YES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -3707,7 +5203,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The statement aligns perfectly with Harold's background as it accurately describes his age, profession, love for history, passion for storytelling, and his enthusiasm for the outdoors, which are all consistent with the provided information. \nNO"
+            ],
+            [
+                1,
+                "Ethan's statement appears to be an insincere attempt to flatter and seek approval from Harold, which contradicts his described personality as having a \"witty and sarcastic\" sense of humor that \"never\" involves belittling others, as it feels overly formal and overly complimentative for his casual online conversation setting. \nYES"
+            ],
+            [
+                2,
+                "The line spoken by Person A, Harold, suggests that they admire and share a passion for history, which aligns with his background as a retired high school history teacher and lifelong learner with a deep love for history, but the use of the name \"Harold\" instead of his own name \"Hal\" could be seen as inconsistent or lacking familiarity with the subject of the story, however the context of the statement suggests that he is speaking about someone named Harold, not himself, so I will align it with his background as a historian. \n\nNO"
+            ],
+            [
+                3,
+                "The line contradicts Person B's background as described, as it states Ethan is an extroverted creative, but his background describes him as a \"perfect blend of introverted creativity,\" suggesting that he is more introverted than extroverted. \n YES"
+            ],
+            [
+                4,
+                "The intention behind Harold's statement appears to be a genuine appreciation for Ethan's ability to make history engaging, which aligns with Harold's background as a lifelong history enthusiast, a former high school teacher, and an avid writer of local historical content, and therefore, the statement aligns with his background. \n\nANSWER: NO"
+            ],
+            [
+                5,
+                "The intention behind Ethan's statement appears to be sincere and supportive, but it contradicts his background since the person he is addressing is named Harold, not suggesting that he is sharing his genuine enthusiasm for history with someone with that name, when in fact he is actually addressing the person he is conversing with in the scenario, indicating he is likely already familiar with this person's name. YES"
+            ],
+            [
+                6,
+                "The intention behind Harold's line \"Thank you for your interest in my story, Ethan. I'm always eager to share the tales of the past\" appears to be a genuine expression of gratitude and enthusiasm for storytelling, aligning with his background as a lifelong learner and natural storyteller who has spent years teaching and sharing his passion for history with others, which means the intention does not contradict his background. \n\nNO"
+            ],
+            [
+                7,
+                "Ethan's statement appears to be a genuine expression of admiration for Harold's qualities, which aligns with his background of valuing authenticity and intellectual curiosity in relationships, as well as his own personality as an introverted creative who appreciates art and storytelling. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A's line is a reflection of their profession and passion for history, which aligns with their background as a retired high school history teacher with a deep love for the outdoors and a passion for storytelling, making the line a natural expression of their values and experiences."
+            ],
+            [
+                9,
+                "Person B's intention behind the line \"I'm eager to learn more about your experiences as a seasoned historian and storyteller\" seems to be a genuine expression of interest in Person A's expertise and a desire to gain knowledge from them, but it contradicts Ethan's background as he is described as a junior in college studying Environmental Science, not a historian or seasoned storyteller, so YES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Chatting",
@@ -3813,7 +5353,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement is to highlight the core values and life experiences that shape Sofia's perspective, but it contradicts the background provided as Sofia is actually the second of five siblings, not the youngest. \nYES"
+            ],
+            [
+                1,
+                "The intention behind Eric's statement appears to be a genuine expression of his deep connection and respect for the land, which aligns with his background as a rugged outdoorsman, a wildlife conservation officer, and a proponent of sustainable practices, making it a statement that is in line with the provided background. \n\nANSWER: NO"
+            ],
+            [
+                2,
+                "The intention behind Sofia's statement appears to be genuine admiration and appreciation for Sofia Elena Garcia's values, but it contradicts her background because there is no mention of her being passionate about the environment, and her described interests and values focus more on her family, culture, and career.\n\nYES."
+            ],
+            [
+                3,
+                "The line spoken by Eric aligns with his background as it reflects his own values of living in harmony with nature and advocating for sustainable practices, as well as his previous experience as a wildlife conservation officer, making it a genuine expression of his perspective. \n\nANSWER: NO"
+            ],
+            [
+                4,
+                "The intention behind Sofia's statement seems to be a genuine expression of her connection to her roots, but it contradicts her background as a 59-year-old Hispanic woman born to Mexican immigrant parents in East Los Angeles, as she claims to be a fifth-generation North Dakotan, which does not align with her actual upbringing and heritage."
+            ],
+            [
+                5,
+                "This line aligns with the background of Person B, Eric Olson, as it reflects his deep connection to the land and his perspective shaped by the vast, open landscapes of North Dakota, which he has described as a source of pride and responsibility in his story. \n\nAnswer: NO"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement appears to be genuine admiration for Sofia's dedication to education and environmental preservation, but it contradicts the background provided, as Sofia's background emphasizes her career in hospitality management and her love for reading historical fiction, with no mention of a focus on preserving the environment.\n\nYES."
+            ],
+            [
+                7,
+                "The line contradicts Eric's background because the statement seems more like a generic, idealized expression of environmentalism, which is not necessarily supported by the detailed description of his past experiences and work as a wildlife conservation officer, which suggests a more nuanced and practical approach to environmental conservation. \nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to express a deep connection to her heritage and a desire to protect the environment, but this contradicts her background as a Hispanic woman from East Los Angeles who grew up in a Mexican culture and prioritizes her family's cultural heritage, which does not align with the values and upbringing of a typical fifth-generation North Dakotan.\n\nYES"
+            ],
+            [
+                9,
+                "The line spoken by Person B, \"As a fifth-generation North Dakotan, I take pride in the land and its natural beauty, and I am committed to protecting its preservation for future generations,\" aligns with his background as it reflects his deep connection to the land and his passion for environmental conservation, which is a theme that is evident throughout his biography. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.2,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -3919,7 +5503,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Ethan's statement appears to be a genuine expression of his deeply ingrained values and passion for environmental conservation, aligning with his background as a rugged outdoorsman and a dedicated project manager for a local non-profit organization focused on preserving and restoring Colorado's natural habitats, which suggests that his intention is authentic and consistent with his background.\n\nANSWER: NO"
+            ],
+            [
+                1,
+                "Ryder's statement seems to be a genuine expression of appreciation and connection to the natural world, which aligns with his upbringing in a small town in Oklahoma and his background in environmental science, as well as his passion for conservation and sustainability. \n\nAnswer: NO"
+            ],
+            [
+                2,
+                "The line contradicts Ethan's background because it claims he's a lifelong Oklahoman, which does not align with his background as a sixth-generation Coloradan, born and raised in the state with a deep connection to the Rocky Mountains, rather than Oklahoma."
+            ],
+            [
+                3,
+                "The intention behind Ryder's statement is to express his understanding and appreciation for the natural world, which aligns with his background of being raised in Oklahoma, having a career in environmental science, and being a strong advocate for conservation, but it may seem slightly out of character for Ryder to address Ethan by name since he has been referred to as \"you\" in the conversation thus far, indicating a level of familiarity and personal interaction."
+            ],
+            [
+                4,
+                "The intention behind Ethan's statement aligns with his background as a rugged outdoorsman and environmental conservationist, suggesting that his sentiment is genuine and not a contradiction, as he is already inclined towards valuing and preserving the natural environment, which is reflected in his work and personal interests, and the mention of Oklahoma's natural beauty does not contradict his roots in Colorado."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement appears to be a genuine expression of their passion for nature and conservation, which aligns with their upbringing in a small town surrounded by Oklahoma's vast landscapes and their career as a wildlife biologist and environmental consultant, emphasizing their strong connection to traditional Oklahoma values and environmental responsibility; NO."
+            ],
+            [
+                6,
+                "The line spoken by Ethan appears to be a contradiction to his background, as it suggests he is drawn to Oklahoma's natural beauty, whereas his background emphasizes his strong connection to and love for the Rocky Mountains of Colorado, which he has spent most of his life exploring and working to preserve, indicating a stronger affinity for the region where he resides. YES."
+            ],
+            [
+                7,
+                "The intention behind Person B's statement appears to be a genuine expression of appreciation and shared values, aligning with Ryder's background and upbringing in Oklahoma, where he was deeply influenced by the natural world and has a strong passion for conservation, therefore: NO."
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement appears to be an expression of genuine appreciation for Oklahoma's natural and cultural heritage, which aligns with his values of environmental stewardship and deep connection to the land and community, as seen in his work as an environmental conservationist and his roots in the Rocky Mountains of Colorado, suggesting a positive alignment with his background.\n\nYES."
+            ],
+            [
+                9,
+                "The line suggests that Ryder is proud of Oklahoma's history and culture, which aligns with his background of being born and raised in a traditional Oklahoma community with a strong emphasis on community and heritage. \nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -4025,7 +5653,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Ethan's statement appears to be a straightforward introduction of himself, aligning with his background as a conservation biologist and a passionate environmentalist who grew up on a farm in Nebraska, and YES."
+            ],
+            [
+                1,
+                "The intention behind Person B's line appears to be an expression of admiration for social justice and equality, but it contradicts their background because it references \"protecting the environment,\" which is not mentioned in Edna Mae's background and seems to be an out-of-character topic for someone who has dedicated their life to social justice, literature, and their community in South Carolina, not environmental issues."
+            ],
+            [
+                2,
+                "Ethan's statement suggests that he is enthusiastic about sharing his environmental interests with Edna, which aligns with his background as an environmental science graduate, a conservation biologist, and a sustainability consultant, as well as his passion for the outdoors and community involvement. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement seems to be an expression of admiration for environmental activism, which aligns with the general theme of social justice and community involvement from Edna Mae's background, but does not directly correlate with any specific information provided about her past activities or interests, and given the context that her past is marked by the Civil Rights Movement and community involvement, her focus might be more towards social justice, rather than environmental activism, making this statement contradictory to her background. \n YES"
+            ],
+            [
+                4,
+                "Person A's intention behind the statement appears to be a genuine expression of admiration for the other person's values and principles, particularly their commitment to equality and environmental protection, which aligns with Ethan's background and values as an environmentalist and community-focused individual with a passion for sustainability. \nNO"
+            ],
+            [
+                5,
+                "The line contradicts the given background of Person B because Edna Mae's background emphasizes her commitment to social justice and promoting understanding through literature, but her expressed interest in environmental conservation does not align with her previously established focus on social justice and community development.\n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Ethan's statement appears to be a genuine expression of gratitude and a sense of fulfillment in his work, which aligns with his background as a conservation biologist who has spent his career focused on environmental conservation and restoration, suggesting a strong sense of purpose and commitment to his work, NO."
+            ],
+            [
+                7,
+                "The interpreted intention behind Person B's statement appears to be a genuine expression of admiration for Edna Mae's commitment to environmental causes, which aligns with the values of social justice and community involvement that Edna Mae has consistently demonstrated throughout her life, particularly given her background as a lifelong advocate for equality and her involvement in local literacy programs, making it NO."
+            ],
+            [
+                8,
+                "The intention behind Ethan's statement appears to be a genuine expression of his enthusiasm for environmental conservation, aligning with his background as a conservation biologist and sustainability consultant, and his values of community and environmental stewardship. \nNO"
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be that of a passionate environmentalist who values the preservation of natural ecosystems, which aligns with their background as a retiree from South Carolina, but contradicts the specific focus on African American literature, civil rights, and community involvement that is prominent in their background, as there is no mention of environmental conservation or a connection to the natural world being a significant aspect of their past experiences or interests.\n\n YES."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Chatting",
@@ -4131,7 +5803,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Person A's statement contradicts the background of Person A, as it attributes a sense of purpose in \"serving his community\" through politics, which is not explicitly mentioned in the provided background, which only mentions his involvement in local politics as a more recent development, whereas the statement presents it as a deeply ingrained trait."
+            ],
+            [
+                1,
+                "The intention behind Elena's statement seems to be a genuine expression of appreciation and admiration for Carlos's values and dedication to his heritage, which aligns with her own upbringing in a close-knit, traditional family where respect for elders and community ties were deeply ingrained, as well as her own passion for Latin American literature and her role as a librarian at a community center. \nNO"
+            ],
+            [
+                2,
+                "The intention behind Carlos' statement appears to be a genuine expression of gratitude and appreciation for Elena's words, which aligns with his background as a kind, charismatic, and community-oriented person who values his heritage and connections with others, resulting in NO."
+            ],
+            [
+                3,
+                "The intention behind Elena's statement appears to be a genuine expression of gratitude and admiration for Carlos's hospitality, but it somewhat contradicts her background as a traditional, close-knit family-oriented person who values respect for elders and community ties, as her comment suggests a more individualistic focus on connecting with someone who embodies a spirit, rather than prioritizing family and community relationships."
+            ],
+            [
+                4,
+                "The statement aligns with Carlos' background as it reflects his deep appreciation for his Latin heritage and his commitment to making a positive impact in his community, which are core aspects of his personality and values."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement seems to be a genuine expression of her identity and values, but it contradicts her background because it portrays her as a lifelong resident of Missouri, whereas her background states she is a 58-year-old woman who \"grew up surrounded by the rich cultural heritage of her family's roots, which has significantly influenced her perspective on life,\" implying that she did not grow up in Missouri but rather in St. Louis, Missouri."
+            ],
+            [
+                6,
+                "The intention behind Person A's statement aligns with their background, as it showcases their pride in their heritage and community, which is consistent with the provided background that describes them as having a deep appreciation for their Latin heritage and a strong connection to their community."
+            ],
+            [
+                7,
+                "The intention behind Elena's statement aligns with her background as she expresses a strong connection to her community and heritage, which is deeply ingrained in her upbringing and roots, and she also mentions her passion for literature and connecting with others, which is a significant part of her role as a librarian and her love for Latin American literature. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Carlos' statement appears to be a genuine expression of his love and appreciation for his Hispanic heritage, which aligns with his background of growing up in a bilingual household and being deeply rooted in his Latin heritage, suggesting that the statement does not contradict his background. \n\nNO."
+            ],
+            [
+                9,
+                "The intention behind Elena's statement seems to genuinely express her love for Missouri and her community, aligning with her background of being a lifelong resident of Missouri and her role as a librarian, which allows her to connect with people from all walks of life, NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -4237,7 +5953,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line spoken by Person A, Alex, seems to be a genuine introduction that aligns with her background as it mentions her Hispanic heritage, upbringing in Virginia, her family's bakery, and her passion for art and social justice, which are all consistent with the information provided about her. NO."
+            ],
+            [
+                1,
+                "The intention behind Jack's statement appears to be an expression of his strong sense of community and loyalty, but it contradicts his background as a retired factory worker who values hard work and tradition, as the phrase \"My hands are always ready to help\" and the overall tone of the statement seem overly formal and idealistic for someone with Jack's down-to-earth and humble personality.\n\nYES"
+            ],
+            [
+                2,
+                "The intention behind the statement appears to be that Alejandra feels a strong connection to her community in Virginia and finds it a source of inspiration, which aligns with her background as someone who was born and raised in the suburbs of Richmond, Virginia and values her heritage and cultural roots, despite her family's traditional Salvadoran background. NO"
+            ],
+            [
+                3,
+                "The intention behind Person B's statement appears to be a romanticization of manual labor and the sense of camaraderie that comes with it, which aligns with their background as a proud, hardworking individual with a strong connection to their community and traditional values, suggesting that the intention does align with the provided background, so the answer is NO."
+            ],
+            [
+                4,
+                "The intention behind Alex's statement appears to be a genuine expression of finding common ground and shared appreciation for order and precision, which aligns with her upbringing and personality, as evident in her helping out at her family's bakery and her own attention to detail in her artistic pursuits, as well as her interest in mechanics, but the phrase \"meticulous process of baking and restoring\" does not explicitly mention her parents' bakery, implying it might be more about a general appreciation rather than specifically referencing her family's business, making it slightly nuanced."
+            ],
+            [
+                5,
+                "The intention behind Person B's statement appears to be an expression of a strong sense of satisfaction and belonging derived from his values and community, which aligns with his background as a proud, hardworking, and community-oriented individual who values tradition and has a deep connection to his local culture, as evident from his life as a retired mechanic, his love for traditional bluegrass music, and his strong sense of loyalty and hard work, thus the answer is NO."
+            ],
+            [
+                6,
+                "The intention behind Person A's statement is to express her connection to the city of Richmond, Virginia, through her passion for art and social justice, aligning with her background of being a proud advocate for social justice and a member of her school's LGBTQ+ club, and her desire to explore the complexities of her identity through her art, which does align with her provided background. \n\nNO"
+            ],
+            [
+                7,
+                "The intention behind Jack's statement seems to be an expression of his creative outlet and passion for precise, hands-on work, aligning with his background as a skilled woodworker and retired mechanic, and YES."
+            ],
+            [
+                8,
+                "The intention behind Person A's statement appears to be that she appreciates and is skilled in activities that require attention to detail and precision, which aligns with her background as someone who grew up helping out in her family's bakery and valuing hard work and responsibility, however, restoring classic cars is not mentioned in her background, making it a somewhat unexpected interest for her, and therefore, it contradicts her background."
+            ],
+            [
+                9,
+                "The intention behind Person B's statement appears to be a genuine expression of appreciation for the sense of purpose and community he derives from his past work and hobbies, aligning with his background as a retired mechanic who values hard work and tradition, and therefore the line aligns with the given background, NO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Chatting",

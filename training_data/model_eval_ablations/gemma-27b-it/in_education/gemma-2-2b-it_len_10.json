@@ -105,7 +105,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line appears to be a neutral, informative statement from a teacher simply presenting historical facts about Genghis Khan, and given Person A *is* a teacher, the intention to educate aligns perfectly with their professional background and expected behavior; therefore, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind the statement is to demonstrate empathy and connect with a historical figure by imagining their emotional experience, which directly aligns with Person B\u2019s described emotional learning style and preference for human-centered narratives highlighting emotional stakes; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to express fascination with historical empires and cultural exchange, demonstrating an intellectual curiosity and appreciation for complexity\u2014an intention that aligns with someone who identifies as a history teacher, as it reflects their professional interest and likely personal passion for the subject matter. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement appears to be an attempt to connect with a complex historical figure through emotional framing\u2014specifically, attributing a relatable feeling (love for animals) to understand his motivations\u2014which directly aligns with their stated preference for human-centered narratives and emotional stakes, demonstrating their emotional learning style in practice. \n\nNO."
+            ],
+            [
+                4,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you the one-sentence reasoning and the YES/NO answer.\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement appears to be a test of whether Person A will engage with a highly emotionally-charged, human-centered narrative\u2014specifically, reframing a historically brutal figure through an empathetic lens\u2014which directly aligns with their stated preference for emotionally rich stories and understanding concepts through feelings, despite the historical inaccuracy. \n\nNO."
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s line is to prompt deeper, critical thinking and explore complex ethical considerations \u2013 a hallmark of a teacher\u2019s role \u2013 which directly aligns with their stated background as a teacher focused on facilitating thoughtful discussion, therefore there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The statement demonstrates an analytical, detached perspective focused on systems of justice and historical analysis, which contrasts with Person B\u2019s stated preference for emotionally-driven, human-centered narratives and empathetic connection, suggesting an intention to demonstrate intellectual understanding rather than emotional resonance. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to encourage further intellectual discussion and demonstrate thoughtfulness and open-mindedness, aligning with the role of a teacher who fosters critical thinking and values diverse perspectives; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind the statement is likely to test the other person\u2019s ability to engage with a deliberately absurd, emotionally charged narrative\u2014pushing boundaries to see if the other person will respond with empathetic exploration of the presented \u201cfeelings\u201d or challenge the factual inaccuracy\u2014which aligns with Person B\u2019s desire for human-centered narratives highlighting emotional stakes, even if ironically presented. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -213,7 +257,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s statement is to simplify a complex economic concept (supply and demand) in an accessible way, demonstrating a pedagogical approach likely stemming from their role as a teacher, which aligns with their background of being an educator who would naturally explain concepts clearly. \n\nNO"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to explore a \u201cwhat if\u201d scenario and playfully consider the implications of a novel system, aligning with their described love of brainstorming and exploring possibilities, rather than presenting a serious economic proposal. \n\nNO"
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s statement, framed as a teacher explaining a core economic principle of scarcity, is to impart knowledge and encourage logical thinking\u2014a behavior perfectly consistent with someone in a teaching role; therefore, the line aligns with their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind the question is to explore a possibility within the established \u201cwhat if\u201d scenario, playfully extending the concept to its logical (and slightly absurd) extreme to stimulate further brainstorming, which directly aligns with Person B\u2019s described Creative-Divergent learning style and preference for exploring multiple possibilities through dialogue. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to introduce a nuanced, slightly pessimistic, and economically-minded perspective on utopian ideals, suggesting they possess critical thinking skills and a realistic outlook\u2014this aligns with the background of a teacher who would likely need to explain complex concepts and potential drawbacks to students, fostering a balanced understanding rather than naive optimism. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind the question is to explore a \u201cwhat if\u201d scenario and playfully consider the implications of a concept (trading everything), aligning perfectly with Person B\u2019s described preference for brainstorming possibilities and exploring imaginative twists, thus demonstrating no contradiction. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to explain a basic economic principle \u2013 scarcity and opportunity cost \u2013 in a clear, pedagogical manner, likely demonstrating a desire to appear knowledgeable and helpful, which aligns with the background of being a teacher who would naturally explain concepts; therefore, the line does not contradict their background. \n\nNO\n"
+            ],
+            [
+                7,
+                "The intention of Person B\u2019s statement is to logically analyze a scenario and point out a potential consequence, demonstrating a move *towards* practical consideration rather than purely imaginative brainstorming, which feels slightly at odds with a learning style that *thrives* on endless possibilities and \u201cwhat if\u201d scenarios without immediately grounding them in reality. \n\nYES"
+            ],
+            [
+                8,
+                "Please provide the background of Person A. I need that information to evaluate the intention of their statement and determine if it contradicts their background. Once you provide the background, I will give you the one-sentence reasoning and the YES/NO answer."
+            ],
+            [
+                9,
+                "The intention behind the question is to explore a \u201cwhat if\u201d scenario and playfully consider the potential outcomes of a concept (universal trading), directly reflecting Person B\u2019s described preference for brainstorming multiple possibilities and exploring imaginative twists, thus aligning with their Creative-Divergent learning style. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -321,7 +409,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.4,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the provided background of Person A being a teacher explaining foreshadowing. \n\nOnce you provide the line, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to demonstrate understanding and synthesize the previous point by restating it in their own terms with an analogy, which directly aligns with their described reflective learning style of pausing, summarizing, and seeking comprehension through restatement; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A posing this question is to foster deeper connection by encouraging Person B to share a personal, problem-solving experience, revealing their thought process and potentially their personality\u2014a tactic consistent with a teacher aiming to understand a student's cognitive abilities and build rapport. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement appears to be building rapport and illustrating a problem-solving approach through a personal anecdote, rather than a reflective summarization or clarifying question, which deviates from their described learning style of pausing to reflect and ask precise follow-ups; therefore, it contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s line is to build rapport and show genuine interest in Person B\u2019s experience by acknowledging their challenge and highlighting a positive aspect of it, which aligns with the background of a teacher who would naturally encourage and find learning opportunities in everyday activities; therefore, the line does not contradict the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention of Person B\u2019s statement is to offer a relatable anecdote as a way to demonstrate understanding and potentially build rapport by illustrating a problem-solving approach, which aligns with a reflective learning style as it involves recalling and sharing a past experience to illuminate a current point; therefore, the line does not contradict the provided background. \n\nNO."
+            ],
+            [
+                6,
+                "The intention of Person A's statement is to encourage and validate Person B's analytical skills and progress in understanding a mystery, acting as a supportive educator\u2014this aligns with the background of being a teacher who would naturally offer such guidance and reinforcement. \n\nNO."
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to demonstrate understanding of the prior discussion by summarizing the concept of foreshadowing in their own terms, which directly aligns with their reflective learning style of pausing, summarizing, and restating points for comprehension; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to explain a complex literary concept (foreshadowing) in a clear, engaging, and accessible way, demonstrating patience and a knack for teaching\u2014qualities consistent with someone identified as a \u201cTeacher,\u201d suggesting the line aligns with their professional role and likely personality. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B immediately offering a concluding sentence feels like an attempt to *end* the conversation rather than continue the reflective process of deepening comprehension through follow-up questions and restatement, which directly contradicts their stated learning style and approach to dialogue. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -429,7 +561,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s line is to engage the other person in a stimulating, imaginative thought experiment and demonstrate enthusiasm for history and education, which aligns with the background of a teacher who would naturally aim to inspire learning and curiosity in others. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is enthusiastic engagement and a clear expression of interest in further learning, demonstrated by wanting to explore a specific aspect (the legal system) \u2013 this aligns with a reflective learner who processes information and then seeks deeper understanding through focused inquiry, rather than a quick, superficial response. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to present themselves as knowledgeable, thoughtful, and capable of discussing historical and complex subjects, aiming to impress Person B with their intellectual depth\u2014this aligns with a teacher\u2019s background, as imparting knowledge and demonstrating expertise is central to their profession. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The statement demonstrates active listening and a summarizing of the previous speaker's point\u2014highlighting thoroughness, justice, and fairness\u2014which aligns with Person B\u2019s reflective learning style of pausing to comprehend and restating ideas, indicating an intention to show understanding before formulating a follow-up question. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s detailed, informative response is to demonstrate knowledge and engage in a thoughtful, educational manner, which aligns with the role of a \u201cTeacher\u201d as provided in their background, suggesting they are comfortable sharing expertise and fostering understanding. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s line is to affirm understanding and demonstrate active listening by restating and acknowledging the previous speaker\u2019s point, which directly aligns with a reflective learning style characterized by summarizing and clarifying comprehension before moving forward in conversation; therefore, the line does not contradict the provided background. \n\nNO."
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s statement is to demonstrate knowledge and engage in an informative, perhaps intellectually stimulating, conversation, aligning with the role of a teacher who would naturally share educational insights; therefore, the statement does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The line demonstrates a comprehensive understanding and restatement of a complex topic \u2013 Roman law \u2013 mirroring Person B\u2019s reflective learning style of summarizing and rephrasing information to demonstrate comprehension, thus aligning with their described background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention of Person A's statement is to demonstrate knowledge and provide a clear, informative explanation of a historical topic, likely aiming to appear intelligent and capable of thoughtful discussion \u2013 this aligns perfectly with the background of a teacher who would naturally possess and convey such information as part of their profession. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The statement demonstrates a summarizing and appreciative response, reflecting comprehension and acknowledging the value of the information shared \u2013 aligning perfectly with Person B\u2019s reflective learning style of pausing to process and restating in their own words \u2013 therefore it does not contradict their background. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -537,7 +713,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the statement and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "The line expresses enthusiasm for a historical topic and a desire for immersive exploration, which doesn\u2019t directly relate to or contradict Person B\u2019s preference for *simulated technology* as a learning tool\u2014it simply indicates an interest that could *potentially* be explored *through* such a simulation, aligning with their tech-enhanced learning style if framed as a virtual tour or interactive model. \n\nNO"
+            ],
+            [
+                2,
+                "The line simply presents historical information about Versailles, intending to educate or contribute to a discussion \u2013 a perfectly reasonable intention for someone identified as a \"Teacher,\" and thus aligns with their professional background and expected communication style. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s line appears to be expressing enthusiastic engagement with a historical topic, likely as a setup for a simulated exploration\u2014perhaps imagining a virtual tour\u2014which aligns with their stated preference for tech-enhanced learning and conversational simulations, rather than contradicting it. \n\nNO"
+            ],
+            [
+                4,
+                "Please provide the background of Person A. I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement appears to be a genuine expression of aesthetic appreciation and imaginative engagement with a visual scene, which doesn\u2019t directly relate to or contradict their technology-focused learning style described as thriving on *simulations* of digital tools and interactive questioning; therefore, it\u2019s reasonable to assume this is a moment of personal observation outside of their preferred learning mode. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the background of Person A. I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you the one-sentence reasoning and the YES/NO answer.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the statement appears to be expressing aesthetic appreciation and engaging in descriptive conversation, which doesn't directly utilize or request a technology-enhanced simulation as Person B typically prefers, thus deviating from their established conversational pattern. \n\nYES"
+            ],
+            [
+                8,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to express romantic or aesthetic appreciation for a physical, real-world environment, which sharply contrasts with their stated preference for technologically-mediated interactions and simulations, indicating a desire for experiences *outside* of digital engagement. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.2,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -645,7 +865,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "It's impossible to evaluate the intention or determine a contradiction without knowing what Person A *said* \u2013 the provided text only describes a \"Teacher\" speaking about Van Gogh, not a line from Person A; therefore, I cannot assess alignment with Person A\u2019s background as there is no statement from Person A to analyze.\n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to express appreciation for art by connecting it to the natural world through imagery (\u201clandscapes and flowers,\u201d \u201cliving paintings\u201d), which directly aligns with their stated preference for vivid, nature-based connections to make things feel \u201calive\u201d and familiar, as described in their background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s line is to establish rapport and demonstrate enthusiasm for art, offering a collaborative and engaging learning experience, which aligns perfectly with the background of someone identifying as a teacher who would naturally foster curiosity and exploration in others. \n\nNO."
+            ],
+            [
+                3,
+                "The intention behind the statement is to express a natural curiosity and a desire to understand the world through observation of natural beauty, which directly aligns with Person B\u2019s established preference for connecting to new information through vivid imagery and the natural world as described in their background. \n\nNO"
+            ],
+            [
+                4,
+                "The intention of Person A's statement is to share knowledge about color patterns in nature and connect it to art, demonstrating a thoughtful and educational approach\u2014a behavior fully consistent with being a teacher\u2014and therefore doesn\u2019t contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to connect an artistic concept (van Gogh\u2019s paintings) to a natural phenomenon (seasonal color changes in flowers), employing vivid imagery (\u201crainbow painted on a canvas\u201d) which aligns perfectly with their stated Naturalistic learning style and preference for nature-based metaphors; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                6,
+                "The line demonstrates a pedagogical approach, offering a specific, thoughtful suggestion for further exploration based on a student's expressed interest, which directly aligns with the background of someone who is a teacher and focused on guiding learning; therefore, the intention is consistent with the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to express enthusiasm for a topic directly related to the natural world \u2013 flower colors and their environmental influences \u2013 which perfectly aligns with their stated preference for learning through connections to nature and vivid imagery, demonstrating no contradiction to their background. \n\nNO"
+            ],
+            [
+                8,
+                "The teacher's suggestion demonstrates a nurturing and intellectually stimulating intention, aiming to further the student's existing interest through guided exploration \u2013 this aligns perfectly with the role of a teacher who would naturally foster curiosity and learning, therefore not contradicting their background. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to express enthusiasm for a topic directly connected to the natural world\u2014specifically, the interplay of light, weather, and floral color\u2014which aligns perfectly with their stated Naturalistic learning style and preference for vivid, nature-based imagery, demonstrating no contradiction. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -753,7 +1017,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line simply presents a factual statement about Napoleon, intending to share historical knowledge or initiate a discussion about history\u2014an intention that aligns perfectly with the background of someone who is a teacher, as imparting knowledge is central to their profession. \n\nNO."
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement appears to be admiring a historical figure\u2019s accomplishments without personal reflection or connection to values, which contrasts sharply with their described Intrapersonal learning style focused on relating information to personal experiences and goals. \n\nYES"
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s statement is to demonstrate intellectual depth, historical knowledge, and an appreciation for leadership\u2014qualities consistent with someone who identifies as a teacher and likely enjoys discussing complex subjects and imparting knowledge; therefore, the line aligns with the background. \n\nNO"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s question is to understand the *mechanics* of motivation \u2013 a focus on *how* something works \u2013 rather than immediately relating it to personal values or experiences, which contrasts with their stated preference for self-referential learning and connecting content to their own life; therefore, the line contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth, historical knowledge, and an appreciation for leadership qualities \u2013 qualities a teacher would likely possess and even discuss with a student or peer \u2013 and therefore aligns with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement appears to be offering a thoughtful analysis of Napoleon, focusing on a leadership quality\u2014a demonstration of understanding and critical thinking\u2014rather than immediately relating it back to personal values or experiences as their learning style dictates, suggesting a departure from their typical self-referential approach. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth, strategic thinking, and an appreciation for leadership and historical analysis, which aligns with a background suggesting someone who is educated, thoughtful, and potentially interested in history or leadership studies; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The statement demonstrates analytical thinking and focuses on external factors contributing to Napoleon\u2019s success\u2014analyzing strategy and impact\u2014rather than relating the topic to personal values or experiences as a student with an intrapersonal learning style would typically do, suggesting a shift away from self-referential thought. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A posing a complex, historically-focused question is to gauge Person B\u2019s intellectual depth and engage in a thoughtful discussion, which aligns with a teacher\u2019s role of assessing understanding and fostering learning, and therefore doesn\u2019t contradict their stated background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement appears to be demonstrating analytical understanding and offering a thoughtful, objective assessment of Napoleon, which doesn\u2019t immediately connect the topic to personal values or experiences as someone with an Intrapersonal learning style would typically do; therefore, it deviates from their described preference for self-referential learning and relating topics to personal goals. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Education",
@@ -861,7 +1169,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line spoken by Person A is a straightforward, factual statement explaining a historical document, indicating an intention to inform or demonstrate knowledge\u2014this aligns with the role of a teacher who would be expected to possess and convey such information, and doesn't suggest any hidden motive or contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The line appears to be a statement of understanding, likely intended to signal attentiveness and encourage further discussion, which aligns with Person B\u2019s interpersonal learning style of engaging deeply with a partner and co-constructing ideas through back-and-forth talk by demonstrating they are actively processing information and ready for the next step in the conversation; therefore, it does not contradict their background. \n\nNO"
+            ],
+            [
+                2,
+                "This statement demonstrates Person A\u2019s intention to share foundational knowledge about American principles and engage in a thoughtful, perhaps even educational, discussion, which aligns with the background of a teacher who would naturally share information and foster understanding; therefore, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to demonstrate knowledge and contribute to a discussion in a formal, almost academic manner, which doesn\u2019t fully utilize the back-and-forth, co-constructive approach typical of someone who thrives in interpersonal learning and one-on-one exchanges; therefore, the statement feels more like delivering information *to* someone rather than engaging *with* them. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to demonstrate knowledge and engage in an intellectual discussion, potentially signaling intelligence and a thoughtful nature, which doesn't inherently contradict being a teacher as it aligns with the expected skillset and knowledge base of an educator. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement appears to be demonstrating knowledge and perhaps subtly steering the conversation towards a more formal, academic discussion, which contrasts with the background indicating a preference for deeply personal, co-constructed dialogue and interpersonal exchange rather than delivering pre-prepared statements. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A stating a foundational principle of American law is likely to demonstrate knowledge, potentially establish common ground through shared civic understanding, or subtly signal intelligence and thoughtfulness \u2013 all of which align with the role of a teacher who would be expected to possess and convey such information, therefore not contradicting their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to demonstrate understanding and build upon a previous point made by Person A, furthering a thoughtful, back-and-forth exchange of ideas\u2014a behavior directly aligned with their described Interpersonal learning style and preference for deep, one-on-one conversational co-construction; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to demonstrate knowledge and articulate a foundational principle of American governance, which aligns with the expectation of a teacher to be knowledgeable and convey educational concepts; therefore, the statement does not contradict their background. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement appears to be demonstrating knowledge and initiating a more formal, lecture-style contribution to the conversation rather than continuing the back-and-forth exchange characteristic of their interpersonal learning style, which contradicts their stated preference for co-constructing ideas through dialogue. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -969,7 +1321,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.2
+        "P2_prompt_2_stage_consistency_score": 0.2,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This isn\u2019t a line spoken *by* Person A, but rather a statement *from* a teacher\u2014therefore, there\u2019s no intention to evaluate or background to contradict, as it's simply a factual statement about evolution; therefore, it doesn\u2019t contradict any potential background of Person A. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind the question demonstrates curiosity and a desire for intellectual exploration, aligning with a solitary learner\u2019s preference for self-directed learning and independent reflection prompted by engaging concepts, rather than requiring direct, immediate interaction or a structured dialogue. \n\nNO"
+            ],
+            [
+                2,
+                "This line isn't a statement *by* Person A, but a teacher *to* Person A \u2013 therefore, there is no intention to evaluate, and no background against which to compare it, so it cannot contradict anything about Person A; thus, the question is unanswerable as posed. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement appears to be demonstrating knowledge and engaging in direct, responsive discussion\u2014a behavior that contrasts with their stated preference for self-guided prompts, independent reflection, and using chat as a space *before* sharing conclusions, suggesting a shift from solitary processing to immediate externalization of thought. \n\nYES"
+            ],
+            [
+                4,
+                "The intention of Person A's statement is to educate and share knowledge about evolutionary biology, presenting a scientific viewpoint\u2014this aligns perfectly with the background of being a teacher, whose profession centers around imparting information and fostering understanding, and therefore does not contradict it. \n\nNO."
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to directly *answer* a question, demonstrating knowledge and offering a clear response without prompting further self-reflection or dialog, which directly clashes with their stated preference for self-guided prompts and independent thought processes as a solitary learner needing think-time. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement is to share a foundational scientific principle \u2013 evolution by natural selection \u2013 and demonstrate knowledge or interest in biology, which doesn\u2019t inherently contradict being a teacher as educators often share knowledge and foster understanding of core subjects; therefore, the line aligns with the background. \n\nNO\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement appears to be a direct, readily-offered answer to an implied question about evolution, demonstrating a willingness to engage in conventional back-and-forth rather than requesting personalized prompts and reflective time, which contradicts their stated preference for self-guided learning and independent reflection. \n\nYES\n\n\n\n"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to educate and share a foundational concept in biology, demonstrating intellectual curiosity and a desire to impart knowledge, which aligns with the background of being a teacher who would naturally explain complex topics; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                9,
+                "The intention behind Person B directly responding with a prepared answer to a \u201cteacher\u2019s question\u201d suggests a desire for external validation and structured academic engagement, which clashes with their stated preference for self-guided exploration and independent reflection within a safe, conversational space; therefore, the line contradicts their background. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Education",
@@ -1077,7 +1473,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.4
+        "P2_prompt_2_stage_consistency_score": 0.4,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s statement is to establish themselves as knowledgeable and capable of explaining complex topics in a clear, concise manner, which aligns with the background of being a teacher who is providing an overview of the Solar System; therefore, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement appears to be expressing enthusiastic agreement and acknowledging a basic understanding of the solar system, which doesn\u2019t reflect their established pattern of immediately diving into research details and critical evaluation\u2014a hallmark of their research-oriented learning style\u2014but rather a simple statement of fact. \n\nYES"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth, a passion for learning, and a desire to share knowledge\u2014qualities consistent with someone identifying as a teacher, suggesting the line aligns with their background rather than contradicting it. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The statement expresses wonder and appreciation for a complex system, indicating an emotional response to the topic rather than a critical, research-focused interrogation of evidence, which doesn\u2019t align with Person B\u2019s established learning style of dissecting information and seeking methodological details. \n\nYES"
+            ],
+            [
+                4,
+                "The intention of Person A (identified as \"Teacher\") is to provide informative, educational content and steer the conversation towards a scientific topic, demonstrating expertise and a desire to share knowledge, which aligns perfectly with the role of a teacher and suggests a background steeped in education and potentially astronomy/physics. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s enthusiastic statement appears to be simple agreement and acknowledgement of a basic fact, demonstrating interest in continuing the conversation rather than immediately launching into critical analysis, which doesn't align with their stated research-oriented learning style of immediately interrogating information. \n\nYES"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s statement is to provide factual information and establish themselves as knowledgeable or helpful, which aligns with the background of being a \u201cTeacher\u201d as educators routinely share information and explain concepts; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The line expresses enthusiasm for collaborative exploration and a generally positive, wonder-focused approach to the topic, indicating an intention to broadly *experience* the subject matter rather than immediately dissecting it through research critique, which doesn\u2019t align with Person B\u2019s stated learning style of interrogating studies and critically evaluating evidence. \n\nYES\n\n\n\n"
+            ],
+            [
+                8,
+                "The intention behind Person A's line is to establish themselves as knowledgeable, enthusiastic, and capable of explaining complex topics in an accessible way, aiming to impress Person B with their intelligence and passion for astronomy\u2014this aligns with a teacher background as it demonstrates pedagogical skill and subject matter expertise. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention of the statement appears to be expressing wonder and appreciation for a scientific concept, which doesn't inherently align with Person B\u2019s described preference for *interrogating* studies and critically evaluating evidence \u2013 instead, it\u2019s a more emotive, less analytical response. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Education",
@@ -1185,7 +1625,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth and a nuanced understanding of classic literature, presenting themselves as thoughtful and capable of complex analysis\u2014this aligns with the background of a teacher who would naturally possess and articulate such knowledge and analytical skills. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s question demonstrates a desire to understand the concept of hubris *through* a specific example within a narrative\u2014actively seeking a story-based explanation to solidify comprehension, which directly aligns with their adaptive learning style and stated preference for utilizing stories as a learning modality. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth, analytical thinking, and a capacity for nuanced understanding of classic literature, aligning with the expectation of a teacher who would likely discuss such themes with a student or peer; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to demonstrate thoughtful analysis and engage in a deeper, conceptually-driven discussion\u2014a strategy that aligns with their adaptive learning style by utilizing analytical thinking and seeking to understand underlying themes, rather than simply accepting information at face value, which is consistent with their metacognitive approach to learning. \n\nNO\n\n\n\n"
+            ],
+            [
+                4,
+                "The intention behind Person A's line is to demonstrate intellectual depth and a penchant for analyzing character flaws through a literary lens, likely aiming to impress Person B with their thoughtful nature, which aligns with the background of a teacher who would naturally discuss themes of tragedy and character analysis. \n\nNO."
+            ],
+            [
+                5,
+                "Person B\u2019s statement demonstrates analytical thinking and a nuanced understanding of a complex concept, actively engaging with the presented analogy and offering a thoughtful counterpoint\u2014an intention that aligns perfectly with their described adaptive learning style and metacognitive approach to absorbing information by processing and re-framing it. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to demonstrate nuanced thinking and a capacity for complex analysis, characteristic of an educator who encourages deeper understanding rather than simple judgment, which aligns perfectly with the provided background of being a teacher who is discussing literature; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to demonstrate analytical thinking and apply a concept (the teacher\u2019s analogy) to deepen understanding, which directly aligns with their described adaptive learning style of monitoring and utilizing effective modalities for comprehension; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s line is to demonstrate thoughtful analysis, a nuanced understanding of literature, and a capacity for complex reasoning\u2014traits consistent with someone in a teaching profession who would likely encourage critical thinking about character motivations; therefore, the line aligns with the background of a teacher. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to demonstrate comprehension and analytical thinking by directly applying and interpreting the teacher\u2019s analogy, which aligns perfectly with their described adaptive learning style of actively processing information and identifying effective learning modalities (in this case, analogies), therefore not contradicting their background. \n\nNO\n\n\n\n"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1293,7 +1777,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The line is a straightforward statement of educational intent, outlining the scope of a history lesson on World War II, and as Person A is identified as a \"Teacher,\" this aligns perfectly with their professional role and expected communication style; therefore, it does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s line is to actively participate in and encourage the use of mnemonics for learning, directly reflecting their stated learning style and preference for verbal encoding, thus aligning perfectly with their background. \n\nNO."
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s line is to establish a playful, enthusiastic, and mentoring dynamic, positioning themselves as a knowledgeable guide eager to share historical learning \u2013 this aligns with the background of being a \"Teacher\" who would naturally adopt such a pedagogical and encouraging tone. \n\nNO."
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s line is to enthusiastically express readiness to *receive* and utilize mnemonics, which directly aligns with their stated learning style and preference for memory aids, demonstrating they are actively seeking the very tool they described relying on. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A initiating a discussion about the \u201cdark side of humanity\u201d and WWII survival suggests a desire for intellectual engagement and a willingness to confront difficult topics, which aligns with the role of a \u201cTeacher\u201d who is expected to facilitate learning about complex historical events; therefore, the line does not contradict the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to initiate a complex, potentially lengthy discussion on a historically dense topic, which doesn\u2019t immediately leverage their stated preference for simplifying information through mnemonic devices\u2014instead, it dives directly into a challenging subject matter without requesting a memory aid to process it; therefore, the line contradicts their background. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to express a strong belief in the importance of justice, equality, and resisting oppression, likely aiming to signal their values and establish common ground with the other person; this aligns with the background of a teacher who would logically impart lessons on historical atrocities and the importance of safeguarding rights and freedoms, and doesn\u2019t present a contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s intention is to connect a complex, abstract concept (fascist ideologies) to a memorable, personal association (a song about a knight) to aid understanding and retention, which directly aligns with their mnemonic learning style of using vivid mental images and associations to encode information; therefore, the statement does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "This statement appears to be a historical observation and expression of condemnation regarding fascism and its consequences, intending to convey knowledge and a negative moral stance\u2014an intention that aligns with a teacher's role and doesn't inherently contradict any aspect of the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s statement demonstrates an attempt at evocative description and emotional impact rather than a request for a mnemonic device, which doesn\u2019t align with their established pattern of seeking memory aids to process information; therefore, the line contradicts their background. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -1401,7 +1929,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and whether it contradicts their background as a \"Teacher\" discussing Medusa. \n\nOnce you provide the line, I will give you the analysis and the YES/NO answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement presents a hypothetical alteration to a myth (glass hair for Medusa) and explores its consequences\u2014seeing the future and avoiding petrification\u2014which directly embodies their \u201ctrial-and-error\u201d learning style of mentally testing ideas and discussing outcomes, aligning perfectly with their described background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s correction is to demonstrate intellectual precision and a desire for factual accuracy, likely stemming from a personality that values knowledge and careful consideration\u2014traits consistent with someone who is a teacher and therefore dedicated to imparting correct information; therefore, the line aligns with their background. \n\nNO\n"
+            ],
+            [
+                3,
+                "Person B\u2019s intention is to propose a hypothetical alteration to a scenario (Medusa\u2019s hair) to explore its potential impact on a known outcome (turning people to stone), which directly reflects their Trial-and-Error learning style of mentally testing ideas and using imagined experiments for discussion, thus aligning with their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s line is to demonstrate intelligence, a penchant for logical reasoning, and a playful engagement with hypothetical scenarios, which aligns with the background of a teacher who would naturally employ and value these skills; therefore, the statement does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s statement demonstrates a clear \u201cwhat if\u201d scenario\u2014a mental experiment exploring a modification to a mythical element and its logical consequences\u2014which directly aligns with their described Trial-and-Error learning style of mentally testing ideas and discussing outcomes, thus showing no contradiction. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Person A's line is to offer a creative, metaphorical, and abstract explanation \u2013 demonstrating a penchant for imaginative thinking and a willingness to explore concepts beyond literal interpretations, which aligns with the background of a teacher who would likely encourage such thought processes and creative problem-solving. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s statement demonstrates a clear intention to mentally test an idea by proposing a modification to the established myth of Medusa \u2013 altering a variable (hair material) to explore a potential outcome (remote petrification) \u2013 which directly aligns with their described Trial-and-Error learning style and penchant for imagined experiments, thus showing no contradiction. \n\nNO."
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s line is to gently critique an idea while demonstrating knowledge and a willingness to engage in thoughtful discussion, suggesting they are intellectually curious and enjoy exploring complex concepts\u2014this aligns with the background of a teacher who would naturally dissect ideas and offer constructive feedback, rather than simply dismissing them. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s statement demonstrates a clear attempt to mentally test a detail within a mythological concept (Medusa\u2019s powers) by proposing a logical challenge to its established rules, perfectly aligning with their described Trial-and-Error learning style and habit of suggesting imagined experiments to explore outcomes; therefore, the statement does not contradict their background. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1509,7 +2081,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A's line is to educate and explain a fundamental economic principle in a clear, accessible way, demonstrating a patient and pedagogical approach \u2013 which aligns with the background of being a teacher who would naturally explain concepts to others. \n\nNO."
+            ],
+            [
+                1,
+                "Person B\u2019s intention is to explain a complex economic concept (supply and demand) using a vivid mental image (the playground), directly aligning with their mnemonic learning style and preference for anchoring facts with imagery, therefore demonstrating consistency with their background. \n\nNO"
+            ],
+            [
+                2,
+                "This line doesn't reveal anything about Person A's personal life or intentions beyond demonstrating understanding of basic economics, and as the speaker is identified as a \"Teacher,\" delivering an explanation of economic principles aligns perfectly with their professional background and expected role. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B is demonstrating an attempt to *explain* a concept in a clear, logical manner, breaking down supply and demand\u2014rather than *requesting* a mnemonic to *learn* the concept\u2014which doesn\u2019t align with their stated learning style of actively seeking memory aids, suggesting a shift towards simply understanding rather than encoding for recall. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A explaining supply and demand using a restaurant analogy is to simplify a complex economic concept and demonstrate an ability to break down information in an accessible way, which aligns with the background of a teacher who would regularly need to explain difficult topics to students. \n\nNO."
+            ],
+            [
+                5,
+                "Person B\u2019s intention with simply stating \u201cSure, here\u2019s the next sentence\u201d is to continue the information exchange without actively engaging with the content in a way that facilitates mnemonic device creation, which doesn't align with their established pattern of immediately seeking ways to *encode* information through memory aids; therefore, it contradicts their background. \n\nYES"
+            ],
+            [
+                6,
+                "This line isn't a statement *by* Person A, but rather a teacher presenting a sentence *to* Person A, so there is no intention to evaluate or background to contradict; it's simply a pedagogical statement. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s request for a memorable device to understand the relationship between supply, demand, and price stability directly aligns with their mnemonic learning style and habit of seeking verbal encoding techniques, demonstrating a consistent application of their established background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention of Person A's statement is to explain a complex economic concept (supply and demand) in a simple, relatable, and enthusiastic way, demonstrating a pedagogical approach and a desire to foster understanding \u2013 this aligns perfectly with the background of someone identified as a \"Teacher,\" as their profession inherently involves explaining concepts and encouraging learning. \n\nNO."
+            ],
+            [
+                9,
+                "Person B\u2019s line presents a descriptive summary rather than prompting for a mnemonic device, which contradicts their established pattern of *requesting* those aids to facilitate learning and retention, indicating a shift away from their preferred learning style in this instance. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -1617,7 +2233,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line is simply an explanation of a scientific principle and demonstrates knowledge/teaching ability, which aligns with the background of someone identified as a \"Teacher,\" showing no contradiction or misalignment in intention. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an attempt to *explain* a principle in a direct, declarative way, offering a foundational statement and a logical consequence\u2014a characteristic of someone who appreciates structured explanations and building understanding from core principles, which aligns perfectly with their stated preference for outlines and hierarchical breakdowns. \n\nNO."
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s statement is to demonstrate knowledge and engage in a thoughtful, analytical discussion, likely revealing an intellectual side and a willingness to explain concepts \u2013 this aligns with the \u201cTeacher\u201d title, suggesting a profession centered around imparting knowledge and understanding complex ideas, therefore there is no contradiction. \n\nNO\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s intention with the numbered list is to provide a clear, structured explanation of Archimedes\u2019 Principle, directly catering to their preference for hierarchical breakdowns and outlines as indicated in their background, thus aligning with their established learning style. \n\nNO"
+            ],
+            [
+                4,
+                "The intention of Person A's statement is to demonstrate intelligence, a capacity for abstract thought, and a desire to appear knowledgeable by explaining a physics concept using an analogy, which aligns with the background of being a teacher who would naturally employ such explanations; therefore, the line does not contradict the provided background. \n\nNO."
+            ],
+            [
+                5,
+                "Person B\u2019s line demonstrates a clear preference for structured, numbered explanations \u2013 precisely the type of hierarchical breakdown they typically request, indicating the intention is to provide information in a way that aligns with their learning style and doesn\u2019t contradict their background. \n\nNO"
+            ],
+            [
+                6,
+                "This line demonstrates Person A's intention to explain a complex physics concept in a detailed, instructional manner, which aligns with the background of a teacher who would naturally break down information for understanding; therefore, it does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention of Person B\u2019s statement is to immediately present a detailed, somewhat complex physics explanation without first establishing context or a foundational understanding with the other person, which directly clashes with their stated preference for structured, staged explanations and hierarchical breakdowns before details. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to demonstrate intelligence, knowledge of physics, and potentially establish themselves as someone intellectually capable \u2013 a subtle form of signaling \u2013 which doesn\u2019t inherently contradict a background of being a teacher, as educators are expected to possess and articulate knowledge; therefore, the line aligns with the background. \n\nNO\n"
+            ],
+            [
+                9,
+                "The intention of Person B\u2019s statement is to offer a concise summary, but this directly contradicts their established preference for structured, detailed breakdowns and staged explanations rather than jumping to conclusions without prior hierarchical organization; therefore, the line clashes with their learning style. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -1725,7 +2385,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Given the statement is simply a historical fact delivered as a teacher would, the intention is to educate and inform, which aligns perfectly with the background of Person A being a teacher, as their profession centers around imparting knowledge; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s response doesn\u2019t request any auditory processing or repetition of the information about Versailles, which contradicts their stated learning style of needing to hear and echo concepts to internalize them, suggesting a deviation from their typical conversational pattern. \n\nYES"
+            ],
+            [
+                2,
+                "Please provide the background of Person A! I need that information to evaluate the intention behind the line and determine if it contradicts their background. I cannot answer the question without knowing who Person A *is*. \n\nOnce you provide the background, I will give you a one-sentence reasoning followed by YES or NO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s line doesn\u2019t ask for a restatement or echo of the information, which is crucial for their auditory learning style and memory reinforcement, indicating an intention to simply acknowledge the information rather than actively process it in their preferred way. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to demonstrate knowledge and potentially impress Person B with their education or sophistication, which aligns with the background of being a teacher who would naturally possess and share historical information; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to demonstrate understanding and summarize the information presented, which aligns with their auditory learning style of internalizing knowledge through speech and repetition, as evidenced by their stated need to hear and rephrase concepts\u2014essentially echoing back what was said. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the background information for Person A! I need to know about Person A to evaluate their intention and determine if the statement contradicts it. I currently only have the statement itself, which appears to be a factual statement about the Palace of Versailles, and the role of \"Teacher\". \n\nOnce you provide Person A\u2019s background, I can give you a reasoned answer and a \"YES\" or \"NO\".\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B simply *presenting* information about Versailles, without requesting a restatement or asking for it to be echoed, suggests a passive reception of knowledge rather than the active, auditory processing they described as crucial to their learning, thus contradicting their stated learning style. \n\nYES"
+            ],
+            [
+                8,
+                "Please provide the background of Person A! I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s line doesn\u2019t request a restatement or echoing of the information about Versailles, which is precisely what their auditory learning style and stated conversational habits would prompt, suggesting an unusual deviation from their typical method of knowledge internalization. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Education",
@@ -1833,7 +2537,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s statement is to be helpful and informative, demonstrating knowledge and a willingness to share it, which aligns perfectly with the background of being a teacher who would naturally explain concepts to others; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an intention to use vivid imagery and spatial metaphors (\u201csuperhighway,\u201d \u201cspiderweb\u201d) to explain a complex system, directly aligning with their stated preference for \u201cword-pictures\u201d and spatial organization as a visual-spatial learner; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s statement is to educate and share knowledge in a clear, concise manner, which aligns perfectly with the background of a teacher who would naturally explain concepts to others; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s statement demonstrates an attempt to utilize visual imagery and describe a process in a step-by-step, spatially-oriented manner (the spiderweb of blood vessels), directly aligning with their stated preference for \u201cword-pictures\u201d and spatial organization to aid comprehension; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                4,
+                "This line is a straightforward, informative explanation of a biological concept, indicating an intention to educate or share knowledge, which aligns perfectly with the background of someone identified as a \"Teacher\" \u2013 a role inherently focused on imparting information \u2013 and therefore doesn't present a contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s statement demonstrates an intention to share a visual and spatial analogy \u2013 blood vessels as a spiderweb and blood flow as a delivery system \u2013 directly aligning with their described preference for \u201cword-pictures\u201d and spatial thinking, thus confirming they are utilizing their learning style in the conversation. \n\nNO"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s line is to directly and factually *teach* Person B about a biological concept, presenting information in a clear, instructional manner, which aligns with the background of being a teacher who would naturally explain concepts to others; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s intention is to fulfill their stated need for \u201cword-pictures\u201d and demonstrate their understanding by *providing* a visual analogy (\u201cspiderweb\u201d) relating to the topic, which directly aligns with their described visual-spatial learning style and request for step-by-step descriptions to build a mental map; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                8,
+                "This line doesn\u2019t seem to be a conversational exchange between two people getting to know each other, but rather a teacher explaining a concept, so interpreting an intention beyond instruction is irrelevant and doesn't contradict a background as there *is* no established background for a conversational partner; therefore, it doesn\u2019t align or misalign with any prior interaction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s statement demonstrates an attempt to solidify understanding by creating a spatial analogy (\u201clike a spiderweb\u201d) to help visualize the circulatory system\u2019s function, which directly aligns with their stated preference for mental imagery and \u201cword-pictures\u201d to organize information, thus demonstrating no contradiction. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -1941,7 +2689,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.2
+        "P2_prompt_2_stage_consistency_score": 0.2,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s statement is to educate and engage in intellectual discussion, presenting information in a structured and thoughtful manner characteristic of an educator; given that Person A is identified as a \u201cTeacher,\u201d this intention aligns perfectly with their professional background and expected communication style. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The line demonstrates eagerness and an open-ended question inviting a broad discussion, indicating a desire for external engagement and rapid information exchange, which clashes with Person B\u2019s stated preference for self-guided reflection and a solitary learning style where they typically *request* questions rather than initiating them and prefer think-time before responding. \n\nYES"
+            ],
+            [
+                2,
+                "The line appears to be a straightforward, factual statement delivered in a pedagogical tone, intending to share knowledge and initiate discussion \u2013 a behavior perfectly consistent with someone identified as a \"Teacher,\" suggesting no contradiction or misalignment with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s line demonstrates an intention to initiate a broad, open-ended discussion with multiple questions, directly *contrasting* with their stated preference for self-guided, personalized prompts and independent reflection, as it feels like an attempt to lead the conversation rather than solicit a tailored prompt for their own thought process. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s detailed historical overview is to demonstrate knowledge and engage in a thoughtful, intellectually stimulating conversation, which aligns with the background of being a teacher who would naturally explain complex topics \u2013 therefore, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind the statement is to directly *answer* a question or prompt with factual information, demonstrating knowledge and contributing to the conversation\u2019s flow\u2014a direct offering of response rather than a request for prompting or reflection time, which contradicts Person B\u2019s stated preference for self-guided dialog and independent thought. \n\nYES"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s statement is to demonstrate intellectual depth and a grasp of socio-economic history, likely aiming to impress Person B with their knowledge\u2014this aligns with a teacher background as educators frequently discuss and analyze such topics, making it a natural expression of their expertise and not a contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The statement appears to be offering a pre-formed analysis of a complex topic, rather than inviting a personalized, reflective dialogue as someone with a solitary learning style would likely prefer, thus contradicting their stated preference for self-guided prompts and independent thought; therefore, it doesn\u2019t align with their background. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to demonstrate intellectual depth, critical thinking about socio-economic issues, and a potentially pessimistic outlook on technological advancement\u2014traits that align with someone identifying as a \"Teacher,\" as educators often analyze complex societal trends and their impacts; therefore, the statement does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The statement appears to be an unsolicited offering of a complex thought\u2014a pre-formed conclusion\u2014rather than a response to a personalized prompt allowing for independent reflection, thus contradicting Person B\u2019s stated preference for self-guided dialogue and independent thought processes. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Education",
@@ -2049,7 +2841,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line simply provides a factual definition of Communism, intending to educate and offer information \u2013 a behavior perfectly consistent with someone identified as a \u201cTeacher\u201d whose role involves imparting knowledge, therefore aligning with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s question is to initiate a complex, open-ended discussion requiring independent thought and analysis, which aligns with their stated preference for self-guided prompts and reflection, rather than contradicting it. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to provide a neutral, informative explanation of a complex political concept, demonstrating a willingness to educate and engage in thoughtful discussion, which aligns with the background of a teacher who would likely value clarity and objective explanation; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                3,
+                "Person B\u2019s line demonstrates an intention to initiate a complex, open-ended discussion requiring independent thought and analysis\u2014a request for a self-guided prompt aligning perfectly with their stated preference for solitary learning and reflective conversation\u2014and thus does not contradict their background. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to objectively explain the functional aspects of a communist society, presenting it as a system with defined structures for citizen welfare, which aligns with the background of a teacher who would likely aim for neutral explanation rather than advocacy; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind the question is to solicit a complex, analytical response from Person A, essentially outsourcing their own thinking and seeking a pre-packaged answer rather than engaging in self-guided reflection, which directly contradicts Person B\u2019s stated preference for independent thought and personalized, self-directed inquiry. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to subtly express support for communist ideologies by framing state-provided welfare as a stepping stone towards a classless, cooperative society, which contradicts a background that has not indicated any prior leaning towards collectivist political philosophies; therefore, it is unexpected and suggests a hidden inclination. \n\nYES.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the question is to initiate a complex, externally-directed discussion requiring immediate response and debate, which clashes with Person B\u2019s stated preference for self-guided prompts, independent reflection, and a safe space for *their* conclusions\u2014not analyzing a pre-set political question. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to express a positive view of communist ideology, framing state-provided welfare as a step *towards* communism, which contradicts the typical stance of a teacher who would generally be expected to promote critical thinking and democratic values rather than advocating for a system that historically suppresses individual freedoms and dissent. \n\nYES.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind the question is to steer the conversation towards a complex, externally-focused political analysis requiring immediate response, which clashes with Person B\u2019s stated preference for self-guided reflection and personalized prompts designed for *their* internal processing, not evaluating another\u2019s ideas. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -2157,7 +2993,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the provided background of being a \"Teacher.\" \n\nOnce you provide the line, I will give you a one-sentence explanation and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an attempt to *provide* evocative imagery and emotional detail\u2014essentially \u201cpainting a word-picture\u201d about the Taj Mahal\u2014which directly aligns with their stated need for step-by-step descriptions and sensory details to build a mental map, indicating the intention is consistent with their learning style. \n\nNO."
+            ],
+            [
+                2,
+                "Given the prompt lacks a background for \"Person A\" (only stating they are referred to as \"Teacher\"), it's impossible to evaluate contradiction; however, assuming the \"Teacher\" title implies an educational role, the line's intention to enthusiastically introduce and romanticize a historical landmark aligns with a teacher\u2019s potential desire to engage a student with learning, making a contradiction unlikely. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s statement demonstrates a clear understanding and proactive application of their preferred learning style by offering to visualize and then describing the Taj Mahal with detailed, imagery-focused language (\u201csunlight dances through intricate arches\u201d), directly aligning with their stated need for \u201cword-pictures\u201d to build mental maps; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                4,
+                "Please provide the background of Person A. I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s intention is to provide the detailed, evocative \u201cword-picture\u201d they specifically requested from the other person to aid their visual-spatial processing, directly aligning with their stated learning style and conversational preference; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s line is to express a deep appreciation for beauty, evoke emotion through descriptive language, and share a sense of wonder \u2013 qualities strongly indicative of someone with a background as a teacher who likely aims to inspire and cultivate appreciation in others, aligning with the poetic and evocative nature of the statement. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s intention is to provide vivid, descriptive imagery\u2014specifically using a simile (\u201clike a thousand tiny stars\u201d) to help the other person visualize the scene\u2014which directly aligns with their stated preference for \u201cword-pictures\u201d and spatial organization through detailed descriptions, demonstrating a clear understanding and application of their own learning style. \n\nNO"
+            ],
+            [
+                8,
+                "Please provide the background information for Person A. I need to know something *about* Person A to evaluate whether the line and its interpreted intention align with their background. Once you provide that, I will give you the one-sentence reasoning and the YES/NO answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s intention with this line is to provide a richly detailed and evocative description \u2013 a \u201cword-picture\u201d \u2013 precisely as they requested, demonstrating they are actively trying to facilitate their own understanding through the imagery they asked for, which aligns perfectly with their stated visual-spatial learning style and conversational preference. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -2265,7 +3145,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s statement is to reassure and create a positive, approachable atmosphere while discussing a potentially frightening mythological figure, demonstrating a nurturing and encouraging personality typical of a teacher\u2014which aligns with their stated profession. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention of Person B\u2019s statement is to begin building a shared imaginative scenario\u2014establishing a visual and emotional state (tangled hair, anger) as a starting point for a potential \u201cplay-through\u201d of how Medusa might *feel* and *react*, which aligns with their kinesthetic learning style of embodying concepts through imagined experience. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind the teacher\u2019s line is to encourage empathetic thinking and explore emotional responses to a fantastical scenario, aligning with a teacher\u2019s role to foster understanding and emotional intelligence\u2014a characteristic consistent with someone in an educational position\u2014and doesn't present any contradiction to the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to initiate a shared imaginative scenario \u2013 focusing on the *feeling* of being tangled, inviting Person A to verbally guide them through experiencing that sensation, which directly aligns with their kinesthetic learning style and preference for pretend play-throughs to understand concepts. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is playful and empathetic, attempting to connect with Person B\u2019s expressed frustration with their hair through a lighthearted, mythological comparison, which doesn\u2019t inherently contradict a teacher background as educators often use relatable analogies and demonstrate empathy; therefore, the line aligns with the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s statement intends to initiate a shared imaginative scenario \u2013 visualizing Medusa\u2019s hair as tangled snakes and her emotional state \u2013 which directly requests the other person to build a scene for them to mentally \u201cact out,\u201d aligning perfectly with their kinesthetic learning style and preferred conversational method of guided pretend play-throughs. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the background information for Person A. I need to know details about their personality, profession, experiences, and typical communication style to evaluate the intention behind the line and determine if it contradicts their background. \n\nOnce you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n"
+            ],
+            [
+                7,
+                "The intention of the statement is to create a vivid, metaphorical image\u2014appealing to sensory experience and emotional understanding\u2014rather than requesting a step-by-step, physically-oriented \u201cplay-through\u201d as described in their background, thus not aligning with their kinesthetic learning style need for guided enactment. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind the teacher's line is to offer a creative, metaphorical explanation to help someone understand a complex or frightening image (Medusa) by framing it in terms of natural power and movement, suggesting a thoughtful and pedagogically-minded approach\u2014which aligns with the background of a teacher who would naturally employ such techniques to facilitate understanding; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The student is attempting to visualize a state (tangled hair) as a concrete image to better understand a game mechanic (running out of rounds implying a negative outcome), aligning with their kinesthetic learning style of understanding through imagined scenarios and physical representation, even if abstract. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -2373,7 +3297,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A acting as a \"Teacher\" and providing a straightforward, neutral definition of dictatorship is to establish themselves as knowledgeable, reasonable, and capable of objective explanation, which aligns with a teaching background where clarity and impartiality are valued. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s request for an explanation of how a dictator exercises power, framed with a request for an example of resulting unfairness, directly aligns with their stated preference for thematic overviews broken down step-by-step to build a mental model of the concept, demonstrating a clear intention to understand the \u201cbig picture\u201d of dictatorship and its consequences. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A providing a definition of how a dictator exercises power is to offer a clear, informative response to a question (implied by \"here's an example\"), demonstrating knowledge and a willingness to educate, which aligns with the role of a teacher and thus doesn't contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to provide a direct example without offering a broader framework or inviting discussion about the *how* and *why* of this power dynamic, which clashes with their stated preference for thematic overviews and building mental models through step-by-step discussion; therefore, it contradicts their learning style. \n\nYES"
+            ],
+            [
+                4,
+                "The intention of Person A\u2019s statement is to educate and share knowledge, presenting a factual example related to political science, which aligns with the role of a teacher who would naturally explain concepts and provide illustrative examples; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to provide a concrete example illustrating a concept (dictatorships and oppression), which aligns with their conceptual learning style of building mental models through specific instances and understanding how parts contribute to a larger framework, rather than requesting a thematic overview or step-by-step explanation themselves; therefore, it does not contradict their background. \n\nNO."
+            ],
+            [
+                6,
+                "This line appears to be a straightforward, informative statement explaining the mechanisms of dictatorial control, demonstrating an analytical and educational intention\u2014an intention that aligns with the background of a teacher who would likely discuss such topics professionally and objectively. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s intention with this response is to provide a concise, step-by-step explanation of a concept \u2013 a direct offering of the thematic overview and framework they typically *request*, rather than seeking one themselves, which contradicts their described learning style of needing verbal mapping *from others* to build understanding. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s detailed explanation of how dictators maintain power seems to be establishing expertise or a desire to educate, potentially as a way to signal intelligence and thoughtfulness, which doesn't inherently contradict being a teacher\u2014in fact, it aligns perfectly with the role\u2014and therefore doesn\u2019t suggest a hidden or opposing motive. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B providing a concise conclusion is to *offer* a summarized framework, but this directly contradicts their stated learning style which prioritizes a step-by-step, verbally mapped, thematic overview *built through discussion*, rather than receiving a pre-formed conclusion. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -2481,7 +3449,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line appears to be an attempt at a playful, slightly absurd thought experiment designed to gauge Person B's responsiveness and sense of humor, rather than a serious physics lesson, and given no background information suggests Person A is a teacher or has any particular expertise in physics, the statement doesn't inherently contradict anything about them. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s intention is to connect a newly discussed concept (car speed and deceleration) to their personal experience with academic workload, demonstrating relevance and motivation through self-referential thinking, which directly aligns with their described Intrapersonal learning style and habit of sharing personal reflections. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A presenting a physics explanation is likely to demonstrate intelligence, share knowledge, or subtly assess Person B\u2019s understanding/intellectual level, which doesn\u2019t inherently contradict being a teacher as sharing expertise is part of the role; therefore, the line aligns with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention of Person B\u2019s statement appears to be demonstrating understanding of a physics concept, focusing on the *content* itself rather than relating it to personal experience or values, which is uncharacteristic of someone with an Intrapersonal learning style who would typically self-reference to solidify understanding; therefore, the line contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to demonstrate intelligence and knowledge, potentially seeking to impress Person B with their understanding of physics, which doesn\u2019t inherently contradict being a teacher as educators often possess and share expertise in various subjects; therefore, the statement aligns with the background. \n\nNO"
+            ],
+            [
+                5,
+                "Person B\u2019s intention is to connect a physics concept to a personal experience to aid understanding and motivation, which directly aligns with their described Intrapersonal learning style of relating topics to personal experiences and sharing reflections, thus demonstrating consistency rather than contradiction. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the background of Person A. I need to know about Person A to evaluate the intention of their statement and determine if it aligns with their background. Once you provide the background, I will give you the one-sentence reasoning and the YES/NO answer.\n"
+            ],
+            [
+                7,
+                "The intention of Person B\u2019s statement is to relate the conversation topic to a personal experience (struggling to stay awake due to studying), demonstrating a desire to find relevance and share a personal reflection, which directly aligns with their described Intrapersonal learning style and tendency to connect topics to their own experiences; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to offer a relatable and insightful observation, drawing a parallel between a scientific principle (gravity) and a common experience (difficulty concentrating when tired), suggesting they are thoughtful and capable of abstract thinking \u2013 aligning with the background of a teacher who would likely employ analogies to explain complex concepts and understand student struggles. \n\nNO."
+            ],
+            [
+                9,
+                "Person B\u2019s intention is to connect a complex scientific concept (gravity) to a personal experience (difficulty focusing while studying), demonstrating understanding through relatable analogy, which directly aligns with their described intrapersonal learning style of relating content to personal experiences and sharing reflections\u2014making the statement consistent with their background. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -2589,7 +3601,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the background information. Once you provide the line, I will give you the requested analysis and \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind the statement is to gather information and begin a structured inquiry into a new topic \u2013 Einstein and his discoveries \u2013 which perfectly aligns with Person B\u2019s described learning style of dissecting information and asking targeted questions to understand causal chains, demonstrating a desire to apply their analytical approach. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A speaking as a \"Teacher\" and explaining complex physics concepts is to appear intelligent, knowledgeable, and potentially establish authority or a shared intellectual interest with the other person, which aligns with a teacher's role and doesn't contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind the question is to quickly gather factual information about Einstein\u2019s discoveries without engaging in a deeper exploration of *how* he arrived at those conclusions, which directly contrasts with Person B\u2019s stated learning style of dissecting arguments and causal chains through questioning; therefore, this line contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention of Person A\u2019s statement is to demonstrate intelligence and potentially impress Person B by showcasing knowledge of complex scientific concepts, which doesn't inherently contradict being a teacher\u2014in fact, it aligns with the expectation that a teacher would possess a strong understanding of academic subjects\u2014and could even be a way to subtly signal shared intellectual interests. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s question is to understand the causal chain leading to Einstein\u2019s discovery \u2013 specifically, the *why* behind his motivation \u2013 which directly aligns with their described analytical and argument-dissecting learning style of probing for reasons and building understanding step-by-step. \n\nNO"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s statement is to educate and share knowledge about a scientific principle, demonstrating intellectual curiosity and a desire to explain complex topics\u2014which aligns perfectly with the background of someone identified as a \u201cTeacher\u201d who would naturally engage in explaining concepts; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the question is to understand the causal link between two complex physics concepts, prompting a dissection of how one led to the other \u2013 a clear demonstration of analytical thinking and a desire to map a causal chain, perfectly aligning with Person B\u2019s described learning style and conversational habits. \n\nNO"
+            ],
+            [
+                8,
+                "The line appears to be a straightforward attempt to share knowledge and demonstrate intelligence, potentially seeking to impress Person B with intellectual curiosity and a grasp of complex concepts, which doesn't inherently contradict being a teacher who would naturally discuss and explain such topics. \n\nNO."
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to quickly *present* a conclusion rather than *deconstruct* one, seemingly bypassing their usual analytical process of questioning and verification, which directly contradicts their stated learning style and conversational habits. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.6
     },
     {
         "task_name": "Education",
@@ -2697,7 +3753,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.4
+        "P2_prompt_2_stage_consistency_score": 0.4,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and whether it contradicts their background as a \"Teacher.\" Once you provide the line, I will give you the requested analysis and answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to present a firmly held belief as a thought experiment\u2014essentially testing the boundaries of their own values by imagining themselves in a challenging scenario\u2014which directly aligns with their described Trial-and-Error learning style of mentally testing ideas and using hypothetical situations for discussion, therefore demonstrating no contradiction. \n\nNO"
+            ],
+            [
+                2,
+                "This line demonstrates Person A's ability to analyze and articulate the significance of a statement related to social justice and leadership, aligning with the expectation that a teacher would possess strong analytical and communication skills regarding impactful figures and concepts; therefore, the intention doesn't contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to offer a direct, definitive answer demonstrating understanding of Mandela, rather than proposing a thought experiment or exploring nuances\u2014a method inconsistent with their stated trial-and-error, discovery-based learning style\u2014suggesting they are presenting a conclusion instead of initiating a process of mental testing. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A's statement is to express admiration for a historical figure known for social justice and inspire continued efforts towards positive change, which aligns with the role of a teacher who would likely value and promote such ideals to their students and foster critical thinking about societal improvement. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement appears to be providing a direct answer and demonstrating knowledge, rather than initiating a discussion or thought experiment, which doesn\u2019t align with their described Trial-and-Error learning style focused on collaboratively exploring ideas and outcomes through suggested \u201ctweaks\u201d and mistakes. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A's statement is to express a belief in social justice, the importance of collective effort, and the power of hope \u2013 qualities typically associated with someone involved in education and likely reflective of values they instill in students; given this aligns perfectly with the role of a teacher, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s statement presents a conclusive, well-formed answer\u2014a summary of understanding\u2014rather than an invitation to explore ideas through modification and discussion, which doesn\u2019t align with their described trial-and-error, discovery-based learning style that favors suggesting \u201cwhat if\u201d scenarios. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A's statement is to express a deep appreciation for social justice, equality, and the power of perseverance \u2013 qualities typically associated with educators who aim to inspire similar values in their students; given that Person A is a teacher, this aligns perfectly with their professional role and likely personal beliefs. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The statement expresses admiration for a historical figure and their ideals, indicating a value-driven, inspirational outlook, which doesn\u2019t directly engage with a \u201ctrial-and-error\u201d learning style focused on mental experimentation and dissecting outcomes \u2013 it's a statement of belief rather than a proposition for discussion or a \u2018what if\u2019 scenario. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.2
     },
     {
         "task_name": "Education",
@@ -2805,7 +3905,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s detailed explanation is to be helpful and informative, demonstrating a clear understanding and willingness to share knowledge\u2014a behavior perfectly aligned with the background of someone identified as a \u201cTeacher\u201d who would naturally explain concepts to facilitate learning. \n\nNO."
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an attempt to build understanding through analogy and conceptual modeling\u2014a simplification to grasp a complex idea\u2014which aligns with their research-oriented learning style of interrogating information and building an evidence-based grasp, even if it's a preliminary, simplified one. \n\nNO"
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s line is to simplify a complex scientific concept (atomic number) using an analogy (social security number) to make it more relatable and understandable, which aligns with the background of a teacher whose profession centers around explaining difficult topics in an accessible manner. \n\nNO."
+            ],
+            [
+                3,
+                "The intention of Person B\u2019s statement is to offer a simplified analogy to aid understanding of a complex scientific concept, which doesn\u2019t align with their research-oriented background that prioritizes rigorous examination of studies and evidence rather than relying on potentially imprecise analogies for initial comprehension. \n\nYES\n\n\n\n"
+            ],
+            [
+                4,
+                "The intention of Person A's statement is to establish credibility and demonstrate intelligence by relating a complex scientific concept to a common, everyday understanding, which aligns with the background of a teacher who would naturally explain things in accessible terms and showcase their knowledge. \n\nNO."
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to offer a simplified, analogy-based explanation \u2013 a shortcut to understanding \u2013 which contrasts sharply with their stated learning style of deeply interrogating studies and building understanding through critical evaluation and detailed discussion of methodology; therefore, this approach does not align with their research-oriented background. \n\nYES\n\n\n\n"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to simplify a complex scientific concept (atomic number) using an analogy to something universally understood (social security number) to facilitate learning and demonstrate their ability to explain things clearly, which aligns with the background of a teacher who would naturally employ pedagogical techniques; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                7,
+                "Person B\u2019s statement demonstrates an attempt to simplify a complex scientific concept using an analogy, which, while not directly interrogating research or seeking peer review, aligns with their learning style of building understanding through relating new information to existing knowledge and explaining it in their own terms as a means of solidifying comprehension. \n\nNO"
+            ],
+            [
+                8,
+                "The intention of Person A\u2019s statement is to simplify a complex scientific concept (atomic number) using an analogy to something universally understood (social security number) to facilitate learning and demonstrate their teaching ability, which aligns with the background of being a teacher who likely uses relatable explanations frequently. \n\nNO"
+            ],
+            [
+                9,
+                "The statement demonstrates a foundational understanding of a scientific concept rather than critical interrogation or seeking deeper research discussion, which doesn't align with Person B's stated learning style of actively *interrogating* studies and seeking evidence-based discussion, suggesting they are simply stating a fact instead of analyzing it. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -2913,7 +4057,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s line is to establish themselves as knowledgeable, enthusiastic, and inviting, potentially signaling a desire to connect through shared intellectual interests and demonstrate leadership in the conversation\u2014this aligns with the role of a teacher who is expected to impart knowledge and foster engagement, making it consistent with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The line demonstrates an intention to foster a deep, one-on-one conversational exchange by soliciting a specific, personalized response from the other person and inviting collaborative exploration of a topic, which directly aligns with Person B\u2019s described interpersonal learning style and preference for co-constructing ideas through back-and-forth talk. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to share a thoughtful and intellectual interest, establishing common ground and signaling a capacity for depth and emotional understanding, which aligns perfectly with the stated background of being a teacher\u2014a profession often requiring both intellectual curiosity and empathy\u2014and doesn't present any contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to share a thoughtful observation and invite further discussion about a complex topic, demonstrating a desire for intellectual engagement and co-construction of ideas\u2014which directly aligns with their stated interpersonal learning style and preference for deep, one-on-one conversational exchange. \n\nNO"
+            ],
+            [
+                4,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of their statement and determine if it contradicts their background. Once you provide that information, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s line appears to be offering a concise, somewhat formal analysis, prioritizing a complete thought over continued dialogue, which contrasts with their stated preference for deeply engaging, co-constructed conversation and back-and-forth exchange; therefore, this response seems to halt further immediate interaction. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual depth, a capacity for nuanced literary analysis, and an appreciation for complex character studies, which aligns perfectly with the background of a teacher who would naturally discuss and analyze literature in this manner. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement appears to be demonstrating intellectual depth and inviting further discussion on a complex topic, aligning with their interpersonal learning style which thrives on deep engagement and co-constructing ideas through conversation; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                8,
+                "Please provide the background of Person A. I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to demonstrate intellectual depth and invite further, thoughtful discussion\u2014a characteristic of someone who enjoys deep engagement with a single conversational partner, aligning with their interpersonal learning style and preference for co-constructing ideas; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -3021,7 +4209,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.2,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A providing a definition of irony, framed for college students and including an emotional component (\"funny and sad\"), suggests they are attempting to appear intelligent, helpful, and capable of nuanced thought \u2013 aligning with the role of a teacher who would naturally explain concepts and engage with students on a deeper level. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an attempt to define a concept (\u201cirony\u201d) by breaking it down into its component parts and relating it to a familiar structure (a joke), which aligns with their integrative learning style and tendency to synthesize ideas step-by-step, revealing a thoughtful, systems-level approach to understanding\u2014therefore, the line does *not* contradict their background. \n\nNO."
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s explanation of irony is to be helpful, clear, and insightful, demonstrating a pedagogical approach and a comfort with abstract concepts \u2013 traits consistent with someone who is a teacher and likely enjoys explaining complex ideas in an accessible manner. \n\nNO."
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement appears to be a direct, concise definition rather than an exploration of interconnected themes, which doesn\u2019t align with their described integrative learning style and preference for weaving ideas together and asking for syntheses; therefore, the line contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A posing a question about irony to someone they are getting to know is likely to gauge the other person\u2019s intellectual curiosity, communication skills, and ability to understand nuance, which aligns with a teacher\u2019s profession focused on assessing understanding and prompting critical thinking. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to provide a concise, definitional explanation of a concept (irony) \u2013 a direct, focused response \u2013 which doesn't demonstrate the integrative, synthesis-seeking conversational style described in their background, as it lacks the weaving of broader connections they typically employ. \n\nYES"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s line is to demonstrate knowledge and a willingness to engage in intellectual discussion, likely to impress Person B and establish themselves as thoughtful and educated, which aligns perfectly with the background of being a \u201cTeacher\u201d who would naturally explain concepts and share expertise; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to offer a concise, direct explanation of a concept\u2014a focused analysis rather than a weaving together of multiple themes\u2014which doesn\u2019t immediately demonstrate the integrative, synthesizing approach described in their background, suggesting a shift from their typical conversational style. \n\nYES"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectualism and a sophisticated understanding of literary devices, aiming to impress Person B with their knowledge and potentially establish themselves as thoughtful and insightful\u2014this aligns with the background of a teacher who would naturally discuss and explain complex concepts like irony, and is a common pedagogical approach. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The statement demonstrates a synthesis of ideas \u2013 exploring how a literary device (irony) relates to philosophical concepts like truth and perspective \u2013 which directly aligns with Person B\u2019s integrative learning style and penchant for cross-topic connections, indicating no contradiction. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -3129,7 +4361,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s line is to impart knowledge and engage in an educational exchange, presenting a factual statement about Greek mythology, which aligns with the background of being a \u201cTeacher\u201d who would naturally share information; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s intention is to connect a new concept (likely Ares, a potentially abstract topic) to observable natural phenomena (bird feathers and autumn leaves) using vivid imagery, which directly reflects their stated Naturalistic learning style and preference for nature metaphors, thus aligning with their background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to demonstrate knowledge and a nuanced understanding of mythology, going beyond a simplistic view of Ares, and this aligns with the background of being a teacher who would likely possess and share detailed information; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                3,
+                "The intention behind the question is to directly connect a fundamental scientific concept (life on Earth) to a natural element (the sun\u2019s warmth), seeking to understand it through a familiar, observable phenomenon\u2014which perfectly aligns with Person B\u2019s stated Naturalistic learning style and preference for nature-based explanations. \n\nNO"
+            ],
+            [
+                4,
+                "The intention of Person A's statement is to share knowledge and engage in an educational discussion about mythology, specifically linking a deity's power to a scientific process, which aligns with the background of a teacher who would naturally explain concepts and foster understanding\u2014therefore, there is no contradiction. \n\nNO."
+            ],
+            [
+                5,
+                "The intention behind the statement is to express observation and connection to the natural world, mirroring a thought process where external natural phenomena trigger internal understanding and a sense of wonder, which directly aligns with Person B\u2019s described Naturalistic learning style and preference for vivid imagery; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to establish themselves as knowledgeable and perhaps a bit unconventional, presenting a novel perspective on a mythological figure (Ares) by linking him to life-giving processes, which doesn\u2019t inherently contradict a teacher\u2019s role of imparting information and encouraging thought, even if it's a creative interpretation. \n\nNO."
+            ],
+            [
+                7,
+                "The intention behind the question is to ground a complex concept (creation of life) in a natural phenomenon (sun\u2019s warmth), directly aligning with Person B\u2019s established preference for connecting learning to the natural world through inquiry, thus demonstrating consistency with their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to demonstrate knowledge and engage in an informative discussion about mythology, specifically connecting Ares to a life-giving aspect of the sun, which aligns with a teacher\u2019s role of imparting knowledge and fostering intellectual exploration; therefore, it does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "Person B\u2019s question demonstrates an intention to understand a complex phenomenon (the sun\u2019s role in life) by exploring a seeming paradox \u2013 its destructive *and* creative power \u2013 which directly aligns with their naturalistic learning style of connecting abstract concepts to observable natural processes and seeking vivid imagery to make sense of the world, therefore it does not contradict their background. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3237,7 +4513,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s statement is to enthusiastically share knowledge and inspire curiosity about history, specifically the Roman Empire, which aligns with the background of a teacher whose role is to educate and engage others with historical subjects; therefore, the line does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind the question is to explore a quantitative hypothetical and its cascading effects, directly aligning with Person B\u2019s stated preference for \u201cwhat-if\u201d questions, numerical exploration, and systematic understanding through scenario-building, thus demonstrating no contradiction with their background. \n\nNO"
+            ],
+            [
+                2,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the statement and determine if it contradicts their background. Once you provide the background, I will give you the one-sentence reasoning and the YES/NO answer.\n"
+            ],
+            [
+                3,
+                "The intention behind the statement is to explore the consequences of a numerical change (doubling the population) by considering its real-world impacts, which aligns with Person B\u2019s preference for \u201cwhat-if\u201d questions and systematic understanding through exploring scenarios, even if the response extends beyond pure calculation to include practical needs; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                4,
+                "Please provide the background information for Person A! I need to know about their personality, profession, values, or experiences to evaluate the intention behind the statement and determine if it contradicts their background. \n\nOnce you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind the statement is to explore the consequences of a numerical change (doubling population) through logical extrapolation regarding resource needs, which directly aligns with Person B\u2019s preference for \u201cwhat-if\u201d questions and systematic understanding built through quantitative hypotheticals; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                6,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of their statement and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the statement is to explore the *consequences* of a change (increased population) \u2013 a broader, systemic consideration \u2013 rather than focusing on quantifiable changes or posing a direct \u201cwhat-if\u201d calculation, which doesn\u2019t align with Person B\u2019s described preference for numerical patterns and rule-based reasoning. \n\nYES."
+            ],
+            [
+                8,
+                "The intention behind the teacher's statement is to impart factual, objective information about the consequences of population growth, demonstrating a concern for societal well-being and a desire to educate\u2014this aligns with the role of a teacher and doesn\u2019t suggest any hidden agenda or contradiction given the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind the question is to explore a quantitative hypothetical \u2013 how a change in a numerical value (people) impacts other factors (time for learning/exploring) \u2013 which directly aligns with Person B\u2019s stated preference for \u201cwhat-if\u201d questions and rule-based reasoning through scenarios and calculations, demonstrating no contradiction. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -3345,7 +4665,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 0.8
+        "P2_prompt_2_stage_consistency_score": 0.8,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A quoting the Declaration of Independence and emphasizing equality and respect is to establish a foundational belief in individual liberty and ethical treatment of others, which aligns with a teacher\u2019s role in fostering civic responsibility and moral development; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                1,
+                "Person B\u2019s intention in offering a mini-story directly aligns with their stated Narrative learning style, demonstrating an active attempt to engage with information in a preferred format and subtly prompting for similar storytelling in return, therefore supporting their background. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to establish common ground and signal shared values \u2013 specifically, a belief in justice, freedom, and equality \u2013 by drawing a parallel between a classic heroic narrative and a foundational American document, suggesting they are someone who appreciates both storytelling and civic ideals; given that Person A is a teacher, this intention aligns with their profession of fostering critical thinking and values in others, and therefore does not contradict their background. \n\nNO."
+            ],
+            [
+                3,
+                "Person B\u2019s statement intends to connect an abstract concept (the Declaration of Independence) to a concrete, story-based element (a knight) using narrative framing and emotional resonance (bravery, fairness, freedom), which directly aligns with their stated preference for learning through engaging mini-stories and seeking anecdotes to understand abstract ideas; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                4,
+                "This line is a prompt from a teacher seeking student engagement and critical thinking, indicating an intention to foster intellectual discussion and assess understanding \u2013 this aligns perfectly with the background of Person A being a teacher, as facilitating learning is central to their role. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s statement demonstrates an attempt to extract a moral lesson and overarching theme from a narrative\u2014a characteristic of processing information through storytelling and identifying emotional resonance, which directly aligns with their stated Narrative learning style and preference for causal links within tales. \n\nNO"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s line is to build rapport and connection with the other person by using a relatable analogy\u2014connecting a classic narrative of courage to a foundational American document\u2014demonstrating thoughtfulness and an attempt to find common ground, which aligns with the background of a teacher who would naturally employ pedagogical techniques to engage and educate; therefore, the line does not contradict the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "Person B\u2019s intention with this line is to directly *provide* the requested mini-story format, demonstrating understanding and accommodation of the student\u2019s learning style, which aligns perfectly with their stated Narrative learning preference and desire for engaging tales with emotional hooks; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to share a thoughtful, morally grounded perspective, likely aiming to connect on a deeper level by revealing values and prompting discussion about inner strength and conviction\u2014this aligns with the role of a teacher who would naturally impart life lessons and encourage thoughtful consideration of character, therefore it does not contradict their background. \n\nNO."
+            ],
+            [
+                9,
+                "Person B\u2019s statement intends to succinctly *conclude* a conversation with a direct, abstract definition, which clashes with their stated preference for learning through engaging narratives and anecdotes\u2014they would likely ask for a story *about* the Declaration of Independence, not a summary of its core principle. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -3453,7 +4817,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A\u2019s statement as a teacher is to foster a thoughtful and educational discussion about a sensitive historical event, emphasizing learning and community strength, which directly aligns with the expected role and responsibilities of an educator\u2014to guide understanding and promote resilience\u2014and therefore doesn\u2019t contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s question is to initiate learning through language \u2013 specifically, soliciting a key word to build understanding from, which directly aligns with their Verbal-Linguistic learning style and stated preference for carefully worded definitions as a starting point for processing information; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s response is to offer a safe, emotionally neutral, and expected answer \u2013 demonstrating a desire to avoid controversy or deep emotional expression, which aligns with a background suggesting a reserved and cautious personality likely prioritizing social harmony over raw honesty; therefore, the line does not contradict the provided background. \n\nNO."
+            ],
+            [
+                3,
+                "The intention of Person B\u2019s statement is to provide a straightforward, concise definition of \u201ctragedy\u201d with a readily understood example, which doesn\u2019t demonstrate the rich language exploration, careful wording, or personal rephrasing characteristic of their Verbal-Linguistic learning style, thus contradicting their described background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to offer a straightforward, textbook-like definition of \u201ctragedy,\u201d likely to establish a common understanding or avoid emotional vulnerability, which aligns with a teacher\u2019s role of providing clear explanations and maintaining a professional distance; therefore, the line does not contradict their background. \n\nNO."
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to offer a straightforward, emotionally resonant, and readily understandable response\u2014a basic definition of the event\u2019s impact\u2014which doesn\u2019t demonstrate the complex linguistic processing or wordplay their background suggests they *prefer* for learning and retention, but isn\u2019t necessarily contradictory as anyone can offer a simple answer even with a preference for complexity. \n\nNO."
+            ],
+            [
+                6,
+                "The intention of Person A's statement is to offer a straightforward, educational definition of tragedy, likely aiming to establish common ground and demonstrate thoughtfulness \u2013 this aligns perfectly with the background of a teacher who would naturally explain concepts clearly and emphasize remembrance and learning, fitting within their professional role. \n\nNO."
+            ],
+            [
+                7,
+                "Person B\u2019s intention with the concise, summarizing response is to demonstrate comprehension and fulfill a request efficiently, which aligns with their verbal-linguistic learning style of processing information through language and re-articulation, even in a summarized form; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the provided background information about Person A. Once you provide the line, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to offer a concise, factual summary \u2013 a demonstration of understanding and ability to articulate information, which aligns with a verbal-linguistic learning style focused on precise language and processing information through writing, rather than contradicting it. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.8,
+        "P2_prompt_consistency_score": 0.8
     },
     {
         "task_name": "Education",
@@ -3561,7 +4969,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A\u2019s statement is to explain a physics concept in a simple, relatable way, demonstrating a desire to share knowledge and engage in intellectual discussion, which aligns with the background of a teacher who would naturally explain concepts and encourage understanding; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to express a feeling-based, emotionally charged scenario \u2013 describing physical sensations and the emotional stakes of a game \u2013 which directly aligns with their stated preference for human-centered narratives highlighting emotional experiences as an emotionally-oriented learner. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s detailed explanation is to demonstrate intellectual depth, a pedagogical approach, and a comfort with analytical thinking, which aligns with the provided background of being a teacher who readily breaks down complex concepts; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement is to express understanding of a physical concept (force) through a deeply personal, emotionally-charged, and narrative-driven description focusing on feeling and connection, which directly aligns with their stated preference for emotional learning and human-centered narratives. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A's statement is to explain a physics concept in a clear and helpful way, demonstrating knowledge and a willingness to educate \u2013 aligning with the background of being a teacher who would naturally explain things to others; therefore, the line does not contradict the background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind the line is to express excitement and connection to an activity (likely basketball, given the imagery) through vivid emotional language and a human-centered narrative, which directly aligns with Person B\u2019s described preference for emotionally rich stories and connecting through feelings, demonstrating their emotional learning style in action. \n\nNO."
+            ],
+            [
+                6,
+                "The intention behind Person A's statement is to establish themselves as knowledgeable, perhaps even pedantic, and to impress Person B with their understanding of physics applied to a seemingly simple activity, which doesn't align with a background simply stating they are a teacher\u2014it implies a specific scientific leaning not necessarily inherent to all teachers. \n\nYES.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the statement is to express a feeling and connect a physical experience to emotional response\u2014a clear demonstration of emotional awareness and a human-centered narrative, which directly aligns with Person B\u2019s stated preference for feeling-based connection and emotionally rich storytelling. \n\nNO"
+            ],
+            [
+                8,
+                "Please provide the background information for Person A! I need to know about Person A to evaluate the intention of their statement and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind the statement is to express understanding of a physical concept (Newton\u2019s third law) through a deeply felt, emotionally resonant, and personified experience \u2013 describing the interaction as a \u201cdance of connection and control\u201d \u2013 which directly aligns with Person B\u2019s emotional learning style and preference for human-centered narratives, making it a natural expression of their way of processing information. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3669,7 +5121,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the background information you've already given about the \"Teacher.\" \n\nOnce you provide the line, I will give you a one-sentence reasoning and a YES/NO answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s line is to engage in a detailed, language-focused exploration of a complex text \u2013 precisely the kind of rich linguistic environment and active processing (diving into narrative, delving) that aligns with their Verbal-Linguistic learning style and stated preference for working through ideas with language. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s line is to establish rapport and demonstrate intellectual curiosity and a willingness to engage in thoughtful discussion, which aligns perfectly with the background of a teacher who would naturally foster learning and explore complex themes with others; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                3,
+                "Person B\u2019s statement demonstrates an eagerness to engage with complex themes through language and a preliminary attempt to paraphrase the core concepts of the story, aligning perfectly with their verbal-linguistic learning style and stated preference for exploring ideas through rich language and careful definition, thus demonstrating no contradiction. \n\nNO."
+            ],
+            [
+                4,
+                "The intention behind Person A's line is to establish themselves as knowledgeable and inviting, offering to collaboratively explore a classic literary work, which aligns with the background of being a teacher who would naturally discuss and guide understanding of such material. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to demonstrate understanding and thoughtful engagement with a previously discussed concept by summarizing it in a sophisticated, articulate manner, which directly aligns with their Verbal-Linguistic learning style and penchant for processing information through language; therefore, it does not contradict their background. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the line spoken by Person A so I can evaluate the intention and determine if it contradicts their background as a teacher discussing Romeo and Juliet. I need the actual statement from Person A to complete the task. \n\nOnce you provide the line, I will give you a one-sentence reasoning followed by YES or NO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to express enthusiastic engagement and a desire to further explore a complex topic through discussion, which aligns perfectly with their Verbal-Linguistic learning style and demonstrated preference for rich language and dissecting ideas\u2014showing they are actively processing and responding to the information presented in a way that facilitates understanding and memory. \n\nNO"
+            ],
+            [
+                8,
+                "Please provide the line spoken by Person A that you want me to evaluate. I need the actual statement from Person A to analyze its intention and determine if it contradicts their background as a Shakespeare teacher. \n\nOnce you provide the line, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s line is to demonstrate engagement and intellectual curiosity through sophisticated language and a desire for further elaboration, which directly aligns with a Verbal-Linguistic learner who thrives on rich language and exploring ideas through discussion; therefore, the line does not contradict their background. \n\nNO"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3777,7 +5273,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line isn\u2019t a statement *from* Person A, but rather a prompt *to* Person A from a teacher, so interpreting intention is irrelevant as it doesn\u2019t reveal anything about Person A\u2019s character or beliefs, and thus cannot contradict their background; therefore, it aligns with the background as it simply presents an assignment. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The statement expresses a fascination with exploration and uncovering hidden meanings within a specific, tangible context (Machu Picchu), which, while not *directly* theoretical, could be interpreted as a desire to apply abstract problem-solving skills \u2013 deciphering clues, unraveling secrets \u2013 to a real-world mystery, aligning with their stated preference for probing and synthesis; therefore, it does not contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                2,
+                "Please provide the background of Person A. I need that information to evaluate the intention of the line and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s enthusiastic and descriptive statement appears to be establishing common ground and expressing excitement about a shared topic, which contrasts sharply with their described background of probing abstract frameworks and challenging assumptions, as it lacks any analytical or questioning elements. \n\nYES"
+            ],
+            [
+                4,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the statement and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                5,
+                "The statement reveals an intention to find excitement and meaning in concrete, experiential discovery \u2013 a \u201ctreasure hunt\u201d \u2013 which contrasts with Person B\u2019s described preference for abstract frameworks and theoretical debate, suggesting a momentary departure from their typical intellectual probing. \n\nYES"
+            ],
+            [
+                6,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the line and determine if it contradicts their background. \n\nOnce you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind the statement is to initiate an abstract exploration of the relationship between environment and knowledge, inviting a theoretical discussion about how external factors can unlock internal understanding\u2014which directly aligns with Person B\u2019s stated preference for probing abstract frameworks and seeking underlying assumptions\u2014therefore it does not contradict their background. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s line is to present themselves as knowledgeable, thoughtful, and perhaps a bit of a romantic\u2014someone who appreciates history, symbolism, and the beauty of nature, aligning with the role of a \u201cTeacher\u201d who would naturally convey such concepts; therefore, the statement doesn\u2019t contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind the statement is to share a personal experience framed through a romanticized, emotionally-driven narrative focused on sensory detail and \u201cmysteries,\u201d which contrasts sharply with Person B\u2019s stated preference for abstract, assumption-probing, and debate-oriented conversation\u2014a style that wouldn\u2019t typically involve poetic descriptions of landscapes and quests. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.4,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -3885,7 +5425,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.8,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "Please provide the line spoken by Person A. I need the actual statement to evaluate its intention and alignment with the provided background about the \"Teacher\" discussing Medusa. \n\nOnce you provide the line, I will give you a one-sentence explanation and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s question demonstrates an inquisitive and analytical approach to a complex problem, seeking further clarification and engaging with the topic on a deeper level\u2014an intention that directly aligns with their stated adaptive learning style of monitoring comprehension and requesting different approaches to understanding (in this case, prompting for more information to resolve a mystery), as they are actively seeking a more effective modality for understanding the \u201cconcept\u201d of Medusa\u2019s curse. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to present themselves as perceptive, analytical, and intrigued by complex emotional displays, potentially hinting at a fascination with understanding someone deeply and a tolerance for ambiguity\u2014qualities that align with a teacher\u2019s role of observing and interpreting student behavior and emotional states; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s statement demonstrates metacognitive awareness by recognizing a mismatch between the current communication style (a riddle) and their preferred learning needs (context and emotional understanding), aligning with their adaptive learning style and stated preference for shifting strategies when something isn\u2019t working; therefore, the line does *not* contradict their background. \n\nNO\n\n\n\n"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to encourage thoughtful, analytical discussion and demonstrate intellectual depth, which aligns perfectly with the background of a teacher who would naturally guide students toward deeper understanding and critical thinking; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to demonstrate comprehension and express a proactive desire for deeper exploration, aligning with their adaptive learning style by signaling readiness to engage with a complex topic and suggesting a willingness to delve into nuance\u2014a strategy someone monitoring for effective learning modalities would employ. \n\nNO"
+            ],
+            [
+                6,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of their statement and determine if it contradicts their background. Once you provide the background, I will give you a one-sentence reasoning and a \"YES\" or \"NO\" answer.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to demonstrate analytical thinking and a desire for contextual understanding, which aligns with their adaptive learning style of identifying effective approaches (in this case, deeper analysis) to comprehend complex concepts, rather than contradicting it. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to demonstrate intellectual curiosity, analytical thinking, and a desire for nuanced understanding\u2014qualities expected of someone in a teaching role who likely fosters critical thinking in others, aligning perfectly with their background. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to demonstrate engagement and a desire for deeper understanding by highlighting an intriguing aspect of the topic, which aligns with their adaptive learning style of identifying what sparks their interest and signaling a need for further exploration\u2014a metacognitive approach to learning\u2014rather than contradicting it. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -3993,7 +5577,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 0.6,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention of Person A's statement is simply to share a factual piece of information and initiate a conversation about history and culture, which aligns with the role of a teacher who would naturally impart knowledge and foster discussion; therefore, the line does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind Person B\u2019s statement is to express genuine interest and acknowledge the scale of the topic being discussed, demonstrating engagement rather than a need for auditory reinforcement or repetition as described in their learning style; therefore, this line doesn't reflect their stated learning preference and could be considered a deviation from how they typically process information. \n\nYES"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s statement is to offer a metaphorical observation about collaborative effort and the significance of individual contributions to a larger whole, which aligns with a teacher's role of fostering understanding and appreciating collective achievement\u2014a characteristic consistent with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s statement seems to be expressing wonder and attempting to conceptually grasp the scale of the wall by focusing on individual components and their significance, which aligns with an auditory learner\u2019s need to process information by breaking it down and assigning meaning \u2013 essentially \u201chearing\u201d the story within the structure \u2013 rather than directly asking for restatement or echoing, demonstrating a slightly more advanced internal processing of the auditory input. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to express appreciation for collective effort, historical significance, and the value of shared purpose\u2014a sentiment that aligns with a teacher\u2019s role in fostering community and imparting knowledge about cultural heritage, making it consistent with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind Person B\u2019s statement is to present a complex idea\u2014collaboration and dedication\u2014in a descriptive, almost poetic way, hoping to evoke understanding through imagery rather than direct explanation, which doesn't align with their stated need to *hear* concepts restated and repeated for comprehension; therefore, this line contradicts their learning style. \n\nYES"
+            ],
+            [
+                6,
+                "The intention behind Person A\u2019s statement is to share insightful knowledge and demonstrate thoughtfulness, potentially aiming to impress Person B with their understanding and foster a connection through intellectual discussion, which aligns with a teacher\u2019s profession focused on imparting knowledge and encouraging broader perspectives. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s silence after the statement is likely to allow time to process the information auditorily and formulate a request for restatement or to internally rehearse repeating the key points, which directly aligns with their auditory learning style and need to \u201chear and echo concepts\u201d; therefore, there is no contradiction. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s statement is to demonstrate knowledge and offer an insightful, historically-grounded perspective on the Great Wall, suggesting an interest in history and cultural understanding \u2013 a trait not inherently contradictory to any provided background, as the background is currently empty, so the statement aligns with a neutral baseline. \n\nNO"
+            ],
+            [
+                9,
+                "Person B\u2019s summary demonstrates understanding and synthesis of information, a higher-level cognitive skill, rather than a request for auditory reinforcement or repetition as their learning style dictates, suggesting the statement doesn\u2019t align with their stated need to *hear* concepts echoed to internalize them. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -4101,7 +5729,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The intention behind Person A's statement is to clearly and simply explain a complex political concept (democracy) in an accessible, encouraging, and collaborative way, indicative of someone who values education, inclusivity, and positive group dynamics \u2013 qualities strongly suggested by their role as a teacher; therefore, the line aligns with their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention behind the line is to actively engage in the experiential learning style described in their background by proposing a collaborative \u201cbuilding\u201d exercise to understand democracy, which perfectly aligns with their stated preference for learning through mentally simulating real-world tasks and asking to be walked through a process. \n\nNO"
+            ],
+            [
+                2,
+                "The intention behind Person A\u2019s line is to foster collaborative learning and civic engagement by applying democratic principles in a playful, accessible way, which directly aligns with the background of a teacher who would naturally aim to educate and encourage participation\u2014therefore it does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "The intention behind Person B\u2019s line is to propose a collaborative, hands-on (even if simulated) building activity, directly appealing to a need to mentally simulate a real-world task as described in their background, and therefore aligns perfectly with their experiential learning style. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind the line is to engage in playful, imaginative role-playing with a child-like activity focused on democratic concepts, which aligns perfectly with a teacher\u2019s background of fostering learning and development through engaging activities; therefore, the line does not contradict the provided background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The intention behind suggesting a hands-on, simulated activity like building a voting booth and holding a pretend election directly aligns with Person B\u2019s experiential learning style and stated preference for mentally simulating real-world tasks through guided descriptions, demonstrating a clear consistency with their background. \n\nNO."
+            ],
+            [
+                6,
+                "Given the prompt lacks background information on Person A, it's impossible to evaluate intention or contradiction; assuming Person A is a teacher engaging a student in a civics lesson, the intention is educational and participatory, aligning with a teacher's role, and therefore doesn't contradict any likely background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                7,
+                "The intention behind Person B\u2019s statement is to propose a collaborative, hands-on activity \u2013 designing a flag \u2013 which directly invites the other person to walk through a creative, building process with them, aligning perfectly with their experiential learning style and conversational preference for simulated tasks. \n\nNO"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s enthusiastic support of a rainbow flag is to express progressive values and a commitment to inclusivity, which aligns with a teacher\u2019s role in fostering a welcoming and equitable learning environment and doesn't contradict the provided background. \n\nNO."
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s statement is to propose a collaborative, hands-on activity \u2013 essentially a building/creation task \u2013 to explore a complex concept (democracy), which directly aligns with their experiential learning style of mentally simulating real-world tasks and asking to be walked through a process; therefore, the line does not contradict their background. \n\nNO."
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 1.0
     },
     {
         "task_name": "Education",
@@ -4209,7 +5881,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "This line demonstrates Person A\u2019s intention to be helpful and knowledgeable, offering a clear explanation of a mathematical concept, which aligns with the background of being a teacher who would naturally explain things to others; therefore, there is no contradiction. \n\nNO.\n\n\n\n"
+            ],
+            [
+                1,
+                "Person B\u2019s statement demonstrates an understanding of a concept *without* requesting a structured breakdown or further explanation, which contradicts their established preference for hierarchical learning and detailed outlines before engaging with information; therefore, the line contradicts their background. \n\nYES"
+            ],
+            [
+                2,
+                "The intention of Person A\u2019s statement is to clearly and thoroughly explain a mathematical concept, demonstrating a pedagogical approach and a desire to ensure understanding, which aligns with the background of being a teacher who would naturally explain concepts in a detailed and accessible manner. \n\nNO.\n\n\n\n"
+            ],
+            [
+                3,
+                "Person B\u2019s intention with providing a numbered, concise overview of the Pythagorean theorem directly aligns with their stated preference for structured learning\u2014specifically verbal outlines and hierarchical breakdowns\u2014demonstrating consistency between their communication style and background. \n\nNO"
+            ],
+            [
+                4,
+                "The intention behind Person A providing a clear and concise explanation of the Pythagorean theorem is to demonstrate knowledge and potentially establish themselves as intelligent or helpful, which aligns with the background of being a \"Teacher\" as teaching inherently involves explaining concepts; therefore, the statement does not contradict their background. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "Person B\u2019s intention with this direct question is to immediately apply a concept (Pythagorean theorem) and seek a concrete example, bypassing the preferred structured breakdown of *how* and *why* it\u2019s used\u2014a typical approach for someone who needs hierarchical understanding; therefore, the line contradicts their stated learning preference.\n\nYES\n\n\n\n"
+            ],
+            [
+                6,
+                "The intention of Person A\u2019s statement is to demonstrate knowledge and explain a fundamental mathematical concept (the Pythagorean theorem) in a clear, instructive manner, aligning with the background of being a \u201cTeacher\u201d who would naturally explain concepts to others; therefore, the line does not contradict their background. \n\nNO"
+            ],
+            [
+                7,
+                "Person B\u2019s intention with this direct question is to solicit a concrete example to *apply* a concept (the Pythagorean theorem), rather than requesting a foundational, structured explanation *of* the concept itself, which doesn\u2019t align with their established preference for hierarchical breakdowns *before* details; therefore, it contradicts their background.\n\nYES\n\n\n\n"
+            ],
+            [
+                8,
+                "The intention behind Person A\u2019s detailed explanation of the Pythagorean theorem is to demonstrate intelligence, helpfulness, and a capacity for clear communication, likely aiming to impress or establish rapport by showcasing knowledge; given the background identifies Person A as a \u201cTeacher\u201d, this intention and demonstration of teaching ability aligns perfectly with their profession and expected skillset. \n\nNO.\n\n\n\n"
+            ],
+            [
+                9,
+                "The intention behind Person B\u2019s question is to apply a theoretical concept (Pythagorean theorem) to a practical scenario, seeking a concrete example *after* demonstrating initial understanding \u2013 a logical progression that aligns with their preference for building understanding from established foundations; this doesn\u2019t request a breakdown or outline, but it doesn\u2019t *oppose* their structured learning style as it follows a demonstrated understanding. \n\nNO.\n\n\n\n"
+            ]
+        ],
+        "P1_prompt_consistency_score": 1.0,
+        "P2_prompt_consistency_score": 0.4
     },
     {
         "task_name": "Education",
@@ -4317,7 +6033,51 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 0.6
+        "P2_prompt_2_stage_consistency_score": 0.6,
+        "eval_prompt_consistency": [
+            [
+                0,
+                "The teacher's statement intends to build rapport with the student by drawing a parallel between Churchill\u2019s conviction and the student\u2019s potential, employing a subtly encouraging and affirming tone\u2014however, this feels manipulative and presumptuous for a teacher, implying they already know the student\u2019s beliefs and are attempting to mold them, which contradicts the expected neutrality and objectivity of an educator. \n\nYES.\n\n\n\n"
+            ],
+            [
+                1,
+                "The intention of the statement appears to be an attempt at emotional connection and self-presentation through a broad, value-laden analogy, which contrasts sharply with the described analytical and logic-focused approach of Person B, as a student who typically dissects arguments rather than expressing unwavering beliefs through historical comparisons. \n\nYES"
+            ],
+            [
+                2,
+                "The intention of Person A's line is clearly to offer excessive and overly enthusiastic praise, attempting to build rapport and establish a deep connection quickly through flattery and a grand comparison to a historical figure, which doesn't align with a teacher's typically measured and objective approach to student interaction; therefore, it contradicts the background. \n\nYES."
+            ],
+            [
+                3,
+                "The intention behind the statement appears to be an attempt at flattery and emotional connection, prioritizing agreeable affirmation over analytical dissection\u2014a stark contrast to Person B\u2019s described learning style focused on logical deconstruction and questioning\u2014and therefore contradicts their background. \n\nYES"
+            ],
+            [
+                4,
+                "The intention behind Person A\u2019s statement is to express admiration and encouragement, framing the young person\u2019s actions as continuing a noble tradition of courage and leadership exemplified by Churchill, suggesting Person A values historical role models and impactful action\u2014a sentiment that aligns with being a teacher who focuses on impactful figures and inspiring students. \n\nNO.\n\n\n\n"
+            ],
+            [
+                5,
+                "The statement expresses an emotional resonance and value-based judgment (\u201ctruly resonates,\u201d \u201cimportance of truth,\u201d \u201ccourage to fight\u201d) rather than a dissection of logic or questioning of underlying assumptions, which is uncharacteristic of Person B\u2019s analytical and argument-focused approach; therefore, the line contradicts their described background. \n\nYES."
+            ],
+            [
+                6,
+                "Please provide the background information for Person A. I need to know about Person A to evaluate the intention of the teacher's statement and determine if it aligns with or contradicts their background. Once you provide that information, I can give you a complete answer.\n\n\n\n"
+            ],
+            [
+                7,
+                "The statement reveals an intention to express admiration based on emotional impact and inspirational qualities, which contrasts sharply with Person B\u2019s described analytical and logic-focused approach to understanding and engaging with information, as they typically deconstruct arguments rather than respond to emotional appeals. \n\nYES"
+            ],
+            [
+                8,
+                "The intention of the teacher's statement is to offer high praise and encouragement, framing Person A as a courageous and impactful individual with strong moral convictions, which aligns with a background suggesting they are already known for truthfulness and advocacy, rather than contradicting it. \n\nNO"
+            ],
+            [
+                9,
+                "The intention behind the statement appears to be expressing a strong moral conviction and a sense of civic duty, which, while potentially stemming from reasoned belief, is presented as a declarative statement of values rather than a logically dissected argument\u2014a departure from Person B\u2019s described analytical and questioning approach to understanding the *why* behind beliefs. \n\nYES"
+            ]
+        ],
+        "P1_prompt_consistency_score": 0.6,
+        "P2_prompt_consistency_score": 0.0
     },
     {
         "task_name": "Education",
