@@ -399,7 +399,106 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Alexandra: What do you like to do in your free time, Ethan? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexandra: That sounds amazing, Ethan. What inspired you to start playing the guitar and writing music?\n",
+                "NO, the second line does not contradict the first line because it builds upon the conversation by asking a follow-up question about a hobby or activity (playing the guitar and writing music) that was likely mentioned in response to the initial inquiry."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Ethan? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexandra: That sounds wonderful, Ethan. What kind of music do you like to play with your folk band?\n",
+                "NO, the line does not contradict the provided line because the conversation has progressed, and Alexandra is now inquiring about Ethan's specific interest in music with a folk band, which is a plausible follow-up question to her initial inquiry about his hobbies."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Ethan? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexandra: That sounds enchanting, Ethan. What inspired you to start a folk band?\n",
+                "NO. \nThe lines do not contradict each other as the second statement appears to be a follow-up question related to Ethan's hobbies, assuming Ethan mentioned being in a folk band in his response to the first question."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Ethan? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexandra: That sounds like a wonderful way to meet like-minded musicians. What kind of gigs do you play with your folk band?\n",
+                "NO, the line does not contradict the provided line because it appears to be a follow-up question based on information Ethan has already shared, likely about being in a folk band."
+            ],
+            [
+                "Ethan: I'm really passionate about playing the guitar and writing my own songs, it's a great way for me to express myself creatively and unwind. I'm actually in a folk band with some friends, and we like to play at local coffee shops and events around Eau Claire.\n",
+                "Ethan: I think my dad's love for old folk songs and my mom's eclectic record collection really sparked my interest in music from a young age. Growing up, I'd often sit with my dad and learn the chords to his favorite songs, which eventually led to me picking up the guitar and writing my own music.\n",
+                "NO, the lines do not contradict each other as they both express Ethan's passion for music and its origins, with the second line providing more background information on how his interest in music developed."
+            ],
+            [
+                "Ethan: I'm really passionate about playing the guitar and writing my own songs, it's a great way for me to express myself creatively and unwind. I'm actually in a folk band with some friends, and we like to play at local coffee shops and events around Eau Claire.\n",
+                "Ethan: We play a mix of original songs and folk classics, with a focus on storytelling through lyrics and acoustic instrumentation. Our band's sound is a bit rootsy and earthy, which I think reflects my love for the natural surroundings of Wisconsin.\n",
+                "NO \n\nThe line does not contradict the provided line, as it further elaborates on the style and sound of the folk band mentioned in the initial statement."
+            ],
+            [
+                "Ethan: I'm really passionate about playing the guitar and writing my own songs, it's a great way for me to express myself creatively and unwind. I'm actually in a folk band with some friends, and we like to play at local coffee shops and events around Eau Claire.\n",
+                "Ethan: I think it was actually my love for singing in our family's old church choir that led me to start playing music with others, and I eventually met my bandmates through a local music meetup group in Eau Claire. We all share a passion for folk music and have really clicked as musicians and friends.\n",
+                "NO \nThe second line does not contradict the first line, as it provides additional information about Ethan's musical background and how he met his bandmates, while maintaining consistency with his passion for folk music and playing in a band."
+            ],
+            [
+                "Ethan: I'm really passionate about playing the guitar and writing my own songs, it's a great way for me to express myself creatively and unwind. I'm actually in a folk band with some friends, and we like to play at local coffee shops and events around Eau Claire.\n",
+                "Ethan: We play a variety of gigs around Eau Claire, from coffee shop open mics to outdoor festivals, and we're actually working on booking a show at a local brewery next month. Our band's atmosphere is really relaxed, so we love playing at events where we can connect with the community and share our music.\n",
+                "NO, The second line does not contradict the first line as it provides additional details about the types of gigs and the atmosphere of the band, which is consistent with the initial statement."
+            ],
+            [
+                "Alexandra: That sounds amazing, Ethan. What inspired you to start playing the guitar and writing music?\n",
+                "Alexandra: That sounds wonderful, Ethan. What kind of music do you like to play with your folk band?\n",
+                "NO. \nThe lines do not contradict each other because they both mention Ethan's involvement in music, with the first line indicating he plays the guitar and writes music, and the second line specifying the genre as folk."
+            ],
+            [
+                "Alexandra: That sounds amazing, Ethan. What inspired you to start playing the guitar and writing music?\n",
+                "Alexandra: That sounds enchanting, Ethan. What inspired you to start a folk band?\n",
+                "NO \n\nThe lines do not directly contradict each other as they both express Alexandra's interest in Ethan's musical pursuits, although the second line specifies a folk band, while the first line is more general about playing the guitar and writing music."
+            ],
+            [
+                "Alexandra: That sounds amazing, Ethan. What inspired you to start playing the guitar and writing music?\n",
+                "Alexandra: That sounds like a wonderful way to meet like-minded musicians. What kind of gigs do you play with your folk band?\n",
+                "NO \nThe line does not contradict the provided line as it seems to be a continuation of the conversation about music, suggesting that Person B (Ethan) has a folk band and plays gigs, which aligns with the initial discussion about playing guitar and writing music."
+            ],
+            [
+                "Ethan: I think my dad's love for old folk songs and my mom's eclectic record collection really sparked my interest in music from a young age. Growing up, I'd often sit with my dad and learn the chords to his favorite songs, which eventually led to me picking up the guitar and writing my own music.\n",
+                "Ethan: We play a mix of original songs and folk classics, with a focus on storytelling through lyrics and acoustic instrumentation. Our band's sound is a bit rootsy and earthy, which I think reflects my love for the natural surroundings of Wisconsin.\n",
+                "NO \nThe line does not contradict the provided line, as both statements describe Ethan's musical background and influences, with the second statement extending that information to describe the style of his band."
+            ],
+            [
+                "Ethan: I think my dad's love for old folk songs and my mom's eclectic record collection really sparked my interest in music from a young age. Growing up, I'd often sit with my dad and learn the chords to his favorite songs, which eventually led to me picking up the guitar and writing my own music.\n",
+                "Ethan: I think it was actually my love for singing in our family's old church choir that led me to start playing music with others, and I eventually met my bandmates through a local music meetup group in Eau Claire. We all share a passion for folk music and have really clicked as musicians and friends.\n",
+                "YES. \nThe line contradicts the provided line because the first statement suggests Ethan's parents influenced his interest in music, whereas the second statement suggests it was singing in the church choir that led him to play music with others."
+            ],
+            [
+                "Alexandra: That sounds wonderful, Ethan. What kind of music do you like to play with your folk band?\n",
+                "Alexandra: That sounds enchanting, Ethan. What inspired you to start a folk band?\n",
+                "NO. The lines do not contradict each other; they show Alexandra expressing interest in Ethan's folk band and asking related questions."
+            ],
+            [
+                "Alexandra: That sounds wonderful, Ethan. What kind of music do you like to play with your folk band?\n",
+                "Alexandra: That sounds like a wonderful way to meet like-minded musicians. What kind of gigs do you play with your folk band?\n",
+                "NO, The second line does not contradict the first line, as both lines suggest Alexandra is interested in learning more about Ethan's folk band."
+            ],
+            [
+                "Ethan: We play a mix of original songs and folk classics, with a focus on storytelling through lyrics and acoustic instrumentation. Our band's sound is a bit rootsy and earthy, which I think reflects my love for the natural surroundings of Wisconsin.\n",
+                "Ethan: I think it was actually my love for singing in our family's old church choir that led me to start playing music with others, and I eventually met my bandmates through a local music meetup group in Eau Claire. We all share a passion for folk music and have really clicked as musicians and friends.\n",
+                "NO, the line does not contradict the provided line, as both lines discuss Ethan's background and involvement in music, particularly folk music, and do not provide conflicting information."
+            ],
+            [
+                "Ethan: We play a mix of original songs and folk classics, with a focus on storytelling through lyrics and acoustic instrumentation. Our band's sound is a bit rootsy and earthy, which I think reflects my love for the natural surroundings of Wisconsin.\n",
+                "Ethan: We play a variety of gigs around Eau Claire, from coffee shop open mics to outdoor festivals, and we're actually working on booking a show at a local brewery next month. Our band's atmosphere is really relaxed, so we love playing at events where we can connect with the community and share our music.\n",
+                "NO. \nThe two lines do not contradict each other, as they provide additional information about the band's music style, performance venues, and atmosphere without stating opposing facts."
+            ],
+            [
+                "Alexandra: That sounds enchanting, Ethan. What inspired you to start a folk band?\n",
+                "Alexandra: That sounds like a wonderful way to meet like-minded musicians. What kind of gigs do you play with your folk band?\n",
+                "NO. The second line assumes Ethan has a folk band and is meeting like-minded musicians, which aligns with the first line that shows interest in his folk band."
+            ],
+            [
+                "Ethan: I think it was actually my love for singing in our family's old church choir that led me to start playing music with others, and I eventually met my bandmates through a local music meetup group in Eau Claire. We all share a passion for folk music and have really clicked as musicians and friends.\n",
+                "Ethan: We play a variety of gigs around Eau Claire, from coffee shop open mics to outdoor festivals, and we're actually working on booking a show at a local brewery next month. Our band's atmosphere is really relaxed, so we love playing at events where we can connect with the community and share our music.\n",
+                "NO, the line does not contradict the provided line because both statements discuss Ethan's music group and its activities in Eau Claire, presenting consistent information."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 0.8
     },
     {
         "task_name": "Chatting",
@@ -801,7 +900,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Ethan: What do you like to do in your free time, Harold? Do you have any hobbies or activities that bring you joy?\n",
+                "Ethan: That sounds fascinating, Harold. What draws you to restoration work?\n",
+                "NO, The line does not contradict the previous statement as it is a follow-up question based on an assumed response from Harold that Ethan found fascinating."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Harold? Do you have any hobbies or activities that bring you joy?\n",
+                "Ethan: That's a beautiful perspective, Harold. What inspired you to start restoring your grandfather's old tractor?\n",
+                "NO, the line does not contradict the provided line because it is a follow-up question that shows interest in a hobby Harold may have mentioned in response to the initial question."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Harold? Do you have any hobbies or activities that bring you joy?\n",
+                "Ethan: What kind of restoration work have you done so far? Have you encountered any challenges?\n",
+                "NO, The second line does not contradict the first line because it appears to be a continuation of the conversation, exploring a specific aspect of Harold's interests or hobbies."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Harold? Do you have any hobbies or activities that bring you joy?\n",
+                "Ethan: That sounds like a fascinating project, Harold. What inspired you to choose that particular tractor to restore?\n",
+                "NO, because the second line appears to be a follow-up conversation based on information Harold provided in response to the first question, showing interest in the details of Harold's hobby."
+            ],
+            [
+                "Harold: I enjoy tinkering with old tractors and machinery, especially restoring my grandfather's old John Deere, which has been a family heirloom for generations. It's a great way to spend time outside and connect with my roots.\n",
+                "Harold: I think it's the nostalgia of working with tools my grandfather used, and the satisfaction of bringing an old machine back to life, which always reminds me of the cyclical nature of life \u2013 a reminder that old things can be made new again.\n",
+                "NO. The two lines are consistent in expressing Harold's sentimental connection to restoring his grandfather's old tractor and the emotional value it holds for him."
+            ],
+            [
+                "Harold: I enjoy tinkering with old tractors and machinery, especially restoring my grandfather's old John Deere, which has been a family heirloom for generations. It's a great way to spend time outside and connect with my roots.\n",
+                "Harold: When I stumbled upon an old issue of Farm Collector magazine in my grandfather's attic, I was inspired to start restoring the tractor, and it's been a labor of love ever since. It's also given me a chance to learn more about the history of farming in our area and the people who came before me.\n",
+                "NO \nThe line does not contradict the provided line as it further elaborates on the same topic of Harold's interest in restoring his grandfather's old tractor and learning about his roots."
+            ],
+            [
+                "Harold: I enjoy tinkering with old tractors and machinery, especially restoring my grandfather's old John Deere, which has been a family heirloom for generations. It's a great way to spend time outside and connect with my roots.\n",
+                "Harold: I've replaced the engine and rebuilt the transmission, and one of the biggest challenges was figuring out the correct color for the original paint job \u2013 I ended up using a historical archive from the John Deere company to get it just right.\n",
+                "NO. The line does not contradict the initial statement, as it further details Harold's experience and process of restoring the old John Deere tractor, aligning with his interest in tinkering and restoring the family heirloom."
+            ],
+            [
+                "Harold: I enjoy tinkering with old tractors and machinery, especially restoring my grandfather's old John Deere, which has been a family heirloom for generations. It's a great way to spend time outside and connect with my roots.\n",
+                "Harold: I chose that particular tractor because it was the one my grandfather used to work with when he was a young man, and I felt a strong connection to it. It's funny, every time I'm working on it, I feel like he's right there with me, guiding my hands.\n",
+                "NO. The line does not contradict the provided line spoken by Person B, as it further explains the connection and sentimental value of the tractor, which aligns with the initial statement about restoring a family heirloom."
+            ],
+            [
+                "Ethan: That sounds fascinating, Harold. What draws you to restoration work?\n",
+                "Ethan: That's a beautiful perspective, Harold. What inspired you to start restoring your grandfather's old tractor?\n",
+                "NO, the line does not contradict the provided line as both lines show interest in Harold's restoration work."
+            ],
+            [
+                "Ethan: That sounds fascinating, Harold. What draws you to restoration work?\n",
+                "Ethan: What kind of restoration work have you done so far? Have you encountered any challenges?\n",
+                "NO \nThe line does not contradict the initial statement as it continues the conversation about restoration work, showing further interest in the topic."
+            ],
+            [
+                "Ethan: That sounds fascinating, Harold. What draws you to restoration work?\n",
+                "Ethan: That sounds like a fascinating project, Harold. What inspired you to choose that particular tractor to restore?\n",
+                "NO, \nThe lines are not contradictory because they express similar interest and curiosity about restoration work, with the second line providing more specificity about a particular tractor restoration project."
+            ],
+            [
+                "Harold: I think it's the nostalgia of working with tools my grandfather used, and the satisfaction of bringing an old machine back to life, which always reminds me of the cyclical nature of life \u2013 a reminder that old things can be made new again.\n",
+                "Harold: When I stumbled upon an old issue of Farm Collector magazine in my grandfather's attic, I was inspired to start restoring the tractor, and it's been a labor of love ever since. It's also given me a chance to learn more about the history of farming in our area and the people who came before me.\n",
+                "NO, The second line does not contradict the first line as both express Harold's connection to his grandfather and his interest in restoring an old machine, specifically a tractor, which is a continuation of the idea presented in the first line."
+            ],
+            [
+                "Harold: I think it's the nostalgia of working with tools my grandfather used, and the satisfaction of bringing an old machine back to life, which always reminds me of the cyclical nature of life \u2013 a reminder that old things can be made new again.\n",
+                "Harold: I've replaced the engine and rebuilt the transmission, and one of the biggest challenges was figuring out the correct color for the original paint job \u2013 I ended up using a historical archive from the John Deere company to get it just right.\n",
+                "NO. The second line does not contradict the first line, as it provides a specific example of Harold's experience with restoring an old machine, which aligns with the themes of nostalgia and bringing old things back to life mentioned in the first line."
+            ],
+            [
+                "Harold: I think it's the nostalgia of working with tools my grandfather used, and the satisfaction of bringing an old machine back to life, which always reminds me of the cyclical nature of life \u2013 a reminder that old things can be made new again.\n",
+                "Harold: I chose that particular tractor because it was the one my grandfather used to work with when he was a young man, and I felt a strong connection to it. It's funny, every time I'm working on it, I feel like he's right there with me, guiding my hands.\n",
+                "NO. The second line provides more information about the reason behind Harold's choice of tractor and his emotional connection to it, which is consistent with the nostalgic feelings mentioned in the first line."
+            ],
+            [
+                "Ethan: That's a beautiful perspective, Harold. What inspired you to start restoring your grandfather's old tractor?\n",
+                "Ethan: What kind of restoration work have you done so far? Have you encountered any challenges?\n",
+                "NO \nThe second line does not contradict the first line, as both statements demonstrate Ethan's genuine interest in Harold's tractor restoration project."
+            ],
+            [
+                "Ethan: That's a beautiful perspective, Harold. What inspired you to start restoring your grandfather's old tractor?\n",
+                "Ethan: That sounds like a fascinating project, Harold. What inspired you to choose that particular tractor to restore?\n",
+                "NO \nThe line does not contradict the provided line, as both express interest in the restoration of a tractor and ask about the inspiration behind the project."
+            ],
+            [
+                "Harold: When I stumbled upon an old issue of Farm Collector magazine in my grandfather's attic, I was inspired to start restoring the tractor, and it's been a labor of love ever since. It's also given me a chance to learn more about the history of farming in our area and the people who came before me.\n",
+                "Harold: I've replaced the engine and rebuilt the transmission, and one of the biggest challenges was figuring out the correct color for the original paint job \u2013 I ended up using a historical archive from the John Deere company to get it just right.\n",
+                "NO \n\nThe line does not contradict the provided line as it provides more details about the restoration process of the tractor, which is consistent with the initial statement about the labor of love in restoring the tractor."
+            ],
+            [
+                "Harold: When I stumbled upon an old issue of Farm Collector magazine in my grandfather's attic, I was inspired to start restoring the tractor, and it's been a labor of love ever since. It's also given me a chance to learn more about the history of farming in our area and the people who came before me.\n",
+                "Harold: I chose that particular tractor because it was the one my grandfather used to work with when he was a young man, and I felt a strong connection to it. It's funny, every time I'm working on it, I feel like he's right there with me, guiding my hands.\n",
+                "NO \n\nThe lines do not contradict each other because they both indicate Harold has a personal connection to the tractor, with the first mentioning his grandfather's attic and the second mentioning his grandfather using the tractor."
+            ],
+            [
+                "Ethan: What kind of restoration work have you done so far? Have you encountered any challenges?\n",
+                "Ethan: That sounds like a fascinating project, Harold. What inspired you to choose that particular tractor to restore?\n",
+                "NO, the line does not contradict the provided line as both lines imply that Person B (Harold) is involved in a restoration project, but neither line explicitly states the specific details of the project, allowing for the conversation to unfold naturally."
+            ],
+            [
+                "Harold: I've replaced the engine and rebuilt the transmission, and one of the biggest challenges was figuring out the correct color for the original paint job \u2013 I ended up using a historical archive from the John Deere company to get it just right.\n",
+                "Harold: I chose that particular tractor because it was the one my grandfather used to work with when he was a young man, and I felt a strong connection to it. It's funny, every time I'm working on it, I feel like he's right there with me, guiding my hands.\n",
+                "NO, The second line provides additional information about Harold's connection to the tractor, but does not contradict any information provided in the first line."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
