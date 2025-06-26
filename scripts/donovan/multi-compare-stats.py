@@ -6,19 +6,20 @@ from collections import defaultdict
 
 # --- Configuration ---
 # Define the base directory where 'model_eval_ablations' is located
+# benchmark_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/"
 base_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/training_data/model_eval_ablations/"
 
-output_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/results/model_ablations/"
+output_dir = "/mmfs1/home/donoclay/cse/donoclay/consistency_LLMs/results/model_ablations/1-stage/"
 
 # Define the benchmark model name (this is the EVALUATOR model)
-benchmark_model_name = "Llama-3.1-8B-Instruct"
+benchmark_model_name = "Llama-3.1-70B-Instruct"
 
 # Define the tasks (subdirectories within each model's directory)
 tasks = ["in_chatting", "in_education", "in_therapy"]
 
 eval_keys = [
-    # "P1_prompt_consistency_score",
-    "P2_prompt_2_stage_consistency_score",
+    "P2_prompt_consistency_score",
+    # "P2_prompt_2_stage_consistency_score",
     # Add any other keys you want to evaluate from the JSON files
     ]
 
@@ -201,8 +202,8 @@ for eval_model in eval_models_to_compare:
 
             # print(eval_values.keys())
 
-            plt.plot(eval_values['P2_prompt_2_stage_consistency_score'], label=f'{eval_model} {task}', marker='o')
-            plt.plot(benchmark_values['P2_prompt_2_stage_consistency_score'], label=f'{benchmark_model_name} {task}', marker='x')
+            plt.plot(eval_values['P2_prompt_consistency_score'][:40], label=f'{eval_model} {task}', marker='o')
+            plt.plot(benchmark_values['P2_prompt_consistency_score'][:40], label=f'{benchmark_model_name} {task}', marker='x')
             plt.title(f'{eval_model} vs {benchmark_model_name}; task: {task}, id: {run_id}')
             plt.xlabel('Data Generating Model and Run ID')
             plt.ylabel('P2 Prompt Consistency Score')
