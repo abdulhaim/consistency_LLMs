@@ -1,6 +1,7 @@
 import json
 import random
 from pathlib import Path
+import html
 
 def load_data(base_path: Path, task_name):
     """Loads the JSON data from the specified file path."""
@@ -56,6 +57,19 @@ def select_random_dialogs(data, num_dialogs=10, seed=42):
     sampled_dialogs = [data[i] for i in indices]
     return sampled_dialogs, indices
 
+def convert_python_escapes_to_html(s):
+    decoded = bytes(s, 'utf-8').decode('unicode_escape')
+    # decoded = s.encode('utf-8').decode('unicode_escape')
+    
+    # Replace newline characters with <br>
+    decoded = decoded.replace('\n', '<br>')
+    
+    # Optional: convert each character to its HTML numeric code (e.g., &#1593;)
+    html_encoded = ''.join(f'&#{ord(c)};' if ord(c) > 127 else c for c in decoded)
+    
+    html_encoded.replace("&#226;&#128;&#147;", "&#8211;")  # Replace the long dash with a single HTML entity
+    return html_encoded
+
 def generate_qualtrics_survey(output_txt_path, data=None, input_json_path=None):
     if not data:
         with open(input_json_path, "r", encoding="utf-8") as f:
@@ -80,11 +94,24 @@ def generate_qualtrics_survey(output_txt_path, data=None, input_json_path=None):
         lines.append("This conversation concerns a scenario between two speakers. "
                      "Please read the following exchange and answer questions about whether "
                      "the current line is consistent with the following description and the prior dialogue. <br><br>")
-        lines.append(f"<b>Persona:</b> {persona}")
+        lines.append(f"<b>Persona:</b> {convert_python_escapes_to_html(persona)}")
 
-        for i in range(1, len(conversation), 2):
-            previous_lines = "<br>".join(line[1] for line in conversation[:i])
+        # Randomly select a starting point (odd index, since we skip the other agent)
+        if len(conversation) < 10:
+            continue  # Not enough lines for 5 steps
+        possible_starts = list(range(1, len(conversation) - 8, 2))
+        if not possible_starts:
+            continue
+        start_idx = random.choice(possible_starts)
+        for i in range(start_idx, min(start_idx + 10, len(conversation)), 2):
+            previous_lines = ""
+            for line in conversation[:i]:
+                prev_name, prev_message = line[1].split(":", 1)
+                previous_lines += f"<b>{prev_name}:</b> {convert_python_escapes_to_html(prev_message)}<br>"
+
             current_line = conversation[i][1]
+            name, message = current_line.split(":", 1)
+            current_line = f"<b>{name}:</b> {convert_python_escapes_to_html(message)}<br>"
 
             lines.append(f"[[Question:MC:SingleAnswer:Horizontal]]")
             lines.append(f"<b>Conversation so far:</b><br>{previous_lines}<br><br>")
@@ -98,8 +125,33 @@ def generate_qualtrics_survey(output_txt_path, data=None, input_json_path=None):
             lines.append("5")
             lines.append("6")
 
-
             question_number += 1
+    #     lines.append("[[PageBreak]]")
+
+        # for i in range(1, len(conversation), 2):
+
+        #     previous_lines = ""
+        #     for line in conversation[:i]:
+        #         prev_name, prev_message = line[1].split(":", 1)
+        #         previous_lines += f"<b>{prev_name}:</b> {prev_message}<br>"
+
+        #     current_line = conversation[i][1]
+        #     name, message = current_line.split(":", 1)
+        #     current_line = f"<b>{name}:</b> {message}<br>"
+
+        #     lines.append(f"[[Question:MC:SingleAnswer:Horizontal]]")
+        #     lines.append(f"<b>Conversation so far:</b><br>{convert_python_escapes_to_html(previous_lines)}<br><br>")
+        #     lines.append(f"<b>Current line:</b><br>{convert_python_escapes_to_html(current_line)}<br><br>")
+        #     lines.append("How consistent is the current line with the persona description and conversation?")
+        #     lines.append("[[Choices]]")
+        #     lines.append("1")
+        #     lines.append("2")
+        #     lines.append("3")
+        #     lines.append("4")
+        #     lines.append("5")
+        #     lines.append("6")
+
+        #     question_number += 1
         lines.append("[[PageBreak]]")  # Optional; separates each question
     # Write to UTF-8 without BOM
     with open(output_txt_path, "w", encoding="utf-8") as out_f:
@@ -114,9 +166,9 @@ chatting_data, chatting_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consi
 education_data, education_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs"), "Education")
 therapy_data, therapy_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs"), "Therapy")
 
-chatting_selected, chatting_indices = select_random_dialogs(chatting_data, num_dialogs=10, seed=42)
-education_selected, education_indices = select_random_dialogs(education_data, num_dialogs=10, seed=42)
-therapy_selected, therapy_indices = select_random_dialogs(therapy_data, num_dialogs=10, seed=42)
+chatting_selected, chatting_indices = select_random_dialogs(chatting_data, num_dialogs=5, seed=42)
+education_selected, education_indices = select_random_dialogs(education_data, num_dialogs=5, seed=42)
+therapy_selected, therapy_indices = select_random_dialogs(therapy_data, num_dialogs=5, seed=42)
 
 combined_data = chatting_selected
 combined_data.extend(education_selected)
