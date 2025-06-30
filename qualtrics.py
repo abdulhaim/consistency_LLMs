@@ -3,21 +3,21 @@ import random
 from pathlib import Path
 import html
 
-def load_data(base_path: Path, task_name):
+def load_data(base_path: Path, task_name, filter_str):
     """Loads the JSON data from the specified file path."""
     file_path: Path = Path()
-    if task_name == "Chatting":
-        file_path = base_path / "chatting/exp/04.26.25"
-    elif task_name == "Education":
-        file_path = base_path / "education/exp/05.12.25"
-    elif task_name == "Therapy":
-        file_path = base_path / "therapy" / "exp" / "05.14.25.marwa"
-    elif task_name == "Chatting PPO":
-        file_path = base_path / "chatting/exp/05.06.25/ppo"
-    elif task_name == "Education PPO":
-        file_path = base_path / "education/exp/05.14.25/ppo_sft_Llama-3.1-8B-Instruct_0_365.json"
-    elif task_name == "Therapy PPO":
-        file_path = base_path / "therapy/exp/05.15.25/ppo_sft_new_lr_Llama-3.1-8B-Instruct_0_433.json"
+    if task_name == "Chatting Nonfinetuned":
+        file_path = base_path / "data/chatting/nonfinetuned"
+    elif task_name == "Education Nonfinetuned":
+        file_path = base_path / "data/education/nonfinetuned"
+    elif task_name == "Therapy Nonfinetuned":
+        file_path = base_path / "data/therapy/nonfinetuned"
+    elif task_name == "Chatting Finetuned":
+        file_path = base_path / "data/chatting/finetuned"
+    elif task_name == "Education Finetuned":
+        file_path = base_path / "data/education/finetuned"
+    elif task_name == "Therapy Finetuned":
+        file_path = base_path / "data/therapy/finetuned"
     else:
         raise ValueError(f"Unknown task name: {task_name}")
     
@@ -28,7 +28,13 @@ def load_data(base_path: Path, task_name):
     data = []
     file_paths = []
 
-    files = [file_path] if ".json" in file_path.name else list(file_path.glob("*.json"))
+    if ".json" in file_path.name:
+        files = [file_path] 
+    else:
+        files = []
+        for file in file_path.glob("*.json"):
+            if filter_str in file.name:
+                files.append(file)
 
     for file in sorted(files):
         with open(file, 'r') as f:
@@ -67,7 +73,7 @@ def convert_python_escapes_to_html(s):
     # Optional: convert each character to its HTML numeric code (e.g., &#1593;)
     html_encoded = ''.join(f'&#{ord(c)};' if ord(c) > 127 else c for c in decoded)
     
-    html_encoded.replace("&#226;&#128;&#147;", "&#8211;")  # Replace the long dash with a single HTML entity
+    html_encoded.replace("â\x80\x93", "–")  # Replace the long dash with a single HTML entity
     return html_encoded
 
 def generate_qualtrics_survey(output_txt_path, data=None, input_json_path=None):
@@ -159,20 +165,96 @@ def generate_qualtrics_survey(output_txt_path, data=None, input_json_path=None):
 
     print(f"✅ Qualtrics survey saved to: {output_txt_path}")
 
-# Example usage:
-# generate_qualtrics_survey("/nfs/kun2/users/ryan_cheng/consistency_LLMs/therapy/exp/05.14.25.marwa/Llama-3.1-8B-Instruct_10_932.json", "qualtrics_survey.txt")
+# Load three conversations from each model for each scenario using the filter string
+# Also keep the indices and write them to a separate json with the filename
 
-chatting_data, chatting_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs"), "Chatting")
-education_data, education_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs"), "Education")
-therapy_data, therapy_paths = load_data(Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs"), "Therapy")
+base_path = Path("/nfs/kun2/users/ryan_cheng/consistency_LLMs")
 
-chatting_selected, chatting_indices = select_random_dialogs(chatting_data, num_dialogs=5, seed=42)
-education_selected, education_indices = select_random_dialogs(education_data, num_dialogs=5, seed=42)
-therapy_selected, therapy_indices = select_random_dialogs(therapy_data, num_dialogs=5, seed=42)
+indices_record = {}
 
-combined_data = chatting_selected
-combined_data.extend(education_selected)
-combined_data.extend(therapy_selected)
+# Chatting Nonfinetuned
+chatting_gemma, chatting_gemma_files = load_data(base_path, "Chatting Nonfinetuned", "gemma")
+chatting_mistral, chatting_mistral_files = load_data(base_path, "Chatting Nonfinetuned", "mistral")
+chatting_llama, chatting_llama_files = load_data(base_path, "Chatting Nonfinetuned", "Llama-3.1-8B-Instruct")
+
+chatting_gemma_sel, chatting_gemma_idx = select_random_dialogs(chatting_gemma, num_dialogs=1, seed=42)
+chatting_mistral_sel, chatting_mistral_idx = select_random_dialogs(chatting_mistral, num_dialogs=1, seed=42)
+chatting_llama_sel, chatting_llama_idx = select_random_dialogs(chatting_llama, num_dialogs=1, seed=42)
+
+indices_record["chatting_gemma"] = {"files": chatting_gemma_files, "indices": chatting_gemma_idx}
+indices_record["chatting_mistral"] = {"files": chatting_mistral_files, "indices": chatting_mistral_idx}
+indices_record["chatting_llama"] = {"files": chatting_llama_files, "indices": chatting_llama_idx}
+
+# Chatting Finetuned
+chatting_llama_ppo, chatting_llama_ppo_files = load_data(base_path, "Chatting Finetuned", "llama-8b-ppo-high-lr")
+chatting_llama_sftppo, chatting_llama_sftppo_files = load_data(base_path, "Chatting Finetuned", "llama-8b-sft-ppo")
+
+chatting_llama_ppo_sel, chatting_llama_ppo_idx = select_random_dialogs(chatting_llama_ppo, num_dialogs=1, seed=42)
+chatting_llama_sftppo_sel, chatting_llama_sftppo_idx = select_random_dialogs(chatting_llama_sftppo, num_dialogs=1, seed=42)
+
+indices_record["chatting_llama_ppo"] = {"files": chatting_llama_ppo_files, "indices": chatting_llama_ppo_idx}
+indices_record["chatting_llama_sftppo"] = {"files": chatting_llama_sftppo_files, "indices": chatting_llama_sftppo_idx}
+
+# Education Nonfinetuned
+education_gemma, education_gemma_files = load_data(base_path, "Education Nonfinetuned", "gemma")
+education_mistral, education_mistral_files = load_data(base_path, "Education Nonfinetuned", "mistral")
+education_llama, education_llama_files = load_data(base_path, "Education Nonfinetuned", "Llama-3.1-8B-Instruct")
+
+education_gemma_sel, education_gemma_idx = select_random_dialogs(education_gemma, num_dialogs=1, seed=42)
+education_mistral_sel, education_mistral_idx = select_random_dialogs(education_mistral, num_dialogs=1, seed=42)
+education_llama_sel, education_llama_idx = select_random_dialogs(education_llama, num_dialogs=1, seed=42)
+
+indices_record["education_gemma"] = {"files": education_gemma_files, "indices": education_gemma_idx}
+indices_record["education_mistral"] = {"files": education_mistral_files, "indices": education_mistral_idx}
+indices_record["education_llama"] = {"files": education_llama_files, "indices": education_llama_idx}
+
+# Education Finetuned
+education_ppo_high_lr, education_ppo_high_lr_files = load_data(base_path, "Education Finetuned", "ppo_high_lr_Llama-3.1-8B")
+education_ppo_sft_new_lr, education_ppo_sft_new_lr_files = load_data(base_path, "Education Finetuned", "ppo_sft_Llama")
+
+education_ppo_high_lr_sel, education_ppo_high_lr_idx = select_random_dialogs(education_ppo_high_lr, num_dialogs=1, seed=42)
+education_ppo_sft_new_lr_sel, education_ppo_sft_new_lr_idx = select_random_dialogs(education_ppo_sft_new_lr, num_dialogs=1, seed=42)
+
+indices_record["education_ppo_high_lr"] = {"files": education_ppo_high_lr_files, "indices": education_ppo_high_lr_idx}
+indices_record["education_ppo_sft_new_lr"] = {"files": education_ppo_sft_new_lr_files, "indices": education_ppo_sft_new_lr_idx}
+
+# Therapy Nonfinetuned
+therapy_gemma, therapy_gemma_files = load_data(base_path, "Therapy Nonfinetuned", "gemma")
+therapy_mistral, therapy_mistral_files = load_data(base_path, "Therapy Nonfinetuned", "mistral")
+therapy_llama, therapy_llama_files = load_data(base_path, "Therapy Nonfinetuned", "Llama-3.1-8B-Instruct")
+
+therapy_gemma_sel, therapy_gemma_idx = select_random_dialogs(therapy_gemma, num_dialogs=1, seed=42)
+therapy_mistral_sel, therapy_mistral_idx = select_random_dialogs(therapy_mistral, num_dialogs=1, seed=42)
+therapy_llama_sel, therapy_llama_idx = select_random_dialogs(therapy_llama, num_dialogs=1, seed=42)
+
+indices_record["therapy_gemma"] = {"files": therapy_gemma_files, "indices": therapy_gemma_idx}
+indices_record["therapy_mistral"] = {"files": therapy_mistral_files, "indices": therapy_mistral_idx}
+indices_record["therapy_llama"] = {"files": therapy_llama_files, "indices": therapy_llama_idx}
+
+# Therapy Finetuned
+therapy_ppo_llama, therapy_ppo_llama_files = load_data(base_path, "Therapy Finetuned", "ppo_Llama-3.1-8B")
+therapy_ppo_sft_new_lr_llama, therapy_ppo_sft_new_lr_llama_files = load_data(base_path, "Therapy Finetuned", "ppo_sft_new_lr_Llama-3.1-8B-Instruct")
+
+therapy_ppo_llama_sel, therapy_ppo_llama_idx = select_random_dialogs(therapy_ppo_llama, num_dialogs=1, seed=42)
+therapy_ppo_sft_new_lr_llama_sel, therapy_ppo_sft_new_lr_llama_idx = select_random_dialogs(therapy_ppo_sft_new_lr_llama, num_dialogs=1, seed=42)
+
+indices_record["therapy_ppo_llama"] = {"files": therapy_ppo_llama_files, "indices": therapy_ppo_llama_idx}
+indices_record["therapy_ppo_sft_new_lr_llama"] = {"files": therapy_ppo_sft_new_lr_llama_files, "indices": therapy_ppo_sft_new_lr_llama_idx}
+
+combined_data = (
+    chatting_gemma_sel + chatting_mistral_sel + chatting_llama_sel +
+    chatting_llama_ppo_sel + chatting_llama_sftppo_sel +
+    education_gemma_sel + education_mistral_sel + education_llama_sel +
+    education_ppo_high_lr_sel + education_ppo_sft_new_lr_sel +
+    therapy_gemma_sel + therapy_mistral_sel + therapy_llama_sel +
+    therapy_ppo_llama_sel + therapy_ppo_sft_new_lr_llama_sel
+)
+
+# Write indices and filenames to a separate JSON file
+indices_json_path = base_path / "qualtrics_selected_indices.json"
+with open(indices_json_path, "w", encoding="utf-8") as f:
+    json.dump(indices_record, f, indent=2)
+print(f"✅ Indices and filenames saved to: {indices_json_path}")
 
 # Generate Qualtrics survey for the combined data
 output_txt_path = "/nfs/kun2/users/ryan_cheng/consistency_LLMs/qualtrics_survey.txt"
