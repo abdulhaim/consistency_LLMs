@@ -1,0 +1,145 @@
+{
+  "chatting_gemma": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/gemma-2-2b-it_0_10_89.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/gemma-2-2b-it_0_20_89.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/gemma-2-2b-it_0_40_89.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/gemma-2-2b-it_0_60_89.json"
+    ],
+    "indices": [
+      137
+    ],
+    "conv_index": 7
+  },
+  "chatting_mistral": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/mistral-instruct_0_10_727.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/mistral-instruct_0_20_727.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/mistral-instruct_0_40_727.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/mistral-instruct_0_60_727.json"
+    ],
+    "indices": [
+      19
+    ],
+    "conv_index": 
+  },
+  "chatting_llama": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/nonfinetuned/Llama-3.1-8B-Instruct_0_623.json"
+    ],
+    "indices": [
+      209
+    ],
+    "conv_index": 9
+  },
+  "chatting_llama_ppo": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-ppo-high-lr_0_10_749.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-ppo-high-lr_0_20_749.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-ppo-high-lr_0_40_749.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-ppo-high-lr_0_60_749.json"
+    ],
+    "indices": [
+      17
+    ]
+  },
+  "chatting_llama_sftppo": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-sft-ppo-prompt_0_10_56.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-sft-ppo-prompt_0_20_56.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-sft-ppo-prompt_0_40_56.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-sft-ppo-prompt_0_60_56.json"
+    ],
+    "indices": [
+      4
+    ]
+  },
+  "education_gemma": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/gemma-2-2b-it_0_852.json"
+    ],
+    "indices": [
+      137
+    ]
+  },
+  "education_mistral": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/mistral-instruct_0_323.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/mistral-instruct_0_615.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/mistral-instruct_0_792.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/mistral-instruct_0_807.json"
+    ],
+    "indices": [
+      315
+    ]
+  },
+  "education_llama": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/nonfinetuned/Llama-3.1-8B-Instruct_0_138.json"
+    ],
+    "indices": [
+      209
+    ]
+  },
+  "education_ppo_high_lr": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/finetuned/ppo_high_lr_Llama-3.1-8B-Instruct_0_197.json"
+    ],
+    "indices": [
+      46
+    ]
+  },
+  "education_ppo_sft_new_lr": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/education/finetuned/ppo_sft_Llama-3.1-8B-Instruct_0_365.json"
+    ],
+    "indices": [
+      9
+    ]
+  },
+  "therapy_gemma": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/gemma-2-2b-it_0_138.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/gemma-2-2b-it_10_259.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/gemma-2-2b-it_10_361.json"
+    ],
+    "indices": [
+      114
+    ]
+  },
+  "therapy_mistral": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/mistral-instruct_0_261.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/mistral-instruct_0_501.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/mistral-instruct_10_186.json"
+    ],
+    "indices": [
+      315
+    ]
+  },
+  "therapy_llama": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/Llama-3.1-8B-Instruct_0_933.json",
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/nonfinetuned/Llama-3.1-8B-Instruct_10_932.json"
+    ],
+    "indices": [
+      418
+    ]
+  },
+  "therapy_ppo_llama": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/finetuned/ppo_Llama-3.1-8B-Instruct_0_88.json"
+    ],
+    "indices": [
+      17
+    ]
+  },
+  "therapy_ppo_sft_new_lr_llama": {
+    "files": [
+      "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/therapy/finetuned/ppo_sft_new_lr_Llama-3.1-8B-Instruct_0_433.json"
+    ],
+    "indices": [
+      9
+    ]
+  }
+}
