@@ -9,7 +9,8 @@
     "indices": [
       137
     ],
-    "conv_index": 7
+    "conv_index": 7,
+    "scenario": "Chatting"
   },
   "chatting_mistral": {
     "files": [
@@ -21,7 +22,8 @@
     "indices": [
       19
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Chatting"
   },
   "chatting_llama": {
     "files": [
@@ -30,7 +32,8 @@
     "indices": [
       209
     ],
-    "conv_index": 9
+    "conv_index": 9,
+    "scenario": "Chatting"
   },
   "chatting_llama_ppo": {
     "files": [
@@ -42,7 +45,8 @@
     "indices": [
       17
     ],
-    "conv_index": 9
+    "conv_index": 8,
+    "scenario": "Chatting"
   },
   "chatting_llama_sftppo": {
     "files": [
@@ -52,9 +56,10 @@
       "/nfs/kun2/users/ryan_cheng/consistency_LLMs/data/chatting/finetuned/llama-8b-sft-ppo-prompt_0_60_56.json"
     ],
     "indices": [
-      4
+      14
     ],
-    "conv_index": 1
+    "conv_index": 3,
+    "scenario": "Chatting"
   },
   "education_gemma": {
     "files": [
@@ -63,7 +68,8 @@
     "indices": [
       137
     ],
-    "conv_index": 11
+    "conv_index": 11,
+    "scenario": "Education"
   },
   "education_mistral": {
     "files": [
@@ -75,7 +81,8 @@
     "indices": [
       315
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Education"
   },
   "education_llama": {
     "files": [
@@ -84,7 +91,8 @@
     "indices": [
       209
     ],
-    "conv_index": 9
+    "conv_index": 9,
+    "scenario": "Education"
   },
   "education_ppo_high_lr": {
     "files": [
@@ -93,7 +101,8 @@
     "indices": [
       46
     ],
-    "conv_index": 9
+    "conv_index": 9,
+    "scenario": "Education"
   },
   "education_ppo_sft_new_lr": {
     "files": [
@@ -102,7 +111,8 @@
     "indices": [
       9
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Education"
   },
   "therapy_gemma": {
     "files": [
@@ -113,7 +123,8 @@
     "indices": [
       114
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Therapy"
   },
   "therapy_mistral": {
     "files": [
@@ -124,7 +135,8 @@
     "indices": [
       315
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Therapy"
   },
   "therapy_llama": {
     "files": [
@@ -134,7 +146,8 @@
     "indices": [
       418
     ],
-    "conv_index": 21
+    "conv_index": 21,
+    "scenario": "Therapy"
   },
   "therapy_ppo_llama": {
     "files": [
@@ -143,7 +156,8 @@
     "indices": [
       17
     ],
-    "conv_index": 11
+    "conv_index": 11,
+    "scenario": "Therapy"
   },
   "therapy_ppo_sft_new_lr_llama": {
     "files": [
@@ -152,6 +166,7 @@
     "indices": [
       9
     ],
-    "conv_index": 1
+    "conv_index": 1,
+    "scenario": "Therapy"
   }
 }

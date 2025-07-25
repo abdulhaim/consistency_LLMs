@@ -1406,7 +1406,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Alexis: What do you like to do in your free time, Alexandra? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: That sounds beautiful, Alexandra. What inspired you to start practicing yoga?\n",
+                "NO. \nThe second line spoken by Person A does not contradict the first line, as it appears to be a follow-up question in response to Alexandra's likely mention of yoga as a hobby or activity that brings her joy."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Alexandra? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: What do you like to do after your morning yoga practice? Do you have a favorite hobby or activity that brings you joy?\n",
+                "NO \nThe two lines do not contradict each other, as they both ask about the person's hobbies or activities that bring them joy, with the second line being more specific about the time of day."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Alexandra? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: That sounds fascinating, Alexandra. What sparked your interest in sustainability and conservation?\n",
+                "NO, the line does not contradict the provided line because it continues the conversation by asking a follow-up question about Alexandra's interests, suggesting that Alexandra had previously mentioned sustainability and conservation."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Alexandra? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: What inspired you to become a sustainability consultant, Alexandra? Was there a particular experience or event that led you down this path?\n",
+                "NO, the line does not contradict the provided line spoken by Person A, as both lines demonstrate interest in getting to know Alexandra and are part of a natural flow of conversation."
+            ],
+            [
+                "Alexandra: I love practicing yoga in the early morning hours, especially on days when I can watch the sunrise over the Bitterroot Mountains. It's a great way to clear my mind and connect with my body before the chaos of the day begins.\n",
+                "Alexandra: I think my yoga practice was influenced by my husband Ryan, who's a bit of a yogi himself - he's always been passionate about the physical and mental benefits of yoga, and I've learned so much from him.\n",
+                "NO \n\nThe line does not contradict the initial statement as it provides more information about Alexandra's yoga practice, but does not dispute her enjoyment of practicing yoga in the early morning hours."
+            ],
+            [
+                "Alexandra: I love practicing yoga in the early morning hours, especially on days when I can watch the sunrise over the Bitterroot Mountains. It's a great way to clear my mind and connect with my body before the chaos of the day begins.\n",
+                "Alexandra: I usually take some time to read environmental literature, often books about conservation efforts and sustainability, which helps me stay inspired and informed in my work as a sustainability consultant. I'm currently reading a book about regenerative agriculture and its impact on local ecosystems.\n",
+                "NO, \nThe line does not contradict the provided line as it shows a continuation of Person B's (Alexandra's) interest in nature and the environment, which aligns with the initial statement about practicing yoga and appreciating the sunrise over the mountains."
+            ],
+            [
+                "Alexandra: I love practicing yoga in the early morning hours, especially on days when I can watch the sunrise over the Bitterroot Mountains. It's a great way to clear my mind and connect with my body before the chaos of the day begins.\n",
+                "Alexandra: Growing up in a family that owned an outdoor gear shop, I was surrounded by conversations about environmental issues and the importance of conservation from a young age, which sparked my interest in sustainability. My parents' passion for preserving the natural world was contagious, and I think it's had a lasting impact on my career choices.\n",
+                "NO, The two statements provide additional information about Alexandra's background and interests, but do not present conflicting information."
+            ],
+            [
+                "Alexandra: I love practicing yoga in the early morning hours, especially on days when I can watch the sunrise over the Bitterroot Mountains. It's a great way to clear my mind and connect with my body before the chaos of the day begins.\n",
+                "Alexandra: My experience working with a local non-profit organization on a project to reduce waste in the community really made me realize the impact that small actions can have on the environment, and I've been passionate about helping businesses make a positive difference ever since.\n",
+                "NO \n\nThe second statement about working with a non-profit organization does not contradict the first statement about practicing yoga, as they describe different aspects of Alexandra's interests and experiences."
+            ],
+            [
+                "Alexis: That sounds beautiful, Alexandra. What inspired you to start practicing yoga?\n",
+                "Alexis: What do you like to do after your morning yoga practice? Do you have a favorite hobby or activity that brings you joy?\n",
+                "NO. \nThis line does not contradict the provided line, as it shows Alexis is continuing the conversation about Alexandra's yoga practice."
+            ],
+            [
+                "Alexis: That sounds beautiful, Alexandra. What inspired you to start practicing yoga?\n",
+                "Alexis: That sounds fascinating, Alexandra. What sparked your interest in sustainability and conservation?\n",
+                "NO, the line does not contradict the provided line as both lines show Alexis expressing interest in Alexandra's interests."
+            ],
+            [
+                "Alexis: That sounds beautiful, Alexandra. What inspired you to start practicing yoga?\n",
+                "Alexis: What inspired you to become a sustainability consultant, Alexandra? Was there a particular experience or event that led you down this path?\n",
+                "NO \nThe line does not contradict the provided line, as it shows Alexis engaging in conversation about Alexandra's different interests and professions, which is consistent with her initial response about being interested in getting to know Alexandra."
+            ],
+            [
+                "Alexandra: I think my yoga practice was influenced by my husband Ryan, who's a bit of a yogi himself - he's always been passionate about the physical and mental benefits of yoga, and I've learned so much from him.\n",
+                "Alexandra: I usually take some time to read environmental literature, often books about conservation efforts and sustainability, which helps me stay inspired and informed in my work as a sustainability consultant. I'm currently reading a book about regenerative agriculture and its impact on local ecosystems.\n",
+                "NO \n\nThe lines do not share any common information that would cause a contradiction, and they discuss different topics."
+            ],
+            [
+                "Alexandra: I think my yoga practice was influenced by my husband Ryan, who's a bit of a yogi himself - he's always been passionate about the physical and mental benefits of yoga, and I've learned so much from him.\n",
+                "Alexandra: Growing up in a family that owned an outdoor gear shop, I was surrounded by conversations about environmental issues and the importance of conservation from a young age, which sparked my interest in sustainability. My parents' passion for preserving the natural world was contagious, and I think it's had a lasting impact on my career choices.\n",
+                "NO, The two lines do not contradict each other as they discuss different aspects of Alexandra's life, with the first line focusing on her yoga practice and its influence from her husband, while the second line talks about her upbringing and the impact of her family's environmental passion on her career choices."
+            ],
+            [
+                "Alexandra: I think my yoga practice was influenced by my husband Ryan, who's a bit of a yogi himself - he's always been passionate about the physical and mental benefits of yoga, and I've learned so much from him.\n",
+                "Alexandra: My experience working with a local non-profit organization on a project to reduce waste in the community really made me realize the impact that small actions can have on the environment, and I've been passionate about helping businesses make a positive difference ever since.\n",
+                "NO, the line does not contradict the provided line, as it discusses a different topic and does not provide any conflicting information about Alexandra or her relationships."
+            ],
+            [
+                "Alexis: What do you like to do after your morning yoga practice? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: That sounds fascinating, Alexandra. What sparked your interest in sustainability and conservation?\n",
+                "NO \n\nThe line does not contradict the provided line as both lines show interest in getting to know the other person, with the first line inquiring about hobbies and the second line delving deeper into a specific topic of interest."
+            ],
+            [
+                "Alexis: What do you like to do after your morning yoga practice? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexis: What inspired you to become a sustainability consultant, Alexandra? Was there a particular experience or event that led you down this path?\n",
+                "NO. \nThe two lines do not contradict each other, as they are simply separate questions about different topics, morning routine and career inspiration."
+            ],
+            [
+                "Alexandra: I usually take some time to read environmental literature, often books about conservation efforts and sustainability, which helps me stay inspired and informed in my work as a sustainability consultant. I'm currently reading a book about regenerative agriculture and its impact on local ecosystems.\n",
+                "Alexandra: Growing up in a family that owned an outdoor gear shop, I was surrounded by conversations about environmental issues and the importance of conservation from a young age, which sparked my interest in sustainability. My parents' passion for preserving the natural world was contagious, and I think it's had a lasting impact on my career choices.\n",
+                "NO, the lines do not contradict each other because they both suggest that Alexandra's interest in sustainability and conservation was developed through exposure and education, with the first line describing her current methods for staying informed and the second line describing her early influences."
+            ],
+            [
+                "Alexandra: I usually take some time to read environmental literature, often books about conservation efforts and sustainability, which helps me stay inspired and informed in my work as a sustainability consultant. I'm currently reading a book about regenerative agriculture and its impact on local ecosystems.\n",
+                "Alexandra: My experience working with a local non-profit organization on a project to reduce waste in the community really made me realize the impact that small actions can have on the environment, and I've been passionate about helping businesses make a positive difference ever since.\n",
+                "NO, The two lines do not contradict each other as they both express Alexandra's interest and passion for environmental sustainability."
+            ],
+            [
+                "Alexis: That sounds fascinating, Alexandra. What sparked your interest in sustainability and conservation?\n",
+                "Alexis: What inspired you to become a sustainability consultant, Alexandra? Was there a particular experience or event that led you down this path?\n",
+                "NO \nThe lines are asking similar questions and seeking information on the same topic, indicating a continuation of the conversation rather than a contradiction."
+            ],
+            [
+                "Alexandra: Growing up in a family that owned an outdoor gear shop, I was surrounded by conversations about environmental issues and the importance of conservation from a young age, which sparked my interest in sustainability. My parents' passion for preserving the natural world was contagious, and I think it's had a lasting impact on my career choices.\n",
+                "Alexandra: My experience working with a local non-profit organization on a project to reduce waste in the community really made me realize the impact that small actions can have on the environment, and I've been passionate about helping businesses make a positive difference ever since.\n",
+                "NO, the line spoken by Person B does not contradict the provided line spoken by Person B, as both statements indicate Alexandra's passion for environmental issues and sustainability, and her experiences and influences that have shaped her career choices."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -1808,7 +1912,101 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Alexis: What do you like to do in your free time, Nia? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexis: That sounds amazing, Nia! What inspired you to take up beekeeping?\n",
+                "NO, The second line builds upon the first, indicating that Nia has shared information about her hobbies, which led to Alexis asking a follow-up question about beekeeping."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Nia? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexis: That sounds incredible, Nia. What do you like to do with the honey you harvest from the bees?\n",
+                "NO \nThe line does not contradict the provided line spoken by Person A, as it is a follow-up question that builds upon a conversation about Nia's hobbies or activities, specifically beekeeping."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Nia? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexis: What inspired you to take up beekeeping, Nia? Was there a particular moment or experience that sparked your interest?\n",
+                "NO, the line does not contradict the provided line, as it is a follow-up question that is related to Nia's potential hobbies or activities that bring her joy, which was inquired about in the initial question."
+            ],
+            [
+                "Alexis: What do you like to do in your free time, Nia? Do you have any hobbies or activities that bring you joy?\n",
+                "Alexis: That sounds like an incredible experience, Nia. What do you like to do with your free time when you're not tending to the bees?\n",
+                "NO, The line does not contradict the previous statement as it is a follow-up question to learn more about Nia's free time, specifically when she's not engaged in her mentioned activity of tending to the bees."
+            ],
+            [
+                "Nia: I love practicing yoga to unwind and clear my mind, and I've recently taken up beekeeping as a hobby - it's a unique way for me to connect with nature and learn about sustainability.\n",
+                "Nia: My friend Marcus, who's a nature enthusiast, introduced me to beekeeping, and I was captivated by the fascinating process of harvesting honey and learning about the importance of pollinators in our ecosystem. It's a great way for me to spend quality time with him, too, as we often tend to the bees together.\n",
+                "NO. The second line does not contradict the first line; it provides additional information and context about how Nia was introduced to beekeeping and her experience with the hobby."
+            ],
+            [
+                "Nia: I love practicing yoga to unwind and clear my mind, and I've recently taken up beekeeping as a hobby - it's a unique way for me to connect with nature and learn about sustainability.\n",
+                "Nia: I love experimenting with new recipes that incorporate our honey, like infused honey syrup for cocktails or honey-glazed vegetables, and I'm also a big fan of gifting it to friends and family during the holidays.\n",
+                "NO \nThe line does not contradict the provided line because it further elaborates on Nia's involvement with beekeeping, mentioning the use of the honey she produces."
+            ],
+            [
+                "Nia: I love practicing yoga to unwind and clear my mind, and I've recently taken up beekeeping as a hobby - it's a unique way for me to connect with nature and learn about sustainability.\n",
+                "Nia: Marcus and I were planning a romantic getaway to the mountains, and our Airbnb host was a beekeeper who let us try some of her honey straight from the hive, which completely blew me away and made me curious about the process. From there, we started learning more about beekeeping and decided to take the leap and get our own bees.\n",
+                "YES. \nThe line contradicts the provided line because it changes the reason for taking up beekeeping from a unique way to connect with nature and learn about sustainability, to being inspired by trying honey from an Airbnb host who was a beekeeper."
+            ],
+            [
+                "Alexis: That sounds amazing, Nia! What inspired you to take up beekeeping?\n",
+                "Alexis: That sounds incredible, Nia. What do you like to do with the honey you harvest from the bees?\n",
+                "NO, The second line does not contradict the first line, as it continues the conversation about beekeeping by asking about the use of the harvested honey."
+            ],
+            [
+                "Alexis: That sounds amazing, Nia! What inspired you to take up beekeeping?\n",
+                "Alexis: What inspired you to take up beekeeping, Nia? Was there a particular moment or experience that sparked your interest?\n",
+                "NO. \nThe line does not contradict the provided line as it is nearly identical and essentially asks the same question."
+            ],
+            [
+                "Alexis: That sounds amazing, Nia! What inspired you to take up beekeeping?\n",
+                "Alexis: That sounds like an incredible experience, Nia. What do you like to do with your free time when you're not tending to the bees?\n",
+                "NO. \nThe two lines do not contradict each other as they both show interest in Nia's beekeeping and related activities."
+            ],
+            [
+                "Nia: My friend Marcus, who's a nature enthusiast, introduced me to beekeeping, and I was captivated by the fascinating process of harvesting honey and learning about the importance of pollinators in our ecosystem. It's a great way for me to spend quality time with him, too, as we often tend to the bees together.\n",
+                "Nia: I love experimenting with new recipes that incorporate our honey, like infused honey syrup for cocktails or honey-glazed vegetables, and I'm also a big fan of gifting it to friends and family during the holidays.\n",
+                "NO. \nThe line spoken by Person B does not contradict the provided line because it further elaborates on the activities related to beekeeping, specifically on using the harvested honey, and does not contradict any information provided in the initial statement."
+            ],
+            [
+                "Nia: My friend Marcus, who's a nature enthusiast, introduced me to beekeeping, and I was captivated by the fascinating process of harvesting honey and learning about the importance of pollinators in our ecosystem. It's a great way for me to spend quality time with him, too, as we often tend to the bees together.\n",
+                "Nia: Marcus and I were planning a romantic getaway to the mountains, and our Airbnb host was a beekeeper who let us try some of her honey straight from the hive, which completely blew me away and made me curious about the process. From there, we started learning more about beekeeping and decided to take the leap and get our own bees.\n",
+                "YES. The initial statement claims Nia's friend Marcus introduced her to beekeeping, but the second statement suggests she and Marcus were introduced to beekeeping together by their Airbnb host."
+            ],
+            [
+                "Alexis: That sounds incredible, Nia. What do you like to do with the honey you harvest from the bees?\n",
+                "Alexis: What inspired you to take up beekeeping, Nia? Was there a particular moment or experience that sparked your interest?\n",
+                "NO\nThe two lines do not contradict each other, as they are both asking questions about Nia's beekeeping activities, showing Alexis' genuine interest in getting to know Nia better."
+            ],
+            [
+                "Alexis: That sounds incredible, Nia. What do you like to do with the honey you harvest from the bees?\n",
+                "Alexis: That sounds like an incredible experience, Nia. What do you like to do with your free time when you're not tending to the bees?\n",
+                "NO, \nThe line does not contradict the provided line, as both lines express curiosity about Nia's activities, with the second line asking about free time, which could include the activities mentioned in the first line."
+            ],
+            [
+                "Nia: I love experimenting with new recipes that incorporate our honey, like infused honey syrup for cocktails or honey-glazed vegetables, and I'm also a big fan of gifting it to friends and family during the holidays.\n",
+                "Nia: Marcus and I were planning a romantic getaway to the mountains, and our Airbnb host was a beekeeper who let us try some of her honey straight from the hive, which completely blew me away and made me curious about the process. From there, we started learning more about beekeeping and decided to take the leap and get our own bees.\n",
+                "NO\nThe lines do not contradict each other as they both share Nia's enthusiasm and origin story for working with honey, but offer different aspects of her interest in honey and beekeeping."
+            ],
+            [
+                "Nia: I love experimenting with new recipes that incorporate our honey, like infused honey syrup for cocktails or honey-glazed vegetables, and I'm also a big fan of gifting it to friends and family during the holidays.\n",
+                "Nia: I'm also an avid reader, especially historical fiction novels, and I love getting lost in the stories of people from different eras and backgrounds - it really helps me understand the complexities of our shared human experience. Reading always seems to spark new ideas and perspectives for me, both in and out of the classroom.\n",
+                "NO, the line spoken by Person B does not contradict the provided line because both statements reveal different hobbies and interests of Person B, with no overlap or conflicting information."
+            ],
+            [
+                "Alexis: What inspired you to take up beekeeping, Nia? Was there a particular moment or experience that sparked your interest?\n",
+                "Alexis: That sounds like an incredible experience, Nia. What do you like to do with your free time when you're not tending to the bees?\n",
+                "NO, the line does not contradict the provided line because it is a follow-up question that assumes Nia has already discussed her experience with beekeeping, which is in line with the initial question about what inspired her to take up beekeeping."
+            ],
+            [
+                "Nia: Marcus and I were planning a romantic getaway to the mountains, and our Airbnb host was a beekeeper who let us try some of her honey straight from the hive, which completely blew me away and made me curious about the process. From there, we started learning more about beekeeping and decided to take the leap and get our own bees.\n",
+                "Nia: I'm also an avid reader, especially historical fiction novels, and I love getting lost in the stories of people from different eras and backgrounds - it really helps me understand the complexities of our shared human experience. Reading always seems to spark new ideas and perspectives for me, both in and out of the classroom.\n",
+                "NO. The two lines do not share any conflicting information, as one line discusses Nia's interest in beekeeping and the other discusses her interest in reading historical fiction novels."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 0.6
     },
     {
         "task_name": "Chatting",
@@ -2210,7 +2408,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Kaito: What do you like to do in your free time, Maya? Are there any hobbies or activities that bring you joy?\n",
+                "Kaito: That sounds wonderful, Maya. What inspired you to start your garden?\n",
+                "NO, the line does not contradict the provided line as it is a follow-up question based on Maya's response to the initial question, showing interest in her hobbies."
+            ],
+            [
+                "Kaito: What do you like to do in your free time, Maya? Are there any hobbies or activities that bring you joy?\n",
+                "Kaito: That sounds beautiful, Maya. What kind of herbs and vegetables do you grow in your garden?\n",
+                "NO, The line does not contradict the provided line as it shows a continued interest in Maya's hobbies, specifically gardening."
+            ],
+            [
+                "Kaito: What do you like to do in your free time, Maya? Are there any hobbies or activities that bring you joy?\n",
+                "Kaito: That sounds delicious, Maya. What inspired you to start a garden in the first place?\n",
+                "NO, the line does not contradict the provided line, as it appears to be a continuation of a conversation where Person B (Maya) mentioned gardening, which is a hobby or activity that brings her joy."
+            ],
+            [
+                "Kaito: What do you like to do in your free time, Maya? Are there any hobbies or activities that bring you joy?\n",
+                "Kaito: What do you like to do when you're not gardening or practicing yoga? Do you have any hobbies or activities that bring you joy?\n",
+                "NO \n\nThe second line does not contradict the first line; instead, it is more specific, suggesting Kaito now has some knowledge of Maya's interests (gardening and yoga) and is seeking additional information about her hobbies."
+            ],
+            [
+                "Maya: I enjoy practicing yoga and tend to my backyard garden, where I grow a variety of herbs and vegetables to use in my cooking. It's a great way for me to unwind and connect with nature.\n",
+                "Maya: My mother's grandmother was a master gardener in Japan, and she taught me the importance of nurturing life and beauty in the smallest of spaces. Now, I try to carry on her legacy by growing my own herbs and vegetables and sharing them with friends and family.\n",
+                "NO \n\nThe second statement does not contradict the first statement, as both statements mention Maya's interest in gardening and growing herbs and vegetables, providing further context to her background and motivations."
+            ],
+            [
+                "Maya: I enjoy practicing yoga and tend to my backyard garden, where I grow a variety of herbs and vegetables to use in my cooking. It's a great way for me to unwind and connect with nature.\n",
+                "Maya: I grow a mix of traditional Japanese ingredients like shiso, sesame leaves, and yuzu, as well as some Southern favorites like okra, collard greens, and cherry tomatoes. My husband, Carlos, loves it when I make his favorite Cuban dish, ropa vieja, with the fresh herbs from our garden.\n",
+                "NO. The line does not contradict the provided line as it further elaborates on the types of herbs and vegetables Maya grows in her garden and her use of them in cooking, which aligns with her initial statement."
+            ],
+            [
+                "Maya: I enjoy practicing yoga and tend to my backyard garden, where I grow a variety of herbs and vegetables to use in my cooking. It's a great way for me to unwind and connect with nature.\n",
+                "Maya: I think what really sparked my interest in gardening was the time I spent with my grandmother in Japan, watching her tend to her garden and hearing the stories behind each plant. The combination of nature, tradition, and storytelling has stayed with me and now I get to share that with my own family through our garden.\n",
+                "NO \nThe line does not contradict the provided line, as both statements express Maya's fondness for gardening and its connection to nature, while the second line provides more background information on how her interest in gardening originated."
+            ],
+            [
+                "Maya: I enjoy practicing yoga and tend to my backyard garden, where I grow a variety of herbs and vegetables to use in my cooking. It's a great way for me to unwind and connect with nature.\n",
+                "Maya: I'm also passionate about photography and love capturing the beauty of the world around me, especially in my free time, and I'm planning to start a photography project documenting the diverse communities in Greenville.\n",
+                "NO, The line does not contradict the provided line, as both statements describe Maya's hobbies and interests, indicating a range of activities she enjoys in her free time."
+            ],
+            [
+                "Kaito: That sounds wonderful, Maya. What inspired you to start your garden?\n",
+                "Kaito: That sounds beautiful, Maya. What kind of herbs and vegetables do you grow in your garden?\n",
+                "NO, The two lines are asking follow-up questions about Maya's garden, indicating interest and do not contain contradictory information."
+            ],
+            [
+                "Kaito: That sounds wonderful, Maya. What inspired you to start your garden?\n",
+                "Kaito: That sounds delicious, Maya. What inspired you to start a garden in the first place?\n",
+                "NO, the line spoken by Person A does not contradict the provided line spoken by Person A because the second line has a similar context and intention, but with a slight difference in wording that doesn't change the overall meaning or convey opposing information."
+            ],
+            [
+                "Kaito: That sounds wonderful, Maya. What inspired you to start your garden?\n",
+                "Kaito: What do you like to do when you're not gardening or practicing yoga? Do you have any hobbies or activities that bring you joy?\n",
+                "NO. \nThe lines do not contradict each other as they both demonstrate Kaito's interest in getting to know Maya and her interests, with the first line focusing on her gardening and the second line expanding the conversation to her other hobbies and activities."
+            ],
+            [
+                "Maya: My mother's grandmother was a master gardener in Japan, and she taught me the importance of nurturing life and beauty in the smallest of spaces. Now, I try to carry on her legacy by growing my own herbs and vegetables and sharing them with friends and family.\n",
+                "Maya: I grow a mix of traditional Japanese ingredients like shiso, sesame leaves, and yuzu, as well as some Southern favorites like okra, collard greens, and cherry tomatoes. My husband, Carlos, loves it when I make his favorite Cuban dish, ropa vieja, with the fresh herbs from our garden.\n",
+                "NO, The second line does not contradict the first line as it provides more information about Maya's gardening practices and uses, which aligns with her stated goal of carrying on her grandmother's legacy."
+            ],
+            [
+                "Maya: My mother's grandmother was a master gardener in Japan, and she taught me the importance of nurturing life and beauty in the smallest of spaces. Now, I try to carry on her legacy by growing my own herbs and vegetables and sharing them with friends and family.\n",
+                "Maya: I think what really sparked my interest in gardening was the time I spent with my grandmother in Japan, watching her tend to her garden and hearing the stories behind each plant. The combination of nature, tradition, and storytelling has stayed with me and now I get to share that with my own family through our garden.\n",
+                "NO, because both lines express a similar sentiment of being inspired by a grandmother in Japan and the significance of gardening in Maya's life."
+            ],
+            [
+                "Maya: My mother's grandmother was a master gardener in Japan, and she taught me the importance of nurturing life and beauty in the smallest of spaces. Now, I try to carry on her legacy by growing my own herbs and vegetables and sharing them with friends and family.\n",
+                "Maya: I'm also passionate about photography and love capturing the beauty of the world around me, especially in my free time, and I'm planning to start a photography project documenting the diverse communities in Greenville.\n",
+                "NO, the lines do not contradict each other as they reveal different aspects of Maya's interests and passions, which can coexist without inconsistency."
+            ],
+            [
+                "Kaito: That sounds beautiful, Maya. What kind of herbs and vegetables do you grow in your garden?\n",
+                "Kaito: That sounds delicious, Maya. What inspired you to start a garden in the first place?\n",
+                "NO, The lines do not contradict each other because they both show interest in Maya's garden and are part of a conversation that is flowing logically."
+            ],
+            [
+                "Kaito: That sounds beautiful, Maya. What kind of herbs and vegetables do you grow in your garden?\n",
+                "Kaito: What do you like to do when you're not gardening or practicing yoga? Do you have any hobbies or activities that bring you joy?\n",
+                "NO, the line does not contradict the provided line as both lines show interest in getting to know Maya, but do not provide conflicting information."
+            ],
+            [
+                "Maya: I grow a mix of traditional Japanese ingredients like shiso, sesame leaves, and yuzu, as well as some Southern favorites like okra, collard greens, and cherry tomatoes. My husband, Carlos, loves it when I make his favorite Cuban dish, ropa vieja, with the fresh herbs from our garden.\n",
+                "Maya: I think what really sparked my interest in gardening was the time I spent with my grandmother in Japan, watching her tend to her garden and hearing the stories behind each plant. The combination of nature, tradition, and storytelling has stayed with me and now I get to share that with my own family through our garden.\n",
+                "NO. The line does not contradict the provided line, as it provides more background information on Maya's interest in gardening, which aligns with her growing traditional Japanese ingredients mentioned in the first line."
+            ],
+            [
+                "Maya: I grow a mix of traditional Japanese ingredients like shiso, sesame leaves, and yuzu, as well as some Southern favorites like okra, collard greens, and cherry tomatoes. My husband, Carlos, loves it when I make his favorite Cuban dish, ropa vieja, with the fresh herbs from our garden.\n",
+                "Maya: I'm also passionate about photography and love capturing the beauty of the world around me, especially in my free time, and I'm planning to start a photography project documenting the diverse communities in Greenville.\n",
+                "NO, the line does not mention Maya's gardening activities, so it does not contradict the previous statement about her garden."
+            ],
+            [
+                "Kaito: That sounds delicious, Maya. What inspired you to start a garden in the first place?\n",
+                "Kaito: What do you like to do when you're not gardening or practicing yoga? Do you have any hobbies or activities that bring you joy?\n",
+                "NO \n\nThe second line does not contradict the first line, as it shows continued interest in Maya's life beyond her initial statement about her garden."
+            ],
+            [
+                "Maya: I think what really sparked my interest in gardening was the time I spent with my grandmother in Japan, watching her tend to her garden and hearing the stories behind each plant. The combination of nature, tradition, and storytelling has stayed with me and now I get to share that with my own family through our garden.\n",
+                "Maya: I'm also passionate about photography and love capturing the beauty of the world around me, especially in my free time, and I'm planning to start a photography project documenting the diverse communities in Greenville.\n",
+                "NO, The line does not contradict the previous line, as it simply introduces a new interest of Maya's (photography) that is separate from her interest in gardening."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -2612,7 +2914,106 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Jasper: What do you like to do in your free time, Kendrick? Do you have any hobbies that bring you joy?\n",
+                "Jasper: That sounds wonderful, Kendrick. What inspired you to take up jazz guitar in the first place?\n",
+                "NO, the line does not contradict the provided line spoken by Person A because it builds upon a conversation about Kendrick's hobbies, suggesting that Kendrick has indeed shared a hobby with Jasper, which is consistent with the initial inquiry about hobbies."
+            ],
+            [
+                "Jasper: What do you like to do in your free time, Kendrick? Do you have any hobbies that bring you joy?\n",
+                "Jasper: What draws you to the improvisational aspect of jazz? Is there a particular artist or album that stands out to you as a favorite?\n",
+                "NO, the line does not contradict the provided line, as it is a more specific follow-up question to a potential hobby or interest mentioned by Kendrick, indicating that Jasper is showing genuine interest in getting to know Kendrick."
+            ],
+            [
+                "Jasper: What do you like to do in your free time, Kendrick? Do you have any hobbies that bring you joy?\n",
+                "Jasper: What inspired you to become a Park Ranger, Kendrick? Was there a particular experience or place that sparked your interest in conservation?\n",
+                "NO, \nThe line does not contradict the previous statement as it continues the conversation by asking more specific questions about Kendrick's interests and career, rather than presenting a conflicting idea."
+            ],
+            [
+                "Jasper: What do you like to do in your free time, Kendrick? Do you have any hobbies that bring you joy?\n",
+                "Jasper: What inspired you to become a city commissioner, Kendrick? Was there a particular experience or issue that drove you to seek public office?\n",
+                "NO. \n\nThe two lines do not contradict each other, as they are simply asking different questions about Kendrick's interests and career choices, rather than making statements that oppose each other."
+            ],
+            [
+                "Kendrick: I'm a big fan of playing jazz guitar, and I've been known to break out the old instrument and play some improvisational tunes with friends and family when we're all together. It's a great way to express myself creatively and unwind after a long day.\n",
+                "Kendrick: I've always been drawn to the soulful sounds of jazz, and my dad, who was a big music lover, used to play Coltrane and Miles Davis records at home when I was growing up, which really sparked my interest in the genre.\n",
+                "NO, the line does not contradict the provided line spoken by Person B because both lines express a positive sentiment towards jazz and indicate how it has been a part of Kendrick's life, with the second line providing more background information on how he developed his interest in jazz."
+            ],
+            [
+                "Kendrick: I'm a big fan of playing jazz guitar, and I've been known to break out the old instrument and play some improvisational tunes with friends and family when we're all together. It's a great way to express myself creatively and unwind after a long day.\n",
+                "Kendrick: I'm really drawn to the idea of creating something new and authentic in the moment, which is what improvisation embodies for me. I've always been a fan of John Coltrane's \"A Love Supreme\" album, its spiritual and emotional depth really resonates with me.\n",
+                "NO, the line does not contradict the provided line as both statements discuss Kendrick's appreciation for improvisation and jazz music, showing consistency in his interests."
+            ],
+            [
+                "Kendrick: I'm a big fan of playing jazz guitar, and I've been known to break out the old instrument and play some improvisational tunes with friends and family when we're all together. It's a great way to express myself creatively and unwind after a long day.\n",
+                "Kendrick: Actually, Jasper, I'm not a Park Ranger, I'm a city commissioner, and I'm passionate about promoting environmental sustainability and conservation in my community. I'm particularly interested in initiatives that combine social justice and environmental stewardship, which is why I've been working on projects to reduce waste and increase green spaces in Fort Lauderdale.\n",
+                "NO, the line does not contradict the provided line because it discusses a different topic (career and interests) and does not provide conflicting information about his interest in playing jazz guitar."
+            ],
+            [
+                "Kendrick: I'm a big fan of playing jazz guitar, and I've been known to break out the old instrument and play some improvisational tunes with friends and family when we're all together. It's a great way to express myself creatively and unwind after a long day.\n",
+                "Kendrick: I think it was a combination of my upbringing in a community that valued service and my experiences working in non-profit organizations that led me to run for office, with a specific goal of making a more meaningful impact on a larger scale. My time as a high school counselor also taught me the importance of listening to and amplifying the voices of marginalized communities.\n",
+                "NO, The line does not contradict the provided line because it discusses a different topic, focusing on Person B's background and motivation for running for office rather than their hobby of playing jazz guitar."
+            ],
+            [
+                "Jasper: That sounds wonderful, Kendrick. What inspired you to take up jazz guitar in the first place?\n",
+                "Jasper: What draws you to the improvisational aspect of jazz? Is there a particular artist or album that stands out to you as a favorite?\n",
+                "NO \n\nThe two lines do not contradict each other; they are actually follow-up questions showing interest in the same topic of jazz guitar."
+            ],
+            [
+                "Jasper: That sounds wonderful, Kendrick. What inspired you to take up jazz guitar in the first place?\n",
+                "Jasper: What inspired you to become a Park Ranger, Kendrick? Was there a particular experience or place that sparked your interest in conservation?\n",
+                "YES \nThe second line contradicts the first line because it implies Kendrick is a Park Ranger, while the first line suggests Kendrick plays jazz guitar."
+            ],
+            [
+                "Kendrick: I've always been drawn to the soulful sounds of jazz, and my dad, who was a big music lover, used to play Coltrane and Miles Davis records at home when I was growing up, which really sparked my interest in the genre.\n",
+                "Kendrick: I'm really drawn to the idea of creating something new and authentic in the moment, which is what improvisation embodies for me. I've always been a fan of John Coltrane's \"A Love Supreme\" album, its spiritual and emotional depth really resonates with me.\n",
+                "NO. The lines do not contradict each other as they both express Kendrick's appreciation for jazz, specifically mentioning John Coltrane, and highlight his connection to the genre."
+            ],
+            [
+                "Kendrick: I've always been drawn to the soulful sounds of jazz, and my dad, who was a big music lover, used to play Coltrane and Miles Davis records at home when I was growing up, which really sparked my interest in the genre.\n",
+                "Kendrick: Actually, Jasper, I'm not a Park Ranger, I'm a city commissioner, and I'm passionate about promoting environmental sustainability and conservation in my community. I'm particularly interested in initiatives that combine social justice and environmental stewardship, which is why I've been working on projects to reduce waste and increase green spaces in Fort Lauderdale.\n",
+                "NO. The lines do not contradict each other as they discuss different aspects of Person B's life: one line talks about his musical interests and the other about his profession and community work."
+            ],
+            [
+                "Kendrick: I've always been drawn to the soulful sounds of jazz, and my dad, who was a big music lover, used to play Coltrane and Miles Davis records at home when I was growing up, which really sparked my interest in the genre.\n",
+                "Kendrick: I think it was a combination of my upbringing in a community that valued service and my experiences working in non-profit organizations that led me to run for office, with a specific goal of making a more meaningful impact on a larger scale. My time as a high school counselor also taught me the importance of listening to and amplifying the voices of marginalized communities.\n",
+                "NO \nThe two lines do not contradict each other as they discuss different aspects of Kendrick's life, one related to music and the other to their career and motivations."
+            ],
+            [
+                "Jasper: What draws you to the improvisational aspect of jazz? Is there a particular artist or album that stands out to you as a favorite?\n",
+                "Jasper: What inspired you to become a Park Ranger, Kendrick? Was there a particular experience or place that sparked your interest in conservation?\n",
+                "NO \nThe line does not contradict the provided line as it does not address the topic of jazz, but rather introduces a new topic of conversation about being a Park Ranger."
+            ],
+            [
+                "Jasper: What draws you to the improvisational aspect of jazz? Is there a particular artist or album that stands out to you as a favorite?\n",
+                "Jasper: What inspired you to become a city commissioner, Kendrick? Was there a particular experience or issue that drove you to seek public office?\n",
+                "NO \n\nThe two lines do not contradict each other because they appear to be questions from different conversations or topics, with the first being about jazz and the second about public office."
+            ],
+            [
+                "Kendrick: I'm really drawn to the idea of creating something new and authentic in the moment, which is what improvisation embodies for me. I've always been a fan of John Coltrane's \"A Love Supreme\" album, its spiritual and emotional depth really resonates with me.\n",
+                "Kendrick: Actually, Jasper, I'm not a Park Ranger, I'm a city commissioner, and I'm passionate about promoting environmental sustainability and conservation in my community. I'm particularly interested in initiatives that combine social justice and environmental stewardship, which is why I've been working on projects to reduce waste and increase green spaces in Fort Lauderdale.\n",
+                "NO \nThis line does not contradict the provided line because it discusses a completely different topic and aspect of Person B's life, and does not negate any information previously stated."
+            ],
+            [
+                "Kendrick: I'm really drawn to the idea of creating something new and authentic in the moment, which is what improvisation embodies for me. I've always been a fan of John Coltrane's \"A Love Supreme\" album, its spiritual and emotional depth really resonates with me.\n",
+                "Kendrick: I think it was a combination of my upbringing in a community that valued service and my experiences working in non-profit organizations that led me to run for office, with a specific goal of making a more meaningful impact on a larger scale. My time as a high school counselor also taught me the importance of listening to and amplifying the voices of marginalized communities.\n",
+                "NO. \nThe two statements discuss different aspects of Person B's interests and life experiences, with the first focusing on his artistic inclinations and the second on his community service and career, and there's no direct contradiction between the two."
+            ],
+            [
+                "Jasper: What inspired you to become a Park Ranger, Kendrick? Was there a particular experience or place that sparked your interest in conservation?\n",
+                "Jasper: What inspired you to become a city commissioner, Kendrick? Was there a particular experience or issue that drove you to seek public office?\n",
+                "YES, because the two lines imply Kendrick has two different professions (Park Ranger and city commissioner), which cannot be true at the same time in this context."
+            ],
+            [
+                "Kendrick: Actually, Jasper, I'm not a Park Ranger, I'm a city commissioner, and I'm passionate about promoting environmental sustainability and conservation in my community. I'm particularly interested in initiatives that combine social justice and environmental stewardship, which is why I've been working on projects to reduce waste and increase green spaces in Fort Lauderdale.\n",
+                "Kendrick: I think it was a combination of my upbringing in a community that valued service and my experiences working in non-profit organizations that led me to run for office, with a specific goal of making a more meaningful impact on a larger scale. My time as a high school counselor also taught me the importance of listening to and amplifying the voices of marginalized communities.\n",
+                "NO, The line does not contradict the provided line, as it provides additional context and background information about Kendrick's motivations and values, which align with their stated passion for social justice and community work."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 0.6,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -3014,7 +3415,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Kofi: What do you like to do in your free time, Elena? Do you have any hobbies that bring you joy?\n",
+                "Kofi: That sounds amazing, Elena! What inspired you to start documenting the changing seasons along the Connecticut River Valley?\n",
+                "NO, The second line does not contradict the first line because it appears to be a follow-up question in response to Elena's interests or hobbies."
+            ],
+            [
+                "Kofi: What do you like to do in your free time, Elena? Do you have any hobbies that bring you joy?\n",
+                "Kofi: That sounds like a wonderful project, Elena! What kind of camera equipment do you use for your photography?\n",
+                "NO. \nThe second line does not contradict the first line, as it continues the conversation about Elena's hobbies, specifically asking for more information about her photography, which implies Elena had mentioned photography as one of her hobbies in response to the first line."
+            ],
+            [
+                "Kofi: What do you like to do in your free time, Elena? Do you have any hobbies that bring you joy?\n",
+                "Kofi: What inspired you to start a photography project, Elena? Was there a particular moment or experience that sparked your interest in capturing the beauty of nature?\n",
+                "NO. \n\nThe second line does not contradict the first line, as it shows that Kofi is still trying to learn more about Elena's interests and hobbies, with the second line being more specific after possibly learning about her photography hobby from her response to the first question."
+            ],
+            [
+                "Kofi: What do you like to do in your free time, Elena? Do you have any hobbies that bring you joy?\n",
+                "Kofi: That's amazing, Elena! What kind of camera do you have that allows you to capture the vibrant colors of the Connecticut River Valley during the fall foliage?\n",
+                "NO, The line does not contradict the provided line, as Kofi's second statement is an extension of a conversation that could have started with asking about Elena's hobbies, possibly photography."
+            ],
+            [
+                "Elena: I love practicing photography, and I find it's a great way to capture the beauty of nature and our community's cultural events, like the Hartford Puerto Rican Festival. I've even started a small photography project to document the changing seasons along the Connecticut River Valley.\n",
+                "Elena: I've always been fascinated by the way the light changes throughout the seasons, and I wanted to capture that in a way that showcases the beauty of our local landscape. It's also a great way to get my kids outside and exploring the natural world with me.\n",
+                "NO, the line does not contradict the provided line as both statements convey Elena's interest in capturing the beauty of nature through photography, specifically focusing on the changing seasons and local landscape."
+            ],
+            [
+                "Elena: I love practicing photography, and I find it's a great way to capture the beauty of nature and our community's cultural events, like the Hartford Puerto Rican Festival. I've even started a small photography project to document the changing seasons along the Connecticut River Valley.\n",
+                "Elena: I'm a Canon EOS 5D Mark IV user, and I love the image quality it provides, especially for capturing the vibrant colors of the Connecticut River Valley during the fall foliage.\n",
+                "NO \nThis line does not contradict the provided line spoken by Person B, as it provides additional information about Elena's photography hobby and equipment, rather than contradicting any information previously stated."
+            ],
+            [
+                "Elena: I love practicing photography, and I find it's a great way to capture the beauty of nature and our community's cultural events, like the Hartford Puerto Rican Festival. I've even started a small photography project to document the changing seasons along the Connecticut River Valley.\n",
+                "Elena: I've always been drawn to the way photography allows me to tell stories through images, and I've been inspired by the work of Latin American photographers like Kally Berard and Graciela Iturbide, who have a way of capturing the resilience and beauty of their communities. Their work has encouraged me to use my photography as a way to share the stories of my own community.\n",
+                "NO. The line spoken by Person B does not contradict the provided line, as both lines describe Elena's passion for photography and its connection to community and storytelling, complementing each other with additional details."
+            ],
+            [
+                "Elena: I love practicing photography, and I find it's a great way to capture the beauty of nature and our community's cultural events, like the Hartford Puerto Rican Festival. I've even started a small photography project to document the changing seasons along the Connecticut River Valley.\n",
+                "Elena: I've recently started experimenting with a drone to capture unique aerial perspectives of the river valley, it's been a fun challenge to learn how to operate it while still getting the shots I want.\n",
+                "NO, the line does not contradict the provided line spoken by Person B, as both statements express Elena's interest in capturing the beauty of the river valley through photography."
+            ],
+            [
+                "Kofi: That sounds amazing, Elena! What inspired you to start documenting the changing seasons along the Connecticut River Valley?\n",
+                "Kofi: That sounds like a wonderful project, Elena! What kind of camera equipment do you use for your photography?\n",
+                "NO \nThe two lines are consistent and show interest in Elena's project, with the first asking about inspiration and the second inquiring about equipment, indicating a continued conversation rather than a contradiction."
+            ],
+            [
+                "Kofi: That sounds amazing, Elena! What inspired you to start documenting the changing seasons along the Connecticut River Valley?\n",
+                "Kofi: What inspired you to start a photography project, Elena? Was there a particular moment or experience that sparked your interest in capturing the beauty of nature?\n",
+                "NO, the lines do not contradict each other as both lines show interest in Elena's photography project, but the second line is more general about her photography project, while the first line is more specific about the changing seasons along the Connecticut River Valley."
+            ],
+            [
+                "Kofi: That sounds amazing, Elena! What inspired you to start documenting the changing seasons along the Connecticut River Valley?\n",
+                "Kofi: That's amazing, Elena! What kind of camera do you have that allows you to capture the vibrant colors of the Connecticut River Valley during the fall foliage?\n",
+                "NO \n\nThe two lines do not contradict each other as both express Kofi's interest in Elena's documentation of the Connecticut River Valley, specifically focusing on the visuals and the tools she used."
+            ],
+            [
+                "Elena: I've always been fascinated by the way the light changes throughout the seasons, and I wanted to capture that in a way that showcases the beauty of our local landscape. It's also a great way to get my kids outside and exploring the natural world with me.\n",
+                "Elena: I'm a Canon EOS 5D Mark IV user, and I love the image quality it provides, especially for capturing the vibrant colors of the Connecticut River Valley during the fall foliage.\n",
+                "NO. \nThe lines do not contradict each other as they both mention Elena's interest in capturing the beauty of the local landscape, specifically during the fall season, using her camera."
+            ],
+            [
+                "Elena: I've always been fascinated by the way the light changes throughout the seasons, and I wanted to capture that in a way that showcases the beauty of our local landscape. It's also a great way to get my kids outside and exploring the natural world with me.\n",
+                "Elena: I've always been drawn to the way photography allows me to tell stories through images, and I've been inspired by the work of Latin American photographers like Kally Berard and Graciela Iturbide, who have a way of capturing the resilience and beauty of their communities. Their work has encouraged me to use my photography as a way to share the stories of my own community.\n",
+                "NO, the line does not contradict the provided line because both statements express Elena's passion for photography, but they highlight different aspects and inspirations of her work."
+            ],
+            [
+                "Elena: I've always been fascinated by the way the light changes throughout the seasons, and I wanted to capture that in a way that showcases the beauty of our local landscape. It's also a great way to get my kids outside and exploring the natural world with me.\n",
+                "Elena: I've recently started experimenting with a drone to capture unique aerial perspectives of the river valley, it's been a fun challenge to learn how to operate it while still getting the shots I want.\n",
+                "NO \nThe line does not contradict the provided line, as both lines discuss Elena's interest in capturing scenic views, with the second line specifying her use of a drone for this purpose."
+            ],
+            [
+                "Kofi: That sounds like a wonderful project, Elena! What kind of camera equipment do you use for your photography?\n",
+                "Kofi: What inspired you to start a photography project, Elena? Was there a particular moment or experience that sparked your interest in capturing the beauty of nature?\n",
+                "NO, the lines do not contradict each other, as they both indicate Kofi's interest in Elena's photography project and are likely part of a continuous conversation."
+            ],
+            [
+                "Kofi: That sounds like a wonderful project, Elena! What kind of camera equipment do you use for your photography?\n",
+                "Kofi: That's amazing, Elena! What kind of camera do you have that allows you to capture the vibrant colors of the Connecticut River Valley during the fall foliage?\n",
+                "NO \nThe line does not contradict the provided line as it is asking for more specific information about Elena's camera, which is related to the initial question about camera equipment."
+            ],
+            [
+                "Elena: I'm a Canon EOS 5D Mark IV user, and I love the image quality it provides, especially for capturing the vibrant colors of the Connecticut River Valley during the fall foliage.\n",
+                "Elena: I've always been drawn to the way photography allows me to tell stories through images, and I've been inspired by the work of Latin American photographers like Kally Berard and Graciela Iturbide, who have a way of capturing the resilience and beauty of their communities. Their work has encouraged me to use my photography as a way to share the stories of my own community.\n",
+                "NO. The line does not contradict the provided line, as it shares more about Person B's inspiration and goals for photography, without disagreeing with their previous statement about their camera and preferred subject matter."
+            ],
+            [
+                "Elena: I'm a Canon EOS 5D Mark IV user, and I love the image quality it provides, especially for capturing the vibrant colors of the Connecticut River Valley during the fall foliage.\n",
+                "Elena: I've recently started experimenting with a drone to capture unique aerial perspectives of the river valley, it's been a fun challenge to learn how to operate it while still getting the shots I want.\n",
+                "NO, \nThe line does not contradict the provided line spoken by Person B, as it simply expands on her interest in photography and experimenting with new equipment."
+            ],
+            [
+                "Kofi: What inspired you to start a photography project, Elena? Was there a particular moment or experience that sparked your interest in capturing the beauty of nature?\n",
+                "Kofi: That's amazing, Elena! What kind of camera do you have that allows you to capture the vibrant colors of the Connecticut River Valley during the fall foliage?\n",
+                "NO, The line does not contradict the provided line as it shows continued interest in Elena's photography project and its relation to capturing natural beauty."
+            ],
+            [
+                "Elena: I've always been drawn to the way photography allows me to tell stories through images, and I've been inspired by the work of Latin American photographers like Kally Berard and Graciela Iturbide, who have a way of capturing the resilience and beauty of their communities. Their work has encouraged me to use my photography as a way to share the stories of my own community.\n",
+                "Elena: I've recently started experimenting with a drone to capture unique aerial perspectives of the river valley, it's been a fun challenge to learn how to operate it while still getting the shots I want.\n",
+                "NO, The line does not contradict the previous statement, as Elena is simply exploring a new technique to enhance her photography skills, which aligns with her goal of capturing stories through images."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -3416,7 +3921,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Alexandra: What do you like to do in your free time, Deborah? Do you have any hobbies that bring you joy?\n",
+                "Alexandra: That sounds wonderful, Deborah! What inspired you to focus on sustainable gardening?\n",
+                "NO \nThe line does not contradict the initial statement as it is a follow-up question showing interest in a hobby that Deborah mentioned, which was likely a response to the first question."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Deborah? Do you have any hobbies that bring you joy?\n",
+                "Alexandra: What inspired you to work with the Kansas Department of Wildlife? Was it a personal experience or a professional interest that drew you to this field?\n",
+                "NO. The line does not contradict the provided line as it is a follow-up question and builds upon the conversation, showing interest in getting to know Deborah better."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Deborah? Do you have any hobbies that bring you joy?\n",
+                "Alexandra: What do you like to do when you're not gardening or working? Do you have a favorite hobby or activity that brings you joy?\n",
+                "NO, The line spoken by Person A does not contradict the provided line spoken by Person A, because the second line simply narrows down the possibilities by excluding gardening and work, but still inquires about hobbies and activities that bring joy."
+            ],
+            [
+                "Alexandra: What do you like to do in your free time, Deborah? Do you have any hobbies that bring you joy?\n",
+                "Alexandra: That sounds delicious, Deborah! What inspired you to start experimenting with new recipes?\n",
+                "NO \n\nThe second line does not contradict the first line, as it is a follow-up question showing interest in Deborah's hobbies, possibly indicating that Deborah has mentioned cooking as one of her hobbies that bring her joy."
+            ],
+            [
+                "Deborah: I love to tend to my garden, experimenting with new sustainable gardening techniques and growing native Kansas wildflowers that attract pollinators. It's a great way for me to unwind and connect with nature, and I always feel a sense of accomplishment when I harvest fresh herbs and vegetables from my own yard.\n",
+                "Deborah: My experience working with the Kansas Department of Wildlife, Parks and Tourism really opened my eyes to the importance of preserving natural habitats, which I've carried over into my gardening practices. It's amazing to see the impact even small actions can have on the local ecosystem.\n",
+                "NO, the line does not contradict the provided line spoken by Person B because both statements emphasize Deborah's appreciation for nature and her efforts to preserve it through her gardening practices and professional experience."
+            ],
+            [
+                "Deborah: I love to tend to my garden, experimenting with new sustainable gardening techniques and growing native Kansas wildflowers that attract pollinators. It's a great way for me to unwind and connect with nature, and I always feel a sense of accomplishment when I harvest fresh herbs and vegetables from my own yard.\n",
+                "Deborah: My passion for the outdoors and conservation was sparked by spending countless hours exploring the Flint Hills with my family as a child, and I was lucky to have parents who encouraged me to pursue a degree in Environmental Science at the University of Kansas. That's where my career with the Kansas Department of Wildlife, Parks and Tourism really took off, and I was able to combine my love for nature and community service.\n",
+                "NO, the line does not contradict the provided line spoken by Person B, because both statements consistently express Deborah's love for nature and the outdoors."
+            ],
+            [
+                "Deborah: I love to tend to my garden, experimenting with new sustainable gardening techniques and growing native Kansas wildflowers that attract pollinators. It's a great way for me to unwind and connect with nature, and I always feel a sense of accomplishment when I harvest fresh herbs and vegetables from my own yard.\n",
+                "Deborah: I love to cook and bake, especially experimenting with new recipes using fresh ingredients from my garden, and I find joy in sharing meals with friends and family. My famous sweet potato pie is a favorite among our social circle, and I'm always eager to try out new flavors and techniques.\n",
+                "NO, the line does not contradict the provided line, as both statements express Deborah's interest in using her garden's fresh produce, first in gardening and then in cooking."
+            ],
+            [
+                "Deborah: I love to tend to my garden, experimenting with new sustainable gardening techniques and growing native Kansas wildflowers that attract pollinators. It's a great way for me to unwind and connect with nature, and I always feel a sense of accomplishment when I harvest fresh herbs and vegetables from my own yard.\n",
+                "Deborah: I also enjoy reading regional literature, particularly the works of local authors, which often highlight the unique history and culture of Kansas, and I find it's a great way to learn more about my community and the people who live here.\n",
+                "NO. The two statements are about different hobbies and interests of Person B, and they do not contradict each other in any way."
+            ],
+            [
+                "Alexandra: That sounds wonderful, Deborah! What inspired you to focus on sustainable gardening?\n",
+                "Alexandra: What inspired you to work with the Kansas Department of Wildlife? Was it a personal experience or a professional interest that drew you to this field?\n",
+                "NO \nThe line does not directly contradict the provided line as it does not mention or deny any information related to sustainable gardening, but rather shifts to a different topic of conversation."
+            ],
+            [
+                "Alexandra: That sounds wonderful, Deborah! What inspired you to focus on sustainable gardening?\n",
+                "Alexandra: What do you like to do when you're not gardening or working? Do you have a favorite hobby or activity that brings you joy?\n",
+                "NO \nThe two lines do not contradict each other, as they are discussing different topics and asking non-conflicting questions about Deborah's life."
+            ],
+            [
+                "Alexandra: That sounds wonderful, Deborah! What inspired you to focus on sustainable gardening?\n",
+                "Alexandra: That sounds delicious, Deborah! What inspired you to start experimenting with new recipes?\n",
+                "NO \nThe two lines do not contradict each other; they simply show Alexandra's interest in different topics of conversation with Deborah."
+            ],
+            [
+                "Deborah: My experience working with the Kansas Department of Wildlife, Parks and Tourism really opened my eyes to the importance of preserving natural habitats, which I've carried over into my gardening practices. It's amazing to see the impact even small actions can have on the local ecosystem.\n",
+                "Deborah: My passion for the outdoors and conservation was sparked by spending countless hours exploring the Flint Hills with my family as a child, and I was lucky to have parents who encouraged me to pursue a degree in Environmental Science at the University of Kansas. That's where my career with the Kansas Department of Wildlife, Parks and Tourism really took off, and I was able to combine my love for nature and community service.\n",
+                "NO, the lines do not contradict each other as they both mention Deborah's career with the Kansas Department of Wildlife, Parks and Tourism and her passion for conservation, presenting a consistent narrative."
+            ],
+            [
+                "Deborah: My experience working with the Kansas Department of Wildlife, Parks and Tourism really opened my eyes to the importance of preserving natural habitats, which I've carried over into my gardening practices. It's amazing to see the impact even small actions can have on the local ecosystem.\n",
+                "Deborah: I love to cook and bake, especially experimenting with new recipes using fresh ingredients from my garden, and I find joy in sharing meals with friends and family. My famous sweet potato pie is a favorite among our social circle, and I'm always eager to try out new flavors and techniques.\n",
+                "NO, the line does not contradict the provided line spoken by Person B, because the conversation shifts to a different topic (cooking and baking) that does not dispute the information about her experience and gardening practices."
+            ],
+            [
+                "Deborah: My experience working with the Kansas Department of Wildlife, Parks and Tourism really opened my eyes to the importance of preserving natural habitats, which I've carried over into my gardening practices. It's amazing to see the impact even small actions can have on the local ecosystem.\n",
+                "Deborah: I also enjoy reading regional literature, particularly the works of local authors, which often highlight the unique history and culture of Kansas, and I find it's a great way to learn more about my community and the people who live here.\n",
+                "NO, The two lines do not share the same topic and therefore do not contain contradictory statements about a topic."
+            ],
+            [
+                "Alexandra: What inspired you to work with the Kansas Department of Wildlife? Was it a personal experience or a professional interest that drew you to this field?\n",
+                "Alexandra: What do you like to do when you're not gardening or working? Do you have a favorite hobby or activity that brings you joy?\n",
+                "NO, The two lines do not discuss the same topic, and thus the second line does not provide conflicting information to the first."
+            ],
+            [
+                "Alexandra: What inspired you to work with the Kansas Department of Wildlife? Was it a personal experience or a professional interest that drew you to this field?\n",
+                "Alexandra: That sounds delicious, Deborah! What inspired you to start experimenting with new recipes?\n",
+                "NO, The two lines do not have any information that would suggest a contradiction between them, as they appear to be from different conversations and are discussing different topics."
+            ],
+            [
+                "Deborah: My passion for the outdoors and conservation was sparked by spending countless hours exploring the Flint Hills with my family as a child, and I was lucky to have parents who encouraged me to pursue a degree in Environmental Science at the University of Kansas. That's where my career with the Kansas Department of Wildlife, Parks and Tourism really took off, and I was able to combine my love for nature and community service.\n",
+                "Deborah: I love to cook and bake, especially experimenting with new recipes using fresh ingredients from my garden, and I find joy in sharing meals with friends and family. My famous sweet potato pie is a favorite among our social circle, and I'm always eager to try out new flavors and techniques.\n",
+                "NO, the line does not contradict the provided line spoken by Person B because it simply shares a different interest and hobby unrelated to the first statement."
+            ],
+            [
+                "Deborah: My passion for the outdoors and conservation was sparked by spending countless hours exploring the Flint Hills with my family as a child, and I was lucky to have parents who encouraged me to pursue a degree in Environmental Science at the University of Kansas. That's where my career with the Kansas Department of Wildlife, Parks and Tourism really took off, and I was able to combine my love for nature and community service.\n",
+                "Deborah: I also enjoy reading regional literature, particularly the works of local authors, which often highlight the unique history and culture of Kansas, and I find it's a great way to learn more about my community and the people who live here.\n",
+                "NO. The line spoken by Person B does not contradict the provided line spoken by Person B as it provides additional information about Person B's interests that is consistent with their passion for the state of Kansas and its culture."
+            ],
+            [
+                "Alexandra: What do you like to do when you're not gardening or working? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Alexandra: That sounds delicious, Deborah! What inspired you to start experimenting with new recipes?\n",
+                "NO, the lines do not contradict each other as they appear to be asking follow-up questions in a conversation about hobbies and interests."
+            ],
+            [
+                "Deborah: I love to cook and bake, especially experimenting with new recipes using fresh ingredients from my garden, and I find joy in sharing meals with friends and family. My famous sweet potato pie is a favorite among our social circle, and I'm always eager to try out new flavors and techniques.\n",
+                "Deborah: I also enjoy reading regional literature, particularly the works of local authors, which often highlight the unique history and culture of Kansas, and I find it's a great way to learn more about my community and the people who live here.\n",
+                "NO, the line does not contradict the provided line spoken by Person B, because it simply provides additional information about Deborah's interests that does not conflict with her previously stated enjoyment of cooking, baking, and sharing meals."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -3818,7 +4427,111 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Elena: What do you like to do in your free time, Emily? Do you have any hobbies or activities that bring you joy?\n",
+                "Elena: That sounds wonderful, Emily! What inspired you to take up beekeeping?\n",
+                "NO. The line does not contradict the provided line as both lines are inquiring about the other person's interests and hobbies, with the second line showing specific interest in beekeeping."
+            ],
+            [
+                "Elena: What do you like to do in your free time, Emily? Do you have any hobbies or activities that bring you joy?\n",
+                "Elena: That's a beautiful story, Emily. What kind of experience do you have with gardening and cooking?\n",
+                "NO, the line does not contradict the provided line as it shows Elena is continuing the conversation, asking follow-up questions about Emily's interests, which indicates a smooth progression of the conversation."
+            ],
+            [
+                "Elena: What do you like to do in your free time, Emily? Do you have any hobbies or activities that bring you joy?\n",
+                "Elena: What inspired you to start beekeeping, Emily? Was there a particular experience or event that sparked your interest?\n",
+                "NO, the second line does not contradict the first line, as it is a follow-up question that assumes Emily has a hobby or interest, specifically beekeeping, which Elena is now exploring further."
+            ],
+            [
+                "Elena: What do you like to do in your free time, Emily? Do you have any hobbies or activities that bring you joy?\n",
+                "Elena: That sounds like a fascinating hobby, Emily. What kind of community involvement have you had with your beekeeping endeavors?\n",
+                "NO, because the second line appears to be a follow-up question to a hobby Emily mentioned, which is a natural progression from the initial question about hobbies."
+            ],
+            [
+                "Emily: I'm a big fan of gardening and experimenting with new recipes in the kitchen, especially since my Cherokee grandmother used to teach me traditional cooking techniques that I love passing down to my own family. I've recently taken up beekeeping, which has become a fascinating hobby that combines nature and community for me.\n",
+                "Emily: I think what really drew me to beekeeping was the connection to my grandmother's stories about harvesting honey and the importance of pollinators in our ecosystem \u2013 it felt like a way to honor her legacy and learn more about our natural world.\n",
+                "NO. \nThe lines do not contradict each other, as both mention a connection to Emily's grandmother and an interest in nature and learning."
+            ],
+            [
+                "Emily: I'm a big fan of gardening and experimenting with new recipes in the kitchen, especially since my Cherokee grandmother used to teach me traditional cooking techniques that I love passing down to my own family. I've recently taken up beekeeping, which has become a fascinating hobby that combines nature and community for me.\n",
+                "Emily: I've been gardening for over 20 years and have a small orchard in my backyard where I grow a variety of fruits and herbs. I'm particularly passionate about preserving and canning, and my family loves when I make homemade jam and pickles using my grandmother's old recipes.\n",
+                "NO. This line does not contradict the provided line as it expands on Person B's interests in gardening, experimenting with new recipes, and using her grandmother's traditional cooking techniques, but provides more details about her experience and specific hobbies."
+            ],
+            [
+                "Emily: I'm a big fan of gardening and experimenting with new recipes in the kitchen, especially since my Cherokee grandmother used to teach me traditional cooking techniques that I love passing down to my own family. I've recently taken up beekeeping, which has become a fascinating hobby that combines nature and community for me.\n",
+                "Emily: I think what really sparked my interest in beekeeping was learning about the vital role pollinators play in maintaining the local food systems and ecosystems, especially in Oklahoma where the Great Plains are so fragile. I've even started incorporating bee-friendly plants into my garden to support the bees and other pollinators.\n",
+                "NO \nThe line does not contradict the provided line, as both lines describe Emily's interest in beekeeping and gardening, highlighting her appreciation for nature and community."
+            ],
+            [
+                "Emily: I'm a big fan of gardening and experimenting with new recipes in the kitchen, especially since my Cherokee grandmother used to teach me traditional cooking techniques that I love passing down to my own family. I've recently taken up beekeeping, which has become a fascinating hobby that combines nature and community for me.\n",
+                "Emily: I've had the opportunity to connect with other beekeepers in my area through local beekeeping associations and online forums, which has been incredibly helpful for learning and sharing knowledge. I've also started a small program at the arts organization I work for to teach kids about beekeeping and pollinators, which has been a rewarding experience.\n",
+                "NO. \nThis line does not contradict the provided line spoken by Person B as it expands on her interest in beekeeping, rather than contradicting any information provided."
+            ],
+            [
+                "Elena: That sounds wonderful, Emily! What inspired you to take up beekeeping?\n",
+                "Elena: That's a beautiful story, Emily. What kind of experience do you have with gardening and cooking?\n",
+                "NO, the line does not contradict the provided line as both statements express genuine interest in Emily's hobbies and experiences."
+            ],
+            [
+                "Elena: That sounds wonderful, Emily! What inspired you to take up beekeeping?\n",
+                "Elena: What inspired you to start beekeeping, Emily? Was there a particular experience or event that sparked your interest?\n",
+                "NO \nThe line does not contradict the provided line as it essentially asks the same question about the inspiration behind Emily's beekeeping, just phrased slightly differently."
+            ],
+            [
+                "Elena: That sounds wonderful, Emily! What inspired you to take up beekeeping?\n",
+                "Elena: That sounds like a fascinating hobby, Emily. What kind of community involvement have you had with your beekeeping endeavors?\n",
+                "NO, the lines do not contradict each other because both lines express interest and positivity towards Emily's beekeeping hobby."
+            ],
+            [
+                "Emily: I think what really drew me to beekeeping was the connection to my grandmother's stories about harvesting honey and the importance of pollinators in our ecosystem \u2013 it felt like a way to honor her legacy and learn more about our natural world.\n",
+                "Emily: I've been gardening for over 20 years and have a small orchard in my backyard where I grow a variety of fruits and herbs. I'm particularly passionate about preserving and canning, and my family loves when I make homemade jam and pickles using my grandmother's old recipes.\n",
+                "NO, The line does not contradict the provided line because it reinforces Emily's connection to her grandmother and her interest in activities related to gardening and preserving, which aligns with her interest in beekeeping and honoring her grandmother's legacy."
+            ],
+            [
+                "Emily: I think what really drew me to beekeeping was the connection to my grandmother's stories about harvesting honey and the importance of pollinators in our ecosystem \u2013 it felt like a way to honor her legacy and learn more about our natural world.\n",
+                "Emily: I think what really sparked my interest in beekeeping was learning about the vital role pollinators play in maintaining the local food systems and ecosystems, especially in Oklahoma where the Great Plains are so fragile. I've even started incorporating bee-friendly plants into my garden to support the bees and other pollinators.\n",
+                "NO. The line spoken by Person B does not contradict the provided line spoken by Person B, as both statements highlight the importance of pollinators and Emily's interest in beekeeping, although they mention different specific motivations."
+            ],
+            [
+                "Emily: I think what really drew me to beekeeping was the connection to my grandmother's stories about harvesting honey and the importance of pollinators in our ecosystem \u2013 it felt like a way to honor her legacy and learn more about our natural world.\n",
+                "Emily: I've had the opportunity to connect with other beekeepers in my area through local beekeeping associations and online forums, which has been incredibly helpful for learning and sharing knowledge. I've also started a small program at the arts organization I work for to teach kids about beekeeping and pollinators, which has been a rewarding experience.\n",
+                "NO, because the second statement further discusses Emily's involvement in beekeeping, which is consistent with her initial interest in the activity as mentioned in the first statement."
+            ],
+            [
+                "Elena: That's a beautiful story, Emily. What kind of experience do you have with gardening and cooking?\n",
+                "Elena: What inspired you to start beekeeping, Emily? Was there a particular experience or event that sparked your interest?\n",
+                "NO, The two lines do not contradict each other as they are both asking about Emily's interests and experiences in different areas, with the first line inquiring about gardening and cooking, and the second line asking about beekeeping."
+            ],
+            [
+                "Elena: That's a beautiful story, Emily. What kind of experience do you have with gardening and cooking?\n",
+                "Elena: That sounds like a fascinating hobby, Emily. What kind of community involvement have you had with your beekeeping endeavors?\n",
+                "NO \nThe line does not contradict the provided line spoken by Person A, as both lines show Elena expressing interest in Emily's activities and asking follow-up questions, indicating a consistent tone of curiosity and engagement."
+            ],
+            [
+                "Emily: I've been gardening for over 20 years and have a small orchard in my backyard where I grow a variety of fruits and herbs. I'm particularly passionate about preserving and canning, and my family loves when I make homemade jam and pickles using my grandmother's old recipes.\n",
+                "Emily: I think what really sparked my interest in beekeeping was learning about the vital role pollinators play in maintaining the local food systems and ecosystems, especially in Oklahoma where the Great Plains are so fragile. I've even started incorporating bee-friendly plants into my garden to support the bees and other pollinators.\n",
+                "NO, the lines do not contradict each other because they both describe Emily's interests in gardening and supporting the local ecosystem, which are complementary and related topics."
+            ],
+            [
+                "Emily: I've been gardening for over 20 years and have a small orchard in my backyard where I grow a variety of fruits and herbs. I'm particularly passionate about preserving and canning, and my family loves when I make homemade jam and pickles using my grandmother's old recipes.\n",
+                "Emily: I've had the opportunity to connect with other beekeepers in my area through local beekeeping associations and online forums, which has been incredibly helpful for learning and sharing knowledge. I've also started a small program at the arts organization I work for to teach kids about beekeeping and pollinators, which has been a rewarding experience.\n",
+                "NO, because the line spoken by Person B does not contradict the initial statement about gardening, and instead provides additional information about their interests in beekeeping and sharing knowledge with others."
+            ],
+            [
+                "Elena: What inspired you to start beekeeping, Emily? Was there a particular experience or event that sparked your interest?\n",
+                "Elena: That sounds like a fascinating hobby, Emily. What kind of community involvement have you had with your beekeeping endeavors?\n",
+                "NO. The line does not contradict the initial line, as it is a follow-up question that continues the conversation about Emily's beekeeping hobby."
+            ],
+            [
+                "Emily: I think what really sparked my interest in beekeeping was learning about the vital role pollinators play in maintaining the local food systems and ecosystems, especially in Oklahoma where the Great Plains are so fragile. I've even started incorporating bee-friendly plants into my garden to support the bees and other pollinators.\n",
+                "Emily: I've had the opportunity to connect with other beekeepers in my area through local beekeeping associations and online forums, which has been incredibly helpful for learning and sharing knowledge. I've also started a small program at the arts organization I work for to teach kids about beekeeping and pollinators, which has been a rewarding experience.\n",
+                "NO, The line does not contradict the provided line because both statements convey Emily's interest in beekeeping and pollinators, and her desire to learn and share knowledge about the topic."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     },
     {
         "task_name": "Chatting",
@@ -4220,6 +4933,110 @@
             ]
         ],
         "P1_prompt_2_stage_consistency_score": 1.0,
-        "P2_prompt_2_stage_consistency_score": 1.0
+        "P2_prompt_2_stage_consistency_score": 1.0,
+        "eval_pairwise_consistency_stop_early": [
+            [
+                "Ethan: What do you like to do in your free time, Ryder? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Ethan: That sounds amazing, Ryder! What inspired you to write a song about the Sonoran Desert?\n",
+                "NO, the line does not contradict the provided line because it appears to be a follow-up question to learn more about Ryder's hobby or activity, indicating a progression in the conversation rather than a contradiction."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Ryder? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Ethan: What inspired you to become a musician, Ryder? Was there a particular moment or experience that sparked your passion for music?\n",
+                "NO \n\nThe second line does not contradict the first line; it shows a progression in the conversation where Ethan has now found out Ryder is a musician and is asking a follow-up question about it."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Ryder? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Ethan: That sounds like an amazing experience, Ryder! What kind of music do you like to play with your dad and sing along with your mom?\n",
+                "NO \nThe second line does not contradict the first, as it continues the conversation about hobbies and interests, assuming Ryder has shared information about playing music with family."
+            ],
+            [
+                "Ethan: What do you like to do in your free time, Ryder? Do you have a favorite hobby or activity that brings you joy?\n",
+                "Ethan: That sounds wonderful, Ryder. What inspired you to write a song about the Sonoran Desert?\n",
+                "NO. \nThe lines do not contradict each other as they are both inquiring and showing interest in Ryder's hobbies and activities, but the second line is more specific and assumes Ryder has already shared information about writing a song."
+            ],
+            [
+                "Ryder: I'm really into playing guitar and writing music, and I find that it's a great way to express myself creatively and unwind after a long day of classes or climbing. I've been trying to write a song about the Sonoran Desert, inspired by the beauty and vastness of the landscape around me.\n",
+                "Ryder: The desert's vastness and the quiet moments I've spent camping under the stars there have a way of sparking something deep within me, and I'm trying to capture that feeling in my music. I've been experimenting with a new song, using a unique blend of folk and indie-rock influences to convey the sense of solitude and connection that comes with being in the desert.\n",
+                "NO, the lines do not contradict each other, as they both express Person B's inspiration from the desert and their attempt to capture that feeling in their music."
+            ],
+            [
+                "Ryder: I'm really into playing guitar and writing music, and I find that it's a great way to express myself creatively and unwind after a long day of classes or climbing. I've been trying to write a song about the Sonoran Desert, inspired by the beauty and vastness of the landscape around me.\n",
+                "Ryder: My parents used to have these epic jam sessions at our family's outdoor gear shop, and I think that's where I caught the music bug - my dad's a guitar player and my mom loves singing along to folk classics. Those moments of communal music-making have stayed with me, and I love trying to recreate that sense of connection with my own music.\n",
+                "NO, the line does not contradict the provided line spoken by Person B because it provides additional context about Ryder's background and how he developed his interest in music, which complements the initial statement about his passion for playing guitar and writing music."
+            ],
+            [
+                "Ryder: I'm really into playing guitar and writing music, and I find that it's a great way to express myself creatively and unwind after a long day of classes or climbing. I've been trying to write a song about the Sonoran Desert, inspired by the beauty and vastness of the landscape around me.\n",
+                "Ryder: I've been drawn to a mix of Americana and bluegrass, especially artists like John Prine and Gillian Welch \u2013 my dad loves playing along to those folksy tunes, and it's become a staple of our jam sessions. Sometimes I'll try to write my own lyrics inspired by the stories my parents used to tell me about their childhood in the Midwest.\n",
+                "NO. The line does not contradict the provided line, as both mention Ryder's interest in music and drawing inspiration from personal experiences, with the second line providing more specific details about their musical influences and style."
+            ],
+            [
+                "Ryder: I'm really into playing guitar and writing music, and I find that it's a great way to express myself creatively and unwind after a long day of classes or climbing. I've been trying to write a song about the Sonoran Desert, inspired by the beauty and vastness of the landscape around me.\n",
+                "Ryder: I've always been fascinated by the way the desert's vastness can be both desolate and beautiful at the same time, and I think that contrast is reflected in the music I'm trying to create. It's a feeling that's hard to put into words, but I'm hoping my song will capture a sense of the desert's haunting beauty.\n",
+                "NO \n\nThe second line elaborates on the same theme of the Sonoran Desert's beauty and vastness inspiring Ryder's music, and does not contradict the initial statement."
+            ],
+            [
+                "Ethan: That sounds amazing, Ryder! What inspired you to write a song about the Sonoran Desert?\n",
+                "Ethan: What inspired you to become a musician, Ryder? Was there a particular moment or experience that sparked your passion for music?\n",
+                "NO \nThe line does not contradict the provided line spoken by Person A, as it asks about a different aspect of Ryder's musical career (his inspiration for becoming a musician) rather than the inspiration for a specific song."
+            ],
+            [
+                "Ethan: That sounds amazing, Ryder! What inspired you to write a song about the Sonoran Desert?\n",
+                "Ethan: That sounds like an amazing experience, Ryder! What kind of music do you like to play with your dad and sing along with your mom?\n",
+                "NO, The line doesn't contradict the initial line, as it shows a continuation of interest in the other person's musical experiences, but doesn't provide conflicting information."
+            ],
+            [
+                "Ethan: That sounds amazing, Ryder! What inspired you to write a song about the Sonoran Desert?\n",
+                "Ethan: That sounds wonderful, Ryder. What inspired you to write a song about the Sonoran Desert?\n",
+                "NO, the line does not contradict the provided line as it is essentially the same sentence with a minor variation in the first word, changing \"amazing\" to \"wonderful\", both conveying a positive sentiment."
+            ],
+            [
+                "Ryder: The desert's vastness and the quiet moments I've spent camping under the stars there have a way of sparking something deep within me, and I'm trying to capture that feeling in my music. I've been experimenting with a new song, using a unique blend of folk and indie-rock influences to convey the sense of solitude and connection that comes with being in the desert.\n",
+                "Ryder: My parents used to have these epic jam sessions at our family's outdoor gear shop, and I think that's where I caught the music bug - my dad's a guitar player and my mom loves singing along to folk classics. Those moments of communal music-making have stayed with me, and I love trying to recreate that sense of connection with my own music.\n",
+                "NO, the line does not contradict the provided line spoken by Person B, as both lines discuss Ryder's inspiration for music and emphasize the importance of connection, but in different contexts."
+            ],
+            [
+                "Ryder: The desert's vastness and the quiet moments I've spent camping under the stars there have a way of sparking something deep within me, and I'm trying to capture that feeling in my music. I've been experimenting with a new song, using a unique blend of folk and indie-rock influences to convey the sense of solitude and connection that comes with being in the desert.\n",
+                "Ryder: I've been drawn to a mix of Americana and bluegrass, especially artists like John Prine and Gillian Welch \u2013 my dad loves playing along to those folksy tunes, and it's become a staple of our jam sessions. Sometimes I'll try to write my own lyrics inspired by the stories my parents used to tell me about their childhood in the Midwest.\n",
+                "NO \nThe lines do not directly contradict each other as they both mention Ryder's musical influences and interests, but focus on different aspects and styles."
+            ],
+            [
+                "Ryder: The desert's vastness and the quiet moments I've spent camping under the stars there have a way of sparking something deep within me, and I'm trying to capture that feeling in my music. I've been experimenting with a new song, using a unique blend of folk and indie-rock influences to convey the sense of solitude and connection that comes with being in the desert.\n",
+                "Ryder: I've always been fascinated by the way the desert's vastness can be both desolate and beautiful at the same time, and I think that contrast is reflected in the music I'm trying to create. It's a feeling that's hard to put into words, but I'm hoping my song will capture a sense of the desert's haunting beauty.\n",
+                "NO, The second line does not contradict the first line, as it continues to express Ryder's fascination with the desert and its influence on his music, further elaborating on the emotions and atmosphere he is trying to convey."
+            ],
+            [
+                "Ethan: What inspired you to become a musician, Ryder? Was there a particular moment or experience that sparked your passion for music?\n",
+                "Ethan: That sounds like an amazing experience, Ryder! What kind of music do you like to play with your dad and sing along with your mom?\n",
+                "NO, the line does not contradict the provided line as it appears to be a follow-up question that builds on the conversation about Ryder's musical background."
+            ],
+            [
+                "Ethan: What inspired you to become a musician, Ryder? Was there a particular moment or experience that sparked your passion for music?\n",
+                "Ethan: That sounds wonderful, Ryder. What inspired you to write a song about the Sonoran Desert?\n",
+                "NO \n\nThe line about the Sonoran Desert does not contradict the initial question about what inspired Ryder to become a musician, as it appears to be a follow-up conversation about a specific song Ryder wrote."
+            ],
+            [
+                "Ryder: My parents used to have these epic jam sessions at our family's outdoor gear shop, and I think that's where I caught the music bug - my dad's a guitar player and my mom loves singing along to folk classics. Those moments of communal music-making have stayed with me, and I love trying to recreate that sense of connection with my own music.\n",
+                "Ryder: I've been drawn to a mix of Americana and bluegrass, especially artists like John Prine and Gillian Welch \u2013 my dad loves playing along to those folksy tunes, and it's become a staple of our jam sessions. Sometimes I'll try to write my own lyrics inspired by the stories my parents used to tell me about their childhood in the Midwest.\n",
+                "NO \n\nThe second line doesn't contradict the first line, but rather expands on Ryder's musical influences and connection to their parents, providing more specific details about their taste in music and inspiration."
+            ],
+            [
+                "Ryder: My parents used to have these epic jam sessions at our family's outdoor gear shop, and I think that's where I caught the music bug - my dad's a guitar player and my mom loves singing along to folk classics. Those moments of communal music-making have stayed with me, and I love trying to recreate that sense of connection with my own music.\n",
+                "Ryder: I've always been fascinated by the way the desert's vastness can be both desolate and beautiful at the same time, and I think that contrast is reflected in the music I'm trying to create. It's a feeling that's hard to put into words, but I'm hoping my song will capture a sense of the desert's haunting beauty.\n",
+                "NO. \nThe line about the desert's influence on Ryder's music does not contradict the initial statement about their musical background and inspiration, but rather provides additional context about their current musical themes."
+            ],
+            [
+                "Ethan: That sounds like an amazing experience, Ryder! What kind of music do you like to play with your dad and sing along with your mom?\n",
+                "Ethan: That sounds wonderful, Ryder. What inspired you to write a song about the Sonoran Desert?\n",
+                "NO \nThe two lines do not contradict each other as they are inquiring about different aspects of Ryder's musical experiences and interests."
+            ],
+            [
+                "Ryder: I've been drawn to a mix of Americana and bluegrass, especially artists like John Prine and Gillian Welch \u2013 my dad loves playing along to those folksy tunes, and it's become a staple of our jam sessions. Sometimes I'll try to write my own lyrics inspired by the stories my parents used to tell me about their childhood in the Midwest.\n",
+                "Ryder: I've always been fascinated by the way the desert's vastness can be both desolate and beautiful at the same time, and I think that contrast is reflected in the music I'm trying to create. It's a feeling that's hard to put into words, but I'm hoping my song will capture a sense of the desert's haunting beauty.\n",
+                "NO \n\nThe two lines do not contradict each other, as the first line discusses Ryder's musical influences and background, while the second line discusses the inspiration and theme of Ryder's own music, which can coexist with the influences mentioned earlier."
+            ]
+        ],
+        "P1_pairwise_consistency_stop_early_score": 1.0,
+        "P2_pairwise_consistency_stop_early_score": 1.0
     }
 ]
